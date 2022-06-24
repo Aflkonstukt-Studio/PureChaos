@@ -68,7 +68,7 @@
       "name": "Deek",
       "type": "rangeditem",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "deek"
     },
@@ -76,7 +76,7 @@
       "name": "Pee",
       "type": "fluid",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pee",
       "metadata": {
@@ -106,7 +106,7 @@
       "name": "SexyEnchanetement",
       "type": "enchantment",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sexy_enchanetement"
     },
@@ -133,7 +133,7 @@
       "name": "PeeBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pee_block"
     }
@@ -142,8 +142,15 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.chaosmod.pee": "Pee",
+      "fluid.chaosmod.pee": "Pee",
+      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "block.chaosmod.pee_block": "Pee Block",
+      "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
-      "item.chaosmod.peemension": "Dirt Sword but Igniter"
+      "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "item.chaosmod.deek": "Ender Eye ",
+      "item.chaosmod.pee_bucket": "Pee Bucket"
     }
   },
   "foldersRoot": {

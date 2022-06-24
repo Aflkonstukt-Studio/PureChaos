@@ -1,4 +1,11 @@
 {
+  "block.chaosmod.pee": "Pee",
+  "fluid.chaosmod.pee": "Pee",
+  "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+  "block.chaosmod.pee_block": "Pee Block",
+  "itemGroup.tabchaostab": "Chaos",
   "item.chaosmod.dirtsword": "Dirtsword",
-  "item.chaosmod.peemension": "Dirt Sword but Igniter"
+  "item.chaosmod.peemension": "Dirt Sword but Igniter",
+  "item.chaosmod.deek": "Ender Eye ",
+  "item.chaosmod.pee_bucket": "Pee Bucket"
 }
