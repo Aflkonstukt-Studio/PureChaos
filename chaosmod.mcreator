@@ -144,6 +144,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "deek"
+    },
+    {
+      "name": "Fooditem",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fooditem"
+    },
+    {
+      "name": "Pickax",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickax"
+    },
+    {
+      "name": "FoodItem2",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_item_2"
     }
   ],
   "variable_elements": [],
@@ -151,14 +175,17 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.pickax": "Pickax",
+      "item.chaosmod.food_item_2": "Food Item 2",
+      "item.chaosmod.pee_bucket": "Pee Bucket",
+      "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
+      "item.chaosmod.fooditem": "Food Item 1",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
-      "item.chaosmod.peemension": "Dirt Sword but Igniter",
-      "item.chaosmod.pee_bucket": "Pee Bucket",
       "item.chaosmod.deek": "Ender Eye ",
       "entity.chaosmod.aentity": "Aentity"
     }
