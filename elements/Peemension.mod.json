@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "plains"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:PeeBlock"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Pee"
+    },
+    "airColor": {
+      "value": -13261,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:PeeBlock"
+    },
+    "portalParticles": {
+      "value": "SPIT"
+    },
+    "portalLuminance": 10,
+    "portalSound": {
+      "value": "block.anvil.fall"
+    },
+    "igniterName": "Dirt Sword but Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "texture": "dirtswordtext",
+    "portalTexture": "pee_flowing",
+    "enablePortal": true
+  }
+}

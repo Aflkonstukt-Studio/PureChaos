@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/pee_block",
+    "up": "chaosmod:blocks/pee_block",
+    "north": "chaosmod:blocks/pee_block",
+    "east": "chaosmod:blocks/pee_block",
+    "south": "chaosmod:blocks/pee_block",
+    "west": "chaosmod:blocks/pee_block",
+    "particle": "chaosmod:blocks/pee_block"
+  }
+}

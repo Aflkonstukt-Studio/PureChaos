@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "chaosmod:block/peemension_portal_ew"
+    },
+    "axis=x": {
+      "model": "chaosmod:block/peemension_portal_ns"
+    }
+  }
+}

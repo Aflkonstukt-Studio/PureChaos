@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -31,6 +32,8 @@ public class ChaosmodModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> PEE = register("pee", PeeFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, PeeFeature.GENERATE_BIOMES, PeeFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PEE_BLOCK = register("pee_block", PeeBlockFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, PeeBlockFeature.GENERATE_BIOMES, PeeBlockFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

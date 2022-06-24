@@ -101,6 +101,33 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "chaostab"
+    },
+    {
+      "name": "Masterpiece",
+      "type": "painting",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "masterpiece"
+    },
+    {
+      "name": "PeeBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee_block"
+    },
+    {
+      "name": "Peemension",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peemension",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
@@ -110,9 +137,11 @@
       "block.chaosmod.pee": "Pee",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
-      "item.chaosmod.pee_bucket": "Pee Bucket"
+      "item.chaosmod.pee_bucket": "Pee Bucket",
+      "item.chaosmod.peemension": "Dirt Sword but Igniter"
     }
   },
   "foldersRoot": {
