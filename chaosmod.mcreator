@@ -68,7 +68,7 @@
       "name": "Deek",
       "type": "rangeditem",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "deek"
     },
@@ -76,7 +76,7 @@
       "name": "Pee",
       "type": "fluid",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pee",
       "metadata": {
@@ -106,7 +106,7 @@
       "name": "SexyEnchanetement",
       "type": "enchantment",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sexy_enchanetement"
     },
@@ -133,9 +133,41 @@
       "name": "PeeBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pee_block"
+    },
+    {
+      "name": "Pickax",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickax"
+    },
+    {
+      "name": "Fooditem",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fooditem"
+    },
+    {
+      "name": "Aentity",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aentity"
+    },
+    {
+      "name": "FoodItem2",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_item_2"
     }
   ],
   "variable_elements": [],

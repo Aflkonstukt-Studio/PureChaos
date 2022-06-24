@@ -1,29 +1,11 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import xyz.vikkivuk.chaosmod.entity.DeekEntity;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ImmutableMultimap;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class DeekItem extends Item {
+
 	public DeekItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(10000));
 	}
@@ -65,10 +47,15 @@ public class DeekItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
+
 				DeekEntity entityarrow = DeekEntity.shoot(world, entity, world.getRandom(), 4f, 8, 2);
+
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+
 			}
 		}
 	}
+
 }
