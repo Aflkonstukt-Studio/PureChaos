@@ -68,7 +68,7 @@
       "name": "Deek",
       "type": "rangeditem",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "deek"
     },
@@ -106,7 +106,7 @@
       "name": "SexyEnchanetement",
       "type": "enchantment",
       "sortid": 2,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "sexy_enchanetement"
     },
@@ -157,7 +157,7 @@
       "name": "Aentity",
       "type": "livingentity",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aentity"
     },
@@ -168,6 +168,151 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "food_item_2"
+    },
+    {
+      "name": "BrokenChestplate1",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_chestplate_1",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "Warning",
+      "type": "gui",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning"
+    },
+    {
+      "name": "PotatoSpuds",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_spuds"
+    },
+    {
+      "name": "HellButOverworld",
+      "type": "biome",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell_but_overworld"
+    },
+    {
+      "name": "Potatus",
+      "type": "plant",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potatus"
+    },
+    {
+      "name": "WoodDimension",
+      "type": "dimension",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_dimension",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "SpearRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear_recipe"
+    },
+    {
+      "name": "FoodItem3",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_item_3"
+    },
+    {
+      "name": "Dipex",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dipex"
+    },
+    {
+      "name": "Fue",
+      "type": "fuel",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fue"
+    },
+    {
+      "name": "Trident",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trident"
+    },
+    {
+      "name": "Death",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death"
+    },
+    {
+      "name": "SADs",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_ds"
+    },
+    {
+      "name": "NetheritPickax",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherit_pickax"
+    },
+    {
+      "name": "Emepee",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emepee"
+    },
+    {
+      "name": "ComicallyLargeSpoon",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "comically_large_spoon"
+    },
+    {
+      "name": "Spear",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear"
     }
   ],
   "variable_elements": [],
@@ -175,14 +320,19 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
+      "item.chaosmod.pickax": "Pickax",
+      "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
+      "item.chaosmod.fooditem": "Food Item 1",
+      "item.chaosmod.dirtsword": "Dirtsword",
+      "entity.chaosmod.aentity": "Aentity",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.food_item_2": "Food Item 2",
+      "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
-      "item.chaosmod.dirtsword": "Dirtsword",
-      "item.chaosmod.peemension": "Dirt Sword but Igniter",
-      "item.chaosmod.deek": "Ender Eye ",
-      "item.chaosmod.pee_bucket": "Pee Bucket"
+      "item.chaosmod.deek": "Ender Eye "
     }
   },
   "foldersRoot": {

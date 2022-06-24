@@ -2,10 +2,15 @@
   "block.chaosmod.pee": "Pee",
   "fluid.chaosmod.pee": "Pee",
   "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+  "item.chaosmod.pickax": "Pickax",
+  "item.chaosmod.food_item_2": "Food Item 2",
+  "item.chaosmod.peemension": "Dirt Sword but Igniter",
+  "item.chaosmod.pee_bucket": "Pee Bucket",
+  "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
+  "item.chaosmod.fooditem": "Food Item 1",
   "block.chaosmod.pee_block": "Pee Block",
   "itemGroup.tabchaostab": "Chaos",
   "item.chaosmod.dirtsword": "Dirtsword",
-  "item.chaosmod.peemension": "Dirt Sword but Igniter",
   "item.chaosmod.deek": "Ender Eye ",
-  "item.chaosmod.pee_bucket": "Pee Bucket"
+  "entity.chaosmod.aentity": "Aentity"
 }

@@ -1,0 +1,29 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "comically_large_spoon",
+    "customModelName": "Normal",
+    "name": "Comically Large Spoon",
+    "specialInfo": [
+      "A really really really large spoon"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 3,
+    "efficiency": 15.0,
+    "attackSpeed": 12.0,
+    "enchantability": 20,
+    "damageVsEntity": 6.0,
+    "usageCount": 333,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
