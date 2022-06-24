@@ -93,12 +93,27 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirtsword"
+    },
+    {
+      "name": "Chaostab",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaostab"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.chaosmod.pee": "Pee",
+      "fluid.chaosmod.pee": "Pee",
+      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "itemGroup.tabchaostab": "Chaos",
+      "item.chaosmod.dirtsword": "Dirtsword",
+      "item.chaosmod.pee_bucket": "Pee Bucket"
+    }
   },
   "foldersRoot": {
     "name": "~",

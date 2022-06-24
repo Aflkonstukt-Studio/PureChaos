@@ -21,11 +21,11 @@
     "viscosity": 1000,
     "isGas": false,
     "temperature": 300,
-    "type": "LAVA",
+    "type": "WATER",
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Chaostab"
     },
     "emptySound": {
       "value": ""

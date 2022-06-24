@@ -13,6 +13,7 @@
  */
 package xyz.vikkivuk.chaosmod;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFeatures;
@@ -46,7 +47,7 @@ public class ChaosmodMod {
 	private static int messageID = 0;
 
 	public ChaosmodMod() {
-
+		ChaosmodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ChaosmodModBlocks.REGISTRY.register(bus);
 		ChaosmodModItems.REGISTRY.register(bus);
