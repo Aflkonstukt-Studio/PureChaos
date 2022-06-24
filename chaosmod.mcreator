@@ -128,6 +128,14 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "Aentity",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aentity"
     }
   ],
   "variable_elements": [],
@@ -135,13 +143,15 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
+      "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
       "item.chaosmod.pee_bucket": "Pee Bucket",
-      "item.chaosmod.peemension": "Dirt Sword but Igniter"
+      "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "entity.chaosmod.aentity": "Aentity"
     }
   },
   "foldersRoot": {

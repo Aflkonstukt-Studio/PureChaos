@@ -17,6 +17,7 @@ import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFeatures;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEnchantments;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlockEntities;
@@ -52,7 +53,7 @@ public class ChaosmodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ChaosmodModBlocks.REGISTRY.register(bus);
 		ChaosmodModItems.REGISTRY.register(bus);
-
+		ChaosmodModEntities.REGISTRY.register(bus);
 		ChaosmodModBlockEntities.REGISTRY.register(bus);
 		ChaosmodModFeatures.REGISTRY.register(bus);
 		ChaosmodModFluids.REGISTRY.register(bus);
