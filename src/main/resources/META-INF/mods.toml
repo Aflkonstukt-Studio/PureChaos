@@ -1,14 +1,17 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="Academic Free License v3.0"
+license="All Rights Reserved"
 
 [[mods]]
 modId="chaosmod"
 version="1.0.0"
 displayName="chaosmod"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="Vikto, MCreator"
+credits="All credits go to our sponsor, you!"
+displayURL="https://github.com/VikkiVuk/chaosmod_together"
+authors="VikkiVuk, JosipTLG"
+description='''
+Just a random mod, nothing special...
+'''
 
 [[dependencies.chaosmod]]
     modId="minecraft"

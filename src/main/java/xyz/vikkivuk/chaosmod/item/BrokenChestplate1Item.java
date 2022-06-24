@@ -1,12 +1,13 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -61,7 +62,7 @@ public abstract class BrokenChestplate1Item extends ArmorItem {
 
 	public static class Chestplate extends BrokenChestplate1Item {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 		}
 
 		@Override

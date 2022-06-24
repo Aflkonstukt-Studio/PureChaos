@@ -200,14 +200,6 @@
       "registry_name": "fue"
     },
     {
-      "name": "Y",
-      "type": "overlay",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "y"
-    },
-    {
       "name": "SADs",
       "type": "block",
       "sortid": 12,
@@ -258,9 +250,10 @@
     "modid": "chaosmod",
     "modName": "chaosmod",
     "version": "1.0.0",
-    "author": "Vikto, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "description": "Just a random mod, nothing special...",
+    "author": "VikkiVuk, JosipTLG",
+    "websiteURL": "https://github.com/VikkiVuk/chaosmod_together",
+    "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -268,6 +261,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "All credits go to our sponsor, you!",
     "modElementsPackage": "xyz.vikkivuk.chaosmod",
     "lockBaseModFiles": false
   },

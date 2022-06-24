@@ -11,7 +11,7 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Chaostab"
     },
     "armorTextureFile": "broken",
     "helmetName": "Broken Chestplate 1 Helmet",

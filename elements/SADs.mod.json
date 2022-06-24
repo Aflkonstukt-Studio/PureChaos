@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "destroyTool": "hoe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:Pickax"
     },
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Pickax"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
