@@ -39,12 +39,47 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "boom"
+    },
+    {
+      "name": "SexyEnchanetement",
+      "type": "enchantment",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sexy_enchanetement"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Pee",
+      "type": "fluid",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee",
+      "metadata": {
+        "gb": true
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "block.chaosmod.pee": "Pee",
+      "fluid.chaosmod.pee": "Pee",
+      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.pee_bucket": "Pee Bucket"
+    }
   },
   "foldersRoot": {
     "name": "~",
