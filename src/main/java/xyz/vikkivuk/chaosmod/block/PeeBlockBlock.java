@@ -1,45 +1,19 @@
 
 package xyz.vikkivuk.chaosmod.block;
 
-import xyz.vikkivuk.chaosmod.block.entity.PeeBlockBlockEntity;
-
-import net.minecraftforge.common.IPlantable;
-
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.Containers;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import java.util.List;
-import java.util.Collections;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class PeeBlockBlock extends Block
 		implements
 
 			EntityBlock {
+
 	public PeeBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.DIAMOND).sound(SoundType.SLIME_BLOCK).strength(5f, 9999999f).friction(1.2f)
 				.speedFactor(0.8f).jumpFactor(0.5f).randomTicks().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+
 	}
 
 	@Override
@@ -99,6 +73,7 @@ public class PeeBlockBlock extends Block
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
@@ -131,6 +106,7 @@ public class PeeBlockBlock extends Block
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
+
 			super.onRemove(state, world, pos, newState, isMoving);
 		}
 	}
@@ -148,4 +124,5 @@ public class PeeBlockBlock extends Block
 		else
 			return 0;
 	}
+
 }

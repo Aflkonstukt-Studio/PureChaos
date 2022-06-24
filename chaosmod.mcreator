@@ -170,46 +170,6 @@
       "registry_name": "food_item_2"
     },
     {
-      "name": "SADs",
-      "type": "block",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sa_ds"
-    },
-    {
-      "name": "Y",
-      "type": "overlay",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "y"
-    },
-    {
-      "name": "Fue",
-      "type": "fuel",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fue"
-    },
-    {
-      "name": "Warning",
-      "type": "gui",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warning"
-    },
-    {
-      "name": "FoodItem3",
-      "type": "item",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "food_item_3"
-    },
-    {
       "name": "BrokenChestplate1",
       "type": "armor",
       "sortid": 17,
@@ -222,6 +182,46 @@
         "eb": false,
         "ec": true
       }
+    },
+    {
+      "name": "Warning",
+      "type": "gui",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning"
+    },
+    {
+      "name": "Fue",
+      "type": "fuel",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fue"
+    },
+    {
+      "name": "Y",
+      "type": "overlay",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "y"
+    },
+    {
+      "name": "SADs",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_ds"
+    },
+    {
+      "name": "FoodItem3",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_item_3"
     }
   ],
   "variable_elements": [],

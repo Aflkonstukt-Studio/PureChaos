@@ -1,64 +1,17 @@
 
 package xyz.vikkivuk.chaosmod.entity;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.common.DungeonHooks;
-
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.nbt.Tag;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerBossEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.BlockPos;
 
-import java.util.Set;
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class AentityEntity extends PathfinderMob {
+
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("warm_ocean"), new ResourceLocation("mushroom_fields"),
 			new ResourceLocation("sunflower_plains"), new ResourceLocation("end_midlands"), new ResourceLocation("flower_forest"),
 			new ResourceLocation("lush_caves"), new ResourceLocation("cold_ocean"), new ResourceLocation("the_end"),
@@ -98,12 +51,16 @@ public class AentityEntity extends PathfinderMob {
 		super(type, world);
 		xpReward = 999;
 		setNoAi(false);
+
 		setCustomName(new TextComponent("jurdad"));
 		setCustomNameVisible(true);
+
 		setPersistenceRequired();
+
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ChaosmodModItems.DIRTSWORD.get()));
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ChaosmodModItems.PEE_BUCKET.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.TURTLE_HELMET));
+
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -120,11 +77,14 @@ public class AentityEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
+
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
@@ -133,6 +93,7 @@ public class AentityEntity extends PathfinderMob {
 		this.goalSelector.addGoal(6, new MoveBackToVillageGoal(this, 0.6, false));
 		this.goalSelector.addGoal(7, new RandomSwimmingGoal(this, 10, 40));
 		this.goalSelector.addGoal(8, new LeapAtTargetGoal(this, (float) 5));
+
 	}
 
 	@Override
@@ -172,6 +133,7 @@ public class AentityEntity extends PathfinderMob {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
 		return false;
 	}
 
@@ -256,12 +218,15 @@ public class AentityEntity extends PathfinderMob {
 
 	public void aiStep() {
 		super.aiStep();
+
 		this.setNoGravity(true);
+
 	}
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.AENTITY.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				Mob::checkMobSpawnRules);
+
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.AENTITY.get(), 180);
 	}
 
@@ -271,8 +236,12 @@ public class AentityEntity extends PathfinderMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 99);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+
 		builder = builder.add(Attributes.FLYING_SPEED, 1.6);
+
 		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.6);
+
 		return builder;
 	}
+
 }
