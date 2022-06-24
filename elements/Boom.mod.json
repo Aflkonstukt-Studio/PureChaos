@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "command",
+  "definition": {
+    "commandName": "boom",
+    "permissionLevel": "4",
+    "onCommandExecuted": {
+      "name": "BoomCommandExecuted"
+    }
+  }
+}
