@@ -2,6 +2,7 @@
 package xyz.vikkivuk.chaosmod.item;
 
 import xyz.vikkivuk.chaosmod.procedures.DirtswordLivingEntityIsHitWithToolProcedure;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -11,7 +12,6 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
@@ -44,7 +44,7 @@ public class DirtswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.WHEAT_SEEDS));
 			}
-		}, 3, -1f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 3, -1f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

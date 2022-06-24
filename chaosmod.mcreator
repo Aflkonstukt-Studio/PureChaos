@@ -71,6 +71,71 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "deek"
+    },
+    {
+      "name": "Pee",
+      "type": "fluid",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Masterpiece",
+      "type": "painting",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "masterpiece"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SexyEnchanetement",
+      "type": "enchantment",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sexy_enchanetement"
+    },
+    {
+      "name": "Peemension",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peemension",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Chaostab",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chaostab"
+    },
+    {
+      "name": "PeeBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee_block"
     }
   ],
   "variable_elements": [],
@@ -78,7 +143,7 @@
   "language_map": {
     "en_us": {
       "item.chaosmod.dirtsword": "Dirtsword",
-      "item.chaosmod.deek": "Ender Eye "
+      "item.chaosmod.peemension": "Dirt Sword but Igniter"
     }
   },
   "foldersRoot": {

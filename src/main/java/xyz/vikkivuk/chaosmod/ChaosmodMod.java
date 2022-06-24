@@ -13,8 +13,14 @@
  */
 package xyz.vikkivuk.chaosmod;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModFeatures;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModEnchantments;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlockEntities;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -43,11 +49,15 @@ public class ChaosmodMod {
 	private static int messageID = 0;
 
 	public ChaosmodMod() {
-
+		ChaosmodModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		ChaosmodModBlocks.REGISTRY.register(bus);
 		ChaosmodModItems.REGISTRY.register(bus);
 		ChaosmodModEntities.REGISTRY.register(bus);
+		ChaosmodModBlockEntities.REGISTRY.register(bus);
+		ChaosmodModFeatures.REGISTRY.register(bus);
+		ChaosmodModFluids.REGISTRY.register(bus);
+		ChaosmodModEnchantments.REGISTRY.register(bus);
 
 	}
 
