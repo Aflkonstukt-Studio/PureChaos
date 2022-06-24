@@ -14,6 +14,7 @@
 package xyz.vikkivuk.chaosmod;
 
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -46,6 +47,7 @@ public class ChaosmodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ChaosmodModItems.REGISTRY.register(bus);
+		ChaosmodModEntities.REGISTRY.register(bus);
 
 	}
 

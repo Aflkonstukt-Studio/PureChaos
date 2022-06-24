@@ -63,13 +63,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Deek",
+      "type": "rangeditem",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deek"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.chaosmod.dirtsword": "Dirtsword"
+      "item.chaosmod.dirtsword": "Dirtsword",
+      "item.chaosmod.deek": "Ender Eye "
     }
   },
   "foldersRoot": {

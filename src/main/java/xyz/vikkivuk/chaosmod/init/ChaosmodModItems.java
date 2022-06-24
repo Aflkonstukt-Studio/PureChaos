@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.DirtswordItem;
+import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -16,4 +17,5 @@ import net.minecraft.world.item.Item;
 public class ChaosmodModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, ChaosmodMod.MODID);
 	public static final RegistryObject<Item> DIRTSWORD = REGISTRY.register("dirtsword", () -> new DirtswordItem());
+	public static final RegistryObject<Item> DEEK = REGISTRY.register("deek", () -> new DeekItem());
 }
