@@ -1,11 +1,30 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
+
+import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap;
 
 public class FoodItem2Item extends Item {
-
 	public FoodItem2Item() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).fireResistant().rarity(Rarity.EPIC)
 				.food((new FoodProperties.Builder()).nutrition(5).saturationMod(20f).alwaysEat()
@@ -51,7 +70,6 @@ public class FoodItem2Item extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(ChaosmodModBlocks.PEE_BLOCK.get());
 		super.finishUsingItem(itemstack, world, entity);
-
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {
@@ -62,5 +80,4 @@ public class FoodItem2Item extends Item {
 			return itemstack;
 		}
 	}
-
 }
