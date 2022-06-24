@@ -68,7 +68,7 @@
       "name": "Deek",
       "type": "rangeditem",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "deek"
     },
@@ -106,7 +106,7 @@
       "name": "SexyEnchanetement",
       "type": "enchantment",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sexy_enchanetement"
     },
@@ -157,7 +157,7 @@
       "name": "Aentity",
       "type": "livingentity",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aentity"
     },
