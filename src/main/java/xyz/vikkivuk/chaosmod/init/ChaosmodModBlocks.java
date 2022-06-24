@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
@@ -20,4 +21,5 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> PEE = REGISTRY.register("pee", () -> new PeeBlock());
 	public static final RegistryObject<Block> PEE_BLOCK = REGISTRY.register("pee_block", () -> new PeeBlockBlock());
 	public static final RegistryObject<Block> PEEMENSION_PORTAL = REGISTRY.register("peemension_portal", () -> new PeemensionPortalBlock());
+	public static final RegistryObject<Block> SA_DS = REGISTRY.register("sa_ds", () -> new SADsBlock());
 }

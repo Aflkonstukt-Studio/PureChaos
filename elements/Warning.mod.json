@@ -1,0 +1,111 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 344,
+    "height": 162,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "!!! WARNING !!!",
+          "color": {
+            "value": -65476,
+            "falpha": 0.0
+          },
+          "name": "!!! WARNING !!!",
+          "x": 175,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "It looks like you installed chaos mod (thanks for that btw)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "It looks like you installed chaos mod (thanks for that btw)",
+          "x": 61,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "and we just wanted to warn you that this mod can make the",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "and we just wanted to warn you that this mod can make the",
+          "x": 65,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "world a bit, unstable (so to say). Please continue at your",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "world a bit, unstable (so to say). Please continue at your",
+          "x": 62,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "own discretion and we arent responsible for any damage done",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "own discretion and we arent responsible for any damage done",
+          "x": 60,
+          "y": 136
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Thanks for the understanding !!!",
+          "color": {
+            "value": -16730369,
+            "falpha": 0.0
+          },
+          "name": "Thanks for the understanding !!!",
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Close",
+          "width": 51,
+          "height": 20,
+          "name": "Close",
+          "x": 321,
+          "y": 169
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

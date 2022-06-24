@@ -168,6 +168,60 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "food_item_2"
+    },
+    {
+      "name": "SADs",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sa_ds"
+    },
+    {
+      "name": "Y",
+      "type": "overlay",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "y"
+    },
+    {
+      "name": "Fue",
+      "type": "fuel",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fue"
+    },
+    {
+      "name": "Warning",
+      "type": "gui",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning"
+    },
+    {
+      "name": "FoodItem3",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "food_item_3"
+    },
+    {
+      "name": "BrokenChestplate1",
+      "type": "armor",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_chestplate_1",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -175,15 +229,21 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
+      "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "item.chaosmod.pickax": "Pickax",
+      "item.chaosmod.food_item_3": "Food Item 3",
       "item.chaosmod.food_item_2": "Food Item 2",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
+      "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.pee_block": "Pee Block",
+      "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
       "item.chaosmod.deek": "Ender Eye ",

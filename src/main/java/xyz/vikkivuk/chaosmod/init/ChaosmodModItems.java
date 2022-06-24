@@ -8,9 +8,11 @@ import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
+import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
 import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
 import xyz.vikkivuk.chaosmod.item.DirtswordItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
+import xyz.vikkivuk.chaosmod.item.BrokenChestplate1Item;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -35,6 +37,10 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> FOODITEM = REGISTRY.register("fooditem", () -> new FooditemItem());
 	public static final RegistryObject<Item> PICKAX = REGISTRY.register("pickax", () -> new PickaxItem());
 	public static final RegistryObject<Item> FOOD_ITEM_2 = REGISTRY.register("food_item_2", () -> new FoodItem2Item());
+	public static final RegistryObject<Item> SA_DS = block(ChaosmodModBlocks.SA_DS, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> FOOD_ITEM_3 = REGISTRY.register("food_item_3", () -> new FoodItem3Item());
+	public static final RegistryObject<Item> BROKEN_CHESTPLATE_1_CHESTPLATE = REGISTRY.register("broken_chestplate_1_chestplate",
+			() -> new BrokenChestplate1Item.Chestplate());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
