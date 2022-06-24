@@ -1,9 +1,36 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "DirtswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirtsword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dirtsword",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirtsword"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.chaosmod.dirtsword": "Dirtsword"
+    }
   },
   "foldersRoot": {
     "name": "~",
