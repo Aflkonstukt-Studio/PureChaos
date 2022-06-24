@@ -41,12 +41,15 @@
       "registry_name": "boom"
     },
     {
-      "name": "SexyEnchanetement",
-      "type": "enchantment",
-      "sortid": 2,
+      "name": "Pee",
+      "type": "fluid",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sexy_enchanetement"
+      "registry_name": "pee",
+      "metadata": {
+        "gb": true
+      }
     },
     {
       "name": "PlayerTick",
@@ -60,26 +63,42 @@
       }
     },
     {
-      "name": "Pee",
-      "type": "fluid",
-      "sortid": 4,
+      "name": "SexyEnchanetement",
+      "type": "enchantment",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pee",
+      "registry_name": "sexy_enchanetement"
+    },
+    {
+      "name": "DirtswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirtsword_living_entity_is_hit_with_tool",
       "metadata": {
-        "gb": true
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
+    },
+    {
+      "name": "Dirtsword",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirtsword"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "block.chaosmod.pee": "Pee",
-      "fluid.chaosmod.pee": "Pee",
-      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
-      "item.chaosmod.pee_bucket": "Pee Bucket"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
