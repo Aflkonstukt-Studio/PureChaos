@@ -214,6 +214,105 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "food_item_3"
+    },
+    {
+      "name": "HellButOverworld",
+      "type": "biome",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell_but_overworld"
+    },
+    {
+      "name": "PotatoSpuds",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potato_spuds"
+    },
+    {
+      "name": "Potatus",
+      "type": "plant",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potatus"
+    },
+    {
+      "name": "Spear",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear"
+    },
+    {
+      "name": "SpearRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear_recipe"
+    },
+    {
+      "name": "Emepee",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emepee"
+    },
+    {
+      "name": "Dipex",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dipex"
+    },
+    {
+      "name": "Death",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death"
+    },
+    {
+      "name": "Trident",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trident"
+    },
+    {
+      "name": "ComicallyLargeSpoon",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "comically_large_spoon"
+    },
+    {
+      "name": "NetheritPickax",
+      "type": "tool",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherit_pickax"
+    },
+    {
+      "name": "WoodDimension",
+      "type": "dimension",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_dimension",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
@@ -221,25 +320,37 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
-      "fluid.chaosmod.pee": "Pee",
-      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "block.chaosmod.emepee": "Emepee",
       "item.chaosmod.pickax": "Pickax",
-      "item.chaosmod.food_item_3": "Food Item 3",
-      "item.chaosmod.food_item_2": "Food Item 2",
-      "item.chaosmod.pee_bucket": "Pee Bucket",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
-      "block.chaosmod.sa_ds": "Block ?",
+      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
+      "block.chaosmod.death": "Death",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
-      "block.chaosmod.pee_block": "Pee Block",
+      "item.chaosmod.potato_spuds": "Potato Spuds",
+      "item.chaosmod.spear": "Spear",
+      "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
-      "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.dirtsword": "Dirtsword",
+      "entity.chaosmod.aentity": "Aentity",
+      "entity.chaosmod.trident": "Tridet",
+      "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
+      "block.chaosmod.potatus": "Potatus",
+      "fluid.chaosmod.pee": "Pee",
+      "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.food_item_3": "Food Item 3",
+      "item.chaosmod.food_item_2": "Food Item 2",
+      "item.chaosmod.dipex": "DiPixk",
+      "item.chaosmod.pee_bucket": "Pee Bucket",
+      "block.chaosmod.sa_ds": "Block ?",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "block.chaosmod.pee_block": "Pee Block",
+      "itemGroup.tabchaostab": "Chaos",
+      "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.deek": "Ender Eye ",
-      "entity.chaosmod.aentity": "Aentity"
+      "item.chaosmod.netherit_pickax": "Netherit Pickax"
     }
   },
   "foldersRoot": {

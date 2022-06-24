@@ -1,0 +1,27 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "spear",
+    "customModelName": "Normal",
+    "name": "Spear",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 10.0,
+    "enchantability": 2,
+    "damageVsEntity": 18.0,
+    "usageCount": 371,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
@@ -29,6 +30,11 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<AentityEntity>> AENTITY = register("aentity",
 			EntityType.Builder.<AentityEntity>of(AentityEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(100)
 					.setUpdateInterval(3).setCustomClientFactory(AentityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TridentEntity>> TRIDENT = register("trident",
+			EntityType.Builder.<TridentEntity>of(TridentEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(TridentEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -38,11 +44,13 @@ public class ChaosmodModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			AentityEntity.init();
+			TridentEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(AENTITY.get(), AentityEntity.createAttributes().build());
+		event.put(TRIDENT.get(), TridentEntity.createAttributes().build());
 	}
 }

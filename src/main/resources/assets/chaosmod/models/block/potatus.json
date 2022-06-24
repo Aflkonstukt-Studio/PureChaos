@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "chaosmod:blocks/food_item_4",
+    "particle": "chaosmod:blocks/food_item_4"
+  }
+}

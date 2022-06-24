@@ -21,6 +21,7 @@ import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEnchantments;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlockEntities;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBiomes;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -58,6 +59,8 @@ public class ChaosmodMod {
 		ChaosmodModFeatures.REGISTRY.register(bus);
 		ChaosmodModFluids.REGISTRY.register(bus);
 		ChaosmodModEnchantments.REGISTRY.register(bus);
+
+		ChaosmodModBiomes.REGISTRY.register(bus);
 
 	}
 

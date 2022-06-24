@@ -4,8 +4,11 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.world.features.plants.PotatusFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
+import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
+import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -37,6 +40,12 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, PeeBlockFeature.GENERATE_BIOMES, PeeBlockFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> SA_DS = register("sa_ds", SADsFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, SADsFeature.GENERATE_BIOMES, SADsFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> POTATUS = register("potatus", PotatusFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PotatusFeature.GENERATE_BIOMES, PotatusFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> EMEPEE = register("emepee", EmepeeFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, EmepeeFeature.GENERATE_BIOMES, EmepeeFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEATH = register("death", DeathFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeathFeature.GENERATE_BIOMES, DeathFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

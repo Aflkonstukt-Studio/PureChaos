@@ -1,0 +1,70 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "extreme_hills_with_trees"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.PLANKS#0"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Pee"
+    },
+    "airColor": {
+      "value": -2701547,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "Blocks.PLANKS#0"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Wood Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "texture": "oak_planks",
+    "portalTexture": "oak_planks",
+    "enablePortal": true
+  }
+}

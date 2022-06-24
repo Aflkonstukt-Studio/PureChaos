@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/emerald_block",
+    "up": "chaosmod:blocks/emerald_block",
+    "north": "chaosmod:blocks/emerald_block",
+    "east": "chaosmod:blocks/emerald_block",
+    "south": "chaosmod:blocks/emerald_block",
+    "west": "chaosmod:blocks/emerald_block",
+    "particle": "chaosmod:blocks/emerald_block"
+  }
+}

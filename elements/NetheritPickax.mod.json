@@ -1,0 +1,27 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "netheritpickax",
+    "customModelName": "Normal",
+    "name": "Netherit Pickax",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 15.0,
+    "enchantability": 15,
+    "damageVsEntity": 8.0,
+    "usageCount": 1245,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
