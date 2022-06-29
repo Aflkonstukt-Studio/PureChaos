@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "structure",
   "definition": {
-    "structure": "amongus",
+    "structure": "peepool",
     "randomlyRotateStructure": false,
-    "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 20000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,15 +13,10 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface",
-      "Nether",
-      "End",
-      "CUSTOM:Peemension",
-      "CUSTOM:WoodDimension",
-      "CUSTOM:Sus"
+      "Surface"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR"
   }
 }
