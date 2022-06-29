@@ -1,8 +1,17 @@
 
 package xyz.vikkivuk.chaosmod.fluid.attributes;
 
-public class StaravodaFluidAttributes extends FluidAttributes {
+import net.minecraftforge.fluids.FluidAttributes;
 
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.BlockAndTintGetter;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.BiomeColors;
+
+import java.util.function.BiFunction;
+
+public class StaravodaFluidAttributes extends FluidAttributes {
 	public static CustomBuilder builder(ResourceLocation stillTexture, ResourceLocation flowingTexture) {
 		return new CustomBuilder(stillTexture, flowingTexture, StaravodaFluidAttributes::new);
 	}
@@ -22,5 +31,4 @@ public class StaravodaFluidAttributes extends FluidAttributes {
 	public int getColor(BlockAndTintGetter world, BlockPos pos) {
 		return BiomeColors.getAverageWaterColor(world, pos) | 0xFF000000;
 	}
-
 }
