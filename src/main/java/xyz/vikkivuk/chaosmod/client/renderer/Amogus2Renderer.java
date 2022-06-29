@@ -2,19 +2,19 @@
 package xyz.vikkivuk.chaosmod.client.renderer;
 
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
-import xyz.vikkivuk.chaosmod.client.model.Modelcustom_model;
+import xyz.vikkivuk.chaosmod.client.model.Modelamiogyhus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
-public class Amogus2Renderer extends MobRenderer<Amogus2Entity, Modelcustom_model<Amogus2Entity>> {
+public class Amogus2Renderer extends MobRenderer<Amogus2Entity, Modelamiogyhus<Amogus2Entity>> {
 	public Amogus2Renderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelamiogyhus(context.bakeLayer(Modelamiogyhus.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(Amogus2Entity entity) {
-		return new ResourceLocation("chaosmod:textures/mogus.png");
+		return new ResourceLocation("chaosmod:textures/aaas.png");
 	}
 }
