@@ -1,7 +1,12 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Item;
 
 public class SpearItem extends SwordItem {
 	public SpearItem() {
@@ -29,11 +34,6 @@ public class SpearItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		},
-
-				3, 6f,
-
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		}, 3, 6f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
-
 }

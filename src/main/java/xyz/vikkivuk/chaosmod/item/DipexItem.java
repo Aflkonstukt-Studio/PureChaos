@@ -1,7 +1,12 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Item;
 
 public class DipexItem extends PickaxeItem {
 	public DipexItem() {
@@ -29,11 +34,6 @@ public class DipexItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		},
-
-				1, -1f,
-
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		}, 1, -1f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
-
 }

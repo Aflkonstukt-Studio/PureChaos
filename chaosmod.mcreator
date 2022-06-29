@@ -68,7 +68,7 @@
       "name": "Deek",
       "type": "rangeditem",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "deek"
     },
@@ -76,7 +76,7 @@
       "name": "Pee",
       "type": "fluid",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pee",
       "metadata": {
@@ -106,7 +106,7 @@
       "name": "SexyEnchanetement",
       "type": "enchantment",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "sexy_enchanetement"
     },
@@ -133,7 +133,7 @@
       "name": "PeeBlock",
       "type": "block",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "pee_block"
     },
@@ -320,19 +320,37 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
+      "block.chaosmod.emepee": "Emepee",
       "item.chaosmod.pickax": "Pickax",
+      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "block.chaosmod.death": "Death",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
+      "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
+      "item.chaosmod.potato_spuds": "Potato Spuds",
+      "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
+      "item.chaosmod.spear": "Spear",
+      "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
+      "entity.chaosmod.trident": "Tridet",
+      "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
+      "block.chaosmod.potatus": "Potatus",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.food_item_3": "Food Item 3",
       "item.chaosmod.food_item_2": "Food Item 2",
+      "item.chaosmod.dipex": "DiPixk",
       "item.chaosmod.pee_bucket": "Pee Bucket",
+      "block.chaosmod.sa_ds": "Block ?",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
-      "item.chaosmod.deek": "Ender Eye "
+      "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.deek": "Ender Eye ",
+      "item.chaosmod.netherit_pickax": "Netherit Pickax"
     }
   },
   "foldersRoot": {
