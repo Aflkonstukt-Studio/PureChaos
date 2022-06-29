@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.world.biome.SususBiome;
 import xyz.vikkivuk.chaosmod.world.biome.HellButOverworldBiome;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -43,11 +44,13 @@ import com.mojang.datafixers.util.Pair;
 public class ChaosmodModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, ChaosmodMod.MODID);
 	public static final RegistryObject<Biome> HELL_BUT_OVERWORLD = REGISTRY.register("hell_but_overworld", () -> HellButOverworldBiome.createBiome());
+	public static final RegistryObject<Biome> SUSUS = REGISTRY.register("susus", () -> SususBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			HellButOverworldBiome.init();
+			SususBiome.init();
 		});
 	}
 
@@ -68,6 +71,8 @@ public class ChaosmodModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(HellButOverworldBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
+						parameters.add(new Pair<>(SususBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()))));
 						parameters.add(new Pair<>(HellButOverworldBiome.PARAMETER_POINT_UNDERGROUND,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
 
@@ -90,6 +95,10 @@ public class ChaosmodModBiomes {
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()),
 											Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
 											Blocks.NETHERRACK.defaultBlockState()));
+							surfaceRules.add(1,
+									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()),
+											Blocks.GRASS_BLOCK.defaultBlockState(), ChaosmodModBlocks.SUS_BLOCK.get().defaultBlockState(),
+											Blocks.OAK_PLANKS.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

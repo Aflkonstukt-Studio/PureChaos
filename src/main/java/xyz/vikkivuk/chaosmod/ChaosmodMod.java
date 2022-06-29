@@ -14,6 +14,8 @@
 package xyz.vikkivuk.chaosmod;
 
 import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModPotions;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFeatures;
@@ -60,8 +62,9 @@ public class ChaosmodMod {
 		ChaosmodModFluids.REGISTRY.register(bus);
 		ChaosmodModEnchantments.REGISTRY.register(bus);
 
+		ChaosmodModPotions.REGISTRY.register(bus);
 		ChaosmodModBiomes.REGISTRY.register(bus);
-
+		ChaosmodModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

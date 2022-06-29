@@ -16,15 +16,15 @@ public class NetheritPickaxItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 9f;
+				return 12f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 6f;
+				return 8f;
 			}
 
 			public int getLevel() {
-				return 4;
+				return 8;
 			}
 
 			public int getEnchantmentValue() {
@@ -34,6 +34,6 @@ public class NetheritPickaxItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, 11f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).fireResistant());
+		}, 1, 12f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).fireResistant());
 	}
 }
