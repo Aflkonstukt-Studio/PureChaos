@@ -313,6 +313,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "spear"
+    },
+    {
+      "name": "Xmasterwoopainting",
+      "type": "painting",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xmasterwoopainting"
     }
   ],
   "variable_elements": [],
