@@ -1,4 +1,14 @@
 {
+  "amogus": {
+    "category": "music",
+    "subtitle": "subtitles.amogus",
+    "sounds": [
+      {
+        "name": "chaosmod:amogus-sound-effect",
+        "stream": true
+      }
+    ]
+  },
   "footstep_metal_amogus": {
     "category": "hostile",
     "subtitle": "subtitles.footstep_metal_amogus",
@@ -26,16 +36,6 @@
       {
         "name": "chaosmod:ambience-main-ambience",
         "stream": false
-      }
-    ]
-  },
-  "amogus": {
-    "category": "music",
-    "subtitle": "subtitles.amogus",
-    "sounds": [
-      {
-        "name": "chaosmod:amogus-sound-effect",
-        "stream": true
       }
     ]
   }

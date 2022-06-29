@@ -18,11 +18,11 @@ import java.util.HashMap;
 public class ChaosmodModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
+		REGISTRY.put(new ResourceLocation("chaosmod", "amogus"), new SoundEvent(new ResourceLocation("chaosmod", "amogus")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "footstep_metal_amogus"),
 				new SoundEvent(new ResourceLocation("chaosmod", "footstep_metal_amogus")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "kill"), new SoundEvent(new ResourceLocation("chaosmod", "kill")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "amongus_ambient"), new SoundEvent(new ResourceLocation("chaosmod", "amongus_ambient")));
-		REGISTRY.put(new ResourceLocation("chaosmod", "amogus"), new SoundEvent(new ResourceLocation("chaosmod", "amogus")));
 	}
 
 	@SubscribeEvent
