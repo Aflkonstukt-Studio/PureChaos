@@ -1,8 +1,28 @@
 
 package xyz.vikkivuk.chaosmod.fluid;
 
-public abstract class CumFluid extends ForgeFlowingFluid {
+import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraftforge.fluids.FluidAttributes;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.BlockPos;
+
+public abstract class CumFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CUM,
 			ChaosmodModFluids.FLOWING_CUM,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/ppppppppppp-alpha"), new ResourceLocation("chaosmod:blocks/walk"))
@@ -23,7 +43,7 @@ public abstract class CumFluid extends ForgeFlowingFluid {
 
 	@Override
 	public ParticleOptions getDripParticle() {
-		return (SimpleParticleType) (ChaosmodModParticleTypes.DELETED_MOD_ELEMENT.get());
+		return (SimpleParticleType) (ChaosmodModParticleTypes.CUM_DRIP.get());
 	}
 
 	@Override
@@ -63,5 +83,4 @@ public abstract class CumFluid extends ForgeFlowingFluid {
 			return false;
 		}
 	}
-
 }
