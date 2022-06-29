@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.block.WoodDimensionPortalBlock;
+import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
@@ -35,6 +36,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> DEATH = REGISTRY.register("death", () -> new DeathBlock());
 	public static final RegistryObject<Block> WOOD_DIMENSION_PORTAL = REGISTRY.register("wood_dimension_portal",
 			() -> new WoodDimensionPortalBlock());
+	public static final RegistryObject<Block> SUS_BLOCK = REGISTRY.register("sus_block", () -> new SusBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

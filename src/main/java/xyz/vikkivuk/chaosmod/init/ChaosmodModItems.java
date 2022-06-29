@@ -58,6 +58,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> COMICALLY_LARGE_SPOON = REGISTRY.register("comically_large_spoon", () -> new ComicallyLargeSpoonItem());
 	public static final RegistryObject<Item> NETHERIT_PICKAX = REGISTRY.register("netherit_pickax", () -> new NetheritPickaxItem());
 	public static final RegistryObject<Item> WOOD_DIMENSION = REGISTRY.register("wood_dimension", () -> new WoodDimensionItem());
+	public static final RegistryObject<Item> SUS_BLOCK = block(ChaosmodModBlocks.SUS_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

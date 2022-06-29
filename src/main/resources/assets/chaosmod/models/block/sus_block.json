@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "up": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "north": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "east": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "south": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "west": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "particle": "chaosmod:blocks/death_block"
+  }
+}
