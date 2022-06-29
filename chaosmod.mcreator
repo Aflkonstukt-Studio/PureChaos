@@ -321,6 +321,25 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sus_block"
+    },
+    {
+      "name": "CumDrip",
+      "type": "particle",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_drip"
+    },
+    {
+      "name": "Cum",
+      "type": "fluid",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "gb": true
+      }
     }
   ],
   "variable_elements": [],
@@ -329,9 +348,10 @@
     "en_us": {
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.pickax": "Pickax",
-      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "block.chaosmod.death": "Death",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -342,6 +362,7 @@
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
+      "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "block.chaosmod.potatus": "Potatus",
@@ -355,6 +376,7 @@
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
+      "block.chaosmod.cum": "Cum",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.hell_but_overworld": "Neover",

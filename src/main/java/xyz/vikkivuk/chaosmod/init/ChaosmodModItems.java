@@ -17,6 +17,7 @@ import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
 import xyz.vikkivuk.chaosmod.item.DirtswordItem;
 import xyz.vikkivuk.chaosmod.item.DipexItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
+import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
 import xyz.vikkivuk.chaosmod.item.BrokenChestplate1Item;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
@@ -59,6 +60,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> NETHERIT_PICKAX = REGISTRY.register("netherit_pickax", () -> new NetheritPickaxItem());
 	public static final RegistryObject<Item> WOOD_DIMENSION = REGISTRY.register("wood_dimension", () -> new WoodDimensionItem());
 	public static final RegistryObject<Item> SUS_BLOCK = block(ChaosmodModBlocks.SUS_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> CUM_BUCKET = REGISTRY.register("cum_bucket", () -> new CumItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,55 @@
+{
+  "_fv": 28,
+  "_type": "fluid",
+  "definition": {
+    "name": "Cum",
+    "bucketName": "Cum Bucket",
+    "textureStill": "ppppppppppp-alpha",
+    "textureFlowing": "walk",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 100,
+    "levelDecrease": 1,
+    "slopeFindDistance": 1,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "flowStrength": 3.0,
+    "luminosity": 9,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "temperature": 69420,
+    "type": "LAVA",
+    "generateBucket": true,
+    "textureBucket": "i_like_pica",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "emptySound": {
+      "value": "block.soul_soil.break"
+    },
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "JU HEV ENTERD D CUM ZONE"
+    ],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": true,
+    "tickRate": 9,
+    "flammability": 9,
+    "fireSpreadSpeed": 12,
+    "colorOnMap": "DEEPSLATE_GRAY",
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "deep_frozen_ocean"
+      }
+    ]
+  }
+}
