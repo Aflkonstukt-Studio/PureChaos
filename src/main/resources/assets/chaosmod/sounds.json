@@ -28,5 +28,15 @@
         "stream": false
       }
     ]
+  },
+  "amogus": {
+    "category": "music",
+    "subtitle": "subtitles.amogus",
+    "sounds": [
+      {
+        "name": "chaosmod:amogus-sound-effect",
+        "stream": true
+      }
+    ]
   }
 }
