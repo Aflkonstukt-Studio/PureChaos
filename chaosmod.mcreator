@@ -348,6 +348,25 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_us"
+    },
+    {
+      "name": "Susus",
+      "type": "biome",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susus"
+    },
+    {
+      "name": "Sus",
+      "type": "dimension",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
@@ -390,7 +409,9 @@
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
       "subtitles.kill": "huvh",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.pickax": "Pickax",
+      "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "block.chaosmod.death": "Death",
@@ -405,6 +426,8 @@
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
+      "fluid.chaosmod.cum": "Cum",
+      "entity.chaosmod.among_us": "Among Us",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "block.chaosmod.potatus": "Potatus",
@@ -418,10 +441,14 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "block.chaosmod.sus_block": "Sus Block",
+      "block.chaosmod.cum": "Cum",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.deek": "Ender Eye ",
+      "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.netherit_pickax": "Netherit Pickax"
     }
   },

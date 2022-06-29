@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
+import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
@@ -63,6 +64,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> AMONG_US = REGISTRY.register("among_us_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMONG_US, -52429, -3394816, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> CUM_BUCKET = REGISTRY.register("cum_bucket", () -> new CumItem());
+	public static final RegistryObject<Item> SUS = REGISTRY.register("sus", () -> new SusItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

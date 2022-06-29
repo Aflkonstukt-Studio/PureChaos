@@ -1,17 +1,53 @@
 
 package xyz.vikkivuk.chaosmod.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.nbt.Tag;
-import net.minecraft.sounds.SoundEvent;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
-import javax.annotation.Nullable;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobCategory;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.BlockPos;
 
 @Mod.EventBusSubscriber
 public class AmongUsEntity extends Monster {
-
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMONG_US.get(), 20, 4, 4));
@@ -28,10 +64,8 @@ public class AmongUsEntity extends Monster {
 		super(type, world);
 		xpReward = 420;
 		setNoAi(false);
-
 		setCustomName(new TextComponent("Sussy Baka"));
 		setCustomNameVisible(true);
-
 	}
 
 	@Override
@@ -42,20 +76,16 @@ public class AmongUsEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
-
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
-
 	}
 
 	@Override
@@ -101,11 +131,8 @@ public class AmongUsEntity extends Monster {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
-
 		super.mobInteract(sourceentity, hand);
-
 		sourceentity.startRiding(this);
-
 		return retval;
 	}
 
@@ -144,17 +171,12 @@ public class AmongUsEntity extends Monster {
 			this.yBodyRot = entity.getYRot();
 			this.yHeadRot = entity.getYRot();
 			this.maxUpStep = 1.0F;
-
 			if (entity instanceof LivingEntity passenger) {
 				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
-
 				float forward = passenger.zza;
-
 				float strafe = passenger.xxa;
-
 				super.travel(new Vec3(strafe, 0, forward));
 			}
-
 			this.animationSpeedOld = this.animationSpeed;
 			double d1 = this.getX() - this.xo;
 			double d0 = this.getZ() - this.zo;
@@ -167,13 +189,11 @@ public class AmongUsEntity extends Monster {
 		}
 		this.maxUpStep = 0.5F;
 		this.flyingSpeed = 0.02F;
-
 		super.travel(dir);
 	}
 
 	public void aiStep() {
 		super.aiStep();
-
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
@@ -194,7 +214,6 @@ public class AmongUsEntity extends Monster {
 		SpawnPlacements.register(ChaosmodModEntities.AMONG_US.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -203,12 +222,8 @@ public class AmongUsEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 69);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
-
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 16);
-
 		return builder;
 	}
-
 }
