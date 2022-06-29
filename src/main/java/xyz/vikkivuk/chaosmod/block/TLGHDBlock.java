@@ -5,11 +5,10 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
-public class SusBlockBlock extends Block {
+public class TLGHDBlock extends Block {
 
-	public SusBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WEEPING_VINES).strength(1f, 10f).lightLevel(s -> 6).friction(5f)
-				.speedFactor(3f).jumpFactor(4f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+	public TLGHDBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f));
 
 	}
 

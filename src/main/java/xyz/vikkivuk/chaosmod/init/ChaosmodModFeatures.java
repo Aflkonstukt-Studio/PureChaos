@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
@@ -52,6 +53,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CumFeature.GENERATE_BIOMES, CumFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> AMONG_U_SPP = register("among_u_spp", AmongUSppFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmongUSppFeature.GENERATE_BIOMES, AmongUSppFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> STARAVODA = register("staravoda", StaravodaFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, StaravodaFeature.GENERATE_BIOMES, StaravodaFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

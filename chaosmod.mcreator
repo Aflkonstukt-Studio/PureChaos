@@ -391,6 +391,41 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_u_spp"
+    },
+    {
+      "name": "Xmasterwoopainting",
+      "type": "painting",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xmasterwoopainting"
+    },
+    {
+      "name": "TLGHD",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tlghd"
+    },
+    {
+      "name": "Amongsus",
+      "type": "potion",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongsus"
+    },
+    {
+      "name": "Staravoda",
+      "type": "fluid",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staravoda",
+      "metadata": {
+        "gb": true
+      }
     }
   ],
   "variable_elements": [],
@@ -431,17 +466,13 @@
   "language_map": {
     "en_us": {
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
-      "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
-      "fluid.chaosmod.cum": "Cum",
-      "entity.chaosmod.among_us": "Among Us",
       "entity.chaosmod.trident": "Tridet",
       "block.chaosmod.potatus": "Potatus",
       "fluid.chaosmod.pee": "Pee",
@@ -452,15 +483,12 @@
       "item.chaosmod.dipex": "DiPixk",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
-      "block.chaosmod.sus_block": "Sus Block",
-      "block.chaosmod.cum": "Cum",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
       "item.chaosmod.pickax": "Pickax",
-      "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
@@ -475,9 +503,7 @@
       "block.chaosmod.sa_ds": "Block ?",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.sus": "Sus Portal Birther",
-      "item.chaosmod.deek": "Ender Eye ",
-      "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
-      "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg"
+      "item.chaosmod.deek": "Ender Eye "
     }
   },
   "foldersRoot": {

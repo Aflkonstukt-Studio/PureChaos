@@ -5,8 +5,10 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.block.WoodDimensionPortalBlock;
+import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
 import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
+import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
@@ -41,6 +43,8 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> SUS_BLOCK = REGISTRY.register("sus_block", () -> new SusBlockBlock());
 	public static final RegistryObject<Block> CUM = REGISTRY.register("cum", () -> new CumBlock());
 	public static final RegistryObject<Block> SUS_PORTAL = REGISTRY.register("sus_portal", () -> new SusPortalBlock());
+	public static final RegistryObject<Block> STARAVODA = REGISTRY.register("staravoda", () -> new StaravodaBlock());
+	public static final RegistryObject<Block> TLGHD = REGISTRY.register("tlghd", () -> new TLGHDBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.fluid.StaravodaFluid;
 import xyz.vikkivuk.chaosmod.fluid.PeeFluid;
 import xyz.vikkivuk.chaosmod.fluid.CumFluid;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
@@ -26,6 +27,8 @@ public class ChaosmodModFluids {
 	public static final RegistryObject<Fluid> FLOWING_PEE = REGISTRY.register("flowing_pee", () -> new PeeFluid.Flowing());
 	public static final RegistryObject<Fluid> CUM = REGISTRY.register("cum", () -> new CumFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_CUM = REGISTRY.register("flowing_cum", () -> new CumFluid.Flowing());
+	public static final RegistryObject<Fluid> STARAVODA = REGISTRY.register("staravoda", () -> new StaravodaFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_STARAVODA = REGISTRY.register("flowing_staravoda", () -> new StaravodaFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -35,6 +38,8 @@ public class ChaosmodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_PEE.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(CUM.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_CUM.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(STARAVODA.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_STARAVODA.get(), renderType -> renderType == RenderType.translucent());
 		}
 	}
 }

@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
+import xyz.vikkivuk.chaosmod.item.StaravodaItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
@@ -69,6 +70,8 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_2, -26215, -52429, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> AMOGUS_3 = REGISTRY.register("amogus_3_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3, -16763905, -65536, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> STARAVODA_BUCKET = REGISTRY.register("staravoda_bucket", () -> new StaravodaItem());
+	public static final RegistryObject<Item> TLGHD = block(ChaosmodModBlocks.TLGHD, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

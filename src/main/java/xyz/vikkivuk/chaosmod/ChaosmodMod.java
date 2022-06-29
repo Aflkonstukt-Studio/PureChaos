@@ -14,6 +14,7 @@
 package xyz.vikkivuk.chaosmod;
 
 import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModPotions;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
@@ -61,6 +62,7 @@ public class ChaosmodMod {
 		ChaosmodModFluids.REGISTRY.register(bus);
 		ChaosmodModEnchantments.REGISTRY.register(bus);
 
+		ChaosmodModPotions.REGISTRY.register(bus);
 		ChaosmodModBiomes.REGISTRY.register(bus);
 		ChaosmodModParticleTypes.REGISTRY.register(bus);
 	}
