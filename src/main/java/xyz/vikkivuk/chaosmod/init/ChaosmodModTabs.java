@@ -17,7 +17,7 @@ public class ChaosmodModTabs {
 		TAB_CHAOSTAB = new CreativeModeTab("tabchaostab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(ChaosmodModItems.PEEMENSION.get());
+				return new ItemStack(ChaosmodModItems.DIRTSWORD.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

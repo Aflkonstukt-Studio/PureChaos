@@ -6,7 +6,6 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
-import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AentityRenderer;
 
@@ -26,6 +25,5 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.TRIDENT.get(), TridentRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMONG_US.get(), AmongUsRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_2.get(), Amogus2Renderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3.get(), Amogus3Renderer::new);
 	}
 }
