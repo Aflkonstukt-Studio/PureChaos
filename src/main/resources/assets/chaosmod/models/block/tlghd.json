@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/602832815390797c7c2076f41d771f1a57b9a6af",
+    "up": "chaosmod:blocks/side_lore_1",
+    "north": "chaosmod:blocks/screenshot_2021-07-09_204153",
+    "east": "chaosmod:blocks/422888e8f9292a0c",
+    "south": "chaosmod:blocks/thetrio",
+    "west": "chaosmod:blocks/wfr39yzdnbg41",
+    "particle": "chaosmod:blocks/death_block"
+  }
+}
