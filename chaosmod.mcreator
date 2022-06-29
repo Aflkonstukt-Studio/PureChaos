@@ -343,7 +343,16 @@
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "amogus",
+      "files": [
+        "amogus-sound-effect"
+      ],
+      "category": "music",
+      "subtitle": "sus"
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
@@ -359,6 +368,7 @@
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.spear": "Spear",
+      "subtitles.amogus": "sus",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
