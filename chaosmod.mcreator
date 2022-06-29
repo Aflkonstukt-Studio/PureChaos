@@ -383,6 +383,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_3"
+    },
+    {
+      "name": "AmongUSpp",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_u_spp"
     }
   ],
   "variable_elements": [],

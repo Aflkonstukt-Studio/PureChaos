@@ -11,6 +11,7 @@ import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
+import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -49,6 +50,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeathFeature.GENERATE_BIOMES, DeathFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CUM = register("cum", CumFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CumFeature.GENERATE_BIOMES, CumFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> AMONG_U_SPP = register("among_u_spp", AmongUSppFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmongUSppFeature.GENERATE_BIOMES, AmongUSppFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
