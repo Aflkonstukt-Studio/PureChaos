@@ -1,0 +1,49 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Cum"
+    },
+    "airColor": {
+      "value": -52225,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "portalParticles": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "CUSTOM:amogus"
+    },
+    "igniterName": "Sus Portal Birther",
+    "igniterTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "texture": "flag",
+    "portalTexture": "among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "enablePortal": true
+  }
+}

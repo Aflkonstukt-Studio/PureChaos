@@ -315,14 +315,6 @@
       "registry_name": "spear"
     },
     {
-      "name": "AmongUs",
-      "type": "livingentity",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "among_us"
-    },
-    {
       "name": "SusBlock",
       "type": "block",
       "sortid": 30,
@@ -350,6 +342,33 @@
       }
     },
     {
+      "name": "AmongUs",
+      "type": "livingentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us"
+    },
+    {
+      "name": "Sus",
+      "type": "dimension",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Susus",
+      "type": "biome",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susus"
+    },
+    {
       "name": "Amogus2",
       "type": "livingentity",
       "sortid": 32,
@@ -360,6 +379,14 @@
   ],
   "variable_elements": [],
   "sound_elements": [
+    {
+      "name": "amogus",
+      "files": [
+        "amogus-sound-effect"
+      ],
+      "category": "music",
+      "subtitle": "sus"
+    },
     {
       "name": "footstep_metal_amogus",
       "files": [
@@ -383,14 +410,6 @@
       ],
       "category": "ambient",
       "subtitle": "amogus"
-    },
-    {
-      "name": "amogus",
-      "files": [
-        "amogus-sound-effect"
-      ],
-      "category": "music",
-      "subtitle": "sus"
     }
   ],
   "language_map": {
@@ -400,8 +419,9 @@
       "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.pickax": "Pickax",
-      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
+      "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
+      "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "block.chaosmod.death": "Death",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -410,14 +430,12 @@
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.spear": "Spear",
-      "entity.chaosmod.amogus_2": "Amogus 2",
       "subtitles.amogus": "sus",
-      "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.chaosmod.among_us": "Among Us",
       "fluid.chaosmod.cum": "Cum",
+      "entity.chaosmod.among_us": "Among Us",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "block.chaosmod.potatus": "Potatus",
@@ -436,6 +454,7 @@
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.deek": "Ender Eye ",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.netherit_pickax": "Netherit Pickax"

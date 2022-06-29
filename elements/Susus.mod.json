@@ -1,0 +1,152 @@
+{
+  "_fv": 28,
+  "_type": "biome",
+  "definition": {
+    "name": "Susus",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.PLANKS#0"
+    },
+    "airColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -13369600,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.nether_wastes.mood"
+    },
+    "additionsSound": {
+      "value": "ambient.cave"
+    },
+    "music": {
+      "value": "CUSTOM:amogus"
+    },
+    "moodSound": {
+      "value": "ambient.cave"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "particlesProbability": 12.0,
+    "biomeCategory": "NONE",
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "spawnBiomeNether": false,
+    "spawnInCaves": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 6,
+    "seagrassPerChunk": 69,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 55,
+    "bigMushroomsChunk": 42,
+    "sandPatchesPerChunk": 1,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 5,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 19,
+    "treeStem": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "treeVines": {
+      "value": "CUSTOM:SADs"
+    },
+    "treeFruits": {
+      "value": "Blocks.LIGHT"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": true,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": true,
+    "spawnIgloo": true,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "WARM",
+    "spawnNetherBridge": true,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
+    "spawnEndCity": true,
+    "spawnRuinedPortal": "NETHER",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Aentity"
+        },
+        "minGroup": 1,
+        "maxGroup": 360,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Trident"
+        },
+        "minGroup": 1,
+        "maxGroup": 69,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:Aentity"
+        },
+        "minGroup": 1,
+        "maxGroup": 420,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:AmongUs"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}
