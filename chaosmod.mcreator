@@ -418,6 +418,76 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "xmasterwoopainting"
+    },
+    {
+      "name": "AmongUSpp",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_u_spp"
+    },
+    {
+      "name": "AmongUSpORTAL",
+      "type": "structure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_u_sp_ortal"
+    },
+    {
+      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "type": "rangeditem",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
+    },
+    {
+      "name": "PeePool",
+      "type": "structure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee_pool"
+    },
+    {
+      "name": "WoodRuinedPortal",
+      "type": "structure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_ruined_portal"
+    },
+    {
+      "name": "Amugus",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amugus",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "JukeBoxCave",
+      "type": "structure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juke_box_cave"
+    },
+    {
+      "name": "AmongUsDungeon",
+      "type": "structure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us_dungeon"
     }
   ],
   "variable_elements": [],

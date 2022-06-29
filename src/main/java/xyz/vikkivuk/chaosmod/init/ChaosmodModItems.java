@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
+import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
 import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
@@ -22,6 +23,7 @@ import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
 import xyz.vikkivuk.chaosmod.item.BrokenChestplate1Item;
+import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -72,6 +74,12 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3, -16763905, -65536, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> STARAVODA_BUCKET = REGISTRY.register("staravoda_bucket", () -> new StaravodaItem());
 	public static final RegistryObject<Item> TLGHD = block(ChaosmodModBlocks.TLGHD, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> AMUGUS_HELMET = REGISTRY.register("amugus_helmet", () -> new AmugusItem.Helmet());
+	public static final RegistryObject<Item> AMUGUS_CHESTPLATE = REGISTRY.register("amugus_chestplate", () -> new AmugusItem.Chestplate());
+	public static final RegistryObject<Item> AMUGUS_LEGGINGS = REGISTRY.register("amugus_leggings", () -> new AmugusItem.Leggings());
+	public static final RegistryObject<Item> AMUGUS_BOOTS = REGISTRY.register("amugus_boots", () -> new AmugusItem.Boots());
+	public static final RegistryObject<Item> KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU = REGISTRY
+			.register("kondomnepitajzastoovoradimalispoileralertonimarupu", () -> new KondomnepitajzastoovoradimalispoileralertonimarupuItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

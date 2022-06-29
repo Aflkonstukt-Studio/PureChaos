@@ -51,14 +51,14 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "NONE",
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": true,
     "spawnInCaves": true,
-    "biomeWeight": 10,
+    "biomeWeight": 25,
     "biomeDictionaryTypes": [
       "NETHER"
     ],
