@@ -15,5 +15,6 @@ public class ChaosmodModPaintings {
 	@SubscribeEvent
 	public static void registerMotives(RegistryEvent.Register<Motive> event) {
 		event.getRegistry().register(new Motive(400, 200).setRegistryName("masterpiece"));
+		event.getRegistry().register(new Motive(16, 16).setRegistryName("xmasterwoopainting"));
 	}
 }

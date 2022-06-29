@@ -1,23 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.fluid;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-import xyz.vikkivuk.chaosmod.fluid.attributes.StaravodaFluidAttributes;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fluids.ForgeFlowingFluid;
-
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.particles.ParticleOptions;
-
 public abstract class StaravodaFluid extends ForgeFlowingFluid {
+
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.STARAVODA,
 			ChaosmodModFluids.FLOWING_STARAVODA,
 			StaravodaFluidAttributes
@@ -69,4 +54,5 @@ public abstract class StaravodaFluid extends ForgeFlowingFluid {
 			return false;
 		}
 	}
+
 }
