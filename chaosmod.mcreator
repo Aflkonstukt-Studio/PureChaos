@@ -350,14 +350,6 @@
       "registry_name": "among_us"
     },
     {
-      "name": "Susus",
-      "type": "biome",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "susus"
-    },
-    {
       "name": "Sus",
       "type": "dimension",
       "sortid": 32,
@@ -367,6 +359,22 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "Susus",
+      "type": "biome",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susus"
+    },
+    {
+      "name": "Amogus2",
+      "type": "livingentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amogus_2"
     }
   ],
   "variable_elements": [],

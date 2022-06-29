@@ -10,35 +10,36 @@ import net.minecraft.sounds.SoundEvent;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class AmongUsEntity extends Monster {
+public class Amogus2Entity extends Monster {
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMONG_US.get(), 20, 4, 10));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 20, 4, 4));
 	}
 
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
-			ServerBossEvent.BossBarOverlay.PROGRESS);
-
-	public AmongUsEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(ChaosmodModEntities.AMONG_US.get(), world);
+	public Amogus2Entity(PlayMessages.SpawnEntity packet, Level world) {
+		this(ChaosmodModEntities.AMOGUS_2.get(), world);
 	}
 
-	public AmongUsEntity(EntityType<AmongUsEntity> type, Level world) {
+	public Amogus2Entity(EntityType<Amogus2Entity> type, Level world) {
 		super(type, world);
-		xpReward = 420;
+		xpReward = 0;
 		setNoAi(false);
 
-		setCustomName(new TextComponent("Sussy Baka"));
+		setCustomName(new TextComponent("amogus"));
 		setCustomNameVisible(true);
 
-		setPersistenceRequired();
-
+		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
 	public Packet<?> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
+	}
+
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new FlyingPathNavigation(this, world);
 	}
 
 	@Override
@@ -57,47 +58,10 @@ public class AmongUsEntity extends Monster {
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, true));
-		this.goalSelector.addGoal(7, new Goal() {
-			{
-				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
-			}
-
-			public boolean canUse() {
-				if (AmongUsEntity.this.getTarget() != null && !AmongUsEntity.this.getMoveControl().hasWanted()) {
-					return true;
-				} else {
-					return false;
-				}
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				return AmongUsEntity.this.getMoveControl().hasWanted() && AmongUsEntity.this.getTarget() != null
-						&& AmongUsEntity.this.getTarget().isAlive();
-			}
-
-			@Override
-			public void start() {
-				LivingEntity livingentity = AmongUsEntity.this.getTarget();
-				Vec3 vec3d = livingentity.getEyePosition(1);
-				AmongUsEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 2);
-			}
-
-			@Override
-			public void tick() {
-				LivingEntity livingentity = AmongUsEntity.this.getTarget();
-				if (AmongUsEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-					AmongUsEntity.this.doHurtTarget(livingentity);
-				} else {
-					double d0 = AmongUsEntity.this.distanceToSqr(livingentity);
-					if (d0 < 16) {
-						Vec3 vec3d = livingentity.getEyePosition(1);
-						AmongUsEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 2);
-					}
-				}
-			}
-		});
+		this.goalSelector.addGoal(6, new PanicGoal(this, 10));
+		this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(8, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(9, new AvoidEntityGoal<>(this, Player.class, (float) 6, 1, 1.2));
 
 	}
 
@@ -106,14 +70,9 @@ public class AmongUsEntity extends Monster {
 		return MobType.UNDEAD;
 	}
 
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
-	}
-
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(ChaosmodModBlocks.CUM.get()));
+		this.spawnAtLocation(new ItemStack(ChaosmodModBlocks.SUS_BLOCK.get()));
 	}
 
 	@Override
@@ -137,18 +96,22 @@ public class AmongUsEntity extends Monster {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.FALL)
-			return false;
-		if (source.getMsgId().equals("trident"))
-			return false;
-		return super.hurt(source, amount);
+	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
+		return false;
 	}
 
 	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		DirtswordLivingEntityIsHitWithToolProcedure.execute(this);
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.getDirectEntity() instanceof Player)
+			return false;
+		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
+			return false;
+		if (source == DamageSource.FALL)
+			return false;
+		if (source == DamageSource.CACTUS)
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override
@@ -164,26 +127,18 @@ public class AmongUsEntity extends Monster {
 	}
 
 	@Override
-	public boolean canChangeDimensions() {
+	public boolean canBreatheUnderwater() {
+		return true;
+	}
+
+	@Override
+	public boolean checkSpawnObstruction(LevelReader world) {
+		return world.isUnobstructed(this);
+	}
+
+	@Override
+	public boolean isPushedByFluid() {
 		return false;
-	}
-
-	@Override
-	public void startSeenByPlayer(ServerPlayer player) {
-		super.startSeenByPlayer(player);
-		this.bossInfo.addPlayer(player);
-	}
-
-	@Override
-	public void stopSeenByPlayer(ServerPlayer player) {
-		super.stopSeenByPlayer(player);
-		this.bossInfo.removePlayer(player);
-	}
-
-	@Override
-	public void customServerAiStep() {
-		super.customServerAiStep();
-		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
 	@Override
@@ -225,43 +180,54 @@ public class AmongUsEntity extends Monster {
 		super.travel(dir);
 	}
 
+	@Override
+	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+	}
+
+	@Override
+	public void setNoGravity(boolean ignored) {
+		super.setNoGravity(true);
+	}
+
 	public void aiStep() {
 		super.aiStep();
+
+		this.setNoGravity(true);
 
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Entity entity = this;
 		Level world = this.level;
-		for (int l = 0; l < 6; ++l) {
+		for (int l = 0; l < 4; ++l) {
 			double x0 = x + random.nextFloat();
 			double y0 = y + random.nextFloat();
 			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 2D;
-			double dy = (random.nextFloat() - 0.5D) * 2D;
-			double dz = (random.nextFloat() - 0.5D) * 2D;
-			world.addParticle((SimpleParticleType) (ChaosmodModParticleTypes.CUM_DRIP.get()), x0, y0, z0, dx, dy, dz);
+			double dx = (random.nextFloat() - 0.5D) * 1D;
+			double dy = (random.nextFloat() - 0.5D) * 1D;
+			double dz = (random.nextFloat() - 0.5D) * 1D;
+			world.addParticle(ParticleTypes.SPIT, x0, y0, z0, dx, dy, dz);
 		}
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ChaosmodModEntities.AMONG_US.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(ChaosmodModEntities.AMOGUS_2.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 
-		DungeonHooks.addDungeonMob(ChaosmodModEntities.AMONG_US.get(), 180);
+		DungeonHooks.addDungeonMob(ChaosmodModEntities.AMOGUS_2.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 30);
-		builder = builder.add(Attributes.MAX_HEALTH, 69);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 16);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.3);
 
 		return builder;
 	}
