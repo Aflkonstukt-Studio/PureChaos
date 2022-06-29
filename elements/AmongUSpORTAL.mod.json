@@ -2,14 +2,14 @@
   "_fv": 28,
   "_type": "structure",
   "definition": {
-    "structure": "amongus",
+    "structure": "amongusportal",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 5000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": 5,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
@@ -22,6 +22,6 @@
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }
