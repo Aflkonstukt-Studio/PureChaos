@@ -436,22 +436,6 @@
       "registry_name": "among_u_sp_ortal"
     },
     {
-      "name": "AmongUsDungeon",
-      "type": "structure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "among_us_dungeon"
-    },
-    {
-      "name": "JukeBoxCave",
-      "type": "structure",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "juke_box_cave"
-    },
-    {
       "name": "PeePool",
       "type": "structure",
       "sortid": 40,
@@ -466,6 +450,44 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_ruined_portal"
+    },
+    {
+      "name": "JukeBoxCave",
+      "type": "structure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juke_box_cave"
+    },
+    {
+      "name": "AmongUsDungeon",
+      "type": "structure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us_dungeon"
+    },
+    {
+      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "type": "rangeditem",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
+    },
+    {
+      "name": "Amugus",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amugus",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -511,8 +533,8 @@
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
@@ -538,9 +560,11 @@
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
+      "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
+      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.pickax": "Pickax",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
@@ -553,11 +577,14 @@
       "subtitles.amogus": "sus",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
+      "item.chaosmod.amugus_boots": "Amugus Boots",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.sa_ds": "Block ?",
-      "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.sus": "Sus Portal Birther",
+      "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.deek": "Ender Eye ",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg"
