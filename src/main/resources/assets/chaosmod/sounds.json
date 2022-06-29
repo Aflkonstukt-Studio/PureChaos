@@ -1,14 +1,4 @@
 {
-  "amongus_ambient": {
-    "category": "ambient",
-    "subtitle": "subtitles.amongus_ambient",
-    "sounds": [
-      {
-        "name": "chaosmod:ambience-main-ambience",
-        "stream": false
-      }
-    ]
-  },
   "footstep_metal_amogus": {
     "category": "hostile",
     "subtitle": "subtitles.footstep_metal_amogus",
@@ -25,6 +15,16 @@
     "sounds": [
       {
         "name": "chaosmod:impostor-kill_1_",
+        "stream": false
+      }
+    ]
+  },
+  "amongus_ambient": {
+    "category": "ambient",
+    "subtitle": "subtitles.amongus_ambient",
+    "sounds": [
+      {
+        "name": "chaosmod:ambience-main-ambience",
         "stream": false
       }
     ]

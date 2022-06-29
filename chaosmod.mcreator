@@ -321,18 +321,37 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_us"
+    },
+    {
+      "name": "SusBlock",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_block"
+    },
+    {
+      "name": "CumDrip",
+      "type": "particle",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_drip"
+    },
+    {
+      "name": "Cum",
+      "type": "fluid",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "gb": true
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [
-    {
-      "name": "amongus_ambient",
-      "files": [
-        "ambience-main-ambience"
-      ],
-      "category": "ambient",
-      "subtitle": "amogus"
-    },
     {
       "name": "footstep_metal_amogus",
       "files": [
@@ -348,6 +367,14 @@
       ],
       "category": "hostile",
       "subtitle": "huvh"
+    },
+    {
+      "name": "amongus_ambient",
+      "files": [
+        "ambience-main-ambience"
+      ],
+      "category": "ambient",
+      "subtitle": "amogus"
     }
   ],
   "language_map": {
@@ -356,8 +383,8 @@
       "block.chaosmod.emepee": "Emepee",
       "subtitles.kill": "huvh",
       "item.chaosmod.pickax": "Pickax",
-      "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
+      "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "block.chaosmod.death": "Death",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -369,7 +396,6 @@
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.chaosmod.among_us": "Among Us",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "block.chaosmod.potatus": "Potatus",
@@ -387,7 +413,6 @@
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.deek": "Ender Eye ",
-      "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.netherit_pickax": "Netherit Pickax"
     }
   },

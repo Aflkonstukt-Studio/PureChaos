@@ -1,0 +1,21 @@
+{
+  "_fv": 28,
+  "_type": "particle",
+  "definition": {
+    "texture": "mega_drip.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 3.0,
+    "speedFactor": 5.0,
+    "gravity": -4.2069,
+    "maxAge": 17,
+    "maxAgeDiff": 0,
+    "angularVelocity": 6.9,
+    "angularAcceleration": 4.2,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "LIT"
+  }
+}

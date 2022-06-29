@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.block.WoodDimensionPortalBlock;
+import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
@@ -12,6 +13,7 @@ import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
+import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -35,6 +37,8 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> DEATH = REGISTRY.register("death", () -> new DeathBlock());
 	public static final RegistryObject<Block> WOOD_DIMENSION_PORTAL = REGISTRY.register("wood_dimension_portal",
 			() -> new WoodDimensionPortalBlock());
+	public static final RegistryObject<Block> SUS_BLOCK = REGISTRY.register("sus_block", () -> new SusBlockBlock());
+	public static final RegistryObject<Block> CUM = REGISTRY.register("cum", () -> new CumBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
