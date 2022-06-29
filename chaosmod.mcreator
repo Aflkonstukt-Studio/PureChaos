@@ -340,6 +340,14 @@
       "metadata": {
         "gb": true
       }
+    },
+    {
+      "name": "AmongUs",
+      "type": "livingentity",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us"
     }
   ],
   "variable_elements": [],
@@ -351,13 +359,37 @@
       ],
       "category": "music",
       "subtitle": "sus"
+    },
+    {
+      "name": "footstep_metal_amogus",
+      "files": [
+        "footstep-metal-03"
+      ],
+      "category": "hostile",
+      "subtitle": "idk"
+    },
+    {
+      "name": "kill",
+      "files": [
+        "impostor-kill_1_"
+      ],
+      "category": "hostile",
+      "subtitle": "huvh"
+    },
+    {
+      "name": "amongus_ambient",
+      "files": [
+        "ambience-main-ambience"
+      ],
+      "category": "ambient",
+      "subtitle": "amogus"
     }
   ],
   "language_map": {
     "en_us": {
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "subtitles.kill": "huvh",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
@@ -365,6 +397,7 @@
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
+      "subtitles.amongus_ambient": "amogus",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.spear": "Spear",
@@ -372,12 +405,12 @@
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
-      "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "block.chaosmod.potatus": "Potatus",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "subtitles.footstep_metal_amogus": "idk",
       "item.chaosmod.food_item_3": "Food Item 3",
       "item.chaosmod.food_item_2": "Food Item 2",
       "item.chaosmod.dipex": "DiPixk",
@@ -385,8 +418,6 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
-      "block.chaosmod.sus_block": "Sus Block",
-      "block.chaosmod.cum": "Cum",
       "block.chaosmod.pee_block": "Pee Block",
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.hell_but_overworld": "Neover",

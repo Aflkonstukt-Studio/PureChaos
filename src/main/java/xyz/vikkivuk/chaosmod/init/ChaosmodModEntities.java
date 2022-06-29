@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
+import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -35,6 +36,11 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(TridentEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AmongUsEntity>> AMONG_US = register("among_us",
+			EntityType.Builder.<AmongUsEntity>of(AmongUsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(69)
+					.setUpdateInterval(3).setCustomClientFactory(AmongUsEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -45,6 +51,7 @@ public class ChaosmodModEntities {
 		event.enqueueWork(() -> {
 			AentityEntity.init();
 			TridentEntity.init();
+			AmongUsEntity.init();
 		});
 	}
 
@@ -52,5 +59,6 @@ public class ChaosmodModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(AENTITY.get(), AentityEntity.createAttributes().build());
 		event.put(TRIDENT.get(), TridentEntity.createAttributes().build());
+		event.put(AMONG_US.get(), AmongUsEntity.createAttributes().build());
 	}
 }
