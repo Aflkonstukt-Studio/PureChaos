@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Amogus 2",
     "mobLabel": "amogus",
-    "mobModelName": "Modelamiogyhus",
-    "mobModelTexture": "aaas.png",
+    "mobModelName": "Modelcustom_model",
+    "mobModelTexture": "mogus.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
