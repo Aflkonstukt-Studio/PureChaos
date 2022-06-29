@@ -46,13 +46,13 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 public class HellButOverworldBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.142857142857f, 0.142857142857f),
-			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
-			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.981850131502f, -0.696135845788f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.642857142857f, 1.357142857143f),
+			Climate.Parameter.span(-1.357142857143f, -0.642857142857f), Climate.Parameter.span(0.152857142857f, 0.867142857143f),
+			Climate.Parameter.span(0.442857142857f, 1.157142857143f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-1.196135845788f, -0.481850131502f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.49f, 1.51f), Climate.Parameter.span(-0.2f, 1.8f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.838992988645f, 0.161007011355f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-1.99f, 3.01f), Climate.Parameter.span(-1.7f, 3.3f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-3.338992988645f, 1.661007011355f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3407872).waterColor(-52429).waterFogColor(-52429).skyColor(-3407872)
@@ -82,9 +82,8 @@ public class HellButOverworldBiome {
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.PIGLIN, 20, 4, 4));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.HOGLIN, 20, 4, 4));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.ZOMBIFIED_PIGLIN, 20, 4, 4));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f)
-				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.NONE).temperature(2f).downfall(0f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 
 	public static void init() {

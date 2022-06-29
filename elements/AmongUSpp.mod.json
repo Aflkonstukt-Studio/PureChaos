@@ -1,0 +1,27 @@
+{
+  "_fv": 28,
+  "_type": "structure",
+  "definition": {
+    "structure": "amongus",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 3000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "Nether",
+      "End",
+      "CUSTOM:Peemension",
+      "CUSTOM:WoodDimension",
+      "CUSTOM:Sus"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+  }
+}

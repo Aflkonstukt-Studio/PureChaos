@@ -76,6 +76,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> AMUGUS_CHESTPLATE = REGISTRY.register("amugus_chestplate", () -> new AmugusItem.Chestplate());
 	public static final RegistryObject<Item> AMUGUS_LEGGINGS = REGISTRY.register("amugus_leggings", () -> new AmugusItem.Leggings());
 	public static final RegistryObject<Item> AMUGUS_BOOTS = REGISTRY.register("amugus_boots", () -> new AmugusItem.Boots());
+	public static final RegistryObject<Item> TLGHD = block(ChaosmodModBlocks.TLGHD, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
