@@ -1,0 +1,51 @@
+{
+  "_fv": 28,
+  "_type": "fluid",
+  "definition": {
+    "name": "Staravoda",
+    "bucketName": "Staravoda Bucket",
+    "textureStill": "minecraft-water",
+    "textureFlowing": "minecraft-water",
+    "tintType": "Water",
+    "canMultiply": true,
+    "flowRate": 5,
+    "levelDecrease": 1,
+    "slopeFindDistance": 1,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "WATER_BUBBLE"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "emptySound": {
+      "value": "CUSTOM:amogus"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Old water from clasic versions of the game"
+    ],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 20,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": []
+  }
+}

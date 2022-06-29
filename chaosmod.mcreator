@@ -383,6 +383,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_3"
+    },
+    {
+      "name": "Staravoda",
+      "type": "fluid",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staravoda",
+      "metadata": {
+        "gb": true
+      }
     }
   ],
   "variable_elements": [],
@@ -424,8 +435,10 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
+      "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.spear": "Spear",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
@@ -461,6 +474,7 @@
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
+      "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "item.chaosmod.pee_bucket": "Pee Bucket",

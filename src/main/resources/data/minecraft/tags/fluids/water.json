@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "chaosmod:pee",
-    "chaosmod:flowing_pee"
+    "chaosmod:flowing_pee",
+    "chaosmod:staravoda",
+    "chaosmod:flowing_staravoda"
   ]
 }
