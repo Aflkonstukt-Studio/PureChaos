@@ -1,0 +1,39 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "adfsadsadsadasfaadfdfsfsd",
+    "customModelName": "Normal",
+    "name": "Penis",
+    "specialInfo": [
+      "Pee at 3003003030303 speed"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.boat.paddle_water"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.1,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.1,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:PotatoSpuds"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

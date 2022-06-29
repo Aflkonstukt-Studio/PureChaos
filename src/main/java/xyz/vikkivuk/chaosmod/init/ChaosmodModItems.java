@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
+import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
 import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
@@ -77,6 +78,8 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> AMUGUS_LEGGINGS = REGISTRY.register("amugus_leggings", () -> new AmugusItem.Leggings());
 	public static final RegistryObject<Item> AMUGUS_BOOTS = REGISTRY.register("amugus_boots", () -> new AmugusItem.Boots());
 	public static final RegistryObject<Item> TLGHD = block(ChaosmodModBlocks.TLGHD, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU = REGISTRY
+			.register("kondomnepitajzastoovoradimalispoileralertonimarupu", () -> new KondomnepitajzastoovoradimalispoileralertonimarupuItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
