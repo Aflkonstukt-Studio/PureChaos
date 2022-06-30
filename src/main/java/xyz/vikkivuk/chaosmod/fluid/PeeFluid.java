@@ -4,9 +4,9 @@ package xyz.vikkivuk.chaosmod.fluid;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-import xyz.vikkivuk.chaosmod.fluid.attributes.PeeFluidAttributes;
 
 import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraftforge.fluids.FluidAttributes;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -19,12 +19,9 @@ import net.minecraft.core.particles.ParticleOptions;
 public abstract class PeeFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.PEE,
 			ChaosmodModFluids.FLOWING_PEE,
-			PeeFluidAttributes.builder(new ResourceLocation("chaosmod:blocks/pee"), new ResourceLocation("chaosmod:blocks/pee_flowing"))
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/pee"), new ResourceLocation("chaosmod:blocks/pee_flowing"))
 
-					.color(-4138753))
-			.explosionResistance(100f)
-
-			.tickRate(2)
+	).explosionResistance(100f).canMultiply().tickRate(10)
 
 			.bucket(ChaosmodModItems.PEE_BUCKET).block(() -> (LiquidBlock) ChaosmodModBlocks.PEE.get());
 
