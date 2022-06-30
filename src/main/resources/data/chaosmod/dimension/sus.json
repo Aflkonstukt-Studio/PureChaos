@@ -64,7 +64,7 @@
     },
     "settings": {
       "name": "chaosmod:sus",
-      "sea_level": 0,
+      "sea_level": 32,
       "legacy_random_source": true,
       "disable_mob_generation": false,
       "noodle_caves_enabled": true,
@@ -72,6 +72,7 @@
       "aquifers_enabled": true,
       "deepslate_enabled": true,
       "ore_veins_enabled": true,
+      "min_surface_level": 0,
       "default_block": {
         "Name": "chaosmod:sus_block"
       },
@@ -84,24 +85,23 @@
       "noise": {
         "min_y": 0,
         "height": 128,
-        "size_horizontal": 2,
-        "size_vertical": 1,
-        "island_noise_override": true,
+        "size_horizontal": 1,
+        "size_vertical": 2,
         "sampling": {
-          "xz_scale": 2,
-          "y_scale": 1,
+          "xz_scale": 1,
+          "y_scale": 3,
           "xz_factor": 80,
-          "y_factor": 160
+          "y_factor": 60
         },
         "bottom_slide": {
-          "target": -0.234375,
-          "size": 7,
-          "offset": 1
+          "target": 2.5,
+          "size": 4,
+          "offset": -1
         },
         "top_slide": {
-          "target": -23.4375,
-          "size": 64,
-          "offset": -46
+          "target": 0.9375,
+          "size": 3,
+          "offset": 0
         },
         "terrain_shaper": {
           "offset": 0,
@@ -117,7 +117,7 @@
         "temperature": {
           "type": "minecraft:shifted_noise",
           "noise": "minecraft:temperature",
-          "xz_scale": 1.5,
+          "xz_scale": 0.25,
           "y_scale": 0,
           "shift_x": "minecraft:shift_x",
           "shift_y": 0,
@@ -126,7 +126,7 @@
         "vegetation": {
           "type": "minecraft:shifted_noise",
           "noise": "minecraft:vegetation",
-          "xz_scale": 1.5,
+          "xz_scale": 0.25,
           "y_scale": 0,
           "shift_x": "minecraft:shift_x",
           "shift_y": 0,
@@ -137,9 +137,18 @@
         "erosion": "minecraft:overworld/erosion",
         "depth": "minecraft:overworld/depth",
         "initial_density_without_jaggedness": {
-          "type": "minecraft:cache_2d",
-          "argument": {
-            "type": "minecraft:end_islands"
+          "type": "minecraft:mul",
+          "argument1": 4,
+          "argument2": {
+            "type": "minecraft:quarter_negative",
+            "argument": {
+              "type": "minecraft:mul",
+              "argument1": "minecraft:overworld/depth",
+              "argument2": {
+                "type": "minecraft:cache_2d",
+                "argument": "minecraft:overworld/factor"
+              }
+            }
           }
         },
         "final_density": {
@@ -153,7 +162,7 @@
                 "type": "minecraft:blend_density",
                 "argument": {
                   "type": "minecraft:slide",
-                  "argument": "minecraft:end/sloped_cheese"
+                  "argument": "minecraft:overworld/sloped_cheese"
                 }
               }
             }
@@ -166,6 +175,47 @@
       "surface_rule": {
         "type": "minecraft:sequence",
         "sequence": [
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:vertical_gradient",
+              "random_name": "minecraft:bedrock_floor",
+              "true_at_and_below": {
+                "above_bottom": 0
+              },
+              "false_at_and_above": {
+                "above_bottom": 5
+              }
+            },
+            "then_run": {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:bedrock"
+              }
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:not",
+              "invert": {
+                "type": "minecraft:vertical_gradient",
+                "random_name": "minecraft:bedrock_roof",
+                "true_at_and_below": {
+                  "below_top": 5
+                },
+                "false_at_and_above": {
+                  "below_top": 0
+                }
+              }
+            },
+            "then_run": {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:bedrock"
+              }
+            }
+          },
           {
             "type": "minecraft:condition",
             "if_true": {
@@ -299,6 +349,12 @@
                   }
                 }
               ]
+            }
+          },
+          {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "chaosmod:sus_block"
             }
           }
         ]

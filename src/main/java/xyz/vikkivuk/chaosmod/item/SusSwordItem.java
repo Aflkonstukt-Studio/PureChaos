@@ -42,7 +42,7 @@ public class SusSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ChaosmodModBlocks.SUS_BLOCK.get()));
 			}
-		}, 3, 65f, new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB).fireResistant());
+		}, 3, 65f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).fireResistant());
 	}
 
 	@Override

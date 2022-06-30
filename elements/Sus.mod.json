@@ -10,7 +10,7 @@
         "value": "CUSTOM:Susus"
       }
     ],
-    "worldGenType": "End like gen",
+    "worldGenType": "Nether like gen",
     "mainFillerBlock": {
       "value": "CUSTOM:SusBlock"
     },
@@ -40,7 +40,7 @@
     },
     "igniterName": "Sus Portal Birther",
     "igniterTab": {
-      "value": "CUSTOM:SusTab"
+      "value": "CUSTOM:Chaostab"
     },
     "texture": "flag",
     "portalTexture": "among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",

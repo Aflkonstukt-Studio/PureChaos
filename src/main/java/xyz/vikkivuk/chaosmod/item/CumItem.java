@@ -19,7 +19,7 @@ import java.util.List;
 public class CumItem extends BucketItem {
 	public CumItem() {
 		super(ChaosmodModFluids.CUM,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON).tab(ChaosmodModTabs.TAB_SUS_TAB));
+				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.UNCOMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

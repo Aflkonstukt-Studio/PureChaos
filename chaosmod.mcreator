@@ -793,14 +793,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "SusTab",
-      "type": "tab",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sus_tab"
     }
   ],
   "variable_elements": [],
@@ -868,7 +860,6 @@
       "block.chaosmod.staravoda": "Staravoda",
       "entity.chaosmod.josip": "JOSIP",
       "block.chaosmod.death": "Death",
-      "itemGroup.tabsus_tab": "Sus Tab",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
