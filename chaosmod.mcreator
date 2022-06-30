@@ -488,6 +488,78 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_us_dungeon"
+    },
+    {
+      "name": "SusSword",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_sword"
+    },
+    {
+      "name": "Susord",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susord"
+    },
+    {
+      "name": "Suschest",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suschest"
+    },
+    {
+      "name": "Sushead",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sushead"
+    },
+    {
+      "name": "Suslegs",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suslegs"
+    },
+    {
+      "name": "Susboot",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susboot"
+    },
+    {
+      "name": "Sussssssssssssssssss",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sussssssssssssssssss"
+    },
+    {
+      "name": "Fc",
+      "type": "function",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fc"
+    },
+    {
+      "name": "Summonsus",
+      "type": "keybind",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summonsus"
     }
   ],
   "variable_elements": [],
@@ -530,11 +602,12 @@
       "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
@@ -582,6 +655,7 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.sus": "Sus Portal Birther",

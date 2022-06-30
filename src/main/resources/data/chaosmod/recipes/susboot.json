@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "chaosmod:sus_block"
+    },
+    "2": {
+      "item": "chaosmod:sus_block"
+    },
+    "3": {
+      "item": "chaosmod:sus_block"
+    },
+    "5": {
+      "item": "chaosmod:sus_block"
+    }
+  },
+  "result": {
+    "item": "chaosmod:amugus_boots",
+    "count": 1
+  }
+}
