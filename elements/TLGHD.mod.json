@@ -2,12 +2,12 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "602832815390797c7c2076f41d771f1a57b9a6af",
-    "textureTop": "side_lore_1",
-    "textureLeft": "422888e8f9292a0c",
-    "textureFront": "screenshot_2021-07-09_204153",
-    "textureRight": "wfr39yzdnbg41",
-    "textureBack": "thetrio",
+    "texture": "josip_tee_lee_gay",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -37,7 +37,7 @@
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },

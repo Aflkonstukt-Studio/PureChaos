@@ -25,15 +25,14 @@ import net.minecraft.core.BlockPos;
 public abstract class CumFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CUM,
 			ChaosmodModFluids.FLOWING_CUM,
-			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/ppppppppppp-alpha"), new ResourceLocation("chaosmod:blocks/walk"))
-					.luminosity(9)
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/cum"), new ResourceLocation("chaosmod:blocks/cum")).luminosity(9)
 
 					.temperature(69420)
 
 					.rarity(Rarity.UNCOMMON).sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.soul_soil.break"))))
 			.explosionResistance(100f)
 
-			.tickRate(100)
+			.tickRate(6)
 
 			.slopeFindDistance(1).bucket(ChaosmodModItems.CUM_BUCKET).block(() -> (LiquidBlock) ChaosmodModBlocks.CUM.get());
 
