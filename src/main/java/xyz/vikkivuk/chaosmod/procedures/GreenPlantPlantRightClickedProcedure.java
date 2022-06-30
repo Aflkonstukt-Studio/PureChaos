@@ -13,6 +13,6 @@ public class GreenPlantPlantRightClickedProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.swing(InteractionHand.OFF_HAND, true);
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 999999, 69));
+			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 999999, 99));
 	}
 }
