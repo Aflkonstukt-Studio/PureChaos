@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.model.Modeltrident;
 import xyz.vikkivuk.chaosmod.client.model.Modelsplank;
+import xyz.vikkivuk.chaosmod.client.model.Modelmoth;
 import xyz.vikkivuk.chaosmod.client.model.Modeljosipmmarket;
 import xyz.vikkivuk.chaosmod.client.model.Modelikea_desk;
 import xyz.vikkivuk.chaosmod.client.model.Modelamongus_woo;
@@ -20,6 +21,7 @@ import net.minecraftforge.api.distmarker.Dist;
 public class ChaosmodModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
 		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
 		event.registerLayerDefinition(Modelsplank.LAYER_LOCATION, Modelsplank::createBodyLayer);
 		event.registerLayerDefinition(Modelikea_desk.LAYER_LOCATION, Modelikea_desk::createBodyLayer);

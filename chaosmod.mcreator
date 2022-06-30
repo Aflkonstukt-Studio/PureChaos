@@ -984,6 +984,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_range"
+    },
+    {
+      "name": "MothOfAggrevation",
+      "type": "livingentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moth_of_aggrevation"
+    },
+    {
+      "name": "TombstonePlaceProcd",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tombstone_place_procd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JosipPett",
+      "type": "livingentity",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip_pett"
     }
   ],
   "variable_elements": [],
@@ -1152,7 +1200,6 @@
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
       "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.amugus_boots": "Amugus Boots",
-      "item.chaosmod.josip_range": "Josip Range",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.pee_bucket": "Pee Bucket",
