@@ -94,7 +94,5 @@ public class SussssssssssssssssssScreen extends AbstractContainerScreen<Sussssss
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 105, this.topPos + 62, 40, 20, new TextComponent("buy"), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -94, this.topPos + 5, 51, 20, new TextComponent("exit"), e -> {
-		}));
 	}
 }

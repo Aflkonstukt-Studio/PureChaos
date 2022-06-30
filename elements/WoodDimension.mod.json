@@ -4,31 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "birch_forest"
-      },
-      {
-        "value": "birch_forest_hills"
-      },
-      {
-        "value": "roofed_forest"
-      },
-      {
-        "value": "mutated_roofed_forest"
-      },
-      {
-        "value": "mutated_forest"
-      },
-      {
         "value": "forest"
-      },
-      {
-        "value": "forest_hills"
-      },
-      {
-        "value": "mutated_birch_forest"
-      },
-      {
-        "value": "extreme_hills_with_trees"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -36,7 +12,7 @@
       "value": "Blocks.PLANKS#0"
     },
     "fluidBlock": {
-      "value": "CUSTOM:Pee"
+      "value": "Blocks.PLANKS#0"
     },
     "airColor": {
       "value": -2701547,
