@@ -11,17 +11,25 @@
     "enableBoots": true,
     "textureBoots": "amogsussusssyaamrorrr",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:SusTab"
     },
     "armorTextureFile": "dgfdgfdgfdgfdgdgfamoguws",
     "helmetName": "Amugus Helmet",
     "bodyName": "Amugus Body",
     "leggingsName": "Amugus Leggings",
     "bootsName": "Amugus Boots",
-    "helmetSpecialInfo": [],
-    "bodySpecialInfo": [],
-    "leggingsSpecialInfo": [],
-    "bootsSpecialInfo": [],
+    "helmetSpecialInfo": [
+      "s"
+    ],
+    "bodySpecialInfo": [
+      "a"
+    ],
+    "leggingsSpecialInfo": [
+      "s"
+    ],
+    "bootsSpecialInfo": [
+      "i"
+    ],
     "helmetModelName": "Default",
     "helmetModelPart": "Helmet",
     "helmetModelTexture": "From armor",

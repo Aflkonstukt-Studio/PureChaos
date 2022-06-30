@@ -12,12 +12,24 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class ChaosmodModTabs {
 	public static CreativeModeTab TAB_CHAOSTAB;
+	public static CreativeModeTab TAB_SUS_TAB;
 
 	public static void load() {
 		TAB_CHAOSTAB = new CreativeModeTab("tabchaostab") {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(ChaosmodModItems.DIRTSWORD.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_SUS_TAB = new CreativeModeTab("tabsus_tab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(ChaosmodModBlocks.SUS_BLOCK.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

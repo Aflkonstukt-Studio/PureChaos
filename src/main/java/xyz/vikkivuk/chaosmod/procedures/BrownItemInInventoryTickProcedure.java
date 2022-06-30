@@ -1,8 +1,12 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 
-import javax.annotation.Nullable;
+import net.minecraftforge.items.ItemHandlerHelper;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 
 public class BrownItemInInventoryTickProcedure {
 	public static void execute(Entity entity) {
