@@ -97,6 +97,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> FALLGAYS = REGISTRY.register("fallgays", () -> new FallgaysItem());
 	public static final RegistryObject<Item> IKEA_DESK = REGISTRY.register("ikea_desk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.IKEA_DESK, -13421773, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> TOMBSTONE = block(ChaosmodModBlocks.TOMBSTONE, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
