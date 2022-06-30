@@ -25,7 +25,7 @@
     "generateBucket": true,
     "textureBucket": "i_like_pica",
     "creativeTab": {
-      "value": "CUSTOM:SusTab"
+      "value": "CUSTOM:Chaostab"
     },
     "emptySound": {
       "value": "block.soul_soil.break"
