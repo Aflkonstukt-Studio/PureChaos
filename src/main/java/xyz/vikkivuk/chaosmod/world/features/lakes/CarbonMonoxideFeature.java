@@ -1,34 +1,11 @@
 
 package xyz.vikkivuk.chaosmod.world.features.lakes;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
-import net.minecraft.world.level.levelgen.placement.EnvironmentScanPlacement;
-import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.LakeFeature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.core.Registry;
-import net.minecraft.core.Holder;
-import net.minecraft.core.Direction;
-
-import java.util.Set;
-import java.util.List;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 
 public class CarbonMonoxideFeature extends LakeFeature {
+
 	public static CarbonMonoxideFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<LakeFeature.Configuration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
@@ -49,6 +26,7 @@ public class CarbonMonoxideFeature extends LakeFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
 			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")),
 			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")));
@@ -62,6 +40,7 @@ public class CarbonMonoxideFeature extends LakeFeature {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
+
 		return super.place(context);
 	}
 }
