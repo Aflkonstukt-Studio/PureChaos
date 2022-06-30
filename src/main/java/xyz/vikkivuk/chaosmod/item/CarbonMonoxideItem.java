@@ -1,10 +1,22 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BucketItem;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-public class CarbonMonoxideItem extends BucketItem {
+import java.util.List;
 
+public class CarbonMonoxideItem extends BucketItem {
 	public CarbonMonoxideItem() {
 		super(ChaosmodModFluids.CARBON_MONOXIDE,
 				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
