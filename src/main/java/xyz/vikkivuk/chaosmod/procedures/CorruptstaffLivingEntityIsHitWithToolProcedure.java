@@ -1,6 +1,8 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class CorruptstaffLivingEntityIsHitWithToolProcedure {
 	public static void execute(Entity entity) {

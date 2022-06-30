@@ -1,58 +1,17 @@
 
 package xyz.vikkivuk.chaosmod.entity;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
-import net.minecraftforge.common.ForgeMod;
-
-import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.nbt.Tag;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerBossEvent;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
 
-import java.util.Set;
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class JosipdvatockanulaEntity extends Monster {
+
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("chaosmod:hell_but_overworld"));
 
 	@SubscribeEvent
@@ -73,14 +32,18 @@ public class JosipdvatockanulaEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		setCustomName(new TextComponent("||[ ?o?i?T?G ]||"));
 		setCustomNameVisible(true);
+
 		setPersistenceRequired();
+
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ChaosmodModItems.CORRUPTSTAFF.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.NETHERITE_HELMET));
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.NETHERITE_CHESTPLATE));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.NETHERITE_LEGGINGS));
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.NETHERITE_BOOTS));
+
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -97,16 +60,20 @@ public class JosipdvatockanulaEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
+
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 2, false) {
+
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
+
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
+
 	}
 
 	@Override
@@ -146,6 +113,7 @@ public class JosipdvatockanulaEntity extends Monster {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
+
 		return false;
 	}
 
@@ -213,7 +181,9 @@ public class JosipdvatockanulaEntity extends Monster {
 
 	public void aiStep() {
 		super.aiStep();
+
 		this.setNoGravity(true);
+
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
@@ -231,6 +201,7 @@ public class JosipdvatockanulaEntity extends Monster {
 		SpawnPlacements.register(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), SpawnPlacements.Type.ON_GROUND,
 				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -239,10 +210,16 @@ public class JosipdvatockanulaEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 1000);
 		builder = builder.add(Attributes.ARMOR, 7);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 4.5);
+
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
+
 		builder = builder.add(Attributes.FLYING_SPEED, 0.4);
+
 		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.4);
+
 		return builder;
 	}
+
 }
