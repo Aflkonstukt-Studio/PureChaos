@@ -23,6 +23,7 @@ import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
+import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -56,6 +57,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeBlock());
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
+	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
 	public static final RegistryObject<Block> GGGGGGG = REGISTRY.register("ggggggg", () -> new GggggggBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

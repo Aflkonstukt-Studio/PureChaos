@@ -2,19 +2,15 @@
 package xyz.vikkivuk.chaosmod.block;
 
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class GggggggBlock extends Block {
+
 	public GggggggBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.CHAIN).strength(3f, 14f).requiresCorrectToolForDrops()
 				.friction(3.3000000000000003f).speedFactor(3f).jumpFactor(2f));
+
 	}
 
 	@Override
@@ -28,4 +24,5 @@ public class GggggggBlock extends Block {
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
+
 }

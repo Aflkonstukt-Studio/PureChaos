@@ -16,6 +16,7 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.OrangeFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.GatoradeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.CarbonMonoxideFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.WhiteCellFeature;
 import xyz.vikkivuk.chaosmod.world.features.SecretTntFeature;
@@ -108,6 +109,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, WhiteCellFeature.GENERATE_BIOMES, WhiteCellFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> AMBYSS = register("ambyss", AmbyssFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmbyssFeature.GENERATE_BIOMES, AmbyssFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> CARBON_MONOXIDE = register("carbon_monoxide", CarbonMonoxideFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, CarbonMonoxideFeature.GENERATE_BIOMES, CarbonMonoxideFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
