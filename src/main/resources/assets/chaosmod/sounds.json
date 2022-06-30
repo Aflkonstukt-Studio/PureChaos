@@ -58,5 +58,15 @@
         "stream": true
       }
     ]
+  },
+  "redacted": {
+    "category": "hostile",
+    "subtitle": "subtitles.redacted",
+    "sounds": [
+      {
+        "name": "chaosmod:scary_static_sound_effect_320_kbps",
+        "stream": false
+      }
+    ]
   }
 }
