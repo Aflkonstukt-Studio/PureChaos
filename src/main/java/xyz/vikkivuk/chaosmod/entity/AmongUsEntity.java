@@ -57,7 +57,7 @@ import java.util.EnumSet;
 public class AmongUsEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMONG_US.get(), 20, 4, 10));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMONG_US.get(), 5, 1, 4));
 	}
 
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
@@ -73,7 +73,6 @@ public class AmongUsEntity extends Monster {
 		setNoAi(false);
 		setCustomName(new TextComponent("Sussy Baka"));
 		setCustomNameVisible(true);
-		setPersistenceRequired();
 	}
 
 	@Override
@@ -140,11 +139,6 @@ public class AmongUsEntity extends Monster {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEAD;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
