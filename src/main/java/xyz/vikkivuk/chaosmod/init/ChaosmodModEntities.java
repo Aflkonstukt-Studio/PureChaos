@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
+import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
@@ -89,6 +90,11 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPetEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<MothOfAggrevationEntity>> MOTH_OF_AGGREVATION = register("moth_of_aggrevation",
+			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
+
+					.sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -107,6 +113,7 @@ public class ChaosmodModEntities {
 			JOSIPEntity.init();
 			JosipdvatockanulaEntity.init();
 			JosipPetEntity.init();
+			MothOfAggrevationEntity.init();
 		});
 	}
 
@@ -122,5 +129,6 @@ public class ChaosmodModEntities {
 		event.put(JOSIP.get(), JOSIPEntity.createAttributes().build());
 		event.put(JOSIPDVATOCKANULA.get(), JosipdvatockanulaEntity.createAttributes().build());
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
+		event.put(MOTH_OF_AGGREVATION.get(), MothOfAggrevationEntity.createAttributes().build());
 	}
 }
