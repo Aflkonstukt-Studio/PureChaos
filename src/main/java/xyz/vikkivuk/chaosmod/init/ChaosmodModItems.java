@@ -126,8 +126,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> TURTLE_ARMOR_LEGGINGS = REGISTRY.register("turtle_armor_leggings", () -> new TurtleArmorItem.Leggings());
 	public static final RegistryObject<Item> TURTLE_ARMOR_BOOTS = REGISTRY.register("turtle_armor_boots", () -> new TurtleArmorItem.Boots());
 	public static final RegistryObject<Item> JOSIP_RANGE = REGISTRY.register("josip_range", () -> new JosipRangeItem());
-	public static final RegistryObject<Item> JOSIP_PETT = REGISTRY.register("josip_pett_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIP_PETT, -65536, -10066330, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> JOSIP_AGRESIVE_NOT_PET = REGISTRY.register("josip_agresive_not_pet_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIP_AGRESIVE_NOT_PET, -65536, -10066330,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> MOTH_OF_AGGREVATION = REGISTRY.register("moth_of_aggrevation_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.MOTH_OF_AGGREVATION, -6737152, -1,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));

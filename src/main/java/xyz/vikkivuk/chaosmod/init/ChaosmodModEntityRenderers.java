@@ -42,7 +42,7 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), JosipdvatockanulaRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_PET.get(), JosipPetRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_RANGE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_PETT.get(), JosipPettRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_AGRESIVE_NOT_PET.get(), JosipPettRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), MothOfAggrevationRenderer::new);
 	}
 }

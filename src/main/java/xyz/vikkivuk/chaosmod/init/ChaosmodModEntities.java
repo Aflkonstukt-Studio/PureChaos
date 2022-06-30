@@ -95,7 +95,7 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<JosipRangeEntity>> JOSIP_RANGE = register("projectile_josip_range",
 			EntityType.Builder.<JosipRangeEntity>of(JosipRangeEntity::new, MobCategory.MISC).setCustomClientFactory(JosipRangeEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<JosipPettEntity>> JOSIP_PETT = register("josip_pett",
+	public static final RegistryObject<EntityType<JosipPettEntity>> JOSIP_AGRESIVE_NOT_PET = register("josip_agresive_not_pet",
 			EntityType.Builder.<JosipPettEntity>of(JosipPettEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPettEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<MothOfAggrevationEntity>> MOTH_OF_AGGREVATION = register("moth_of_aggrevation",
@@ -138,7 +138,7 @@ public class ChaosmodModEntities {
 		event.put(JOSIP.get(), JOSIPEntity.createAttributes().build());
 		event.put(JOSIPDVATOCKANULA.get(), JosipdvatockanulaEntity.createAttributes().build());
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
-		event.put(JOSIP_PETT.get(), JosipPettEntity.createAttributes().build());
+		event.put(JOSIP_AGRESIVE_NOT_PET.get(), JosipPettEntity.createAttributes().build());
 		event.put(MOTH_OF_AGGREVATION.get(), MothOfAggrevationEntity.createAttributes().build());
 	}
 }
