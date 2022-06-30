@@ -58,7 +58,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": true,
     "spawnInCaves": true,
-    "biomeWeight": 25,
+    "biomeWeight": 30,
     "biomeDictionaryTypes": [
       "NETHER"
     ],
@@ -102,9 +102,9 @@
     "spawnShipwreckBeached": false,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
-    "spawnNetherBridge": false,
-    "spawnNetherFossil": false,
-    "spawnBastionRemnant": false,
+    "spawnNetherBridge": true,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [

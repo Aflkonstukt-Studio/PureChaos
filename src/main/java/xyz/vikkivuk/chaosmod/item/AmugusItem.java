@@ -1,13 +1,14 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -62,7 +63,7 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Helmet extends AmugusItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 		}
 
 		@Override
@@ -73,7 +74,7 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Chestplate extends AmugusItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 		}
 
 		@Override
@@ -84,7 +85,7 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Leggings extends AmugusItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 		}
 
 		@Override
@@ -95,7 +96,7 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Boots extends AmugusItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB));
 		}
 
 		@Override

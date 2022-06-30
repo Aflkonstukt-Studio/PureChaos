@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.JOSIPRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
@@ -33,5 +34,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.WATER_CUP.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.SPLANK.get(), SplankRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.IKEA_DESK.get(), IkeaDeskRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.JOSIP.get(), JOSIPRenderer::new);
 	}
 }
