@@ -697,6 +697,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tombstone"
+    },
+    {
+      "name": "Ekesmasterbait",
+      "type": "biome",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekesmasterbait"
+    },
+    {
+      "name": "JosipovDrpanje",
+      "type": "structure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipov_drpanje"
+    },
+    {
+      "name": "SasiAmangas",
+      "type": "musicdisc",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sasi_amangas"
     }
   ],
   "variable_elements": [],
@@ -740,6 +764,14 @@
       ],
       "category": "music",
       "subtitle": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu"
+    },
+    {
+      "name": "jusif",
+      "files": [
+        "untitled_1"
+      ],
+      "category": "music",
+      "subtitle": "ehehehehe"
     }
   ],
   "language_map": {

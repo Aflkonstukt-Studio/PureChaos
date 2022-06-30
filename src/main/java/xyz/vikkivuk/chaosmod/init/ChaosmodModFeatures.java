@@ -19,6 +19,7 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.PeePoolFeature;
 import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
+import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSpORTALFeature;
@@ -85,6 +86,9 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, GatoradeFeature.GENERATE_BIOMES, GatoradeFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> GREEN_PLANT = register("green_plant", GreenPlantFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.VEGETAL_DECORATION, GreenPlantFeature.GENERATE_BIOMES, GreenPlantFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> JOSIPOV_DRPANJE = register("josipov_drpanje", JosipovDrpanjeFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, JosipovDrpanjeFeature.GENERATE_BIOMES,
+					JosipovDrpanjeFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

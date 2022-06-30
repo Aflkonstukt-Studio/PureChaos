@@ -10,6 +10,7 @@ import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.StaravodaItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
+import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
@@ -98,6 +99,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> IKEA_DESK = REGISTRY.register("ikea_desk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.IKEA_DESK, -13421773, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> TOMBSTONE = block(ChaosmodModBlocks.TOMBSTONE, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", () -> new SasiAmangasItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
