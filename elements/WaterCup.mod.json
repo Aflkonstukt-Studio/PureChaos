@@ -1,0 +1,40 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "water_overflow_cup",
+    "customModelName": "Normal",
+    "name": "Water Cup",
+    "specialInfo": [
+      "oh no! my water",
+      "its overflowing!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Deek"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 2.0,
+    "bulletDamage": 90.0,
+    "bulletKnockback": 99,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:WaterCup"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

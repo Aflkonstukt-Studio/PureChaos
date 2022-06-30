@@ -7,8 +7,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
@@ -49,6 +51,10 @@ public class SussssssssssssssssssScreen extends AbstractContainerScreen<Sussssss
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("chaosmod:textures/rick_kurac.png"));
+		this.blit(ms, this.leftPos + -261, this.topPos + -63, 0, 0, 660, 371, 660, 371);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -69,6 +75,9 @@ public class SussssssssssssssssssScreen extends AbstractContainerScreen<Sussssss
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "ur sus", 266, -27, -12829636);
+		this.font.draw(poseStack, "welcom to marketplace", 49, 10, -12829636);
+		this.font.draw(poseStack, "your soul", 15, 44, -12829636);
+		this.font.draw(poseStack, "mcdonalds fries", 84, 45, -12829636);
 	}
 
 	@Override
@@ -81,5 +90,11 @@ public class SussssssssssssssssssScreen extends AbstractContainerScreen<Sussssss
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+		this.addRenderableWidget(new Button(this.leftPos + 17, this.topPos + 59, 40, 20, new TextComponent("no"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 105, this.topPos + 62, 40, 20, new TextComponent("buy"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + -94, this.topPos + 5, 51, 20, new TextComponent("exit"), e -> {
+		}));
 	}
 }

@@ -2,26 +2,26 @@
   "_fv": 28,
   "_type": "fluid",
   "definition": {
-    "name": "Pee",
-    "bucketName": "Pee Bucket",
-    "textureStill": "pee",
-    "textureFlowing": "pee_flowing",
-    "tintType": "Fog",
-    "canMultiply": false,
-    "flowRate": 2,
+    "name": "Oil",
+    "bucketName": "Oil Bucket",
+    "textureStill": "oil_still",
+    "textureFlowing": "oil_flowing",
+    "tintType": "No tint",
+    "canMultiply": true,
+    "flowRate": 1,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "dripParticle": {
-      "value": "WATER_BUBBLE"
+      "value": "CUSTOM:CumDrip"
     },
     "flowStrength": 1.0,
-    "luminosity": 0,
+    "luminosity": 15,
     "density": 1000,
     "viscosity": 1000,
     "isGas": false,
     "temperature": 300,
-    "type": "WATER",
+    "type": "LAVA",
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
@@ -30,17 +30,19 @@
     "emptySound": {
       "value": ""
     },
-    "rarity": "COMMON",
-    "specialInfo": [],
+    "rarity": "EPIC",
+    "specialInfo": [
+      "oil."
+    ],
     "resistance": 100.0,
-    "luminance": 0,
+    "luminance": 15,
     "lightOpacity": 0,
     "emissiveRendering": false,
     "tickRate": 10,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 4,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
     ],

@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
+import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.StaravodaItem;
@@ -13,8 +14,11 @@ import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
+import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
+import xyz.vikkivuk.chaosmod.item.OilItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
+import xyz.vikkivuk.chaosmod.item.GatoradeItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
 import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
@@ -82,6 +86,11 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU = REGISTRY
 			.register("kondomnepitajzastoovoradimalispoileralertonimarupu", () -> new KondomnepitajzastoovoradimalispoileralertonimarupuItem());
 	public static final RegistryObject<Item> SUS_SWORD = REGISTRY.register("sus_sword", () -> new SusSwordItem());
+	public static final RegistryObject<Item> ORANGE_FLUID_BUCKET = REGISTRY.register("orange_fluid_bucket", () -> new OrangeFluidItem());
+	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
+	public static final RegistryObject<Item> GATORADE_BUCKET = REGISTRY.register("gatorade_bucket", () -> new GatoradeItem());
+	public static final RegistryObject<Item> GREEN_PLANT = block(ChaosmodModBlocks.GREEN_PLANT, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> WATER_CUP = REGISTRY.register("water_cup", () -> new WaterCupItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

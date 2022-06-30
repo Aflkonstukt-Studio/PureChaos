@@ -5,12 +5,16 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.world.features.plants.PotatusFeature;
+import xyz.vikkivuk.chaosmod.world.features.plants.GreenPlantFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.OrangeFluidFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.GatoradeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.PeePoolFeature;
@@ -73,6 +77,14 @@ public class ChaosmodModFeatures {
 	public static final RegistryObject<Feature<?>> WOOD_RUINED_PORTAL = register("wood_ruined_portal", WoodRuinedPortalFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, WoodRuinedPortalFeature.GENERATE_BIOMES,
 					WoodRuinedPortalFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> ORANGE_FLUID = register("orange_fluid", OrangeFluidFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, OrangeFluidFeature.GENERATE_BIOMES, OrangeFluidFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> OIL = register("oil", OilFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, OilFeature.GENERATE_BIOMES, OilFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> GATORADE = register("gatorade", GatoradeFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, GatoradeFeature.GENERATE_BIOMES, GatoradeFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> GREEN_PLANT = register("green_plant", GreenPlantFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.VEGETAL_DECORATION, GreenPlantFeature.GENERATE_BIOMES, GreenPlantFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

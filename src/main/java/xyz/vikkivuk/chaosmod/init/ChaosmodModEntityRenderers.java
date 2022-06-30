@@ -28,5 +28,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_2.get(), Amogus2Renderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3.get(), Amogus3Renderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.WATER_CUP.get(), ThrownItemRenderer::new);
 	}
 }

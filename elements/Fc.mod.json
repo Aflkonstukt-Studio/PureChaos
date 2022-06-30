@@ -1,9 +1,0 @@
-{
-  "_fv": 28,
-  "_type": "function",
-  "definition": {
-    "code": "# Enter the function code here\n/effect @p give minecraft:apsorpsion30 66\n/summon lightning_blot\n/summon lightning_blot\n/summon lightning_blot\n/summon lightning_blot\n/summon lightning_blot\n/summon lightning_blot\n/summon lightning_blot\n/effect @p give minecraft:levitation 15 2\n/tp @p ~ ~1 ~\n/kill @p",
-    "name": "fc",
-    "namespace": "mod"
-  }
-}

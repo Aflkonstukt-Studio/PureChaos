@@ -2,18 +2,18 @@
   "_fv": 28,
   "_type": "fluid",
   "definition": {
-    "name": "Pee",
-    "bucketName": "Pee Bucket",
-    "textureStill": "pee",
-    "textureFlowing": "pee_flowing",
-    "tintType": "Fog",
+    "name": "Orange Gatorade",
+    "bucketName": "Orange Fluid Bucket",
+    "textureStill": "gatorade_still",
+    "textureFlowing": "gatorade_flow",
+    "tintType": "No tint",
     "canMultiply": false,
-    "flowRate": 2,
+    "flowRate": 3,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
     "spawnParticles": true,
     "dripParticle": {
-      "value": "WATER_BUBBLE"
+      "value": "CUSTOM:CumDrip"
     },
     "flowStrength": 1.0,
     "luminosity": 0,
@@ -21,7 +21,7 @@
     "viscosity": 1000,
     "isGas": false,
     "temperature": 300,
-    "type": "WATER",
+    "type": "LAVA",
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
@@ -30,8 +30,10 @@
     "emptySound": {
       "value": ""
     },
-    "rarity": "COMMON",
-    "specialInfo": [],
+    "rarity": "EPIC",
+    "specialInfo": [
+      "Sus Liquid"
+    ],
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 0,
@@ -40,7 +42,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 4,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
     ],

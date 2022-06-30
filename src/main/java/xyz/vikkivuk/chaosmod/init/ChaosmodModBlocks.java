@@ -14,6 +14,10 @@ import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
+import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
+import xyz.vikkivuk.chaosmod.block.OilBlock;
+import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
+import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
@@ -45,12 +49,17 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> SUS_PORTAL = REGISTRY.register("sus_portal", () -> new SusPortalBlock());
 	public static final RegistryObject<Block> STARAVODA = REGISTRY.register("staravoda", () -> new StaravodaBlock());
 	public static final RegistryObject<Block> TLGHD = REGISTRY.register("tlghd", () -> new TLGHDBlock());
+	public static final RegistryObject<Block> ORANGE_FLUID = REGISTRY.register("orange_fluid", () -> new OrangeFluidBlock());
+	public static final RegistryObject<Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
+	public static final RegistryObject<Block> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeBlock());
+	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			PotatusBlock.registerRenderLayer();
+			GreenPlantBlock.registerRenderLayer();
 		}
 	}
 }
