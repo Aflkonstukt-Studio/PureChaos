@@ -946,14 +946,6 @@
       "registry_name": "josipdvatockanula"
     },
     {
-      "name": "Gfdgsfdgfdgfdgfdgfdgfdg",
-      "type": "tab",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gfdgsfdgfdgfdgfdgfdgfdg"
-    },
-    {
       "name": "DirtSwordRecipe",
       "type": "recipe",
       "sortid": 74,

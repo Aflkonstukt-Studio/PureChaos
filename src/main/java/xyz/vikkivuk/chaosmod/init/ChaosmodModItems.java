@@ -117,7 +117,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BEEF_ARMOR_BOOTS = REGISTRY.register("beef_armor_boots", () -> new BeefArmorItem.Boots());
 	public static final RegistryObject<Item> JOSIPDVATOCKANULA = REGISTRY.register("josipdvatockanula_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIPDVATOCKANULA, -16777216, -65536,
-					new Item.Properties().tab(ChaosmodModTabs.TAB_GFDGSFDGFDGFDGFDGFDGFDG)));
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> JOSIP_PET = REGISTRY.register("josip_pet_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIP_PET, -3407668, -26113, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> CORRUPTSTAFF = REGISTRY.register("corruptstaff", () -> new CorruptstaffItem());
