@@ -2,23 +2,19 @@
 package xyz.vikkivuk.chaosmod.client.renderer;
 
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.client.model.Modeltrident;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
-import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.model.HumanoidModel;
 
-public class TridentRenderer extends HumanoidMobRenderer<TridentEntity, HumanoidModel<TridentEntity>> {
+public class TridentRenderer extends MobRenderer<TridentEntity, Modeltrident<TridentEntity>> {
 	public TridentRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
-		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
-				new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
+		super(context, new Modeltrident(context.bakeLayer(Modeltrident.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(TridentEntity entity) {
-		return new ResourceLocation("chaosmod:textures/trident.png");
+		return new ResourceLocation("chaosmod:textures/trident_texture.png");
 	}
 }

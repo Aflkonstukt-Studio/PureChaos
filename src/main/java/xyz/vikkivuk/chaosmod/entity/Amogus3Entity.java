@@ -62,7 +62,7 @@ public class Amogus3Entity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3.get(), 10, 1, 5));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3.get(), 10, 1, 6));
 	}
 
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.GREEN,
@@ -74,7 +74,7 @@ public class Amogus3Entity extends Monster {
 
 	public Amogus3Entity(EntityType<Amogus3Entity> type, Level world) {
 		super(type, world);
-		xpReward = 99999;
+		xpReward = 40;
 		setNoAi(false);
 		setCustomName(new TextComponent("Sussy baka"));
 		setCustomNameVisible(true);
@@ -251,12 +251,12 @@ public class Amogus3Entity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 1);
-		builder = builder.add(Attributes.MAX_HEALTH, 50);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.82);
+		builder = builder.add(Attributes.MAX_HEALTH, 15);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 1000);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 420);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 69);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
 		return builder;
 	}
 }

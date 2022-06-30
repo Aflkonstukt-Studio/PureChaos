@@ -66,7 +66,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> DIPEX = REGISTRY.register("dipex", () -> new DipexItem());
 	public static final RegistryObject<Item> DEATH = block(ChaosmodModBlocks.DEATH, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> TRIDENT = REGISTRY.register("trident_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.TRIDENT, -13641874, -15373610, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.TRIDENT, -13641874, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> COMICALLY_LARGE_SPOON = REGISTRY.register("comically_large_spoon", () -> new ComicallyLargeSpoonItem());
 	public static final RegistryObject<Item> NETHERIT_PICKAX = REGISTRY.register("netherit_pickax", () -> new NetheritPickaxItem());
 	public static final RegistryObject<Item> WOOD_DIMENSION = REGISTRY.register("wood_dimension", () -> new WoodDimensionItem());

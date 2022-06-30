@@ -46,14 +46,14 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ILLAGER",
-    "attackStrength": 1000,
-    "attackKnockback": 69.0,
+    "attackStrength": 5,
+    "attackKnockback": 2.0,
     "knockbackResistance": 420.0,
-    "movementSpeed": 1.0,
+    "movementSpeed": 0.82,
     "armorBaseValue": 0.0,
     "trackingRange": 32,
-    "health": 50,
-    "xpAmount": 99999,
+    "health": 15,
+    "xpAmount": 40,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -114,7 +114,7 @@
     "spawningProbability": 10,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 5,
+    "maxNumberOfMobsPerGroup": 6,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:HellButOverworld"

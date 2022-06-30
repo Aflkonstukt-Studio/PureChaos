@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Tridet",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "trident.png",
+    "mobModelName": "Modeltrident",
+    "mobModelTexture": "trident_texture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -15373610,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
