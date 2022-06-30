@@ -47,14 +47,14 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEAD",
     "attackStrength": 10,
-    "attackKnockback": 0.8,
+    "attackKnockback": 16.0,
     "knockbackResistance": 5.0,
-    "movementSpeed": 0.5,
+    "movementSpeed": 30.0,
     "armorBaseValue": 0.0,
     "trackingRange": 69,
-    "health": 30,
-    "xpAmount": 100,
-    "waterMob": true,
+    "health": 69,
+    "xpAmount": 420,
+    "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -63,7 +63,7 @@
     "ridable": true,
     "canControlForward": true,
     "canControlStrafe": true,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": true,
     "immuneToCactus": false,
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:SusBlock"
+      "value": "CUSTOM:Cum"
     },
     "livingSound": {
       "value": "CUSTOM:amongus_ambient"
@@ -113,11 +113,11 @@
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 5,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 6,
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 10,
     "restrictionBiomes": [],
     "spawnInDungeons": true
   }
