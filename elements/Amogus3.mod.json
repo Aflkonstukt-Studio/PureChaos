@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Amogus 3",
     "mobLabel": "Sussy baka",
-    "mobModelName": "Biped",
+    "mobModelName": "Modelcustom_model",
     "mobModelTexture": "mogus.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 5,
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 69,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:HellButOverworld"

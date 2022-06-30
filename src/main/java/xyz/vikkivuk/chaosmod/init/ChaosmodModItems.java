@@ -93,9 +93,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> GATORADE_BUCKET = REGISTRY.register("gatorade_bucket", () -> new GatoradeItem());
 	public static final RegistryObject<Item> GREEN_PLANT = block(ChaosmodModBlocks.GREEN_PLANT, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> WATER_CUP = REGISTRY.register("water_cup", () -> new WaterCupItem());
-	public static final RegistryObject<Item> FALLGAYS = REGISTRY.register("fallgays", () -> new FallgaysItem());
 	public static final RegistryObject<Item> SPLANK = REGISTRY.register("splank_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SPLANK, -3355648, -154, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> FALLGAYS = REGISTRY.register("fallgays", () -> new FallgaysItem());
 	public static final RegistryObject<Item> IKEA_DESK = REGISTRY.register("ikea_desk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.IKEA_DESK, -13421773, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> TOMBSTONE = block(ChaosmodModBlocks.TOMBSTONE, ChaosmodModTabs.TAB_CHAOSTAB);

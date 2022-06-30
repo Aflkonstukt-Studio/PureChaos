@@ -59,7 +59,7 @@ import net.minecraft.core.BlockPos;
 public class Amogus2Entity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 10, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 20, 4, 4));
 	}
 
 	public Amogus2Entity(PlayMessages.SpawnEntity packet, Level world) {
