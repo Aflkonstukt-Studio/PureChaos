@@ -26,6 +26,7 @@ import xyz.vikkivuk.chaosmod.world.features.OakHouseFeature;
 import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
 import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
 import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
+import xyz.vikkivuk.chaosmod.world.features.GasChamberFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSpORTALFeature;
@@ -111,6 +112,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CarbonMonoxideFeature.GENERATE_BIOMES, CarbonMonoxideFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> AMBYSS = register("ambyss", AmbyssFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmbyssFeature.GENERATE_BIOMES, AmbyssFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> GAS_CHAMBER = register("gas_chamber", GasChamberFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, GasChamberFeature.GENERATE_BIOMES, GasChamberFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
