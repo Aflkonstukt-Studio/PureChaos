@@ -385,38 +385,6 @@
       "registry_name": "amogus_3"
     },
     {
-      "name": "AmongUSpp",
-      "type": "structure",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "among_u_spp"
-    },
-    {
-      "name": "Xmasterwoopainting",
-      "type": "painting",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "xmasterwoopainting"
-    },
-    {
-      "name": "TLGHD",
-      "type": "block",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tlghd"
-    },
-    {
-      "name": "Amongsus",
-      "type": "potion",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amongsus"
-    },
-    {
       "name": "Staravoda",
       "type": "fluid",
       "sortid": 34,
@@ -428,12 +396,52 @@
       }
     },
     {
+      "name": "Amongsus",
+      "type": "potion",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongsus"
+    },
+    {
+      "name": "TLGHD",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tlghd"
+    },
+    {
+      "name": "Xmasterwoopainting",
+      "type": "painting",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xmasterwoopainting"
+    },
+    {
+      "name": "AmongUSpp",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_u_spp"
+    },
+    {
       "name": "AmongUSpORTAL",
       "type": "structure",
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_u_sp_ortal"
+    },
+    {
+      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "type": "rangeditem",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
     },
     {
       "name": "PeePool",
@@ -452,6 +460,20 @@
       "registry_name": "wood_ruined_portal"
     },
     {
+      "name": "Amugus",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amugus",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
       "name": "JukeBoxCave",
       "type": "structure",
       "sortid": 39,
@@ -468,26 +490,76 @@
       "registry_name": "among_us_dungeon"
     },
     {
-      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
-      "type": "rangeditem",
-      "sortid": 37,
+      "name": "SusSword",
+      "type": "tool",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
+      "registry_name": "sus_sword"
     },
     {
-      "name": "Amugus",
-      "type": "armor",
-      "sortid": 36,
+      "name": "Susord",
+      "type": "recipe",
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amugus",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
+      "registry_name": "susord"
+    },
+    {
+      "name": "Suschest",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suschest"
+    },
+    {
+      "name": "Sushead",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sushead"
+    },
+    {
+      "name": "Suslegs",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suslegs"
+    },
+    {
+      "name": "Susboot",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susboot"
+    },
+    {
+      "name": "Sussssssssssssssssss",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sussssssssssssssssss"
+    },
+    {
+      "name": "Fc",
+      "type": "function",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fc"
+    },
+    {
+      "name": "Summonsus",
+      "type": "keybind",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summonsus"
     }
   ],
   "variable_elements": [],
@@ -530,6 +602,7 @@
       "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
@@ -582,9 +655,10 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
-      "item.chaosmod.sus": "Sus Portal Birther",
       "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.deek": "Ender Eye ",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg"
