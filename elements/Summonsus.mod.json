@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "K",
+    "keyBindingName": "Open Sus",
+    "keyBindingCategoryKey": "o",
+    "onKeyPressed": {
+      "name": "SummonsusOnKeyPressed"
+    }
+  }
+}

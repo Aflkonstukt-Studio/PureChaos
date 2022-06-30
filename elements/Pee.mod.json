@@ -6,9 +6,9 @@
     "bucketName": "Pee Bucket",
     "textureStill": "pee",
     "textureFlowing": "pee_flowing",
-    "tintType": "No tint",
-    "canMultiply": true,
-    "flowRate": 10,
+    "tintType": "Fog",
+    "canMultiply": false,
+    "flowRate": 2,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
     "spawnParticles": true,
@@ -40,7 +40,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 4,
     "spawnWorldTypes": [
       "Surface"
     ],

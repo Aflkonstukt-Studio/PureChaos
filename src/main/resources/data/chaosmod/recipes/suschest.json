@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chaosmod:sus_block"
+    },
+    "2": {
+      "item": "chaosmod:sus_block"
+    },
+    "3": {
+      "item": "chaosmod:sus_block"
+    },
+    "4": {
+      "item": "chaosmod:sus_block"
+    },
+    "5": {
+      "item": "chaosmod:sus_block"
+    },
+    "6": {
+      "item": "chaosmod:sus_block"
+    },
+    "7": {
+      "item": "chaosmod:sus_block"
+    },
+    "8": {
+      "item": "chaosmod:sus_block"
+    }
+  },
+  "result": {
+    "item": "chaosmod:amugus_chestplate",
+    "count": 1
+  }
+}

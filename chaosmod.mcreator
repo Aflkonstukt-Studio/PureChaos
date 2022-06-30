@@ -385,38 +385,6 @@
       "registry_name": "amogus_3"
     },
     {
-      "name": "AmongUSpp",
-      "type": "structure",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "among_u_spp"
-    },
-    {
-      "name": "Xmasterwoopainting",
-      "type": "painting",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "xmasterwoopainting"
-    },
-    {
-      "name": "TLGHD",
-      "type": "block",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tlghd"
-    },
-    {
-      "name": "Amongsus",
-      "type": "potion",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amongsus"
-    },
-    {
       "name": "Staravoda",
       "type": "fluid",
       "sortid": 34,
@@ -428,12 +396,52 @@
       }
     },
     {
+      "name": "Amongsus",
+      "type": "potion",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongsus"
+    },
+    {
+      "name": "TLGHD",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tlghd"
+    },
+    {
+      "name": "Xmasterwoopainting",
+      "type": "painting",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xmasterwoopainting"
+    },
+    {
+      "name": "AmongUSpp",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_u_spp"
+    },
+    {
       "name": "AmongUSpORTAL",
       "type": "structure",
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_u_sp_ortal"
+    },
+    {
+      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "type": "rangeditem",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
     },
     {
       "name": "PeePool",
@@ -452,6 +460,20 @@
       "registry_name": "wood_ruined_portal"
     },
     {
+      "name": "Amugus",
+      "type": "armor",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amugus",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
       "name": "JukeBoxCave",
       "type": "structure",
       "sortid": 39,
@@ -468,26 +490,181 @@
       "registry_name": "among_us_dungeon"
     },
     {
-      "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
-      "type": "rangeditem",
-      "sortid": 37,
+      "name": "SusSword",
+      "type": "tool",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
+      "registry_name": "sus_sword"
     },
     {
-      "name": "Amugus",
-      "type": "armor",
-      "sortid": 36,
+      "name": "Susord",
+      "type": "recipe",
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amugus",
+      "registry_name": "susord"
+    },
+    {
+      "name": "Suschest",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suschest"
+    },
+    {
+      "name": "Sushead",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sushead"
+    },
+    {
+      "name": "Suslegs",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suslegs"
+    },
+    {
+      "name": "Susboot",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susboot"
+    },
+    {
+      "name": "Sussssssssssssssssss",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sussssssssssssssssss"
+    },
+    {
+      "name": "Summonsus",
+      "type": "keybind",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summonsus"
+    },
+    {
+      "name": "SummonsusOnKeyPressed",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summonsus_on_key_pressed",
       "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
+    },
+    {
+      "name": "PressSoulButton",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "press_soul_button",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrangeFluid",
+      "type": "fluid",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_fluid",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Gatorade",
+      "type": "fluid",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gatorade",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "GreenPlantPlantRightClicked",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_plant_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenPlant",
+      "type": "plant",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_plant"
+    },
+    {
+      "name": "WaterCup",
+      "type": "rangeditem",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_cup"
     }
   ],
   "variable_elements": [],
@@ -528,10 +705,13 @@
   "language_map": {
     "en_us": {
       "subtitles.kill": "huvh",
+      "block.chaosmod.oil": "Oil",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "block.chaosmod.staravoda": "Staravoda",
+      "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -552,18 +732,24 @@
       "item.chaosmod.food_item_2": "Food Item 2",
       "item.chaosmod.dipex": "DiPixk",
       "block.chaosmod.tlghd": "TLGHD",
+      "block.chaosmod.gatorade": "Gatorade",
+      "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
       "block.chaosmod.cum": "Cum",
+      "fluid.chaosmod.gatorade": "Gatorade",
       "block.chaosmod.pee_block": "Pee Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
+      "item.chaosmod.water_cup": "Water Cup",
       "itemGroup.tabchaostab": "Chaos",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
+      "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.pickax": "Pickax",
       "biome.chaosmod.susus": "Susus",
@@ -572,19 +758,23 @@
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",
+      "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
+      "item.chaosmod.oil_bucket": "Oil Bucket",
       "item.chaosmod.amugus_boots": "Amugus Boots",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
+      "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "key.chaosmod.summonsus": "Open Sus",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
-      "item.chaosmod.sus": "Sus Portal Birther",
       "biome.chaosmod.hell_but_overworld": "Neover",
+      "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.deek": "Ender Eye ",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg"
@@ -598,9 +788,10 @@
     "modid": "chaosmod",
     "modName": "chaosmod",
     "version": "1.0.0",
-    "author": "Vikto, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "description": "This mod is everything but normal",
+    "author": "VikkiVuk, JosipTLG, X Master Woo",
+    "websiteURL": "https://vikkivuk.xyz",
+    "license": "All rights reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -608,6 +799,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "All credits go to our sponsor, you!",
     "modElementsPackage": "xyz.vikkivuk.chaosmod",
     "lockBaseModFiles": false
   },
