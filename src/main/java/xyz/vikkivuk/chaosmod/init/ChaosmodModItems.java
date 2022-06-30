@@ -20,6 +20,7 @@ import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
 import xyz.vikkivuk.chaosmod.item.OilItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
+import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
@@ -124,6 +125,7 @@ public class ChaosmodModItems {
 			() -> new TurtleArmorItem.Chestplate());
 	public static final RegistryObject<Item> TURTLE_ARMOR_LEGGINGS = REGISTRY.register("turtle_armor_leggings", () -> new TurtleArmorItem.Leggings());
 	public static final RegistryObject<Item> TURTLE_ARMOR_BOOTS = REGISTRY.register("turtle_armor_boots", () -> new TurtleArmorItem.Boots());
+	public static final RegistryObject<Item> JOSIP_RANGE = REGISTRY.register("josip_range", () -> new JosipRangeItem());
 	public static final RegistryObject<Item> MOTH_OF_AGGREVATION = REGISTRY.register("moth_of_aggrevation_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.MOTH_OF_AGGREVATION, -6737152, -1,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));

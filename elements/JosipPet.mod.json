@@ -112,7 +112,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
+    "rangedItemType": "JosipRange",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,

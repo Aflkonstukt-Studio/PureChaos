@@ -10,6 +10,7 @@ import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
+import xyz.vikkivuk.chaosmod.entity.JosipRangeEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
@@ -90,6 +91,9 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPetEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<JosipRangeEntity>> JOSIP_RANGE = register("projectile_josip_range",
+			EntityType.Builder.<JosipRangeEntity>of(JosipRangeEntity::new, MobCategory.MISC).setCustomClientFactory(JosipRangeEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MothOfAggrevationEntity>> MOTH_OF_AGGREVATION = register("moth_of_aggrevation",
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
