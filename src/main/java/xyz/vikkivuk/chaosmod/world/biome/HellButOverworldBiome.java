@@ -46,13 +46,13 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 public class HellButOverworldBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.642857142857f, 1.357142857143f),
-			Climate.Parameter.span(-1.357142857143f, -0.642857142857f), Climate.Parameter.span(0.152857142857f, 0.867142857143f),
-			Climate.Parameter.span(0.442857142857f, 1.157142857143f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-1.196135845788f, -0.481850131502f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.571428571429f, 1.428571428571f),
+			Climate.Parameter.span(-1.428571428571f, -0.571428571429f), Climate.Parameter.span(0.081428571429f, 0.938571428571f),
+			Climate.Parameter.span(0.371428571429f, 1.228571428571f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-1.267564417216f, -0.410421560074f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-1.99f, 3.01f), Climate.Parameter.span(-1.7f, 3.3f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-3.338992988645f, 1.661007011355f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-2.49f, 3.51f), Climate.Parameter.span(-2.2f, 3.8f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-3.838992988645f, 2.161007011355f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3407872).waterColor(-52429).waterFogColor(-52429).skyColor(-3407872)

@@ -4,7 +4,6 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
-import xyz.vikkivuk.chaosmod.block.entity.TombstoneBlockEntity;
 import xyz.vikkivuk.chaosmod.block.entity.SADsBlockEntity;
 import xyz.vikkivuk.chaosmod.block.entity.PeeBlockBlockEntity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;

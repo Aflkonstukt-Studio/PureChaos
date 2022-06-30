@@ -769,6 +769,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip"
+    },
+    {
+      "name": "Brown",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown"
+    },
+    {
+      "name": "BrownItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
