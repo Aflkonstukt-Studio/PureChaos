@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "chaosmod:sus_block"
+    },
+    "1": {
+      "item": "minecraft:dirt"
+    },
+    "2": {
+      "item": "chaosmod:sus_block"
+    },
+    "3": {
+      "tag": "forge:stone"
+    },
+    "4": {
+      "item": "minecraft:dirt"
+    },
+    "5": {
+      "tag": "forge:stone"
+    },
+    "6": {
+      "item": "chaosmod:sus_block"
+    },
+    "7": {
+      "item": "minecraft:dirt"
+    },
+    "8": {
+      "item": "chaosmod:sus_block"
+    }
+  },
+  "result": {
+    "item": "chaosmod:sus_sword",
+    "count": 1
+  }
+}

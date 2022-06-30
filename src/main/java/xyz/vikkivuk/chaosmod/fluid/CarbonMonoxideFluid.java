@@ -1,22 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.fluid;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-
-import net.minecraftforge.fluids.ForgeFlowingFluid;
-import net.minecraftforge.fluids.FluidAttributes;
-
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.particles.ParticleOptions;
-
 public abstract class CarbonMonoxideFluid extends ForgeFlowingFluid {
+
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CARBON_MONOXIDE,
 			ChaosmodModFluids.FLOWING_CARBON_MONOXIDE,
 			FluidAttributes
@@ -71,4 +57,5 @@ public abstract class CarbonMonoxideFluid extends ForgeFlowingFluid {
 			return false;
 		}
 	}
+
 }

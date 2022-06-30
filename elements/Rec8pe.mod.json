@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SusBlock"
+      },
+      {
+        "value": "Blocks.DIRT"
+      },
+      {
+        "value": "CUSTOM:SusBlock"
+      },
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.DIRT"
+      },
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "CUSTOM:SusBlock"
+      },
+      {
+        "value": "Blocks.DIRT"
+      },
+      {
+        "value": "CUSTOM:SusBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SusSword"
+    },
+    "name": "rec_8pe",
+    "namespace": "mod"
+  }
+}
