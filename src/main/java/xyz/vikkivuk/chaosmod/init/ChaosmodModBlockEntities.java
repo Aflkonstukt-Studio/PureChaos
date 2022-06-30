@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.block.entity.TombstoneBlockEntity;
 import xyz.vikkivuk.chaosmod.block.entity.SADsBlockEntity;
 import xyz.vikkivuk.chaosmod.block.entity.PeeBlockBlockEntity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
@@ -19,6 +20,7 @@ public class ChaosmodModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, ChaosmodMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> PEE_BLOCK = register("pee_block", ChaosmodModBlocks.PEE_BLOCK, PeeBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SA_DS = register("sa_ds", ChaosmodModBlocks.SA_DS, SADsBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> TOMBSTONE = register("tombstone", ChaosmodModBlocks.TOMBSTONE, TombstoneBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {
