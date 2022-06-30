@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class SusItem extends Item {
 	public SusItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).durability(64));
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB).durability(64));
 	}
 
 	@Override

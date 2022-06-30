@@ -22,7 +22,7 @@ import java.util.List;
 public class SasiAmangasItem extends RecordItem {
 	public SasiAmangasItem() {
 		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:jusif")),
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+				new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

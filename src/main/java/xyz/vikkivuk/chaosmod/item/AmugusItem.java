@@ -1,19 +1,26 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public abstract class AmugusItem extends ArmorItem {
 	public AmugusItem(EquipmentSlot slot, Item.Properties properties) {
@@ -62,7 +69,13 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Helmet extends AmugusItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB));
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+			list.add(new TextComponent("s"));
 		}
 
 		@Override
@@ -73,7 +86,13 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Chestplate extends AmugusItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB));
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+			list.add(new TextComponent("a"));
 		}
 
 		@Override
@@ -84,7 +103,13 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Leggings extends AmugusItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB));
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+			list.add(new TextComponent("s"));
 		}
 
 		@Override
@@ -95,7 +120,13 @@ public abstract class AmugusItem extends ArmorItem {
 
 	public static class Boots extends AmugusItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(ChaosmodModTabs.TAB_SUS_TAB));
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, world, list, flag);
+			list.add(new TextComponent("i"));
 		}
 
 		@Override

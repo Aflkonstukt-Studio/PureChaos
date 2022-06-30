@@ -59,7 +59,7 @@ import net.minecraft.core.BlockPos;
 public class Amogus2Entity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 15, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 20, 4, 4));
 	}
 
 	public Amogus2Entity(PlayMessages.SpawnEntity packet, Level world) {
@@ -246,13 +246,12 @@ public class Amogus2Entity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.62);
-		builder = builder.add(Attributes.MAX_HEALTH, 15);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
-		builder = builder.add(Attributes.FLYING_SPEED, 0.62);
-		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.62);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.3);
 		return builder;
 	}
 }

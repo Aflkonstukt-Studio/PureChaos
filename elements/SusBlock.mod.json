@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Chaostab"
+      "value": "CUSTOM:SusTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
