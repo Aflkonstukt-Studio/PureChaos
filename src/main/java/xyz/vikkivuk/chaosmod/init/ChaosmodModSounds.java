@@ -23,6 +23,7 @@ public class ChaosmodModSounds {
 				new SoundEvent(new ResourceLocation("chaosmod", "footstep_metal_amogus")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "kill"), new SoundEvent(new ResourceLocation("chaosmod", "kill")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "amongus_ambient"), new SoundEvent(new ResourceLocation("chaosmod", "amongus_ambient")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "fallguyswooh"), new SoundEvent(new ResourceLocation("chaosmod", "fallguyswooh")));
 	}
 
 	@SubscribeEvent

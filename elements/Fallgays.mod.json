@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "wohoohhoo",
+    "name": "Fall Guys' Anthem",
+    "description": "Beautiful, m hmhmhmhm.......",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:fallguyswooh"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

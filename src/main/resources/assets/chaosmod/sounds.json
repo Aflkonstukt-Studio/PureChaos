@@ -38,5 +38,15 @@
         "stream": false
       }
     ]
+  },
+  "fallguyswooh": {
+    "category": "music",
+    "subtitle": "subtitles.fallguyswooh",
+    "sounds": [
+      {
+        "name": "chaosmod:fall_guys_woo_sound_67108864_times_320_kbps",
+        "stream": true
+      }
+    ]
   }
 }
