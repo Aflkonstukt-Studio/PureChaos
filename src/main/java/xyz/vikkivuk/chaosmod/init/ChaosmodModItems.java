@@ -118,9 +118,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> JOSIPDVATOCKANULA = REGISTRY.register("josipdvatockanula_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIPDVATOCKANULA, -16777216, -65536,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> CORRUPTSTAFF = REGISTRY.register("corruptstaff", () -> new CorruptstaffItem());
 	public static final RegistryObject<Item> JOSIP_PET = REGISTRY.register("josip_pet_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIP_PET, -3407668, -26113, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
-	public static final RegistryObject<Item> CORRUPTSTAFF = REGISTRY.register("corruptstaff", () -> new CorruptstaffItem());
 	public static final RegistryObject<Item> TURTLE_ARMOR_CHESTPLATE = REGISTRY.register("turtle_armor_chestplate",
 			() -> new TurtleArmorItem.Chestplate());
 	public static final RegistryObject<Item> TURTLE_ARMOR_LEGGINGS = REGISTRY.register("turtle_armor_leggings", () -> new TurtleArmorItem.Leggings());
