@@ -673,6 +673,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "fallgays"
+    },
+    {
+      "name": "Ekesmasterbait",
+      "type": "biome",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ekesmasterbait"
     }
   ],
   "variable_elements": [],
@@ -764,6 +772,7 @@
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
+      "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",

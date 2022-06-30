@@ -1,0 +1,130 @@
+{
+  "_fv": 28,
+  "_type": "biome",
+  "definition": {
+    "name": "Reality Biome",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.COBBLESTONE"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.SAND#0"
+    },
+    "airColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16763956,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.crimson_forest.loop"
+    },
+    "additionsSound": {
+      "value": "block.amethyst_cluster.step"
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "WATER_DROP"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "rainingPossibility": 0.6,
+    "temperature": 0.5,
+    "baseHeight": 1.0,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "spawnBiomeNether": true,
+    "spawnInCaves": true,
+    "biomeWeight": 25,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 5,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 1,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 16,
+    "treeStem": {
+      "value": "Blocks.WARPED_STEM"
+    },
+    "treeBranch": {
+      "value": "Blocks.FLOWERING_AZALEA_LEAVES"
+    },
+    "treeVines": {
+      "value": "Blocks.AMETHYST_CLUSTER"
+    },
+    "treeFruits": {
+      "value": "Blocks.CANDLE_CAKE#0"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "taiga",
+    "spawnWoodlandMansion": true,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": true,
+    "spawnIgloo": true,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": true,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
+    "spawnEndCity": true,
+    "spawnRuinedPortal": "NETHER",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "Dripstone",
+      "LushCavesDecoration",
+      "AmethystGeodes",
+      "ExtraEmeraldOre",
+      "TaigaRocks"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Aentity"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

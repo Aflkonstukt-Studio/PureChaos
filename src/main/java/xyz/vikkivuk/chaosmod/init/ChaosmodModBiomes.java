@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.world.biome.SususBiome;
 import xyz.vikkivuk.chaosmod.world.biome.HellButOverworldBiome;
+import xyz.vikkivuk.chaosmod.world.biome.EkesmasterbaitBiome;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -45,12 +46,14 @@ public class ChaosmodModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, ChaosmodMod.MODID);
 	public static final RegistryObject<Biome> HELL_BUT_OVERWORLD = REGISTRY.register("hell_but_overworld", () -> HellButOverworldBiome.createBiome());
 	public static final RegistryObject<Biome> SUSUS = REGISTRY.register("susus", () -> SususBiome.createBiome());
+	public static final RegistryObject<Biome> EKESMASTERBAIT = REGISTRY.register("ekesmasterbait", () -> EkesmasterbaitBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			HellButOverworldBiome.init();
 			SususBiome.init();
+			EkesmasterbaitBiome.init();
 		});
 	}
 
@@ -73,8 +76,12 @@ public class ChaosmodModBiomes {
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
 						parameters.add(new Pair<>(SususBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()))));
+						parameters.add(new Pair<>(EkesmasterbaitBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
 						parameters.add(new Pair<>(HellButOverworldBiome.PARAMETER_POINT_UNDERGROUND,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
+						parameters.add(new Pair<>(EkesmasterbaitBiome.PARAMETER_POINT_UNDERGROUND,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -91,6 +98,8 @@ public class ChaosmodModBiomes {
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()),
 											Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
 											Blocks.NETHERRACK.defaultBlockState()));
+							surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()),
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()),
 											Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
@@ -99,6 +108,8 @@ public class ChaosmodModBiomes {
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()),
 											Blocks.GRASS_BLOCK.defaultBlockState(), ChaosmodModBlocks.SUS_BLOCK.get().defaultBlockState(),
 											Blocks.OAK_PLANKS.defaultBlockState()));
+							surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()),
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
@@ -118,6 +129,8 @@ public class ChaosmodModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(HellButOverworldBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
+						parameters.add(new Pair<>(EkesmasterbaitBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
 						chunkGenerator.biomeSource = moddedNoiseSource;
@@ -133,6 +146,8 @@ public class ChaosmodModBiomes {
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()),
 											Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
 											Blocks.NETHERRACK.defaultBlockState()));
+							surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()),
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
