@@ -56,10 +56,10 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeathFeature.GENERATE_BIOMES, DeathFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CUM = register("cum", CumFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CumFeature.GENERATE_BIOMES, CumFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> AMONG_U_SPP = register("among_u_spp", AmongUSppFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmongUSppFeature.GENERATE_BIOMES, AmongUSppFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> STARAVODA = register("staravoda", StaravodaFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, StaravodaFeature.GENERATE_BIOMES, StaravodaFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> AMONG_U_SPP = register("among_u_spp", AmongUSppFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmongUSppFeature.GENERATE_BIOMES, AmongUSppFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> AMONG_U_SP_ORTAL = register("among_u_sp_ortal", AmongUSpORTALFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmongUSpORTALFeature.GENERATE_BIOMES,
 					AmongUSpORTALFeature::placedFeature));

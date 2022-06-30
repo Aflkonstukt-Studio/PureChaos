@@ -1,14 +1,17 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="Academic Free License v3.0"
+license="All rights reserved"
 
 [[mods]]
 modId="chaosmod"
 version="1.0.0"
 displayName="chaosmod"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="Vikto, MCreator"
+credits="All credits go to our sponsor, you!"
+displayURL="https://vikkivuk.xyz"
+authors="VikkiVuk, JosipTLG, X Master Woo"
+description='''
+This mod is everything but normal
+'''
 
 [[dependencies.chaosmod]]
     modId="minecraft"
