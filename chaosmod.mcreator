@@ -723,20 +723,12 @@
       "registry_name": "sasi_amangas"
     },
     {
-      "name": "HerobrineShrine",
+      "name": "WhiteCell",
       "type": "structure",
-      "sortid": 62,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "herobrine_shrine"
-    },
-    {
-      "name": "OakHouse",
-      "type": "structure",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_house"
+      "registry_name": "white_cell"
     },
     {
       "name": "OilMountain",
@@ -755,12 +747,28 @@
       "registry_name": "secret_tnt"
     },
     {
-      "name": "WhiteCell",
+      "name": "HerobrineShrine",
       "type": "structure",
-      "sortid": 66,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "white_cell"
+      "registry_name": "herobrine_shrine"
+    },
+    {
+      "name": "OakHouse",
+      "type": "structure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_house"
+    },
+    {
+      "name": "JOSIP",
+      "type": "livingentity",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip"
     }
   ],
   "variable_elements": [],
