@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "untitled",
+    "name": "Sasi Amangas",
+    "description": "pensi mu je mali",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "music": {
+      "value": "CUSTOM:jusif"
+    },
+    "specialInfo": [
+      "josip kako drka u mikrofon",
+      "josip je nacist"
+    ],
+    "hasGlow": true
+  }
+}
