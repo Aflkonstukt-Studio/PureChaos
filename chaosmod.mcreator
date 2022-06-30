@@ -833,6 +833,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "structure_loot"
+    },
+    {
+      "name": "Ggggggg",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ggggggg"
     }
   ],
   "variable_elements": [],
@@ -889,9 +897,9 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.tombstone": "Tombstone",
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sus_sword": "Sus Sword",
@@ -931,6 +939,7 @@
       "block.chaosmod.pee_block": "Pee Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "entity.chaosmod.splank": "Splank",
+      "block.chaosmod.ggggggg": "slipped and slipped",
       "item.chaosmod.water_cup": "Water Cup",
       "itemGroup.tabchaostab": "Chaos",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/walk",
+    "up": "chaosmod:blocks/walk",
+    "north": "chaosmod:blocks/walk",
+    "east": "chaosmod:blocks/walk",
+    "south": "chaosmod:blocks/walk",
+    "west": "chaosmod:blocks/walk",
+    "particle": "chaosmod:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview"
+  }
+}
