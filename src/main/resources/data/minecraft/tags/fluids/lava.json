@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "chaosmod:cum",
-    "chaosmod:flowing_cum"
+    "chaosmod:flowing_cum",
+    "chaosmod:orange_fluid",
+    "chaosmod:flowing_orange_fluid",
+    "chaosmod:oil",
+    "chaosmod:flowing_oil"
   ]
 }

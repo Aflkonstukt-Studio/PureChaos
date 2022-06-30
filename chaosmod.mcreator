@@ -665,6 +665,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_cup"
+    },
+    {
+      "name": "Fallgays",
+      "type": "musicdisc",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fallgays"
     }
   ],
   "variable_elements": [],
@@ -700,6 +708,14 @@
       ],
       "category": "ambient",
       "subtitle": "amogus"
+    },
+    {
+      "name": "fallguyswooh",
+      "files": [
+        "fall_guys_woo_sound_67108864_times_320_kbps"
+      ],
+      "category": "music",
+      "subtitle": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu"
     }
   ],
   "language_map": {
@@ -707,11 +723,11 @@
       "subtitles.kill": "huvh",
       "block.chaosmod.oil": "Oil",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.sus_sword": "Sus Sword",
+      "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
-      "block.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
+      "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -746,6 +762,7 @@
       "itemGroup.tabchaostab": "Chaos",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
+      "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
@@ -753,8 +770,10 @@
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.pickax": "Pickax",
       "biome.chaosmod.susus": "Susus",
+      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
+      "item.chaosmod.fallgays.desc": "Beautiful, m hmhmhmhm.......",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",

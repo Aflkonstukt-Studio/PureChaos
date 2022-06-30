@@ -6,6 +6,9 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.fluid.StaravodaFluid;
 import xyz.vikkivuk.chaosmod.fluid.PeeFluid;
+import xyz.vikkivuk.chaosmod.fluid.OrangeFluidFluid;
+import xyz.vikkivuk.chaosmod.fluid.OilFluid;
+import xyz.vikkivuk.chaosmod.fluid.GatoradeFluid;
 import xyz.vikkivuk.chaosmod.fluid.CumFluid;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -29,6 +32,12 @@ public class ChaosmodModFluids {
 	public static final RegistryObject<Fluid> FLOWING_CUM = REGISTRY.register("flowing_cum", () -> new CumFluid.Flowing());
 	public static final RegistryObject<Fluid> STARAVODA = REGISTRY.register("staravoda", () -> new StaravodaFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_STARAVODA = REGISTRY.register("flowing_staravoda", () -> new StaravodaFluid.Flowing());
+	public static final RegistryObject<Fluid> ORANGE_FLUID = REGISTRY.register("orange_fluid", () -> new OrangeFluidFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_ORANGE_FLUID = REGISTRY.register("flowing_orange_fluid", () -> new OrangeFluidFluid.Flowing());
+	public static final RegistryObject<Fluid> OIL = REGISTRY.register("oil", () -> new OilFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_OIL = REGISTRY.register("flowing_oil", () -> new OilFluid.Flowing());
+	public static final RegistryObject<Fluid> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_GATORADE = REGISTRY.register("flowing_gatorade", () -> new GatoradeFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -40,6 +49,12 @@ public class ChaosmodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_CUM.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(STARAVODA.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_STARAVODA.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(ORANGE_FLUID.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_ORANGE_FLUID.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(OIL.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_OIL.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(GATORADE.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_GATORADE.get(), renderType -> renderType == RenderType.translucent());
 		}
 	}
 }
