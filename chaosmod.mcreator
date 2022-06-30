@@ -801,6 +801,33 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "fuck_you"
+    },
+    {
+      "name": "CarbonMonoxide",
+      "type": "fluid",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon_monoxide",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "CODeath",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "co_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -857,9 +884,9 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.tombstone": "Tombstone",
-      "subtitles.kill": "huvh",
-      "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
+      "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
@@ -876,6 +903,7 @@
       "entity.chaosmod.amogus_2": "Amogus 2",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "item.chaosmod.dirtsword": "Dirtsword",
+      "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "entity.chaosmod.aentity": "Aentity",
       "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.among_us": "Among Us",
@@ -890,6 +918,7 @@
       "block.chaosmod.tlghd": "TLGHD",
       "block.chaosmod.gatorade": "Gatorade",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
+      "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
@@ -911,6 +940,7 @@
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
+      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.pickax": "Pickax",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.brown": "Brown",
