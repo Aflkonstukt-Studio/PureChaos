@@ -928,6 +928,62 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "GasChamber",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_chamber"
+    },
+    {
+      "name": "Corruptstaff",
+      "type": "tool",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptstaff"
+    },
+    {
+      "name": "Josipdvatockanula",
+      "type": "livingentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipdvatockanula"
+    },
+    {
+      "name": "JosipPet",
+      "type": "livingentity",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip_pet"
+    },
+    {
+      "name": "Gfdgsfdgfdgfdgfdgfdgfdg",
+      "type": "tab",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gfdgsfdgfdgfdgfdgfdgfdg"
+    },
+    {
+      "name": "CorruptstaffLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptstaff_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -979,6 +1035,14 @@
       ],
       "category": "music",
       "subtitle": "ehehehehe"
+    },
+    {
+      "name": "redacted",
+      "files": [
+        "scary_static_sound_effect_320_kbps"
+      ],
+      "category": "hostile",
+      "subtitle": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]"
     }
   ],
   "language_map": {
@@ -989,12 +1053,10 @@
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
-      "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.spear": "Spear",
-      "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "entity.chaosmod.aentity": "Aentity",
       "block.chaosmod.potatus": "Potatus",
@@ -1027,15 +1089,13 @@
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
-      "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "block.chaosmod.sa_ds": "Block ?",
-      "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
-      "item.chaosmod.beef_armor_boots": "Beef Armor Boots",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
@@ -1051,7 +1111,6 @@
       "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.among_us": "Among Us",
-      "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
       "entity.chaosmod.trident": "Tridet",
       "fluid.chaosmod.pee": "Pee",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
@@ -1067,7 +1126,6 @@
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
-      "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "block.chaosmod.emepee": "Emepee",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "biome.chaosmod.susus": "Susus",
@@ -1078,7 +1136,6 @@
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
-      "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "item.chaosmod.oil_bucket": "Oil Bucket",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
       "item.chaosmod.amugus_boots": "Amugus Boots",

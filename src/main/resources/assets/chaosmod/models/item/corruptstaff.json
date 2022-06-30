@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "chaosmod:items/corrupt_schyte"
+  }
+}
