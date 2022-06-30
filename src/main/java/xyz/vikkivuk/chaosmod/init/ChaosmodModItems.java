@@ -32,6 +32,7 @@ import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
 import xyz.vikkivuk.chaosmod.item.BrokenChestplate1Item;
+import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -107,6 +108,10 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BROWN = REGISTRY.register("brown", () -> new BrownItem());
 	public static final RegistryObject<Item> CARBON_MONOXIDE_BUCKET = REGISTRY.register("carbon_monoxide_bucket", () -> new CarbonMonoxideItem());
 	public static final RegistryObject<Item> GGGGGGG = block(ChaosmodModBlocks.GGGGGGG, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BEEF_ARMOR_HELMET = REGISTRY.register("beef_armor_helmet", () -> new BeefArmorItem.Helmet());
+	public static final RegistryObject<Item> BEEF_ARMOR_CHESTPLATE = REGISTRY.register("beef_armor_chestplate", () -> new BeefArmorItem.Chestplate());
+	public static final RegistryObject<Item> BEEF_ARMOR_LEGGINGS = REGISTRY.register("beef_armor_leggings", () -> new BeefArmorItem.Leggings());
+	public static final RegistryObject<Item> BEEF_ARMOR_BOOTS = REGISTRY.register("beef_armor_boots", () -> new BeefArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

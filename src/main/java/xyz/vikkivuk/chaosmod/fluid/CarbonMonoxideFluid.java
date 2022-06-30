@@ -26,7 +26,7 @@ public abstract class CarbonMonoxideFluid extends ForgeFlowingFluid {
 
 	).explosionResistance(100f)
 
-			.tickRate(36)
+			.tickRate(10)
 
 			.bucket(ChaosmodModItems.CARBON_MONOXIDE_BUCKET).block(() -> (LiquidBlock) ChaosmodModBlocks.CARBON_MONOXIDE.get());
 
