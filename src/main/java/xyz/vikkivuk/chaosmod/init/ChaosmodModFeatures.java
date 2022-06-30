@@ -17,9 +17,14 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.GatoradeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
+import xyz.vikkivuk.chaosmod.world.features.WhiteCellFeature;
+import xyz.vikkivuk.chaosmod.world.features.SecretTntFeature;
 import xyz.vikkivuk.chaosmod.world.features.PeePoolFeature;
+import xyz.vikkivuk.chaosmod.world.features.OilMountainFeature;
+import xyz.vikkivuk.chaosmod.world.features.OakHouseFeature;
 import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
 import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
+import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSpORTALFeature;
@@ -89,6 +94,17 @@ public class ChaosmodModFeatures {
 	public static final RegistryObject<Feature<?>> JOSIPOV_DRPANJE = register("josipov_drpanje", JosipovDrpanjeFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, JosipovDrpanjeFeature.GENERATE_BIOMES,
 					JosipovDrpanjeFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> HEROBRINE_SHRINE = register("herobrine_shrine", HerobrineShrineFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, HerobrineShrineFeature.GENERATE_BIOMES,
+					HerobrineShrineFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> OAK_HOUSE = register("oak_house", OakHouseFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, OakHouseFeature.GENERATE_BIOMES, OakHouseFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> OIL_MOUNTAIN = register("oil_mountain", OilMountainFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, OilMountainFeature.GENERATE_BIOMES, OilMountainFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SECRET_TNT = register("secret_tnt", SecretTntFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SecretTntFeature.GENERATE_BIOMES, SecretTntFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> WHITE_CELL = register("white_cell", WhiteCellFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, WhiteCellFeature.GENERATE_BIOMES, WhiteCellFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

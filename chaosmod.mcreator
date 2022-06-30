@@ -721,6 +721,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "sasi_amangas"
+    },
+    {
+      "name": "HerobrineShrine",
+      "type": "structure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrine_shrine"
+    },
+    {
+      "name": "OakHouse",
+      "type": "structure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_house"
+    },
+    {
+      "name": "OilMountain",
+      "type": "structure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_mountain"
+    },
+    {
+      "name": "SecretTnt",
+      "type": "structure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secret_tnt"
+    },
+    {
+      "name": "WhiteCell",
+      "type": "structure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_cell"
     }
   ],
   "variable_elements": [],
@@ -777,14 +817,15 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.tombstone": "Tombstone",
-      "subtitles.kill": "huvh",
       "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.sus_sword": "Sus Sword",
+      "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
-      "block.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
+      "block.chaosmod.staravoda": "Staravoda",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -822,6 +863,7 @@
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
+      "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
@@ -833,6 +875,7 @@
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "Beautiful, m hmhmhmhm.......",
+      "item.chaosmod.sasi_amangas.desc": "pensi mu je mali",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",
@@ -850,7 +893,7 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
-      "key.chaosmod.summonsus": "Open Sus",
+      "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
       "biome.chaosmod.hell_but_overworld": "Neover",
