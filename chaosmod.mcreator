@@ -670,7 +670,7 @@
       "name": "Splank",
       "type": "livingentity",
       "sortid": 58,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "splank"
     },
@@ -678,7 +678,7 @@
       "name": "IkeaDesk",
       "type": "livingentity",
       "sortid": 59,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ikea_desk"
     },
@@ -686,7 +686,7 @@
       "name": "Fallgays",
       "type": "musicdisc",
       "sortid": 58,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "fallgays"
     }
@@ -739,11 +739,11 @@
       "subtitles.kill": "huvh",
       "block.chaosmod.oil": "Oil",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
-      "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
+      "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
