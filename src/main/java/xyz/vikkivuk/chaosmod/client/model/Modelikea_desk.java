@@ -15,16 +15,16 @@ import net.minecraft.client.model.EntityModel;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-// Made with Blockbench 4.0.3
-// Exported for Minecraft version 1.17 with Mojang mappings
+// Made with Blockbench 4.2.4
+// Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
+public class Modelikea_desk<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("chaosmod", "modelcustom_model"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("chaosmod", "modelikea_desk"), "main");
 	public final ModelPart bb_main;
 
-	public Modelcustom_model(ModelPart root) {
+	public Modelikea_desk(ModelPart root) {
 		this.bb_main = root.getChild("bb_main");
 	}
 
@@ -32,13 +32,11 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 28).addBox(1.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 28)
-						.mirror().addBox(-5.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(0, 0)
-						.addBox(-5.0F, -19.0F, -1.0F, 10.0F, 14.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(46, 0)
-						.addBox(-4.0F, -17.0F, -1.25F, 8.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 5)
-						.addBox(-4.0F, -18.0F, 2.25F, 8.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 36).addBox(-21.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(13.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-24.0F, -22.0F, -13.0F, 48.0F, 4.0F, 32.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
-		return LayerDefinition.create(meshdefinition, 64, 64);
+		return LayerDefinition.create(meshdefinition, 256, 256);
 	}
 
 	@Override
@@ -46,8 +44,8 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-			float alpha) {
-		bb_main.render(poseStack, buffer, packedLight, packedOverlay);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
+			float blue, float alpha) {
+		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

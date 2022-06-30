@@ -681,6 +681,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ekesmasterbait"
+    },
+    {
+      "name": "Splank",
+      "type": "livingentity",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splank"
+    },
+    {
+      "name": "IkeaDesk",
+      "type": "livingentity",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ikea_desk"
+    },
+    {
+      "name": "JosipovDrpanje",
+      "type": "structure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipov_drpanje"
+    },
+    {
+      "name": "SasiAmangas",
+      "type": "musicdisc",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sasi_amangas"
     }
   ],
   "variable_elements": [],
@@ -724,6 +756,14 @@
       ],
       "category": "music",
       "subtitle": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu"
+    },
+    {
+      "name": "jusif",
+      "files": [
+        "untitled_1"
+      ],
+      "category": "music",
+      "subtitle": "ehehehehe"
     }
   ],
   "language_map": {
@@ -731,17 +771,19 @@
       "subtitles.kill": "huvh",
       "block.chaosmod.oil": "Oil",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.sus_sword": "Sus Sword",
+      "subtitles.jusif": "ehehehehe",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
-      "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
+      "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
+      "subtitles.sdawdawd": "ehehehehe",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "item.chaosmod.dirtsword": "Dirtsword",
       "entity.chaosmod.aentity": "Aentity",
@@ -772,7 +814,6 @@
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "block.chaosmod.pee": "Pee",
       "block.chaosmod.emepee": "Emepee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",

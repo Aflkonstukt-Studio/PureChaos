@@ -6,7 +6,9 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
+import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
@@ -61,6 +63,16 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<WaterCupEntity>> WATER_CUP = register("projectile_water_cup",
 			EntityType.Builder.<WaterCupEntity>of(WaterCupEntity::new, MobCategory.MISC).setCustomClientFactory(WaterCupEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SplankEntity>> SPLANK = register("splank",
+			EntityType.Builder.<SplankEntity>of(SplankEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(SplankEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IkeaDeskEntity>> IKEA_DESK = register("ikea_desk",
+			EntityType.Builder.<IkeaDeskEntity>of(IkeaDeskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(IkeaDeskEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -74,6 +86,8 @@ public class ChaosmodModEntities {
 			AmongUsEntity.init();
 			Amogus2Entity.init();
 			Amogus3Entity.init();
+			SplankEntity.init();
+			IkeaDeskEntity.init();
 		});
 	}
 
@@ -84,5 +98,7 @@ public class ChaosmodModEntities {
 		event.put(AMONG_US.get(), AmongUsEntity.createAttributes().build());
 		event.put(AMOGUS_2.get(), Amogus2Entity.createAttributes().build());
 		event.put(AMOGUS_3.get(), Amogus3Entity.createAttributes().build());
+		event.put(SPLANK.get(), SplankEntity.createAttributes().build());
+		event.put(IKEA_DESK.get(), IkeaDeskEntity.createAttributes().build());
 	}
 }

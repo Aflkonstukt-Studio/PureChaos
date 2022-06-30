@@ -48,5 +48,15 @@
         "stream": true
       }
     ]
+  },
+  "jusif": {
+    "category": "music",
+    "subtitle": "subtitles.jusif",
+    "sounds": [
+      {
+        "name": "chaosmod:untitled_1",
+        "stream": true
+      }
+    ]
   }
 }
