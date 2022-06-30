@@ -19,8 +19,7 @@ import net.minecraft.core.particles.ParticleOptions;
 public abstract class CarbonMonoxideFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CARBON_MONOXIDE,
 			ChaosmodModFluids.FLOWING_CARBON_MONOXIDE,
-			FluidAttributes
-					.builder(new ResourceLocation("chaosmod:blocks/ppppppppppp-alpha"), new ResourceLocation("chaosmod:blocks/ppppppppppp-alpha"))
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/cum"), new ResourceLocation("chaosmod:blocks/cum"))
 
 					.temperature(4000).gaseous()
 
