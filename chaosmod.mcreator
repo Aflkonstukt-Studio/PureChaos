@@ -860,6 +860,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "structure_loot"
+    },
+    {
+      "name": "KillJosipoLoot",
+      "type": "loottable",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_josipo_loot"
     }
   ],
   "variable_elements": [],
