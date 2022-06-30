@@ -860,6 +860,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "KillJosipoLoot",
+      "type": "loottable",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_josipo_loot"
+    },
+    {
+      "name": "Ggggggg",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ggggggg"
     }
   ],
   "variable_elements": [],
