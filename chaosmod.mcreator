@@ -771,6 +771,14 @@
       "registry_name": "josip"
     },
     {
+      "name": "Brown",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown"
+    },
+    {
       "name": "BrownItemInInventoryTick",
       "type": "procedure",
       "sortid": 67,
@@ -785,14 +793,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Brown",
-      "type": "item",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "brown"
     }
   ],
   "variable_elements": [],
@@ -849,10 +849,10 @@
   "language_map": {
     "en_us": {
       "block.chaosmod.tombstone": "Tombstone",
-      "subtitles.kill": "huvh",
       "block.chaosmod.oil": "Oil",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.sus_sword": "Sus Sword",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
@@ -904,11 +904,10 @@
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "item.chaosmod.pickax": "Pickax",
       "biome.chaosmod.susus": "Susus",
-      "item.chaosmod.brown": "Brown",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
-      "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
+      "item.chaosmod.fallgays.desc": "Beautiful, m hmhmhmhm.......",
       "item.chaosmod.sasi_amangas.desc": "pensi mu je mali",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
