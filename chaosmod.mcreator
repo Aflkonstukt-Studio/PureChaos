@@ -1024,6 +1024,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_range"
+    },
+    {
+      "name": "JosipPett",
+      "type": "livingentity",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip_pett"
     }
   ],
   "variable_elements": [],

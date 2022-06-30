@@ -11,6 +11,7 @@ import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipRangeEntity;
+import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
@@ -94,6 +95,9 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<JosipRangeEntity>> JOSIP_RANGE = register("projectile_josip_range",
 			EntityType.Builder.<JosipRangeEntity>of(JosipRangeEntity::new, MobCategory.MISC).setCustomClientFactory(JosipRangeEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<JosipPettEntity>> JOSIP_PETT = register("josip_pett",
+			EntityType.Builder.<JosipPettEntity>of(JosipPettEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPettEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<MothOfAggrevationEntity>> MOTH_OF_AGGREVATION = register("moth_of_aggrevation",
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
@@ -117,6 +121,7 @@ public class ChaosmodModEntities {
 			JOSIPEntity.init();
 			JosipdvatockanulaEntity.init();
 			JosipPetEntity.init();
+			JosipPettEntity.init();
 			MothOfAggrevationEntity.init();
 		});
 	}
@@ -133,6 +138,7 @@ public class ChaosmodModEntities {
 		event.put(JOSIP.get(), JOSIPEntity.createAttributes().build());
 		event.put(JOSIPDVATOCKANULA.get(), JosipdvatockanulaEntity.createAttributes().build());
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
+		event.put(JOSIP_PETT.get(), JosipPettEntity.createAttributes().build());
 		event.put(MOTH_OF_AGGREVATION.get(), MothOfAggrevationEntity.createAttributes().build());
 	}
 }
