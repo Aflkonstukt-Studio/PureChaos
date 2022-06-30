@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.block.WoodDimensionPortalBlock;
+import xyz.vikkivuk.chaosmod.block.TombstoneBlock;
 import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
 import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
@@ -53,6 +54,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
 	public static final RegistryObject<Block> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeBlock());
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
+	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -60,6 +62,7 @@ public class ChaosmodModBlocks {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			PotatusBlock.registerRenderLayer();
 			GreenPlantBlock.registerRenderLayer();
+			TombstoneBlock.registerRenderLayer();
 		}
 	}
 }
