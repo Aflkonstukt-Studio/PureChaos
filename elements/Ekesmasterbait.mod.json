@@ -80,10 +80,10 @@
       "value": "Blocks.FLOWERING_AZALEA_LEAVES"
     },
     "treeVines": {
-      "value": "Blocks.AMETHYST_CLUSTER"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.CANDLE_CAKE#0"
+      "value": ""
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
@@ -115,16 +115,6 @@
       "ExtraEmeraldOre",
       "TaigaRocks"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:Aentity"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }
