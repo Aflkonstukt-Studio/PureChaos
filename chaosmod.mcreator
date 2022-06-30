@@ -817,6 +817,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "rssure_6t"
+    },
+    {
+      "name": "Ambyss",
+      "type": "structure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambyss"
+    },
+    {
+      "name": "StructureLoot",
+      "type": "loottable",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "structure_loot"
     }
   ],
   "variable_elements": [],

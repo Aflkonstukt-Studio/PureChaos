@@ -28,6 +28,7 @@ import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSpORTALFeature;
+import xyz.vikkivuk.chaosmod.world.features.AmbyssFeature;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -105,6 +106,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SecretTntFeature.GENERATE_BIOMES, SecretTntFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> WHITE_CELL = register("white_cell", WhiteCellFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, WhiteCellFeature.GENERATE_BIOMES, WhiteCellFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> AMBYSS = register("ambyss", AmbyssFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmbyssFeature.GENERATE_BIOMES, AmbyssFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
