@@ -107,10 +107,10 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SecretTntFeature.GENERATE_BIOMES, SecretTntFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> WHITE_CELL = register("white_cell", WhiteCellFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, WhiteCellFeature.GENERATE_BIOMES, WhiteCellFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> AMBYSS = register("ambyss", AmbyssFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmbyssFeature.GENERATE_BIOMES, AmbyssFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CARBON_MONOXIDE = register("carbon_monoxide", CarbonMonoxideFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CarbonMonoxideFeature.GENERATE_BIOMES, CarbonMonoxideFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> AMBYSS = register("ambyss", AmbyssFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, AmbyssFeature.GENERATE_BIOMES, AmbyssFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
