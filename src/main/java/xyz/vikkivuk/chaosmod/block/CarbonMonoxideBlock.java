@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class CarbonMonoxideBlock extends LiquidBlock {
@@ -22,11 +21,6 @@ public class CarbonMonoxideBlock extends LiquidBlock {
 				BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_YELLOW).strength(100f)
 
 		);
-	}
-
-	@Override
-	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-		return 12;
 	}
 
 	@Override
