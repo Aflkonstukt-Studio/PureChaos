@@ -45,7 +45,9 @@ public class ChaosmodModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<AmongUsEntity>> AMONG_US = register("among_us",
 			EntityType.Builder.<AmongUsEntity>of(AmongUsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(69)
-					.setUpdateInterval(3).setCustomClientFactory(AmongUsEntity::new).fireImmune().sized(0.6f, 1.8f));
+					.setUpdateInterval(3).setCustomClientFactory(AmongUsEntity::new)
+
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<Amogus2Entity>> AMOGUS_2 = register("amogus_2",
 			EntityType.Builder.<Amogus2Entity>of(Amogus2Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(Amogus2Entity::new).fireImmune().sized(0.6f, 1.8f));

@@ -795,6 +795,14 @@
       }
     },
     {
+      "name": "Ambyss",
+      "type": "structure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambyss"
+    },
+    {
       "name": "StructureLoot",
       "type": "loottable",
       "sortid": 68,
@@ -803,12 +811,28 @@
       "registry_name": "structure_loot"
     },
     {
-      "name": "Ambyss",
-      "type": "structure",
+      "name": "Rssure6t",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rssure_6t"
+    },
+    {
+      "name": "Rec8pe",
+      "type": "recipe",
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ambyss"
+      "registry_name": "rec_8pe"
+    },
+    {
+      "name": "FuckYou",
+      "type": "potion",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuck_you"
     }
   ],
   "variable_elements": [],
