@@ -894,14 +894,6 @@
       "registry_name": "josipdvatockanula"
     },
     {
-      "name": "Gfdgsfdgfdgfdgfdgfdgfdg",
-      "type": "tab",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gfdgsfdgfdgfdgfdgfdgfdg"
-    },
-    {
       "name": "CorruptstaffLivingEntityIsHitWithTool",
       "type": "procedure",
       "sortid": 73,
@@ -968,6 +960,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "diorite_fuel"
+    },
+    {
+      "name": "GasChamber",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_chamber"
+    },
+    {
+      "name": "JosipPet",
+      "type": "livingentity",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip_pet"
     }
   ],
   "variable_elements": [],

@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
+import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
@@ -83,6 +84,11 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<JosipdvatockanulaEntity>> JOSIPDVATOCKANULA = register("josipdvatockanula",
 			EntityType.Builder.<JosipdvatockanulaEntity>of(JosipdvatockanulaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(JosipdvatockanulaEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JosipPetEntity>> JOSIP_PET = register("josip_pet",
+			EntityType.Builder.<JosipPetEntity>of(JosipPetEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPetEntity::new)
+
+					.sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -100,6 +106,7 @@ public class ChaosmodModEntities {
 			IkeaDeskEntity.init();
 			JOSIPEntity.init();
 			JosipdvatockanulaEntity.init();
+			JosipPetEntity.init();
 		});
 	}
 
@@ -114,5 +121,6 @@ public class ChaosmodModEntities {
 		event.put(IKEA_DESK.get(), IkeaDeskEntity.createAttributes().build());
 		event.put(JOSIP.get(), JOSIPEntity.createAttributes().build());
 		event.put(JOSIPDVATOCKANULA.get(), JosipdvatockanulaEntity.createAttributes().build());
+		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
 	}
 }
