@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
+import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
@@ -89,6 +90,9 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPetEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<JosipPettEntity>> JOSIP_PETT = register("josip_pett",
+			EntityType.Builder.<JosipPettEntity>of(JosipPettEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPettEntity::new).fireImmune().sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -107,6 +111,7 @@ public class ChaosmodModEntities {
 			JOSIPEntity.init();
 			JosipdvatockanulaEntity.init();
 			JosipPetEntity.init();
+			JosipPettEntity.init();
 		});
 	}
 
@@ -122,5 +127,6 @@ public class ChaosmodModEntities {
 		event.put(JOSIP.get(), JOSIPEntity.createAttributes().build());
 		event.put(JOSIPDVATOCKANULA.get(), JosipdvatockanulaEntity.createAttributes().build());
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
+		event.put(JOSIP_PETT.get(), JosipPettEntity.createAttributes().build());
 	}
 }
