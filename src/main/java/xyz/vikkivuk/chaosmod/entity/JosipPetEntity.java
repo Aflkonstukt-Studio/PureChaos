@@ -190,7 +190,7 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		KondomnepitajzastoovoradimalispoileralertonimarupuEntity.shoot(this, target);
+		JosipRangeEntity.shoot(this, target);
 	}
 
 	@Override

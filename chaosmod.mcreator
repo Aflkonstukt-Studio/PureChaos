@@ -984,6 +984,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_pett"
+    },
+    {
+      "name": "JosipRange",
+      "type": "rangeditem",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josip_range"
+    },
+    {
+      "name": "MothOfAggrevation",
+      "type": "livingentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moth_of_aggrevation"
+    },
+    {
+      "name": "TombstonePlaceProcd",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tombstone_place_procd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

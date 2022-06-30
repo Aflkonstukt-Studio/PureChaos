@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipdvatockanulaRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPettRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPetRenderer;
@@ -41,5 +42,7 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), JosipdvatockanulaRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_PET.get(), JosipPetRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_PETT.get(), JosipPettRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_RANGE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), MothOfAggrevationRenderer::new);
 	}
 }
