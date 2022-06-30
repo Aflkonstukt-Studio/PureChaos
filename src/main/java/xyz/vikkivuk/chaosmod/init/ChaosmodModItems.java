@@ -29,6 +29,7 @@ import xyz.vikkivuk.chaosmod.item.DipexItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
+import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
 import xyz.vikkivuk.chaosmod.item.BrokenChestplate1Item;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
@@ -104,6 +105,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> JOSIP = REGISTRY.register("josip_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.JOSIP, -3407617, -16777216, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> BROWN = REGISTRY.register("brown", () -> new BrownItem());
+	public static final RegistryObject<Item> CARBON_MONOXIDE_BUCKET = REGISTRY.register("carbon_monoxide_bucket", () -> new CarbonMonoxideItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
