@@ -1032,6 +1032,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_pett"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47"
     }
   ],
   "variable_elements": [],
@@ -1123,6 +1131,7 @@
       "fluid.chaosmod.gatorade": "Gatorade",
       "block.chaosmod.pee_block": "Pee Block",
       "entity.chaosmod.splank": "Splank",
+      "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
