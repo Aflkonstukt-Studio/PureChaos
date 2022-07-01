@@ -170,28 +170,6 @@
       "registry_name": "food_item_2"
     },
     {
-      "name": "BrokenChestplate1",
-      "type": "armor",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "broken_chestplate_1",
-      "metadata": {
-        "eh": false,
-        "el": false,
-        "eb": false,
-        "ec": true
-      }
-    },
-    {
-      "name": "Warning",
-      "type": "gui",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warning"
-    },
-    {
       "name": "PotatoSpuds",
       "type": "item",
       "sortid": 19,
@@ -538,54 +516,6 @@
       "registry_name": "susboot"
     },
     {
-      "name": "Sussssssssssssssssss",
-      "type": "gui",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sussssssssssssssssss"
-    },
-    {
-      "name": "Summonsus",
-      "type": "keybind",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summonsus"
-    },
-    {
-      "name": "SummonsusOnKeyPressed",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summonsus_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PressSoulButton",
       "type": "procedure",
       "sortid": 52,
@@ -870,14 +800,6 @@
       "registry_name": "kill_josipo_loot"
     },
     {
-      "name": "Ggggggg",
-      "type": "block",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ggggggg"
-    },
-    {
       "name": "Corruptstaff",
       "type": "tool",
       "sortid": 73,
@@ -1029,6 +951,106 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CorruptstaffRightclicked",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptstaff_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47"
+    },
+    {
+      "name": "Shep",
+      "type": "livingentity",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shep"
+    },
+    {
+      "name": "VikkiVukGui",
+      "type": "gui",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vikki_vuk_gui"
+    },
+    {
+      "name": "Vikkivuk",
+      "type": "livingentity",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vikkivuk"
+    },
+    {
+      "name": "Blaz",
+      "type": "livingentity",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaz"
+    },
+    {
+      "name": "CursedDog",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_dog"
+    },
+    {
+      "name": "Trashitems",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trashitems",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }

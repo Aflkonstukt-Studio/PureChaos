@@ -4,8 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
-import xyz.vikkivuk.chaosmod.world.inventory.WarningMenu;
-import xyz.vikkivuk.chaosmod.world.inventory.SussssssssssssssssssMenu;
+import xyz.vikkivuk.chaosmod.world.inventory.VikkiVukGuiMenu;
 
 import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
@@ -21,9 +20,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ChaosmodModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<WarningMenu> WARNING = register("warning", (id, inv, extraData) -> new WarningMenu(id, inv, extraData));
-	public static final MenuType<SussssssssssssssssssMenu> SUSSSSSSSSSSSSSSSSSS = register("sussssssssssssssssss",
-			(id, inv, extraData) -> new SussssssssssssssssssMenu(id, inv, extraData));
+	public static final MenuType<VikkiVukGuiMenu> VIKKI_VUK_GUI = register("vikki_vuk_gui",
+			(id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

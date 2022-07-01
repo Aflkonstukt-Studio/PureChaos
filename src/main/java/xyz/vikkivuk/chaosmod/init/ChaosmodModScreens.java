@@ -4,8 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
-import xyz.vikkivuk.chaosmod.client.gui.WarningScreen;
-import xyz.vikkivuk.chaosmod.client.gui.SussssssssssssssssssScreen;
+import xyz.vikkivuk.chaosmod.client.gui.VikkiVukGuiScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,8 +18,7 @@ public class ChaosmodModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(ChaosmodModMenus.WARNING, WarningScreen::new);
-			MenuScreens.register(ChaosmodModMenus.SUSSSSSSSSSSSSSSSSSS, SussssssssssssssssssScreen::new);
+			MenuScreens.register(ChaosmodModMenus.VIKKI_VUK_GUI, VikkiVukGuiScreen::new);
 		});
 	}
 }

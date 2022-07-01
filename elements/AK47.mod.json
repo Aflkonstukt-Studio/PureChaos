@@ -1,0 +1,39 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "texture",
+    "customModelName": "ak47java:default",
+    "name": "AK 47",
+    "specialInfo": [
+      "HEHEHEHE"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Bullet"
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 1.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 1,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Bullet"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

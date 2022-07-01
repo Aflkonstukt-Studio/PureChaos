@@ -9,6 +9,6 @@ public class CODeathProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.hurt(new DamageSource("custom").bypassArmor(), 1);
+			_entity.hurt(new DamageSource("custom").bypassArmor(), 3);
 	}
 }

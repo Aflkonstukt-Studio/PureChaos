@@ -4,11 +4,11 @@
   "definition": {
     "name": "Cum",
     "bucketName": "Cum Bucket",
-    "textureStill": "ppppppppppp-alpha",
-    "textureFlowing": "walk",
+    "textureStill": "cum",
+    "textureFlowing": "cum",
     "tintType": "No tint",
     "canMultiply": false,
-    "flowRate": 100,
+    "flowRate": 6,
     "levelDecrease": 1,
     "slopeFindDistance": 1,
     "spawnParticles": true,
@@ -23,7 +23,7 @@
     "temperature": 69420,
     "type": "LAVA",
     "generateBucket": true,
-    "textureBucket": "i_like_pica",
+    "textureBucket": "",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },

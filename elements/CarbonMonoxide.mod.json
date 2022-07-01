@@ -4,8 +4,8 @@
   "definition": {
     "name": "Carbon Monoxide",
     "bucketName": "Carbon Monoxide Bucket",
-    "textureStill": "ppppppppppp-alpha",
-    "textureFlowing": "ppppppppppp-alpha",
+    "textureStill": "cum",
+    "textureFlowing": "cum",
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 10,
