@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Non marketable josip plushie",
+    "mobName": "Josip GRR pet",
     "mobLabel": "Marketable Josip",
     "mobModelName": "Modeljosipmmarket",
     "mobModelTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
@@ -100,8 +100,8 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"-25\" y=\"29\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"-25\" y=\"29\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">2</field><field name=\"max_distance\">10</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"eat_grass\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
     "tameable": true,
     "breedTriggerItems": [
       {
@@ -112,7 +112,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Deek",
+    "rangedItemType": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,

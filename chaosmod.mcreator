@@ -170,28 +170,6 @@
       "registry_name": "food_item_2"
     },
     {
-      "name": "BrokenChestplate1",
-      "type": "armor",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "broken_chestplate_1",
-      "metadata": {
-        "eh": false,
-        "el": false,
-        "eb": false,
-        "ec": true
-      }
-    },
-    {
-      "name": "Warning",
-      "type": "gui",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warning"
-    },
-    {
       "name": "PotatoSpuds",
       "type": "item",
       "sortid": 19,
@@ -538,54 +516,6 @@
       "registry_name": "susboot"
     },
     {
-      "name": "Sussssssssssssssssss",
-      "type": "gui",
-      "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sussssssssssssssssss"
-    },
-    {
-      "name": "Summonsus",
-      "type": "keybind",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summonsus"
-    },
-    {
-      "name": "SummonsusOnKeyPressed",
-      "type": "procedure",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "summonsus_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PressSoulButton",
       "type": "procedure",
       "sortid": 52,
@@ -870,14 +800,6 @@
       "registry_name": "kill_josipo_loot"
     },
     {
-      "name": "Ggggggg",
-      "type": "block",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ggggggg"
-    },
-    {
       "name": "BeefArmor",
       "type": "armor",
       "sortid": 72,
@@ -1040,6 +962,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ak_47"
+    },
+    {
+      "name": "Shep",
+      "type": "livingentity",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shep"
+    },
+    {
+      "name": "AK",
+      "type": "rangeditem",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak"
+    },
+    {
+      "name": "Blaz",
+      "type": "livingentity",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaz"
+    },
+    {
+      "name": "CursedDog",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_dog"
     }
   ],
   "variable_elements": [],
@@ -1103,17 +1057,17 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.kill": "huvh",
-      "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
@@ -1124,14 +1078,13 @@
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "block.chaosmod.green_plant": "Green Plant",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
-      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.sus_block": "Sus Block",
+      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
-      "block.chaosmod.pee_block": "Pee Block",
       "entity.chaosmod.splank": "Splank",
-      "item.chaosmod.ak_47": "AK 47",
+      "block.chaosmod.pee_block": "Pee Block",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
@@ -1145,8 +1098,8 @@
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.sasi_amangas.desc": "pensi mu je mali",
       "subtitles.amongus_ambient": "amogus",
-      "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",

@@ -6,12 +6,15 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipdvatockanulaRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPettRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPetRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JOSIPRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.BlazRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
@@ -45,5 +48,9 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.JOSIP_PETT.get(), JosipPettRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), MothOfAggrevationRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AK_47.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.CURSED_DOG.get(), CursedDogRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.BLAZ.get(), BlazRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.SHEP.get(), ShepRenderer::new);
 	}
 }

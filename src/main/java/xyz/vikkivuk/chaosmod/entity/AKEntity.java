@@ -2,21 +2,21 @@
 package xyz.vikkivuk.chaosmod.entity;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class AK47Entity extends AbstractArrow implements ItemSupplier {
+public class AKEntity extends AbstractArrow implements ItemSupplier {
 
-	public AK47Entity(PlayMessages.SpawnEntity packet, Level world) {
-		super(ChaosmodModEntities.AK_47.get(), world);
+	public AKEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(ChaosmodModEntities.AK.get(), world);
 	}
 
-	public AK47Entity(EntityType<? extends AK47Entity> type, Level world) {
+	public AKEntity(EntityType<? extends AKEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public AK47Entity(EntityType<? extends AK47Entity> type, double x, double y, double z, Level world) {
+	public AKEntity(EntityType<? extends AKEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public AK47Entity(EntityType<? extends AK47Entity> type, LivingEntity entity, Level world) {
+	public AKEntity(EntityType<? extends AKEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -28,12 +28,12 @@ public class AK47Entity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(ChaosmodModBlocks.SUS_BLOCK.get());
+		return new ItemStack(ChaosmodModItems.JOSIP_RANGE.get());
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return ItemStack.EMPTY;
+		return new ItemStack(ChaosmodModItems.JOSIP_RANGE.get());
 	}
 
 	@Override
@@ -50,11 +50,11 @@ public class AK47Entity extends AbstractArrow implements ItemSupplier {
 			this.discard();
 	}
 
-	public static AK47Entity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
-		AK47Entity entityarrow = new AK47Entity(ChaosmodModEntities.AK_47.get(), entity, world);
+	public static AKEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
+		AKEntity entityarrow = new AKEntity(ChaosmodModEntities.AK.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -66,17 +66,17 @@ public class AK47Entity extends AbstractArrow implements ItemSupplier {
 		return entityarrow;
 	}
 
-	public static AK47Entity shoot(LivingEntity entity, LivingEntity target) {
-		AK47Entity entityarrow = new AK47Entity(ChaosmodModEntities.AK_47.get(), entity, entity.level);
+	public static AKEntity shoot(LivingEntity entity, LivingEntity target) {
+		AKEntity entityarrow = new AKEntity(ChaosmodModEntities.AK.get(), entity, entity.level);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
-		entityarrow.setKnockback(1);
-		entityarrow.setCritArrow(true);
+		entityarrow.setKnockback(5);
+		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,
