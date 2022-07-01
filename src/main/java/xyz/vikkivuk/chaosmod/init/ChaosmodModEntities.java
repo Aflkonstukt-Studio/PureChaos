@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
+import xyz.vikkivuk.chaosmod.entity.ShepEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
@@ -16,6 +17,8 @@ import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
+import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
+import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
@@ -107,6 +110,21 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<AKEntity>> AK = register("projectile_ak",
 			EntityType.Builder.<AKEntity>of(AKEntity::new, MobCategory.MISC).setCustomClientFactory(AKEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CursedDogEntity>> CURSED_DOG = register("cursed_dog",
+			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedDogEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlazEntity>> BLAZ = register("blaz",
+			EntityType.Builder.<BlazEntity>of(BlazEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(BlazEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ShepEntity>> SHEP = register("shep",
+			EntityType.Builder.<ShepEntity>of(ShepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(ShepEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -127,6 +145,9 @@ public class ChaosmodModEntities {
 			JosipPetEntity.init();
 			JosipPettEntity.init();
 			MothOfAggrevationEntity.init();
+			CursedDogEntity.init();
+			BlazEntity.init();
+			ShepEntity.init();
 		});
 	}
 
@@ -144,5 +165,8 @@ public class ChaosmodModEntities {
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
 		event.put(JOSIP_PETT.get(), JosipPettEntity.createAttributes().build());
 		event.put(MOTH_OF_AGGREVATION.get(), MothOfAggrevationEntity.createAttributes().build());
+		event.put(CURSED_DOG.get(), CursedDogEntity.createAttributes().build());
+		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
+		event.put(SHEP.get(), ShepEntity.createAttributes().build());
 	}
 }
