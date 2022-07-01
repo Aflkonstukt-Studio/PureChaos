@@ -13,6 +13,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.DungeonHooks;
 
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
@@ -84,7 +85,7 @@ public class AentityEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MISC).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AENTITY.get(), 20, 20, 50));
+			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AENTITY.get(), 30, 10, 20));
 	}
 
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.WHITE,
@@ -256,8 +257,9 @@ public class AentityEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ChaosmodModEntities.AENTITY.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				Mob::checkMobSpawnRules);
+		SpawnPlacements.register(ChaosmodModEntities.AENTITY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.AENTITY.get(), 180);
 	}
 

@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Moth Of Aggrevation",
-    "mobLabel": "Moth of Aggervation",
+    "mobLabel": "",
     "mobModelName": "Modelmoth",
     "mobModelTexture": "moth.png",
     "mobModelGlowTexture": "",
@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 25,
+    "spawningProbability": 30,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 6,
+    "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [],
     "spawnInDungeons": true
   }

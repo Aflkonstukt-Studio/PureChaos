@@ -96,7 +96,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> ORANGE_FLUID_BUCKET = REGISTRY.register("orange_fluid_bucket", () -> new OrangeFluidItem());
 	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
 	public static final RegistryObject<Item> GATORADE_BUCKET = REGISTRY.register("gatorade_bucket", () -> new GatoradeItem());
-	public static final RegistryObject<Item> GREEN_PLANT = block(ChaosmodModBlocks.GREEN_PLANT, CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> GREEN_PLANT = block(ChaosmodModBlocks.GREEN_PLANT, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> WATER_CUP = REGISTRY.register("water_cup", () -> new WaterCupItem());
 	public static final RegistryObject<Item> SPLANK = REGISTRY.register("splank_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SPLANK, -3355648, -154, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
@@ -137,6 +137,8 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> SHEP = REGISTRY.register("shep_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SHEP, -1, -10066330, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
+	public static final RegistryObject<Item> VIKKIVUK = REGISTRY.register("vikkivuk_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.VIKKIVUK, -13369345, -13408513, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

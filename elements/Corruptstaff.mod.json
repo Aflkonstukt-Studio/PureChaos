@@ -25,6 +25,9 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CorruptstaffRightclicked"
+    },
     "onEntityHitWith": {
       "name": "CorruptstaffLivingEntityIsHitWithTool"
     }

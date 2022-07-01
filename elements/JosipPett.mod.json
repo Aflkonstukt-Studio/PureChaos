@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Josip GRR pet",
-    "mobLabel": "Marketable Josip",
+    "mobLabel": "Evil Josip",
     "mobModelName": "Modeljosipmmarket",
     "mobModelTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
     "mobModelGlowTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
@@ -116,10 +116,10 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
-    "spawnInDungeons": false
+    "spawnInDungeons": true
   }
 }

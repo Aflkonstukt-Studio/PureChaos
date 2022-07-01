@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
@@ -51,5 +52,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.CURSED_DOG.get(), CursedDogRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.BLAZ.get(), BlazRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.SHEP.get(), ShepRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.VIKKIVUK.get(), VikkivukRenderer::new);
 	}
 }

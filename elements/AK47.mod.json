@@ -22,7 +22,7 @@
       "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
-    "animation": "crossbow",
+    "animation": "none",
     "enableMeleeDamage": false,
     "damageVsEntity": 1.0,
     "bulletPower": 3.0,
