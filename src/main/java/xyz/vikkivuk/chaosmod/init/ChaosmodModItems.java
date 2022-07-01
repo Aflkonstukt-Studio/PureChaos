@@ -139,6 +139,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
 	public static final RegistryObject<Item> VIKKIVUK = REGISTRY.register("vikkivuk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.VIKKIVUK, -13369345, -13408513, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> NOBLOCK = block(ChaosmodModBlocks.NOBLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

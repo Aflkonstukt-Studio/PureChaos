@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/noblock",
+    "up": "chaosmod:blocks/noblock",
+    "north": "chaosmod:blocks/noblock",
+    "east": "chaosmod:blocks/noblock",
+    "south": "chaosmod:blocks/noblock",
+    "west": "chaosmod:blocks/noblock",
+    "particle": "chaosmod:blocks/noblock"
+  }
+}

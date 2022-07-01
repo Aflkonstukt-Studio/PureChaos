@@ -17,6 +17,7 @@ import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
+import xyz.vikkivuk.chaosmod.block.NoblockBlock;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
 import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
@@ -57,6 +58,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
+	public static final RegistryObject<Block> NOBLOCK = REGISTRY.register("noblock", () -> new NoblockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
