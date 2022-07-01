@@ -1,6 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.world.biome;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
+
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
@@ -23,6 +25,7 @@ import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.world.level.biome.AmbientAdditionsSettings;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.sounds.SoundEvent;
@@ -84,6 +87,21 @@ public class EkesmasterbaitBiome {
 		BiomeDefaultFeatures.addLushCavesVegetationFeatures(biomeGenerationSettings);
 		BiomeDefaultFeatures.addMossyStoneBlock(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AENTITY.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_2.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMONG_US.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.BLAZ.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.CURSED_DOG.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.IKEA_DESK.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PET.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SHEP.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SPLANK.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.TRIDENT.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.VIKKIVUK.get(), 20, 4, 4));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PETT.get(), 20, 4, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(0.5f)
 				.downfall(0.6f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
