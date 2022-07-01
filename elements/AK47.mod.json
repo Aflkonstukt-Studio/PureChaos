@@ -3,16 +3,18 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 1,
-    "texture": "corrupt_schyte",
+    "texture": "texture",
     "customModelName": "ak47java:default",
-    "name": "AK",
-    "specialInfo": [],
+    "name": "AK 47",
+    "specialInfo": [
+      "HEHEHEHE"
+    ],
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:JosipRange"
+      "value": "CUSTOM:Bullet"
     },
     "shootConstantly": false,
     "usageCount": 100,
@@ -22,14 +24,14 @@
     "hasGlow": false,
     "animation": "crossbow",
     "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
-    "bulletPower": 1.0,
+    "damageVsEntity": 1.0,
+    "bulletPower": 3.0,
     "bulletDamage": 5.0,
-    "bulletKnockback": 5,
-    "bulletParticles": false,
+    "bulletKnockback": 1,
+    "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:JosipRange"
+      "value": "CUSTOM:Bullet"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""

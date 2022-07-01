@@ -956,14 +956,6 @@
       "registry_name": "josip_pett"
     },
     {
-      "name": "AK",
-      "type": "rangeditem",
-      "sortid": 79,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ak"
-    },
-    {
       "name": "CursedDog",
       "type": "livingentity",
       "sortid": 80,
@@ -986,6 +978,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "shep"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47"
     }
   ],
   "variable_elements": [],
@@ -1072,6 +1080,7 @@
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.sus_block": "Sus Block",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
@@ -1093,6 +1102,7 @@
       "item.chaosmod.sasi_amangas.desc": "pensi mu je mali",
       "subtitles.amongus_ambient": "amogus",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
@@ -1104,6 +1114,7 @@
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
+      "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
@@ -1137,6 +1148,7 @@
       "block.chaosmod.gatorade": "Gatorade",
       "block.chaosmod.cum": "Cum",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
+      "block.chaosmod.ggggggg": "slipped and slipped",
       "item.chaosmod.water_cup": "Water Cup",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
@@ -1152,6 +1164,7 @@
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "fluid.chaosmod.staravoda": "Staravoda",
+      "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "item.chaosmod.oil_bucket": "Oil Bucket",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
@@ -1159,6 +1172,7 @@
       "item.chaosmod.amugus_boots": "Amugus Boots",
       "item.chaosmod.josip_range": "Josip Range",
       "item.chaosmod.shep_spawn_egg": "Shep Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
