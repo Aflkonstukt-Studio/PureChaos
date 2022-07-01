@@ -114,9 +114,9 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 20,
+    "spawningProbability": 25,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 6,
     "maxNumberOfMobsPerGroup": 10,
     "restrictionBiomes": [],
     "spawnInDungeons": true

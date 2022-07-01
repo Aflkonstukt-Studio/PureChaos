@@ -994,6 +994,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ak_47"
+    },
+    {
+      "name": "Vikkivuk",
+      "type": "livingentity",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vikkivuk"
+    },
+    {
+      "name": "VikkiVukGui",
+      "type": "gui",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vikki_vuk_gui"
+    },
+    {
+      "name": "Trashitems",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trashitems",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CorruptstaffRightclicked",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruptstaff_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1057,18 +1117,18 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.kill": "huvh",
-      "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
@@ -1081,11 +1141,11 @@
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
-      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
+      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
-      "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
+      "entity.chaosmod.splank": "Splank",
       "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
@@ -1132,6 +1192,7 @@
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
       "entity.chaosmod.josip": "JOSIP",
+      "item.chaosmod.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
       "item.chaosmod.josip_pett_spawn_egg": "Josip GRR pet Spawn Egg",
@@ -1165,6 +1226,7 @@
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
+      "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",

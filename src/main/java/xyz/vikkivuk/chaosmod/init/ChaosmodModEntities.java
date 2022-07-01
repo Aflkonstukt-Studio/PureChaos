@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
+import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
@@ -45,7 +46,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<DeekEntity>of(DeekEntity::new, MobCategory.MISC).setCustomClientFactory(DeekEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<AentityEntity>> AENTITY = register("aentity",
-			EntityType.Builder.<AentityEntity>of(AentityEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(100)
+			EntityType.Builder.<AentityEntity>of(AentityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(100)
 					.setUpdateInterval(3).setCustomClientFactory(AentityEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TridentEntity>> TRIDENT = register("trident",
 			EntityType.Builder.<TridentEntity>of(TridentEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
@@ -100,7 +101,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<JosipRangeEntity>of(JosipRangeEntity::new, MobCategory.MISC).setCustomClientFactory(JosipRangeEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<JosipPettEntity>> JOSIP_PETT = register("josip_pett",
-			EntityType.Builder.<JosipPettEntity>of(JosipPettEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+			EntityType.Builder.<JosipPettEntity>of(JosipPettEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JosipPettEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<MothOfAggrevationEntity>> MOTH_OF_AGGREVATION = register("moth_of_aggrevation",
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
@@ -111,18 +112,23 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<CursedDogEntity>> CURSED_DOG = register("cursed_dog",
-			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedDogEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BlazEntity>> BLAZ = register("blaz",
-			EntityType.Builder.<BlazEntity>of(BlazEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<BlazEntity>of(BlazEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(BlazEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ShepEntity>> SHEP = register("shep",
-			EntityType.Builder.<ShepEntity>of(ShepEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			EntityType.Builder.<ShepEntity>of(ShepEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(ShepEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<VikkivukEntity>> VIKKIVUK = register("vikkivuk",
+			EntityType.Builder.<VikkivukEntity>of(VikkivukEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -148,6 +154,7 @@ public class ChaosmodModEntities {
 			CursedDogEntity.init();
 			BlazEntity.init();
 			ShepEntity.init();
+			VikkivukEntity.init();
 		});
 	}
 
@@ -168,5 +175,6 @@ public class ChaosmodModEntities {
 		event.put(CURSED_DOG.get(), CursedDogEntity.createAttributes().build());
 		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
 		event.put(SHEP.get(), ShepEntity.createAttributes().build());
+		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
 	}
 }

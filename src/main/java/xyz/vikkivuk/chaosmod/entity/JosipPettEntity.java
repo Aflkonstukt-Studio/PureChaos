@@ -12,9 +12,9 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
@@ -26,6 +26,7 @@ import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
@@ -54,6 +55,7 @@ import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -69,7 +71,7 @@ import java.util.List;
 public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PETT.get(), 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PETT.get(), 20, 4, 4));
 	}
 
 	public JosipPettEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -80,7 +82,7 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("Marketable Josip"));
+		setCustomName(new TextComponent("Evil Josip"));
 		setCustomNameVisible(true);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ChaosmodModItems.CORRUPTSTAFF.get()));
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ChaosmodModItems.CORRUPTSTAFF.get()));
@@ -300,8 +302,9 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.JOSIP_PETT.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos,
-						random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
+						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		DungeonHooks.addDungeonMob(ChaosmodModEntities.JOSIP_PETT.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

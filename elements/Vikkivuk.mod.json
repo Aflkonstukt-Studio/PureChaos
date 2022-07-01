@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Dgo",
-    "mobLabel": "",
-    "mobModelName": "Modeldog",
-    "mobModelTexture": "cursed_dog_texture.png",
+    "mobName": "Vikkivuk",
+    "mobLabel": "VikkiVuk Plushie",
+    "mobModelName": "Modelvikkivuk_plushie",
+    "mobModelTexture": "vikkivuk.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -13369345,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3355444,
+      "value": -13408513,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -56,9 +56,9 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "VikkiVukGui",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 128,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
@@ -99,13 +99,16 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
-    "aiBase": "Wolf",
+    "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": true,
     "breedTriggerItems": [
       {
-        "value": "Items.BONE"
+        "value": "CUSTOM:PotatoSpuds"
+      },
+      {
+        "value": "CUSTOM:GreenPlant"
       }
     ],
     "ranged": false,
@@ -115,11 +118,11 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 35,
+    "spawningProbability": 40,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 6,
-    "maxNumberOfMobsPerGroup": 10,
+    "minNumberOfMobsPerGroup": 8,
+    "maxNumberOfMobsPerGroup": 12,
     "restrictionBiomes": [],
-    "spawnInDungeons": false
+    "spawnInDungeons": true
   }
 }
