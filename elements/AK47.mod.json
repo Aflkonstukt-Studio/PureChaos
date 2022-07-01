@@ -14,9 +14,9 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:Bullet"
     },
-    "shootConstantly": true,
+    "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
       "value": "entity.arrow.shoot"
@@ -31,7 +31,7 @@
     "bulletParticles": true,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:SusBlock"
+      "value": "CUSTOM:Bullet"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""

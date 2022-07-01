@@ -23,7 +23,6 @@ import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
-import xyz.vikkivuk.chaosmod.entity.AKEntity;
 import xyz.vikkivuk.chaosmod.entity.AK47Entity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -110,9 +109,6 @@ public class ChaosmodModEntities {
 					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<AK47Entity>> AK_47 = register("projectile_ak_47",
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<AKEntity>> AK = register("projectile_ak",
-			EntityType.Builder.<AKEntity>of(AKEntity::new, MobCategory.MISC).setCustomClientFactory(AKEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<CursedDogEntity>> CURSED_DOG = register("cursed_dog",
 			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)

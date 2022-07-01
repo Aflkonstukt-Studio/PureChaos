@@ -1,7 +1,0 @@
-{
-  "parent": "chaosmod:custom/ak47java",
-  "textures": {
-    "0": "chaosmod:blocks/texture",
-    "particle": "chaosmod:items/corrupt_schyte"
-  }
-}

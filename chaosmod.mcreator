@@ -972,14 +972,6 @@
       "registry_name": "shep"
     },
     {
-      "name": "AK",
-      "type": "rangeditem",
-      "sortid": 79,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ak"
-    },
-    {
       "name": "Blaz",
       "type": "livingentity",
       "sortid": 81,
@@ -994,6 +986,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_dog"
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet"
     }
   ],
   "variable_elements": [],
@@ -1065,6 +1065,7 @@
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
+      "entity.chaosmod.cursed_dog": "Dgo",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -1085,14 +1086,18 @@
       "fluid.chaosmod.gatorade": "Gatorade",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
+      "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
+      "item.chaosmod.bullet": "Bullet",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
+      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.pee": "Pee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
@@ -1121,6 +1126,7 @@
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
       "block.chaosmod.tombstone": "Tombstone",
       "item.chaosmod.sus_sword": "Sus Sword",
+      "entity.chaosmod.blaz": "Blaz",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
@@ -1166,10 +1172,12 @@
       "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.amugus_boots": "Amugus Boots",
       "item.chaosmod.josip_range": "Josip Range",
+      "item.chaosmod.shep_spawn_egg": "Shep Spawn Egg",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
+      "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
       "entity.chaosmod.josip_pet": "Josip Pet",
       "item.chaosmod.deek": "Ender Eye ",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg"

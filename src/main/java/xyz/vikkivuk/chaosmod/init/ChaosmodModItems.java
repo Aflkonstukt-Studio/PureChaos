@@ -33,10 +33,10 @@ import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.CorruptstaffItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
+import xyz.vikkivuk.chaosmod.item.BulletItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
-import xyz.vikkivuk.chaosmod.item.AKItem;
 import xyz.vikkivuk.chaosmod.item.AK47Item;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -130,13 +130,13 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.MOTH_OF_AGGREVATION, -6737152, -1,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> AK_47 = REGISTRY.register("ak_47", () -> new AK47Item());
-	public static final RegistryObject<Item> AK = REGISTRY.register("ak", () -> new AKItem());
 	public static final RegistryObject<Item> CURSED_DOG = REGISTRY.register("cursed_dog_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.CURSED_DOG, -1, -3355444, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> BLAZ = REGISTRY.register("blaz_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.BLAZ, -205, -39322, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> SHEP = REGISTRY.register("shep_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SHEP, -1, -10066330, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
