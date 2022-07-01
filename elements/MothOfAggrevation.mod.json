@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "Moth Of Aggrevation",
-    "mobLabel": "Moth of Aggervation",
+    "mobLabel": "",
     "mobModelName": "Modelmoth",
     "mobModelTexture": "moth.png",
     "mobModelGlowTexture": "",

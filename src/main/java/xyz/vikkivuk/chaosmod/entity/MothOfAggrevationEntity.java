@@ -39,7 +39,6 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.core.BlockPos;
 
 import java.util.Random;
@@ -61,8 +60,6 @@ public class MothOfAggrevationEntity extends Monster {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("Moth of Aggervation"));
-		setCustomNameVisible(true);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
