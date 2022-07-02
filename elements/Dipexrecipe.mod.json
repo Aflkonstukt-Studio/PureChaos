@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.DIAMOND_PICKAXE"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Dipex"
+    },
+    "name": "dipexrecipe",
+    "namespace": "mod"
+  }
+}

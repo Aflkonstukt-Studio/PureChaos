@@ -36,7 +36,7 @@
       "value": "Blocks.PLANKS#0"
     },
     "fluidBlock": {
-      "value": "CUSTOM:Pee"
+      "value": "Blocks.PLANKS#0"
     },
     "airColor": {
       "value": -2701547,

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:beef"
+    },
+    "2": {
+      "item": "minecraft:beef"
+    },
+    "3": {
+      "item": "minecraft:beef"
+    },
+    "4": {
+      "item": "minecraft:beef"
+    },
+    "5": {
+      "item": "minecraft:beef"
+    },
+    "6": {
+      "item": "minecraft:beef"
+    },
+    "7": {
+      "item": "minecraft:beef"
+    },
+    "8": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "chaosmod:beef_armor_chestplate",
+    "count": 1
+  }
+}

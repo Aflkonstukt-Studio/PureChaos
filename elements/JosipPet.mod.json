@@ -115,10 +115,10 @@
     "rangedItemType": "JosipRange",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 40,
+    "spawningProbability": 20,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 8,
-    "maxNumberOfMobsPerGroup": 12,
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 6,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

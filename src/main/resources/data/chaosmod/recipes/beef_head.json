@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:beef"
+    },
+    "1": {
+      "item": "minecraft:beef"
+    },
+    "2": {
+      "item": "minecraft:beef"
+    },
+    "3": {
+      "item": "minecraft:beef"
+    },
+    "5": {
+      "item": "minecraft:beef"
+    }
+  },
+  "result": {
+    "item": "chaosmod:beef_armor_helmet",
+    "count": 1
+  }
+}

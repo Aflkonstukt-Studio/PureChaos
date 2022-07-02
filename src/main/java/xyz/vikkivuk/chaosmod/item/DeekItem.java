@@ -1,13 +1,13 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -25,7 +25,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class DeekItem extends Item {
 	public DeekItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(10000));
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).durability(10000));
 	}
 
 	@Override
