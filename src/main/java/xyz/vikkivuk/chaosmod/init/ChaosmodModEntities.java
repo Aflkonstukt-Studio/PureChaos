@@ -17,6 +17,7 @@ import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
+import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
@@ -131,6 +132,11 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
+			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -155,6 +161,7 @@ public class ChaosmodModEntities {
 			BlazEntity.init();
 			ShepEntity.init();
 			VikkivukEntity.init();
+			DreamEntity.init();
 		});
 	}
 
@@ -176,5 +183,6 @@ public class ChaosmodModEntities {
 		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
 		event.put(SHEP.get(), ShepEntity.createAttributes().build());
 		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
+		event.put(DREAM.get(), DreamEntity.createAttributes().build());
 	}
 }

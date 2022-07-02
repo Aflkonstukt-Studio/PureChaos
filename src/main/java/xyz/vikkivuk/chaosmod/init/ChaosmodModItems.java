@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.WaterCupItem;
+import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
 import xyz.vikkivuk.chaosmod.item.TurtleArmorItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
@@ -19,6 +20,7 @@ import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
 import xyz.vikkivuk.chaosmod.item.OilItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
+import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
@@ -140,6 +142,12 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> VIKKIVUK = REGISTRY.register("vikkivuk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.VIKKIVUK, -13369345, -13408513, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> NOBLOCK = block(ChaosmodModBlocks.NOBLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> YOUTUBE = block(ChaosmodModBlocks.YOUTUBE, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> PLANTE = block(ChaosmodModBlocks.PLANTE, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> DREAM = REGISTRY.register("dream_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.DREAM, -13369549, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> MILK_2_BUCKET = REGISTRY.register("milk_2_bucket", () -> new Milk2Item());
+	public static final RegistryObject<Item> USE_IN_EMERGENCIES = REGISTRY.register("use_in_emergencies", () -> new UseInEmergenciesItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

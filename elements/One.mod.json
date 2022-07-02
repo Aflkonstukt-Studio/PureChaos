@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "1",
+    "keyBindingName": "ma",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "OneOnKeyPressed"
+    }
+  }
+}

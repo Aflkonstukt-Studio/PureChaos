@@ -43,7 +43,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Pee.bucket"
+      "value": "CUSTOM:Brown"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

@@ -15,7 +15,7 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:Deek"
+      "value": ""
     },
     "shootConstantly": false,
     "usageCount": 100,
@@ -27,7 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 2.0,
-    "bulletDamage": 90.0,
+    "bulletDamage": 1000.0,
     "bulletKnockback": 99,
     "bulletParticles": false,
     "bulletIgnitesFire": true,

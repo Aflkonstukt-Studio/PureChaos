@@ -8,7 +8,7 @@
     "name": "Ender Eye ",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:Chaostab"
     },
     "stackSize": 1,
     "ammoItem": {

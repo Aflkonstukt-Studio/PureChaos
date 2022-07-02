@@ -42,7 +42,7 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 2,
     "spawnWorldTypes": [
       "Surface"
     ],

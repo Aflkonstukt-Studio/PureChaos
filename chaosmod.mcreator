@@ -1094,6 +1094,217 @@
           }
         ]
       }
+    },
+    {
+      "name": "Dipexrecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dipexrecipe"
+    },
+    {
+      "name": "DeathR",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_r"
+    },
+    {
+      "name": "BeefHead",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_head"
+    },
+    {
+      "name": "BeefChest",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_chest"
+    },
+    {
+      "name": "BeefPants",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_pants"
+    },
+    {
+      "name": "BeefBoots",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_boots"
+    },
+    {
+      "name": "Youtube",
+      "type": "plant",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "youtube"
+    },
+    {
+      "name": "Plante",
+      "type": "plant",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plante"
+    },
+    {
+      "name": "OneOnKeyPressed",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "One",
+      "type": "keybind",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one"
+    },
+    {
+      "name": "LalipadBiome",
+      "type": "biome",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lalipad_biome"
+    },
+    {
+      "name": "Dream",
+      "type": "livingentity",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream"
+    },
+    {
+      "name": "KOnKeyPressed",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "k_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "K",
+      "type": "keybind",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "k"
+    },
+    {
+      "name": "Milk2",
+      "type": "fluid",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_2",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Seven",
+      "type": "keybind",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven"
+    },
+    {
+      "name": "UseInEmergenciesRightclicked",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_in_emergencies_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UseInEmergencies",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_in_emergencies"
+    },
+    {
+      "name": "EmergencyRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emergency_recipe"
+    },
+    {
+      "name": "WaterCupRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_cup_recipe"
     }
   ],
   "variable_elements": [],
@@ -1163,6 +1374,7 @@
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
+      "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
@@ -1172,6 +1384,7 @@
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
+      "key.chaosmod.one": "ma",
       "entity.chaosmod.aentity": "Aentity",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
       "block.chaosmod.potatus": "Potatus",
@@ -1192,8 +1405,10 @@
       "item.chaosmod.bullet": "Bullet",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
+      "biome.chaosmod.lalipad_biome": "Lalipads",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
@@ -1211,12 +1426,14 @@
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
+      "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "key.chaosmod.summonsus": "Summonsus",
+      "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
@@ -1236,7 +1453,9 @@
       "block.chaosmod.noblock": "mmmmm",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
+      "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
       "item.chaosmod.josip_pett_spawn_egg": "Josip GRR pet Spawn Egg",
+      "key.chaosmod.seven": "Seven",
       "item.chaosmod.dirtsword": "Dirtsword",
       "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "fluid.chaosmod.cum": "Cum",
@@ -1244,6 +1463,7 @@
       "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
       "entity.chaosmod.trident": "Tridet",
       "fluid.chaosmod.pee": "Pee",
+      "entity.chaosmod.dream": "Dream",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "subtitles.footstep_metal_amogus": "idk",
       "item.chaosmod.food_item_3": "Food Item 3",
@@ -1266,7 +1486,10 @@
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
+      "fluid.chaosmod.milk_2": "Milk 2",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
+      "block.chaosmod.plante": "Plante",
+      "key.chaosmod.k": "K",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
