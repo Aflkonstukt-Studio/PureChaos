@@ -1196,14 +1196,6 @@
       "registry_name": "one"
     },
     {
-      "name": "LalipadBiome",
-      "type": "biome",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lalipad_biome"
-    },
-    {
       "name": "Dream",
       "type": "livingentity",
       "sortid": 100,
@@ -1313,6 +1305,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "scratest"
+    },
+    {
+      "name": "AdolfHitler",
+      "type": "livingentity",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolf_hitler"
     }
   ],
   "variable_elements": [],
@@ -1406,6 +1406,7 @@
       "block.chaosmod.potatus": "Potatus",
       "block.chaosmod.tlghd": "TLGHD",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
+      "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
@@ -1424,7 +1425,6 @@
       "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
-      "biome.chaosmod.lalipad_biome": "Lalipads",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
@@ -1481,6 +1481,7 @@
       "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.trident": "Tridet",
+      "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",

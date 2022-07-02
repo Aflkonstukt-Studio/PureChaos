@@ -21,6 +21,7 @@ import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AentityRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.AdolfHitlerRenderer;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -55,5 +56,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.SHEP.get(), ShepRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.VIKKIVUK.get(), VikkivukRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.DREAM.get(), DreamRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
 	}
 }

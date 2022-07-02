@@ -25,6 +25,7 @@ import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
+import xyz.vikkivuk.chaosmod.entity.AdolfHitlerEntity;
 import xyz.vikkivuk.chaosmod.entity.AK47Entity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -137,6 +138,9 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler",
+			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -162,6 +166,7 @@ public class ChaosmodModEntities {
 			ShepEntity.init();
 			VikkivukEntity.init();
 			DreamEntity.init();
+			AdolfHitlerEntity.init();
 		});
 	}
 
@@ -184,5 +189,6 @@ public class ChaosmodModEntities {
 		event.put(SHEP.get(), ShepEntity.createAttributes().build());
 		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
 		event.put(DREAM.get(), DreamEntity.createAttributes().build());
+		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
 	}
 }

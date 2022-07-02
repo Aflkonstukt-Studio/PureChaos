@@ -150,6 +150,8 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> MILK_2_BUCKET = REGISTRY.register("milk_2_bucket", () -> new Milk2Item());
 	public static final RegistryObject<Item> USE_IN_EMERGENCIES = REGISTRY.register("use_in_emergencies", () -> new UseInEmergenciesItem());
 	public static final RegistryObject<Item> SCRATEST = REGISTRY.register("scratest", () -> new ScratestItem());
+	public static final RegistryObject<Item> ADOLF_HITLER = REGISTRY.register("adolf_hitler_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ADOLF_HITLER, -52429, -3407872, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
