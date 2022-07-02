@@ -68,15 +68,5 @@
         "stream": false
       }
     ]
-  },
-  "scratest": {
-    "category": "music",
-    "subtitle": "subtitles.scratest",
-    "sounds": [
-      {
-        "name": "chaosmod:scratest",
-        "stream": true
-      }
-    ]
   }
 }

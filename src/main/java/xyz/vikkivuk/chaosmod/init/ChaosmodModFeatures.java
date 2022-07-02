@@ -4,9 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
-import xyz.vikkivuk.chaosmod.world.features.plants.YoutubeFeature;
 import xyz.vikkivuk.chaosmod.world.features.plants.PotatusFeature;
-import xyz.vikkivuk.chaosmod.world.features.plants.PlanteFeature;
 import xyz.vikkivuk.chaosmod.world.features.plants.GreenPlantFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
@@ -16,7 +14,6 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OrangeFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
-import xyz.vikkivuk.chaosmod.world.features.lakes.Milk2Feature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.GatoradeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CarbonMonoxideFeature;
@@ -117,12 +114,6 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CarbonMonoxideFeature.GENERATE_BIOMES, CarbonMonoxideFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> GAS_CHAMBER = register("gas_chamber", GasChamberFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, GasChamberFeature.GENERATE_BIOMES, GasChamberFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> YOUTUBE = register("youtube", YoutubeFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, YoutubeFeature.GENERATE_BIOMES, YoutubeFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> PLANTE = register("plante", PlanteFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PlanteFeature.GENERATE_BIOMES, PlanteFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MILK_2 = register("milk_2", Milk2Feature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.LAKES, Milk2Feature.GENERATE_BIOMES, Milk2Feature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
