@@ -85,7 +85,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 62, this.topPos + 53, 51, 20, new TextComponent("Trash"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 68, this.topPos + 53, 51, 20, new TextComponent("Trash"), e -> {
 			if (true) {
 				ChaosmodMod.PACKET_HANDLER.sendToServer(new VikkiVukGuiButtonMessage(0, x, y, z));
 				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
