@@ -1305,6 +1305,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_cup_recipe"
+    },
+    {
+      "name": "Scratest",
+      "type": "musicdisc",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratest"
     }
   ],
   "variable_elements": [],
@@ -1364,6 +1372,14 @@
       ],
       "category": "hostile",
       "subtitle": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]"
+    },
+    {
+      "name": "scratest",
+      "files": [
+        "scratest"
+      ],
+      "category": "music",
+      "subtitle": "Idk man stop asking me"
     }
   ],
   "language_map": {
@@ -1412,6 +1428,7 @@
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "subtitles.scratest": "Idk man stop asking me",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
@@ -1449,6 +1466,7 @@
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
       "entity.chaosmod.josip": "JOSIP",
+      "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.chaosmod.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "block.chaosmod.noblock": "mmmmm",
       "entity.chaosmod.amogus_3": "Amogus 3",
@@ -1461,6 +1479,7 @@
       "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.among_us": "Among Us",
       "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
+      "item.chaosmod.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.trident": "Tridet",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
