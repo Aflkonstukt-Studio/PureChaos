@@ -216,7 +216,7 @@
         {
           "type": "minecraft:item",
           "name": "chaosmod:food_item_3",
-          "weight": 20,
+          "weight": 10,
           "functions": [
             {
               "function": "set_count",
@@ -307,6 +307,20 @@
               "count": {
                 "min": 15,
                 "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "chaosmod:testicle_on_stick",
+          "weight": 101,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]

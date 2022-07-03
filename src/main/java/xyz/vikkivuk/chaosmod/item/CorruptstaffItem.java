@@ -25,7 +25,7 @@ public class CorruptstaffItem extends SwordItem {
 	public CorruptstaffItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 0;
+				return 80;
 			}
 
 			public float getSpeed() {
@@ -60,7 +60,7 @@ public class CorruptstaffItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CorruptstaffRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+		CorruptstaffRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), ar.getObject());
 		return ar;
 	}
 
