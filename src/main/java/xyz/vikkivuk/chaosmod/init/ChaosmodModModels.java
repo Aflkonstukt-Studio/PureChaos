@@ -12,6 +12,7 @@ import xyz.vikkivuk.chaosmod.client.model.Modelmoth;
 import xyz.vikkivuk.chaosmod.client.model.Modeljosipmmarket;
 import xyz.vikkivuk.chaosmod.client.model.Modelikea_desk;
 import xyz.vikkivuk.chaosmod.client.model.Modeldog;
+import xyz.vikkivuk.chaosmod.client.model.Modelcustom_model;
 import xyz.vikkivuk.chaosmod.client.model.Modelblaze;
 import xyz.vikkivuk.chaosmod.client.model.Modelamongus_woo;
 import xyz.vikkivuk.chaosmod.client.model.Modelamiogyhus;
@@ -26,6 +27,7 @@ public class ChaosmodModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
+		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modelamiogyhus.LAYER_LOCATION, Modelamiogyhus::createBodyLayer);
 		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
 		event.registerLayerDefinition(Modelblaze.LAYER_LOCATION, Modelblaze::createBodyLayer);
