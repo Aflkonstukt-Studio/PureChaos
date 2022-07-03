@@ -1404,6 +1404,22 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "Grave",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grave"
+    },
+    {
+      "name": "GraveLoot",
+      "type": "loottable",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grave_loot"
     }
   ],
   "variable_elements": [],
@@ -1475,11 +1491,11 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.kill": "huvh",
-      "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
@@ -1586,6 +1602,7 @@
       "item.chaosmod.dipex": "DiPixk",
       "item.chaosmod.food_item_2": "Food Item 2",
       "block.chaosmod.gatorade": "Gatorade",
+      "block.chaosmod.grave": "Grave",
       "block.chaosmod.cum": "Cum",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "block.chaosmod.ggggggg": "slipped and slipped",

@@ -155,6 +155,7 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ADOLF_HITLER, -52429, -3407872, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> TESTICLE_ON_STICK = REGISTRY.register("testicle_on_stick", () -> new TesticleOnStickItem());
 	public static final RegistryObject<Item> RICKROLL_BLOCK = block(ChaosmodModBlocks.RICKROLL_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> GRAVE = block(ChaosmodModBlocks.GRAVE, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

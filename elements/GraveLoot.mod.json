@@ -1,0 +1,10 @@
+{
+  "_fv": 28,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/grave",
+    "namespace": "mod"
+  }
+}

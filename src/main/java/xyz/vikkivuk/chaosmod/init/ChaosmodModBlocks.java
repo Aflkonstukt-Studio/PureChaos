@@ -23,6 +23,7 @@ import xyz.vikkivuk.chaosmod.block.OilBlock;
 import xyz.vikkivuk.chaosmod.block.NoblockBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
+import xyz.vikkivuk.chaosmod.block.GraveBlock;
 import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
@@ -67,6 +68,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());
 	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());
 	public static final RegistryObject<Block> RICKROLL_BLOCK = REGISTRY.register("rickroll_block", () -> new RickrollBlockBlock());
+	public static final RegistryObject<Block> GRAVE = REGISTRY.register("grave", () -> new GraveBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -77,6 +79,7 @@ public class ChaosmodModBlocks {
 			TombstoneBlock.registerRenderLayer();
 			YoutubeBlock.registerRenderLayer();
 			PlanteBlock.registerRenderLayer();
+			GraveBlock.registerRenderLayer();
 		}
 	}
 }

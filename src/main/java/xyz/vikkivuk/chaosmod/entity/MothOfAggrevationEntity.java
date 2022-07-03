@@ -142,11 +142,6 @@ public class MothOfAggrevationEntity extends Monster {
 	}
 
 	@Override
-	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 0.3;
-	}
-
-	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
