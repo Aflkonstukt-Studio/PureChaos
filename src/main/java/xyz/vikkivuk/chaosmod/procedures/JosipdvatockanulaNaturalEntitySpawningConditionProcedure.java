@@ -1,8 +1,8 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModGameRules;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.LevelAccessor;
 
 public class JosipdvatockanulaNaturalEntitySpawningConditionProcedure {
 	public static boolean execute(LevelAccessor world) {
