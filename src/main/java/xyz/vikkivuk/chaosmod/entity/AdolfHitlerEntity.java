@@ -39,6 +39,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
@@ -53,6 +55,9 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.ADOLF_HITLER.get(), 20, 4, 4));
 	}
+
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
+			ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public AdolfHitlerEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ChaosmodModEntities.ADOLF_HITLER.get(), world);
@@ -193,6 +198,29 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
 		AK47Entity.shoot(this, target);
+	}
+
+	@Override
+	public boolean canChangeDimensions() {
+		return false;
+	}
+
+	@Override
+	public void startSeenByPlayer(ServerPlayer player) {
+		super.startSeenByPlayer(player);
+		this.bossInfo.addPlayer(player);
+	}
+
+	@Override
+	public void stopSeenByPlayer(ServerPlayer player) {
+		super.stopSeenByPlayer(player);
+		this.bossInfo.removePlayer(player);
+	}
+
+	@Override
+	public void customServerAiStep() {
+		super.customServerAiStep();
+		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
 	@Override

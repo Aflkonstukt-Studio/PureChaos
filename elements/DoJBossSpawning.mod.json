@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Should JBoss Spawn",
+    "description": "Should the Josip 2.0 Boss Spawn naturally?",
+    "category": "SPAWNING",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

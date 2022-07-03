@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/rickroll",
+    "up": "chaosmod:blocks/rickroll",
+    "north": "chaosmod:blocks/rickroll",
+    "east": "chaosmod:blocks/rickroll",
+    "south": "chaosmod:blocks/rickroll",
+    "west": "chaosmod:blocks/rickroll",
+    "particle": "chaosmod:blocks/rickroll"
+  }
+}

@@ -1037,6 +1037,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1313,6 +1317,82 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "adolf_hitler"
+    },
+    {
+      "name": "TesticleOnStickRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testicle_on_stick_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TesticleOnStick",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testicle_on_stick"
+    },
+    {
+      "name": "RickrollBlock",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rickroll_block"
+    },
+    {
+      "name": "DoJBossSpawning",
+      "type": "gamerule",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doJBossSpawning",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "JosipdvatockanulaNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipdvatockanula_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1384,33 +1464,36 @@
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
+      "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.spear": "Spear",
+      "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "key.chaosmod.one": "ma",
       "entity.chaosmod.aentity": "Aentity",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
       "block.chaosmod.potatus": "Potatus",
-      "block.chaosmod.tlghd": "TLGHD",
+      "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.rickroll_block": "Rickroll",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
       "fluid.chaosmod.gatorade": "Gatorade",
@@ -1527,7 +1610,8 @@
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
       "entity.chaosmod.josip_pet": "Josip Pet",
       "item.chaosmod.deek": "Ender Eye ",
-      "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg"
+      "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
+      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
     }
   },
   "foldersRoot": {
