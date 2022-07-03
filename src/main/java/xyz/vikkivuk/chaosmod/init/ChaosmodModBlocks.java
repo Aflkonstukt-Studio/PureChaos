@@ -12,7 +12,6 @@ import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
-import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PlanteBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
@@ -66,7 +65,6 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> YOUTUBE = REGISTRY.register("youtube", () -> new YoutubeBlock());
 	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());
 	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());
-	public static final RegistryObject<Block> RICKROLL_BLOCK = REGISTRY.register("rickroll_block", () -> new RickrollBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
