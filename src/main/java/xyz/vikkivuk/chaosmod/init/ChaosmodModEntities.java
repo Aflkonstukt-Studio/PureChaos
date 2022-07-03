@@ -110,7 +110,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
 
-					.sized(0.3f, 0.6f));
+					.sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<AK47Entity>> AK_47 = register("projectile_ak_47",
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));

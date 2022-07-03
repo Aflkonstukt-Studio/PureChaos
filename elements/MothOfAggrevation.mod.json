@@ -8,9 +8,9 @@
     "mobModelTexture": "moth.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.3,
-    "modelHeight": 0.6,
+    "modelHeight": 0.3,
     "modelShadowSize": 0.3,
-    "mountedYOffset": 0.0,
+    "mountedYOffset": 0.3,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -6737152,
