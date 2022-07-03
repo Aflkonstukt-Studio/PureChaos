@@ -40,6 +40,6 @@ public class EmepeeBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(ChaosmodModItems.PEE_BUCKET.get()));
+		return Collections.singletonList(new ItemStack(ChaosmodModItems.BROWN.get()));
 	}
 }

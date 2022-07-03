@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "K",
+    "keyBindingName": "K",
+    "keyBindingCategoryKey": "creative",
+    "onKeyPressed": {
+      "name": "KOnKeyPressed"
+    }
+  }
+}

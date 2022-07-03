@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
+import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
@@ -17,6 +18,7 @@ import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
+import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
@@ -24,6 +26,7 @@ import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
+import xyz.vikkivuk.chaosmod.entity.AdolfHitlerEntity;
 import xyz.vikkivuk.chaosmod.entity.AK47Entity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -107,7 +110,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
 
-					.sized(0.6f, 0.6f));
+					.sized(0.3f, 0.6f));
 	public static final RegistryObject<EntityType<AK47Entity>> AK_47 = register("projectile_ak_47",
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -129,6 +132,19 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<VikkivukEntity>> VIKKIVUK = register("vikkivuk",
 			EntityType.Builder.<VikkivukEntity>of(VikkivukEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
+
+					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
+			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler",
+			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WalterWightEntity>> WALTER_WIGHT = register("walter_wight",
+			EntityType.Builder.<WalterWightEntity>of(WalterWightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WalterWightEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -155,6 +171,9 @@ public class ChaosmodModEntities {
 			BlazEntity.init();
 			ShepEntity.init();
 			VikkivukEntity.init();
+			DreamEntity.init();
+			AdolfHitlerEntity.init();
+			WalterWightEntity.init();
 		});
 	}
 
@@ -176,5 +195,8 @@ public class ChaosmodModEntities {
 		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
 		event.put(SHEP.get(), ShepEntity.createAttributes().build());
 		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
+		event.put(DREAM.get(), DreamEntity.createAttributes().build());
+		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
+		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
 	}
 }

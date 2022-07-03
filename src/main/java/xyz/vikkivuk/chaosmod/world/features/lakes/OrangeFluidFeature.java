@@ -37,7 +37,7 @@ public class OrangeFluidFeature extends LakeFeature {
 		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:orange_fluid", FEATURE, new LakeFeature.Configuration(
 				BlockStateProvider.simple(ChaosmodModBlocks.ORANGE_FLUID.get()), BlockStateProvider.simple(Blocks.AIR)));
 		PLACED_FEATURE = PlacementUtils.register("chaosmod:orange_fluid", CONFIGURED_FEATURE,
-				List.of(RarityFilter.onAverageOnceEvery(5), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+				List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
 						EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.not(BlockPredicate.ONLY_IN_AIR_PREDICATE), 32),
 						BiomeFilter.biome()));
 		return FEATURE;

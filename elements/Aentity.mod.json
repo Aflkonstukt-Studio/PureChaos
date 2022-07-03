@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 30,
+    "spawningProbability": 15,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 10,
-    "maxNumberOfMobsPerGroup": 20,
+    "minNumberOfMobsPerGroup": 3,
+    "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [
       {
         "value": "badlands"

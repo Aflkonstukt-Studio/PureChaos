@@ -48,7 +48,7 @@ import java.util.EnumSet;
 public class BlazEntity extends Blaze {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.BLAZ.get(), 30, 4, 6));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.BLAZ.get(), 15, 2, 6));
 	}
 
 	public BlazEntity(PlayMessages.SpawnEntity packet, Level world) {

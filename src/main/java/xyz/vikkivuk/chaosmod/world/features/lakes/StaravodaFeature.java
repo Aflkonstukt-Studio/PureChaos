@@ -37,7 +37,7 @@ public class StaravodaFeature extends LakeFeature {
 		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:staravoda", FEATURE,
 				new LakeFeature.Configuration(BlockStateProvider.simple(ChaosmodModBlocks.STARAVODA.get()), BlockStateProvider.simple(Blocks.AIR)));
 		PLACED_FEATURE = PlacementUtils.register("chaosmod:staravoda", CONFIGURED_FEATURE,
-				List.of(RarityFilter.onAverageOnceEvery(5), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+				List.of(RarityFilter.onAverageOnceEvery(2), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
 						EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.not(BlockPredicate.ONLY_IN_AIR_PREDICATE), 32),
 						BiomeFilter.biome()));
 		return FEATURE;

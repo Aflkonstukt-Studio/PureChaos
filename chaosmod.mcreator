@@ -1054,6 +1054,389 @@
           }
         ]
       }
+    },
+    {
+      "name": "KOnKeyPressed",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "k_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "One",
+      "type": "keybind",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one"
+    },
+    {
+      "name": "Meth",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meth"
+    },
+    {
+      "name": "EmergencyRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emergency_recipe"
+    },
+    {
+      "name": "K",
+      "type": "keybind",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "k"
+    },
+    {
+      "name": "BeefPants",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_pants"
+    },
+    {
+      "name": "DeathWish",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_wish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WalterWight",
+      "type": "livingentity",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walter_wight"
+    },
+    {
+      "name": "AdolfHitler",
+      "type": "livingentity",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adolf_hitler"
+    },
+    {
+      "name": "Dream",
+      "type": "livingentity",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream"
+    },
+    {
+      "name": "Scratest",
+      "type": "musicdisc",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scratest"
+    },
+    {
+      "name": "OneOnKeyPressed",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Youtube",
+      "type": "plant",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "youtube"
+    },
+    {
+      "name": "Plante",
+      "type": "plant",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plante"
+    },
+    {
+      "name": "TesticleOnStickRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testicle_on_stick_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JosipdvatockanulaNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipdvatockanula_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WaterCupRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_cup_recipe"
+    },
+    {
+      "name": "High",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TesticleOnStick",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testicle_on_stick"
+    },
+    {
+      "name": "GraveLoot",
+      "type": "loottable",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grave_loot"
+    },
+    {
+      "name": "BeefChest",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_chest"
+    },
+    {
+      "name": "RickrollBlock",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rickroll_block"
+    },
+    {
+      "name": "BeefBoots",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_boots"
+    },
+    {
+      "name": "Noblock",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noblock"
+    },
+    {
+      "name": "Seven",
+      "type": "keybind",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seven"
+    },
+    {
+      "name": "Dipexrecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dipexrecipe"
+    },
+    {
+      "name": "DoJBossSpawning",
+      "type": "gamerule",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doJBossSpawning",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "DeathR",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "death_r"
+    },
+    {
+      "name": "BeefHead",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef_head"
+    },
+    {
+      "name": "Grave",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grave"
+    },
+    {
+      "name": "Milk2",
+      "type": "fluid",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_2",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "UseInEmergenciesRightclicked",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_in_emergencies_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UseInEmergencies",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_in_emergencies"
     }
   ],
   "variable_elements": [],
@@ -1113,6 +1496,14 @@
       ],
       "category": "hostile",
       "subtitle": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]"
+    },
+    {
+      "name": "scratest",
+      "files": [
+        "scratest"
+      ],
+      "category": "music",
+      "subtitle": "Idk man stop asking me"
     }
   ],
   "language_map": {

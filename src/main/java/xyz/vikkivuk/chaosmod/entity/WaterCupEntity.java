@@ -53,7 +53,7 @@ public class WaterCupEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(ChaosmodModItems.DEEK.get());
+		return ItemStack.EMPTY;
 	}
 
 	@Override
@@ -91,7 +91,7 @@ public class WaterCupEntity extends AbstractArrow implements ItemSupplier {
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(90);
+		entityarrow.setBaseDamage(1000);
 		entityarrow.setKnockback(99);
 		entityarrow.setCritArrow(false);
 		entityarrow.setSecondsOnFire(100);

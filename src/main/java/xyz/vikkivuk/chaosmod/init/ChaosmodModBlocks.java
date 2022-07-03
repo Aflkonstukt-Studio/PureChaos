@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.block.YoutubeBlock;
 import xyz.vikkivuk.chaosmod.block.WoodDimensionPortalBlock;
 import xyz.vikkivuk.chaosmod.block.TombstoneBlock;
 import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
@@ -11,13 +12,18 @@ import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
+import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
+import xyz.vikkivuk.chaosmod.block.PlanteBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
+import xyz.vikkivuk.chaosmod.block.NoblockBlock;
+import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
+import xyz.vikkivuk.chaosmod.block.GraveBlock;
 import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
@@ -57,6 +63,12 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
+	public static final RegistryObject<Block> NOBLOCK = REGISTRY.register("noblock", () -> new NoblockBlock());
+	public static final RegistryObject<Block> YOUTUBE = REGISTRY.register("youtube", () -> new YoutubeBlock());
+	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());
+	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());
+	public static final RegistryObject<Block> RICKROLL_BLOCK = REGISTRY.register("rickroll_block", () -> new RickrollBlockBlock());
+	public static final RegistryObject<Block> GRAVE = REGISTRY.register("grave", () -> new GraveBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -65,6 +77,9 @@ public class ChaosmodModBlocks {
 			PotatusBlock.registerRenderLayer();
 			GreenPlantBlock.registerRenderLayer();
 			TombstoneBlock.registerRenderLayer();
+			YoutubeBlock.registerRenderLayer();
+			PlanteBlock.registerRenderLayer();
+			GraveBlock.registerRenderLayer();
 		}
 	}
 }

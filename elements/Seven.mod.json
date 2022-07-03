@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "7",
+    "keyBindingName": "Seven",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OneOnKeyPressed"
+    }
+  }
+}

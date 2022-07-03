@@ -184,10 +184,7 @@
         "Name": "minecraft:oak_planks"
       },
       "default_fluid": {
-        "Name": "chaosmod:pee",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:oak_planks"
       },
       "noise": {
         "min_y": -64,
