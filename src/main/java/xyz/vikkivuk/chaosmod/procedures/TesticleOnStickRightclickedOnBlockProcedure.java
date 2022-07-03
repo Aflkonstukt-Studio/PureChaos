@@ -1,17 +1,8 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.BlockPos;
-
-import java.util.Random;
-import java.util.Map;
+import javax.annotation.Nullable;
 
 public class TesticleOnStickRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
