@@ -23,6 +23,7 @@ import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
 import xyz.vikkivuk.chaosmod.item.OilItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.Milk2Item;
+import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
@@ -155,6 +156,10 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ADOLF_HITLER, -52429, -3407872, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> TESTICLE_ON_STICK = REGISTRY.register("testicle_on_stick", () -> new TesticleOnStickItem());
 	public static final RegistryObject<Item> RICKROLL_BLOCK = block(ChaosmodModBlocks.RICKROLL_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> METH = REGISTRY.register("meth", () -> new MethItem());
+	public static final RegistryObject<Item> WALTER_WIGHT = REGISTRY.register("walter_wight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.WALTER_WIGHT, -16777012, -16777114,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

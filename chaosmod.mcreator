@@ -863,7 +863,7 @@
       "name": "Corruptstaff",
       "type": "tool",
       "sortid": 73,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "corruptstaff"
     },
@@ -1393,6 +1393,38 @@
           }
         ]
       }
+    },
+    {
+      "name": "High",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meth",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meth"
+    },
+    {
+      "name": "WalterWight",
+      "type": "livingentity",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walter_wight"
     }
   ],
   "variable_elements": [],
@@ -1464,11 +1496,11 @@
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
@@ -1486,7 +1518,8 @@
       "entity.chaosmod.aentity": "Aentity",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
       "block.chaosmod.potatus": "Potatus",
-      "block.chaosmod.tlghd": "TLGHD",
+      "entity.chaosmod.walter_wight": "Walter White",
+      "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
@@ -1552,6 +1585,7 @@
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.chaosmod.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "block.chaosmod.noblock": "mmmmm",
+      "item.chaosmod.meth": "Meth",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
       "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
@@ -1593,6 +1627,7 @@
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "block.chaosmod.plante": "Plante",
       "key.chaosmod.k": "K",
+      "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",

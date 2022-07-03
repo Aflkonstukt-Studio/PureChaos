@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class MothOfAggrevationRenderer extends MobRenderer<MothOfAggrevationEntity, Modelmoth<MothOfAggrevationEntity>> {
 	public MothOfAggrevationRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmoth(context.bakeLayer(Modelmoth.LAYER_LOCATION)), 0.6f);
+		super(context, new Modelmoth(context.bakeLayer(Modelmoth.LAYER_LOCATION)), 0.3f);
 	}
 
 	@Override

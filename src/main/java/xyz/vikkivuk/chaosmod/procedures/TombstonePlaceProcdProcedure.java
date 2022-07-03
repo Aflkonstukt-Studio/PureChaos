@@ -38,7 +38,7 @@ public class TombstonePlaceProcdProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
-			if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DOGRAVECREATION)) {
+			if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DELETED_MOD_ELEMENT)) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent("You died! A grave has been placed at the place of your death."), (false));
 				if (world instanceof ServerLevel _serverworld) {

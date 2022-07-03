@@ -143,7 +143,7 @@ public class MothOfAggrevationEntity extends Monster {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 20;
+		return super.getPassengersRidingOffset() + 0.3;
 	}
 
 	@Override
