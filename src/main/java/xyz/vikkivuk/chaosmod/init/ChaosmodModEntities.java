@@ -132,7 +132,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<VikkivukEntity>of(VikkivukEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
 
-					.sized(0.4f, 0.5f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
 			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
