@@ -1,6 +1,18 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
+import xyz.vikkivuk.chaosmod.init.ChaosmodModGameRules;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
@@ -21,7 +33,7 @@ public class TombstonePlaceProcdProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
-			if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DOGRAVECREATION)) {
+			if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DELETED_MOD_ELEMENT)) {
 				world.setBlock(new BlockPos(x, y, z), ChaosmodModBlocks.GRAVE.get().defaultBlockState(), 3);
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent("You died! A grave has been placed at the place of your death."), (false));
