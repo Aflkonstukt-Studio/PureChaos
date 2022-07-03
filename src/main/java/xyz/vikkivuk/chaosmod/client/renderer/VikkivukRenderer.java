@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class VikkivukRenderer extends MobRenderer<VikkivukEntity, Modelvikkivuk_plushie<VikkivukEntity>> {
 	public VikkivukRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelvikkivuk_plushie(context.bakeLayer(Modelvikkivuk_plushie.LAYER_LOCATION)), 0.4f);
+		super(context, new Modelvikkivuk_plushie(context.bakeLayer(Modelvikkivuk_plushie.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
