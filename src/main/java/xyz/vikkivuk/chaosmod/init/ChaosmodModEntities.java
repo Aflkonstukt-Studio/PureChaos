@@ -21,6 +21,7 @@ import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
+import xyz.vikkivuk.chaosmod.entity.CodButBetterEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
@@ -147,6 +148,11 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WalterWightEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CodButBetterEntity>> COD_BUT_BETTER = register("cod_but_better",
+			EntityType.Builder.<CodButBetterEntity>of(CodButBetterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CodButBetterEntity::new)
+
+					.sized(0.6f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -174,6 +180,7 @@ public class ChaosmodModEntities {
 			DreamEntity.init();
 			AdolfHitlerEntity.init();
 			WalterWightEntity.init();
+			CodButBetterEntity.init();
 		});
 	}
 
@@ -198,5 +205,6 @@ public class ChaosmodModEntities {
 		event.put(DREAM.get(), DreamEntity.createAttributes().build());
 		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
 		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
+		event.put(COD_BUT_BETTER.get(), CodButBetterEntity.createAttributes().build());
 	}
 }

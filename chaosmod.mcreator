@@ -927,7 +927,7 @@
       "name": "TombstonePlaceProcd",
       "type": "procedure",
       "sortid": 77,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tombstone_place_procd",
       "metadata": {
@@ -1437,6 +1437,65 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "use_in_emergencies"
+    },
+    {
+      "name": "MethPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meth_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HighEffect",
+      "type": "potioneffect",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_effect"
+    },
+    {
+      "name": "CodButBetter",
+      "type": "livingentity",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cod_but_better"
+    },
+    {
+      "name": "HighEffectEffectExpires",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DoGraveCreation",
+      "type": "gamerule",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doGraveCreation",
+      "metadata": {
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [],
@@ -1504,6 +1563,14 @@
       ],
       "category": "music",
       "subtitle": "Idk man stop asking me"
+    },
+    {
+      "name": "jumpscare",
+      "files": [
+        "jumpscare"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {

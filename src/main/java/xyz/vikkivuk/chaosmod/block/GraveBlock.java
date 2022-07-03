@@ -1,44 +1,20 @@
 
 package xyz.vikkivuk.chaosmod.block;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class GraveBlock extends Block implements SimpleWaterloggedBlock
 
 {
+
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public GraveBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
+
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -55,7 +31,9 @@ public class GraveBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(0, 0, 2, 4, 4, 14), box(0, 4, 3, 3, 16, 13), box(4, 0, 3, 18, 1, 13)).move(offset.x, offset.y, offset.z);
+		return Shapes.or(box(0, 0, 2, 4, 4, 14), box(0, 4, 3, 3, 16, 13), box(4, 0, 3, 18, 1, 13))
+
+				.move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -92,4 +70,5 @@ public class GraveBlock extends Block implements SimpleWaterloggedBlock
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(ChaosmodModBlocks.GRAVE.get(), renderType -> renderType == RenderType.cutout());
 	}
+
 }

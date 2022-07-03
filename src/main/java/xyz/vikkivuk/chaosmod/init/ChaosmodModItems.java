@@ -161,6 +161,8 @@ public class ChaosmodModItems {
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.WALTER_WIGHT, -16777012, -16777114,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> GRAVE = block(ChaosmodModBlocks.GRAVE, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> COD_BUT_BETTER = REGISTRY.register("cod_but_better_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.COD_BUT_BETTER, -13312, -13108, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
