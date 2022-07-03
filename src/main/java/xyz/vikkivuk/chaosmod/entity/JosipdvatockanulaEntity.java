@@ -141,7 +141,7 @@ public class JosipdvatockanulaEntity extends Monster {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("chaosmod:jumpscare"));
 	}
 
 	@Override

@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.client.model.Modeljosipmmarket;
 import xyz.vikkivuk.chaosmod.client.model.Modelikea_desk;
 import xyz.vikkivuk.chaosmod.client.model.Modeldog;
 import xyz.vikkivuk.chaosmod.client.model.Modelcustom_model;
+import xyz.vikkivuk.chaosmod.client.model.Modelcod_but_better;
 import xyz.vikkivuk.chaosmod.client.model.Modelblaze;
 import xyz.vikkivuk.chaosmod.client.model.Modelamongus_woo;
 import xyz.vikkivuk.chaosmod.client.model.Modelamiogyhus;
@@ -36,6 +37,7 @@ public class ChaosmodModModels {
 		event.registerLayerDefinition(Modeljosipmmarket.LAYER_LOCATION, Modeljosipmmarket::createBodyLayer);
 		event.registerLayerDefinition(Modelshep.LAYER_LOCATION, Modelshep::createBodyLayer);
 		event.registerLayerDefinition(Modelvikkivuk_plushie.LAYER_LOCATION, Modelvikkivuk_plushie::createBodyLayer);
+		event.registerLayerDefinition(Modelcod_but_better.LAYER_LOCATION, Modelcod_but_better::createBodyLayer);
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
 	}

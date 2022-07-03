@@ -86,7 +86,7 @@
       "value": "entity.magmacube.hurt"
     },
     "deathSound": {
-      "value": "entity.ghast.death"
+      "value": "CUSTOM:jumpscare"
     },
     "stepSound": {
       "value": "entity.cow.step"

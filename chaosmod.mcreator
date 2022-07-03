@@ -1448,6 +1448,54 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "CodButBetter",
+      "type": "livingentity",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cod_but_better"
+    },
+    {
+      "name": "HighEffectEffectExpires",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HighEffect",
+      "type": "potioneffect",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "high_effect"
+    },
+    {
+      "name": "MethPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meth_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1515,6 +1563,14 @@
       ],
       "category": "music",
       "subtitle": "Idk man stop asking me"
+    },
+    {
+      "name": "jumpscare",
+      "files": [
+        "jumpscare"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1530,6 +1586,7 @@
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
+      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -1591,6 +1648,7 @@
       "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
+      "entity.chaosmod.cod_but_better": "Cod But Better",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
       "item.chaosmod.beef_armor_boots": "Beef Armor Boots",
@@ -1641,6 +1699,7 @@
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "block.chaosmod.emepee": "Emepee",
+      "subtitles.jumpscare": "",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.brown": "Brown",
@@ -1654,6 +1713,7 @@
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.staravoda": "Staravoda",
+      "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "item.chaosmod.oil_bucket": "Oil Bucket",
