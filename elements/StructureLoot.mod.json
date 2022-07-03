@@ -202,7 +202,7 @@
             "item": {
               "value": "CUSTOM:FoodItem3"
             },
-            "weight": 10,
+            "weight": 20,
             "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -289,20 +289,6 @@
             "weight": 10,
             "minCount": 15,
             "maxCount": 30,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:TesticleOnStick"
-            },
-            "weight": 101,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

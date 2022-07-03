@@ -109,11 +109,8 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningCondition": {
-      "name": "JosipdvatockanulaNaturalEntitySpawningCondition"
-    },
     "spawningProbability": 5,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

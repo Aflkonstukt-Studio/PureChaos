@@ -16,13 +16,13 @@ public class JosipPetRenderer extends MobRenderer<JosipPetEntity, Modeljosipmmar
 		this.addLayer(new EyesLayer<JosipPetEntity, Modeljosipmmarket<JosipPetEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("chaosmod:textures/marketableplush.png"));
+				return RenderType.eyes(new ResourceLocation("chaosmod:textures/josip_pet_updated_do_not_remove.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(JosipPetEntity entity) {
-		return new ResourceLocation("chaosmod:textures/marketableplush.png");
+		return new ResourceLocation("chaosmod:textures/josip_pet_updated_do_not_remove.png");
 	}
 }

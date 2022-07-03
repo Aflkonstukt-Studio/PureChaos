@@ -23,7 +23,7 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "isBoss": false,
+    "isBoss": true,
     "bossBarColor": "PURPLE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
