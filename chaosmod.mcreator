@@ -1393,6 +1393,17 @@
           }
         ]
       }
+    },
+    {
+      "name": "DoGraveCreation",
+      "type": "gamerule",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doGraveCreation",
+      "metadata": {
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [],
@@ -1464,11 +1475,11 @@
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
@@ -1486,7 +1497,7 @@
       "entity.chaosmod.aentity": "Aentity",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
       "block.chaosmod.potatus": "Potatus",
-      "block.chaosmod.tlghd": "TLGHD",
+      "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
@@ -1526,6 +1537,7 @@
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
+      "gamerule.doGraveCreation.description": "Should graves be created on player death?",
       "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "block.chaosmod.sa_ds": "Block ?",
@@ -1565,6 +1577,7 @@
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
+      "gamerule.doGraveCreation": "Do Grave Creation",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
