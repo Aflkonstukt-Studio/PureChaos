@@ -109,7 +109,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
 
-					.sized(0.6f, 0.6f));
+					.sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<AK47Entity>> AK_47 = register("projectile_ak_47",
 			EntityType.Builder.<AK47Entity>of(AK47Entity::new, MobCategory.MISC).setCustomClientFactory(AK47Entity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -132,7 +132,7 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<VikkivukEntity>of(VikkivukEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
 
-					.sized(0.4f, 0.5f));
+					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
 			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
