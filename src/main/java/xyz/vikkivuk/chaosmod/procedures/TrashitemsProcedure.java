@@ -1,8 +1,12 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
 
-import javax.annotation.Nullable;
+import java.util.function.Supplier;
+import java.util.Map;
 
 public class TrashitemsProcedure {
 	public static void execute(Entity entity) {
