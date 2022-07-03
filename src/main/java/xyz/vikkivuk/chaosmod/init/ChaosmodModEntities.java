@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
+import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
@@ -141,6 +142,11 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler",
 			EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WalterWightEntity>> WALTER_WIGHT = register("walter_wight",
+			EntityType.Builder.<WalterWightEntity>of(WalterWightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WalterWightEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -167,6 +173,7 @@ public class ChaosmodModEntities {
 			VikkivukEntity.init();
 			DreamEntity.init();
 			AdolfHitlerEntity.init();
+			WalterWightEntity.init();
 		});
 	}
 
@@ -190,5 +197,6 @@ public class ChaosmodModEntities {
 		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
 		event.put(DREAM.get(), DreamEntity.createAttributes().build());
 		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
+		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
 	}
 }
