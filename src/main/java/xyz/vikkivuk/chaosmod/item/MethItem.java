@@ -1,7 +1,7 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import xyz.vikkivuk.chaosmod.procedures.HighProcedure;
+import xyz.vikkivuk.chaosmod.procedures.MethPlayerFinishesUsingItemProcedure;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 
 import net.minecraft.world.level.Level;
@@ -42,7 +42,7 @@ public class MethItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		HighProcedure.execute(entity);
+		MethPlayerFinishesUsingItemProcedure.execute(entity);
 		return retval;
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "High",
+    "icon": "meth.png",
+    "color": {
+      "value": -16737793,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "High"
+    },
+    "onExpired": {
+      "name": "HighEffectEffectExpires"
+    }
+  }
+}
