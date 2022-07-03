@@ -78,5 +78,14 @@
         "stream": true
       }
     ]
+  },
+  "jumpscare": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "chaosmod:jumpscare",
+        "stream": false
+      }
+    ]
   }
 }
