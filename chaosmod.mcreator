@@ -1496,6 +1496,14 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "DrugVan",
+      "type": "structure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drug_van"
     }
   ],
   "variable_elements": [],
@@ -1585,6 +1593,7 @@
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
+      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -1637,6 +1646,7 @@
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
+      "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "block.chaosmod.sa_ds": "Block ?",
@@ -1646,6 +1656,7 @@
       "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
+      "entity.chaosmod.cod_but_better": "Cod But Better",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
       "item.chaosmod.beef_armor_boots": "Beef Armor Boots",
@@ -1677,6 +1688,7 @@
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.trident": "Tridet",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
+      "gamerule.doGraveCreation": "Do Grave Creation",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
@@ -1708,6 +1720,7 @@
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.staravoda": "Staravoda",
+      "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "item.chaosmod.oil_bucket": "Oil Bucket",

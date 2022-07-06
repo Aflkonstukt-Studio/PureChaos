@@ -5,7 +5,7 @@
     "mobName": "Walter White",
     "mobLabel": "Walter White",
     "mobModelName": "Biped",
-    "mobModelTexture": "heisenberg-breaking-bad-main.png",
+    "mobModelTexture": "walt.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
