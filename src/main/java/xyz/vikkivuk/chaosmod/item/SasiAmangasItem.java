@@ -4,9 +4,6 @@ package xyz.vikkivuk.chaosmod.item;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModSounds;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.RecordItem;
@@ -26,14 +23,8 @@ public class SasiAmangasItem extends RecordItem {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
-	}
-
-	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Josip je nacist"));
+		list.add(new TextComponent("Josip is making an amogus"));
 	}
 }
