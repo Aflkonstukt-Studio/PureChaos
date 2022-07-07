@@ -19,7 +19,5 @@ public class HighProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 3000, 2, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3000, 10, (false), (false)));
-		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1, (false), (false)));
 	}
 }

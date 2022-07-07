@@ -2,18 +2,17 @@
   "_fv": 28,
   "_type": "musicdisc",
   "definition": {
-    "texture": "untitled",
+    "texture": "de5g6u1-de580faf-a210-480e-a49c-0f297b178fd1",
     "name": "Sasi Amangas",
-    "description": "pensi mu je mali",
+    "description": "Amogus sus",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
     "music": {
-      "value": "CUSTOM:jusif"
+      "value": "CUSTOM:amongus_ambient"
     },
     "specialInfo": [
-      "josip kako drka u mikrofon",
-      "josip je nacist"
+      "Amogus"
     ],
     "hasGlow": true
   }
