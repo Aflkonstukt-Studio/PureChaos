@@ -19,6 +19,6 @@ public class WalterWightRenderer extends HumanoidMobRenderer<WalterWightEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(WalterWightEntity entity) {
-		return new ResourceLocation("chaosmod:textures/heisenberg-breaking-bad-main.png");
+		return new ResourceLocation("chaosmod:textures/walt.png");
 	}
 }

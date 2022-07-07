@@ -32,7 +32,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "MethPlayerFinishesUsingItem"
+      "name": "High"
     },
     "hasDispenseBehavior": false,
     "isFood": true,
