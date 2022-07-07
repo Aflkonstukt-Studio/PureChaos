@@ -30,7 +30,6 @@ import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
 import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
 import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
 import xyz.vikkivuk.chaosmod.world.features.GasChamberFeature;
-import xyz.vikkivuk.chaosmod.world.features.DrugVanFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSpORTALFeature;
@@ -124,8 +123,6 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PlanteFeature.GENERATE_BIOMES, PlanteFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MILK_2 = register("milk_2", Milk2Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, Milk2Feature.GENERATE_BIOMES, Milk2Feature::placedFeature));
-	public static final RegistryObject<Feature<?>> DRUG_VAN = register("drug_van", DrugVanFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, DrugVanFeature.GENERATE_BIOMES, DrugVanFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

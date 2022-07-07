@@ -1496,14 +1496,6 @@
       "metadata": {
         "type": "logic"
       }
-    },
-    {
-      "name": "DrugVan",
-      "type": "structure",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drug_van"
     }
   ],
   "variable_elements": [],
@@ -1636,7 +1628,7 @@
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
-      "item.chaosmod.sasi_amangas.desc": "pensi mu je mali",
+      "item.chaosmod.sasi_amangas.desc": "Amogus sus",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",

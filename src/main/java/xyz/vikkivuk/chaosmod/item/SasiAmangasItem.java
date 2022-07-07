@@ -21,7 +21,7 @@ import java.util.List;
 
 public class SasiAmangasItem extends RecordItem {
 	public SasiAmangasItem() {
-		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:jusif")),
+		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:amongus_ambient")),
 				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
@@ -34,7 +34,6 @@ public class SasiAmangasItem extends RecordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("josip kako drka u mikrofon"));
-		list.add(new TextComponent("josip je nacist"));
+		list.add(new TextComponent("Amogus"));
 	}
 }
