@@ -1496,6 +1496,22 @@
       "metadata": {
         "type": "logic"
       }
+    },
+    {
+      "name": "BackroomsLvl1Wallpaper",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_lvl_1_wallpaper"
+    },
+    {
+      "name": "BackroomsLvl1light",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_lvl_1light"
     }
   ],
   "variable_elements": [],
@@ -1626,6 +1642,7 @@
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
+      "block.chaosmod.backrooms_lvl_1_wallpaper": "Backrooms Lvl 1 Wallpaper",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
@@ -1655,6 +1672,7 @@
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms Lvl 1light",
       "block.chaosmod.tombstone": "Tombstone",
       "item.chaosmod.sus_sword": "Sus Sword",
       "entity.chaosmod.blaz": "Blaz",

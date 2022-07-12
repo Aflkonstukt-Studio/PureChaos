@@ -163,6 +163,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> GRAVE = block(ChaosmodModBlocks.GRAVE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> COD_BUT_BETTER = REGISTRY.register("cod_but_better_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.COD_BUT_BETTER, -13312, -13108, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> BACKROOMS_LVL_1_WALLPAPER = block(ChaosmodModBlocks.BACKROOMS_LVL_1_WALLPAPER,
+			ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BACKROOMS_LVL_1LIGHT = block(ChaosmodModBlocks.BACKROOMS_LVL_1LIGHT, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

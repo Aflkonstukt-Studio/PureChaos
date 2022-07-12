@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/light",
+    "up": "chaosmod:blocks/light",
+    "north": "chaosmod:blocks/light",
+    "east": "chaosmod:blocks/light",
+    "south": "chaosmod:blocks/light",
+    "west": "chaosmod:blocks/light",
+    "particle": "chaosmod:blocks/light"
+  }
+}
