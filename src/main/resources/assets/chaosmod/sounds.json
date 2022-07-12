@@ -87,5 +87,15 @@
         "stream": false
       }
     ]
+  },
+  "sssr": {
+    "category": "music",
+    "subtitle": "subtitles.sssr",
+    "sounds": [
+      {
+        "name": "chaosmod:soviet-anthem_en",
+        "stream": true
+      }
+    ]
   }
 }

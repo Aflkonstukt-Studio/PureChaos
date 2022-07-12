@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.client.renderer.WalterWightRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.StalinRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
@@ -61,5 +62,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.WALTER_WIGHT.get(), WalterWightRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.COD_BUT_BETTER.get(), CodButBetterRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.STALIN.get(), StalinRenderer::new);
 	}
 }

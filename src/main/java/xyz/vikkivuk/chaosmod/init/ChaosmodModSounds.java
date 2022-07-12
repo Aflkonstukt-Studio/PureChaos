@@ -28,6 +28,7 @@ public class ChaosmodModSounds {
 		REGISTRY.put(new ResourceLocation("chaosmod", "redacted"), new SoundEvent(new ResourceLocation("chaosmod", "redacted")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "scratest"), new SoundEvent(new ResourceLocation("chaosmod", "scratest")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "jumpscare"), new SoundEvent(new ResourceLocation("chaosmod", "jumpscare")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "sssr"), new SoundEvent(new ResourceLocation("chaosmod", "sssr")));
 	}
 
 	@SubscribeEvent

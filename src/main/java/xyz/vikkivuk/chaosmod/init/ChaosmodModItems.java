@@ -15,6 +15,7 @@ import xyz.vikkivuk.chaosmod.item.StaravodaItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.ScratestItem;
 import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
+import xyz.vikkivuk.chaosmod.item.SSSRItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
@@ -166,6 +167,10 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_WALLPAPER = block(ChaosmodModBlocks.BACKROOMS_LVL_1_WALLPAPER,
 			ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> BACKROOMS_LVL_1LIGHT = block(ChaosmodModBlocks.BACKROOMS_LVL_1LIGHT, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(ChaosmodModBlocks.BACKROOMS_LVL_1_FLOOR, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> SSSR = REGISTRY.register("sssr", () -> new SSSRItem());
+	public static final RegistryObject<Item> STALIN = REGISTRY.register("stalin_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STALIN, -65536, -11776, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

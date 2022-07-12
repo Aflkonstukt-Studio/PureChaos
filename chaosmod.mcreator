@@ -1512,6 +1512,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1light"
+    },
+    {
+      "name": "BackroomsLvl1Floor",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_lvl_1_floor"
+    },
+    {
+      "name": "SSSR",
+      "type": "musicdisc",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sssr"
+    },
+    {
+      "name": "Stalin",
+      "type": "livingentity",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stalin"
     }
   ],
   "variable_elements": [],
@@ -1587,22 +1611,30 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "sssr",
+      "files": [
+        "soviet-anthem_en"
+      ],
+      "category": "music",
+      "subtitle": "SSSR Anthem"
     }
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
-      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
+      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
@@ -1649,6 +1681,7 @@
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",
+      "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
@@ -1656,6 +1689,7 @@
       "subtitles.amogus": "sus",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
+      "subtitles.sssr": "SSSR Anthem",
       "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "block.chaosmod.sa_ds": "Block ?",
@@ -1673,6 +1707,7 @@
       "item.chaosmod.sus": "Sus Portal Birther",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
       "block.chaosmod.backrooms_lvl_1light": "Backrooms Lvl 1light",
+      "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "block.chaosmod.tombstone": "Tombstone",
       "item.chaosmod.sus_sword": "Sus Sword",
       "entity.chaosmod.blaz": "Blaz",
@@ -1717,6 +1752,7 @@
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "block.chaosmod.emepee": "Emepee",
+      "block.chaosmod.backrooms_lvl_1_floor": "Backrooms Lvl 1 Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.brown": "Brown",
@@ -1732,6 +1768,7 @@
       "fluid.chaosmod.staravoda": "Staravoda",
       "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
+      "item.chaosmod.sssr": "SSSR",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "item.chaosmod.oil_bucket": "Oil Bucket",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
@@ -1743,6 +1780,7 @@
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
+      "entity.chaosmod.stalin": "Stalin",
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
       "entity.chaosmod.josip_pet": "Josip Pet",
       "item.chaosmod.deek": "Ender Eye ",

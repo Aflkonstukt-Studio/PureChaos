@@ -8,6 +8,7 @@ import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.entity.StalinEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
@@ -153,6 +154,11 @@ public class ChaosmodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CodButBetterEntity::new)
 
 					.sized(0.6f, 0.5f));
+	public static final RegistryObject<EntityType<StalinEntity>> STALIN = register("stalin",
+			EntityType.Builder.<StalinEntity>of(StalinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(StalinEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -181,6 +187,7 @@ public class ChaosmodModEntities {
 			AdolfHitlerEntity.init();
 			WalterWightEntity.init();
 			CodButBetterEntity.init();
+			StalinEntity.init();
 		});
 	}
 
@@ -206,5 +213,6 @@ public class ChaosmodModEntities {
 		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
 		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
 		event.put(COD_BUT_BETTER.get(), CodButBetterEntity.createAttributes().build());
+		event.put(STALIN.get(), StalinEntity.createAttributes().build());
 	}
 }

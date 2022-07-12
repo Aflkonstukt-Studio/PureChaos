@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/backcarpets",
+    "up": "chaosmod:blocks/backcarpets",
+    "north": "chaosmod:blocks/backcarpets",
+    "east": "chaosmod:blocks/backcarpets",
+    "south": "chaosmod:blocks/backcarpets",
+    "west": "chaosmod:blocks/backcarpets",
+    "particle": "chaosmod:blocks/backcarpets"
+  }
+}

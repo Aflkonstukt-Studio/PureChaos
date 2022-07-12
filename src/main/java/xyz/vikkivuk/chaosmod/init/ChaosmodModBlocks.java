@@ -31,6 +31,7 @@ import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1WallpaperBlock;
+import xyz.vikkivuk.chaosmod.block.BackroomsLvl1FloorBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -74,6 +75,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> BACKROOMS_LVL_1_WALLPAPER = REGISTRY.register("backrooms_lvl_1_wallpaper",
 			() -> new BackroomsLvl1WallpaperBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1LIGHT = REGISTRY.register("backrooms_lvl_1light", () -> new BackroomsLvl1lightBlock());
+	public static final RegistryObject<Block> BACKROOMS_LVL_1_FLOOR = REGISTRY.register("backrooms_lvl_1_floor", () -> new BackroomsLvl1FloorBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
