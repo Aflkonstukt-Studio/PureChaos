@@ -32,6 +32,7 @@ import xyz.vikkivuk.chaosmod.world.features.OakHouseFeature;
 import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
 import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
 import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
+import xyz.vikkivuk.chaosmod.world.features.HECFeature;
 import xyz.vikkivuk.chaosmod.world.features.GasChamberFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
@@ -132,6 +133,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, RadiationLiquidFeature.GENERATE_BIOMES, RadiationLiquidFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> STANDING_BABY = register("standing_baby", StandingBabyFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, StandingBabyFeature.GENERATE_BIOMES, StandingBabyFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> HEC = register("hec", HECFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, HECFeature.GENERATE_BIOMES, HECFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

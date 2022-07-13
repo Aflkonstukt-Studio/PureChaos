@@ -1,8 +1,42 @@
 
 package xyz.vikkivuk.chaosmod.world.features.ores;
 
-public class StandingBabyFeature extends OreFeature {
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
+import net.minecraft.world.level.levelgen.placement.BiomeFilter;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.OreFeature;
+import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.Level;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
+
+import java.util.Set;
+import java.util.Random;
+import java.util.List;
+
+public class StandingBabyFeature extends OreFeature {
 	public static StandingBabyFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
@@ -22,7 +56,6 @@ public class StandingBabyFeature extends OreFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END,
 			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")),
 			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:wood_dimension")),
@@ -37,15 +70,12 @@ public class StandingBabyFeature extends OreFeature {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
-
 		return super.place(context);
 	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class StandingBabyFeatureRuleTest extends RuleTest {
-
 		static final StandingBabyFeatureRuleTest INSTANCE = new StandingBabyFeatureRuleTest();
-
 		private static final com.mojang.serialization.Codec<StandingBabyFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		private static final RuleTestType<StandingBabyFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
 
@@ -60,14 +90,11 @@ public class StandingBabyFeature extends OreFeature {
 			if (base_blocks == null) {
 				base_blocks = List.of(Blocks.STONE);
 			}
-
 			return base_blocks.contains(blockAt.getBlock());
 		}
 
 		protected RuleTestType<?> getType() {
 			return CUSTOM_MATCH;
 		}
-
 	}
-
 }
