@@ -173,6 +173,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> STALIN = REGISTRY.register("stalin_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STALIN, -65536, -11776, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_WALL = block(ChaosmodModBlocks.BACKROOMS_LVL_1_WALL, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> SOUTH = block(ChaosmodModBlocks.SOUTH, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(ChaosmodModBlocks.BACKROOMS_LVL_1_FLOOR, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> ENDY = REGISTRY.register("endy_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ENDY, -16777216, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));

@@ -11,6 +11,7 @@ import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
 import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
+import xyz.vikkivuk.chaosmod.block.SouthBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
 import xyz.vikkivuk.chaosmod.block.RadiationLiquidBlock;
@@ -78,6 +79,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GRAVE = REGISTRY.register("grave", () -> new GraveBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1LIGHT = REGISTRY.register("backrooms_lvl_1light", () -> new BackroomsLvl1lightBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1_WALL = REGISTRY.register("backrooms_lvl_1_wall", () -> new BackroomsLvl1WallBlock());
+	public static final RegistryObject<Block> SOUTH = REGISTRY.register("south", () -> new SouthBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1_FLOOR = REGISTRY.register("backrooms_lvl_1_floor", () -> new BackroomsLvl1FloorBlock());
 	public static final RegistryObject<Block> NOKIA_BLOCK = REGISTRY.register("nokia_block", () -> new NokiaBlockBlock());
 	public static final RegistryObject<Block> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidBlock());

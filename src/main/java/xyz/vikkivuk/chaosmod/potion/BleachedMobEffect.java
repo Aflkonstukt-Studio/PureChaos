@@ -1,13 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.potion;
 
-import xyz.vikkivuk.chaosmod.procedures.BleachedOnEffectActiveTickProcedure;
-
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-
 public class BleachedMobEffect extends MobEffect {
+
 	public BleachedMobEffect() {
 		super(MobEffectCategory.HARMFUL, -1);
 	}
@@ -31,4 +26,5 @@ public class BleachedMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
+
 }
