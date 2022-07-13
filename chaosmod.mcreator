@@ -1498,28 +1498,12 @@
       }
     },
     {
-      "name": "BackroomsLvl1Wallpaper",
-      "type": "block",
-      "sortid": 120,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "backrooms_lvl_1_wallpaper"
-    },
-    {
       "name": "BackroomsLvl1light",
       "type": "block",
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1light"
-    },
-    {
-      "name": "BackroomsLvl1Floor",
-      "type": "block",
-      "sortid": 122,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "backrooms_lvl_1_floor"
     },
     {
       "name": "SSSR",
@@ -1631,18 +1615,18 @@
   ],
   "language_map": {
     "en_us": {
-      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "block.chaosmod.oil": "Oil",
       "subtitles.kill": "huvh",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
+      "block.chaosmod.oil": "Oil",
+      "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
-      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
+      "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
@@ -1682,7 +1666,6 @@
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
-      "block.chaosmod.backrooms_lvl_1_wallpaper": "Backrooms Lvl 1 Wallpaper",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
@@ -1761,7 +1744,6 @@
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "block.chaosmod.south": "South",
       "block.chaosmod.emepee": "Emepee",
-      "block.chaosmod.backrooms_lvl_1_floor": "Backrooms Lvl 1 Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.brown": "Brown",

@@ -31,8 +31,6 @@ import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
-import xyz.vikkivuk.chaosmod.block.BackroomsLvl1WallpaperBlock;
-import xyz.vikkivuk.chaosmod.block.BackroomsLvl1FloorBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
