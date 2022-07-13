@@ -11,6 +11,7 @@ import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
 import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
+import xyz.vikkivuk.chaosmod.block.StandingBabyBlock;
 import xyz.vikkivuk.chaosmod.block.SouthBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
@@ -85,6 +86,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidBlock());
 	public static final RegistryObject<Block> BRAZIL_BLOCK = REGISTRY.register("brazil_block", () -> new BrazilBlockBlock());
 	public static final RegistryObject<Block> BRAZIL_PORTAL = REGISTRY.register("brazil_portal", () -> new BrazilPortalBlock());
+	public static final RegistryObject<Block> STANDING_BABY = REGISTRY.register("standing_baby", () -> new StandingBabyBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -96,6 +98,7 @@ public class ChaosmodModBlocks {
 			YoutubeBlock.registerRenderLayer();
 			PlanteBlock.registerRenderLayer();
 			GraveBlock.registerRenderLayer();
+			StandingBabyBlock.registerRenderLayer();
 		}
 	}
 }

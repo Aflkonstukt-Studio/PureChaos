@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "StandingBaby": "standingbabydiffusemap"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,11 +1,20 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class MumboTokenItem extends Item {
-
 	public MumboTokenItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.COMMON));
 	}
@@ -25,5 +34,4 @@ public class MumboTokenItem extends Item {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Eekum Bokum"));
 	}
-
 }

@@ -12,11 +12,14 @@ import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.RickAstleyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.LongLegChickenRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.LegsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipdvatockanulaRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPettRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPetRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JOSIPRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.FireflyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.EndyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.DreamRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
@@ -67,5 +70,8 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.STALIN.get(), StalinRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.ENDY.get(), EndyRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.RICK_ASTLEY.get(), RickAstleyRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.LEGS.get(), LegsRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), LongLegChickenRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.FIREFLY.get(), FireflyRenderer::new);
 	}
 }

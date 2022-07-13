@@ -1,8 +1,20 @@
 
 package xyz.vikkivuk.chaosmod.fluid;
 
-public abstract class RadiationLiquidFluid extends ForgeFlowingFluid {
+import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModFluids;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
+import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraftforge.fluids.FluidAttributes;
+
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.resources.ResourceLocation;
+
+public abstract class RadiationLiquidFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.RADIATION_LIQUID,
 			ChaosmodModFluids.FLOWING_RADIATION_LIQUID, FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/radiation_liquid"),
 					new ResourceLocation("chaosmod:blocks/radiation_liquid"))
@@ -47,5 +59,4 @@ public abstract class RadiationLiquidFluid extends ForgeFlowingFluid {
 			return false;
 		}
 	}
-
 }
