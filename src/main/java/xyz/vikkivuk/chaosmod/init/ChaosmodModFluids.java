@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.fluid.StaravodaFluid;
+import xyz.vikkivuk.chaosmod.fluid.RadiationLiquidFluid;
 import xyz.vikkivuk.chaosmod.fluid.PeeFluid;
 import xyz.vikkivuk.chaosmod.fluid.OrangeFluidFluid;
 import xyz.vikkivuk.chaosmod.fluid.OilFluid;
@@ -45,6 +46,9 @@ public class ChaosmodModFluids {
 			() -> new CarbonMonoxideFluid.Flowing());
 	public static final RegistryObject<Fluid> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Fluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_MILK_2 = REGISTRY.register("flowing_milk_2", () -> new Milk2Fluid.Flowing());
+	public static final RegistryObject<Fluid> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_RADIATION_LIQUID = REGISTRY.register("flowing_radiation_liquid",
+			() -> new RadiationLiquidFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -66,6 +70,8 @@ public class ChaosmodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_CARBON_MONOXIDE.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(MILK_2.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_MILK_2.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(RADIATION_LIQUID.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_RADIATION_LIQUID.get(), renderType -> renderType == RenderType.translucent());
 		}
 	}
 }

@@ -16,6 +16,7 @@ import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.ScratestItem;
 import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
 import xyz.vikkivuk.chaosmod.item.SSSRItem;
+import xyz.vikkivuk.chaosmod.item.RadiationLiquidItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
@@ -23,6 +24,7 @@ import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
 import xyz.vikkivuk.chaosmod.item.OilItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
+import xyz.vikkivuk.chaosmod.item.MumboTokenItem;
 import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
@@ -41,6 +43,8 @@ import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
 import xyz.vikkivuk.chaosmod.item.BulletItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
+import xyz.vikkivuk.chaosmod.item.BrazilItem;
+import xyz.vikkivuk.chaosmod.item.BleachItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.item.AK47Item;
@@ -169,8 +173,28 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> STALIN = REGISTRY.register("stalin_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STALIN, -65536, -11776, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> SOUTH = block(ChaosmodModBlocks.SOUTH, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BACKROOMS_LVL_1_WALL = block(ChaosmodModBlocks.BACKROOMS_LVL_1_WALL, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> COMUNISAM_BLOCK = block(ChaosmodModBlocks.COMUNISAM_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(ChaosmodModBlocks.BACKROOMS_LVL_1_FLOOR, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> POLAND_BLOCK = block(ChaosmodModBlocks.POLAND_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> ENDY = REGISTRY.register("endy_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ENDY, -16777216, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> NOKIA_BLOCK = block(ChaosmodModBlocks.NOKIA_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> RADIATION_LIQUID_BUCKET = REGISTRY.register("radiation_liquid_bucket", () -> new RadiationLiquidItem());
+	public static final RegistryObject<Item> RICK_ASTLEY = REGISTRY.register("rick_astley_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.RICK_ASTLEY, -1, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> BLEACH = REGISTRY.register("bleach", () -> new BleachItem());
+	public static final RegistryObject<Item> BRAZIL_BLOCK = block(ChaosmodModBlocks.BRAZIL_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> BRAZIL = REGISTRY.register("brazil", () -> new BrazilItem());
+	public static final RegistryObject<Item> MUMBO_TOKEN = REGISTRY.register("mumbo_token", () -> new MumboTokenItem());
+	public static final RegistryObject<Item> STANDING_BABY = block(ChaosmodModBlocks.STANDING_BABY, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> LEGS = REGISTRY.register("legs_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.LEGS, -26368, -205, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> LONG_LEG_CHICKEN = REGISTRY.register("long_leg_chicken_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.LONG_LEG_CHICKEN, -3355444, -16777216,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> FIREFLY = REGISTRY.register("firefly_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.FIREFLY, -16777216, -13261, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

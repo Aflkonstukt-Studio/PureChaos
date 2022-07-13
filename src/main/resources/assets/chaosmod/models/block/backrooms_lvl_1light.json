@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "chaosmod:blocks/light",
-    "up": "chaosmod:blocks/light",
-    "north": "chaosmod:blocks/light",
-    "east": "chaosmod:blocks/light",
-    "south": "chaosmod:blocks/light",
-    "west": "chaosmod:blocks/light",
-    "particle": "chaosmod:blocks/light"
+    "down": "chaosmod:blocks/backrooms_light",
+    "up": "chaosmod:blocks/backrooms_light",
+    "north": "chaosmod:blocks/backrooms_light",
+    "east": "chaosmod:blocks/backrooms_light",
+    "south": "chaosmod:blocks/backrooms_light",
+    "west": "chaosmod:blocks/backrooms_light",
+    "particle": "chaosmod:blocks/backrooms_light"
   }
 }

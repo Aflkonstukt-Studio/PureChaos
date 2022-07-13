@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Drop Mumbo Tokens",
+    "description": "Do you want mumbo tokens to be dropped (by chance) on block break",
+    "category": "MISC",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

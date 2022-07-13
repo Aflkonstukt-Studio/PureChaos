@@ -1538,22 +1538,6 @@
       "registry_name": "comunisam_block"
     },
     {
-      "name": "PolandBlock",
-      "type": "block",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "poland_block"
-    },
-    {
-      "name": "Polska",
-      "type": "structure",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "polska"
-    },
-    {
       "name": "Cccp",
       "type": "procedure",
       "sortid": 129,
@@ -1588,6 +1572,352 @@
           }
         ]
       }
+    },
+    {
+      "name": "PolandBlock",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_block"
+    },
+    {
+      "name": "Polska",
+      "type": "structure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polska"
+    },
+    {
+      "name": "BleachOverlay",
+      "type": "overlay",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleach_overlay"
+    },
+    {
+      "name": "BleachedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleached_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DropMumboTokens",
+      "type": "gamerule",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dropMumboTokens",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "BleachOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleach_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bleached",
+      "type": "potioneffect",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleached"
+    },
+    {
+      "name": "Firefly",
+      "type": "livingentity",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firefly"
+    },
+    {
+      "name": "BrazilPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brazil_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LongLegChicken",
+      "type": "livingentity",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "long_leg_chicken"
+    },
+    {
+      "name": "BrazilBlock",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brazil_block"
+    },
+    {
+      "name": "NokiaBlock",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nokia_block"
+    },
+    {
+      "name": "Brazil",
+      "type": "dimension",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brazil",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "BlockPlaced",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_placed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BackroomsLvl1Floor",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_lvl_1_floor"
+    },
+    {
+      "name": "RickAstley",
+      "type": "livingentity",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rick_astley"
+    },
+    {
+      "name": "Legs",
+      "type": "livingentity",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legs"
+    },
+    {
+      "name": "BackroomsLvl1Wall",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_lvl_1_wall"
+    },
+    {
+      "name": "BlockBroken",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_broken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadiationLiquidMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_liquid_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadiationLiquid",
+      "type": "fluid",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_liquid",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Bleach",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleach"
+    },
+    {
+      "name": "PlayerJump",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_jump",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MumboToken",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mumbo_token"
+    },
+    {
+      "name": "BleachPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleach_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StandingBaby",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standing_baby"
+    },
+    {
+      "name": "Endy",
+      "type": "livingentity",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endy"
     }
   ],
   "variable_elements": [],
@@ -1671,6 +2001,30 @@
       ],
       "category": "music",
       "subtitle": "SSSR Anthem"
+    },
+    {
+      "name": "vine_boom",
+      "files": [
+        "vine_boom"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "eekum_bokum",
+      "files": [
+        "eekum_bokum"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "never_gonna_give_you_up",
+      "files": [
+        "never_gonna_give_you_up"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1707,15 +2061,20 @@
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "block.chaosmod.rickroll_block": "Rickroll",
+      "subtitles.eekum_bokum": "",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
       "fluid.chaosmod.gatorade": "Gatorade",
+      "subtitles.vine_boom": "",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
+      "death.attack.radiation": "%1$s had too much radiation",
       "item.chaosmod.ak_47": "AK 47",
+      "subtitles.never_gonna_give_you_up": "",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
       "item.chaosmod.bullet": "Bullet",
+      "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.youtube": "Youtube",
@@ -1738,10 +2097,8 @@
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
-      "block.chaosmod.comunisam_block": "Comunisam Block",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
-      "block.chaosmod.poland_block": "Poland Block",
       "subtitles.sssr": "SSSR Anthem",
       "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
@@ -1762,6 +2119,7 @@
       "block.chaosmod.backrooms_lvl_1light": "Backrooms Lvl 1light",
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "block.chaosmod.tombstone": "Tombstone",
+      "item.chaosmod.brazil": "Brazil Portal Igniter",
       "item.chaosmod.sus_sword": "Sus Sword",
       "entity.chaosmod.blaz": "Blaz",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",

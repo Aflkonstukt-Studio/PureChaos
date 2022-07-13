@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "token_NONE": "mumbotoken",
+        "token_token.png": "mumbotoken",
+        "token": "mumbotoken"
+      },
+      "name": "default"
+    }
+  }
+}

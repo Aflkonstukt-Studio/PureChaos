@@ -2,12 +2,12 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "light",
-    "textureTop": "light",
-    "textureLeft": "light",
-    "textureFront": "light",
-    "textureRight": "light",
-    "textureBack": "light",
+    "texture": "backrooms_light",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Backrooms Lvl 1light",
+    "name": "Backrooms (1) Light",
     "specialInfo": [
       "STOOOOOOOOOOOOOOOOOOOOOOOOOP"
     ],

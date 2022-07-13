@@ -8,11 +8,13 @@ import xyz.vikkivuk.chaosmod.world.features.plants.YoutubeFeature;
 import xyz.vikkivuk.chaosmod.world.features.plants.PotatusFeature;
 import xyz.vikkivuk.chaosmod.world.features.plants.PlanteFeature;
 import xyz.vikkivuk.chaosmod.world.features.plants.GreenPlantFeature;
+import xyz.vikkivuk.chaosmod.world.features.ores.StandingBabyFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.RadiationLiquidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OrangeFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
@@ -126,6 +128,10 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, Milk2Feature.GENERATE_BIOMES, Milk2Feature::placedFeature));
 	public static final RegistryObject<Feature<?>> POLSKA = register("polska", PolskaFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PolskaFeature.GENERATE_BIOMES, PolskaFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RADIATION_LIQUID = register("radiation_liquid", RadiationLiquidFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, RadiationLiquidFeature.GENERATE_BIOMES, RadiationLiquidFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> STANDING_BABY = register("standing_baby", StandingBabyFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, StandingBabyFeature.GENERATE_BIOMES, StandingBabyFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

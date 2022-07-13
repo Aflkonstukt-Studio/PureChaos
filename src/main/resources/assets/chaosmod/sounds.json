@@ -97,5 +97,32 @@
         "stream": true
       }
     ]
+  },
+  "vine_boom": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:vine_boom",
+        "stream": false
+      }
+    ]
+  },
+  "eekum_bokum": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:eekum_bokum",
+        "stream": false
+      }
+    ]
+  },
+  "never_gonna_give_you_up": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:never_gonna_give_you_up",
+        "stream": false
+      }
+    ]
   }
 }
