@@ -1,6 +1,7 @@
 
 package xyz.vikkivuk.chaosmod.entity;
 
+import xyz.vikkivuk.chaosmod.procedures.JosipdvatockanulaNaturalEntitySpawningConditionProcedure;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 
@@ -39,7 +40,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
@@ -229,8 +229,12 @@ public class JosipdvatockanulaEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+					int x = pos.getX();
+					int y = pos.getY();
+					int z = pos.getZ();
+					return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
+				});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

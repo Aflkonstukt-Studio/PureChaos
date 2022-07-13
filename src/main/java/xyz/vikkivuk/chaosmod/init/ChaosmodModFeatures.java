@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.RadiationLiquidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OrangeFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
@@ -123,6 +124,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PlanteFeature.GENERATE_BIOMES, PlanteFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MILK_2 = register("milk_2", Milk2Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, Milk2Feature.GENERATE_BIOMES, Milk2Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> RADIATION_LIQUID = register("radiation_liquid", RadiationLiquidFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, RadiationLiquidFeature.GENERATE_BIOMES, RadiationLiquidFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

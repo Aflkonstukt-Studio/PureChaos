@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
+import xyz.vikkivuk.chaosmod.block.RadiationLiquidBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
 import xyz.vikkivuk.chaosmod.block.PlanteBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
@@ -20,6 +21,7 @@ import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
+import xyz.vikkivuk.chaosmod.block.NokiaBlockBlock;
 import xyz.vikkivuk.chaosmod.block.NoblockBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
@@ -29,7 +31,11 @@ import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
+import xyz.vikkivuk.chaosmod.block.BrazilPortalBlock;
+import xyz.vikkivuk.chaosmod.block.BrazilBlockBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
+import xyz.vikkivuk.chaosmod.block.BackroomsLvl1WallBlock;
+import xyz.vikkivuk.chaosmod.block.BackroomsLvl1FloorBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -71,6 +77,12 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> RICKROLL_BLOCK = REGISTRY.register("rickroll_block", () -> new RickrollBlockBlock());
 	public static final RegistryObject<Block> GRAVE = REGISTRY.register("grave", () -> new GraveBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1LIGHT = REGISTRY.register("backrooms_lvl_1light", () -> new BackroomsLvl1lightBlock());
+	public static final RegistryObject<Block> BACKROOMS_LVL_1_WALL = REGISTRY.register("backrooms_lvl_1_wall", () -> new BackroomsLvl1WallBlock());
+	public static final RegistryObject<Block> BACKROOMS_LVL_1_FLOOR = REGISTRY.register("backrooms_lvl_1_floor", () -> new BackroomsLvl1FloorBlock());
+	public static final RegistryObject<Block> NOKIA_BLOCK = REGISTRY.register("nokia_block", () -> new NokiaBlockBlock());
+	public static final RegistryObject<Block> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidBlock());
+	public static final RegistryObject<Block> BRAZIL_BLOCK = REGISTRY.register("brazil_block", () -> new BrazilBlockBlock());
+	public static final RegistryObject<Block> BRAZIL_PORTAL = REGISTRY.register("brazil_portal", () -> new BrazilPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
