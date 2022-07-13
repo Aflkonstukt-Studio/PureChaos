@@ -171,6 +171,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> SSSR = REGISTRY.register("sssr", () -> new SSSRItem());
 	public static final RegistryObject<Item> STALIN = REGISTRY.register("stalin_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STALIN, -65536, -11776, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> SOUTH = block(ChaosmodModBlocks.SOUTH, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
