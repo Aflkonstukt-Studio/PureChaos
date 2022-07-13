@@ -1528,6 +1528,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "south"
+    },
+    {
+      "name": "ComunisamBlock",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "comunisam_block"
+    },
+    {
+      "name": "PolandBlock",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_block"
+    },
+    {
+      "name": "Polska",
+      "type": "structure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polska"
+    },
+    {
+      "name": "Cccp",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cccp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1615,18 +1675,18 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.kill": "huvh",
-      "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "block.chaosmod.oil": "Oil",
+      "subtitles.kill": "huvh",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "entity.chaosmod.cursed_dog": "Dgo",
-      "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
+      "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
@@ -1678,8 +1738,10 @@
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
       "subtitles.amogus": "sus",
+      "block.chaosmod.comunisam_block": "Comunisam Block",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
+      "block.chaosmod.poland_block": "Poland Block",
       "subtitles.sssr": "SSSR Anthem",
       "block.chaosmod.milk_2": "Milk 2",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",

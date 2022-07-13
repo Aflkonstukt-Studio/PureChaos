@@ -15,6 +15,7 @@ import xyz.vikkivuk.chaosmod.block.SouthBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PotatusBlock;
+import xyz.vikkivuk.chaosmod.block.PolandBlockBlock;
 import xyz.vikkivuk.chaosmod.block.PlanteBlock;
 import xyz.vikkivuk.chaosmod.block.PeemensionPortalBlock;
 import xyz.vikkivuk.chaosmod.block.PeeBlockBlock;
@@ -29,6 +30,7 @@ import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
+import xyz.vikkivuk.chaosmod.block.ComunisamBlockBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
@@ -71,11 +73,10 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());
 	public static final RegistryObject<Block> RICKROLL_BLOCK = REGISTRY.register("rickroll_block", () -> new RickrollBlockBlock());
 	public static final RegistryObject<Block> GRAVE = REGISTRY.register("grave", () -> new GraveBlock());
-	public static final RegistryObject<Block> BACKROOMS_LVL_1_WALLPAPER = REGISTRY.register("backrooms_lvl_1_wallpaper",
-			() -> new BackroomsLvl1WallpaperBlock());
 	public static final RegistryObject<Block> BACKROOMS_LVL_1LIGHT = REGISTRY.register("backrooms_lvl_1light", () -> new BackroomsLvl1lightBlock());
-	public static final RegistryObject<Block> BACKROOMS_LVL_1_FLOOR = REGISTRY.register("backrooms_lvl_1_floor", () -> new BackroomsLvl1FloorBlock());
 	public static final RegistryObject<Block> SOUTH = REGISTRY.register("south", () -> new SouthBlock());
+	public static final RegistryObject<Block> COMUNISAM_BLOCK = REGISTRY.register("comunisam_block", () -> new ComunisamBlockBlock());
+	public static final RegistryObject<Block> POLAND_BLOCK = REGISTRY.register("poland_block", () -> new PolandBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
