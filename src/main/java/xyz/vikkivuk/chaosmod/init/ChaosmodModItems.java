@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
 import xyz.vikkivuk.chaosmod.item.TurtleArmorItem;
+import xyz.vikkivuk.chaosmod.item.TotemOfDreamItem;
 import xyz.vikkivuk.chaosmod.item.TotemOfAmogusItem;
 import xyz.vikkivuk.chaosmod.item.TesticleOnStickItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
@@ -19,6 +20,7 @@ import xyz.vikkivuk.chaosmod.item.ScratestItem;
 import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
 import xyz.vikkivuk.chaosmod.item.SamsungNote7Item;
 import xyz.vikkivuk.chaosmod.item.SSSRItem;
+import xyz.vikkivuk.chaosmod.item.RockItem;
 import xyz.vikkivuk.chaosmod.item.RadiationLiquidItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
@@ -210,6 +212,10 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> T_POSE_ENTITY = REGISTRY.register("t_pose_entity_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.T_POSE_ENTITY, -1, -16777216, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> IMPOSTOR_KNIFE = REGISTRY.register("impostor_knife", () -> new ImpostorKnifeItem());
+	public static final RegistryObject<Item> ROCK = REGISTRY.register("rock", () -> new RockItem());
+	public static final RegistryObject<Item> CYBER_BLOCK = block(ChaosmodModBlocks.CYBER_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> COMPUTER = block(ChaosmodModBlocks.COMPUTER, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> TOTEM_OF_DREAM = REGISTRY.register("totem_of_dream", () -> new TotemOfDreamItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.world.features.ores.SADsFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
+import xyz.vikkivuk.chaosmod.world.features.ores.ComputerFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.RadiationLiquidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
@@ -135,6 +136,8 @@ public class ChaosmodModFeatures {
 			GenerationStep.Decoration.UNDERGROUND_ORES, StandingBabyFeature.GENERATE_BIOMES, StandingBabyFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> HEC = register("hec", HECFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, HECFeature.GENERATE_BIOMES, HECFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> COMPUTER = register("computer", ComputerFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ComputerFeature.GENERATE_BIOMES, ComputerFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

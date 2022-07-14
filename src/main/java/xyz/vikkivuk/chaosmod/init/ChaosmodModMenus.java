@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.world.inventory.VikkiVukGuiMenu;
+import xyz.vikkivuk.chaosmod.world.inventory.ComputerGuiMenu;
 
 import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
@@ -22,6 +23,8 @@ public class ChaosmodModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
 	public static final MenuType<VikkiVukGuiMenu> VIKKI_VUK_GUI = register("vikki_vuk_gui",
 			(id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
+	public static final MenuType<ComputerGuiMenu> COMPUTER_GUI = register("computer_gui",
+			(id, inv, extraData) -> new ComputerGuiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

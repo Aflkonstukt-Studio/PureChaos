@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "palette": "computer"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -12,6 +12,7 @@ import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
+import xyz.vikkivuk.chaosmod.entity.RockEntity;
 import xyz.vikkivuk.chaosmod.entity.RickAstleyEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.LongLegChickenEntity;
@@ -197,6 +198,9 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<TPoseEntityEntity>> T_POSE_ENTITY = register("t_pose_entity",
 			EntityType.Builder.<TPoseEntityEntity>of(TPoseEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TPoseEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
+			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

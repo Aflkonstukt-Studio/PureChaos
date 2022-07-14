@@ -76,5 +76,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.FIREFLY.get(), FireflyRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_GUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.T_POSE_ENTITY.get(), TPoseEntityRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.ROCK.get(), ThrownItemRenderer::new);
 	}
 }

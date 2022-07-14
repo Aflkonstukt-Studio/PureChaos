@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.gui.VikkiVukGuiScreen;
+import xyz.vikkivuk.chaosmod.client.gui.ComputerGuiScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,7 @@ public class ChaosmodModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(ChaosmodModMenus.VIKKI_VUK_GUI, VikkiVukGuiScreen::new);
+			MenuScreens.register(ChaosmodModMenus.COMPUTER_GUI, ComputerGuiScreen::new);
 		});
 	}
 }
