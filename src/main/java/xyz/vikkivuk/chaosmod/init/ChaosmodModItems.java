@@ -4,10 +4,12 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.item.ZenithItem;
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
 import xyz.vikkivuk.chaosmod.item.TurtleArmorItem;
+import xyz.vikkivuk.chaosmod.item.TotemOfAmogusItem;
 import xyz.vikkivuk.chaosmod.item.TesticleOnStickItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
@@ -15,6 +17,7 @@ import xyz.vikkivuk.chaosmod.item.StaravodaItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.ScratestItem;
 import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
+import xyz.vikkivuk.chaosmod.item.SamsungNote7Item;
 import xyz.vikkivuk.chaosmod.item.SSSRItem;
 import xyz.vikkivuk.chaosmod.item.RadiationLiquidItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
@@ -29,6 +32,7 @@ import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
+import xyz.vikkivuk.chaosmod.item.ImpostorKnifeItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
@@ -47,6 +51,8 @@ import xyz.vikkivuk.chaosmod.item.BrazilItem;
 import xyz.vikkivuk.chaosmod.item.BleachItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
+import xyz.vikkivuk.chaosmod.item.AmogusGunItem;
+import xyz.vikkivuk.chaosmod.item.AlmondWaterItem;
 import xyz.vikkivuk.chaosmod.item.AK47Item;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -193,6 +199,15 @@ public class ChaosmodModItems {
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> FIREFLY = REGISTRY.register("firefly_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.FIREFLY, -16777216, -13261, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> ALMOND_WATER = REGISTRY.register("almond_water", () -> new AlmondWaterItem());
+	public static final RegistryObject<Item> SAMSUNG_NOTE_7 = REGISTRY.register("samsung_note_7", () -> new SamsungNote7Item());
+	public static final RegistryObject<Item> DEPRESSION_BLOCK = block(ChaosmodModBlocks.DEPRESSION_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> TOTEM_OF_AMOGUS = REGISTRY.register("totem_of_amogus", () -> new TotemOfAmogusItem());
+	public static final RegistryObject<Item> AMOGUS_GUN = REGISTRY.register("amogus_gun", () -> new AmogusGunItem());
+	public static final RegistryObject<Item> ZENITH = REGISTRY.register("zenith", () -> new ZenithItem());
+	public static final RegistryObject<Item> T_POSE_ENTITY = REGISTRY.register("t_pose_entity_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.T_POSE_ENTITY, -1, -16777216, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> IMPOSTOR_KNIFE = REGISTRY.register("impostor_knife", () -> new ImpostorKnifeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -30,6 +30,7 @@ import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
 import xyz.vikkivuk.chaosmod.block.GraveBlock;
 import xyz.vikkivuk.chaosmod.block.GatoradeBlock;
 import xyz.vikkivuk.chaosmod.block.EmepeeBlock;
+import xyz.vikkivuk.chaosmod.block.DepressionBlockBlock;
 import xyz.vikkivuk.chaosmod.block.DeathBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
@@ -87,6 +88,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> BRAZIL_BLOCK = REGISTRY.register("brazil_block", () -> new BrazilBlockBlock());
 	public static final RegistryObject<Block> BRAZIL_PORTAL = REGISTRY.register("brazil_portal", () -> new BrazilPortalBlock());
 	public static final RegistryObject<Block> STANDING_BABY = REGISTRY.register("standing_baby", () -> new StandingBabyBlock());
+	public static final RegistryObject<Block> DEPRESSION_BLOCK = REGISTRY.register("depression_block", () -> new DepressionBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

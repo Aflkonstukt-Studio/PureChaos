@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.client.renderer.WalterWightRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.TPoseEntityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StalinRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
@@ -73,5 +74,7 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.LEGS.get(), LegsRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), LongLegChickenRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.FIREFLY.get(), FireflyRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_GUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.T_POSE_ENTITY.get(), TPoseEntityRenderer::new);
 	}
 }

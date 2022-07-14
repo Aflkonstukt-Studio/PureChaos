@@ -8,6 +8,7 @@ import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
@@ -30,6 +31,7 @@ import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
 import xyz.vikkivuk.chaosmod.entity.CodButBetterEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
+import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
@@ -189,6 +191,12 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(FireflyEntity::new)
 
 					.sized(0.1f, 0.1f));
+	public static final RegistryObject<EntityType<AmogusGunEntity>> AMOGUS_GUN = register("projectile_amogus_gun",
+			EntityType.Builder.<AmogusGunEntity>of(AmogusGunEntity::new, MobCategory.MISC).setCustomClientFactory(AmogusGunEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TPoseEntityEntity>> T_POSE_ENTITY = register("t_pose_entity",
+			EntityType.Builder.<TPoseEntityEntity>of(TPoseEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TPoseEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -223,6 +231,7 @@ public class ChaosmodModEntities {
 			LegsEntity.init();
 			LongLegChickenEntity.init();
 			FireflyEntity.init();
+			TPoseEntityEntity.init();
 		});
 	}
 
@@ -254,5 +263,6 @@ public class ChaosmodModEntities {
 		event.put(LEGS.get(), LegsEntity.createAttributes().build());
 		event.put(LONG_LEG_CHICKEN.get(), LongLegChickenEntity.createAttributes().build());
 		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
+		event.put(T_POSE_ENTITY.get(), TPoseEntityEntity.createAttributes().build());
 	}
 }
