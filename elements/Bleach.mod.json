@@ -34,13 +34,13 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": -5,
-    "saturation": -5.0,
+    "nutritionalValue": -19,
+    "saturation": -20.0,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "drink"
   }
 }
