@@ -29,6 +29,7 @@ import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
 import xyz.vikkivuk.chaosmod.item.OrangeFluidItem;
 import xyz.vikkivuk.chaosmod.item.OilItem;
+import xyz.vikkivuk.chaosmod.item.ObamiumItem;
 import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.MumboTokenItem;
 import xyz.vikkivuk.chaosmod.item.Milk2Item;
@@ -37,6 +38,7 @@ import xyz.vikkivuk.chaosmod.item.Kondomnepitajzastoovoradimalispoileralertonima
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.ImpostorKnifeItem;
 import xyz.vikkivuk.chaosmod.item.IglaItem;
+import xyz.vikkivuk.chaosmod.item.HalfGoldenAppleItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
 import xyz.vikkivuk.chaosmod.item.FortniteA1Item;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
@@ -56,7 +58,9 @@ import xyz.vikkivuk.chaosmod.item.BulletItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
 import xyz.vikkivuk.chaosmod.item.BrazilItem;
 import xyz.vikkivuk.chaosmod.item.BleachItem;
+import xyz.vikkivuk.chaosmod.item.BeefItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
+import xyz.vikkivuk.chaosmod.item.BaguetteItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.item.AmogusGunItem;
 import xyz.vikkivuk.chaosmod.item.AlmondWaterItem;
@@ -226,6 +230,12 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> CYBER_BLOCK = block(ChaosmodModBlocks.CYBER_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> COMPUTER = block(ChaosmodModBlocks.COMPUTER, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> TOTEM_OF_DREAM = REGISTRY.register("totem_of_dream", () -> new TotemOfDreamItem());
+	public static final RegistryObject<Item> STROATER = REGISTRY.register("stroater_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STROATER, -6724096, -16777216, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> HALF_GOLDEN_APPLE = REGISTRY.register("half_golden_apple", () -> new HalfGoldenAppleItem());
+	public static final RegistryObject<Item> BEEF = REGISTRY.register("beef", () -> new BeefItem());
+	public static final RegistryObject<Item> BAGUETTE = REGISTRY.register("baguette", () -> new BaguetteItem());
+	public static final RegistryObject<Item> OBAMIUM = REGISTRY.register("obamium", () -> new ObamiumItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
