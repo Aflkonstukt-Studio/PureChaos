@@ -206,6 +206,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BRAZIL_BLOCK = block(ChaosmodModBlocks.BRAZIL_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> BRAZIL = REGISTRY.register("brazil", () -> new BrazilItem());
 	public static final RegistryObject<Item> MUMBO_TOKEN = REGISTRY.register("mumbo_token", () -> new MumboTokenItem());
+	public static final RegistryObject<Item> STANDING_BABY = block(ChaosmodModBlocks.STANDING_BABY, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> LEGS = REGISTRY.register("legs_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.LEGS, -26368, -205, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> LONG_LEG_CHICKEN = REGISTRY.register("long_leg_chicken_spawn_egg",
