@@ -44,6 +44,7 @@ import xyz.vikkivuk.chaosmod.block.BrazilBlockBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1WallBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1FloorBlock;
+import xyz.vikkivuk.chaosmod.block.AdidasBlockBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -99,6 +100,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> DEPRESSION_BLOCK = REGISTRY.register("depression_block", () -> new DepressionBlockBlock());
 	public static final RegistryObject<Block> CYBER_BLOCK = REGISTRY.register("cyber_block", () -> new CyberBlockBlock());
 	public static final RegistryObject<Block> COMPUTER = REGISTRY.register("computer", () -> new ComputerBlock());
+	public static final RegistryObject<Block> ADIDAS_BLOCK = REGISTRY.register("adidas_block", () -> new AdidasBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

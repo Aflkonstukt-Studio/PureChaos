@@ -1,0 +1,68 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "adidashelmet",
+    "enableBody": true,
+    "textureBody": "adidastracksuit",
+    "enableLeggings": true,
+    "textureLeggings": "obamium",
+    "enableBoots": true,
+    "textureBoots": "adidastrekbuts",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "armorTextureFile": "adidas",
+    "helmetName": "Adidas Helmet",
+    "bodyName": "Adidas Chestplate",
+    "leggingsName": "Adidas Leggings",
+    "bootsName": "Adidas Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 30,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 9.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "CUSTOM:amogus"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AdidasBlock"
+      },
+      {
+        "value": "CUSTOM:South"
+      },
+      {
+        "value": "CUSTOM:ComunisamBlock"
+      }
+    ]
+  }
+}

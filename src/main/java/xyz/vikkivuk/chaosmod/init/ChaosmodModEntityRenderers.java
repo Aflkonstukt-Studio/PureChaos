@@ -29,9 +29,14 @@ import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.BlazRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
+import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewGRINRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewBLURenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AentityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AdolfHitlerRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.AMOGUS3GRINRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.AMOGUS3BLURenderer;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -79,5 +84,10 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.T_POSE_ENTITY.get(), TPoseEntityRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.ROCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.STROATER.get(), StroaterRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_BLU.get(), AMOGUS3BLURenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_GRIN.get(), AMOGUS3GRINRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW.get(), Amogus3CrewRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW_BLU.get(), Amogus3CrewBLURenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW_GRIN.get(), Amogus3CrewGRINRenderer::new);
 	}
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "chaosmod:adidas_block"
+    },
+    "1": {
+      "item": "chaosmod:adidas_block"
+    },
+    "2": {
+      "item": "chaosmod:adidas_block"
+    },
+    "3": {
+      "item": "chaosmod:adidas_block"
+    },
+    "5": {
+      "item": "chaosmod:adidas_block"
+    }
+  },
+  "result": {
+    "item": "chaosmod:adidas_armor_helmet",
+    "count": 1
+  }
+}

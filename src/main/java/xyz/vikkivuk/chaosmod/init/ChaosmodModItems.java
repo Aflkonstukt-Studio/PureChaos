@@ -64,6 +64,12 @@ import xyz.vikkivuk.chaosmod.item.BaguetteItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.item.AmogusGunItem;
 import xyz.vikkivuk.chaosmod.item.AlmondWaterItem;
+import xyz.vikkivuk.chaosmod.item.AdidasSwordItem;
+import xyz.vikkivuk.chaosmod.item.AdidasShovelItem;
+import xyz.vikkivuk.chaosmod.item.AdidasPickaxeItem;
+import xyz.vikkivuk.chaosmod.item.AdidasHoeItem;
+import xyz.vikkivuk.chaosmod.item.AdidasAxeItem;
+import xyz.vikkivuk.chaosmod.item.AdidasArmorItem;
 import xyz.vikkivuk.chaosmod.item.AK47Item;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -236,6 +242,32 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BEEF = REGISTRY.register("beef", () -> new BeefItem());
 	public static final RegistryObject<Item> BAGUETTE = REGISTRY.register("baguette", () -> new BaguetteItem());
 	public static final RegistryObject<Item> OBAMIUM = REGISTRY.register("obamium", () -> new ObamiumItem());
+	public static final RegistryObject<Item> AMOGUS_3_BLU = REGISTRY.register("amogus_3_blu_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_BLU, -16763905, -65536,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> AMOGUS_3_GRIN = REGISTRY.register("amogus_3_grin_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_GRIN, -16763905, -65536,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> AMOGUS_3_CREW = REGISTRY.register("amogus_3_crew_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW, -16763905, -65536,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> AMOGUS_3_CREW_BLU = REGISTRY.register("amogus_3_crew_blu_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW_BLU, -16763905, -65536,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> AMOGUS_3_CREW_GRIN = REGISTRY.register("amogus_3_crew_grin_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW_GRIN, -16763905, -65536,
+					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> ADIDAS_BLOCK = block(ChaosmodModBlocks.ADIDAS_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> ADIDAS_ARMOR_HELMET = REGISTRY.register("adidas_armor_helmet", () -> new AdidasArmorItem.Helmet());
+	public static final RegistryObject<Item> ADIDAS_ARMOR_CHESTPLATE = REGISTRY.register("adidas_armor_chestplate",
+			() -> new AdidasArmorItem.Chestplate());
+	public static final RegistryObject<Item> ADIDAS_ARMOR_LEGGINGS = REGISTRY.register("adidas_armor_leggings", () -> new AdidasArmorItem.Leggings());
+	public static final RegistryObject<Item> ADIDAS_ARMOR_BOOTS = REGISTRY.register("adidas_armor_boots", () -> new AdidasArmorItem.Boots());
+	public static final RegistryObject<Item> ADIDAS_PICKAXE = REGISTRY.register("adidas_pickaxe", () -> new AdidasPickaxeItem());
+	public static final RegistryObject<Item> ADIDAS_AXE = REGISTRY.register("adidas_axe", () -> new AdidasAxeItem());
+	public static final RegistryObject<Item> ADIDAS_SWORD = REGISTRY.register("adidas_sword", () -> new AdidasSwordItem());
+	public static final RegistryObject<Item> ADIDAS_SHOVEL = REGISTRY.register("adidas_shovel", () -> new AdidasShovelItem());
+	public static final RegistryObject<Item> ADIDAS_HOE = REGISTRY.register("adidas_hoe", () -> new AdidasHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
