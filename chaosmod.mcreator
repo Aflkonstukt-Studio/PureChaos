@@ -1800,14 +1800,6 @@
       "registry_name": "south"
     },
     {
-      "name": "StandingBaby",
-      "type": "block",
-      "sortid": 142,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "standing_baby"
-    },
-    {
       "name": "BlockPlaced",
       "type": "procedure",
       "sortid": 143,
@@ -2522,7 +2514,6 @@
       "key.chaosmod.k": "K",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "item.chaosmod.almond_water": "Almond Water",
-      "block.chaosmod.standing_baby": "Standing Baby",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
