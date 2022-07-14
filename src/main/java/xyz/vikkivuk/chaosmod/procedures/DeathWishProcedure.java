@@ -28,7 +28,7 @@ public class DeathWishProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, String text) {
 		if (text == null)
 			return;
-		if ((text).contains("take me home")) {
+		if ((text).equals("take me home")) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
@@ -53,6 +53,73 @@ public class DeathWishProcedure {
 				entityToSpawn.setVisualOnly(false);
 				_level.addFreshEntity(entityToSpawn);
 			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof ServerLevel _level) {
+				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+				entityToSpawn.setVisualOnly(false);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		} else if ((text).equals("take me home, country road")) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
