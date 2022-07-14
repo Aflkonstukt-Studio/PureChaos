@@ -9,7 +9,6 @@ import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
-import xyz.vikkivuk.chaosmod.entity.StroaterEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
@@ -202,11 +201,6 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<RockEntity>> ROCK = register("projectile_rock",
 			EntityType.Builder.<RockEntity>of(RockEntity::new, MobCategory.MISC).setCustomClientFactory(RockEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<StroaterEntity>> STROATER = register("stroater",
-			EntityType.Builder.<StroaterEntity>of(StroaterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(StroaterEntity::new)
-
-					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -242,7 +236,6 @@ public class ChaosmodModEntities {
 			LongLegChickenEntity.init();
 			FireflyEntity.init();
 			TPoseEntityEntity.init();
-			StroaterEntity.init();
 		});
 	}
 
@@ -275,6 +268,5 @@ public class ChaosmodModEntities {
 		event.put(LONG_LEG_CHICKEN.get(), LongLegChickenEntity.createAttributes().build());
 		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
 		event.put(T_POSE_ENTITY.get(), TPoseEntityEntity.createAttributes().build());
-		event.put(STROATER.get(), StroaterEntity.createAttributes().build());
 	}
 }
