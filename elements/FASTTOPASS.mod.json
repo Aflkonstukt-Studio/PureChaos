@@ -1,0 +1,22 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "fffa69",
+    "name": "FASTTOPASS",
+    "description": "GOTTA GO!",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "music": {
+      "value": "CUSTOM:ahdude"
+    },
+    "specialInfo": [
+      "HEHE"
+    ],
+    "hasGlow": false,
+    "onRightClickedInAir": {
+      "name": "FASTTOPASSRightclicked"
+    }
+  }
+}

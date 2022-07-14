@@ -17,5 +17,6 @@ public class ChaosmodModPaintings {
 		event.getRegistry().register(new Motive(400, 200).setRegistryName("masterpiece"));
 		event.getRegistry().register(new Motive(16, 16).setRegistryName("xmasterwoopainting"));
 		event.getRegistry().register(new Motive(64, 64).setRegistryName("stuck"));
+		event.getRegistry().register(new Motive(69, 60).setRegistryName("hmmmm_drip"));
 	}
 }

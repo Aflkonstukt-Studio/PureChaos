@@ -1,0 +1,55 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "deep_warm_ocean"
+      },
+      {
+        "value": "deep_ocean"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "mutated_birch_forest"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.AZALEA"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Staravoda"
+    },
+    "airColor": {
+      "value": -13408513,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.EXPOSED_COPPER"
+    },
+    "portalParticles": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Ciao Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "texture": "spilrara",
+    "portalTexture": "gogoaa",
+    "enablePortal": true
+  }
+}

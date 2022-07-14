@@ -97,5 +97,43 @@
         "stream": true
       }
     ]
+  },
+  "crnidani": {
+    "category": "music",
+    "subtitle": "subtitles.crnidani",
+    "sounds": [
+      {
+        "name": "chaosmod:crnidani",
+        "stream": true
+      }
+    ]
+  },
+  "ahdude": {
+    "category": "block",
+    "subtitle": "subtitles.ahdude",
+    "sounds": [
+      {
+        "name": "chaosmod:faster_you_dumpass",
+        "stream": false
+      }
+    ]
+  },
+  "fu-k": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "chaosmod:lego-yoda-death-soundg",
+        "stream": false
+      }
+    ]
+  },
+  "dudeshutt": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "chaosmod:bruga",
+        "stream": false
+      }
+    ]
   }
 }

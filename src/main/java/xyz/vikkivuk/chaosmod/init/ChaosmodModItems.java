@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
 import xyz.vikkivuk.chaosmod.item.TurtleArmorItem;
 import xyz.vikkivuk.chaosmod.item.TesticleOnStickItem;
+import xyz.vikkivuk.chaosmod.item.TOItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.StaravodaItem;
@@ -27,17 +28,21 @@ import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
+import xyz.vikkivuk.chaosmod.item.IglaItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
+import xyz.vikkivuk.chaosmod.item.FortniteA1Item;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
 import xyz.vikkivuk.chaosmod.item.FoodItem2Item;
 import xyz.vikkivuk.chaosmod.item.FallgaysItem;
+import xyz.vikkivuk.chaosmod.item.FASTTOPASSItem;
 import xyz.vikkivuk.chaosmod.item.DirtswordItem;
 import xyz.vikkivuk.chaosmod.item.DipexItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.CorruptstaffItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
+import xyz.vikkivuk.chaosmod.item.CioaoItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
 import xyz.vikkivuk.chaosmod.item.BulletItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
@@ -168,6 +173,13 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> SSSR = REGISTRY.register("sssr", () -> new SSSRItem());
 	public static final RegistryObject<Item> STALIN = REGISTRY.register("stalin_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.STALIN, -65536, -11776, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> SOUTH = block(ChaosmodModBlocks.SOUTH, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> TO = REGISTRY.register("to", () -> new TOItem());
+	public static final RegistryObject<Item> FASTTOPASS = REGISTRY.register("fasttopass", () -> new FASTTOPASSItem());
+	public static final RegistryObject<Item> IGLA = REGISTRY.register("igla", () -> new IglaItem());
+	public static final RegistryObject<Item> CIOAO = REGISTRY.register("cioao", () -> new CioaoItem());
+	public static final RegistryObject<Item> FORTNITE_A_1 = REGISTRY.register("fortnite_a_1", () -> new FortniteA1Item());
+	public static final RegistryObject<Item> GREENGISCREENDA = block(ChaosmodModBlocks.GREENGISCREENDA, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
