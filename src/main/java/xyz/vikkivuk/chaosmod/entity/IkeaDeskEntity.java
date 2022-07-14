@@ -37,7 +37,7 @@ import net.minecraft.network.protocol.Packet;
 public class IkeaDeskEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.IKEA_DESK.get(), 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.IKEA_DESK.get(), 15, 1, 4));
 	}
 
 	public IkeaDeskEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -114,7 +114,7 @@
     "spawningProbability": 15,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
-    "maxNumberOfMobsPerGroup": 6,
+    "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

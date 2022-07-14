@@ -11,7 +11,6 @@ import xyz.vikkivuk.chaosmod.block.TLGHDBlock;
 import xyz.vikkivuk.chaosmod.block.SusPortalBlock;
 import xyz.vikkivuk.chaosmod.block.SusBlockBlock;
 import xyz.vikkivuk.chaosmod.block.StaravodaBlock;
-import xyz.vikkivuk.chaosmod.block.StandingBabyBlock;
 import xyz.vikkivuk.chaosmod.block.SouthBlock;
 import xyz.vikkivuk.chaosmod.block.SADsBlock;
 import xyz.vikkivuk.chaosmod.block.RickrollBlockBlock;
@@ -97,7 +96,6 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GREENGISCREENDA = REGISTRY.register("greengiscreenda", () -> new GreengiscreendaBlock());
 	public static final RegistryObject<Block> BRAZIL_BLOCK = REGISTRY.register("brazil_block", () -> new BrazilBlockBlock());
 	public static final RegistryObject<Block> BRAZIL_PORTAL = REGISTRY.register("brazil_portal", () -> new BrazilPortalBlock());
-	public static final RegistryObject<Block> STANDING_BABY = REGISTRY.register("standing_baby", () -> new StandingBabyBlock());
 	public static final RegistryObject<Block> DEPRESSION_BLOCK = REGISTRY.register("depression_block", () -> new DepressionBlockBlock());
 	public static final RegistryObject<Block> CYBER_BLOCK = REGISTRY.register("cyber_block", () -> new CyberBlockBlock());
 	public static final RegistryObject<Block> COMPUTER = REGISTRY.register("computer", () -> new ComputerBlock());
@@ -112,7 +110,6 @@ public class ChaosmodModBlocks {
 			YoutubeBlock.registerRenderLayer();
 			PlanteBlock.registerRenderLayer();
 			GraveBlock.registerRenderLayer();
-			StandingBabyBlock.registerRenderLayer();
 			ComputerBlock.registerRenderLayer();
 		}
 	}
