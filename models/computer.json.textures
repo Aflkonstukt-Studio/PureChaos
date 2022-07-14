@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "palette": "computer"
+        "0": "computer"
       },
       "name": "default"
     }

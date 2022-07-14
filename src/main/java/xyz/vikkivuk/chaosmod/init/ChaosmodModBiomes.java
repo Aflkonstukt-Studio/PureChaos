@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.world.biome.SususBiome;
 import xyz.vikkivuk.chaosmod.world.biome.HellButOverworldBiome;
 import xyz.vikkivuk.chaosmod.world.biome.EkesmasterbaitBiome;
+import xyz.vikkivuk.chaosmod.world.biome.CyberBiomeBiome;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -47,6 +48,7 @@ public class ChaosmodModBiomes {
 	public static final RegistryObject<Biome> HELL_BUT_OVERWORLD = REGISTRY.register("hell_but_overworld", () -> HellButOverworldBiome.createBiome());
 	public static final RegistryObject<Biome> SUSUS = REGISTRY.register("susus", () -> SususBiome.createBiome());
 	public static final RegistryObject<Biome> EKESMASTERBAIT = REGISTRY.register("ekesmasterbait", () -> EkesmasterbaitBiome.createBiome());
+	public static final RegistryObject<Biome> CYBER_BIOME = REGISTRY.register("cyber_biome", () -> CyberBiomeBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -54,6 +56,7 @@ public class ChaosmodModBiomes {
 			HellButOverworldBiome.init();
 			SususBiome.init();
 			EkesmasterbaitBiome.init();
+			CyberBiomeBiome.init();
 		});
 	}
 

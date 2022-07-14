@@ -1,6 +1,23 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.ServerChatEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
@@ -228,6 +245,8 @@ public class CccpProcedure {
 																entityToSpawn.setVisualOnly(false);
 																_level.addFreshEntity(entityToSpawn);
 															}
+															if (entity instanceof LivingEntity _entity)
+																_entity.hurt(new DamageSource("cccp").bypassArmor(), 999999);
 															MinecraftForge.EVENT_BUS.unregister(this);
 														}
 													}.start(world, 20);

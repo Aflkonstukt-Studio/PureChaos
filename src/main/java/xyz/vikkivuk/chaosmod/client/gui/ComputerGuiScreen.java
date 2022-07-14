@@ -1,10 +1,27 @@
 
 package xyz.vikkivuk.chaosmod.client.gui;
 
+import xyz.vikkivuk.chaosmod.world.inventory.ComputerGuiMenu;
+import xyz.vikkivuk.chaosmod.network.ComputerGuiButtonMessage;
+import xyz.vikkivuk.chaosmod.ChaosmodMod;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.Minecraft;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> {
-
 	private final static HashMap<String, Object> guistate = ComputerGuiMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -27,7 +44,6 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -35,10 +51,8 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -48,7 +62,6 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -70,11 +83,12 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	@Override
 	public void init() {
 		super.init();
-
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-
 		this.addRenderableWidget(new Button(this.leftPos + 33, this.topPos + 12, 108, 20, new TextComponent("Enter Cyberspace"), e -> {
+			if (true) {
+				ChaosmodMod.PACKET_HANDLER.sendToServer(new ComputerGuiButtonMessage(0, x, y, z));
+				ComputerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
-
 }

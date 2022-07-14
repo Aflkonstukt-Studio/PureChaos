@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "plains",
+          "biome": "chaosmod:cyber_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -2948,7 +2948,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "plains"
+                "chaosmod:cyber_biome"
               ]
             },
             "then_run": {
@@ -2982,17 +2982,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "chaosmod:cyber_block"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "chaosmod:cyber_block"
                           }
                         }
                       ]
@@ -3010,7 +3007,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "chaosmod:cyber_block"
                       }
                     }
                   }

@@ -15,7 +15,7 @@
       "value": "CUSTOM:Rock"
     },
     "shootConstantly": false,
-    "usageCount": 100,
+    "usageCount": 0,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },

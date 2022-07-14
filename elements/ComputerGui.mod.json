@@ -14,6 +14,9 @@
         "type": "button",
         "data": {
           "text": "Enter Cyberspace",
+          "onClick": {
+            "name": "EnterCyberspaceButtonPressed"
+          },
           "width": 108,
           "height": 20,
           "name": "Enter Cyberspace",

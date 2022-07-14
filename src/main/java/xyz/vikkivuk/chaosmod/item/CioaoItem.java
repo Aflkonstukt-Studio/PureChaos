@@ -1,8 +1,18 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-public class CioaoItem extends Item {
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+import xyz.vikkivuk.chaosmod.block.CioaoPortalBlock;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.core.BlockPos;
+
+public class CioaoItem extends Item {
 	public CioaoItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).durability(64));
 	}
@@ -20,13 +30,11 @@ public class CioaoItem extends Item {
 			int y = pos.getY();
 			int z = pos.getZ();
 			boolean success = false;
-
 			if (world.isEmptyBlock(pos) && true) {
 				CioaoPortalBlock.portalSpawn(world, pos);
 				itemstack.hurtAndBreak(1, entity, c -> c.broadcastBreakEvent(context.getHand()));
 				success = true;
 			}
-
 			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;
 		}
 	}

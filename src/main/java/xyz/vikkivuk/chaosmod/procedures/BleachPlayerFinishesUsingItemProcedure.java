@@ -1,8 +1,11 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModMobEffects;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
 public class BleachPlayerFinishesUsingItemProcedure {
 	public static void execute(Entity entity) {

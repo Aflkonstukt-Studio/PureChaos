@@ -1,17 +1,8 @@
 {
-  "parent": "forge:item/default",
-  "loader": "forge:composite",
-  "parts": {
-    "part1": {
-      "loader": "forge:obj",
-      "model": "chaosmod:models/item/computer.obj",
-      "ambientToFullbright": true,
-      "textures": {
-        "#palette": "chaosmod:blocks/computer"
-      }
-    }
-  },
+  "parent": "chaosmod:custom/computer",
   "textures": {
-    "particle": "chaosmod:blocks/computer"
+    "all": "chaosmod:blocks/computer",
+    "particle": "chaosmod:blocks/computer",
+    "0": "chaosmod:blocks/computer"
   }
 }

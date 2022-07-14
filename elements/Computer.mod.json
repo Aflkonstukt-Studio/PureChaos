@@ -8,9 +8,9 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 3,
+    "renderType": 2,
     "customModelName": "computer:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -19,16 +19,52 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 18.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 16.75,
+        "Mx": -2.0,
+        "My": 1.0,
+        "Mz": -1.25,
+        "subtract": false
+      },
+      {
+        "mx": -1.0,
+        "my": 1.0,
+        "mz": 0.5,
+        "Mx": 17.0,
+        "My": 7.5,
+        "Mz": 15.5,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 7.5,
+        "mz": 8.0,
+        "Mx": 4.25,
+        "My": 8.5,
+        "Mz": 2.0,
+        "subtract": false
+      },
+      {
+        "mx": 10.0,
+        "my": 8.5,
+        "mz": 6.5,
+        "Mx": 6.5,
+        "My": 20.5,
+        "Mz": 2.75,
+        "subtract": false
+      },
+      {
+        "mx": -2.0,
+        "my": 12.5,
+        "mz": 10.5,
+        "Mx": 18.25,
+        "My": 28.0,
+        "Mz": 3.5,
         "subtract": false
       }
     ],
@@ -105,8 +141,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "ComputerGui",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -121,9 +157,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "ComputerOnBlockRightClicked"
-    },
     "spawnWorldTypes": [
       "Surface",
       "Nether",
