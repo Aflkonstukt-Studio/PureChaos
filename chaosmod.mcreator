@@ -1860,14 +1860,6 @@
       "registry_name": "firefly"
     },
     {
-      "name": "AlmondWater",
-      "type": "item",
-      "sortid": 147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "almond_water"
-    },
-    {
       "name": "SamsungNote7Rightclicked",
       "type": "procedure",
       "sortid": 148,
@@ -1896,12 +1888,12 @@
       }
     },
     {
-      "name": "SamsungNote7",
+      "name": "TotemOfAmogus",
       "type": "item",
-      "sortid": 148,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "samsung_note_7"
+      "registry_name": "totem_of_amogus"
     },
     {
       "name": "DepressionBlock",
@@ -1912,12 +1904,12 @@
       "registry_name": "depression_block"
     },
     {
-      "name": "TotemOfAmogus",
-      "type": "item",
-      "sortid": 151,
+      "name": "TPoseEntity",
+      "type": "livingentity",
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "totem_of_amogus"
+      "registry_name": "t_pose_entity"
     },
     {
       "name": "AmogusGun",
@@ -1928,6 +1920,30 @@
       "registry_name": "amogus_gun"
     },
     {
+      "name": "ImpostorKnife",
+      "type": "tool",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "impostor_knife"
+    },
+    {
+      "name": "SamsungNote7",
+      "type": "item",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "samsung_note_7"
+    },
+    {
+      "name": "AlmondWater",
+      "type": "item",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "almond_water"
+    },
+    {
       "name": "Zenith",
       "type": "tool",
       "sortid": 153,
@@ -1936,20 +1952,72 @@
       "registry_name": "zenith"
     },
     {
-      "name": "TPoseEntity",
-      "type": "livingentity",
-      "sortid": 154,
+      "name": "ComunisamBlock",
+      "type": "block",
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "t_pose_entity"
+      "registry_name": "comunisam_block"
     },
     {
-      "name": "ImpostorKnife",
-      "type": "tool",
-      "sortid": 155,
+      "name": "Cccp",
+      "type": "procedure",
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "impostor_knife"
+      "registry_name": "cccp",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolandBlock",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_block"
+    },
+    {
+      "name": "HEC",
+      "type": "structure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hec"
+    },
+    {
+      "name": "Polska",
+      "type": "structure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polska"
     }
   ],
   "variable_elements": [],
@@ -2063,8 +2131,8 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
@@ -2084,11 +2152,11 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "block.chaosmod.youtube": "Youtube",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
+      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
@@ -2137,8 +2205,8 @@
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
-      "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.oil_bucket": "Oil Bucket",
+      "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.josip_range": "Josip Range",
       "effect.chaosmod.bleached": "Bleached Eyes",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
@@ -2170,17 +2238,14 @@
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
-      "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "block.chaosmod.rickroll_block": "Rickroll",
       "subtitles.eekum_bokum": "",
-      "item.chaosmod.samsung_note_7": "Samsung Note 7",
       "subtitles.vine_boom": "",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
       "death.attack.radiation": "%1$s had too much radiation",
       "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
-      "item.chaosmod.amogus_gun": "Amogus Gun",
       "item.chaosmod.bullet": "Bullet",
       "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
@@ -2190,7 +2255,6 @@
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
-      "entity.chaosmod.t_pose_entity": "T Pose Entity",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",
       "item.chaosmod.potato_spuds": "Potato Spuds",
@@ -2200,11 +2264,9 @@
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "subtitles.sssr": "SSSR Anthem",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
-      "item.chaosmod.zenith": "Zenith",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
-      "item.chaosmod.impostor_knife": "Impostor Knife",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
       "item.chaosmod.beef_armor_boots": "Beef Armor Boots",
       "biome.chaosmod.hell_but_overworld": "Neover",
@@ -2225,7 +2287,6 @@
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "gamerule.doGraveCreation": "Do Grave Creation",
-      "item.chaosmod.totem_of_amogus": "Totem Of Among Us",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "subtitles.footstep_metal_amogus": "idk",
@@ -2234,7 +2295,6 @@
       "item.chaosmod.food_item_2": "Food Item 2",
       "block.chaosmod.gatorade": "Gatorade",
       "block.chaosmod.cum": "Cum",
-      "block.chaosmod.depression_block": "Depression Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "block.chaosmod.ggggggg": "slipped and slipped",
       "item.chaosmod.water_cup": "Water Cup",
@@ -2248,7 +2308,6 @@
       "fluid.chaosmod.milk_2": "Milk 2",
       "key.chaosmod.k": "K",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
-      "item.chaosmod.almond_water": "Almond Water",
       "block.chaosmod.standing_baby": "Standing Baby",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "effect.chaosmod.high_effect": "High",

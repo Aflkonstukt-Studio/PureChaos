@@ -25,12 +25,14 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.CarbonMonoxideFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.WhiteCellFeature;
 import xyz.vikkivuk.chaosmod.world.features.SecretTntFeature;
+import xyz.vikkivuk.chaosmod.world.features.PolskaFeature;
 import xyz.vikkivuk.chaosmod.world.features.PeePoolFeature;
 import xyz.vikkivuk.chaosmod.world.features.OilMountainFeature;
 import xyz.vikkivuk.chaosmod.world.features.OakHouseFeature;
 import xyz.vikkivuk.chaosmod.world.features.JukeBoxCaveFeature;
 import xyz.vikkivuk.chaosmod.world.features.JosipovDrpanjeFeature;
 import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
+import xyz.vikkivuk.chaosmod.world.features.HECFeature;
 import xyz.vikkivuk.chaosmod.world.features.GasChamberFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUsDungeonFeature;
 import xyz.vikkivuk.chaosmod.world.features.AmongUSppFeature;
@@ -125,10 +127,14 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PlanteFeature.GENERATE_BIOMES, PlanteFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MILK_2 = register("milk_2", Milk2Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, Milk2Feature.GENERATE_BIOMES, Milk2Feature::placedFeature));
+	public static final RegistryObject<Feature<?>> POLSKA = register("polska", PolskaFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PolskaFeature.GENERATE_BIOMES, PolskaFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> RADIATION_LIQUID = register("radiation_liquid", RadiationLiquidFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, RadiationLiquidFeature.GENERATE_BIOMES, RadiationLiquidFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> STANDING_BABY = register("standing_baby", StandingBabyFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, StandingBabyFeature.GENERATE_BIOMES, StandingBabyFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> HEC = register("hec", HECFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, HECFeature.GENERATE_BIOMES, HECFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
