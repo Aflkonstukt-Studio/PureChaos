@@ -1,0 +1,17 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "parts": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "chaosmod:models/item/baby.obj",
+      "ambientToFullbright": true,
+      "textures": {
+        "#StandingBaby": "chaosmod:blocks/standingbabydiffusemap"
+      }
+    }
+  },
+  "textures": {
+    "particle": "chaosmod:blocks/standingbabydiffusemap"
+  }
+}

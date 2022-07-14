@@ -10,6 +10,8 @@
     "chaosmod:carbon_monoxide",
     "chaosmod:flowing_carbon_monoxide",
     "chaosmod:milk_2",
-    "chaosmod:flowing_milk_2"
+    "chaosmod:flowing_milk_2",
+    "chaosmod:radiation_liquid",
+    "chaosmod:flowing_radiation_liquid"
   ]
 }

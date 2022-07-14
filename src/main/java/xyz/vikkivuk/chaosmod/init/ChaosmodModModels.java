@@ -6,11 +6,15 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.client.model.Modelvikkivuk_plushie;
 import xyz.vikkivuk.chaosmod.client.model.Modeltrident;
+import xyz.vikkivuk.chaosmod.client.model.Modeltpose_smth;
 import xyz.vikkivuk.chaosmod.client.model.Modelsplank;
 import xyz.vikkivuk.chaosmod.client.model.Modelshep;
 import xyz.vikkivuk.chaosmod.client.model.Modelmoth;
+import xyz.vikkivuk.chaosmod.client.model.Modellong_leg_chicken;
+import xyz.vikkivuk.chaosmod.client.model.Modellegs;
 import xyz.vikkivuk.chaosmod.client.model.Modeljosipmmarket;
 import xyz.vikkivuk.chaosmod.client.model.Modelikea_desk;
+import xyz.vikkivuk.chaosmod.client.model.Modelfireflies;
 import xyz.vikkivuk.chaosmod.client.model.Modeldog;
 import xyz.vikkivuk.chaosmod.client.model.Modelcustom_model;
 import xyz.vikkivuk.chaosmod.client.model.Modelcod_but_better;
@@ -36,9 +40,13 @@ public class ChaosmodModModels {
 		event.registerLayerDefinition(Modelikea_desk.LAYER_LOCATION, Modelikea_desk::createBodyLayer);
 		event.registerLayerDefinition(Modeljosipmmarket.LAYER_LOCATION, Modeljosipmmarket::createBodyLayer);
 		event.registerLayerDefinition(Modelshep.LAYER_LOCATION, Modelshep::createBodyLayer);
+		event.registerLayerDefinition(Modellong_leg_chicken.LAYER_LOCATION, Modellong_leg_chicken::createBodyLayer);
 		event.registerLayerDefinition(Modelvikkivuk_plushie.LAYER_LOCATION, Modelvikkivuk_plushie::createBodyLayer);
+		event.registerLayerDefinition(Modeltpose_smth.LAYER_LOCATION, Modeltpose_smth::createBodyLayer);
 		event.registerLayerDefinition(Modelcod_but_better.LAYER_LOCATION, Modelcod_but_better::createBodyLayer);
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
+		event.registerLayerDefinition(Modellegs.LAYER_LOCATION, Modellegs::createBodyLayer);
+		event.registerLayerDefinition(Modelfireflies.LAYER_LOCATION, Modelfireflies::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
 	}
 }

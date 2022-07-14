@@ -8,10 +8,14 @@ import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
 import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
+import xyz.vikkivuk.chaosmod.entity.RickAstleyEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
+import xyz.vikkivuk.chaosmod.entity.LongLegChickenEntity;
+import xyz.vikkivuk.chaosmod.entity.LegsEntity;
 import xyz.vikkivuk.chaosmod.entity.KondomnepitajzastoovoradimalispoileralertonimarupuEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipRangeEntity;
@@ -19,12 +23,15 @@ import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
+import xyz.vikkivuk.chaosmod.entity.FireflyEntity;
+import xyz.vikkivuk.chaosmod.entity.EndyEntity;
 import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
 import xyz.vikkivuk.chaosmod.entity.CodButBetterEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
+import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
@@ -159,6 +166,37 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(StalinEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EndyEntity>> ENDY = register("endy",
+			EntityType.Builder.<EndyEntity>of(EndyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(EndyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RickAstleyEntity>> RICK_ASTLEY = register("rick_astley",
+			EntityType.Builder.<RickAstleyEntity>of(RickAstleyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RickAstleyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LegsEntity>> LEGS = register("legs",
+			EntityType.Builder.<LegsEntity>of(LegsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(LegsEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LongLegChickenEntity>> LONG_LEG_CHICKEN = register("long_leg_chicken",
+			EntityType.Builder.<LongLegChickenEntity>of(LongLegChickenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LongLegChickenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FireflyEntity>> FIREFLY = register("firefly",
+			EntityType.Builder.<FireflyEntity>of(FireflyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(FireflyEntity::new)
+
+					.sized(0.1f, 0.1f));
+	public static final RegistryObject<EntityType<AmogusGunEntity>> AMOGUS_GUN = register("projectile_amogus_gun",
+			EntityType.Builder.<AmogusGunEntity>of(AmogusGunEntity::new, MobCategory.MISC).setCustomClientFactory(AmogusGunEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TPoseEntityEntity>> T_POSE_ENTITY = register("t_pose_entity",
+			EntityType.Builder.<TPoseEntityEntity>of(TPoseEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TPoseEntityEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -188,6 +226,12 @@ public class ChaosmodModEntities {
 			WalterWightEntity.init();
 			CodButBetterEntity.init();
 			StalinEntity.init();
+			EndyEntity.init();
+			RickAstleyEntity.init();
+			LegsEntity.init();
+			LongLegChickenEntity.init();
+			FireflyEntity.init();
+			TPoseEntityEntity.init();
 		});
 	}
 
@@ -214,5 +258,11 @@ public class ChaosmodModEntities {
 		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
 		event.put(COD_BUT_BETTER.get(), CodButBetterEntity.createAttributes().build());
 		event.put(STALIN.get(), StalinEntity.createAttributes().build());
+		event.put(ENDY.get(), EndyEntity.createAttributes().build());
+		event.put(RICK_ASTLEY.get(), RickAstleyEntity.createAttributes().build());
+		event.put(LEGS.get(), LegsEntity.createAttributes().build());
+		event.put(LONG_LEG_CHICKEN.get(), LongLegChickenEntity.createAttributes().build());
+		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
+		event.put(T_POSE_ENTITY.get(), TPoseEntityEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/brazil",
+    "up": "chaosmod:blocks/brazil",
+    "north": "chaosmod:blocks/brazil",
+    "east": "chaosmod:blocks/brazil",
+    "south": "chaosmod:blocks/brazil",
+    "west": "chaosmod:blocks/brazil",
+    "particle": "chaosmod:blocks/brazil"
+  }
+}

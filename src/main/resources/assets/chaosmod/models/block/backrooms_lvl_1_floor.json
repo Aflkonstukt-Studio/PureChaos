@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/sandstone_bottom",
+    "up": "chaosmod:blocks/backrooms_floor",
+    "north": "chaosmod:blocks/backrooms_floor",
+    "east": "chaosmod:blocks/backrooms_floor",
+    "south": "chaosmod:blocks/backrooms_floor",
+    "west": "chaosmod:blocks/backrooms_floor",
+    "particle": "chaosmod:blocks/sandstone_bottom"
+  }
+}

@@ -7,15 +7,21 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.client.renderer.WalterWightRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.TPoseEntityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StalinRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.RickAstleyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.LongLegChickenRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.LegsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipdvatockanulaRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPettRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JosipPetRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JOSIPRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.FireflyRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.EndyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.DreamRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;
@@ -63,5 +69,12 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.WALTER_WIGHT.get(), WalterWightRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.COD_BUT_BETTER.get(), CodButBetterRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.STALIN.get(), StalinRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.ENDY.get(), EndyRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.RICK_ASTLEY.get(), RickAstleyRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.LEGS.get(), LegsRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), LongLegChickenRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.FIREFLY.get(), FireflyRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_GUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.T_POSE_ENTITY.get(), TPoseEntityRenderer::new);
 	}
 }

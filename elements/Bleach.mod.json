@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "clorox",
+    "customModelName": "Normal",
+    "name": "Bleach",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "BleachPlayerFinishesUsingItem"
+    },
+    "hasDispenseBehavior": false,
+    "isFood": true,
+    "nutritionalValue": -19,
+    "saturation": -20.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "drink"
+  }
+}

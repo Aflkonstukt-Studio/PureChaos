@@ -1,0 +1,29 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "the_zenith",
+    "customModelName": "Normal",
+    "name": "Zenith",
+    "specialInfo": [
+      "check out Terraria"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 32,
+    "efficiency": 32.0,
+    "attackSpeed": 5.0,
+    "enchantability": 100,
+    "damageVsEntity": 190.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -14,4 +14,6 @@ public class ChaosmodModGameRules {
 			GameRules.BooleanValue.create(false));
 	public static final GameRules.Key<GameRules.BooleanValue> DOGRAVECREATION = GameRules.register("doGraveCreation", GameRules.Category.SPAWNING,
 			GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> DROPMUMBOTOKENS = GameRules.register("dropMumboTokens", GameRules.Category.MISC,
+			GameRules.BooleanValue.create(true));
 }
