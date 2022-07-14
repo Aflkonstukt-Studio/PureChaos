@@ -5,7 +5,7 @@
     "structure": "oil_mountain",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 45000,
+    "spawnProbability": 25000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

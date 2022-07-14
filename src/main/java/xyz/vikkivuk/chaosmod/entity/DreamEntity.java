@@ -47,7 +47,7 @@ import net.minecraft.core.BlockPos;
 public class DreamEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.DREAM.get(), 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.DREAM.get(), 20, 1, 3));
 	}
 
 	public DreamEntity(PlayMessages.SpawnEntity packet, Level world) {

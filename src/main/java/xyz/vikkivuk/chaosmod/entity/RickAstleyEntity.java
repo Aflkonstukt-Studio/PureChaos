@@ -37,7 +37,7 @@ import net.minecraft.network.protocol.Packet;
 public class RickAstleyEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.RICK_ASTLEY.get(), 20, 4, 4));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.RICK_ASTLEY.get(), 20, 1, 2));
 	}
 
 	public RickAstleyEntity(PlayMessages.SpawnEntity packet, Level world) {
