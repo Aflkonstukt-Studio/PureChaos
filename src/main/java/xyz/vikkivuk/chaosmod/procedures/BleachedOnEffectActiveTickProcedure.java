@@ -1,8 +1,8 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class BleachedOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {

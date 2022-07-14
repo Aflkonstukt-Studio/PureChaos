@@ -1,23 +1,11 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import xyz.vikkivuk.chaosmod.procedures.SamsungNote7RightclickedProcedure;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class SamsungNote7Item extends Item {
+
 	public SamsungNote7Item() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.COMMON));
 	}
@@ -41,7 +29,8 @@ public class SamsungNote7Item extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SamsungNote7RightclickedProcedure.execute(world, x, y, z);
+		SamsungNote7RightclickedProcedure.execute();
 		return ar;
 	}
+
 }

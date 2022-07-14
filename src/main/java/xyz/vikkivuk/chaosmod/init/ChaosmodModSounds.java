@@ -33,6 +33,10 @@ public class ChaosmodModSounds {
 		REGISTRY.put(new ResourceLocation("chaosmod", "eekum_bokum"), new SoundEvent(new ResourceLocation("chaosmod", "eekum_bokum")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "never_gonna_give_you_up"),
 				new SoundEvent(new ResourceLocation("chaosmod", "never_gonna_give_you_up")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "crnidani"), new SoundEvent(new ResourceLocation("chaosmod", "crnidani")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "ahdude"), new SoundEvent(new ResourceLocation("chaosmod", "ahdude")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "fu-k"), new SoundEvent(new ResourceLocation("chaosmod", "fu-k")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "dudeshutt"), new SoundEvent(new ResourceLocation("chaosmod", "dudeshutt")));
 	}
 
 	@SubscribeEvent

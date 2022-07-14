@@ -2020,39 +2020,12 @@
       "registry_name": "polska"
     },
     {
-      "name": "Rock",
-      "type": "rangeditem",
-      "sortid": 156,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rock"
-    },
-    {
       "name": "CyberBlock",
       "type": "block",
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyber_block"
-    },
-    {
-      "name": "Cyberspace",
-      "type": "dimension",
-      "sortid": 158,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cyberspace",
-      "metadata": {
-        "ep": false
-      }
-    },
-    {
-      "name": "ComputerGui",
-      "type": "gui",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "computer_gui"
     },
     {
       "name": "ComputerOnBlockRightClicked",
@@ -2087,6 +2060,33 @@
       }
     },
     {
+      "name": "TotemOfDream",
+      "type": "item",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_of_dream"
+    },
+    {
+      "name": "Rock",
+      "type": "rangeditem",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock"
+    },
+    {
+      "name": "Cyberspace",
+      "type": "dimension",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberspace",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
       "name": "Computer",
       "type": "block",
       "sortid": 159,
@@ -2095,12 +2095,87 @@
       "registry_name": "computer"
     },
     {
-      "name": "TotemOfDream",
-      "type": "item",
-      "sortid": 160,
+      "name": "ComputerGui",
+      "type": "gui",
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "totem_of_dream"
+      "registry_name": "computer_gui"
+    },
+    {
+      "name": "Igla",
+      "type": "item",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "igla"
+    },
+    {
+      "name": "FASTTOPASSRightclicked",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fasttopass_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cioao",
+      "type": "dimension",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cioao",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "TO",
+      "type": "musicdisc",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to"
+    },
+    {
+      "name": "HmmmmDRIP",
+      "type": "painting",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hmmmm_drip"
+    },
+    {
+      "name": "FortniteA1",
+      "type": "item",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortnite_a_1"
+    },
+    {
+      "name": "Greengiscreenda",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greengiscreenda"
+    },
+    {
+      "name": "FASTTOPASS",
+      "type": "musicdisc",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fasttopass"
     }
   ],
   "variable_elements": [],
@@ -2208,15 +2283,45 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "crnidani",
+      "files": [
+        "crnidani"
+      ],
+      "category": "music",
+      "subtitle": "crnidanijebani"
+    },
+    {
+      "name": "ahdude",
+      "files": [
+        "faster_you_dumpass"
+      ],
+      "category": "block",
+      "subtitle": "ff"
+    },
+    {
+      "name": "fu-k",
+      "files": [
+        "lego-yoda-death-soundg"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "dudeshutt",
+      "files": [
+        "bruga"
+      ],
+      "category": "block",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.kill": "huvh",
-      "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
-      "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
@@ -2235,25 +2340,21 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "block.chaosmod.youtube": "Youtube",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
-      "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
+      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "subtitles.dudeshutt": "",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
-      "block.chaosmod.cyber_block": "Cyber Block",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
-      "item.chaosmod.legs_spawn_egg": "Legs Spawn Egg",
       "subtitles.amogus": "sus",
-      "block.chaosmod.poland_block": "Poland Block",
       "block.chaosmod.milk_2": "Milk 2",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
-      "entity.chaosmod.rick_astley": "Rick Astley",
       "key.chaosmod.summonsus": "Summonsus",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "entity.chaosmod.cod_but_better": "Cod But Better",
@@ -2273,101 +2374,77 @@
       "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.among_us": "Among Us",
-      "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "block.chaosmod.grave": "Grave",
-      "block.chaosmod.brazil_block": "Brazil Block",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
-      "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.brown": "Brown",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "block.chaosmod.plante": "Plante",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
-      "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.oil_bucket": "Oil Bucket",
       "item.chaosmod.josip_range": "Josip Range",
-      "effect.chaosmod.bleached": "Bleached Eyes",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
-      "entity.chaosmod.legs": "Legs",
       "fluid.chaosmod.oil": "Oil",
-      "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.stalin": "Stalin",
-      "item.chaosmod.bleach": "Bleach",
-      "item.chaosmod.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
       "entity.chaosmod.josip_pet": "Josip Pet",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
-      "block.chaosmod.nokia_block": "Nokia Block",
       "block.chaosmod.oil": "Oil",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
-      "block.chaosmod.computer": "Computer",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
-      "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
+      "subtitles.crnidani": "crnidanijebani",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "key.chaosmod.one": "ma",
-      "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
-      "item.chaosmod.totem_of_dream": "Totem Of Dream",
       "block.chaosmod.potatus": "Potatus",
-      "item.chaosmod.cyberspace": "Cyberspace Portal Igniter",
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
-      "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "block.chaosmod.rickroll_block": "Rickroll",
       "subtitles.eekum_bokum": "",
-      "item.chaosmod.samsung_note_7": "Samsung Note 7",
       "subtitles.vine_boom": "",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
       "death.attack.radiation": "%1$s had too much radiation",
       "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
-      "item.chaosmod.amogus_gun": "Amogus Gun",
       "item.chaosmod.bullet": "Bullet",
       "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
-      "gamerule.dropMumboTokens.description": "Do you want mumbo tokens to be dropped (by chance) on block break",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
-      "entity.chaosmod.t_pose_entity": "T Pose Entity",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "subtitles.amongus_ambient": "amogus",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
-      "block.chaosmod.comunisam_block": "Comunisam Block",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "subtitles.sssr": "SSSR Anthem",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
-      "item.chaosmod.zenith": "Zenith",
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
-      "item.chaosmod.impostor_knife": "Impostor Knife",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
       "item.chaosmod.beef_armor_boots": "Beef Armor Boots",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.sus": "Sus Portal Birther",
-      "item.chaosmod.radiation_liquid_bucket": "Radiation Liquid Bucket",
-      "item.chaosmod.rock": "Rock",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
@@ -2376,14 +2453,12 @@
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.chaosmod.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
-      "item.chaosmod.mumbo_token": "Mumbo Token",
       "item.chaosmod.josip_pett_spawn_egg": "Josip GRR pet Spawn Egg",
       "item.chaosmod.dirtsword": "Dirtsword",
       "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "gamerule.doGraveCreation": "Do Grave Creation",
-      "item.chaosmod.totem_of_amogus": "Totem Of Among Us",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "subtitles.footstep_metal_amogus": "idk",
@@ -2391,33 +2466,30 @@
       "item.chaosmod.dipex": "DiPixk",
       "item.chaosmod.food_item_2": "Food Item 2",
       "block.chaosmod.gatorade": "Gatorade",
+      "subtitles.fu-k": "",
       "block.chaosmod.cum": "Cum",
-      "block.chaosmod.depression_block": "Depression Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "block.chaosmod.ggggggg": "slipped and slipped",
       "item.chaosmod.water_cup": "Water Cup",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
-      "entity.chaosmod.endy": "Endy",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "fluid.chaosmod.milk_2": "Milk 2",
       "key.chaosmod.k": "K",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
-      "item.chaosmod.almond_water": "Almond Water",
-      "block.chaosmod.standing_baby": "Standing Baby",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.sssr": "SSSR",
-      "entity.chaosmod.firefly": "Firefly",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
       "item.chaosmod.amugus_boots": "Amugus Boots",
       "item.chaosmod.shep_spawn_egg": "Shep Spawn Egg",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
+      "subtitles.ahdude": "ff",
       "item.chaosmod.deek": "Ender Eye ",
       "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
     }
