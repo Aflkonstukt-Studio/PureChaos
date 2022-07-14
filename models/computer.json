@@ -3,8 +3,7 @@
 	"parent": "computer",
 	"texture_size": [128, 128],
 	"textures": {
-		"1": "computer",
-		"particle": "minecraft_stuff:computerpng"
+		"1": "minecraft_stuff:computer"
 	},
 	"elements": [
 		{
