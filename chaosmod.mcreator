@@ -2164,6 +2164,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyber_biome"
+    },
+    {
+      "name": "Stroater",
+      "type": "livingentity",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stroater"
+    },
+    {
+      "name": "HalfGoldenApple",
+      "type": "item",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "half_golden_apple"
+    },
+    {
+      "name": "HalfGoldenAppleRecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "half_golden_apple_recipe"
+    },
+    {
+      "name": "Beef",
+      "type": "item",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beef"
+    },
+    {
+      "name": "Baguette",
+      "type": "item",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baguette"
+    },
+    {
+      "name": "Obamium",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obamium"
     }
   ],
   "variable_elements": [],
@@ -2368,6 +2416,7 @@
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
+      "entity.chaosmod.stroater": "Stroater",
       "key.chaosmod.seven": "Seven",
       "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "fluid.chaosmod.cum": "Cum",
@@ -2376,6 +2425,7 @@
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "block.chaosmod.grave": "Grave",
+      "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
@@ -2415,6 +2465,7 @@
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
+      "item.chaosmod.obamium": "Obamium",
       "subtitles.crnidani": "crnidanijebani",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
@@ -2425,6 +2476,7 @@
       "block.chaosmod.potatus": "Potatus",
       "item.chaosmod.cyberspace": "Cyberspace Portal Igniter",
       "block.chaosmod.tlghd": "TLG Block",
+      "item.chaosmod.half_golden_apple": "Half Golden Apple",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
@@ -2458,6 +2510,7 @@
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "item.chaosmod.cioao": "Ciao Portal Igniter",
+      "item.chaosmod.baguette": "Baguette",
       "subtitles.sssr": "SSSR Anthem",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "item.chaosmod.zenith": "Zenith",
@@ -2506,6 +2559,7 @@
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "entity.chaosmod.endy": "Endy",
+      "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",

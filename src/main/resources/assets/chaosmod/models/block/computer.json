@@ -3,6 +3,6 @@
   "textures": {
     "all": "chaosmod:blocks/computer",
     "particle": "chaosmod:blocks/computer",
-    "0": "chaosmod:blocks/computer"
+    "1": "chaosmod:blocks/computer"
   }
 }
