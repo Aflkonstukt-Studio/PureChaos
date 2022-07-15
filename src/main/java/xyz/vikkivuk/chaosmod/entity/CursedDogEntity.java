@@ -49,7 +49,7 @@ import java.util.List;
 public class CursedDogEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.CURSED_DOG.get(), 25, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.CURSED_DOG.get(), 25, 4, 8));
 	}
 
 	public CursedDogEntity(PlayMessages.SpawnEntity packet, Level world) {

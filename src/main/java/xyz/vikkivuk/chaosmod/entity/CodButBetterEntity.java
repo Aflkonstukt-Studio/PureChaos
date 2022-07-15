@@ -43,7 +43,7 @@ import net.minecraft.network.protocol.Packet;
 public class CodButBetterEntity extends Monster implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.COD_BUT_BETTER.get(), 20, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.COD_BUT_BETTER.get(), 20, 4, 8));
 	}
 
 	public CodButBetterEntity(PlayMessages.SpawnEntity packet, Level world) {

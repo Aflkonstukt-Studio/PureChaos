@@ -51,7 +51,7 @@ import java.util.EnumSet;
 public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.ADOLF_HITLER.get(), 20, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.ADOLF_HITLER.get(), 20, 4, 4));
 	}
 
 	public AdolfHitlerEntity(PlayMessages.SpawnEntity packet, Level world) {

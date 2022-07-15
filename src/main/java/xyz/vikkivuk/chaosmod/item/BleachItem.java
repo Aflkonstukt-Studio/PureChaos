@@ -15,7 +15,7 @@ import net.minecraft.world.entity.LivingEntity;
 public class BleachItem extends Item {
 	public BleachItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(-5).saturationMod(-5f).alwaysEat()
+				.food((new FoodProperties.Builder()).nutrition(-19).saturationMod(-20f)
 
 						.build()));
 	}

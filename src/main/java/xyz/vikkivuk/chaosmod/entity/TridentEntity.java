@@ -43,7 +43,7 @@ import net.minecraft.network.protocol.Packet;
 public class TridentEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.TRIDENT.get(), 20, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.TRIDENT.get(), 20, 4, 4));
 	}
 
 	public TridentEntity(PlayMessages.SpawnEntity packet, Level world) {

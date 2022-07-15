@@ -22,7 +22,7 @@ public class AdidasSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 4f;
 			}
 
 			public int getLevel() {

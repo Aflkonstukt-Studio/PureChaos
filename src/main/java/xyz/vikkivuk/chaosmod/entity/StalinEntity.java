@@ -43,7 +43,7 @@ import net.minecraft.network.chat.TextComponent;
 public class StalinEntity extends Monster implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.STALIN.get(), 20, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.STALIN.get(), 20, 4, 4));
 	}
 
 	public StalinEntity(PlayMessages.SpawnEntity packet, Level world) {
