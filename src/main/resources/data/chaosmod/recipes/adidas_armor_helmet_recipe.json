@@ -6,23 +6,23 @@
   ],
   "key": {
     "0": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "1": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "2": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "3": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "5": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     }
   },
   "result": {
-    "item": "chaosmod:deleted_mod_element_helmet",
+    "item": "chaosmod:adidas_armor_helmet",
     "count": 1
   }
 }

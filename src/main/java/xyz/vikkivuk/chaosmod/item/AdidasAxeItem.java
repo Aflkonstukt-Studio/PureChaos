@@ -1,7 +1,14 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.AxeItem;
 
 public class AdidasAxeItem extends AxeItem {
 	public AdidasAxeItem() {
@@ -29,11 +36,6 @@ public class AdidasAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ChaosmodModBlocks.ADIDAS_BLOCK.get()));
 			}
-		},
-
-				1, -3f,
-
-				new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
-
 }

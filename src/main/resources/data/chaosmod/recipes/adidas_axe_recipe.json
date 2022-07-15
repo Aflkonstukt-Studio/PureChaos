@@ -7,13 +7,13 @@
   ],
   "key": {
     "0": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "1": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "2": {
-      "item": "chaosmod:deleted_mod_element"
+      "item": "chaosmod:adidas_block"
     },
     "3": {
       "item": "minecraft:stick"
@@ -23,7 +23,7 @@
     }
   },
   "result": {
-    "item": "chaosmod:deleted_mod_element",
+    "item": "chaosmod:adidas_axe",
     "count": 1
   }
 }
