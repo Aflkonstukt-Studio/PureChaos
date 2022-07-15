@@ -21,6 +21,7 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.OilFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.Milk2Feature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.GatoradeFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CumFeature;
+import xyz.vikkivuk.chaosmod.world.features.lakes.CobbleFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CarbonMonoxideFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.WhiteCellFeature;
@@ -135,6 +136,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, HECFeature.GENERATE_BIOMES, HECFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> COMPUTER = register("computer", ComputerFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ComputerFeature.GENERATE_BIOMES, ComputerFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> COBBLE_FLUID = register("cobble_fluid", CobbleFluidFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.LAKES, CobbleFluidFeature.GENERATE_BIOMES, CobbleFluidFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

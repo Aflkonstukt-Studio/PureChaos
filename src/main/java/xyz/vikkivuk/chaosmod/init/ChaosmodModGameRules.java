@@ -10,10 +10,10 @@ import net.minecraft.world.level.GameRules;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ChaosmodModGameRules {
-	public static final GameRules.Key<GameRules.BooleanValue> DOJBOSSSPAWNING = GameRules.register("doJBossSpawning", GameRules.Category.SPAWNING,
-			GameRules.BooleanValue.create(false));
 	public static final GameRules.Key<GameRules.BooleanValue> DOGRAVECREATION = GameRules.register("doGraveCreation", GameRules.Category.SPAWNING,
 			GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> DROPMUMBOTOKENS = GameRules.register("dropMumboTokens", GameRules.Category.MISC,
 			GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> DOBOSSSPAWNING = GameRules.register("doBossSpawning", GameRules.Category.SPAWNING,
+			GameRules.BooleanValue.create(false));
 }

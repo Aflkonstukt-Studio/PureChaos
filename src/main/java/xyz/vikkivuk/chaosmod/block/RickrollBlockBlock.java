@@ -1,8 +1,6 @@
 
 package xyz.vikkivuk.chaosmod.block;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,6 +29,6 @@ public class RickrollBlockBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(ChaosmodModBlocks.NOBLOCK.get(), 5));
+		return Collections.singletonList(new ItemStack(this, 5));
 	}
 }

@@ -3,8 +3,8 @@
   "_type": "gamerule",
   "definition": {
     "type": "Logic",
-    "displayName": "Should JBoss Spawn",
-    "description": "Should the Josip 2.0 Boss Spawn naturally?",
+    "displayName": "Should Chaos Bosses Spawn?",
+    "description": "Should bosses from chaos mod spawn naturally?",
     "category": "SPAWNING",
     "defaultValueLogic": false,
     "defaultValueNumber": 0

@@ -12,6 +12,7 @@ import xyz.vikkivuk.chaosmod.fluid.OilFluid;
 import xyz.vikkivuk.chaosmod.fluid.Milk2Fluid;
 import xyz.vikkivuk.chaosmod.fluid.GatoradeFluid;
 import xyz.vikkivuk.chaosmod.fluid.CumFluid;
+import xyz.vikkivuk.chaosmod.fluid.CobbleFluidFluid;
 import xyz.vikkivuk.chaosmod.fluid.CarbonMonoxideFluid;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -49,6 +50,8 @@ public class ChaosmodModFluids {
 	public static final RegistryObject<Fluid> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_RADIATION_LIQUID = REGISTRY.register("flowing_radiation_liquid",
 			() -> new RadiationLiquidFluid.Flowing());
+	public static final RegistryObject<Fluid> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidFluid.Source());
+	public static final RegistryObject<Fluid> FLOWING_COBBLE_FLUID = REGISTRY.register("flowing_cobble_fluid", () -> new CobbleFluidFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -72,6 +75,8 @@ public class ChaosmodModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_MILK_2.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(RADIATION_LIQUID.get(), renderType -> renderType == RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_RADIATION_LIQUID.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(COBBLE_FLUID.get(), renderType -> renderType == RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_COBBLE_FLUID.get(), renderType -> renderType == RenderType.translucent());
 		}
 	}
 }

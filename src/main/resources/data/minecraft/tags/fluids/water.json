@@ -12,6 +12,8 @@
     "chaosmod:milk_2",
     "chaosmod:flowing_milk_2",
     "chaosmod:radiation_liquid",
-    "chaosmod:flowing_radiation_liquid"
+    "chaosmod:flowing_radiation_liquid",
+    "chaosmod:cobble_fluid",
+    "chaosmod:flowing_cobble_fluid"
   ]
 }

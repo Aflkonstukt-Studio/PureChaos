@@ -24,7 +24,6 @@ import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
 import xyz.vikkivuk.chaosmod.block.NokiaBlockBlock;
-import xyz.vikkivuk.chaosmod.block.NoblockBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreengiscreendaBlock;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
@@ -37,6 +36,7 @@ import xyz.vikkivuk.chaosmod.block.CyberBlockBlock;
 import xyz.vikkivuk.chaosmod.block.CumBlock;
 import xyz.vikkivuk.chaosmod.block.ComunisamBlockBlock;
 import xyz.vikkivuk.chaosmod.block.ComputerBlock;
+import xyz.vikkivuk.chaosmod.block.CobbleFluidBlock;
 import xyz.vikkivuk.chaosmod.block.CioaoPortalBlock;
 import xyz.vikkivuk.chaosmod.block.CarbonMonoxideBlock;
 import xyz.vikkivuk.chaosmod.block.BrazilPortalBlock;
@@ -78,7 +78,6 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
-	public static final RegistryObject<Block> NOBLOCK = REGISTRY.register("noblock", () -> new NoblockBlock());
 	public static final RegistryObject<Block> YOUTUBE = REGISTRY.register("youtube", () -> new YoutubeBlock());
 	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());
 	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());
@@ -99,6 +98,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> DEPRESSION_BLOCK = REGISTRY.register("depression_block", () -> new DepressionBlockBlock());
 	public static final RegistryObject<Block> CYBER_BLOCK = REGISTRY.register("cyber_block", () -> new CyberBlockBlock());
 	public static final RegistryObject<Block> COMPUTER = REGISTRY.register("computer", () -> new ComputerBlock());
+	public static final RegistryObject<Block> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

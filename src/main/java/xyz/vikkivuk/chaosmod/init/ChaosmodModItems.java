@@ -34,6 +34,7 @@ import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.MumboTokenItem;
 import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
+import xyz.vikkivuk.chaosmod.item.LavaBottleItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.ImpostorKnifeItem;
@@ -52,12 +53,14 @@ import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.CorruptstaffItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
+import xyz.vikkivuk.chaosmod.item.CobbleFluidItem;
 import xyz.vikkivuk.chaosmod.item.CioaoItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
 import xyz.vikkivuk.chaosmod.item.BulletItem;
 import xyz.vikkivuk.chaosmod.item.BrownItem;
 import xyz.vikkivuk.chaosmod.item.BrazilItem;
 import xyz.vikkivuk.chaosmod.item.BleachItem;
+import xyz.vikkivuk.chaosmod.item.BeengotItem;
 import xyz.vikkivuk.chaosmod.item.BeefItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.BaguetteItem;
@@ -166,7 +169,6 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
 	public static final RegistryObject<Item> VIKKIVUK = REGISTRY.register("vikkivuk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.VIKKIVUK, -13369345, -13408513, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
-	public static final RegistryObject<Item> NOBLOCK = block(ChaosmodModBlocks.NOBLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> YOUTUBE = block(ChaosmodModBlocks.YOUTUBE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> PLANTE = block(ChaosmodModBlocks.PLANTE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> DREAM = REGISTRY.register("dream_spawn_egg",
@@ -194,8 +196,6 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(ChaosmodModBlocks.BACKROOMS_LVL_1_FLOOR, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> COMUNISAM_BLOCK = block(ChaosmodModBlocks.COMUNISAM_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> TO = REGISTRY.register("to", () -> new TOItem());
-	public static final RegistryObject<Item> ENDY = REGISTRY.register("endy_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ENDY, -16777216, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> POLAND_BLOCK = block(ChaosmodModBlocks.POLAND_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> FASTTOPASS = REGISTRY.register("fasttopass", () -> new FASTTOPASSItem());
 	public static final RegistryObject<Item> NOKIA_BLOCK = block(ChaosmodModBlocks.NOKIA_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
@@ -236,6 +236,11 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BEEF = REGISTRY.register("beef", () -> new BeefItem());
 	public static final RegistryObject<Item> BAGUETTE = REGISTRY.register("baguette", () -> new BaguetteItem());
 	public static final RegistryObject<Item> OBAMIUM = REGISTRY.register("obamium", () -> new ObamiumItem());
+	public static final RegistryObject<Item> COBBLE_FLUID_BUCKET = REGISTRY.register("cobble_fluid_bucket", () -> new CobbleFluidItem());
+	public static final RegistryObject<Item> LAVA_BOTTLE = REGISTRY.register("lava_bottle", () -> new LavaBottleItem());
+	public static final RegistryObject<Item> BEENGOT = REGISTRY.register("beengot", () -> new BeengotItem());
+	public static final RegistryObject<Item> SPONGEBOB_BOSS = REGISTRY.register("spongebob_boss_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SPONGEBOB_BOSS, -256, -3355648, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

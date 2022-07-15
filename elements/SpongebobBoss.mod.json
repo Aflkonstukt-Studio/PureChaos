@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Endy",
+    "mobName": "Spongebob Boss",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "enderman.png",
+    "mobModelName": "Modelspongebob_boss",
+    "mobModelTexture": "spongebob_boss.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,18 +13,18 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16777216,
+      "value": -256,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -3355648,
       "falpha": 0.0
     },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "YELLOW",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -51,16 +51,16 @@
     "knockbackResistance": 0.0,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
-    "trackingRange": 64,
-    "health": 10,
+    "trackingRange": 100,
+    "health": 1000,
     "xpAmount": 0,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": false,
+    "ridable": true,
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -111,10 +111,13 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningCondition": {
+      "name": "JosipdvatockanulaNaturalEntitySpawningCondition"
+    },
+    "spawningProbability": 5,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

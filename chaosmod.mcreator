@@ -1333,14 +1333,6 @@
       "registry_name": "beef_boots"
     },
     {
-      "name": "Noblock",
-      "type": "block",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "noblock"
-    },
-    {
       "name": "Seven",
       "type": "keybind",
       "sortid": 103,
@@ -1355,17 +1347,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dipexrecipe"
-    },
-    {
-      "name": "DoJBossSpawning",
-      "type": "gamerule",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "doJBossSpawning",
-      "metadata": {
-        "type": "logic"
-      }
     },
     {
       "name": "DeathR",
@@ -1782,14 +1763,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1_floor"
-    },
-    {
-      "name": "Endy",
-      "type": "livingentity",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "endy"
     },
     {
       "name": "South",
@@ -2212,6 +2185,76 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "obamium"
+    },
+    {
+      "name": "CobbleFluid",
+      "type": "fluid",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobble_fluid",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "CobblestoneFluidRecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_fluid_recipe"
+    },
+    {
+      "name": "LavaBottlePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_bottle_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LavaBottle",
+      "type": "item",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_bottle"
+    },
+    {
+      "name": "Beengot",
+      "type": "item",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beengot"
+    },
+    {
+      "name": "DoBossSpawning",
+      "type": "gamerule",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doBossSpawning",
+      "metadata": {
+        "type": "logic"
+      }
+    },
+    {
+      "name": "SpongebobBoss",
+      "type": "livingentity",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spongebob_boss"
     }
   ],
   "variable_elements": [],
@@ -2357,8 +2400,8 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
@@ -2367,6 +2410,7 @@
       "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
+      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.aentity": "Aentity",
       "entity.chaosmod.walter_wight": "Walter White",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
@@ -2377,16 +2421,16 @@
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
       "fluid.chaosmod.gatorade": "Gatorade",
-      "subtitles.never_gonna_give_you_up": "",
+      "subtitles.never_gonna_give_you_up": "Rick Asstley - Never Gonna Give You Up",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "block.chaosmod.youtube": "Youtube",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
+      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
-      "subtitles.dudeshutt": "",
+      "subtitles.dudeshutt": "aaaa",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.chaosmod.aentity_spawn_egg": "Aentity Spawn Egg",
@@ -2405,6 +2449,7 @@
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "entity.chaosmod.cod_but_better": "Cod But Better",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
+      "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "block.chaosmod.tombstone": "Tombstone",
       "item.chaosmod.brazil": "Brazil Portal Igniter",
@@ -2412,7 +2457,6 @@
       "entity.chaosmod.blaz": "Blaz",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "entity.chaosmod.josip": "JOSIP",
-      "block.chaosmod.noblock": "mmmmm",
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.chaosmod.amogus_2": "Amogus 2",
@@ -2425,15 +2469,18 @@
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "block.chaosmod.grave": "Grave",
+      "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
+      "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.brown": "Brown",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
+      "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
       "block.chaosmod.plante": "Plante",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
@@ -2446,8 +2493,9 @@
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "entity.chaosmod.legs": "Legs",
       "fluid.chaosmod.oil": "Oil",
-      "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.stalin": "Stalin",
+      "item.chaosmod.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
+      "item.chaosmod.cobble_fluid_bucket": "Bucket of Cobblestone",
       "item.chaosmod.bleach": "Bleach",
       "item.chaosmod.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
@@ -2462,7 +2510,7 @@
       "item.chaosmod.to": "CRNIDANIALBUM",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "block.chaosmod.computer": "Computer",
-      "gamerule.doJBossSpawning": "Should JBoss Spawn",
+      "item.chaosmod.lava_bottle": "Lava Bottle",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
       "item.chaosmod.obamium": "Obamium",
@@ -2475,15 +2523,16 @@
       "item.chaosmod.totem_of_dream": "Totem Of Dream",
       "block.chaosmod.potatus": "Potatus",
       "item.chaosmod.cyberspace": "Cyberspace Portal Igniter",
+      "item.chaosmod.beengot": "Beengot",
       "block.chaosmod.tlghd": "TLG Block",
       "item.chaosmod.half_golden_apple": "Half Golden Apple",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "block.chaosmod.rickroll_block": "Rickroll",
-      "subtitles.eekum_bokum": "",
+      "subtitles.eekum_bokum": "EECUM BOCUM",
       "item.chaosmod.samsung_note_7": "Samsung Note 7",
-      "subtitles.vine_boom": "",
+      "subtitles.vine_boom": "boom",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
       "death.attack.radiation": "%1$s had too much radiation",
@@ -2541,6 +2590,7 @@
       "gamerule.doGraveCreation": "Do Grave Creation",
       "item.chaosmod.totem_of_amogus": "Totem Of Among Us",
       "item.chaosmod.igla": "Igla",
+      "entity.chaosmod.spongebob_boss": "Spongebob Boss",
       "fluid.chaosmod.pee": "Pee",
       "entity.chaosmod.dream": "Dream",
       "subtitles.footstep_metal_amogus": "idk",
@@ -2549,7 +2599,7 @@
       "item.chaosmod.dipex": "DiPixk",
       "item.chaosmod.food_item_2": "Food Item 2",
       "block.chaosmod.gatorade": "Gatorade",
-      "subtitles.fu-k": "",
+      "subtitles.fu-k": "a",
       "block.chaosmod.cum": "Cum",
       "block.chaosmod.depression_block": "Depression Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
@@ -2558,7 +2608,6 @@
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
-      "entity.chaosmod.endy": "Endy",
       "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
@@ -2580,8 +2629,7 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
-      "item.chaosmod.deek": "Ender Eye ",
-      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+      "item.chaosmod.deek": "Ender Eye "
     }
   },
   "foldersRoot": {
@@ -2590,10 +2638,10 @@
   },
   "workspaceSettings": {
     "modid": "chaosmod",
-    "modName": "chaosmod",
-    "version": "1.0.0",
+    "modName": "Pure Chaos",
+    "version": "1.0.3",
     "description": "This mod is everything but normal",
-    "author": "VikkiVuk, JosipTLG, X Master Woo",
+    "author": "VikkiVuk, JosipTLG, X Master Woo, GalaxyHunterGT",
     "websiteURL": "https://vikkivuk.xyz",
     "license": "All rights reserved",
     "disableForgeVersionCheck": true,
