@@ -1,0 +1,121 @@
+{
+  "_fv": 28,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Amogus 3",
+    "mobLabel": "Sussy baka",
+    "mobModelName": "Modelamongus_woo",
+    "mobModelTexture": "amogusgrin.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -16763905,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "isBoss": true,
+    "bossBarColor": "GREEN",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "equipmentOffHand": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "equipmentHelmet": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "equipmentBody": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "equipmentLeggings": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "equipmentBoots": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "ILLAGER",
+    "attackStrength": 1000,
+    "attackKnockback": 69.0,
+    "knockbackResistance": 420.0,
+    "movementSpeed": 1.0,
+    "armorBaseValue": 0.0,
+    "trackingRange": 32,
+    "health": 50,
+    "xpAmount": 99999,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": true,
+    "canControlForward": true,
+    "canControlStrafe": true,
+    "immuneToFire": true,
+    "immuneToArrows": true,
+    "immuneToFallDamage": false,
+    "immuneToCactus": false,
+    "immuneToDrowning": true,
+    "immuneToLightning": true,
+    "immuneToPotions": true,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
+    "mobDrop": {
+      "value": "CUSTOM:SusBlock"
+    },
+    "livingSound": {
+      "value": "CUSTOM:amogus"
+    },
+    "hurtSound": {
+      "value": "CUSTOM:kill"
+    },
+    "deathSound": {
+      "value": "CUSTOM:amongus_ambient"
+    },
+    "stepSound": {
+      "value": "CUSTOM:kill"
+    },
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 1,
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": true,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 10,
+    "restrictionBiomes": [],
+    "spawnInDungeons": true
+  }
+}

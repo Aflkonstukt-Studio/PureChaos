@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "chaosmod:adidas_block"
+    },
+    "1": {
+      "item": "chaosmod:adidas_block"
+    },
+    "2": {
+      "item": "chaosmod:adidas_block"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "chaosmod:deleted_mod_element",
+    "count": 1
+  }
+}

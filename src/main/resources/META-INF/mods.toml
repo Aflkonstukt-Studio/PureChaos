@@ -4,11 +4,11 @@ license="All rights reserved"
 
 [[mods]]
 modId="chaosmod"
-version="1.0.3"
-displayName="Pure Chaos"
+version="1.0.0"
+displayName="chaosmod"
 credits="All credits go to our sponsor, you!"
 displayURL="https://vikkivuk.xyz"
-authors="VikkiVuk, JosipTLG, X Master Woo, GalaxyHunterGT"
+authors="VikkiVuk, JosipTLG, X Master Woo"
 description='''
 This mod is everything but normal
 '''

@@ -13,6 +13,7 @@ import xyz.vikkivuk.chaosmod.world.features.ores.PeeBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.EmepeeFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.DeathFeature;
 import xyz.vikkivuk.chaosmod.world.features.ores.ComputerFeature;
+import xyz.vikkivuk.chaosmod.world.features.ores.AdidasBlockFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.StaravodaFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.RadiationLiquidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.PeeFeature;
@@ -138,6 +139,8 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, ComputerFeature.GENERATE_BIOMES, ComputerFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> COBBLE_FLUID = register("cobble_fluid", CobbleFluidFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CobbleFluidFeature.GENERATE_BIOMES, CobbleFluidFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> ADIDAS_BLOCK = register("adidas_block", AdidasBlockFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, AdidasBlockFeature.GENERATE_BIOMES, AdidasBlockFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

@@ -35,9 +35,14 @@ import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
+import xyz.vikkivuk.chaosmod.entity.Amogus3CrewGRINEntity;
+import xyz.vikkivuk.chaosmod.entity.Amogus3CrewEntity;
+import xyz.vikkivuk.chaosmod.entity.Amogus3CrewBLUEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
 import xyz.vikkivuk.chaosmod.entity.AdolfHitlerEntity;
+import xyz.vikkivuk.chaosmod.entity.AMOGUS3GRINEntity;
+import xyz.vikkivuk.chaosmod.entity.AMOGUS3BLUEntity;
 import xyz.vikkivuk.chaosmod.entity.AK47Entity;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -202,11 +207,26 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(StroaterEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AMOGUS3BLUEntity>> AMOGUS_3_BLU = register("amogus_3_blu",
+			EntityType.Builder.<AMOGUS3BLUEntity>of(AMOGUS3BLUEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3BLUEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AMOGUS3GRINEntity>> AMOGUS_3_GRIN = register("amogus_3_grin",
+			EntityType.Builder.<AMOGUS3GRINEntity>of(AMOGUS3GRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3GRINEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Amogus3CrewEntity>> AMOGUS_3_CREW = register("amogus_3_crew",
+			EntityType.Builder.<Amogus3CrewEntity>of(Amogus3CrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Amogus3CrewBLUEntity>> AMOGUS_3_CREW_BLU = register("amogus_3_crew_blu",
+			EntityType.Builder.<Amogus3CrewBLUEntity>of(Amogus3CrewBLUEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewBLUEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpongebobBossEntity>> SPONGEBOB_BOSS = register("spongebob_boss",
 			EntityType.Builder.<SpongebobBossEntity>of(SpongebobBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(SpongebobBossEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Amogus3CrewGRINEntity>> AMOGUS_3_CREW_GRIN = register("amogus_3_crew_grin",
+			EntityType.Builder.<Amogus3CrewGRINEntity>of(Amogus3CrewGRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewGRINEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -242,7 +262,12 @@ public class ChaosmodModEntities {
 			FireflyEntity.init();
 			TPoseEntityEntity.init();
 			StroaterEntity.init();
+			AMOGUS3BLUEntity.init();
+			AMOGUS3GRINEntity.init();
+			Amogus3CrewEntity.init();
+			Amogus3CrewBLUEntity.init();
 			SpongebobBossEntity.init();
+			Amogus3CrewGRINEntity.init();
 		});
 	}
 
@@ -275,6 +300,11 @@ public class ChaosmodModEntities {
 		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
 		event.put(T_POSE_ENTITY.get(), TPoseEntityEntity.createAttributes().build());
 		event.put(STROATER.get(), StroaterEntity.createAttributes().build());
+		event.put(AMOGUS_3_BLU.get(), AMOGUS3BLUEntity.createAttributes().build());
+		event.put(AMOGUS_3_GRIN.get(), AMOGUS3GRINEntity.createAttributes().build());
+		event.put(AMOGUS_3_CREW.get(), Amogus3CrewEntity.createAttributes().build());
+		event.put(AMOGUS_3_CREW_BLU.get(), Amogus3CrewBLUEntity.createAttributes().build());
 		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
+		event.put(AMOGUS_3_CREW_GRIN.get(), Amogus3CrewGRINEntity.createAttributes().build());
 	}
 }
