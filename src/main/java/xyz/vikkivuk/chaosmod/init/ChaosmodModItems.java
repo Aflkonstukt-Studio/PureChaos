@@ -251,7 +251,7 @@ public class ChaosmodModItems {
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> LAVA_BOTTLE = REGISTRY.register("lava_bottle", () -> new LavaBottleItem());
 	public static final RegistryObject<Item> AMOGUS_3_CREW = REGISTRY.register("amogus_3_crew_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW, -16763905, -65536,
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW, -65536, -6750208,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> BEENGOT = REGISTRY.register("beengot", () -> new BeengotItem());
 	public static final RegistryObject<Item> AMOGUS_3_CREW_BLU = REGISTRY.register("amogus_3_crew_blu_spawn_egg",
@@ -260,7 +260,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> SPONGEBOB_BOSS = REGISTRY.register("spongebob_boss_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.SPONGEBOB_BOSS, -256, -3355648, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> AMOGUS_3_CREW_GRIN = REGISTRY.register("amogus_3_crew_grin_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW_GRIN, -16763905, -65536,
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.AMOGUS_3_CREW_GRIN, -13369549, -65536,
 					new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> ADIDAS_BLOCK = block(ChaosmodModBlocks.ADIDAS_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> ADIDAS_ARMOR_HELMET = REGISTRY.register("adidas_armor_helmet", () -> new AdidasArmorItem.Helmet());

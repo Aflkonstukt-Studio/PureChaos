@@ -35,7 +35,7 @@ import net.minecraft.network.protocol.Packet;
 public class ShepEntity extends Cow {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SHEP.get(), 25, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SHEP.get(), 18, 2, 6));
 	}
 
 	public ShepEntity(PlayMessages.SpawnEntity packet, Level world) {

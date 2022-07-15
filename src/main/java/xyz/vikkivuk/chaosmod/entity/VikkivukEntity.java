@@ -75,7 +75,7 @@ import io.netty.buffer.Unpooled;
 public class VikkivukEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.VIKKIVUK.get(), 20, 3, 4));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.VIKKIVUK.get(), 20, 2, 4));
 	}
 
 	public VikkivukEntity(PlayMessages.SpawnEntity packet, Level world) {

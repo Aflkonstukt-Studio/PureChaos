@@ -37,7 +37,7 @@ import net.minecraft.network.protocol.Packet;
 public class SplankEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SPLANK.get(), 20, 1, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SPLANK.get(), 15, 1, 3));
 	}
 
 	public SplankEntity(PlayMessages.SpawnEntity packet, Level world) {

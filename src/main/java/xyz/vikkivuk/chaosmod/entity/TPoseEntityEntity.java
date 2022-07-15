@@ -55,7 +55,7 @@ import java.util.EnumSet;
 public class TPoseEntityEntity extends Monster implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.T_POSE_ENTITY.get(), 30, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.T_POSE_ENTITY.get(), 18, 2, 4));
 	}
 
 	public TPoseEntityEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -38,7 +38,7 @@ import net.minecraft.network.protocol.Packet;
 public class StroaterEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.STROATER.get(), 20, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.STROATER.get(), 10, 1, 3));
 	}
 
 	public StroaterEntity(PlayMessages.SpawnEntity packet, Level world) {

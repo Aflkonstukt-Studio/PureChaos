@@ -49,7 +49,7 @@ public class MothOfAggrevationEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 25, 2, 6));
+				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 12, 1, 4));
 	}
 
 	public MothOfAggrevationEntity(PlayMessages.SpawnEntity packet, Level world) {

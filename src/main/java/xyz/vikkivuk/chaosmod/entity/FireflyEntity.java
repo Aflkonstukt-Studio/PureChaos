@@ -43,7 +43,7 @@ import java.util.Random;
 public class FireflyEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.FIREFLY.get(), 20, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.FIREFLY.get(), 18, 2, 6));
 	}
 
 	public FireflyEntity(PlayMessages.SpawnEntity packet, Level world) {
