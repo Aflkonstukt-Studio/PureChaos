@@ -8,6 +8,7 @@ import xyz.vikkivuk.chaosmod.client.model.Modelvikkivuk_plushie;
 import xyz.vikkivuk.chaosmod.client.model.Modeltrident;
 import xyz.vikkivuk.chaosmod.client.model.Modeltpose_smth;
 import xyz.vikkivuk.chaosmod.client.model.Modelstroater;
+import xyz.vikkivuk.chaosmod.client.model.Modelspongebob_boss;
 import xyz.vikkivuk.chaosmod.client.model.Modelsplank;
 import xyz.vikkivuk.chaosmod.client.model.Modelshep;
 import xyz.vikkivuk.chaosmod.client.model.Modelmoth;
@@ -32,23 +33,24 @@ import net.minecraftforge.api.distmarker.Dist;
 public class ChaosmodModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);
-		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
-		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modelamiogyhus.LAYER_LOCATION, Modelamiogyhus::createBodyLayer);
-		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
 		event.registerLayerDefinition(Modelblaze.LAYER_LOCATION, Modelblaze::createBodyLayer);
-		event.registerLayerDefinition(Modelsplank.LAYER_LOCATION, Modelsplank::createBodyLayer);
 		event.registerLayerDefinition(Modelikea_desk.LAYER_LOCATION, Modelikea_desk::createBodyLayer);
-		event.registerLayerDefinition(Modeljosipmmarket.LAYER_LOCATION, Modeljosipmmarket::createBodyLayer);
 		event.registerLayerDefinition(Modelshep.LAYER_LOCATION, Modelshep::createBodyLayer);
-		event.registerLayerDefinition(Modellong_leg_chicken.LAYER_LOCATION, Modellong_leg_chicken::createBodyLayer);
 		event.registerLayerDefinition(Modelvikkivuk_plushie.LAYER_LOCATION, Modelvikkivuk_plushie::createBodyLayer);
 		event.registerLayerDefinition(Modeltpose_smth.LAYER_LOCATION, Modeltpose_smth::createBodyLayer);
-		event.registerLayerDefinition(Modelcod_but_better.LAYER_LOCATION, Modelcod_but_better::createBodyLayer);
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
-		event.registerLayerDefinition(Modellegs.LAYER_LOCATION, Modellegs::createBodyLayer);
 		event.registerLayerDefinition(Modelfireflies.LAYER_LOCATION, Modelfireflies::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
+		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);
+		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
+		event.registerLayerDefinition(Modelspongebob_boss.LAYER_LOCATION, Modelspongebob_boss::createBodyLayer);
+		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
+		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
+		event.registerLayerDefinition(Modelsplank.LAYER_LOCATION, Modelsplank::createBodyLayer);
+		event.registerLayerDefinition(Modeljosipmmarket.LAYER_LOCATION, Modeljosipmmarket::createBodyLayer);
+		event.registerLayerDefinition(Modellong_leg_chicken.LAYER_LOCATION, Modellong_leg_chicken::createBodyLayer);
+		event.registerLayerDefinition(Modelcod_but_better.LAYER_LOCATION, Modelcod_but_better::createBodyLayer);
+		event.registerLayerDefinition(Modellegs.LAYER_LOCATION, Modellegs::createBodyLayer);
 	}
 }

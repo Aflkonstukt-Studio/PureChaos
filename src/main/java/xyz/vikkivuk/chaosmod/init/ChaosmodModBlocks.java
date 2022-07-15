@@ -24,7 +24,6 @@ import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
 import xyz.vikkivuk.chaosmod.block.NokiaBlockBlock;
-import xyz.vikkivuk.chaosmod.block.NoblockBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreengiscreendaBlock;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;

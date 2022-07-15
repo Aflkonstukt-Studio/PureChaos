@@ -71,7 +71,7 @@ import java.util.List;
 public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PETT.get(), 15, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIP_PETT.get(), 10, 1, 3));
 	}
 
 	public JosipPettEntity(PlayMessages.SpawnEntity packet, Level world) {

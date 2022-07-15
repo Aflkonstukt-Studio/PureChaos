@@ -22,7 +22,6 @@ import xyz.vikkivuk.chaosmod.client.renderer.JosipPetRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.JOSIPRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.FireflyRenderer;
-import xyz.vikkivuk.chaosmod.client.renderer.EndyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.DreamRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;

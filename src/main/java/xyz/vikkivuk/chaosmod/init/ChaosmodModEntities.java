@@ -26,7 +26,6 @@ import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.FireflyEntity;
-import xyz.vikkivuk.chaosmod.entity.EndyEntity;
 import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;

@@ -6,6 +6,6 @@ import net.minecraft.world.level.LevelAccessor;
 
 public class JosipdvatockanulaNaturalEntitySpawningConditionProcedure {
 	public static boolean execute(LevelAccessor world) {
-		return world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DOJBOSSSPAWNING);
+		return world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DOBOSSSPAWNING);
 	}
 }

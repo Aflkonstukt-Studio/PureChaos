@@ -56,7 +56,7 @@ public class Amogus3CrewGRINEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3_CREW_GRIN.get(), 20, 4, 10));
+				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3_CREW_GRIN.get(), 5, 1, 3));
 	}
 
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.GREEN,

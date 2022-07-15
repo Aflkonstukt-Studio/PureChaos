@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Noblock"
+      "value": ""
     },
     "dropAmount": 5,
     "useLootTableForDrops": false,

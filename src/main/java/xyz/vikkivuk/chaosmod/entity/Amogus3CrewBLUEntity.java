@@ -55,8 +55,7 @@ import net.minecraft.core.BlockPos;
 public class Amogus3CrewBLUEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3_CREW_BLU.get(), 20, 4, 10));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AMOGUS_3_CREW_BLU.get(), 5, 1, 3));
 	}
 
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.GREEN,

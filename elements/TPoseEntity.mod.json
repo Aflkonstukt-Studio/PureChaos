@@ -111,7 +111,7 @@
     "rangedItemType": "AmogusGun",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 30,
+    "spawningProbability": 18,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 8,
