@@ -74,7 +74,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.WALTER_WIGHT.get(), WalterWightRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.COD_BUT_BETTER.get(), CodButBetterRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.STALIN.get(), StalinRenderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.ENDY.get(), EndyRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.RICK_ASTLEY.get(), RickAstleyRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.LEGS.get(), LegsRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), LongLegChickenRenderer::new);

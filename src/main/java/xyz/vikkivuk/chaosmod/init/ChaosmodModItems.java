@@ -172,7 +172,6 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BULLET = REGISTRY.register("bullet", () -> new BulletItem());
 	public static final RegistryObject<Item> VIKKIVUK = REGISTRY.register("vikkivuk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.VIKKIVUK, -13369345, -13408513, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
-	public static final RegistryObject<Item> NOBLOCK = block(ChaosmodModBlocks.NOBLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> YOUTUBE = block(ChaosmodModBlocks.YOUTUBE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> PLANTE = block(ChaosmodModBlocks.PLANTE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> DREAM = REGISTRY.register("dream_spawn_egg",
@@ -200,8 +199,6 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(ChaosmodModBlocks.BACKROOMS_LVL_1_FLOOR, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> COMUNISAM_BLOCK = block(ChaosmodModBlocks.COMUNISAM_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> TO = REGISTRY.register("to", () -> new TOItem());
-	public static final RegistryObject<Item> ENDY = REGISTRY.register("endy_spawn_egg",
-			() -> new ForgeSpawnEggItem(ChaosmodModEntities.ENDY, -16777216, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> POLAND_BLOCK = block(ChaosmodModBlocks.POLAND_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> FASTTOPASS = REGISTRY.register("fasttopass", () -> new FASTTOPASSItem());
 	public static final RegistryObject<Item> NOKIA_BLOCK = block(ChaosmodModBlocks.NOKIA_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);

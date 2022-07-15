@@ -78,7 +78,6 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
 	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
-	public static final RegistryObject<Block> NOBLOCK = REGISTRY.register("noblock", () -> new NoblockBlock());
 	public static final RegistryObject<Block> YOUTUBE = REGISTRY.register("youtube", () -> new YoutubeBlock());
 	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());
 	public static final RegistryObject<Block> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Block());

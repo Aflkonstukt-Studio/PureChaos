@@ -1255,7 +1255,7 @@
       "name": "JosipdvatockanulaNaturalEntitySpawningCondition",
       "type": "procedure",
       "sortid": 112,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "josipdvatockanula_natural_entity_spawning_condition",
       "metadata": {
@@ -1320,7 +1320,7 @@
       "name": "RickrollBlock",
       "type": "block",
       "sortid": 110,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "rickroll_block"
     },
@@ -1331,14 +1331,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_boots"
-    },
-    {
-      "name": "Noblock",
-      "type": "block",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "noblock"
     },
     {
       "name": "Seven",
@@ -1355,17 +1347,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dipexrecipe"
-    },
-    {
-      "name": "DoJBossSpawning",
-      "type": "gamerule",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "doJBossSpawning",
-      "metadata": {
-        "type": "logic"
-      }
     },
     {
       "name": "DeathR",
@@ -1782,14 +1763,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1_floor"
-    },
-    {
-      "name": "Endy",
-      "type": "livingentity",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "endy"
     },
     {
       "name": "South",
@@ -2589,7 +2562,6 @@
       "entity.chaosmod.blaz": "Blaz",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "entity.chaosmod.josip": "JOSIP",
-      "block.chaosmod.noblock": "mmmmm",
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 Spawn Egg",
       "item.chaosmod.adidas_armor_boots": "Adidas Boots",
       "item.chaosmod.meth": "Meth",
@@ -2627,7 +2599,6 @@
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "entity.chaosmod.legs": "Legs",
       "fluid.chaosmod.oil": "Oil",
-      "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.amogus_3_crew": "Amogus 3",
       "entity.chaosmod.stalin": "Stalin",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -2645,7 +2616,6 @@
       "item.chaosmod.to": "CRNIDANIALBUM",
       "entity.chaosmod.moth_of_aggrevation": "Moth Of Aggrevation",
       "block.chaosmod.computer": "Computer",
-      "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
       "item.chaosmod.obamium": "Obamium",
@@ -2750,7 +2720,6 @@
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
-      "entity.chaosmod.endy": "Endy",
       "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
@@ -2774,8 +2743,7 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
-      "item.chaosmod.deek": "Ender Eye ",
-      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+      "item.chaosmod.deek": "Ender Eye "
     }
   },
   "foldersRoot": {

@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Amogus 3 (Crewmate, Red)",
+    "mobName": "Amogus 3",
     "mobLabel": "Sussy baka",
     "mobModelName": "Modelamongus_woo",
     "mobModelTexture": "mogus.png",
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -65536,
+      "value": -16763905,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -6750208,
+      "value": -65536,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 5,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 3,
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 10,
     "restrictionBiomes": [],
     "spawnInDungeons": true
   }
