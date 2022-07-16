@@ -5,6 +5,7 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.ZenithItem;
+import xyz.vikkivuk.chaosmod.item.XSORDItem;
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
@@ -273,6 +274,7 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> ADIDAS_SWORD = REGISTRY.register("adidas_sword", () -> new AdidasSwordItem());
 	public static final RegistryObject<Item> ADIDAS_SHOVEL = REGISTRY.register("adidas_shovel", () -> new AdidasShovelItem());
 	public static final RegistryObject<Item> ADIDAS_HOE = REGISTRY.register("adidas_hoe", () -> new AdidasHoeItem());
+	public static final RegistryObject<Item> XSORD = REGISTRY.register("xsord", () -> new XSORDItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

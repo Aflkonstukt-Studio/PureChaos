@@ -2429,6 +2429,58 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor_body_recipe"
+    },
+    {
+      "name": "RadiationPoisioningActiveTickCondition",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisioning_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadiationPoisioning",
+      "type": "potioneffect",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_poisioning"
+    },
+    {
+      "name": "XSORDLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xsord_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "XSORD",
+      "type": "tool",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xsord"
     }
   ],
   "variable_elements": [],
@@ -2574,8 +2626,8 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
@@ -2585,13 +2637,13 @@
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
-      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.aentity": "Aentity",
+      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.walter_wight": "Walter White",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
-      "block.chaosmod.green_plant": "Green Plant",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.green_plant": "Green Plant",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
@@ -2599,11 +2651,11 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.youtube": "Youtube",
+      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "subtitles.dudeshutt": "",
@@ -2662,6 +2714,7 @@
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
       "block.chaosmod.plante": "Plante",
+      "item.chaosmod.xsord": "X Katana",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "fluid.chaosmod.staravoda": "Staravoda",
@@ -2809,6 +2862,7 @@
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.to.desc": "E NE NOSI SLUSALICE IMA DA TI SE RASTAVE U PARAMPARCAD I USI CE DA TI ISKRVARE IST SAMO TO UZIVAJ!",
+      "effect.chaosmod.radiation_poisioning": "Radiation Acute Sickness",
       "fluid.chaosmod.milk_2": "Milk 2",
       "key.chaosmod.k": "K",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
