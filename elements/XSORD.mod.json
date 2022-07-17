@@ -5,10 +5,10 @@
     "renderType": 1,
     "texture": "keten",
     "customModelName": "katana:default",
-    "name": "X Katana",
+    "name": "Xite Containment Blade",
     "specialInfo": [
-      "Its a Sword",
-      "a long serd"
+      "Its a blade that contains the radioactive material Xite",
+      "just dont get cut by it"
     ],
     "creativeTab": {
       "value": "CUSTOM:Chaostab"

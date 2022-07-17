@@ -57,7 +57,7 @@ public class XSORDItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Its a Sword"));
-		list.add(new TextComponent("a long serd"));
+		list.add(new TextComponent("Its a blade that contains the radioactive material Xite"));
+		list.add(new TextComponent("just dont get cut by it"));
 	}
 }

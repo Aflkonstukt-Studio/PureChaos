@@ -2481,6 +2481,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "xsord"
+    },
+    {
+      "name": "Xite",
+      "type": "item",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xite"
+    },
+    {
+      "name": "Katana",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katana"
     }
   ],
   "variable_elements": [],
@@ -2714,7 +2730,7 @@
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
       "block.chaosmod.plante": "Plante",
-      "item.chaosmod.xsord": "X Katana",
+      "item.chaosmod.xsord": "Xite Containment Blade",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "fluid.chaosmod.staravoda": "Staravoda",
@@ -2857,6 +2873,7 @@
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "entity.chaosmod.endy": "Endy",
+      "item.chaosmod.xite": "Xite",
       "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
