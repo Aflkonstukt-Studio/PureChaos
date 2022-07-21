@@ -1,0 +1,37 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "keten",
+    "customModelName": "katana:default",
+    "name": "Xite Containment Blade",
+    "specialInfo": [
+      "Its a blade that contains the radioactive material Xite",
+      "just dont get cut by it"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.5,
+    "enchantability": 22,
+    "damageVsEntity": 5.0,
+    "usageCount": 69420,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.OBSIDIAN"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "XSORDLivingEntityIsHitWithTool"
+    }
+  }
+}

@@ -5,6 +5,8 @@
 package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.item.ZenithItem;
+import xyz.vikkivuk.chaosmod.item.XiteItem;
+import xyz.vikkivuk.chaosmod.item.XSORDItem;
 import xyz.vikkivuk.chaosmod.item.WoodDimensionItem;
 import xyz.vikkivuk.chaosmod.item.WaterCupItem;
 import xyz.vikkivuk.chaosmod.item.UseInEmergenciesItem;
@@ -268,7 +270,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> ADIDAS_HOE = REGISTRY.register("adidas_hoe", () -> new AdidasHoeItem());
 	public static final RegistryObject<Item> THE_ROCK = REGISTRY.register("the_rock_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.THE_ROCK, -3394816, -52480, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> XSORD = REGISTRY.register("xsord", () -> new XSORDItem());
 	public static final RegistryObject<Item> MISSING_TEXTURE = block(ChaosmodModBlocks.MISSING_TEXTURE, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> XITE = REGISTRY.register("xite", () -> new XiteItem());
 	public static final RegistryObject<Item> EATABLE_COMMAND_BLOCK = REGISTRY.register("eatable_command_block", () -> new EatableCommandBlockItem());
 	public static final RegistryObject<Item> JAVELIN_LAUNCHER = REGISTRY.register("javelin_launcher", () -> new JavelinLauncherItem());
 
