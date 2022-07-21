@@ -1,0 +1,7 @@
+{
+  "parent": "chaosmod:custom/javelin_launcher",
+  "textures": {
+    "0": "chaosmod:blocks/javelin_launcher",
+    "particle": "chaosmod:items/javelin_launcher"
+  }
+}

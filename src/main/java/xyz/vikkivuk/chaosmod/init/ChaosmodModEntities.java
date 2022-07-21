@@ -8,6 +8,7 @@ import xyz.vikkivuk.chaosmod.entity.WaterCupEntity;
 import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
+import xyz.vikkivuk.chaosmod.entity.TheRockEntity;
 import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
 import xyz.vikkivuk.chaosmod.entity.StroaterEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
@@ -24,6 +25,7 @@ import xyz.vikkivuk.chaosmod.entity.JosipdvatockanulaEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipRangeEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPettEntity;
 import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
+import xyz.vikkivuk.chaosmod.entity.JavelinLauncherEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
 import xyz.vikkivuk.chaosmod.entity.FireflyEntity;
@@ -35,9 +37,6 @@ import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
-import xyz.vikkivuk.chaosmod.entity.Amogus3CrewGRINEntity;
-import xyz.vikkivuk.chaosmod.entity.Amogus3CrewEntity;
-import xyz.vikkivuk.chaosmod.entity.Amogus3CrewBLUEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus2Entity;
 import xyz.vikkivuk.chaosmod.entity.AentityEntity;
 import xyz.vikkivuk.chaosmod.entity.AdolfHitlerEntity;
@@ -213,20 +212,20 @@ public class ChaosmodModEntities {
 	public static final RegistryObject<EntityType<AMOGUS3GRINEntity>> AMOGUS_3_GRIN = register("amogus_3_grin",
 			EntityType.Builder.<AMOGUS3GRINEntity>of(AMOGUS3GRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3GRINEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<Amogus3CrewEntity>> AMOGUS_3_CREW = register("amogus_3_crew",
-			EntityType.Builder.<Amogus3CrewEntity>of(Amogus3CrewEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<Amogus3CrewBLUEntity>> AMOGUS_3_CREW_BLU = register("amogus_3_crew_blu",
-			EntityType.Builder.<Amogus3CrewBLUEntity>of(Amogus3CrewBLUEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewBLUEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpongebobBossEntity>> SPONGEBOB_BOSS = register("spongebob_boss",
 			EntityType.Builder.<SpongebobBossEntity>of(SpongebobBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(SpongebobBossEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<Amogus3CrewGRINEntity>> AMOGUS_3_CREW_GRIN = register("amogus_3_crew_grin",
-			EntityType.Builder.<Amogus3CrewGRINEntity>of(Amogus3CrewGRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(Amogus3CrewGRINEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheRockEntity>> THE_ROCK = register("the_rock",
+			EntityType.Builder.<TheRockEntity>of(TheRockEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(TheRockEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JavelinLauncherEntity>> JAVELIN_LAUNCHER = register("projectile_javelin_launcher",
+			EntityType.Builder.<JavelinLauncherEntity>of(JavelinLauncherEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(JavelinLauncherEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -264,10 +263,8 @@ public class ChaosmodModEntities {
 			StroaterEntity.init();
 			AMOGUS3BLUEntity.init();
 			AMOGUS3GRINEntity.init();
-			Amogus3CrewEntity.init();
-			Amogus3CrewBLUEntity.init();
 			SpongebobBossEntity.init();
-			Amogus3CrewGRINEntity.init();
+			TheRockEntity.init();
 		});
 	}
 
@@ -302,9 +299,7 @@ public class ChaosmodModEntities {
 		event.put(STROATER.get(), StroaterEntity.createAttributes().build());
 		event.put(AMOGUS_3_BLU.get(), AMOGUS3BLUEntity.createAttributes().build());
 		event.put(AMOGUS_3_GRIN.get(), AMOGUS3GRINEntity.createAttributes().build());
-		event.put(AMOGUS_3_CREW.get(), Amogus3CrewEntity.createAttributes().build());
-		event.put(AMOGUS_3_CREW_BLU.get(), Amogus3CrewBLUEntity.createAttributes().build());
 		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
-		event.put(AMOGUS_3_CREW_GRIN.get(), Amogus3CrewGRINEntity.createAttributes().build());
+		event.put(THE_ROCK.get(), TheRockEntity.createAttributes().build());
 	}
 }

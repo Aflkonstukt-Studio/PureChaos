@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Sanity: <VAR:integer:sanity>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Sanity: <VAR:integer:sanity>",
+          "x": 6,
+          "y": 8
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

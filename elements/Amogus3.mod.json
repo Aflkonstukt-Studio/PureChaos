@@ -13,17 +13,17 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16763905,
+      "value": -52429,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -65536,
+      "value": -39322,
       "falpha": 0.0
     },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "isBoss": true,
+    "isBoss": false,
     "bossBarColor": "GREEN",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {

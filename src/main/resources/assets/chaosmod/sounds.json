@@ -162,5 +162,15 @@
         "stream": false
       }
     ]
+  },
+  "nerd_pacman_meme": {
+    "category": "music",
+    "subtitle": "subtitles.nerd_pacman_meme",
+    "sounds": [
+      {
+        "name": "chaosmod:nerd_pacman_meme",
+        "stream": true
+      }
+    ]
   }
 }

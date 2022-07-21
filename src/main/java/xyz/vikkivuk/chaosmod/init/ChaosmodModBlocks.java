@@ -24,6 +24,7 @@ import xyz.vikkivuk.chaosmod.block.PeeBlock;
 import xyz.vikkivuk.chaosmod.block.OrangeFluidBlock;
 import xyz.vikkivuk.chaosmod.block.OilBlock;
 import xyz.vikkivuk.chaosmod.block.NokiaBlockBlock;
+import xyz.vikkivuk.chaosmod.block.MissingTextureBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
 import xyz.vikkivuk.chaosmod.block.GreengiscreendaBlock;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
@@ -101,6 +102,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> COMPUTER = REGISTRY.register("computer", () -> new ComputerBlock());
 	public static final RegistryObject<Block> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidBlock());
 	public static final RegistryObject<Block> ADIDAS_BLOCK = REGISTRY.register("adidas_block", () -> new AdidasBlockBlock());
+	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
