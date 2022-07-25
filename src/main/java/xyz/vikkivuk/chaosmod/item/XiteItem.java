@@ -1,11 +1,25 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import xyz.vikkivuk.chaosmod.procedures.RadiationPoisioningActiveTickConditionProcedure;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class XiteItem extends Item {
-
 	public XiteItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
 	}
@@ -35,10 +49,7 @@ public class XiteItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		RadiationPoisioningActiveTickConditionProcedure.execute(
-
-		);
+		RadiationPoisioningActiveTickConditionProcedure.execute(entity.level, entity);
 		return retval;
 	}
-
 }

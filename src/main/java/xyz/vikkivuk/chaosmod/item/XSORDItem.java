@@ -1,7 +1,22 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import xyz.vikkivuk.chaosmod.procedures.XSORDLivingEntityIsHitWithToolProcedure;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
+
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+
+import java.util.List;
 
 public class XSORDItem extends SwordItem {
 	public XSORDItem() {
@@ -29,19 +44,13 @@ public class XSORDItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Blocks.OBSIDIAN));
 			}
-		},
-
-				3, -1.5f,
-
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).fireResistant());
+		}, 3, -1.5f, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).fireResistant());
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		XSORDLivingEntityIsHitWithToolProcedure.execute(
-
-		);
+		XSORDLivingEntityIsHitWithToolProcedure.execute(entity);
 		return retval;
 	}
 
@@ -51,5 +60,4 @@ public class XSORDItem extends SwordItem {
 		list.add(new TextComponent("Its a blade that contains the radioactive material Xite"));
 		list.add(new TextComponent("just dont get cut by it"));
 	}
-
 }

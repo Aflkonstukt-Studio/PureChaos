@@ -1,8 +1,13 @@
 
 package xyz.vikkivuk.chaosmod.potion;
 
-public class RadiationPoisioningMobEffect extends MobEffect {
+import xyz.vikkivuk.chaosmod.procedures.RadiationPoisioningActiveTickConditionProcedure;
 
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
+
+public class RadiationPoisioningMobEffect extends MobEffect {
 	public RadiationPoisioningMobEffect() {
 		super(MobEffectCategory.HARMFUL, -16711936);
 	}
@@ -14,14 +19,11 @@ public class RadiationPoisioningMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		RadiationPoisioningActiveTickConditionProcedure.execute(
-
-		);
+		RadiationPoisioningActiveTickConditionProcedure.execute(entity.level, entity);
 	}
 
 	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }
