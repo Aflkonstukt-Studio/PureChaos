@@ -1,9 +1,25 @@
 
 package xyz.vikkivuk.chaosmod.network;
 
+import xyz.vikkivuk.chaosmod.world.inventory.CheatGUIMenu;
+import xyz.vikkivuk.chaosmod.procedures.DoNotPressPressedProcedure;
+import xyz.vikkivuk.chaosmod.ChaosmodMod;
+
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import java.util.function.Supplier;
+import java.util.HashMap;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CheatGUIButtonMessage {
-
 	private final int buttonID, x, y, z;
 
 	public CheatGUIButtonMessage(FriendlyByteBuf buffer) {
@@ -35,7 +51,6 @@ public class CheatGUIButtonMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
-
 			handleButtonAction(entity, buttonID, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -44,11 +59,9 @@ public class CheatGUIButtonMessage {
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level;
 		HashMap guistate = CheatGUIMenu.guistate;
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-
 		if (buttonID == 2) {
 
 			DoNotPressPressedProcedure.execute(world, x, y, z);
@@ -60,5 +73,4 @@ public class CheatGUIButtonMessage {
 		ChaosmodMod.addNetworkMessage(CheatGUIButtonMessage.class, CheatGUIButtonMessage::buffer, CheatGUIButtonMessage::new,
 				CheatGUIButtonMessage::handler);
 	}
-
 }
