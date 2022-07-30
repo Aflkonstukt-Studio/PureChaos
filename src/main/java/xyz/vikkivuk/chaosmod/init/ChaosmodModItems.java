@@ -38,6 +38,9 @@ import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.LavaBottleItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
+import xyz.vikkivuk.chaosmod.item.KentuckyFriedChickenItem;
+import xyz.vikkivuk.chaosmod.item.KentuckyFriedChickenFriesItem;
+import xyz.vikkivuk.chaosmod.item.KFCEItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.ImpostorKnifeItem;
 import xyz.vikkivuk.chaosmod.item.IglaItem;
@@ -277,6 +280,11 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> ADIDAS_HOE = REGISTRY.register("adidas_hoe", () -> new AdidasHoeItem());
 	public static final RegistryObject<Item> XSORD = REGISTRY.register("xsord", () -> new XSORDItem());
 	public static final RegistryObject<Item> XITE = REGISTRY.register("xite", () -> new XiteItem());
+	public static final RegistryObject<Item> KENTUCKY_FRIED_CHICKEN = REGISTRY.register("kentucky_fried_chicken",
+			() -> new KentuckyFriedChickenItem());
+	public static final RegistryObject<Item> KENTUCKY_FRIED_CHICKEN_FRIES = REGISTRY.register("kentucky_fried_chicken_fries",
+			() -> new KentuckyFriedChickenFriesItem());
+	public static final RegistryObject<Item> KFCE = REGISTRY.register("kfce", () -> new KFCEItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

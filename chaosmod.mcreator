@@ -2497,6 +2497,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "katana"
+    },
+    {
+      "name": "KentuckyFriedChicken",
+      "type": "item",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_fried_chicken"
+    },
+    {
+      "name": "KFCC",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfcc"
+    },
+    {
+      "name": "KentuckyFriedChickenFries",
+      "type": "item",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_fried_chicken_fries"
+    },
+    {
+      "name": "KFCE",
+      "type": "item",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfce"
+    },
+    {
+      "name": "KFCF",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfcf"
+    },
+    {
+      "name": "PotaatoBaketRecepti",
+      "type": "recipe",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potaato_baket_recepti"
     }
   ],
   "variable_elements": [],
@@ -2642,8 +2690,8 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
@@ -2653,13 +2701,13 @@
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
-      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.aentity": "Aentity",
+      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.walter_wight": "Walter White",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
-      "block.chaosmod.green_plant": "Green Plant",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.green_plant": "Green Plant",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
@@ -2667,11 +2715,11 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.youtube": "Youtube",
+      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "subtitles.dudeshutt": "",
@@ -2716,6 +2764,7 @@
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "block.chaosmod.grave": "Grave",
       "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
@@ -2838,6 +2887,7 @@
       "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "item.chaosmod.adidas_armor_chestplate": "Adidas Chestplate",
+      "item.chaosmod.kfce": "KFCE",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
@@ -2899,7 +2949,8 @@
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
       "item.chaosmod.deek": "Ender Eye ",
-      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
+      "item.chaosmod.kentucky_fried_chicken": "KFC Chicken"
     }
   },
   "foldersRoot": {

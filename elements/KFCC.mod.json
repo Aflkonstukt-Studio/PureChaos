@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SusBlock"
+      },
+      {
+        "value": "Items.COOKED_CHICKEN"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KentuckyFriedChicken"
+    },
+    "name": "kfcc",
+    "namespace": "mod"
+  }
+}
