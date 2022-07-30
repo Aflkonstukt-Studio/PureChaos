@@ -39,6 +39,9 @@ import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
 import xyz.vikkivuk.chaosmod.item.LavaBottleItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
+import xyz.vikkivuk.chaosmod.item.KentuckyFriedChickenItem;
+import xyz.vikkivuk.chaosmod.item.KentuckyFriedChickenFriesItem;
+import xyz.vikkivuk.chaosmod.item.KFCEItem;
 import xyz.vikkivuk.chaosmod.item.JosipRangeItem;
 import xyz.vikkivuk.chaosmod.item.JavelinLauncherItem;
 import xyz.vikkivuk.chaosmod.item.IronEggItem;
@@ -279,6 +282,11 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> MISSING_TEXTURE = block(ChaosmodModBlocks.MISSING_TEXTURE, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> XITE = REGISTRY.register("xite", () -> new XiteItem());
 	public static final RegistryObject<Item> EATABLE_COMMAND_BLOCK = REGISTRY.register("eatable_command_block", () -> new EatableCommandBlockItem());
+	public static final RegistryObject<Item> KENTUCKY_FRIED_CHICKEN = REGISTRY.register("kentucky_fried_chicken",
+			() -> new KentuckyFriedChickenItem());
+	public static final RegistryObject<Item> KENTUCKY_FRIED_CHICKEN_FRIES = REGISTRY.register("kentucky_fried_chicken_fries",
+			() -> new KentuckyFriedChickenFriesItem());
+	public static final RegistryObject<Item> KFCE = REGISTRY.register("kfce", () -> new KFCEItem());
 	public static final RegistryObject<Item> JAVELIN_LAUNCHER = REGISTRY.register("javelin_launcher", () -> new JavelinLauncherItem());
 	public static final RegistryObject<Item> BOTTLE_OF_PISS = REGISTRY.register("bottle_of_piss", () -> new BottleOfPissItem());
 	public static final RegistryObject<Item> TINTED_GLASS_BOTTLE = REGISTRY.register("tinted_glass_bottle", () -> new TintedGlassBottleItem());

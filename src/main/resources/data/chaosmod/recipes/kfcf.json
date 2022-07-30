@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "chaosmod:potato_spuds"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "chaosmod:potato_spuds"
+    },
+    {
+      "item": "chaosmod:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "chaosmod:kentucky_fried_chicken_fries",
+    "count": 1
+  }
+}

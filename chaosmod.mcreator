@@ -99,16 +99,7 @@
       "locked_code": false,
       "registry_name": "player_tick",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -2572,72 +2563,12 @@
       }
     },
     {
-      "name": "BottleOfPissPlayerFinishesUsingItem",
-      "type": "procedure",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bottle_of_piss_player_finishes_using_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "BottleOfPiss",
       "type": "item",
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_of_piss"
-    },
-    {
-      "name": "TintedGlassBottle",
-      "type": "item",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tinted_glass_bottle"
-    },
-    {
-      "name": "TintedGlassBottleRecipe",
-      "type": "recipe",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tinted_glass_bottle_recipe"
-    },
-    {
-      "name": "DoNotPressPressed",
-      "type": "procedure",
-      "sortid": 203,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "do_not_press_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "EatableCommandBlockPlayerFinishesUsingItem",
@@ -2672,12 +2603,44 @@
       }
     },
     {
-      "name": "Fat",
-      "type": "potioneffect",
-      "sortid": 205,
+      "name": "BottleOfPissPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fat"
+      "registry_name": "bottle_of_piss_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TintedGlassBottle",
+      "type": "item",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tinted_glass_bottle"
+    },
+    {
+      "name": "IronEgg",
+      "type": "item",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_egg"
+    },
+    {
+      "name": "DoritoCoolRanch",
+      "type": "item",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dorito_cool_ranch"
     },
     {
       "name": "AteDorito",
@@ -2696,6 +2659,42 @@
       }
     },
     {
+      "name": "Fat",
+      "type": "potioneffect",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fat"
+    },
+    {
+      "name": "DoNotPressPressed",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_not_press_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "DoritoNacho",
       "type": "item",
       "sortid": 205,
@@ -2704,20 +2703,60 @@
       "registry_name": "dorito_nacho"
     },
     {
-      "name": "IronEgg",
-      "type": "item",
-      "sortid": 207,
+      "name": "TintedGlassBottleRecipe",
+      "type": "recipe",
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "iron_egg"
+      "registry_name": "tinted_glass_bottle_recipe"
     },
     {
-      "name": "DoritoCoolRanch",
-      "type": "item",
-      "sortid": 208,
+      "name": "KFCC",
+      "type": "recipe",
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dorito_cool_ranch"
+      "registry_name": "kfcc"
+    },
+    {
+      "name": "KentuckyFriedChickenFries",
+      "type": "item",
+      "sortid": 194,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "kentucky_fried_chicken_fries"
+    },
+    {
+      "name": "KentuckyFriedChicken",
+      "type": "item",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kentucky_fried_chicken"
+    },
+    {
+      "name": "PotaatoBaketRecepti",
+      "type": "recipe",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potaato_baket_recepti"
+    },
+    {
+      "name": "KFCF",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfcf"
+    },
+    {
+      "name": "KFCE",
+      "type": "item",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfce"
     }
   ],
   "variable_elements": [
@@ -2878,9 +2917,8 @@
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
-      "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
@@ -2891,14 +2929,13 @@
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
-      "entity.chaosmod.aentity": "Aentity",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "entity.chaosmod.aentity": "Aentity",
       "entity.chaosmod.walter_wight": "Walter White",
-      "effect.chaosmod.fat": "Fat",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
-      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.green_plant": "Green Plant",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
@@ -2906,11 +2943,11 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "block.chaosmod.youtube": "Youtube",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
+      "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "subtitles.dudeshutt": "",
@@ -2959,7 +2996,6 @@
       "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
-      "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
       "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
@@ -2984,12 +3020,10 @@
       "entity.chaosmod.amogus_3_crew_blu": "Amogus 3 (Crewmate, Blue)",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "entity.chaosmod.legs": "Legs",
-      "item.chaosmod.tinted_glass_bottle": "Tinted Glass Bottle",
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.amogus_3_crew": "Amogus 3 (Crewmate, Red)",
       "entity.chaosmod.stalin": "Stalin",
-      "item.chaosmod.iron_egg": "Iron Egg",
       "item.chaosmod.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
       "item.chaosmod.cobble_fluid_bucket": "Bucket of Cobblestone",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -3064,7 +3098,6 @@
       "item.chaosmod.cioao": "Ciao Portal Igniter",
       "item.chaosmod.baguette": "Baguette",
       "block.chaosmod.adidas_block": "Adidas Block",
-      "item.chaosmod.dorito_nacho": "Nacho Doritos",
       "subtitles.sssr": "SSSR Anthem",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "item.chaosmod.zenith": "Zenith",
