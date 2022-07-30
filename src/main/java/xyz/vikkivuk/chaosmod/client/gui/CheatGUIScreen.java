@@ -2,6 +2,8 @@
 package xyz.vikkivuk.chaosmod.client.gui;
 
 import xyz.vikkivuk.chaosmod.world.inventory.CheatGUIMenu;
+import xyz.vikkivuk.chaosmod.network.CheatGUIButtonMessage;
+import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -88,6 +90,10 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		this.addRenderableWidget(new Button(this.leftPos + 33, this.topPos + 62, 108, 20, new TextComponent("Switch Dimension"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 129, 88, 20, new TextComponent("DO_NOT_PRESS"), e -> {
+			if (true) {
+				ChaosmodMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(2, x, y, z));
+				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 	}
 }

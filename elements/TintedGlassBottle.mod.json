@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "command_block",
+    "texture": "tinted_glass_bottle",
     "customModelName": "Normal",
-    "name": "Command Block",
-    "rarity": "COMMON",
+    "name": "Tinted Glass Bottle",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
@@ -25,15 +25,12 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "eat it"
+      "you wont know whats inside until you drink it"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "EatableCommandBlockPlayerFinishesUsingItem"
-    },
     "hasDispenseBehavior": false,
     "isFood": true,
     "nutritionalValue": 0,
@@ -42,7 +39,7 @@
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "eat"
+    "isAlwaysEdible": false,
+    "animation": "drink"
   }
 }

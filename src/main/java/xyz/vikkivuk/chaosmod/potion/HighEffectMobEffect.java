@@ -6,7 +6,6 @@ import xyz.vikkivuk.chaosmod.procedures.HighEffectEffectExpiresProcedure;
 
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
@@ -21,12 +20,7 @@ public class HighEffectMobEffect extends MobEffect {
 	}
 
 	@Override
-	public boolean isInstantenous() {
-		return true;
-	}
-
-	@Override
-	public void applyInstantenousEffect(Entity source, Entity indirectSource, LivingEntity entity, int amplifier, double health) {
+	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		HighProcedure.execute(entity);
 	}
 

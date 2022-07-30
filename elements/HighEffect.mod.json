@@ -8,9 +8,9 @@
       "value": -16737793,
       "falpha": 0.0
     },
-    "isInstant": true,
+    "isInstant": false,
     "isBad": true,
-    "isBenefitical": false,
+    "isBenefitical": true,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onStarted": {

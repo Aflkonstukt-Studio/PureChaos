@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "command_block",
+    "texture": "iron_egg",
     "customModelName": "Normal",
-    "name": "Command Block",
+    "name": "Iron Egg",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -25,24 +25,21 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "eat it"
+      "(wont open)"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "EatableCommandBlockPlayerFinishesUsingItem"
-    },
     "hasDispenseBehavior": false,
-    "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "eat"
+    "isAlwaysEdible": false,
+    "animation": "none"
   }
 }

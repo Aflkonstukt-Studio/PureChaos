@@ -1,7 +1,7 @@
 
 package xyz.vikkivuk.chaosmod.item;
 
-import xyz.vikkivuk.chaosmod.procedures.EatableCommandBlockPlayerFinishesUsingItemProcedure;
+import xyz.vikkivuk.chaosmod.procedures.AteDoritoProcedure;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModTabs;
 
 import net.minecraft.world.level.Level;
@@ -16,10 +16,10 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class EatableCommandBlockItem extends Item {
-	public EatableCommandBlockItem() {
+public class DoritoCoolRanchItem extends Item {
+	public DoritoCoolRanchItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(-10f)
 
 						.build()));
 	}
@@ -32,7 +32,7 @@ public class EatableCommandBlockItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("eat it"));
+		list.add(new TextComponent("yum"));
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class EatableCommandBlockItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EatableCommandBlockPlayerFinishesUsingItemProcedure.execute(world, x, y, z, entity);
+		AteDoritoProcedure.execute(entity);
 		return retval;
 	}
 }
