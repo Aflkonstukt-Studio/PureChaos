@@ -76,6 +76,7 @@
   "block.chaosmod.radiation_liquid": "Radiation Liquid",
   "entity.chaosmod.trident": "Tridet",
   "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+  "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
   "block.chaosmod.grave": "Grave",
   "death.attack.drank_lava": "%1$s drank lava",
   "item.chaosmod.beef": "Beef",
@@ -203,6 +204,7 @@
   "entity.chaosmod.the_rock": "The Rock",
   "item.chaosmod.adidas_armor_chestplate": "Adidas Chestplate",
   "death.attack.takehome": "%1$s was taken home",
+  "item.chaosmod.kfce": "KFCE",
   "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
   "block.chaosmod.staravoda": "Staravoda",
   "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
@@ -266,5 +268,6 @@
   "entity.chaosmod.josip_pett": "Josip GRR pet",
   "subtitles.ahdude": "ff",
   "item.chaosmod.deek": "Ender Eye ",
-  "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+  "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
+  "item.chaosmod.kentucky_fried_chicken": "KFC Chicken"
 }

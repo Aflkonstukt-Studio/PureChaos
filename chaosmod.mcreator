@@ -2486,7 +2486,7 @@
       "name": "KentuckyFriedChickenFries",
       "type": "item",
       "sortid": 194,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kentucky_fried_chicken_fries"
     },
@@ -2526,7 +2526,7 @@
       "name": "CheatGUI",
       "type": "gui",
       "sortid": 199,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "cheat_gui"
     },
@@ -2534,7 +2534,7 @@
       "name": "MissingTexture",
       "type": "block",
       "sortid": 191,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "missing_texture"
     },
@@ -2542,7 +2542,7 @@
       "name": "JavelinLauncher",
       "type": "rangeditem",
       "sortid": 198,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "javelin_launcher"
     },
@@ -2598,7 +2598,7 @@
       "name": "TheRock",
       "type": "livingentity",
       "sortid": 190,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "the_rock"
     },
@@ -2606,7 +2606,7 @@
       "name": "EatableCommandBlock",
       "type": "item",
       "sortid": 192,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "eatable_command_block"
     }
@@ -2844,6 +2844,7 @@
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "block.chaosmod.grave": "Grave",
       "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
@@ -2971,6 +2972,7 @@
       "entity.chaosmod.the_rock": "The Rock",
       "item.chaosmod.adidas_armor_chestplate": "Adidas Chestplate",
       "death.attack.takehome": "%1$s was taken home",
+      "item.chaosmod.kfce": "KFCE",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
@@ -3034,7 +3036,8 @@
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
       "item.chaosmod.deek": "Ender Eye ",
-      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
+      "item.chaosmod.kentucky_fried_chicken": "KFC Chicken"
     }
   },
   "foldersRoot": {
