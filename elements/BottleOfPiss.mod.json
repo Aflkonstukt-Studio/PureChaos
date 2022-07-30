@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "command_block",
+    "texture": "bottle_of_piss",
     "customModelName": "Normal",
-    "name": "Command Block",
+    "name": "Bottle Of Piss",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
@@ -25,14 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "eat it"
+      "DISGUSTANG"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "EatableCommandBlockPlayerFinishesUsingItem"
+      "name": "BottleOfPissPlayerFinishesUsingItem"
     },
     "hasDispenseBehavior": false,
     "isFood": true,
@@ -42,7 +42,7 @@
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "eat"
+    "isAlwaysEdible": false,
+    "animation": "drink"
   }
 }

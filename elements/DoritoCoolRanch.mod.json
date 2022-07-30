@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "command_block",
+    "texture": "dorito_cool_ranch",
     "customModelName": "Normal",
-    "name": "Command Block",
+    "name": "Dorito Cool Ranch",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
@@ -25,24 +25,24 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "eat it"
+      "yum"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "EatableCommandBlockPlayerFinishesUsingItem"
+      "name": "AteDorito"
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "nutritionalValue": 20,
+    "saturation": -10.0,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "eat"
   }
 }

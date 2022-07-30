@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "command_block",
+    "texture": "dorito_nacho",
     "customModelName": "Normal",
-    "name": "Command Block",
+    "name": "Nacho Doritos",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
@@ -25,19 +25,19 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "eat it"
+      "mmmmm"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "EatableCommandBlockPlayerFinishesUsingItem"
+      "name": "AteDorito"
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "nutritionalValue": 20,
+    "saturation": -10.0,
     "eatResultItem": {
       "value": ""
     },

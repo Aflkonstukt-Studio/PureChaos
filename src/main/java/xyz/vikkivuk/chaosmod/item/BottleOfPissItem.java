@@ -4,13 +4,18 @@ package xyz.vikkivuk.chaosmod.item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import javax.annotation.Nullable;
 
-public class EatableCommandBlockItem extends Item {
+public class BottleOfPissItem extends Item {
 
-	public EatableCommandBlockItem() {
+	public BottleOfPissItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f)
 
 						.build()));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.DRINK;
 	}
 
 	@Override
@@ -21,7 +26,7 @@ public class EatableCommandBlockItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("eat it"));
+		list.add(new TextComponent("DISGUSTANG"));
 	}
 
 	@Override
@@ -32,7 +37,7 @@ public class EatableCommandBlockItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EatableCommandBlockPlayerFinishesUsingItemProcedure.execute(world, x, y, z, entity);
+		BottleOfPissPlayerFinishesUsingItemProcedure.execute();
 
 		return retval;
 	}

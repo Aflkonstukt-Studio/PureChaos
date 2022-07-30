@@ -4,11 +4,11 @@ package xyz.vikkivuk.chaosmod.item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import javax.annotation.Nullable;
 
-public class EatableCommandBlockItem extends Item {
+public class DoritoNachoItem extends Item {
 
-	public EatableCommandBlockItem() {
+	public DoritoNachoItem() {
 		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(-10f).alwaysEat()
 
 						.build()));
 	}
@@ -21,7 +21,7 @@ public class EatableCommandBlockItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("eat it"));
+		list.add(new TextComponent("mmmmm"));
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class EatableCommandBlockItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		EatableCommandBlockPlayerFinishesUsingItemProcedure.execute(world, x, y, z, entity);
+		AteDoritoProcedure.execute(entity);
 
 		return retval;
 	}

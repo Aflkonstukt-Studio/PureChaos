@@ -49,6 +49,9 @@
         "type": "button",
         "data": {
           "text": "DO_NOT_PRESS",
+          "onClick": {
+            "name": "DoNotPressPressed"
+          },
           "width": 88,
           "height": 20,
           "name": "DO_NOT_PRESS",
