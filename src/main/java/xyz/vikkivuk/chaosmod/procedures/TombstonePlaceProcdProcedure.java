@@ -1,5 +1,6 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
+import xyz.vikkivuk.chaosmod.network.ChaosmodModVariables;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModGameRules;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
@@ -35,6 +36,8 @@ public class TombstonePlaceProcdProcedure {
 		if (entity instanceof Player) {
 			if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DOGRAVECREATION)) {
 				world.setBlock(new BlockPos(x, y, z), ChaosmodModBlocks.GRAVE.get().defaultBlockState(), 3);
+				ChaosmodModVariables.WorldVariables.get(world).sanity = 100;
+				ChaosmodModVariables.WorldVariables.get(world).syncData(world);
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(new TextComponent("You died! A grave has been placed at the place of your death."), (false));
 			}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "chaosmod:blocks/missing_texture",
+    "up": "chaosmod:blocks/missing_texture",
+    "north": "chaosmod:blocks/missing_texture",
+    "east": "chaosmod:blocks/missing_texture",
+    "south": "chaosmod:blocks/missing_texture",
+    "west": "chaosmod:blocks/missing_texture",
+    "particle": "chaosmod:blocks/missing_texture"
+  }
+}

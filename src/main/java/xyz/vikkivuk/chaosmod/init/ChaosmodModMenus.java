@@ -6,6 +6,7 @@ package xyz.vikkivuk.chaosmod.init;
 
 import xyz.vikkivuk.chaosmod.world.inventory.VikkiVukGuiMenu;
 import xyz.vikkivuk.chaosmod.world.inventory.ComputerGuiMenu;
+import xyz.vikkivuk.chaosmod.world.inventory.CheatGUIMenu;
 
 import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +26,7 @@ public class ChaosmodModMenus {
 			(id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
 	public static final MenuType<ComputerGuiMenu> COMPUTER_GUI = register("computer_gui",
 			(id, inv, extraData) -> new ComputerGuiMenu(id, inv, extraData));
+	public static final MenuType<CheatGUIMenu> CHEAT_GUI = register("cheat_gui", (id, inv, extraData) -> new CheatGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

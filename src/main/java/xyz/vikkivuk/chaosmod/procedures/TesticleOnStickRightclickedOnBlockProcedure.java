@@ -1,5 +1,6 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
+import xyz.vikkivuk.chaosmod.network.ChaosmodModVariables;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
 import net.minecraft.world.level.block.state.properties.Property;
@@ -51,5 +52,7 @@ public class TesticleOnStickRightclickedOnBlockProcedure {
 				_ist.setDamageValue(0);
 			}
 		}
+		ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity - 2;
+		ChaosmodModVariables.WorldVariables.get(world).syncData(world);
 	}
 }

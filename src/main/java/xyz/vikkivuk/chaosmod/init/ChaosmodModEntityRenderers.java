@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.client.renderer.WalterWightRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.TheRockRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TPoseEntityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StroaterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StalinRenderer;
@@ -29,9 +30,6 @@ import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.BlazRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
-import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewRenderer;
-import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewGRINRenderer;
-import xyz.vikkivuk.chaosmod.client.renderer.Amogus3CrewBLURenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AentityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AdolfHitlerRenderer;
@@ -85,9 +83,8 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.STROATER.get(), StroaterRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_BLU.get(), AMOGUS3BLURenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_GRIN.get(), AMOGUS3GRINRenderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW.get(), Amogus3CrewRenderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW_BLU.get(), Amogus3CrewBLURenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.SPONGEBOB_BOSS.get(), SpongebobBossRenderer::new);
-		event.registerEntityRenderer(ChaosmodModEntities.AMOGUS_3_CREW_GRIN.get(), Amogus3CrewGRINRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.THE_ROCK.get(), TheRockRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.JAVELIN_LAUNCHER.get(), ThrownItemRenderer::new);
 	}
 }

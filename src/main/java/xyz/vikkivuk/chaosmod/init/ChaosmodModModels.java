@@ -7,6 +7,7 @@ package xyz.vikkivuk.chaosmod.init;
 import xyz.vikkivuk.chaosmod.client.model.Modelvikkivuk_plushie;
 import xyz.vikkivuk.chaosmod.client.model.Modeltrident;
 import xyz.vikkivuk.chaosmod.client.model.Modeltpose_smth;
+import xyz.vikkivuk.chaosmod.client.model.Modelthe_rock;
 import xyz.vikkivuk.chaosmod.client.model.Modelstroater;
 import xyz.vikkivuk.chaosmod.client.model.Modelspongebob_boss;
 import xyz.vikkivuk.chaosmod.client.model.Modelsplank;
@@ -48,6 +49,7 @@ public class ChaosmodModModels {
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
 		event.registerLayerDefinition(Modelsplank.LAYER_LOCATION, Modelsplank::createBodyLayer);
+		event.registerLayerDefinition(Modelthe_rock.LAYER_LOCATION, Modelthe_rock::createBodyLayer);
 		event.registerLayerDefinition(Modeljosipmmarket.LAYER_LOCATION, Modeljosipmmarket::createBodyLayer);
 		event.registerLayerDefinition(Modellong_leg_chicken.LAYER_LOCATION, Modellong_leg_chicken::createBodyLayer);
 		event.registerLayerDefinition(Modelcod_but_better.LAYER_LOCATION, Modelcod_but_better::createBodyLayer);

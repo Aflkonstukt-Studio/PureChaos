@@ -23,7 +23,7 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "isBoss": true,
+    "isBoss": false,
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
@@ -49,7 +49,7 @@
     "attackStrength": 10,
     "attackKnockback": 16.0,
     "knockbackResistance": 5.0,
-    "movementSpeed": 30.0,
+    "movementSpeed": 0.7,
     "armorBaseValue": 0.0,
     "trackingRange": 69,
     "health": 69,
