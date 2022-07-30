@@ -37,7 +37,7 @@ public class PlayerTickProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.hurt(new DamageSource("sanity").bypassArmor(), 99999);
 		} else {
-			if (Mth.nextDouble(new Random(), 1, 600) <= 5) {
+			if (Mth.nextDouble(new Random(), 1, 6000) <= 5) {
 				if (Mth.nextDouble(new Random(), 1, 7) <= 2) {
 					if (!(ChaosmodModVariables.WorldVariables.get(world).sanity >= 80)) {
 						ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity
