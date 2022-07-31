@@ -1,8 +1,10 @@
 
 package xyz.vikkivuk.chaosmod.potion;
 
-public class FatMobEffect extends MobEffect {
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
 
+public class FatMobEffect extends MobEffect {
 	public FatMobEffect() {
 		super(MobEffectCategory.HARMFUL, -3355648);
 	}
@@ -16,5 +18,4 @@ public class FatMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }

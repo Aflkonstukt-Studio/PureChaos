@@ -28,6 +28,7 @@ import xyz.vikkivuk.chaosmod.client.renderer.DreamRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.BlazRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.BigRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.AmongUsRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus3Renderer;
 import xyz.vikkivuk.chaosmod.client.renderer.Amogus2Renderer;
@@ -86,5 +87,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.SPONGEBOB_BOSS.get(), SpongebobBossRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.THE_ROCK.get(), TheRockRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JAVELIN_LAUNCHER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.BIG.get(), BigRenderer::new);
 	}
 }

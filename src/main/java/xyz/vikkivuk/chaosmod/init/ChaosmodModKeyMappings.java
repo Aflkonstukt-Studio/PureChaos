@@ -4,6 +4,7 @@
  */
 package xyz.vikkivuk.chaosmod.init;
 
+import xyz.vikkivuk.chaosmod.network.TwoMessage;
 import xyz.vikkivuk.chaosmod.network.SevenMessage;
 import xyz.vikkivuk.chaosmod.network.OneMessage;
 import xyz.vikkivuk.chaosmod.network.KMessage;
@@ -28,12 +29,14 @@ public class ChaosmodModKeyMappings {
 	public static final KeyMapping ONE = new KeyMapping("key.chaosmod.one", GLFW.GLFW_KEY_1, "key.categories.gameplay");
 	public static final KeyMapping K = new KeyMapping("key.chaosmod.k", GLFW.GLFW_KEY_K, "key.categories.creative");
 	public static final KeyMapping SEVEN = new KeyMapping("key.chaosmod.seven", GLFW.GLFW_KEY_7, "key.categories.misc");
+	public static final KeyMapping TWO = new KeyMapping("key.chaosmod.two", GLFW.GLFW_KEY_2, "key.categories.gameplay");
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
 		ClientRegistry.registerKeyBinding(ONE);
 		ClientRegistry.registerKeyBinding(K);
 		ClientRegistry.registerKeyBinding(SEVEN);
+		ClientRegistry.registerKeyBinding(TWO);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -57,6 +60,12 @@ public class ChaosmodModKeyMappings {
 					if (event.getAction() == GLFW.GLFW_PRESS) {
 						ChaosmodMod.PACKET_HANDLER.sendToServer(new SevenMessage(0, 0));
 						SevenMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == TWO.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						ChaosmodMod.PACKET_HANDLER.sendToServer(new TwoMessage(0, 0));
+						TwoMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 					}
 				}
 			}

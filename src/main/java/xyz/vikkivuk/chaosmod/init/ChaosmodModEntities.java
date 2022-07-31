@@ -34,6 +34,7 @@ import xyz.vikkivuk.chaosmod.entity.DeekEntity;
 import xyz.vikkivuk.chaosmod.entity.CursedDogEntity;
 import xyz.vikkivuk.chaosmod.entity.CodButBetterEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
+import xyz.vikkivuk.chaosmod.entity.BigEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
@@ -226,6 +227,11 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<JavelinLauncherEntity>of(JavelinLauncherEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(JavelinLauncherEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BigEntity>> BIG = register("big",
+			EntityType.Builder.<BigEntity>of(BigEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(BigEntity::new)
+
+					.sized(0.9f, 0.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -265,6 +271,7 @@ public class ChaosmodModEntities {
 			AMOGUS3GRINEntity.init();
 			SpongebobBossEntity.init();
 			TheRockEntity.init();
+			BigEntity.init();
 		});
 	}
 
@@ -301,5 +308,6 @@ public class ChaosmodModEntities {
 		event.put(AMOGUS_3_GRIN.get(), AMOGUS3GRINEntity.createAttributes().build());
 		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
 		event.put(THE_ROCK.get(), TheRockEntity.createAttributes().build());
+		event.put(BIG.get(), BigEntity.createAttributes().build());
 	}
 }

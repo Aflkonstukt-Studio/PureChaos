@@ -172,5 +172,24 @@
         "stream": true
       }
     ]
+  },
+  "girl_moan": {
+    "category": "voice",
+    "subtitle": "subtitles.girl_moan",
+    "sounds": [
+      {
+        "name": "chaosmod:girl_moan",
+        "stream": false
+      }
+    ]
+  },
+  "spit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "chaosmod:spit",
+        "stream": false
+      }
+    ]
   }
 }

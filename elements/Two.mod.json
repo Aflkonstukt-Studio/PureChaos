@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "2",
+    "keyBindingName": "Spit",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "TwoOnKeyPressed"
+    }
+  }
+}

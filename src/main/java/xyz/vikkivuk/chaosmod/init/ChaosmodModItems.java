@@ -19,6 +19,7 @@ import xyz.vikkivuk.chaosmod.item.TOItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.StaravodaItem;
+import xyz.vikkivuk.chaosmod.item.SpitBallItem;
 import xyz.vikkivuk.chaosmod.item.SpearItem;
 import xyz.vikkivuk.chaosmod.item.ScratestItem;
 import xyz.vikkivuk.chaosmod.item.SasiAmangasItem;
@@ -79,6 +80,7 @@ import xyz.vikkivuk.chaosmod.item.BaguetteItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.item.AmogusGunItem;
 import xyz.vikkivuk.chaosmod.item.AlmondWaterItem;
+import xyz.vikkivuk.chaosmod.item.AetherItem;
 import xyz.vikkivuk.chaosmod.item.AdidasSwordItem;
 import xyz.vikkivuk.chaosmod.item.AdidasShovelItem;
 import xyz.vikkivuk.chaosmod.item.AdidasPickaxeItem;
@@ -293,6 +295,10 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> DORITO_NACHO = REGISTRY.register("dorito_nacho", () -> new DoritoNachoItem());
 	public static final RegistryObject<Item> IRON_EGG = REGISTRY.register("iron_egg", () -> new IronEggItem());
 	public static final RegistryObject<Item> DORITO_COOL_RANCH = REGISTRY.register("dorito_cool_ranch", () -> new DoritoCoolRanchItem());
+	public static final RegistryObject<Item> AETHER = REGISTRY.register("aether", () -> new AetherItem());
+	public static final RegistryObject<Item> BIG = REGISTRY.register("big_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.BIG, -16777216, -3355648, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> SPIT_BALL = REGISTRY.register("spit_ball", () -> new SpitBallItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -45,6 +45,7 @@ import xyz.vikkivuk.chaosmod.block.BrazilBlockBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1lightBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1WallBlock;
 import xyz.vikkivuk.chaosmod.block.BackroomsLvl1FloorBlock;
+import xyz.vikkivuk.chaosmod.block.AetherPortalBlock;
 import xyz.vikkivuk.chaosmod.block.AdidasBlockBlock;
 import xyz.vikkivuk.chaosmod.ChaosmodMod;
 
@@ -103,6 +104,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidBlock());
 	public static final RegistryObject<Block> ADIDAS_BLOCK = REGISTRY.register("adidas_block", () -> new AdidasBlockBlock());
 	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
+	public static final RegistryObject<Block> AETHER_PORTAL = REGISTRY.register("aether_portal", () -> new AetherPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

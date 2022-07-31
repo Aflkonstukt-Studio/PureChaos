@@ -2722,7 +2722,7 @@
       "name": "KentuckyFriedChickenFries",
       "type": "item",
       "sortid": 194,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kentucky_fried_chicken_fries"
     },
@@ -2757,6 +2757,69 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "kfce"
+    },
+    {
+      "name": "Aether",
+      "type": "dimension",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aether",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Big",
+      "type": "livingentity",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big"
+    },
+    {
+      "name": "SpitBall",
+      "type": "item",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spit_ball"
+    },
+    {
+      "name": "TwoOnKeyPressed",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Two",
+      "type": "keybind",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two"
     }
   ],
   "variable_elements": [
@@ -2911,12 +2974,29 @@
       ],
       "category": "music",
       "subtitle": "Nerd Pacman Meme"
+    },
+    {
+      "name": "girl_moan",
+      "files": [
+        "girl_moan"
+      ],
+      "category": "voice",
+      "subtitle": "aah"
+    },
+    {
+      "name": "spit",
+      "files": [
+        "spit"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
+      "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
@@ -2932,6 +3012,7 @@
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.aentity": "Aentity",
       "entity.chaosmod.walter_wight": "Walter White",
+      "effect.chaosmod.fat": "Fat",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "block.chaosmod.green_plant": "Green Plant",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
@@ -2967,9 +3048,11 @@
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "entity.chaosmod.rick_astley": "Rick Astley",
       "key.chaosmod.summonsus": "Summonsus",
+      "entity.chaosmod.big": "Big",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "entity.chaosmod.cod_but_better": "Cod But Better",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
+      "subtitles.girl_moan": "aah",
       "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "block.chaosmod.tombstone": "Tombstone",
@@ -2992,10 +3075,12 @@
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
+      "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "block.chaosmod.grave": "Grave",
       "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
+      "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
       "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
@@ -3020,10 +3105,13 @@
       "entity.chaosmod.amogus_3_crew_blu": "Amogus 3 (Crewmate, Blue)",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
       "entity.chaosmod.legs": "Legs",
+      "item.chaosmod.tinted_glass_bottle": "Tinted Glass Bottle",
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.amogus_3_crew": "Amogus 3 (Crewmate, Red)",
+      "subtitles.spit": "",
       "entity.chaosmod.stalin": "Stalin",
+      "item.chaosmod.iron_egg": "Iron Egg",
       "item.chaosmod.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
       "item.chaosmod.cobble_fluid_bucket": "Bucket of Cobblestone",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -3076,6 +3164,7 @@
       "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.amogus_gun": "Amogus Gun",
+      "key.chaosmod.two": "Spit",
       "item.chaosmod.bullet": "Bullet",
       "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
@@ -3084,6 +3173,7 @@
       "gamerule.dropMumboTokens.description": "Do you want mumbo tokens to be dropped (by chance) on block break",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
+      "item.chaosmod.spit_ball": "Spit Ball",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
       "entity.chaosmod.t_pose_entity": "T Pose Entity",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
@@ -3098,6 +3188,7 @@
       "item.chaosmod.cioao": "Ciao Portal Igniter",
       "item.chaosmod.baguette": "Baguette",
       "block.chaosmod.adidas_block": "Adidas Block",
+      "item.chaosmod.dorito_nacho": "Nacho Doritos",
       "subtitles.sssr": "SSSR Anthem",
       "item.minecraft.tipped_arrow.effect.fuck_you": "Arrow of Fuck You",
       "item.chaosmod.zenith": "Zenith",
@@ -3119,6 +3210,7 @@
       "entity.chaosmod.the_rock": "The Rock",
       "item.chaosmod.adidas_armor_chestplate": "Adidas Chestplate",
       "death.attack.takehome": "%1$s was taken home",
+      "item.chaosmod.kfce": "KFCE",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
@@ -3134,7 +3226,7 @@
       "item.chaosmod.scratest.desc": "idk man stop asking me",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "gamerule.doGraveCreation": "Do Grave Creation",
-      "item.chaosmod.totem_of_amogus": "Totem Of Among Us",
+      "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "item.chaosmod.igla": "Igla",
       "entity.chaosmod.spongebob_boss": "Spongebob Boss",
       "fluid.chaosmod.pee": "Pee",
@@ -3147,6 +3239,7 @@
       "block.chaosmod.gatorade": "Gatorade",
       "subtitles.fu-k": "",
       "block.chaosmod.cum": "Cum",
+      "item.chaosmod.big_spawn_egg": "Big Spawn Egg",
       "block.chaosmod.depression_block": "Depression Block",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
       "block.chaosmod.ggggggg": "slipped and slipped",
@@ -3159,6 +3252,7 @@
       "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "block.chaosmod.emepee": "Emepee",
       "biome.chaosmod.susus": "Susus",
+      "item.chaosmod.aether": "Aether Portal Igniter",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
       "item.chaosmod.to.desc": "E NE NOSI SLUSALICE IMA DA TI SE RASTAVE U PARAMPARCAD I USI CE DA TI ISKRVARE IST SAMO TO UZIVAJ!",
       "effect.chaosmod.radiation_poisioning": "Radiation Acute Sickness",
@@ -3182,7 +3276,8 @@
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
       "item.chaosmod.deek": "Ender Eye ",
-      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?"
+      "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
+      "item.chaosmod.kentucky_fried_chicken": "KFC Chicken"
     }
   },
   "foldersRoot": {

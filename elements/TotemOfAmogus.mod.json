@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "totem_of_among_us",
+    "texture": "totem_of_lying",
     "customModelName": "Normal",
-    "name": "Totem Of Among Us",
+    "name": "Totem Of Lying",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
