@@ -1,16 +1,8 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
+import javax.annotation.Nullable;
 
 public class TwoOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

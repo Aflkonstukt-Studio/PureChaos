@@ -2722,7 +2722,7 @@
       "name": "KentuckyFriedChickenFries",
       "type": "item",
       "sortid": 194,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kentucky_fried_chicken_fries"
     },
@@ -2759,6 +2759,14 @@
       "registry_name": "kfce"
     },
     {
+      "name": "Big",
+      "type": "livingentity",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big"
+    },
+    {
       "name": "Aether",
       "type": "dimension",
       "sortid": 209,
@@ -2770,20 +2778,20 @@
       }
     },
     {
-      "name": "Big",
-      "type": "livingentity",
-      "sortid": 210,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "big"
-    },
-    {
       "name": "SpitBall",
       "type": "item",
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spit_ball"
+    },
+    {
+      "name": "Two",
+      "type": "keybind",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two"
     },
     {
       "name": "TwoOnKeyPressed",
@@ -2814,12 +2822,12 @@
       }
     },
     {
-      "name": "Two",
-      "type": "keybind",
-      "sortid": 212,
+      "name": "Ironeggg",
+      "type": "recipe",
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "two"
+      "registry_name": "ironeggg"
     }
   ],
   "variable_elements": [
