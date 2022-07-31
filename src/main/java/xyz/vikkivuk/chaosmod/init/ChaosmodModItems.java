@@ -38,6 +38,7 @@ import xyz.vikkivuk.chaosmod.item.NetheritPickaxItem;
 import xyz.vikkivuk.chaosmod.item.MumboTokenItem;
 import xyz.vikkivuk.chaosmod.item.Milk2Item;
 import xyz.vikkivuk.chaosmod.item.MethItem;
+import xyz.vikkivuk.chaosmod.item.MercuryItem;
 import xyz.vikkivuk.chaosmod.item.LavaBottleItem;
 import xyz.vikkivuk.chaosmod.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.vikkivuk.chaosmod.item.KentuckyFriedChickenItem;
@@ -49,6 +50,7 @@ import xyz.vikkivuk.chaosmod.item.IronEggItem;
 import xyz.vikkivuk.chaosmod.item.ImpostorKnifeItem;
 import xyz.vikkivuk.chaosmod.item.IglaItem;
 import xyz.vikkivuk.chaosmod.item.HalfGoldenAppleItem;
+import xyz.vikkivuk.chaosmod.item.GlowItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
 import xyz.vikkivuk.chaosmod.item.FortniteA1Item;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
@@ -299,6 +301,9 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BIG = REGISTRY.register("big_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.BIG, -16777216, -3355648, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> SPIT_BALL = REGISTRY.register("spit_ball", () -> new SpitBallItem());
+	public static final RegistryObject<Item> GLOW = REGISTRY.register("glow", () -> new GlowItem());
+	public static final RegistryObject<Item> MERCURY = REGISTRY.register("mercury", () -> new MercuryItem());
+	public static final RegistryObject<Item> JEB_BLOCK = block(ChaosmodModBlocks.JEB_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

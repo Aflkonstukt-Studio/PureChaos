@@ -1,0 +1,3016 @@
+{
+  "_fv": 28,
+  "_type": "block",
+  "definition": {
+    "texture": "jeb_block",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": false,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "jeb_ Block",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "GROUND"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "spawnWorldTypes": [
+      "Surface",
+      "Nether",
+      "End",
+      "CUSTOM:Peemension",
+      "CUSTOM:WoodDimension",
+      "CUSTOM:Sus",
+      "CUSTOM:Brazil",
+      "CUSTOM:Cyberspace",
+      "CUSTOM:Cioao",
+      "CUSTOM:Aether"
+    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "CUSTOM:Pee"
+      },
+      {
+        "value": "CUSTOM:PeeBlock"
+      },
+      {
+        "value": "CUSTOM:Potatus"
+      },
+      {
+        "value": "CUSTOM:Death"
+      },
+      {
+        "value": "CUSTOM:SADs"
+      },
+      {
+        "value": "CUSTOM:Emepee"
+      },
+      {
+        "value": "CUSTOM:SusBlock"
+      },
+      {
+        "value": "CUSTOM:Cum"
+      },
+      {
+        "value": "CUSTOM:Staravoda"
+      },
+      {
+        "value": "CUSTOM:TLGHD"
+      },
+      {
+        "value": "CUSTOM:OrangeFluid"
+      },
+      {
+        "value": "CUSTOM:Oil"
+      },
+      {
+        "value": "CUSTOM:Gatorade"
+      },
+      {
+        "value": "CUSTOM:GreenPlant"
+      },
+      {
+        "value": "CUSTOM:Tombstone"
+      },
+      {
+        "value": "CUSTOM:CarbonMonoxide"
+      },
+      {
+        "value": "CUSTOM:Youtube"
+      },
+      {
+        "value": "CUSTOM:Plante"
+      },
+      {
+        "value": "CUSTOM:RickrollBlock"
+      },
+      {
+        "value": "CUSTOM:Grave"
+      },
+      {
+        "value": "CUSTOM:Milk2"
+      },
+      {
+        "value": "CUSTOM:BackroomsLvl1light"
+      },
+      {
+        "value": "CUSTOM:BackroomsLvl1Wall"
+      },
+      {
+        "value": "CUSTOM:RadiationLiquid"
+      },
+      {
+        "value": "CUSTOM:BrazilBlock"
+      },
+      {
+        "value": "CUSTOM:NokiaBlock"
+      },
+      {
+        "value": "CUSTOM:BackroomsLvl1Floor"
+      },
+      {
+        "value": "CUSTOM:South"
+      },
+      {
+        "value": "CUSTOM:DepressionBlock"
+      },
+      {
+        "value": "CUSTOM:ComunisamBlock"
+      },
+      {
+        "value": "CUSTOM:PolandBlock"
+      },
+      {
+        "value": "CUSTOM:CyberBlock"
+      },
+      {
+        "value": "CUSTOM:Computer"
+      },
+      {
+        "value": "CUSTOM:Greengiscreenda"
+      },
+      {
+        "value": "CUSTOM:CobbleFluid"
+      },
+      {
+        "value": "CUSTOM:AdidasBlock"
+      },
+      {
+        "value": "CUSTOM:MissingTexture"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.VOID_AIR"
+      },
+      {
+        "value": "Blocks.CAVE_AIR"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.NORMAL_STONE_STAIRS"
+      },
+      {
+        "value": "Blocks.NORMAL_STONE_SLAB"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#2"
+      },
+      {
+        "value": "Blocks.GRANITE_STAIRS"
+      },
+      {
+        "value": "Blocks.POLISHED_GRANITE_STAIRS"
+      },
+      {
+        "value": "Blocks.GRANITE_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_GRANITE_SLAB"
+      },
+      {
+        "value": "Blocks.GRANITE_WALL"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.DIORITE_STAIRS"
+      },
+      {
+        "value": "Blocks.DIORITE_SLAB"
+      },
+      {
+        "value": "Blocks.DIORITE_WALL"
+      },
+      {
+        "value": "Blocks.STONE#4"
+      },
+      {
+        "value": "Blocks.POLISHED_DIORITE_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_DIORITE_STAIRS"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.ANDESITE_STAIRS"
+      },
+      {
+        "value": "Blocks.ANDESITE_SLAB"
+      },
+      {
+        "value": "Blocks.ANDESITE_WALL"
+      },
+      {
+        "value": "Blocks.STONE#6"
+      },
+      {
+        "value": "Blocks.POLISHED_ANDESITE_STAIRS"
+      },
+      {
+        "value": "Blocks.POLISHED_ANDESITE_SLAB"
+      },
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
+      },
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE_STAIRS"
+      },
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE_SLAB"
+      },
+      {
+        "value": "Blocks.COBBLED_DEEPSLATE_WALL"
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE_STAIRS"
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_DEEPSLATE_WALL"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_TILES"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_TILE_STAIRS"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_TILE_SLAB"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_TILE_WALL"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICKS"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.CHISELED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.CRACKED_DEEPSLATE_BRICKS"
+      },
+      {
+        "value": "Blocks.CRACKED_DEEPSLATE_TILES"
+      },
+      {
+        "value": "Blocks.TUFF"
+      },
+      {
+        "value": "Blocks.CALCITE"
+      },
+      {
+        "value": "Blocks.DRIPSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.POINTED_DRIPSTONE"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.GRASS_PATH"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.COBBLESTONE"
+      },
+      {
+        "value": "Blocks.MOSSY_COBBLESTONE"
+      },
+      {
+        "value": "Blocks.MOSSY_COBBLESTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.MOSSY_COBBLESTONE_SLAB"
+      },
+      {
+        "value": "Blocks.MOSS_BLOCK"
+      },
+      {
+        "value": "Blocks.MOSS_CARPET"
+      },
+      {
+        "value": "Blocks.PLANKS#0"
+      },
+      {
+        "value": "Blocks.PLANKS#1"
+      },
+      {
+        "value": "Blocks.PLANKS#2"
+      },
+      {
+        "value": "Blocks.PLANKS#3"
+      },
+      {
+        "value": "Blocks.PLANKS#4"
+      },
+      {
+        "value": "Blocks.PLANKS#5"
+      },
+      {
+        "value": "Blocks.CRIMSON_PLANKS"
+      },
+      {
+        "value": "Blocks.WARPED_PLANKS"
+      },
+      {
+        "value": "Blocks.SAPLING#0"
+      },
+      {
+        "value": "Blocks.SAPLING#1"
+      },
+      {
+        "value": "Blocks.SAPLING#2"
+      },
+      {
+        "value": "Blocks.SAPLING#3"
+      },
+      {
+        "value": "Blocks.SAPLING#4"
+      },
+      {
+        "value": "Blocks.SAPLING#5"
+      },
+      {
+        "value": "Blocks.REEDS"
+      },
+      {
+        "value": "Blocks.BEDROCK"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.FLOWING_WATER"
+      },
+      {
+        "value": "Blocks.WATER"
+      },
+      {
+        "value": "Blocks.BUBBLE_COLUMN"
+      },
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      },
+      {
+        "value": "Blocks.LAVA"
+      },
+      {
+        "value": "Blocks.MAGMA"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Blocks.CRYING_OBSIDIAN"
+      },
+      {
+        "value": "Blocks.BLACKSTONE"
+      },
+      {
+        "value": "Blocks.BLACKSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.BLACKSTONE_WALL"
+      },
+      {
+        "value": "Blocks.BLACKSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BRICKS"
+      },
+      {
+        "value": "Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS"
+      },
+      {
+        "value": "Blocks.CHISELED_POLISHED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_WALL"
+      },
+      {
+        "value": "Blocks.COAL_ORE"
+      },
+      {
+        "value": "Blocks.IRON_ORE"
+      },
+      {
+        "value": "Blocks.REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.LIT_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.GOLD_ORE"
+      },
+      {
+        "value": "Blocks.LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.EMERALD_ORE"
+      },
+      {
+        "value": "Blocks.COPPER_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_COAL_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_IRON_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_REDSTONE_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_LAPIS_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_DIAMOND_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_EMERALD_ORE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE_COPPER_ORE"
+      },
+      {
+        "value": "Blocks.QUARTZ_ORE"
+      },
+      {
+        "value": "Blocks.NETHER_GOLD_ORE"
+      },
+      {
+        "value": "Blocks.GILDED_BLACKSTONE"
+      },
+      {
+        "value": "Blocks.RAW_IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.RAW_GOLD_BLOCK"
+      },
+      {
+        "value": "Blocks.RAW_COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.COAL_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.EXPOSED_COPPER"
+      },
+      {
+        "value": "Blocks.WEATHERED_COPPER"
+      },
+      {
+        "value": "Blocks.OXIDIZED_COPPER"
+      },
+      {
+        "value": "Blocks.CUT_COPPER"
+      },
+      {
+        "value": "Blocks.EXPOSED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.WEATHERED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.OXIDIZED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.EXPOSED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.WEATHERED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.OXIDIZED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.EXPOSED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.WEATHERED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.OXIDIZED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.WAXED_COPPER_BLOCK"
+      },
+      {
+        "value": "Blocks.WAXED_EXPOSED_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_WEATHERED_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_OXIDIZED_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_EXPOSED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_WEATHERED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_OXIDIZED_CUT_COPPER"
+      },
+      {
+        "value": "Blocks.WAXED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.WAXED_EXPOSED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.WAXED_OXIDIZED_CUT_COPPER_STAIRS"
+      },
+      {
+        "value": "Blocks.WAXED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB"
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      },
+      {
+        "value": "Blocks.LAPIS_BLOCK"
+      },
+      {
+        "value": "Blocks.DIAMOND_BLOCK"
+      },
+      {
+        "value": "Blocks.EMERALD_BLOCK"
+      },
+      {
+        "value": "Blocks.NETHERITE_BLOCK"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK#0"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK#1"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK#2"
+      },
+      {
+        "value": "Blocks.QUARTZ_BLOCK#3"
+      },
+      {
+        "value": "Blocks.QUARTZ_BRICKS"
+      },
+      {
+        "value": "Blocks.SMOOTH_QUARTZ_STAIRS"
+      },
+      {
+        "value": "Blocks.SMOOTH_QUARTZ_SLAB"
+      },
+      {
+        "value": "Blocks.SLIME_BLOCK"
+      },
+      {
+        "value": "Blocks.ANCIENT_DEBRIS"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.BUDDING_AMETHYST"
+      },
+      {
+        "value": "Blocks.AMETHYST_CLUSTER"
+      },
+      {
+        "value": "Blocks.LARGE_AMETHYST_BUD"
+      },
+      {
+        "value": "Blocks.MEDIUM_AMETHYST_BUD"
+      },
+      {
+        "value": "Blocks.SMALL_AMETHYST_BUD"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": "Blocks.LOG#0"
+      },
+      {
+        "value": "Blocks.LOG#1"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#3"
+      },
+      {
+        "value": "Blocks.LOG2"
+      },
+      {
+        "value": "Blocks.LOG2#0"
+      },
+      {
+        "value": "Blocks.LOG2#1"
+      },
+      {
+        "value": "Blocks.WARPED_STEM"
+      },
+      {
+        "value": "Blocks.CRIMSON_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_STEM"
+      },
+      {
+        "value": "Blocks.OAK_WOOD"
+      },
+      {
+        "value": "Blocks.SPRUCE_WOOD"
+      },
+      {
+        "value": "Blocks.BIRCH_WOOD"
+      },
+      {
+        "value": "Blocks.JUNGLE_WOOD"
+      },
+      {
+        "value": "Blocks.ACACIA_WOOD"
+      },
+      {
+        "value": "Blocks.DARK_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.WARPED_HYPHAE"
+      },
+      {
+        "value": "Blocks.CRIMSON_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_HYPHAE"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES#0"
+      },
+      {
+        "value": "Blocks.LEAVES#1"
+      },
+      {
+        "value": "Blocks.LEAVES#2"
+      },
+      {
+        "value": "Blocks.LEAVES#3"
+      },
+      {
+        "value": "Blocks.LEAVES2"
+      },
+      {
+        "value": "Blocks.LEAVES2#0"
+      },
+      {
+        "value": "Blocks.LEAVES2#1"
+      },
+      {
+        "value": "Blocks.AZALEA_LEAVES"
+      },
+      {
+        "value": "Blocks.FLOWERING_AZALEA_LEAVES"
+      },
+      {
+        "value": "Blocks.SPONGE#0"
+      },
+      {
+        "value": "Blocks.SPONGE#1"
+      },
+      {
+        "value": "Blocks.SANDSTONE#0"
+      },
+      {
+        "value": "Blocks.SANDSTONE#1"
+      },
+      {
+        "value": "Blocks.SANDSTONE#2"
+      },
+      {
+        "value": "Blocks.SANDSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.SMOOTH_SANDSTONE"
+      },
+      {
+        "value": "Blocks.SMOOTH_SANDSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.SMOOTH_SANDSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.CUT_SANDSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.SANDSTONE_WALL"
+      },
+      {
+        "value": "Blocks.RED_SANDSTONE#0"
+      },
+      {
+        "value": "Blocks.RED_SANDSTONE#1"
+      },
+      {
+        "value": "Blocks.RED_SANDSTONE#2"
+      },
+      {
+        "value": "Blocks.RED_SANDSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.SMOOTH_RED_SANDSTONE"
+      },
+      {
+        "value": "Blocks.SMOOTH_RED_SANDSTONE_STAIRS"
+      },
+      {
+        "value": "Blocks.SMOOTH_RED_SANDSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.CUT_RED_SANDSTONE_SLAB"
+      },
+      {
+        "value": "Blocks.RED_SANDSTONE_WALL"
+      },
+      {
+        "value": "Blocks.NOTEBLOCK"
+      },
+      {
+        "value": "Blocks.RAIL"
+      },
+      {
+        "value": "Blocks.GOLDEN_RAIL"
+      },
+      {
+        "value": "Blocks.DETECTOR_RAIL"
+      },
+      {
+        "value": "Blocks.ACTIVATOR_RAIL"
+      },
+      {
+        "value": "Blocks.BED"
+      },
+      {
+        "value": "Blocks.ORANGE_BED"
+      },
+      {
+        "value": "Blocks.MAGENTA_BED"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_BED"
+      },
+      {
+        "value": "Blocks.YELLOW_BED"
+      },
+      {
+        "value": "Blocks.LIME_BED"
+      },
+      {
+        "value": "Blocks.PINK_BED"
+      },
+      {
+        "value": "Blocks.GRAY_BED"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_BED"
+      },
+      {
+        "value": "Blocks.CYAN_BED"
+      },
+      {
+        "value": "Blocks.PURPLE_BED"
+      },
+      {
+        "value": "Blocks.BLUE_BED"
+      },
+      {
+        "value": "Blocks.BROWN_BED"
+      },
+      {
+        "value": "Blocks.GREEN_BED"
+      },
+      {
+        "value": "Blocks.RED_BED"
+      },
+      {
+        "value": "Blocks.BLACK_BED"
+      },
+      {
+        "value": "Blocks.WEB"
+      },
+      {
+        "value": "Blocks.DEADBUSH"
+      },
+      {
+        "value": "Blocks.TALLGRASS"
+      },
+      {
+        "value": "Blocks.TALLGRASS#0"
+      },
+      {
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Blocks.TALLGRASS#2"
+      },
+      {
+        "value": "Blocks.PISTON"
+      },
+      {
+        "value": "Blocks.STICKY_PISTON"
+      },
+      {
+        "value": "Blocks.PISTON_HEAD"
+      },
+      {
+        "value": "Blocks.PISTON_EXTENSION"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#1"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#2"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#3"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#4"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#5"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#6"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#7"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "Blocks.CORNFLOWER"
+      },
+      {
+        "value": "Blocks.LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#0"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#1"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#3"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#4"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#5"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM_BLOCK"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM_BLOCK"
+      },
+      {
+        "value": "Blocks.WARPED_WART_BLOCK"
+      },
+      {
+        "value": "Blocks.MUSHROOM_STEM"
+      },
+      {
+        "value": "Blocks.BRICK_BLOCK"
+      },
+      {
+        "value": "Blocks.BRICK_WALL"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Blocks.BOOKSHELF"
+      },
+      {
+        "value": "Blocks.TORCH"
+      },
+      {
+        "value": "Blocks.WALL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_TORCH"
+      },
+      {
+        "value": "Blocks.SOUL_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.FIRE"
+      },
+      {
+        "value": "Blocks.SOUL_FIRE"
+      },
+      {
+        "value": "Blocks.LANTERN"
+      },
+      {
+        "value": "Blocks.SOUL_LANTERN"
+      },
+      {
+        "value": "Blocks.CHAIN"
+      },
+      {
+        "value": "Blocks.CAMPFIRE"
+      },
+      {
+        "value": "Blocks.SOUL_CAMPFIRE"
+      },
+      {
+        "value": "Blocks.CANDLE#0"
+      },
+      {
+        "value": "Blocks.CANDLE#1"
+      },
+      {
+        "value": "Blocks.CANDLE#2"
+      },
+      {
+        "value": "Blocks.CANDLE#3"
+      },
+      {
+        "value": "Blocks.CANDLE#4"
+      },
+      {
+        "value": "Blocks.CANDLE#5"
+      },
+      {
+        "value": "Blocks.CANDLE#6"
+      },
+      {
+        "value": "Blocks.CANDLE#7"
+      },
+      {
+        "value": "Blocks.CANDLE#8"
+      },
+      {
+        "value": "Blocks.CANDLE#9"
+      },
+      {
+        "value": "Blocks.CANDLE#10"
+      },
+      {
+        "value": "Blocks.CANDLE#11"
+      },
+      {
+        "value": "Blocks.CANDLE#12"
+      },
+      {
+        "value": "Blocks.CANDLE#13"
+      },
+      {
+        "value": "Blocks.CANDLE#14"
+      },
+      {
+        "value": "Blocks.CANDLE#15"
+      },
+      {
+        "value": "Blocks.CANDLE#16"
+      },
+      {
+        "value": "Blocks.LIGHT"
+      },
+      {
+        "value": "Blocks.MOB_SPAWNER"
+      },
+      {
+        "value": "Blocks.OAK_STAIRS"
+      },
+      {
+        "value": "Blocks.SPRUCE_STAIRS"
+      },
+      {
+        "value": "Blocks.BIRCH_STAIRS"
+      },
+      {
+        "value": "Blocks.JUNGLE_STAIRS"
+      },
+      {
+        "value": "Blocks.ACACIA_STAIRS"
+      },
+      {
+        "value": "Blocks.DARK_OAK_STAIRS"
+      },
+      {
+        "value": "Blocks.CRIMSON_STAIRS"
+      },
+      {
+        "value": "Blocks.WARPED_STAIRS"
+      },
+      {
+        "value": "Blocks.STONE_STAIRS"
+      },
+      {
+        "value": "Blocks.BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.STONE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.NETHER_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.QUARTZ_STAIRS"
+      },
+      {
+        "value": "Blocks.PURPUR_STAIRS"
+      },
+      {
+        "value": "Blocks.CHEST"
+      },
+      {
+        "value": "Blocks.TRAPPED_CHEST"
+      },
+      {
+        "value": "Blocks.ENDER_CHEST"
+      },
+      {
+        "value": "Blocks.CRAFTING_TABLE"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.FARMLAND"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "Blocks.STANDING_SIGN"
+      },
+      {
+        "value": "Blocks.SPRUCE_SIGN"
+      },
+      {
+        "value": "Blocks.BIRCH_SIGN"
+      },
+      {
+        "value": "Blocks.ACACIA_SIGN"
+      },
+      {
+        "value": "Blocks.JUNGLE_SIGN"
+      },
+      {
+        "value": "Blocks.DARK_OAK_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_SIGN"
+      },
+      {
+        "value": "Blocks.WALL_SIGN"
+      },
+      {
+        "value": "Blocks.SPRUCE_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.BIRCH_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.ACACIA_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.JUNGLE_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.DARK_OAK_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.CRIMSON_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.WARPED_WALL_SIGN"
+      },
+      {
+        "value": "Blocks.OAK_DOOR"
+      },
+      {
+        "value": "Blocks.SPRUCE_DOOR"
+      },
+      {
+        "value": "Blocks.BIRCH_DOOR"
+      },
+      {
+        "value": "Blocks.JUNGLE_DOOR"
+      },
+      {
+        "value": "Blocks.ACACIA_DOOR"
+      },
+      {
+        "value": "Blocks.DARK_OAK_DOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_DOOR"
+      },
+      {
+        "value": "Blocks.WARPED_DOOR"
+      },
+      {
+        "value": "Blocks.IRON_DOOR"
+      },
+      {
+        "value": "Blocks.TRAPDOOR"
+      },
+      {
+        "value": "Blocks.SPRUCE_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.BIRCH_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.JUNGLE_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.ACACIA_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.DARK_OAK_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.CRIMSON_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.WARPED_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.IRON_TRAPDOOR"
+      },
+      {
+        "value": "Blocks.LADDER"
+      },
+      {
+        "value": "Blocks.LEVER"
+      },
+      {
+        "value": "Blocks.STONE_BUTTON"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_BUTTON"
+      },
+      {
+        "value": "Blocks.WOODEN_BUTTON"
+      },
+      {
+        "value": "Blocks.SPRUCE_BUTTON"
+      },
+      {
+        "value": "Blocks.BIRCH_BUTTON"
+      },
+      {
+        "value": "Blocks.JUNGLE_BUTTON"
+      },
+      {
+        "value": "Blocks.ACACIA_BUTTON"
+      },
+      {
+        "value": "Blocks.DARK_OAK_BUTTON"
+      },
+      {
+        "value": "Blocks.CRIMSON_BUTTON"
+      },
+      {
+        "value": "Blocks.WARPED_BUTTON"
+      },
+      {
+        "value": "Blocks.WOODEN_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.SPRUCE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.BIRCH_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.JUNGLE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.ACACIA_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.WARPED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.STONE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Blocks.TRIPWIRE_HOOK"
+      },
+      {
+        "value": "Blocks.TRIPWIRE"
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR"
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR_INVERTED"
+      },
+      {
+        "value": "Blocks.REDSTONE_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_WALL_TORCH"
+      },
+      {
+        "value": "Blocks.UNLIT_REDSTONE_TORCH"
+      },
+      {
+        "value": "Blocks.REDSTONE_WIRE"
+      },
+      {
+        "value": "Blocks.UNPOWERED_REPEATER"
+      },
+      {
+        "value": "Blocks.POWERED_REPEATER"
+      },
+      {
+        "value": "Blocks.UNPOWERED_COMPARATOR"
+      },
+      {
+        "value": "Blocks.POWERED_COMPARATOR"
+      },
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      },
+      {
+        "value": "Blocks.LIT_REDSTONE_LAMP"
+      },
+      {
+        "value": "Blocks.DISPENSER"
+      },
+      {
+        "value": "Blocks.DROPPER"
+      },
+      {
+        "value": "Blocks.OBSERVER"
+      },
+      {
+        "value": "Blocks.HOPPER"
+      },
+      {
+        "value": "Blocks.TARGET"
+      },
+      {
+        "value": "Blocks.LIGHTNING_ROD"
+      },
+      {
+        "value": "Blocks.SCULK_SENSOR"
+      },
+      {
+        "value": "Blocks.COMMAND_BLOCK"
+      },
+      {
+        "value": "Blocks.REPEATING_COMMAND_BLOCK"
+      },
+      {
+        "value": "Blocks.CHAIN_COMMAND_BLOCK"
+      },
+      {
+        "value": "Blocks.SNOW_LAYER"
+      },
+      {
+        "value": "Blocks.SNOW"
+      },
+      {
+        "value": "Blocks.POWDER_SNOW"
+      },
+      {
+        "value": "Blocks.ICE"
+      },
+      {
+        "value": "Blocks.PACKED_ICE"
+      },
+      {
+        "value": "Blocks.FROSTED_ICE"
+      },
+      {
+        "value": "Blocks.BLUE_ICE"
+      },
+      {
+        "value": "Blocks.CACTUS"
+      },
+      {
+        "value": "Blocks.CLAY"
+      },
+      {
+        "value": "Blocks.JUKEBOX"
+      },
+      {
+        "value": "Blocks.OAK_FENCE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE"
+      },
+      {
+        "value": "Blocks.OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.SPRUCE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.BIRCH_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.JUNGLE_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.ACACIA_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.DARK_OAK_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.CRIMSON_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.WARPED_FENCE_GATE"
+      },
+      {
+        "value": "Blocks.NETHER_BRICK_FENCE"
+      },
+      {
+        "value": "Blocks.NETHER_BRICK"
+      },
+      {
+        "value": "Blocks.CHISELED_NETHER_BRICKS"
+      },
+      {
+        "value": "Blocks.CRACKED_NETHER_BRICKS"
+      },
+      {
+        "value": "Blocks.RED_NETHER_BRICK"
+      },
+      {
+        "value": "Blocks.NETHER_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.RED_NETHER_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.RED_NETHER_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.RED_NETHER_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.NETHERRACK"
+      },
+      {
+        "value": "Blocks.WARPED_NYLIUM"
+      },
+      {
+        "value": "Blocks.CRIMSON_NYLIUM"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.SOUL_SOIL"
+      },
+      {
+        "value": "Blocks.GLOWSTONE"
+      },
+      {
+        "value": "Blocks.SHROOMLIGHT"
+      },
+      {
+        "value": "Blocks.BONE_BLOCK"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": "Blocks.NETHER_WART_BLOCK"
+      },
+      {
+        "value": "Blocks.CAKE"
+      },
+      {
+        "value": "Blocks.STONEBRICK#0"
+      },
+      {
+        "value": "Blocks.STONE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.STONEBRICK#1"
+      },
+      {
+        "value": "Blocks.MOSSY_STONE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.MOSSY_STONE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.MOSSY_STONE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.STONEBRICK#2"
+      },
+      {
+        "value": "Blocks.STONEBRICK#3"
+      },
+      {
+        "value": "Blocks.IRON_BARS"
+      },
+      {
+        "value": "Blocks.MELON_BLOCK"
+      },
+      {
+        "value": "Blocks.MELON_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_MELON_STEM"
+      },
+      {
+        "value": "Blocks.PUMPKIN"
+      },
+      {
+        "value": "Blocks.CARVED_PUMPKIN"
+      },
+      {
+        "value": "Blocks.LIT_PUMPKIN"
+      },
+      {
+        "value": "Blocks.PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.SWEET_BERRY_BUSH"
+      },
+      {
+        "value": "Blocks.VINE"
+      },
+      {
+        "value": "Blocks.GLOW_LICHEN"
+      },
+      {
+        "value": "Blocks.WATERLILY"
+      },
+      {
+        "value": "Blocks.ENCHANTING_TABLE"
+      },
+      {
+        "value": "Blocks.BREWING_STAND"
+      },
+      {
+        "value": "Blocks.CAULDRON"
+      },
+      {
+        "value": "Blocks.WATER_CAULDRON"
+      },
+      {
+        "value": "Blocks.LAVA_CAULDRON"
+      },
+      {
+        "value": "Blocks.POWDER_SNOW_CAULDRON"
+      },
+      {
+        "value": "Blocks.END_PORTAL"
+      },
+      {
+        "value": "Blocks.END_PORTAL_FRAME"
+      },
+      {
+        "value": "Blocks.END_GATEWAY"
+      },
+      {
+        "value": "Blocks.END_STONE"
+      },
+      {
+        "value": "Blocks.END_BRICKS"
+      },
+      {
+        "value": "Blocks.END_STONE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.END_STONE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.END_STONE_BRICK_WALL"
+      },
+      {
+        "value": "Blocks.END_ROD"
+      },
+      {
+        "value": "Blocks.PURPUR_BLOCK"
+      },
+      {
+        "value": "Blocks.PURPUR_PILLAR"
+      },
+      {
+        "value": "Blocks.PURPUR_SLAB"
+      },
+      {
+        "value": "Blocks.PURPUR_DOUBLE_SLAB"
+      },
+      {
+        "value": "Blocks.BEETROOTS"
+      },
+      {
+        "value": "Blocks.CHORUS_PLANT"
+      },
+      {
+        "value": "Blocks.CHORUS_FLOWER"
+      },
+      {
+        "value": "Blocks.DRAGON_EGG"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#0"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#1"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#2"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#3"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#4"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#5"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#6"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#0"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#1"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#2"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#3"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#4"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB#5"
+      },
+      {
+        "value": "Blocks.CRIMSON_SLAB"
+      },
+      {
+        "value": "Blocks.WARPED_SLAB"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#0"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#1"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#2"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#3"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#4"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#5"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#6"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#7"
+      },
+      {
+        "value": "Blocks.STONE_SLAB2"
+      },
+      {
+        "value": "Blocks.COCOA"
+      },
+      {
+        "value": "Blocks.PORTAL"
+      },
+      {
+        "value": "Blocks.ANVIL#0"
+      },
+      {
+        "value": "Blocks.ANVIL#1"
+      },
+      {
+        "value": "Blocks.ANVIL#2"
+      },
+      {
+        "value": "Blocks.BEACON"
+      },
+      {
+        "value": "Blocks.COBBLESTONE_WALL#0"
+      },
+      {
+        "value": "Blocks.COBBLESTONE_WALL#1"
+      },
+      {
+        "value": "Blocks.FLOWER_POT"
+      },
+      {
+        "value": "Blocks.POTTED_OAK_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_SPRUCE_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_BIRCH_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_JUNGLE_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_ACACIA_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_DARK_OAK_SAPLING"
+      },
+      {
+        "value": "Blocks.POTTED_FERN"
+      },
+      {
+        "value": "Blocks.POTTED_DANDELION"
+      },
+      {
+        "value": "Blocks.POTTED_POPPY"
+      },
+      {
+        "value": "Blocks.POTTED_BLUE_ORCHID"
+      },
+      {
+        "value": "Blocks.POTTED_ALLIUM"
+      },
+      {
+        "value": "Blocks.POTTED_AZURE_BLUET"
+      },
+      {
+        "value": "Blocks.POTTED_RED_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_ORANGE_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_WHITE_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_PINK_TULIP"
+      },
+      {
+        "value": "Blocks.POTTED_OXEYE_DAISY"
+      },
+      {
+        "value": "Blocks.POTTED_CORNFLOWER"
+      },
+      {
+        "value": "Blocks.POTTED_LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.POTTED_WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.POTTED_RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.POTTED_BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.POTTED_DEAD_BUSH"
+      },
+      {
+        "value": "Blocks.POTTED_CACTUS"
+      },
+      {
+        "value": "Blocks.POTTED_BAMBOO"
+      },
+      {
+        "value": "Blocks.POTTED_CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.POTTED_WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.POTTED_CRIMSON_ROOTS"
+      },
+      {
+        "value": "Blocks.POTTED_WARPED_ROOTS"
+      },
+      {
+        "value": "Blocks.POTTED_AZALEA_BUSH"
+      },
+      {
+        "value": "Blocks.POTTED_FLOWERING_AZALEA_BUSH"
+      },
+      {
+        "value": "Blocks.CARROTS"
+      },
+      {
+        "value": "Blocks.POTATOES"
+      },
+      {
+        "value": "Blocks.HAY_BLOCK"
+      },
+      {
+        "value": "Blocks.SKULL#0"
+      },
+      {
+        "value": "Blocks.SKULL#1"
+      },
+      {
+        "value": "Blocks.SKULL#2"
+      },
+      {
+        "value": "Blocks.SKULL#3"
+      },
+      {
+        "value": "Blocks.SKULL#4"
+      },
+      {
+        "value": "Blocks.SKULL#5"
+      },
+      {
+        "value": "Blocks.SKELETON_WALL_SKULL"
+      },
+      {
+        "value": "Blocks.WITHER_SKELETON_WALL_SKULL"
+      },
+      {
+        "value": "Blocks.ZOMBIE_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.PLAYER_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.CREEPER_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.DRAGON_WALL_HEAD"
+      },
+      {
+        "value": "Blocks.WOOL#0"
+      },
+      {
+        "value": "Blocks.WOOL#1"
+      },
+      {
+        "value": "Blocks.WOOL#2"
+      },
+      {
+        "value": "Blocks.WOOL#3"
+      },
+      {
+        "value": "Blocks.WOOL#4"
+      },
+      {
+        "value": "Blocks.WOOL#5"
+      },
+      {
+        "value": "Blocks.WOOL#6"
+      },
+      {
+        "value": "Blocks.WOOL#7"
+      },
+      {
+        "value": "Blocks.WOOL#8"
+      },
+      {
+        "value": "Blocks.WOOL#9"
+      },
+      {
+        "value": "Blocks.WOOL#10"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#12"
+      },
+      {
+        "value": "Blocks.WOOL#13"
+      },
+      {
+        "value": "Blocks.WOOL#14"
+      },
+      {
+        "value": "Blocks.WOOL#15"
+      },
+      {
+        "value": "Blocks.HARDENED_CLAY"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#0"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#1"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#2"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#3"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#4"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#5"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#6"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#7"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#8"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#9"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#10"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#11"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#12"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#13"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#14"
+      },
+      {
+        "value": "Blocks.STAINED_HARDENED_CLAY#15"
+      },
+      {
+        "value": "Blocks.WHITE_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.ORANGE_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.MAGENTA_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.YELLOW_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.LIME_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.PINK_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.GRAY_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.SILVER_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.CYAN_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.PURPLE_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.BLUE_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.BROWN_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.GREEN_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.RED_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.BLACK_GLAZED_TERRACOTTA"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#0"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#1"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#2"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#3"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#4"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#5"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#6"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#7"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#8"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#9"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#10"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#11"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#12"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#13"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#14"
+      },
+      {
+        "value": "Blocks.CONCRETE_POWDER#15"
+      },
+      {
+        "value": "Blocks.CONCRETE#0"
+      },
+      {
+        "value": "Blocks.CONCRETE#1"
+      },
+      {
+        "value": "Blocks.CONCRETE#2"
+      },
+      {
+        "value": "Blocks.CONCRETE#3"
+      },
+      {
+        "value": "Blocks.CONCRETE#4"
+      },
+      {
+        "value": "Blocks.CONCRETE#5"
+      },
+      {
+        "value": "Blocks.CONCRETE#6"
+      },
+      {
+        "value": "Blocks.CONCRETE#7"
+      },
+      {
+        "value": "Blocks.CONCRETE#8"
+      },
+      {
+        "value": "Blocks.CONCRETE#9"
+      },
+      {
+        "value": "Blocks.CONCRETE#10"
+      },
+      {
+        "value": "Blocks.CONCRETE#11"
+      },
+      {
+        "value": "Blocks.CONCRETE#12"
+      },
+      {
+        "value": "Blocks.CONCRETE#13"
+      },
+      {
+        "value": "Blocks.CONCRETE#14"
+      },
+      {
+        "value": "Blocks.CONCRETE#15"
+      },
+      {
+        "value": "Blocks.CARPET#0"
+      },
+      {
+        "value": "Blocks.CARPET#1"
+      },
+      {
+        "value": "Blocks.CARPET#2"
+      },
+      {
+        "value": "Blocks.CARPET#3"
+      },
+      {
+        "value": "Blocks.CARPET#4"
+      },
+      {
+        "value": "Blocks.CARPET#5"
+      },
+      {
+        "value": "Blocks.CARPET#6"
+      },
+      {
+        "value": "Blocks.CARPET#7"
+      },
+      {
+        "value": "Blocks.CARPET#8"
+      },
+      {
+        "value": "Blocks.CARPET#9"
+      },
+      {
+        "value": "Blocks.CARPET#10"
+      },
+      {
+        "value": "Blocks.CARPET#11"
+      },
+      {
+        "value": "Blocks.CARPET#12"
+      },
+      {
+        "value": "Blocks.CARPET#13"
+      },
+      {
+        "value": "Blocks.CARPET#14"
+      },
+      {
+        "value": "Blocks.CARPET#15"
+      },
+      {
+        "value": "Blocks.GLASS"
+      },
+      {
+        "value": "Blocks.TINTED_GLASS"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#0"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#1"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#2"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#3"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#5"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#6"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#7"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#9"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#10"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#11"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#13"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#14"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS#15"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#0"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#1"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#2"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#3"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#4"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#5"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#6"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#7"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#8"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#9"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#10"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#11"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#12"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#13"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#14"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "Blocks.SEA_LANTERN"
+      },
+      {
+        "value": "Blocks.PRISMARINE#0"
+      },
+      {
+        "value": "Blocks.PRISMARINE#1"
+      },
+      {
+        "value": "Blocks.PRISMARINE#2"
+      },
+      {
+        "value": "Blocks.PRISMARINE_STAIRS"
+      },
+      {
+        "value": "Blocks.PRISMARINE_BRICK_STAIRS"
+      },
+      {
+        "value": "Blocks.DARK_PRISMARINE_STAIRS"
+      },
+      {
+        "value": "Blocks.PRISMARINE_SLAB"
+      },
+      {
+        "value": "Blocks.PRISMARINE_BRICK_SLAB"
+      },
+      {
+        "value": "Blocks.DARK_PRISMARINE_SLAB"
+      },
+      {
+        "value": "Blocks.PRISMARINE_WALL"
+      },
+      {
+        "value": "Blocks.SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.WHITE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.ORANGE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.MAGENTA_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.YELLOW_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.LIME_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.PINK_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.GRAY_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.SILVER_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.CYAN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.PURPLE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BLUE_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BROWN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.GREEN_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.RED_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.BLACK_SHULKER_BOX"
+      },
+      {
+        "value": "Blocks.STANDING_BANNER"
+      },
+      {
+        "value": "Blocks.WHITE_BANNER"
+      },
+      {
+        "value": "Blocks.ORANGE_BANNER"
+      },
+      {
+        "value": "Blocks.MAGENTA_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_BANNER"
+      },
+      {
+        "value": "Blocks.YELLOW_BANNER"
+      },
+      {
+        "value": "Blocks.LIME_BANNER"
+      },
+      {
+        "value": "Blocks.PINK_BANNER"
+      },
+      {
+        "value": "Blocks.GRAY_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_BANNER"
+      },
+      {
+        "value": "Blocks.CYAN_BANNER"
+      },
+      {
+        "value": "Blocks.PURPLE_BANNER"
+      },
+      {
+        "value": "Blocks.BLUE_BANNER"
+      },
+      {
+        "value": "Blocks.BROWN_BANNER"
+      },
+      {
+        "value": "Blocks.GREEN_BANNER"
+      },
+      {
+        "value": "Blocks.RED_BANNER"
+      },
+      {
+        "value": "Blocks.BLACK_BANNER"
+      },
+      {
+        "value": "Blocks.WALL_BANNER"
+      },
+      {
+        "value": "Blocks.WHITE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.ORANGE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.MAGENTA_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_BLUE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.YELLOW_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIME_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.PINK_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.GRAY_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.LIGHT_GRAY_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.CYAN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.PURPLE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BLUE_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BROWN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.GREEN_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.RED_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BLACK_WALL_BANNER"
+      },
+      {
+        "value": "Blocks.BARRIER"
+      },
+      {
+        "value": "Blocks.STRUCTURE_VOID"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK#1"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK#2"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK#3"
+      },
+      {
+        "value": "Blocks.STRUCTURE_BLOCK#4"
+      },
+      {
+        "value": "Blocks.JIGSAW"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP_PLANT"
+      },
+      {
+        "value": "Blocks.SEAGRASS"
+      },
+      {
+        "value": "Blocks.TALL_SEAGRASS"
+      },
+      {
+        "value": "Blocks.SEA_PICKLE"
+      },
+      {
+        "value": "Blocks.TURTLE_EGG"
+      },
+      {
+        "value": "Blocks.BAMBOO_SAPLING"
+      },
+      {
+        "value": "Blocks.BAMBOO"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.HORN_CORAL_BLOCK"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL"
+      },
+      {
+        "value": "Blocks.HORN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.HORN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.TUBE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.BRAIN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.BUBBLE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.FIRE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.HORN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DRIED_KELP_BLOCK"
+      },
+      {
+        "value": "Blocks.CONDUIT"
+      },
+      {
+        "value": "Blocks.SCAFFOLDING"
+      },
+      {
+        "value": "Blocks.BELL"
+      },
+      {
+        "value": "Blocks.LOOM"
+      },
+      {
+        "value": "Blocks.BARREL"
+      },
+      {
+        "value": "Blocks.SMOKER"
+      },
+      {
+        "value": "Blocks.BLAST_FURNACE"
+      },
+      {
+        "value": "Blocks.CARTOGRAPHY_TABLE"
+      },
+      {
+        "value": "Blocks.FLETCHING_TABLE"
+      },
+      {
+        "value": "Blocks.GRINDSTONE"
+      },
+      {
+        "value": "Blocks.LECTERN"
+      },
+      {
+        "value": "Blocks.SMITHING_TABLE"
+      },
+      {
+        "value": "Blocks.STONECUTTER"
+      },
+      {
+        "value": "Blocks.COMPOSTER"
+      },
+      {
+        "value": "Blocks.BEEHIVE"
+      },
+      {
+        "value": "Blocks.BEE_NEST"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "Blocks.HONEYCOMB_BLOCK"
+      },
+      {
+        "value": "Blocks.BASALT"
+      },
+      {
+        "value": "Blocks.POLISHED_BASALT"
+      },
+      {
+        "value": "Blocks.SMOOTH_BASALT"
+      },
+      {
+        "value": "Blocks.WARPED_ROOTS"
+      },
+      {
+        "value": "Blocks.NETHER_SPROUTS"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.CRIMSON_ROOTS"
+      },
+      {
+        "value": "Blocks.RESPAWN_ANCHOR"
+      },
+      {
+        "value": "Blocks.LODESTONE"
+      },
+      {
+        "value": "Blocks.CAVE_VINES"
+      },
+      {
+        "value": "Blocks.CAVE_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.SPORE_BLOSSOM"
+      },
+      {
+        "value": "Blocks.AZALEA"
+      },
+      {
+        "value": "Blocks.FLOWERING_AZALEA"
+      },
+      {
+        "value": "Blocks.BIG_DRIPLEAF"
+      },
+      {
+        "value": "Blocks.BIG_DRIPLEAF_STEM"
+      },
+      {
+        "value": "Blocks.SMALL_DRIPLEAF"
+      },
+      {
+        "value": "Blocks.HANGING_ROOTS"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#0"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#1"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#2"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#3"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#4"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#5"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#6"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#7"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#8"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#9"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#10"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#11"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#12"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#13"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#14"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#15"
+      },
+      {
+        "value": "Blocks.CANDLE_CAKE#16"
+      }
+    ],
+    "generationShape": "TRIANGLE",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

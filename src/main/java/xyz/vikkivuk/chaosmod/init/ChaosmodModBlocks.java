@@ -26,6 +26,7 @@ import xyz.vikkivuk.chaosmod.block.OilBlock;
 import xyz.vikkivuk.chaosmod.block.NokiaBlockBlock;
 import xyz.vikkivuk.chaosmod.block.MissingTextureBlock;
 import xyz.vikkivuk.chaosmod.block.Milk2Block;
+import xyz.vikkivuk.chaosmod.block.JebBlockBlock;
 import xyz.vikkivuk.chaosmod.block.GreengiscreendaBlock;
 import xyz.vikkivuk.chaosmod.block.GreenPlantBlock;
 import xyz.vikkivuk.chaosmod.block.GraveBlock;
@@ -105,6 +106,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> ADIDAS_BLOCK = REGISTRY.register("adidas_block", () -> new AdidasBlockBlock());
 	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
 	public static final RegistryObject<Block> AETHER_PORTAL = REGISTRY.register("aether_portal", () -> new AetherPortalBlock());
+	public static final RegistryObject<Block> JEB_BLOCK = REGISTRY.register("jeb_block", () -> new JebBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

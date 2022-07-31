@@ -9,6 +9,11 @@ public class BleachOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ChaosmodModMobEffects.BLEACHED.get()) : false;
+		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ChaosmodModMobEffects.BLEACHED.get()) : false) {
+			return true;
+		} else if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ChaosmodModMobEffects.BLIND.get()) : false) {
+			return true;
+		}
+		return false;
 	}
 }
