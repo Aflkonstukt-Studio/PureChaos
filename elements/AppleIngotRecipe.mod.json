@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      },
+      {
+        "value": "Items.APPLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AppleIngot"
+    },
+    "name": "apple_ingot_recipe",
+    "namespace": "mod"
+  }
+}

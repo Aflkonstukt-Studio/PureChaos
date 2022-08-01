@@ -40,6 +40,7 @@ public class ChaosmodModSounds {
 		REGISTRY.put(new ResourceLocation("chaosmod", "nerd_pacman_meme"), new SoundEvent(new ResourceLocation("chaosmod", "nerd_pacman_meme")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "girl_moan"), new SoundEvent(new ResourceLocation("chaosmod", "girl_moan")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "spit"), new SoundEvent(new ResourceLocation("chaosmod", "spit")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "pan_hit"), new SoundEvent(new ResourceLocation("chaosmod", "pan_hit")));
 	}
 
 	@SubscribeEvent

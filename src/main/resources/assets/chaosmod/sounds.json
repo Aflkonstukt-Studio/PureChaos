@@ -191,5 +191,14 @@
         "stream": false
       }
     ]
+  },
+  "pan_hit": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:pan_hit",
+        "stream": false
+      }
+    ]
   }
 }

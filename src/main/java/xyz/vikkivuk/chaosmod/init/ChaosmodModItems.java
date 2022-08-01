@@ -52,6 +52,7 @@ import xyz.vikkivuk.chaosmod.item.IglaItem;
 import xyz.vikkivuk.chaosmod.item.HalfGoldenAppleItem;
 import xyz.vikkivuk.chaosmod.item.GlowItem;
 import xyz.vikkivuk.chaosmod.item.GatoradeItem;
+import xyz.vikkivuk.chaosmod.item.FryingPanItem;
 import xyz.vikkivuk.chaosmod.item.FortniteA1Item;
 import xyz.vikkivuk.chaosmod.item.FooditemItem;
 import xyz.vikkivuk.chaosmod.item.FoodItem3Item;
@@ -79,6 +80,7 @@ import xyz.vikkivuk.chaosmod.item.BeengotItem;
 import xyz.vikkivuk.chaosmod.item.BeefItem;
 import xyz.vikkivuk.chaosmod.item.BeefArmorItem;
 import xyz.vikkivuk.chaosmod.item.BaguetteItem;
+import xyz.vikkivuk.chaosmod.item.AppleIngotItem;
 import xyz.vikkivuk.chaosmod.item.AmugusItem;
 import xyz.vikkivuk.chaosmod.item.AmogusGunItem;
 import xyz.vikkivuk.chaosmod.item.AlmondWaterItem;
@@ -304,6 +306,8 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> GLOW = REGISTRY.register("glow", () -> new GlowItem());
 	public static final RegistryObject<Item> MERCURY = REGISTRY.register("mercury", () -> new MercuryItem());
 	public static final RegistryObject<Item> JEB_BLOCK = block(ChaosmodModBlocks.JEB_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
+	public static final RegistryObject<Item> FRYING_PAN = REGISTRY.register("frying_pan", () -> new FryingPanItem());
+	public static final RegistryObject<Item> APPLE_INGOT = REGISTRY.register("apple_ingot", () -> new AppleIngotItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
