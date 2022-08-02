@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 2,
     "texture": "tlgf",
-    "customModelName": "mumbotoken:default",
+    "customModelName": "mumbo_token:default",
     "name": "Mumbo Token",
     "rarity": "COMMON",
     "creativeTab": {
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Eekum Bokum"
+      "EEKUM BOKUM"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

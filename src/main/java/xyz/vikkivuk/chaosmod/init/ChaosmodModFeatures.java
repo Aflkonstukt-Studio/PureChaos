@@ -27,7 +27,10 @@ import xyz.vikkivuk.chaosmod.world.features.lakes.CobbleFluidFeature;
 import xyz.vikkivuk.chaosmod.world.features.lakes.CarbonMonoxideFeature;
 import xyz.vikkivuk.chaosmod.world.features.WoodRuinedPortalFeature;
 import xyz.vikkivuk.chaosmod.world.features.WhiteCellFeature;
+import xyz.vikkivuk.chaosmod.world.features.StoneStairFeature;
 import xyz.vikkivuk.chaosmod.world.features.SecretTntFeature;
+import xyz.vikkivuk.chaosmod.world.features.RickrollStairsFeature;
+import xyz.vikkivuk.chaosmod.world.features.PondOfCobblestoneFeature;
 import xyz.vikkivuk.chaosmod.world.features.PolskaFeature;
 import xyz.vikkivuk.chaosmod.world.features.PeePoolFeature;
 import xyz.vikkivuk.chaosmod.world.features.OilMountainFeature;
@@ -144,6 +147,14 @@ public class ChaosmodModFeatures {
 			GenerationStep.Decoration.UNDERGROUND_ORES, AdidasBlockFeature.GENERATE_BIOMES, AdidasBlockFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> JEB_BLOCK = register("jeb_block", JebBlockFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, JebBlockFeature.GENERATE_BIOMES, JebBlockFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> STONE_STAIR = register("stone_stair", StoneStairFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, StoneStairFeature.GENERATE_BIOMES, StoneStairFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> POND_OF_COBBLESTONE = register("pond_of_cobblestone", PondOfCobblestoneFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PondOfCobblestoneFeature.GENERATE_BIOMES,
+					PondOfCobblestoneFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RICKROLL_STAIRS = register("rickroll_stairs", RickrollStairsFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, RickrollStairsFeature.GENERATE_BIOMES,
+					RickrollStairsFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

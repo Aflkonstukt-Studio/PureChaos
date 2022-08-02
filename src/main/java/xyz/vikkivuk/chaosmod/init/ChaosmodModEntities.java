@@ -9,6 +9,7 @@ import xyz.vikkivuk.chaosmod.entity.WalterWightEntity;
 import xyz.vikkivuk.chaosmod.entity.VikkivukEntity;
 import xyz.vikkivuk.chaosmod.entity.TridentEntity;
 import xyz.vikkivuk.chaosmod.entity.TheRockEntity;
+import xyz.vikkivuk.chaosmod.entity.TechnobladeEntity;
 import xyz.vikkivuk.chaosmod.entity.TPoseEntityEntity;
 import xyz.vikkivuk.chaosmod.entity.StroaterEntity;
 import xyz.vikkivuk.chaosmod.entity.StalinEntity;
@@ -232,6 +233,9 @@ public class ChaosmodModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(BigEntity::new)
 
 					.sized(0.9f, 0.9f));
+	public static final RegistryObject<EntityType<TechnobladeEntity>> TECHNOBLADE = register("technoblade",
+			EntityType.Builder.<TechnobladeEntity>of(TechnobladeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TechnobladeEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -272,6 +276,7 @@ public class ChaosmodModEntities {
 			SpongebobBossEntity.init();
 			TheRockEntity.init();
 			BigEntity.init();
+			TechnobladeEntity.init();
 		});
 	}
 
@@ -309,5 +314,6 @@ public class ChaosmodModEntities {
 		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
 		event.put(THE_ROCK.get(), TheRockEntity.createAttributes().build());
 		event.put(BIG.get(), BigEntity.createAttributes().build());
+		event.put(TECHNOBLADE.get(), TechnobladeEntity.createAttributes().build());
 	}
 }

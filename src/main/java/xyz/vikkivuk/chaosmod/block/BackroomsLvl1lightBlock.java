@@ -1,6 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -27,8 +29,8 @@ import java.util.Collections;
 
 public class BackroomsLvl1lightBlock extends Block {
 	public BackroomsLvl1lightBlock() {
-		super(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS).strength(-1, 3600000).hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15)
+				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

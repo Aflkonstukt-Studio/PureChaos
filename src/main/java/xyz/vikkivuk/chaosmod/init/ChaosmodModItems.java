@@ -308,6 +308,8 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> JEB_BLOCK = block(ChaosmodModBlocks.JEB_BLOCK, ChaosmodModTabs.TAB_CHAOSTAB);
 	public static final RegistryObject<Item> FRYING_PAN = REGISTRY.register("frying_pan", () -> new FryingPanItem());
 	public static final RegistryObject<Item> APPLE_INGOT = REGISTRY.register("apple_ingot", () -> new AppleIngotItem());
+	public static final RegistryObject<Item> TECHNOBLADE = REGISTRY.register("technoblade_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.TECHNOBLADE, -39271, -3342541, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -2,11 +2,9 @@
   "forge_marker": 1,
   "parent": "forge:item/default",
   "loader": "forge:obj",
-  "model": "chaosmod:models/item/mumbotoken.obj",
+  "model": "chaosmod:models/item/mumbo_token.obj",
   "textures": {
-    "token_NONE": "chaosmod:blocks/mumbotoken",
-    "token_token.png": "chaosmod:blocks/mumbotoken",
-    "token": "chaosmod:blocks/mumbotoken",
+    "m_0": "chaosmod:blocks/mumbotoken",
     "particle": "chaosmod:items/tlgf"
   }
 }

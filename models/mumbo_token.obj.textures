@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "m_0": "mumbotoken"
+      },
+      "name": "default"
+    }
+  }
+}

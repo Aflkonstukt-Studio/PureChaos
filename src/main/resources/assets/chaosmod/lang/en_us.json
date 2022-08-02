@@ -149,6 +149,7 @@
   "item.chaosmod.glow": "Glow",
   "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
   "key.chaosmod.one": "ma",
+  "entity.chaosmod.technoblade": "Technoblade",
   "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
   "item.chaosmod.amogus_3_crew_grin_spawn_egg": "Amogus 3 (Crewmate, Green) Spawn Egg",
   "item.chaosmod.corruptstaff": "Corrupt Staff",
@@ -287,6 +288,7 @@
   "item.chaosmod.pee_bucket": "Pee Bucket",
   "entity.chaosmod.josip_pett": "Josip GRR pet",
   "subtitles.ahdude": "ff",
+  "item.chaosmod.technoblade_spawn_egg": "Technoblade Spawn Egg",
   "item.chaosmod.deek": "Ender Eye ",
   "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
   "item.chaosmod.kentucky_fried_chicken": "KFC Chicken"

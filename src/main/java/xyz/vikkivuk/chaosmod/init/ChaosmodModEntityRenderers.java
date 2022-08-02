@@ -8,6 +8,7 @@ import xyz.vikkivuk.chaosmod.client.renderer.WalterWightRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.VikkivukRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TridentRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TheRockRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.TechnobladeRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.TPoseEntityRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StroaterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.StalinRenderer;
@@ -88,5 +89,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.THE_ROCK.get(), TheRockRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.JAVELIN_LAUNCHER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.BIG.get(), BigRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.TECHNOBLADE.get(), TechnobladeRenderer::new);
 	}
 }
