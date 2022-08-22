@@ -255,6 +255,7 @@ public class AmongUsEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 69);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 16);
 		return builder;

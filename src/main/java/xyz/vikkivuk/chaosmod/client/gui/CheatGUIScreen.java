@@ -37,7 +37,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/cheat_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/screens/cheat_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

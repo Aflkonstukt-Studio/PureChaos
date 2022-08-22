@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Among Us",
@@ -52,6 +52,7 @@
     "movementSpeed": 0.7,
     "armorBaseValue": 0.0,
     "trackingRange": 69,
+    "followRange": 16,
     "health": 69,
     "xpAmount": 420,
     "waterMob": false,

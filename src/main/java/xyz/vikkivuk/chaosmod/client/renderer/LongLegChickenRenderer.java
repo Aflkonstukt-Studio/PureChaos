@@ -15,6 +15,6 @@ public class LongLegChickenRenderer extends MobRenderer<LongLegChickenEntity, Mo
 
 	@Override
 	public ResourceLocation getTextureLocation(LongLegChickenEntity entity) {
-		return new ResourceLocation("chaosmod:textures/long_leg_chicken.png");
+		return new ResourceLocation("chaosmod:textures/entities/long_leg_chicken.png");
 	}
 }

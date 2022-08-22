@@ -19,6 +19,6 @@ public class DreamRenderer extends HumanoidMobRenderer<DreamEntity, HumanoidMode
 
 	@Override
 	public ResourceLocation getTextureLocation(DreamEntity entity) {
-		return new ResourceLocation("chaosmod:textures/dream.png");
+		return new ResourceLocation("chaosmod:textures/entities/dream.png");
 	}
 }

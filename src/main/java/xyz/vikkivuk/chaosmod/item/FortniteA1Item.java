@@ -40,11 +40,6 @@ public class FortniteA1Item extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
-	}
-
-	@Override
 	public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot equipmentSlot) {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();

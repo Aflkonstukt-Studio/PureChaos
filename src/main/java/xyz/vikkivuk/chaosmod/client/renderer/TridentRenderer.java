@@ -15,6 +15,6 @@ public class TridentRenderer extends MobRenderer<TridentEntity, Modeltrident<Tri
 
 	@Override
 	public ResourceLocation getTextureLocation(TridentEntity entity) {
-		return new ResourceLocation("chaosmod:textures/trident_texture.png");
+		return new ResourceLocation("chaosmod:textures/entities/trident_texture.png");
 	}
 }

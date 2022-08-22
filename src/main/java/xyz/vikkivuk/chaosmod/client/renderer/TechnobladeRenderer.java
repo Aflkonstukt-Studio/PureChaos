@@ -19,6 +19,6 @@ public class TechnobladeRenderer extends HumanoidMobRenderer<TechnobladeEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(TechnobladeEntity entity) {
-		return new ResourceLocation("chaosmod:textures/technoblade.png");
+		return new ResourceLocation("chaosmod:textures/entities/technoblade.png");
 	}
 }

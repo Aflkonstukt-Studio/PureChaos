@@ -26,7 +26,7 @@ import java.util.Collections;
 
 public class PotatusBlock extends FlowerBlock {
 	public PotatusBlock() {
-		super(MobEffects.DIG_SLOWDOWN, 60, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.LILY_PAD).instabreak());
+		super(MobEffects.DIG_SLOWDOWN, 60, BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.LILY_PAD).instabreak().noCollission());
 	}
 
 	@Override

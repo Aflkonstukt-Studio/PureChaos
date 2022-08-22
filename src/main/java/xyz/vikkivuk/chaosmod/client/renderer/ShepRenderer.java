@@ -15,6 +15,6 @@ public class ShepRenderer extends MobRenderer<ShepEntity, Modelshep<ShepEntity>>
 
 	@Override
 	public ResourceLocation getTextureLocation(ShepEntity entity) {
-		return new ResourceLocation("chaosmod:textures/shep_texture.png");
+		return new ResourceLocation("chaosmod:textures/entities/shep_texture.png");
 	}
 }

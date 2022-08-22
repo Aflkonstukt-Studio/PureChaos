@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Amogus 3",
@@ -52,6 +52,7 @@
     "movementSpeed": 1.0,
     "armorBaseValue": 0.0,
     "trackingRange": 32,
+    "followRange": 16,
     "health": 50,
     "xpAmount": 99999,
     "waterMob": false,

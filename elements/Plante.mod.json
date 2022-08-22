@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -39,6 +39,7 @@
     "resistance": 0.0,
     "luminance": 0,
     "unbreakable": false,
+    "isSolid": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"

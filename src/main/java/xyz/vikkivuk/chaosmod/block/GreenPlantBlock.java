@@ -31,7 +31,7 @@ import java.util.Collections;
 
 public class GreenPlantBlock extends FlowerBlock {
 	public GreenPlantBlock() {
-		super(MobEffects.DIG_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
+		super(MobEffects.DIG_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
 	@Override

@@ -15,6 +15,6 @@ public class MothOfAggrevationRenderer extends MobRenderer<MothOfAggrevationEnti
 
 	@Override
 	public ResourceLocation getTextureLocation(MothOfAggrevationEntity entity) {
-		return new ResourceLocation("chaosmod:textures/moth.png");
+		return new ResourceLocation("chaosmod:textures/entities/moth.png");
 	}
 }

@@ -15,6 +15,6 @@ public class AMOGUS3BLURenderer extends MobRenderer<AMOGUS3BLUEntity, Modelamong
 
 	@Override
 	public ResourceLocation getTextureLocation(AMOGUS3BLUEntity entity) {
-		return new ResourceLocation("chaosmod:textures/bluamogus.png");
+		return new ResourceLocation("chaosmod:textures/entities/bluamogus.png");
 	}
 }

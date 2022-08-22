@@ -20,13 +20,13 @@ public class AentityRenderer extends HumanoidMobRenderer<AentityEntity, Humanoid
 		this.addLayer(new EyesLayer<AentityEntity, HumanoidModel<AentityEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("chaosmod:textures/rick_kurac.png"));
+				return RenderType.eyes(new ResourceLocation("chaosmod:textures/entities/rick_kurac.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(AentityEntity entity) {
-		return new ResourceLocation("chaosmod:textures/char.png");
+		return new ResourceLocation("chaosmod:textures/entities/char.png");
 	}
 }

@@ -39,14 +39,14 @@ public class TLGHDBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return this.defaultBlockState().setValue(WATERLOGGED, flag);
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(WATERLOGGED);
 	}
 
 	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(WATERLOGGED);
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		return this.defaultBlockState().setValue(WATERLOGGED, flag);
 	}
 
 	@Override

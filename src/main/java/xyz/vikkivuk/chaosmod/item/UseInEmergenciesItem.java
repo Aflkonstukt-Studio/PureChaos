@@ -32,11 +32,6 @@ public class UseInEmergenciesItem extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 0;
-	}
-
-	@Override
 	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		return true;

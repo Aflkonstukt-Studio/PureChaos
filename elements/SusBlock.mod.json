@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "block",
   "definition": {
     "texture": "among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
@@ -11,6 +11,7 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
+    "enablePitch": false,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "de5g6u1-de580faf-a210-480e-a49c-0f297b178fd1",
@@ -47,6 +48,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,

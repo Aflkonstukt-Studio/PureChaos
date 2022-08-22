@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Spongebob Boss",
@@ -52,6 +52,7 @@
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 100,
+    "followRange": 16,
     "health": 1000,
     "xpAmount": 0,
     "waterMob": false,

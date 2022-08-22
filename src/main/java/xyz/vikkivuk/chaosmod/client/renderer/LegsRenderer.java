@@ -15,6 +15,6 @@ public class LegsRenderer extends MobRenderer<LegsEntity, Modellegs<LegsEntity>>
 
 	@Override
 	public ResourceLocation getTextureLocation(LegsEntity entity) {
-		return new ResourceLocation("chaosmod:textures/legs.png");
+		return new ResourceLocation("chaosmod:textures/entities/legs.png");
 	}
 }

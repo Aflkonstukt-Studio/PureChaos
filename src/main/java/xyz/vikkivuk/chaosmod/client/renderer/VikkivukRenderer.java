@@ -15,6 +15,6 @@ public class VikkivukRenderer extends MobRenderer<VikkivukEntity, Modelvikkivuk_
 
 	@Override
 	public ResourceLocation getTextureLocation(VikkivukEntity entity) {
-		return new ResourceLocation("chaosmod:textures/vikkivuk.png");
+		return new ResourceLocation("chaosmod:textures/entities/vikkivuk.png");
 	}
 }

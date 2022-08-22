@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "JOSIP",
@@ -52,6 +52,7 @@
     "movementSpeed": 0.1,
     "armorBaseValue": 1.0,
     "trackingRange": 69,
+    "followRange": 16,
     "health": 7,
     "xpAmount": 69,
     "waterMob": true,

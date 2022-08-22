@@ -19,6 +19,6 @@ public class JosipdvatockanulaRenderer extends HumanoidMobRenderer<Josipdvatocka
 
 	@Override
 	public ResourceLocation getTextureLocation(JosipdvatockanulaEntity entity) {
-		return new ResourceLocation("chaosmod:textures/entity02redacted_form_2.png");
+		return new ResourceLocation("chaosmod:textures/entities/entity02redacted_form_2.png");
 	}
 }

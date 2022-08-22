@@ -15,6 +15,6 @@ public class CursedDogRenderer extends MobRenderer<CursedDogEntity, Modeldog<Cur
 
 	@Override
 	public ResourceLocation getTextureLocation(CursedDogEntity entity) {
-		return new ResourceLocation("chaosmod:textures/cursed_dog_texture.png");
+		return new ResourceLocation("chaosmod:textures/entities/cursed_dog_texture.png");
 	}
 }

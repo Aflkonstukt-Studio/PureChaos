@@ -15,6 +15,6 @@ public class StroaterRenderer extends MobRenderer<StroaterEntity, Modelstroater<
 
 	@Override
 	public ResourceLocation getTextureLocation(StroaterEntity entity) {
-		return new ResourceLocation("chaosmod:textures/stroater.png");
+		return new ResourceLocation("chaosmod:textures/entities/stroater.png");
 	}
 }

@@ -1,11 +1,11 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "structure",
   "definition": {
     "structure": "oil_mountain",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 25000,
+    "spawnProbability": 17000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,7 +13,16 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "Nether",
+      "End",
+      "CUSTOM:Peemension",
+      "CUSTOM:WoodDimension",
+      "CUSTOM:Sus",
+      "CUSTOM:Brazil",
+      "CUSTOM:Cyberspace",
+      "CUSTOM:Cioao",
+      "CUSTOM:Aether"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],

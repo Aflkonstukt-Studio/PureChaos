@@ -15,6 +15,6 @@ public class Amogus3Renderer extends MobRenderer<Amogus3Entity, Modelamongus_woo
 
 	@Override
 	public ResourceLocation getTextureLocation(Amogus3Entity entity) {
-		return new ResourceLocation("chaosmod:textures/mogus.png");
+		return new ResourceLocation("chaosmod:textures/entities/mogus.png");
 	}
 }

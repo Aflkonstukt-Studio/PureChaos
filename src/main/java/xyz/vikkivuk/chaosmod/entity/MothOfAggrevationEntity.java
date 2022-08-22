@@ -183,6 +183,7 @@ public class MothOfAggrevationEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 50);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 50);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}

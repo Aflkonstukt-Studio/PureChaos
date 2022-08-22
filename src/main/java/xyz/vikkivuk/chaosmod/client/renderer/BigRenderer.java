@@ -16,6 +16,6 @@ public class BigRenderer extends MobRenderer<BigEntity, PigModel<BigEntity>> {
 
 	@Override
 	public ResourceLocation getTextureLocation(BigEntity entity) {
-		return new ResourceLocation("chaosmod:textures/big_texture.png");
+		return new ResourceLocation("chaosmod:textures/entities/big_texture.png");
 	}
 }

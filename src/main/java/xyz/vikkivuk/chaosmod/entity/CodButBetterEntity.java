@@ -123,6 +123,7 @@ public class CodButBetterEntity extends Monster implements RangedAttackMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 5);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 10);
 		return builder;
 	}

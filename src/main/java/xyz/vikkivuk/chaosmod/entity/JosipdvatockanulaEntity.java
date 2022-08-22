@@ -243,6 +243,7 @@ public class JosipdvatockanulaEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 1000);
 		builder = builder.add(Attributes.ARMOR, 7);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 4.5);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.4);

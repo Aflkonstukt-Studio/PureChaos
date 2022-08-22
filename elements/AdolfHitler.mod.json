@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Adolf Hitler",
@@ -52,6 +52,7 @@
     "movementSpeed": 0.52,
     "armorBaseValue": 0.0,
     "trackingRange": 100,
+    "followRange": 16,
     "health": 100,
     "xpAmount": 5000,
     "waterMob": false,

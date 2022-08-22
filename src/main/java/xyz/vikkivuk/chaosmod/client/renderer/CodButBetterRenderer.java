@@ -15,6 +15,6 @@ public class CodButBetterRenderer extends MobRenderer<CodButBetterEntity, Modelc
 
 	@Override
 	public ResourceLocation getTextureLocation(CodButBetterEntity entity) {
-		return new ResourceLocation("chaosmod:textures/cod_but_better.png");
+		return new ResourceLocation("chaosmod:textures/entities/cod_but_better.png");
 	}
 }

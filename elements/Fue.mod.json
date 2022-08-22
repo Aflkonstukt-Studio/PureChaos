@@ -1,10 +1,15 @@
 {
-  "_fv": 28,
-  "_type": "fuel",
+  "_fv": 33,
+  "_type": "itemextension",
   "definition": {
-    "power": 1600,
-    "block": {
+    "item": {
       "value": "CUSTOM:Deek"
-    }
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 1600.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
   }
 }

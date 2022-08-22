@@ -20,13 +20,13 @@ public class JOSIPRenderer extends HumanoidMobRenderer<JOSIPEntity, HumanoidMode
 		this.addLayer(new EyesLayer<JOSIPEntity, HumanoidModel<JOSIPEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("chaosmod:textures/422888e8f9292a0c.png"));
+				return RenderType.eyes(new ResourceLocation("chaosmod:textures/entities/422888e8f9292a0c.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(JOSIPEntity entity) {
-		return new ResourceLocation("chaosmod:textures/422888e8f9292a0c.png");
+		return new ResourceLocation("chaosmod:textures/entities/422888e8f9292a0c.png");
 	}
 }

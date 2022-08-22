@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "livingentity",
   "definition": {
     "mobName": "Aentity",
@@ -52,6 +52,7 @@
     "movementSpeed": 1.6,
     "armorBaseValue": 0.0,
     "trackingRange": 100,
+    "followRange": 16,
     "health": 99,
     "xpAmount": 999,
     "waterMob": true,

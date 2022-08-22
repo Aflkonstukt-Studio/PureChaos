@@ -15,6 +15,6 @@ public class AMOGUS3GRINRenderer extends MobRenderer<AMOGUS3GRINEntity, Modelamo
 
 	@Override
 	public ResourceLocation getTextureLocation(AMOGUS3GRINEntity entity) {
-		return new ResourceLocation("chaosmod:textures/amogusgrin.png");
+		return new ResourceLocation("chaosmod:textures/entities/amogusgrin.png");
 	}
 }

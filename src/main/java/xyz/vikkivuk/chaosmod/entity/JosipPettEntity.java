@@ -313,6 +313,7 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 100);
 		builder = builder.add(Attributes.ARMOR, 1);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 5);
 		builder = builder.add(Attributes.FLYING_SPEED, 1);
 		return builder;

@@ -1,11 +1,11 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -19,19 +19,19 @@
         "value": ""
       },
       {
-        "value": "Blocks.STAINED_GLASS#7"
+        "value": "Blocks.TINTED_GLASS"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.STAINED_GLASS#7"
+        "value": "Blocks.TINTED_GLASS"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.STAINED_GLASS#7"
+        "value": "Blocks.TINTED_GLASS"
       },
       {
         "value": ""

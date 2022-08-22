@@ -37,7 +37,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/vikki_vuk_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/screens/vikki_vuk_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

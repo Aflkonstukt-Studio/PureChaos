@@ -37,7 +37,7 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		this.imageHeight = 46;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/computer_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("chaosmod:textures/screens/computer_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

@@ -26,7 +26,7 @@ import java.util.Collections;
 
 public class YoutubeBlock extends FlowerBlock {
 	public YoutubeBlock() {
-		super(MobEffects.MOVEMENT_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
+		super(MobEffects.MOVEMENT_SLOWDOWN, 100, BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
 	@Override

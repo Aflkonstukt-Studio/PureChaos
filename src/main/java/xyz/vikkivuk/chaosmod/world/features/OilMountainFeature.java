@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
@@ -41,7 +42,14 @@ public class OilMountainFeature extends Feature<NoneFeatureConfiguration> {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END,
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:wood_dimension")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:brazil")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cyberspace")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cioao")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:aether")));
 	private StructureTemplate template = null;
 
 	public OilMountainFeature() {
@@ -57,7 +65,7 @@ public class OilMountainFeature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 25000) {
+		if ((context.random().nextInt(1000000) + 1) <= 17000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);

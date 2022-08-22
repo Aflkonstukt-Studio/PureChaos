@@ -52,7 +52,7 @@ public class BleachOverlayOverlay {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
 			if (BleachOverlayDisplayOverlayIngameProcedure.execute(entity)) {
-				RenderSystem.setShaderTexture(0, new ResourceLocation("chaosmod:textures/white_screen.png"));
+				RenderSystem.setShaderTexture(0, new ResourceLocation("chaosmod:textures/screens/white_screen.png"));
 				Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -765, posY + -443, 0, 0, 1920, 1080, 1920, 1080);
 
 			}

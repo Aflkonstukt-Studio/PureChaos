@@ -221,6 +221,7 @@ public class Amogus3Entity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1000);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 420);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 69);
 		return builder;

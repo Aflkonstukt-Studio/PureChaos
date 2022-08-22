@@ -9,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -54,19 +53,19 @@ public class GraveBlock extends Block implements SimpleWaterloggedBlock
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(0, 0, 2, 4, 4, 14), box(0, 4, 3, 3, 16, 13), box(4, 0, 3, 18, 1, 13)).move(offset.x, offset.y, offset.z);
+
+		return Shapes.or(box(0, 0, 2, 4, 4, 14), box(0, 4, 3, 3, 16, 13), box(4, 0, 3, 18, 1, 13));
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
 		return this.defaultBlockState().setValue(WATERLOGGED, flag);
-	}
-
-	@Override
-	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(WATERLOGGED);
 	}
 
 	@Override

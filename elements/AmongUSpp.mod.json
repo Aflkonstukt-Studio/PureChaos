@@ -1,11 +1,11 @@
 {
-  "_fv": 28,
+  "_fv": 33,
   "_type": "structure",
   "definition": {
     "structure": "amongus",
     "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 50000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
