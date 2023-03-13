@@ -33,10 +33,9 @@ public class YoutubeFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new YoutubeFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:youtube", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.YOUTUBE.get().defaultBlockState())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:youtube", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:youtube", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.YOUTUBE.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:youtube", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

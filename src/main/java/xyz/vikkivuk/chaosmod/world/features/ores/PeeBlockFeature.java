@@ -43,10 +43,9 @@ public class PeeBlockFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new PeeBlockFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:pee_block", FEATURE,
-				new OreConfiguration(PeeBlockFeatureRuleTest.INSTANCE, ChaosmodModBlocks.PEE_BLOCK.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:pee_block", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-				HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:pee_block", FEATURE, new OreConfiguration(PeeBlockFeatureRuleTest.INSTANCE, ChaosmodModBlocks.PEE_BLOCK.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:pee_block", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

@@ -16,10 +16,9 @@ import java.util.List;
 
 public class BeefItem extends Item {
 	public BeefItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

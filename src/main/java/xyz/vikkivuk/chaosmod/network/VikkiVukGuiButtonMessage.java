@@ -70,7 +70,6 @@ public class VikkiVukGuiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ChaosmodMod.addNetworkMessage(VikkiVukGuiButtonMessage.class, VikkiVukGuiButtonMessage::buffer, VikkiVukGuiButtonMessage::new,
-				VikkiVukGuiButtonMessage::handler);
+		ChaosmodMod.addNetworkMessage(VikkiVukGuiButtonMessage.class, VikkiVukGuiButtonMessage::buffer, VikkiVukGuiButtonMessage::new, VikkiVukGuiButtonMessage::handler);
 	}
 }

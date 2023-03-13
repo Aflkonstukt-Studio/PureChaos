@@ -43,10 +43,9 @@ public class DeathFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new DeathFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:death", FEATURE,
-				new OreConfiguration(DeathFeatureRuleTest.INSTANCE, ChaosmodModBlocks.DEATH.get().defaultBlockState(), 3));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:death", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(70)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:death", FEATURE, new OreConfiguration(DeathFeatureRuleTest.INSTANCE, ChaosmodModBlocks.DEATH.get().defaultBlockState(), 3));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:death", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(70)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

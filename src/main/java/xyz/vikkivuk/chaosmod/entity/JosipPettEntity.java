@@ -1,7 +1,6 @@
 
 package xyz.vikkivuk.chaosmod.entity;
 
-import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModItems;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
@@ -61,7 +60,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import java.util.Random;
@@ -119,7 +117,7 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 			}
 		});
 		this.goalSelector.addGoal(7, new EatBlockGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -184,9 +182,7 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
 		} else if (this.level.isClientSide()) {
-			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack))
-					? InteractionResult.sidedSuccess(this.level.isClientSide())
-					: InteractionResult.PASS;
+			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack)) ? InteractionResult.sidedSuccess(this.level.isClientSide()) : InteractionResult.PASS;
 		} else {
 			if (this.isTame()) {
 				if (this.isOwnedBy(sourceentity)) {
@@ -284,26 +280,11 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 	public void aiStep() {
 		super.aiStep();
 		this.setNoGravity(true);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 0.5D;
-			double dy = (random.nextFloat() - 0.5D) * 0.5D;
-			double dz = (random.nextFloat() - 0.5D) * 0.5D;
-			world.addParticle((SimpleParticleType) (ChaosmodModParticleTypes.CUM_DRIP.get()), x0, y0, z0, dx, dy, dz);
-		}
 	}
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.JOSIP_PETT.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.JOSIP_PETT.get(), 180);
 	}
 

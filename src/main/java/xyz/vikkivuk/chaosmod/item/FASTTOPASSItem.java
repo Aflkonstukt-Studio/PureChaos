@@ -22,8 +22,7 @@ import java.util.List;
 
 public class FASTTOPASSItem extends RecordItem {
 	public FASTTOPASSItem() {
-		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:ahdude")),
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:ahdude")), new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

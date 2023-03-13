@@ -15,9 +15,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.resources.ResourceLocation;
 
 public abstract class GatoradeFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.GATORADE,
-			ChaosmodModFluids.FLOWING_GATORADE, FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/gatorade_normal_still"),
-					new ResourceLocation("chaosmod:blocks/gatorade_normal_flowing"))
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.GATORADE, ChaosmodModFluids.FLOWING_GATORADE,
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/gatorade_normal_still"), new ResourceLocation("chaosmod:blocks/gatorade_normal_flowing"))
 
 	).explosionResistance(100f)
 

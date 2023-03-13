@@ -18,10 +18,9 @@ import java.util.List;
 
 public class DoritoCoolRanchItem extends Item {
 	public DoritoCoolRanchItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(-10f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(20).saturationMod(-10f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

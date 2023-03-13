@@ -16,10 +16,9 @@ import java.util.List;
 
 public class HalfGoldenAppleItem extends Item {
 	public HalfGoldenAppleItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

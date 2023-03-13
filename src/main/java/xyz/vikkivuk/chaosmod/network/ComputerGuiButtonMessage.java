@@ -70,7 +70,6 @@ public class ComputerGuiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ChaosmodMod.addNetworkMessage(ComputerGuiButtonMessage.class, ComputerGuiButtonMessage::buffer, ComputerGuiButtonMessage::new,
-				ComputerGuiButtonMessage::handler);
+		ChaosmodMod.addNetworkMessage(ComputerGuiButtonMessage.class, ComputerGuiButtonMessage::buffer, ComputerGuiButtonMessage::new, ComputerGuiButtonMessage::handler);
 	}
 }

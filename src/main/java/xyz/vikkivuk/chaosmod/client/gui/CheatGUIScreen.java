@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -25,6 +25,9 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_switch_gamemode;
+	Button button_switch_dimension;
+	Button button_do_not_press;
 
 	public CheatGUIScreen(CheatGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,7 +75,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Cheat Menu", 58, 10, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.chaosmod.cheat_gui.label_cheat_menu"), 58, 10, -12829636);
 	}
 
 	@Override
@@ -85,15 +88,21 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 36, this.topPos + 31, 103, 20, new TextComponent("Switch Gamemode"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 33, this.topPos + 62, 108, 20, new TextComponent("Switch Dimension"), e -> {
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 42, this.topPos + 129, 88, 20, new TextComponent("DO_NOT_PRESS"), e -> {
+		button_switch_gamemode = new Button(this.leftPos + 36, this.topPos + 31, 103, 20, new TranslatableComponent("gui.chaosmod.cheat_gui.button_switch_gamemode"), e -> {
+		});
+		guistate.put("button:button_switch_gamemode", button_switch_gamemode);
+		this.addRenderableWidget(button_switch_gamemode);
+		button_switch_dimension = new Button(this.leftPos + 33, this.topPos + 62, 108, 20, new TranslatableComponent("gui.chaosmod.cheat_gui.button_switch_dimension"), e -> {
+		});
+		guistate.put("button:button_switch_dimension", button_switch_dimension);
+		this.addRenderableWidget(button_switch_dimension);
+		button_do_not_press = new Button(this.leftPos + 42, this.topPos + 129, 88, 20, new TranslatableComponent("gui.chaosmod.cheat_gui.button_do_not_press"), e -> {
 			if (true) {
 				ChaosmodMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(2, x, y, z));
 				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_do_not_press", button_do_not_press);
+		this.addRenderableWidget(button_do_not_press);
 	}
 }

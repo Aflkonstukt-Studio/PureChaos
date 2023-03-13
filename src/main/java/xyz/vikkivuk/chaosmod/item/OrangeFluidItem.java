@@ -18,8 +18,7 @@ import java.util.List;
 
 public class OrangeFluidItem extends BucketItem {
 	public OrangeFluidItem() {
-		super(ChaosmodModFluids.ORANGE_FLUID,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.EPIC).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.ORANGE_FLUID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.EPIC).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

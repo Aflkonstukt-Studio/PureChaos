@@ -42,8 +42,7 @@ public class GasChamberFeature extends Feature<NoneFeatureConfiguration> {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")));
 	private StructureTemplate template = null;
 
 	public GasChamberFeature() {
@@ -66,10 +65,8 @@ public class GasChamberFeature extends Feature<NoneFeatureConfiguration> {
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
-				if (template.placeInWorld(
-						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
-								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
-						context.random(), 2)) {
+				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
+						new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE).setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false), context.random(), 2)) {
 					anyPlaced = true;
 				}
 			}

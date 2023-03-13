@@ -15,6 +15,5 @@ import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ChaosmodModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, ChaosmodMod.MODID);
-	public static final RegistryObject<Enchantment> SEXY_ENCHANETEMENT = REGISTRY.register("sexy_enchanetement",
-			() -> new SexyEnchanetementEnchantment());
+	public static final RegistryObject<Enchantment> SEXY_ENCHANETEMENT = REGISTRY.register("sexy_enchanetement", () -> new SexyEnchanetementEnchantment());
 }

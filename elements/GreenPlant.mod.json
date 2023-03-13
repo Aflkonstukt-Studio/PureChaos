@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -79,6 +79,7 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
+    "isBonemealable": false,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"

@@ -32,8 +32,7 @@ public class SususTrunkDecorator extends TrunkVineDecorator {
 	}
 
 	@Override
-	public void place(LevelSimulatedReader levelReader, BiConsumer<BlockPos, BlockState> biConsumer, Random random, List<BlockPos> listBlockPos,
-			List<BlockPos> listBlockPos2) {
+	public void place(LevelSimulatedReader levelReader, BiConsumer<BlockPos, BlockState> biConsumer, Random random, List<BlockPos> listBlockPos, List<BlockPos> listBlockPos2) {
 		listBlockPos.forEach(blockpos -> {
 			if (random.nextInt(3) > 0) {
 				BlockPos bp = blockpos.below();

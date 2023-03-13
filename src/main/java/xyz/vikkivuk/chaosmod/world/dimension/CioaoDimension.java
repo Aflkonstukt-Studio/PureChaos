@@ -29,10 +29,8 @@ public class CioaoDimension {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.AZALEA);
 			event.enqueueWork(() -> {
-				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
-				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
+				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
+				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();
 			});
 		}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Cum",
@@ -19,7 +19,6 @@
     "luminosity": 9,
     "density": 1000,
     "viscosity": 1000,
-    "isGas": false,
     "temperature": 69420,
     "type": "LAVA",
     "generateBucket": true,
@@ -41,15 +40,6 @@
     "tickRate": 9,
     "flammability": 9,
     "fireSpreadSpeed": 12,
-    "colorOnMap": "DEEPSLATE_GRAY",
-    "frequencyOnChunks": 1,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "deep_frozen_ocean"
-      }
-    ]
+    "colorOnMap": "DEEPSLATE_GRAY"
   }
 }

@@ -43,10 +43,9 @@ public class EmepeeFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new EmepeeFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:emepee", FEATURE,
-				new OreConfiguration(EmepeeFeatureRuleTest.INSTANCE, ChaosmodModBlocks.EMEPEE.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:emepee", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(25)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:emepee", FEATURE, new OreConfiguration(EmepeeFeatureRuleTest.INSTANCE, ChaosmodModBlocks.EMEPEE.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:emepee", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(25)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

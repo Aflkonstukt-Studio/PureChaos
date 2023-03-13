@@ -22,8 +22,7 @@ public class MercuryPlayerFinishesUsingItemProcedure {
 		if (!world.isClientSide()) {
 			MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 			if (_mcserv != null)
-				_mcserv.getPlayerList().broadcastMessage(new TextComponent("someone just ate mercury and might die soon"), ChatType.SYSTEM,
-						Util.NIL_UUID);
+				_mcserv.getPlayerList().broadcastMessage(new TextComponent("someone just ate mercury and might die soon"), ChatType.SYSTEM, Util.NIL_UUID);
 		}
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(new TextComponent("why tf would you eat mercury"), (false));

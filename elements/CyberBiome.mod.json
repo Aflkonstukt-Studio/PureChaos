@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Cyber Biome",
@@ -34,16 +34,31 @@
       "value": "CUSTOM:CumDrip"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genHumidity": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genContinentalness": {
+      "min": 0.31,
+      "max": 0.71
+    },
+    "genErosion": {
+      "min": 0.6000000000000001,
+      "max": 1.0
+    },
+    "genWeirdness": {
+      "min": 0.7077518182377625,
+      "max": 1.1077518182377624
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

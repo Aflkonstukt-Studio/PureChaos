@@ -43,13 +43,11 @@ public class ChaosmodModFluids {
 	public static final RegistryObject<Fluid> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_GATORADE = REGISTRY.register("flowing_gatorade", () -> new GatoradeFluid.Flowing());
 	public static final RegistryObject<Fluid> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideFluid.Source());
-	public static final RegistryObject<Fluid> FLOWING_CARBON_MONOXIDE = REGISTRY.register("flowing_carbon_monoxide",
-			() -> new CarbonMonoxideFluid.Flowing());
+	public static final RegistryObject<Fluid> FLOWING_CARBON_MONOXIDE = REGISTRY.register("flowing_carbon_monoxide", () -> new CarbonMonoxideFluid.Flowing());
 	public static final RegistryObject<Fluid> MILK_2 = REGISTRY.register("milk_2", () -> new Milk2Fluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_MILK_2 = REGISTRY.register("flowing_milk_2", () -> new Milk2Fluid.Flowing());
 	public static final RegistryObject<Fluid> RADIATION_LIQUID = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidFluid.Source());
-	public static final RegistryObject<Fluid> FLOWING_RADIATION_LIQUID = REGISTRY.register("flowing_radiation_liquid",
-			() -> new RadiationLiquidFluid.Flowing());
+	public static final RegistryObject<Fluid> FLOWING_RADIATION_LIQUID = REGISTRY.register("flowing_radiation_liquid", () -> new RadiationLiquidFluid.Flowing());
 	public static final RegistryObject<Fluid> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidFluid.Source());
 	public static final RegistryObject<Fluid> FLOWING_COBBLE_FLUID = REGISTRY.register("flowing_cobble_fluid", () -> new CobbleFluidFluid.Flowing());
 

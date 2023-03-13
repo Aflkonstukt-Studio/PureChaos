@@ -19,10 +19,8 @@ import java.util.Collections;
 
 public class GreengiscreendaBlock extends Block {
 	public GreengiscreendaBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(new ForgeSoundType(1.0f, 1.0f,
-				() -> new SoundEvent(new ResourceLocation("chaosmod:fu-k")), () -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")),
-				() -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")), () -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")),
-				() -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")))).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("chaosmod:fu-k")), () -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")),
+				() -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")), () -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")), () -> new SoundEvent(new ResourceLocation("chaosmod:dudeshutt")))).strength(1f, 10f));
 	}
 
 	@Override

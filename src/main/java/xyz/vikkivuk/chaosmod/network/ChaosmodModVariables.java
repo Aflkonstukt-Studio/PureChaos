@@ -24,8 +24,7 @@ import java.util.function.Supplier;
 public class ChaosmodModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		ChaosmodMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new,
-				SavedDataSyncMessage::handler);
+		ChaosmodMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
 	}
 
 	@Mod.EventBusSubscriber
@@ -36,11 +35,9 @@ public class ChaosmodModVariables {
 				SavedData mapdata = MapVariables.get(event.getPlayer().level);
 				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
 				if (mapdata != null)
-					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(0, mapdata));
+					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(0, mapdata));
 				if (worlddata != null)
-					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(1, worlddata));
+					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 
@@ -49,8 +46,7 @@ public class ChaosmodModVariables {
 			if (!event.getPlayer().level.isClientSide()) {
 				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
 				if (worlddata != null)
-					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()),
-							new SavedDataSyncMessage(1, worlddata));
+					ChaosmodMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(1, worlddata));
 			}
 		}
 	}
@@ -119,8 +115,7 @@ public class ChaosmodModVariables {
 
 		public static MapVariables get(LevelAccessor world) {
 			if (world instanceof ServerLevelAccessor serverLevelAcc) {
-				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e),
-						MapVariables::new, DATA_NAME);
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
 			} else {
 				return clientSide;
 			}

@@ -18,8 +18,7 @@ import java.util.List;
 
 public class OilItem extends BucketItem {
 	public OilItem() {
-		super(ChaosmodModFluids.OIL,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.EPIC).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.EPIC).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

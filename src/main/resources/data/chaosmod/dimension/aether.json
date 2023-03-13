@@ -91,31 +91,40 @@
           "biome": "chaosmod:susus",
           "parameters": {
             "temperature": [
-              -0.142857142857,
-              0.142857142857
+              -0.2,
+              0.2
             ],
             "humidity": [
-              -0.142857142857,
-              0.142857142857
+              -0.2,
+              0.2
             ],
             "continentalness": [
-              0.367142857143,
-              0.652857142857
+              0.31,
+              0.71
             ],
             "weirdness": [
-              0.832306017941,
-              1.118020303655
+              0.05326917448766183,
+              0.45326917448766185
             ],
             "erosion": [
-              0.657142857143,
-              0.942857142857
+              0.6000000000000001,
+              1
             ],
             "depth": 0,
             "offset": 0
           }
         },
         {
-          "biome": "end_midlands"
+          "biome": "end_midlands",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "flower_forest",
@@ -202,30 +211,39 @@
           }
         },
         {
-          "biome": "the_end"
+          "biome": "the_end",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "chaosmod:hell_but_overworld",
           "parameters": {
             "temperature": [
-              0.571428571429,
-              1.428571428571
+              0.4,
+              1.6
             ],
             "humidity": [
-              -1.428571428571,
-              -0.571428571429
+              -1.6,
+              -0.4
             ],
             "continentalness": [
-              0.081428571429,
-              0.938571428571
+              -0.08999999999999997,
+              1.1099999999999999
             ],
             "weirdness": [
-              0.546591732227,
-              1.403734589369
+              -1.4389929886453405,
+              -0.2389929886453407
             ],
             "erosion": [
-              0.371428571429,
-              1.228571428571
+              0.20000000000000007,
+              1.4
             ],
             "depth": 0,
             "offset": 0
@@ -721,7 +739,16 @@
           }
         },
         {
-          "biome": "warped_forest"
+          "biome": "warped_forest",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0.5,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0.375
+          }
         },
         {
           "biome": "frozen_river",
@@ -967,7 +994,16 @@
           }
         },
         {
-          "biome": "nether_wastes"
+          "biome": "nether_wastes",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "bamboo_jungle",
@@ -997,10 +1033,28 @@
           }
         },
         {
-          "biome": "soul_sand_valley"
+          "biome": "soul_sand_valley",
+          "parameters": {
+            "temperature": 0,
+            "humidity": -0.5,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
-          "biome": "small_end_islands"
+          "biome": "small_end_islands",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "plains",
@@ -1057,7 +1111,16 @@
           }
         },
         {
-          "biome": "end_highlands"
+          "biome": "end_highlands",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "meadow",
@@ -1087,7 +1150,16 @@
           }
         },
         {
-          "biome": "end_barrens"
+          "biome": "end_barrens",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "old_growth_spruce_taiga",
@@ -1117,7 +1189,16 @@
           }
         },
         {
-          "biome": "basalt_deltas"
+          "biome": "basalt_deltas",
+          "parameters": {
+            "temperature": -0.5,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0.175
+          }
         },
         {
           "biome": "taiga",
@@ -1147,30 +1228,39 @@
           }
         },
         {
-          "biome": "crimson_forest"
+          "biome": "crimson_forest",
+          "parameters": {
+            "temperature": 0.4,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "chaosmod:ekesmasterbait",
           "parameters": {
             "temperature": [
-              -0.357142857143,
-              0.357142857143
+              -0.5,
+              0.5
             ],
             "humidity": [
-              -0.157142857143,
-              0.557142857143
+              -0.30000000000000004,
+              0.7
             ],
             "continentalness": [
-              0.242857142857,
-              0.957142857143
+              0.09999999999999998,
+              1.1
             ],
             "weirdness": [
-              0.618020303655,
-              1.332306017941
+              -0.2231725446202184,
+              0.7768274553797816
             ],
             "erosion": [
-              0.442857142857,
-              1.157142857143
+              0.30000000000000004,
+              1.3
             ],
             "depth": 0,
             "offset": 0
@@ -1288,24 +1378,24 @@
           "biome": "chaosmod:cyber_biome",
           "parameters": {
             "temperature": [
-              -0.142857142857,
-              0.142857142857
+              -0.2,
+              0.2
             ],
             "humidity": [
-              -0.142857142857,
-              0.142857142857
+              -0.2,
+              0.2
             ],
             "continentalness": [
-              0.367142857143,
-              0.652857142857
+              0.31,
+              0.71
             ],
             "weirdness": [
-              0.832306017941,
-              1.118020303655
+              0.7077518182377625,
+              1.1077518182377624
             ],
             "erosion": [
-              0.657142857143,
-              0.942857142857
+              0.6000000000000001,
+              1
             ],
             "depth": 0,
             "offset": 0
@@ -1393,7 +1483,16 @@
           }
         },
         {
-          "biome": "the_void"
+          "biome": "the_void",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "weirdness": 0,
+            "erosion": 0,
+            "depth": 0,
+            "offset": 0
+          }
         },
         {
           "biome": "windswept_forest",

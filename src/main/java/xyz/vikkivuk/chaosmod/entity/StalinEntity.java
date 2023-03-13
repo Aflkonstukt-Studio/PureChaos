@@ -70,14 +70,14 @@ public class StalinEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -107,8 +107,7 @@ public class StalinEntity extends Monster implements RangedAttackMob {
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.STALIN.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

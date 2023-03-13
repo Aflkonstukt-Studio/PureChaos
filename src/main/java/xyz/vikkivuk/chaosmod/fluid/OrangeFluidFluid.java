@@ -19,8 +19,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleOptions;
 
 public abstract class OrangeFluidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.ORANGE_FLUID,
-			ChaosmodModFluids.FLOWING_ORANGE_FLUID,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.ORANGE_FLUID, ChaosmodModFluids.FLOWING_ORANGE_FLUID,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/gatorade_still"), new ResourceLocation("chaosmod:blocks/gatorade_flow"))
 
 					.rarity(Rarity.EPIC))

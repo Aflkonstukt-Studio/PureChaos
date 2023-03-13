@@ -9,9 +9,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class PotatoSpudsItem extends Item {
 	public PotatoSpudsItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f).alwaysEat()
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 }

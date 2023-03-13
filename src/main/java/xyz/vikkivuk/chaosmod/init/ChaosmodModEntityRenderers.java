@@ -27,6 +27,7 @@ import xyz.vikkivuk.chaosmod.client.renderer.IkeaDeskRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.FireflyRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.DreamRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CursedDogRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.CupcakkeRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.CodButBetterRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.BlazRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.BigRenderer;
@@ -90,5 +91,6 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.JAVELIN_LAUNCHER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.BIG.get(), BigRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.TECHNOBLADE.get(), TechnobladeRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.CUPCAKKE.get(), CupcakkeRenderer::new);
 	}
 }

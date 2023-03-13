@@ -17,10 +17,9 @@ import java.util.List;
 
 public class AlmondWaterItem extends Item {
 	public AlmondWaterItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.EPIC)
-				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(20f).alwaysEat()
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationMod(20f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

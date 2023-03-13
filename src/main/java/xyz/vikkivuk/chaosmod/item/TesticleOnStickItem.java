@@ -50,10 +50,9 @@ public class TesticleOnStickItem extends Item {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE,
-					new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 997d, AttributeModifier.Operation.ADDITION));
-			builder.put(Attributes.ATTACK_SPEED,
-					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 997d, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
 	}
@@ -71,9 +70,8 @@ public class TesticleOnStickItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
-		TesticleOnStickRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
-				context.getClickedPos().getZ(), context.getItemInHand());
-		return retval;
+		super.useOn(context);
+		TesticleOnStickRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
+		return InteractionResult.SUCCESS;
 	}
 }

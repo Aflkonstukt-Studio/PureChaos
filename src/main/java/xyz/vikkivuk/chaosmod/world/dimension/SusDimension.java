@@ -35,10 +35,8 @@ public class SusDimension {
 			replaceableBlocks.add(Blocks.NETHERRACK);
 			replaceableBlocks.add(Blocks.NETHERRACK);
 			event.enqueueWork(() -> {
-				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
-				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
+				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
+				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();
 			});
 		}
 

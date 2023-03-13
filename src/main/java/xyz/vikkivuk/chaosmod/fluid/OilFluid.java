@@ -16,10 +16,8 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.resources.ResourceLocation;
 
 public abstract class OilFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.OIL,
-			ChaosmodModFluids.FLOWING_OIL,
-			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/oil_still"), new ResourceLocation("chaosmod:blocks/oil_flowing"))
-					.luminosity(15)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.OIL, ChaosmodModFluids.FLOWING_OIL,
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/oil_still"), new ResourceLocation("chaosmod:blocks/oil_flowing")).luminosity(15)
 
 					.rarity(Rarity.EPIC))
 			.explosionResistance(100f).canMultiply().tickRate(1)

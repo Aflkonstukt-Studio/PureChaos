@@ -52,7 +52,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 @Mod.EventBusSubscriber
@@ -91,7 +90,7 @@ public class Amogus2Entity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -221,26 +220,11 @@ public class Amogus2Entity extends Monster {
 	public void aiStep() {
 		super.aiStep();
 		this.setNoGravity(true);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 1D;
-			double dy = (random.nextFloat() - 0.5D) * 1D;
-			double dz = (random.nextFloat() - 0.5D) * 1D;
-			world.addParticle(ParticleTypes.SPIT, x0, y0, z0, dx, dy, dz);
-		}
 	}
 
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.AMOGUS_2.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.AMOGUS_2.get(), 180);
 	}
 

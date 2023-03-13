@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "backrooms_light",
@@ -101,13 +101,7 @@
     "luminance": 15,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "SPIT"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.1,
-    "particleAmount": 1,
+    "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

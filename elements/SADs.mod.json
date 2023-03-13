@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "sads",
@@ -99,13 +99,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "WATER_BUBBLE"
-    },
-    "particleSpawningShape": "Top",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

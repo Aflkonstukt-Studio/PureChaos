@@ -32,10 +32,8 @@ public class CyberspaceDimension {
 			replaceableBlocks.add(ChaosmodModBlocks.CYBER_BLOCK.get());
 			replaceableBlocks.add(ChaosmodModBlocks.CYBER_BLOCK.get());
 			event.enqueueWork(() -> {
-				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
-				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks)
-						.addAll(replaceableBlocks).build();
+				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
+				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();
 			});
 		}
 

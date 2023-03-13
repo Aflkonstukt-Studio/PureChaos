@@ -200,5 +200,41 @@
         "stream": false
       }
     ]
+  },
+  "smack_my_ass": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "chaosmod:papi_smack_my_a_-_cupcakke_sound_effect-youtubeconvert.cc",
+        "stream": false
+      }
+    ]
+  },
+  "ugh_cupcakke": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "chaosmod:cupcakke-ugh-by-tuna",
+        "stream": false
+      }
+    ]
+  },
+  "gulp_gulp": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "chaosmod:cupcakke-gulp-gulp-by-tuna",
+        "stream": false
+      }
+    ]
+  },
+  "wet_cupcakke": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "chaosmod:cupcakke-by-tuna",
+        "stream": false
+      }
+    ]
   }
 }

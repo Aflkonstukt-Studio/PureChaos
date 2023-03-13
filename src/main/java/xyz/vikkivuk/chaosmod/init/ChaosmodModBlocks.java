@@ -69,8 +69,7 @@ public class ChaosmodModBlocks {
 	public static final RegistryObject<Block> POTATUS = REGISTRY.register("potatus", () -> new PotatusBlock());
 	public static final RegistryObject<Block> EMEPEE = REGISTRY.register("emepee", () -> new EmepeeBlock());
 	public static final RegistryObject<Block> DEATH = REGISTRY.register("death", () -> new DeathBlock());
-	public static final RegistryObject<Block> WOOD_DIMENSION_PORTAL = REGISTRY.register("wood_dimension_portal",
-			() -> new WoodDimensionPortalBlock());
+	public static final RegistryObject<Block> WOOD_DIMENSION_PORTAL = REGISTRY.register("wood_dimension_portal", () -> new WoodDimensionPortalBlock());
 	public static final RegistryObject<Block> SUS_BLOCK = REGISTRY.register("sus_block", () -> new SusBlockBlock());
 	public static final RegistryObject<Block> CUM = REGISTRY.register("cum", () -> new CumBlock());
 	public static final RegistryObject<Block> SUS_PORTAL = REGISTRY.register("sus_portal", () -> new SusPortalBlock());
@@ -112,13 +111,19 @@ public class ChaosmodModBlocks {
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
+			PeemensionPortalBlock.registerRenderLayer();
 			PotatusBlock.registerRenderLayer();
+			WoodDimensionPortalBlock.registerRenderLayer();
+			SusPortalBlock.registerRenderLayer();
 			GreenPlantBlock.registerRenderLayer();
 			TombstoneBlock.registerRenderLayer();
 			YoutubeBlock.registerRenderLayer();
 			PlanteBlock.registerRenderLayer();
 			GraveBlock.registerRenderLayer();
+			CioaoPortalBlock.registerRenderLayer();
+			BrazilPortalBlock.registerRenderLayer();
 			ComputerBlock.registerRenderLayer();
+			AetherPortalBlock.registerRenderLayer();
 		}
 	}
 }

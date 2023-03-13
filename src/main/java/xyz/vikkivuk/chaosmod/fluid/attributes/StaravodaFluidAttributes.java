@@ -17,8 +17,7 @@ public class StaravodaFluidAttributes extends FluidAttributes {
 	}
 
 	public static class CustomBuilder extends FluidAttributes.Builder {
-		protected CustomBuilder(ResourceLocation stillTexture, ResourceLocation flowingTexture,
-				BiFunction<FluidAttributes.Builder, Fluid, FluidAttributes> factory) {
+		protected CustomBuilder(ResourceLocation stillTexture, ResourceLocation flowingTexture, BiFunction<FluidAttributes.Builder, Fluid, FluidAttributes> factory) {
 			super(stillTexture, flowingTexture, factory);
 		}
 	}

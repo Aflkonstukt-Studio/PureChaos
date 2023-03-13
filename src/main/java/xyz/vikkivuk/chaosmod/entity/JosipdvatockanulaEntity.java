@@ -38,7 +38,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
@@ -46,7 +45,6 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 import java.util.Set;
@@ -58,12 +56,10 @@ public class JosipdvatockanulaEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), 5, 1, 2));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), 5, 1, 2));
 	}
 
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
-			ServerBossEvent.BossBarOverlay.PROGRESS);
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED, ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public JosipdvatockanulaEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), world);
@@ -100,7 +96,7 @@ public class JosipdvatockanulaEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -214,27 +210,15 @@ public class JosipdvatockanulaEntity extends Monster {
 	public void aiStep() {
 		super.aiStep();
 		this.setNoGravity(true);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 2; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.5D;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
-			world.addParticle(ParticleTypes.SOUL, x0, y0, z0, 0, 0, 0);
-		}
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
-				});
+		SpawnPlacements.register(ChaosmodModEntities.JOSIPDVATOCKANULA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

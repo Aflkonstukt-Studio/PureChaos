@@ -11,7 +11,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class TOItem extends RecordItem {
 	public TOItem() {
-		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:crnidani")),
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:crnidani")), new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 }

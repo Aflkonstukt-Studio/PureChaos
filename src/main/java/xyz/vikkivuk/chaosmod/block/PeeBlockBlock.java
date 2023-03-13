@@ -33,13 +33,10 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class PeeBlockBlock extends Block
-		implements
-
-			EntityBlock {
+public class PeeBlockBlock extends Block implements EntityBlock {
 	public PeeBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.DIAMOND).sound(SoundType.SLIME_BLOCK).strength(5f, 9999999f).friction(1.2f)
-				.speedFactor(0.8f).jumpFactor(0.5f).randomTicks().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.DIAMOND).sound(SoundType.SLIME_BLOCK).strength(5f, 9999999f).friction(1.2f).speedFactor(0.8f).jumpFactor(0.5f).randomTicks().hasPostProcess((bs, br, bp) -> true)
+				.emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

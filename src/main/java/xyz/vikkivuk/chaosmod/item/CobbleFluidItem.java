@@ -11,7 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CobbleFluidItem extends BucketItem {
 	public CobbleFluidItem() {
-		super(ChaosmodModFluids.COBBLE_FLUID,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.COBBLE_FLUID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 }

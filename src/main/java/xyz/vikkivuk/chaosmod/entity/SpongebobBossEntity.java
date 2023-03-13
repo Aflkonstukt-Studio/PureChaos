@@ -56,8 +56,7 @@ public class SpongebobBossEntity extends Monster {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.SPONGEBOB_BOSS.get(), 5, 1, 2));
 	}
 
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW,
-			ServerBossEvent.BossBarOverlay.PROGRESS);
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.YELLOW, ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public SpongebobBossEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ChaosmodModEntities.SPONGEBOB_BOSS.get(), world);
@@ -98,8 +97,7 @@ public class SpongebobBossEntity extends Monster {
 
 			@Override
 			public boolean canContinueToUse() {
-				return SpongebobBossEntity.this.getMoveControl().hasWanted() && SpongebobBossEntity.this.getTarget() != null
-						&& SpongebobBossEntity.this.getTarget().isAlive();
+				return SpongebobBossEntity.this.getMoveControl().hasWanted() && SpongebobBossEntity.this.getTarget() != null && SpongebobBossEntity.this.getTarget().isAlive();
 			}
 
 			@Override
@@ -136,7 +134,7 @@ public class SpongebobBossEntity extends Monster {
 		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -211,13 +209,12 @@ public class SpongebobBossEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ChaosmodModEntities.SPONGEBOB_BOSS.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> {
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
-				});
+		SpawnPlacements.register(ChaosmodModEntities.SPONGEBOB_BOSS.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

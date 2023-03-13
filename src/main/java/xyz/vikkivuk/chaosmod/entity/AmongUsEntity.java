@@ -2,7 +2,6 @@
 package xyz.vikkivuk.chaosmod.entity;
 
 import xyz.vikkivuk.chaosmod.procedures.DirtswordLivingEntityIsHitWithToolProcedure;
-import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModEntities;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
@@ -46,7 +45,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import java.util.EnumSet;
@@ -82,7 +80,7 @@ public class AmongUsEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -105,8 +103,7 @@ public class AmongUsEntity extends Monster {
 
 			@Override
 			public boolean canContinueToUse() {
-				return AmongUsEntity.this.getMoveControl().hasWanted() && AmongUsEntity.this.getTarget() != null
-						&& AmongUsEntity.this.getTarget().isAlive();
+				return AmongUsEntity.this.getMoveControl().hasWanted() && AmongUsEntity.this.getTarget() != null && AmongUsEntity.this.getTarget().isAlive();
 			}
 
 			@Override
@@ -224,28 +221,9 @@ public class AmongUsEntity extends Monster {
 		super.travel(dir);
 	}
 
-	public void aiStep() {
-		super.aiStep();
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity entity = this;
-		Level world = this.level;
-		for (int l = 0; l < 6; ++l) {
-			double x0 = x + random.nextFloat();
-			double y0 = y + random.nextFloat();
-			double z0 = z + random.nextFloat();
-			double dx = (random.nextFloat() - 0.5D) * 2D;
-			double dy = (random.nextFloat() - 0.5D) * 2D;
-			double dz = (random.nextFloat() - 0.5D) * 2D;
-			world.addParticle((SimpleParticleType) (ChaosmodModParticleTypes.CUM_DRIP.get()), x0, y0, z0, dx, dy, dz);
-		}
-	}
-
 	public static void init() {
 		SpawnPlacements.register(ChaosmodModEntities.AMONG_US.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.AMONG_US.get(), 180);
 	}
 

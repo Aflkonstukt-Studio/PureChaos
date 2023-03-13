@@ -19,10 +19,9 @@ import java.util.List;
 
 public class MercuryItem extends Item {
 	public MercuryItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(-20).saturationMod(-20f).alwaysEat()
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-20).saturationMod(-20f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

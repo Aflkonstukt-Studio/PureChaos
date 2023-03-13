@@ -23,10 +23,9 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class AppleIngotItem extends Item {
 	public AppleIngotItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).durability(100).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(20f).alwaysEat()
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).durability(100).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(20).saturationMod(20f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override
@@ -34,10 +33,9 @@ public class AppleIngotItem extends Item {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE,
-					new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 10d, AttributeModifier.Operation.ADDITION));
-			builder.put(Attributes.ATTACK_SPEED,
-					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 10d, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
 	}

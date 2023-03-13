@@ -42,14 +42,10 @@ public class OilMountainFeature extends Feature<NoneFeatureConfiguration> {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END,
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:wood_dimension")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:brazil")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cyberspace")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cioao")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:aether")));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:wood_dimension")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:sus")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:brazil")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cyberspace")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:cioao")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:aether")));
 	private StructureTemplate template = null;
 
 	public OilMountainFeature() {
@@ -72,11 +68,8 @@ public class OilMountainFeature extends Feature<NoneFeatureConfiguration> {
 				int k = context.origin().getZ() + context.random().nextInt(16);
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
-				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
-						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
-								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
-								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
-						context.random(), 2)) {
+				if (template.placeInWorld(context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)]).setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
+						.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false), context.random(), 2)) {
 					anyPlaced = true;
 				}
 			}

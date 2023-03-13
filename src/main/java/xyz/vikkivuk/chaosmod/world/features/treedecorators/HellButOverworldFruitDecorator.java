@@ -36,8 +36,7 @@ public class HellButOverworldFruitDecorator extends CocoaDecorator {
 	}
 
 	@Override
-	public void place(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> biConsumer, Random random, List<BlockPos> blocks,
-			List<BlockPos> blocks2) {
+	public void place(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> biConsumer, Random random, List<BlockPos> blocks, List<BlockPos> blocks2) {
 		if (!(random.nextFloat() >= 0.2F)) {
 			int i = blocks.get(0).getY();
 			blocks.stream().filter((p_69980_) -> {

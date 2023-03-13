@@ -22,8 +22,7 @@ public class ChaosmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SA_DS = register("sa_ds", ChaosmodModBlocks.SA_DS, SADsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TOMBSTONE = register("tombstone", ChaosmodModBlocks.TOMBSTONE, TombstoneBlockEntity::new);
 
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
-			BlockEntityType.BlockEntitySupplier<?> supplier) {
+	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}
 }

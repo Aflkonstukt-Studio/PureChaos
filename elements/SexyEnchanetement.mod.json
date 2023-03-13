@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "enchantment",
   "definition": {
     "name": "Sexy",
@@ -9,7 +9,9 @@
     "maxLevel": 1,
     "damageModifier": 0,
     "compatibleEnchantments": [],
+    "excludeEnchantments": false,
     "compatibleItems": [],
+    "excludeItems": false,
     "isTreasureEnchantment": true,
     "isCurse": false,
     "isAllowedOnBooks": true,

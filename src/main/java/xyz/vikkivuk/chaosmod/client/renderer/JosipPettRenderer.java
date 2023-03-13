@@ -16,8 +16,7 @@ public class JosipPettRenderer extends MobRenderer<JosipPettEntity, Modeljosipmm
 		this.addLayer(new EyesLayer<JosipPettEntity, Modeljosipmmarket<JosipPettEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType
-						.eyes(new ResourceLocation("chaosmod:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png"));
+				return RenderType.eyes(new ResourceLocation("chaosmod:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png"));
 			}
 		});
 	}

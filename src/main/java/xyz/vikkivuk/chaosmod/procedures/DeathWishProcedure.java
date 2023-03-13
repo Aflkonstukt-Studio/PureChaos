@@ -21,8 +21,7 @@ import javax.annotation.Nullable;
 public class DeathWishProcedure {
 	@SubscribeEvent
 	public static void onChat(ServerChatEvent event) {
-		execute(event, event.getPlayer().level, event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getPlayer(),
-				event.getMessage());
+		execute(event, event.getPlayer().level, event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getPlayer(), event.getMessage());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, String text) {

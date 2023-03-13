@@ -17,8 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class CarbonMonoxideBlock extends LiquidBlock {
 	public CarbonMonoxideBlock() {
-		super(() -> (FlowingFluid) ChaosmodModFluids.CARBON_MONOXIDE.get(),
-				BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_YELLOW).strength(100f)
+		super(() -> (FlowingFluid) ChaosmodModFluids.CARBON_MONOXIDE.get(), BlockBehaviour.Properties.of(Material.WATER, MaterialColor.COLOR_YELLOW).strength(100f)
 
 		);
 	}

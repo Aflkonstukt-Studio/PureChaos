@@ -19,10 +19,9 @@ import java.util.List;
 
 public class KentuckyFriedChickenItem extends Item {
 	public KentuckyFriedChickenItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

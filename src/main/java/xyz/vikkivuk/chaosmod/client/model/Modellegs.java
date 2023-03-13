@@ -32,10 +32,8 @@ public class Modellegs<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(16, 19).addBox(-6.0F, -1.0F, -3.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 19)
-						.addBox(2.0F, -1.0F, -3.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(12, 0)
-						.addBox(2.0F, -18.0F, -1.0F, 4.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-6.0F, -18.0F, -1.0F, 4.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(16, 19).addBox(-6.0F, -1.0F, -3.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 19).addBox(2.0F, -1.0F, -3.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(12, 0)
+						.addBox(2.0F, -18.0F, -1.0F, 4.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-6.0F, -18.0F, -1.0F, 4.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 32);
 	}
@@ -45,8 +43,7 @@ public class Modellegs<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

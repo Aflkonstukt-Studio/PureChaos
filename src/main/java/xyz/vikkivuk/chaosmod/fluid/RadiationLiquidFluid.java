@@ -15,9 +15,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.resources.ResourceLocation;
 
 public abstract class RadiationLiquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.RADIATION_LIQUID,
-			ChaosmodModFluids.FLOWING_RADIATION_LIQUID, FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/radiation_liquid"),
-					new ResourceLocation("chaosmod:blocks/radiation_liquid"))
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.RADIATION_LIQUID, ChaosmodModFluids.FLOWING_RADIATION_LIQUID,
+			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/radiation_liquid"), new ResourceLocation("chaosmod:blocks/radiation_liquid"))
 
 	).explosionResistance(100f)
 

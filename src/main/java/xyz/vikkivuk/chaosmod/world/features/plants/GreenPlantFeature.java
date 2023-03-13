@@ -32,10 +32,9 @@ public class GreenPlantFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new GreenPlantFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:green_plant", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.GREEN_PLANT.get().defaultBlockState())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:green_plant", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:green_plant", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.GREEN_PLANT.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:green_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

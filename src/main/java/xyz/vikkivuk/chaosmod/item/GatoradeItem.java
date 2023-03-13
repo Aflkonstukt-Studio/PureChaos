@@ -11,7 +11,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class GatoradeItem extends BucketItem {
 	public GatoradeItem() {
-		super(ChaosmodModFluids.GATORADE,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.GATORADE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 }

@@ -1,17 +1,19 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "musicdisc",
   "definition": {
-    "texture": "scratest_disc",
     "name": "GalaxyHunterGT - Scratest",
+    "texture": "scratest_disc",
     "description": "idk man stop asking me",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
+    "specialInfo": [],
+    "hasGlow": true,
     "music": {
       "value": "CUSTOM:scratest"
     },
-    "specialInfo": [],
-    "hasGlow": true
+    "lengthInTicks": 0,
+    "analogOutput": 0
   }
 }

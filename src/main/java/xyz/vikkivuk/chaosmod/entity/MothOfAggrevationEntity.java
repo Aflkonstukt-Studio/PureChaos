@@ -48,8 +48,7 @@ import java.util.EnumSet;
 public class MothOfAggrevationEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER)
-				.add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 12, 1, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 12, 1, 4));
 	}
 
 	public MothOfAggrevationEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -79,7 +78,7 @@ public class MothOfAggrevationEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true));
@@ -98,8 +97,7 @@ public class MothOfAggrevationEntity extends Monster {
 
 			@Override
 			public boolean canContinueToUse() {
-				return MothOfAggrevationEntity.this.getMoveControl().hasWanted() && MothOfAggrevationEntity.this.getTarget() != null
-						&& MothOfAggrevationEntity.this.getTarget().isAlive();
+				return MothOfAggrevationEntity.this.getMoveControl().hasWanted() && MothOfAggrevationEntity.this.getTarget() != null && MothOfAggrevationEntity.this.getTarget().isAlive();
 			}
 
 			@Override
@@ -171,9 +169,8 @@ public class MothOfAggrevationEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), SpawnPlacements.Type.ON_GROUND,
-				Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 		DungeonHooks.addDungeonMob(ChaosmodModEntities.MOTH_OF_AGGREVATION.get(), 180);
 	}
 

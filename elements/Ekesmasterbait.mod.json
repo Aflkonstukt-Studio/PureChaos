@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Reality Biome",
@@ -50,16 +50,31 @@
       "value": "WATER_DROP"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
     "rainingPossibility": 0.6,
     "temperature": 0.5,
-    "baseHeight": 1.0,
-    "heightVariation": 0.2,
     "spawnBiome": true,
-    "spawnBiomeNether": true,
     "spawnInCaves": true,
-    "biomeWeight": 25,
-    "biomeDictionaryTypes": [],
+    "spawnBiomeNether": true,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genHumidity": {
+      "min": -0.30000000000000004,
+      "max": 0.7
+    },
+    "genContinentalness": {
+      "min": 0.09999999999999998,
+      "max": 1.1
+    },
+    "genErosion": {
+      "min": 0.30000000000000004,
+      "max": 1.3
+    },
+    "genWeirdness": {
+      "min": -0.2231725446202184,
+      "max": 0.7768274553797816
+    },
     "grassPerChunk": 5,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

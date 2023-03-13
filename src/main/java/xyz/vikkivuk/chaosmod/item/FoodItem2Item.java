@@ -26,10 +26,9 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class FoodItem2Item extends Item {
 	public FoodItem2Item() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).fireResistant().rarity(Rarity.EPIC)
-				.food((new FoodProperties.Builder()).nutrition(5).saturationMod(20f).alwaysEat()
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(5).saturationMod(20f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override
@@ -47,10 +46,9 @@ public class FoodItem2Item extends Item {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE,
-					new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 8d, AttributeModifier.Operation.ADDITION));
-			builder.put(Attributes.ATTACK_SPEED,
-					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 8d, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
 	}

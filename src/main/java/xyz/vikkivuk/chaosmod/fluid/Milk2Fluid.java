@@ -18,8 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 public abstract class Milk2Fluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.MILK_2,
-			ChaosmodModFluids.FLOWING_MILK_2,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.MILK_2, ChaosmodModFluids.FLOWING_MILK_2,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/milk2_still"), new ResourceLocation("chaosmod:blocks/milk2_flowing"))
 
 	).explosionResistance(100f)

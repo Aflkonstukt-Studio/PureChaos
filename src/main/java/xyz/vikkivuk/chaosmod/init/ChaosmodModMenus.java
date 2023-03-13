@@ -22,10 +22,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ChaosmodModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<VikkiVukGuiMenu> VIKKI_VUK_GUI = register("vikki_vuk_gui",
-			(id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
-	public static final MenuType<ComputerGuiMenu> COMPUTER_GUI = register("computer_gui",
-			(id, inv, extraData) -> new ComputerGuiMenu(id, inv, extraData));
+	public static final MenuType<VikkiVukGuiMenu> VIKKI_VUK_GUI = register("vikki_vuk_gui", (id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
+	public static final MenuType<ComputerGuiMenu> COMPUTER_GUI = register("computer_gui", (id, inv, extraData) -> new ComputerGuiMenu(id, inv, extraData));
 	public static final MenuType<CheatGUIMenu> CHEAT_GUI = register("cheat_gui", (id, inv, extraData) -> new CheatGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {

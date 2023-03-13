@@ -43,11 +43,9 @@ public class AdidasBlockFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new AdidasBlockFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:adidas_block", FEATURE,
-				new OreConfiguration(AdidasBlockFeatureRuleTest.INSTANCE, ChaosmodModBlocks.ADIDAS_BLOCK.get().defaultBlockState(), 16));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:adidas_block", FEATURE, new OreConfiguration(AdidasBlockFeatureRuleTest.INSTANCE, ChaosmodModBlocks.ADIDAS_BLOCK.get().defaultBlockState(), 16));
 		PLACED_FEATURE = PlacementUtils.register("chaosmod:adidas_block", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-						HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

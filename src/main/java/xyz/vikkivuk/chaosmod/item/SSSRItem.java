@@ -11,7 +11,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class SSSRItem extends RecordItem {
 	public SSSRItem() {
-		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:sssr")),
-				new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+		super(0, ChaosmodModSounds.REGISTRY.get(new ResourceLocation("chaosmod:sssr")), new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 }

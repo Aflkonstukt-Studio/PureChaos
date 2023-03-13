@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Neover",
@@ -50,18 +50,31 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
     "rainingPossibility": 0.0,
     "temperature": 2.0,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
     "spawnBiome": true,
-    "spawnBiomeNether": true,
     "spawnInCaves": true,
-    "biomeWeight": 30,
-    "biomeDictionaryTypes": [
-      "NETHER"
-    ],
+    "spawnBiomeNether": true,
+    "genTemperature": {
+      "min": 0.4,
+      "max": 1.6
+    },
+    "genHumidity": {
+      "min": -1.6,
+      "max": -0.4
+    },
+    "genContinentalness": {
+      "min": -0.08999999999999997,
+      "max": 1.1099999999999999
+    },
+    "genErosion": {
+      "min": 0.20000000000000007,
+      "max": 1.4
+    },
+    "genWeirdness": {
+      "min": -1.4389929886453405,
+      "max": -0.2389929886453407
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

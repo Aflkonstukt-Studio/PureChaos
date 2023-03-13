@@ -33,10 +33,9 @@ public class PotatusFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new PotatusFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:potatus", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.POTATUS.get().defaultBlockState())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:potatus", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:potatus", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ChaosmodModBlocks.POTATUS.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:potatus", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

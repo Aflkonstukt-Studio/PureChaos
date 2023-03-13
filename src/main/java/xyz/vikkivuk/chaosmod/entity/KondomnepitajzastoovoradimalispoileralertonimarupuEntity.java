@@ -28,18 +28,15 @@ public class KondomnepitajzastoovoradimalispoileralertonimarupuEntity extends Ab
 		super(ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), world);
 	}
 
-	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(
-			EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, Level world) {
+	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(
-			EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, double x, double y, double z, Level world) {
+	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(
-			EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, LivingEntity entity, Level world) {
+	public KondomnepitajzastoovoradimalispoileralertonimarupuEntity(EntityType<? extends KondomnepitajzastoovoradimalispoileralertonimarupuEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -72,25 +69,20 @@ public class KondomnepitajzastoovoradimalispoileralertonimarupuEntity extends Ab
 			this.discard();
 	}
 
-	public static KondomnepitajzastoovoradimalispoileralertonimarupuEntity shoot(Level world, LivingEntity entity, Random random, float power,
-			double damage, int knockback) {
-		KondomnepitajzastoovoradimalispoileralertonimarupuEntity entityarrow = new KondomnepitajzastoovoradimalispoileralertonimarupuEntity(
-				ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), entity, world);
+	public static KondomnepitajzastoovoradimalispoileralertonimarupuEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
+		KondomnepitajzastoovoradimalispoileralertonimarupuEntity entityarrow = new KondomnepitajzastoovoradimalispoileralertonimarupuEntity(ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.boat.paddle_water")), SoundSource.PLAYERS, 1,
-				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.boat.paddle_water")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
 	public static KondomnepitajzastoovoradimalispoileralertonimarupuEntity shoot(LivingEntity entity, LivingEntity target) {
-		KondomnepitajzastoovoradimalispoileralertonimarupuEntity entityarrow = new KondomnepitajzastoovoradimalispoileralertonimarupuEntity(
-				ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), entity, entity.level);
+		KondomnepitajzastoovoradimalispoileralertonimarupuEntity entityarrow = new KondomnepitajzastoovoradimalispoileralertonimarupuEntity(ChaosmodModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get(), entity, entity.level);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -100,9 +92,7 @@ public class KondomnepitajzastoovoradimalispoileralertonimarupuEntity extends Ab
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.boat.paddle_water")), SoundSource.PLAYERS, 1,
-				1f / (new Random().nextFloat() * 0.5f + 1));
+		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.boat.paddle_water")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

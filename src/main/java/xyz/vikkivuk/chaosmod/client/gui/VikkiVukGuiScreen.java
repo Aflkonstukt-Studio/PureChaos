@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -25,6 +25,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_trash;
 
 	public VikkiVukGuiScreen(VikkiVukGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,7 +73,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "VStorage", 65, 10, -12829636);
+		this.font.draw(poseStack, new TranslatableComponent("gui.chaosmod.vikki_vuk_gui.label_vstorage"), 65, 10, -12829636);
 	}
 
 	@Override
@@ -85,11 +86,13 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 68, this.topPos + 53, 51, 20, new TextComponent("Trash"), e -> {
+		button_trash = new Button(this.leftPos + 68, this.topPos + 53, 51, 20, new TranslatableComponent("gui.chaosmod.vikki_vuk_gui.button_trash"), e -> {
 			if (true) {
 				ChaosmodMod.PACKET_HANDLER.sendToServer(new VikkiVukGuiButtonMessage(0, x, y, z));
 				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_trash", button_trash);
+		this.addRenderableWidget(button_trash);
 	}
 }

@@ -18,8 +18,7 @@ import java.util.List;
 
 public class CarbonMonoxideItem extends BucketItem {
 	public CarbonMonoxideItem() {
-		super(ChaosmodModFluids.CARBON_MONOXIDE,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.CARBON_MONOXIDE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

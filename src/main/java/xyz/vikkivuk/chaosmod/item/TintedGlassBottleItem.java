@@ -17,10 +17,9 @@ import java.util.List;
 
 public class TintedGlassBottleItem extends Item {
 	public TintedGlassBottleItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

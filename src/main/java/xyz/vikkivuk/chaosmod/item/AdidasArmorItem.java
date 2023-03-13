@@ -41,8 +41,7 @@ public abstract class AdidasArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ChaosmodModBlocks.ADIDAS_BLOCK.get()), new ItemStack(ChaosmodModBlocks.SOUTH.get()),
-						new ItemStack(ChaosmodModBlocks.COMUNISAM_BLOCK.get()));
+				return Ingredient.of(new ItemStack(ChaosmodModBlocks.ADIDAS_BLOCK.get()), new ItemStack(ChaosmodModBlocks.SOUTH.get()), new ItemStack(ChaosmodModBlocks.COMUNISAM_BLOCK.get()));
 			}
 
 			@Override

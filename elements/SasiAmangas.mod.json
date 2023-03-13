@@ -1,19 +1,21 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "musicdisc",
   "definition": {
-    "texture": "untitled",
     "name": "Sasi Amangas",
+    "texture": "untitled",
     "description": "HE is sus",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "music": {
-      "value": "CUSTOM:jusif"
-    },
     "specialInfo": [
       "Josip is making an amogus"
     ],
-    "hasGlow": false
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:jusif"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
   }
 }

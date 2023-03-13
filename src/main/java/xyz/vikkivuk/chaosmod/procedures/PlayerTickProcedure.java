@@ -40,13 +40,11 @@ public class PlayerTickProcedure {
 			if (Mth.nextDouble(new Random(), 1, 6000) <= 5) {
 				if (Mth.nextDouble(new Random(), 1, 7) <= 2) {
 					if (!(ChaosmodModVariables.WorldVariables.get(world).sanity >= 80)) {
-						ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity
-								+ Mth.nextDouble(new Random(), 1, 3);
+						ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity + Mth.nextDouble(new Random(), 1, 3);
 						ChaosmodModVariables.WorldVariables.get(world).syncData(world);
 					}
 				} else {
-					ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity
-							- Mth.nextDouble(new Random(), 1, 4);
+					ChaosmodModVariables.WorldVariables.get(world).sanity = ChaosmodModVariables.WorldVariables.get(world).sanity - Mth.nextDouble(new Random(), 1, 4);
 					ChaosmodModVariables.WorldVariables.get(world).syncData(world);
 				}
 			}

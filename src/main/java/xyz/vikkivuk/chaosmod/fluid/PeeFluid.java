@@ -17,8 +17,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 
 public abstract class PeeFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.PEE,
-			ChaosmodModFluids.FLOWING_PEE,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.PEE, ChaosmodModFluids.FLOWING_PEE,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/pee"), new ResourceLocation("chaosmod:blocks/pee_flowing"))
 
 	).explosionResistance(100f).canMultiply().tickRate(10)

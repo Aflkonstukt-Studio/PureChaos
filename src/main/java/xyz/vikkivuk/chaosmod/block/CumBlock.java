@@ -15,8 +15,7 @@ import net.minecraft.core.BlockPos;
 
 public class CumBlock extends LiquidBlock {
 	public CumBlock() {
-		super(() -> (FlowingFluid) ChaosmodModFluids.CUM.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.DEEPSLATE).strength(100f)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+		super(() -> (FlowingFluid) ChaosmodModFluids.CUM.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.DEEPSLATE).strength(100f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
 
 		);
 	}

@@ -32,8 +32,7 @@ public class Modelthe_rock<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition darocksus = partdefinition.addOrReplaceChild("darocksus", CubeListBuilder.create(), PartPose.offset(-8.0F, 16.0F, 8.0F));
-		PartDefinition darocksus_0_r1 = darocksus.addOrReplaceChild("darocksus_0_r1",
-				CubeListBuilder.create().texOffs(-16, 0).addBox(-8.0F, -0.0452F, 0.0F, 16.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)),
+		PartDefinition darocksus_0_r1 = darocksus.addOrReplaceChild("darocksus_0_r1", CubeListBuilder.create().texOffs(-16, 0).addBox(-8.0F, -0.0452F, 0.0F, 16.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(8.0F, 8.0F, -8.0F, 1.5708F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 16, 16);
 	}
@@ -43,8 +42,7 @@ public class Modelthe_rock<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		darocksus.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

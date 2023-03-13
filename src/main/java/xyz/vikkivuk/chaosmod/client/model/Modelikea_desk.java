@@ -31,11 +31,8 @@ public class Modelikea_desk<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 36).addBox(-21.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(13.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-24.0F, -22.0F, -13.0F, 48.0F, 4.0F, 32.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 36).addBox(-21.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+				.addBox(13.0F, -18.0F, 0.0F, 8.0F, 18.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-24.0F, -22.0F, -13.0F, 48.0F, 4.0F, 32.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 256, 256);
 	}
 
@@ -44,8 +41,7 @@ public class Modelikea_desk<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

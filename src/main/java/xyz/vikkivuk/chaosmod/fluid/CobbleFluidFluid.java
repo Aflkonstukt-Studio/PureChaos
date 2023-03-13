@@ -15,8 +15,7 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.resources.ResourceLocation;
 
 public abstract class CobbleFluidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.COBBLE_FLUID,
-			ChaosmodModFluids.FLOWING_COBBLE_FLUID,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.COBBLE_FLUID, ChaosmodModFluids.FLOWING_COBBLE_FLUID,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/cobblestone"), new ResourceLocation("chaosmod:blocks/cobblestone"))
 
 	).explosionResistance(100f)

@@ -70,7 +70,6 @@ public class CheatGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ChaosmodMod.addNetworkMessage(CheatGUIButtonMessage.class, CheatGUIButtonMessage::buffer, CheatGUIButtonMessage::new,
-				CheatGUIButtonMessage::handler);
+		ChaosmodMod.addNetworkMessage(CheatGUIButtonMessage.class, CheatGUIButtonMessage::buffer, CheatGUIButtonMessage::new, CheatGUIButtonMessage::handler);
 	}
 }

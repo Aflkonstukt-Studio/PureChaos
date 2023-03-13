@@ -16,8 +16,7 @@ import java.util.Collections;
 
 public class DeathBlock extends Block {
 	public DeathBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(-1, 3600000).friction(3f).speedFactor(999f)
-				.jumpFactor(999f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(-1, 3600000).friction(3f).speedFactor(999f).jumpFactor(999f));
 	}
 
 	@Override

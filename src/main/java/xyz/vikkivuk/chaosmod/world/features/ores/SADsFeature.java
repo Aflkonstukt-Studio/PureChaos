@@ -43,10 +43,9 @@ public class SADsFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new SADsFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:sa_ds", FEATURE,
-				new OreConfiguration(SADsFeatureRuleTest.INSTANCE, ChaosmodModBlocks.SA_DS.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("chaosmod:sa_ds", CONFIGURED_FEATURE, List.of(CountPlacement.of(10), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("chaosmod:sa_ds", FEATURE, new OreConfiguration(SADsFeatureRuleTest.INSTANCE, ChaosmodModBlocks.SA_DS.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("chaosmod:sa_ds", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,8 +54,7 @@ public class SADsFeature extends OreFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END,
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, Level.NETHER, Level.END, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("chaosmod:peemension")));
 
 	public SADsFeature() {
 		super(OreConfiguration.CODEC);

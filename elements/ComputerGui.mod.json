@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_enter_cyberspace",
           "text": "Enter Cyberspace",
           "onClick": {
             "name": "EnterCyberspaceButtonPressed"
           },
           "width": 108,
           "height": 20,
-          "name": "Enter Cyberspace",
           "x": 159,
           "y": 109
         }

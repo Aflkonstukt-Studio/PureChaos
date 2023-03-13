@@ -38,27 +38,20 @@ public class Modeldog<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition head = partdefinition.addOrReplaceChild("head",
-				CubeListBuilder.create().texOffs(0, 5).addBox(-3.0F, -3.0F, -2.0F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-1.0F, 13.5F, -7.0F));
-		PartDefinition body = partdefinition.addOrReplaceChild("body",
-				CubeListBuilder.create().texOffs(18, 40).addBox(-4.0F, -2.0F, -3.0F, 6.0F, 9.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 5).addBox(-3.0F, -3.0F, -2.0F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 13.5F, -7.0F));
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(18, 40).addBox(-4.0F, -2.0F, -3.0F, 6.0F, 9.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 14.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
-		PartDefinition upperBody = partdefinition.addOrReplaceChild("upperBody",
-				CubeListBuilder.create().texOffs(22, 11).addBox(-3.0F, -3.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition upperBody = partdefinition.addOrReplaceChild("upperBody", CubeListBuilder.create().texOffs(22, 11).addBox(-3.0F, -3.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-1.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
 		PartDefinition leg3 = partdefinition.addOrReplaceChild("leg3",
-				CubeListBuilder.create().texOffs(4, 42).addBox(-1.0F, 0.0F, 0.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 42)
-						.addBox(-1.0F, 0.0F, 10.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(1, 41)
-						.addBox(-3.0F, 0.0F, 10.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(1, 42)
-						.addBox(-3.0F, 0.0F, 0.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(4, 42).addBox(-1.0F, 0.0F, 0.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 42).addBox(-1.0F, 0.0F, 10.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(1, 41)
+						.addBox(-3.0F, 0.0F, 10.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(1, 42).addBox(-3.0F, 0.0F, 0.0F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.5F, 16.0F, -4.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		upperBody.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

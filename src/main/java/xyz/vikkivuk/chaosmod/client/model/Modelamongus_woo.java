@@ -32,10 +32,8 @@ public class Modelamongus_woo<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 28).addBox(1.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 28)
-						.mirror().addBox(-5.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(0, 0)
-						.addBox(-5.0F, -19.0F, -1.0F, 10.0F, 14.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(46, 0)
-						.addBox(-4.0F, -17.0F, -1.25F, 8.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 5)
+				CubeListBuilder.create().texOffs(0, 28).addBox(1.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 28).mirror().addBox(-5.0F, -5.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
+						.texOffs(0, 0).addBox(-5.0F, -19.0F, -1.0F, 10.0F, 14.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(46, 0).addBox(-4.0F, -17.0F, -1.25F, 8.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 5)
 						.addBox(-4.0F, -18.0F, 2.25F, 8.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
@@ -46,8 +44,7 @@ public class Modelamongus_woo<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue,
-			float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, buffer, packedLight, packedOverlay);
 	}
 }

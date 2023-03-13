@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Sanity: <VAR:integer:sanity>",
+          "name": "label_sanity_varintegersanity",
+          "text": {
+            "fixedValue": "Sanity: <VAR:integer:sanity>"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Sanity: <VAR:integer:sanity>",
           "x": 6,
           "y": 8
         }

@@ -33,15 +33,11 @@ public class Modeltrident<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition base = partdefinition.addOrReplaceChild(
-				"base", CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -38.0F, -13.0F, 9.0F, 2.0F, 27.0F, new CubeDeformation(0.0F))
-						.texOffs(0, 29).addBox(-4.0F, -36.0F, -3.0F, 7.0F, 36.0F, 7.0F, new CubeDeformation(0.0F)),
+		PartDefinition base = partdefinition.addOrReplaceChild("base",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -38.0F, -13.0F, 9.0F, 2.0F, 27.0F, new CubeDeformation(0.0F)).texOffs(0, 29).addBox(-4.0F, -36.0F, -3.0F, 7.0F, 36.0F, 7.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(53, 49).addBox(-5.0F, -58.0F, -13.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(45, 0)
-						.addBox(-5.0F, -58.0F, 7.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(28, 29)
-						.addBox(-5.0F, -58.0F, -3.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(53, 49).addBox(-5.0F, -58.0F, -13.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(45, 0)
+				.addBox(-5.0F, -58.0F, 7.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)).texOffs(28, 29).addBox(-5.0F, -58.0F, -3.0F, 9.0F, 20.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
@@ -50,8 +46,7 @@ public class Modeltrident<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		base.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}

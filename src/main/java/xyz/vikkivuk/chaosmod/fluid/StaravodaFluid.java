@@ -18,10 +18,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 
 public abstract class StaravodaFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.STARAVODA,
-			ChaosmodModFluids.FLOWING_STARAVODA,
-			StaravodaFluidAttributes
-					.builder(new ResourceLocation("chaosmod:blocks/minecraft-water"), new ResourceLocation("chaosmod:blocks/minecraft-water"))
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.STARAVODA, ChaosmodModFluids.FLOWING_STARAVODA,
+			StaravodaFluidAttributes.builder(new ResourceLocation("chaosmod:blocks/minecraft-water"), new ResourceLocation("chaosmod:blocks/minecraft-water"))
 
 					.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("chaosmod:amogus"))).color(-13083194))
 			.explosionResistance(100f).canMultiply()

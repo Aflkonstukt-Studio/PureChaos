@@ -4,6 +4,7 @@ package xyz.vikkivuk.chaosmod.block;
 import xyz.vikkivuk.chaosmod.world.teleporter.SusTeleporter;
 import xyz.vikkivuk.chaosmod.world.teleporter.SusPortalShape;
 import xyz.vikkivuk.chaosmod.init.ChaosmodModParticleTypes;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModBlocks;
 
 import org.checkerframework.checker.units.qual.s;
 
@@ -28,14 +29,15 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import java.util.Random;
 import java.util.Optional;
 
 public class SusPortalBlock extends NetherPortalBlock {
 	public SusPortalBlock() {
-		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0)
-				.noDrops());
+		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0).noDrops());
 	}
 
 	@Override
@@ -50,14 +52,11 @@ public class SusPortalBlock extends NetherPortalBlock {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState p_54928_, Direction p_54929_, BlockState p_54930_, LevelAccessor p_54931_, BlockPos p_54932_,
-			BlockPos p_54933_) {
+	public BlockState updateShape(BlockState p_54928_, Direction p_54929_, BlockState p_54930_, LevelAccessor p_54931_, BlockPos p_54932_, BlockPos p_54933_) {
 		Direction.Axis direction$axis = p_54929_.getAxis();
 		Direction.Axis direction$axis1 = p_54928_.getValue(AXIS);
 		boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
-		return !flag && !p_54930_.is(this) && !(new SusPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete()
-				? Blocks.AIR.defaultBlockState()
-				: super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
+		return !flag && !p_54930_.is(this) && !(new SusPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete() ? Blocks.AIR.defaultBlockState() : super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -81,9 +80,7 @@ public class SusPortalBlock extends NetherPortalBlock {
 			world.addParticle((SimpleParticleType) (ChaosmodModParticleTypes.CUM_DRIP.get()), px, py, pz, vx, vy, vz);
 		}
 		if (random.nextInt(110) == 0)
-			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-					ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("chaosmod:amogus"))), SoundSource.BLOCKS, 0.5f,
-					random.nextFloat() * 0.4f + 0.8f);
+			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("chaosmod:amogus"))), SoundSource.BLOCKS, 0.5f, random.nextFloat() * 0.4f + 0.8f);
 	}
 
 	@Override
@@ -103,5 +100,10 @@ public class SusPortalBlock extends NetherPortalBlock {
 
 	private void teleportToDimension(Entity entity, BlockPos pos, ResourceKey<Level> destinationType) {
 		entity.changeDimension(entity.getServer().getLevel(destinationType), new SusTeleporter(entity.getServer().getLevel(destinationType), pos));
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(ChaosmodModBlocks.SUS_PORTAL.get(), renderType -> renderType == RenderType.translucent());
 	}
 }

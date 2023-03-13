@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -25,6 +25,7 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_enter_cyberspace;
 
 	public ComputerGuiScreen(ComputerGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -84,11 +85,13 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 33, this.topPos + 12, 108, 20, new TextComponent("Enter Cyberspace"), e -> {
+		button_enter_cyberspace = new Button(this.leftPos + 33, this.topPos + 12, 108, 20, new TranslatableComponent("gui.chaosmod.computer_gui.button_enter_cyberspace"), e -> {
 			if (true) {
 				ChaosmodMod.PACKET_HANDLER.sendToServer(new ComputerGuiButtonMessage(0, x, y, z));
 				ComputerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_enter_cyberspace", button_enter_cyberspace);
+		this.addRenderableWidget(button_enter_cyberspace);
 	}
 }

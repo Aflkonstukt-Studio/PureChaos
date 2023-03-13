@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Susus",
@@ -50,16 +50,31 @@
       "value": "CUSTOM:CumDrip"
     },
     "particlesProbability": 12.0,
-    "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
     "spawnBiome": true,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genHumidity": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genContinentalness": {
+      "min": 0.31,
+      "max": 0.71
+    },
+    "genErosion": {
+      "min": 0.6000000000000001,
+      "max": 1.0
+    },
+    "genWeirdness": {
+      "min": 0.05326917448766183,
+      "max": 0.45326917448766185
+    },
     "grassPerChunk": 6,
     "seagrassPerChunk": 69,
     "flowersPerChunk": 0,

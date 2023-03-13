@@ -51,8 +51,7 @@ public class ComputerBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ComputerBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -67,17 +66,17 @@ public class ComputerBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(-2, 0, -0.75, 18, 1, 17.25), box(-1, 1, 0.5, 17, 7.5, 15.5), box(4, 7.5, 8, 11.75, 8.5, 14),
-					box(6, 8.5, 9.5, 9.5, 20.5, 13.25), box(-2.25, 12.5, 5.5, 18, 28, 12.5));
-			case NORTH -> Shapes.or(box(-2, 0, -1.25, 18, 1, 16.75), box(-1, 1, 0.5, 17, 7.5, 15.5), box(4.25, 7.5, 2, 12, 8.5, 8),
-					box(6.5, 8.5, 2.75, 10, 20.5, 6.5), box(-2, 12.5, 3.5, 18.25, 28, 10.5));
-			case EAST -> Shapes.or(box(-0.75, 0, -2, 17.25, 1, 18), box(0.5, 1, -1, 15.5, 7.5, 17), box(8, 7.5, 4.25, 14, 8.5, 12),
-					box(9.5, 8.5, 6.5, 13.25, 20.5, 10), box(5.5, 12.5, -2, 12.5, 28, 18.25));
-			case WEST -> Shapes.or(box(-1.25, 0, -2, 16.75, 1, 18), box(0.5, 1, -1, 15.5, 7.5, 17), box(2, 7.5, 4, 8, 8.5, 11.75),
-					box(2.75, 8.5, 6, 6.5, 20.5, 9.5), box(3.5, 12.5, -2.25, 10.5, 28, 18));
+			default -> Shapes.or(box(-2, 0, -0.75, 18, 1, 17.25), box(-1, 1, 0.5, 17, 7.5, 15.5), box(4, 7.5, 8, 11.75, 8.5, 14), box(6, 8.5, 9.5, 9.5, 20.5, 13.25), box(-2.25, 12.5, 5.5, 18, 28, 12.5));
+			case NORTH -> Shapes.or(box(-2, 0, -1.25, 18, 1, 16.75), box(-1, 1, 0.5, 17, 7.5, 15.5), box(4.25, 7.5, 2, 12, 8.5, 8), box(6.5, 8.5, 2.75, 10, 20.5, 6.5), box(-2, 12.5, 3.5, 18.25, 28, 10.5));
+			case EAST -> Shapes.or(box(-0.75, 0, -2, 17.25, 1, 18), box(0.5, 1, -1, 15.5, 7.5, 17), box(8, 7.5, 4.25, 14, 8.5, 12), box(9.5, 8.5, 6.5, 13.25, 20.5, 10), box(5.5, 12.5, -2, 12.5, 28, 18.25));
+			case WEST -> Shapes.or(box(-1.25, 0, -2, 16.75, 1, 18), box(0.5, 1, -1, 15.5, 7.5, 17), box(2, 7.5, 4, 8, 8.5, 11.75), box(2.75, 8.5, 6, 6.5, 20.5, 9.5), box(3.5, 12.5, -2.25, 10.5, 28, 18));
 		};
 	}
 
@@ -130,5 +129,4 @@ public class ComputerBlock extends Block {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(ChaosmodModBlocks.COMPUTER.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
-
 }

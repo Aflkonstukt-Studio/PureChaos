@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Cheat Menu",
+          "name": "label_cheat_menu",
+          "text": {
+            "fixedValue": "Cheat Menu"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Cheat Menu",
           "x": 184,
           "y": 47
         }
@@ -26,10 +28,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_switch_gamemode",
           "text": "Switch Gamemode",
           "width": 103,
           "height": 20,
-          "name": "Switch Gamemode",
           "x": 162,
           "y": 68
         }
@@ -37,10 +39,10 @@
       {
         "type": "button",
         "data": {
+          "name": "button_switch_dimension",
           "text": "Switch Dimension",
           "width": 108,
           "height": 20,
-          "name": "Switch Dimension",
           "x": 159,
           "y": 99
         }
@@ -48,13 +50,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_do_not_press",
           "text": "DO_NOT_PRESS",
           "onClick": {
             "name": "DoNotPressPressed"
           },
           "width": 88,
           "height": 20,
-          "name": "DO_NOT_PRESS",
           "x": 168,
           "y": 166
         }

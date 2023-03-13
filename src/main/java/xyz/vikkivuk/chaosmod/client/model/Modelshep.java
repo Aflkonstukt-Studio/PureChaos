@@ -35,33 +35,23 @@ public class Modelshep<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, 2.0F));
 		PartDefinition body_r1 = body.addOrReplaceChild("body_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -10.0F, -7.0F, 8.0F, 16.0F, 34.0F, new CubeDeformation(1.75F)).texOffs(0, 0)
-						.addBox(-4.0F, -10.0F, -7.0F, 8.0F, 16.0F, 6.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -10.0F, -7.0F, 8.0F, 16.0F, 34.0F, new CubeDeformation(1.75F)).texOffs(0, 0).addBox(-4.0F, -10.0F, -7.0F, 8.0F, 16.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
-		PartDefinition leg0 = body
-				.addOrReplaceChild("leg0",
-						CubeListBuilder.create().texOffs(44, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F))
-								.texOffs(16, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
-						PartPose.offset(-3.0F, 7.0F, 5.0F));
-		PartDefinition leg1 = body
-				.addOrReplaceChild("leg1",
-						CubeListBuilder.create().texOffs(28, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F))
-								.texOffs(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
-						PartPose.offset(3.0F, 7.0F, 5.0F));
-		PartDefinition leg2 = body.addOrReplaceChild(
-				"leg2", CubeListBuilder.create().texOffs(50, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F))
-						.texOffs(60, 60).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
+		PartDefinition leg0 = body.addOrReplaceChild("leg0",
+				CubeListBuilder.create().texOffs(44, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(16, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(-3.0F, 7.0F, 5.0F));
+		PartDefinition leg1 = body.addOrReplaceChild("leg1",
+				CubeListBuilder.create().texOffs(28, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(3.0F, 7.0F, 5.0F));
+		PartDefinition leg2 = body.addOrReplaceChild("leg2",
+				CubeListBuilder.create().texOffs(50, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(60, 60).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
 				PartPose.offset(-3.0F, 7.0F, -7.0F));
-		PartDefinition leg3 = body
-				.addOrReplaceChild("leg3",
-						CubeListBuilder.create().texOffs(50, 0).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F))
-								.texOffs(60, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
-						PartPose.offset(3.0F, 7.0F, -7.0F));
-		PartDefinition head = partdefinition
-				.addOrReplaceChild("head",
-						CubeListBuilder.create().texOffs(0, 50).addBox(-3.0F, -4.0F, -6.0F, 6.0F, 6.0F, 8.0F, new CubeDeformation(0.0F))
-								.texOffs(0, 22).addBox(-3.0F, -4.0F, -4.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.6F)),
-						PartPose.offset(0.0F, 6.0F, -8.0F));
+		PartDefinition leg3 = body.addOrReplaceChild("leg3",
+				CubeListBuilder.create().texOffs(50, 0).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(60, 50).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(3.0F, 7.0F, -7.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head",
+				CubeListBuilder.create().texOffs(0, 50).addBox(-3.0F, -4.0F, -6.0F, 6.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 22).addBox(-3.0F, -4.0F, -4.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.6F)),
+				PartPose.offset(0.0F, 6.0F, -8.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
@@ -70,8 +60,7 @@ public class Modelshep<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}

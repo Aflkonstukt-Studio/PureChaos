@@ -18,8 +18,7 @@ import java.util.List;
 
 public class StaravodaItem extends BucketItem {
 	public StaravodaItem() {
-		super(ChaosmodModFluids.STARAVODA,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
+		super(ChaosmodModFluids.STARAVODA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(ChaosmodModTabs.TAB_CHAOSTAB));
 	}
 
 	@Override

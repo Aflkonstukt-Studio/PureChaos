@@ -8,6 +8,9 @@
       "locked_code": false,
       "registry_name": "dirtsword_living_entity_is_hit_with_tool",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DirtswordLivingEntityIsHitWithToolProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -22,7 +25,13 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dirtsword"
+      "registry_name": "dirtsword",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DirtswordItem.java",
+          "src/main/resources/assets/chaosmod/models/item/dirtsword.json"
+        ]
+      }
     },
     {
       "name": "Boom",
@@ -30,7 +39,12 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "boom"
+      "registry_name": "boom",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/command/BoomCommand.java"
+        ]
+      }
     },
     {
       "name": "BoomCommandExecuted",
@@ -40,6 +54,9 @@
       "locked_code": false,
       "registry_name": "boom_command_executed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BoomCommandExecutedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "cmdparams",
@@ -70,7 +87,14 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "deek"
+      "registry_name": "deek",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/deek.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/DeekEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DeekItem.java"
+        ]
+      }
     },
     {
       "name": "Pee",
@@ -80,7 +104,15 @@
       "locked_code": false,
       "registry_name": "pee",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/pee.json",
+          "src/main/resources/assets/chaosmod/models/item/pee_bucket.json",
+          "src/main/resources/assets/chaosmod/blockstates/pee.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PeeItem.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PeeBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/PeeFluid.java"
+        ]
       }
     },
     {
@@ -89,7 +121,10 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "masterpiece"
+      "registry_name": "masterpiece",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "PlayerTick",
@@ -99,6 +134,9 @@
       "locked_code": false,
       "registry_name": "player_tick",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PlayerTickProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -117,7 +155,12 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sexy_enchanetement"
+      "registry_name": "sexy_enchanetement",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/enchantment/SexyEnchanetementEnchantment.java"
+        ]
+      }
     },
     {
       "name": "Peemension",
@@ -127,7 +170,20 @@
       "locked_code": false,
       "registry_name": "peemension",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PeemensionItem.java",
+          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PeemensionPortalBlock.java",
+          "src/main/resources/data/chaosmod/dimension_type/peemension.json",
+          "src/main/resources/assets/chaosmod/models/item/peemension.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/PeemensionTeleporter.java",
+          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ns.json",
+          "src/main/resources/assets/chaosmod/blockstates/peemension_portal.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/PeemensionPortalShape.java",
+          "src/main/resources/data/chaosmod/dimension/peemension.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/PeemensionDimension.java"
+        ]
       }
     },
     {
@@ -136,7 +192,10 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "chaostab"
+      "registry_name": "chaostab",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "PeeBlock",
@@ -144,7 +203,17 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pee_block"
+      "registry_name": "pee_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/pee_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PeeBlockBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/PeeBlockFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/pee_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/PeeBlockBlockEntity.java",
+          "src/main/resources/assets/chaosmod/models/block/pee_block.json"
+        ]
+      }
     },
     {
       "name": "Pickax",
@@ -152,7 +221,13 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pickax"
+      "registry_name": "pickax",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PickaxItem.java",
+          "src/main/resources/assets/chaosmod/models/item/pickax.json"
+        ]
+      }
     },
     {
       "name": "Fooditem",
@@ -160,7 +235,13 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fooditem"
+      "registry_name": "fooditem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/fooditem.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FooditemItem.java"
+        ]
+      }
     },
     {
       "name": "Aentity",
@@ -168,7 +249,14 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aentity"
+      "registry_name": "aentity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/aentity_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AentityEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AentityRenderer.java"
+        ]
+      }
     },
     {
       "name": "FoodItem2",
@@ -176,7 +264,13 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "food_item_2"
+      "registry_name": "food_item_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/food_item_2.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FoodItem2Item.java"
+        ]
+      }
     },
     {
       "name": "PotatoSpuds",
@@ -184,7 +278,13 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "potato_spuds"
+      "registry_name": "potato_spuds",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PotatoSpudsItem.java",
+          "src/main/resources/assets/chaosmod/models/item/potato_spuds.json"
+        ]
+      }
     },
     {
       "name": "HellButOverworld",
@@ -192,7 +292,15 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hell_but_overworld"
+      "registry_name": "hell_but_overworld",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/HellButOverworldBiome.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldTrunkDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldLeaveDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldFruitDecorator.java"
+        ]
+      }
     },
     {
       "name": "Potatus",
@@ -200,7 +308,16 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "potatus"
+      "registry_name": "potatus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/potatus.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/PotatusFeature.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PotatusBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/potatus.json",
+          "src/main/resources/assets/chaosmod/blockstates/potatus.json"
+        ]
+      }
     },
     {
       "name": "WoodDimension",
@@ -210,7 +327,20 @@
       "locked_code": false,
       "registry_name": "wood_dimension",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/WoodDimensionPortalBlock.java",
+          "src/main/resources/data/chaosmod/dimension_type/wood_dimension.json",
+          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/WoodDimensionDimension.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/WoodDimensionPortalShape.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/WoodDimensionItem.java",
+          "src/main/resources/assets/chaosmod/blockstates/wood_dimension_portal.json",
+          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ns.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/WoodDimensionTeleporter.java",
+          "src/main/resources/data/chaosmod/dimension/wood_dimension.json",
+          "src/main/resources/assets/chaosmod/models/item/wood_dimension.json"
+        ]
       }
     },
     {
@@ -219,7 +349,12 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spear_recipe"
+      "registry_name": "spear_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/spear_recipe.json"
+        ]
+      }
     },
     {
       "name": "FoodItem3",
@@ -227,7 +362,13 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "food_item_3"
+      "registry_name": "food_item_3",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FoodItem3Item.java",
+          "src/main/resources/assets/chaosmod/models/item/food_item_3.json"
+        ]
+      }
     },
     {
       "name": "Dipex",
@@ -235,7 +376,13 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dipex"
+      "registry_name": "dipex",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DipexItem.java",
+          "src/main/resources/assets/chaosmod/models/item/dipex.json"
+        ]
+      }
     },
     {
       "name": "Trident",
@@ -243,7 +390,14 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "trident"
+      "registry_name": "trident",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/TridentEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/trident_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TridentRenderer.java"
+        ]
+      }
     },
     {
       "name": "Death",
@@ -251,7 +405,16 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "death"
+      "registry_name": "death",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/death.json",
+          "src/main/resources/assets/chaosmod/models/block/death.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/DeathBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/DeathFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/death.json"
+        ]
+      }
     },
     {
       "name": "SADs",
@@ -259,7 +422,17 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sa_ds"
+      "registry_name": "sa_ds",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/SADsBlockEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/sa_ds.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/SADsFeature.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SADsBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/sa_ds.json",
+          "src/main/resources/assets/chaosmod/blockstates/sa_ds.json"
+        ]
+      }
     },
     {
       "name": "NetheritPickax",
@@ -267,7 +440,13 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "netherit_pickax"
+      "registry_name": "netherit_pickax",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/NetheritPickaxItem.java",
+          "src/main/resources/assets/chaosmod/models/item/netherit_pickax.json"
+        ]
+      }
     },
     {
       "name": "Emepee",
@@ -275,7 +454,16 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "emepee"
+      "registry_name": "emepee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/emepee.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/EmepeeBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/emepee.json",
+          "src/main/resources/assets/chaosmod/models/block/emepee.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/EmepeeFeature.java"
+        ]
+      }
     },
     {
       "name": "ComicallyLargeSpoon",
@@ -283,7 +471,13 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "comically_large_spoon"
+      "registry_name": "comically_large_spoon",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ComicallyLargeSpoonItem.java",
+          "src/main/resources/assets/chaosmod/models/item/comically_large_spoon.json"
+        ]
+      }
     },
     {
       "name": "Spear",
@@ -291,7 +485,13 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spear"
+      "registry_name": "spear",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SpearItem.java",
+          "src/main/resources/assets/chaosmod/models/item/spear.json"
+        ]
+      }
     },
     {
       "name": "SusBlock",
@@ -299,7 +499,15 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sus_block"
+      "registry_name": "sus_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/sus_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SusBlockBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/sus_block.json",
+          "src/main/resources/assets/chaosmod/models/block/sus_block.json"
+        ]
+      }
     },
     {
       "name": "CumDrip",
@@ -307,7 +515,13 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cum_drip"
+      "registry_name": "cum_drip",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/particle/CumDripParticle.java",
+          "src/main/resources/assets/chaosmod/particles/cum_drip.json"
+        ]
+      }
     },
     {
       "name": "Cum",
@@ -317,7 +531,15 @@
       "locked_code": false,
       "registry_name": "cum",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/cum.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CumItem.java",
+          "src/main/resources/assets/chaosmod/models/item/cum_bucket.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CumFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CumBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/cum.json"
+        ]
       }
     },
     {
@@ -326,7 +548,14 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "among_us"
+      "registry_name": "among_us",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AmongUsRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AmongUsEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/among_us_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "Sus",
@@ -336,7 +565,20 @@
       "locked_code": false,
       "registry_name": "sus",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SusItem.java",
+          "src/main/resources/assets/chaosmod/blockstates/sus_portal.json",
+          "src/main/resources/assets/chaosmod/models/block/sus_portal_ns.json",
+          "src/main/resources/data/chaosmod/dimension_type/sus.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/SusDimension.java",
+          "src/main/resources/assets/chaosmod/models/item/sus.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/SusTeleporter.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SusPortalBlock.java",
+          "src/main/resources/data/chaosmod/dimension/sus.json",
+          "src/main/resources/assets/chaosmod/models/block/sus_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/SusPortalShape.java"
+        ]
       }
     },
     {
@@ -345,7 +587,15 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "susus"
+      "registry_name": "susus",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususLeaveDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususTrunkDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/SususBiome.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususFruitDecorator.java"
+        ]
+      }
     },
     {
       "name": "Amogus2",
@@ -353,7 +603,14 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amogus_2"
+      "registry_name": "amogus_2",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/Amogus2Entity.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_2_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus2Renderer.java"
+        ]
+      }
     },
     {
       "name": "Amogus3",
@@ -361,7 +618,14 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amogus_3"
+      "registry_name": "amogus_3",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus3Renderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/Amogus3Entity.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_3_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "Staravoda",
@@ -371,7 +635,16 @@
       "locked_code": false,
       "registry_name": "staravoda",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/staravoda_bucket.json",
+          "src/main/resources/assets/chaosmod/models/block/staravoda.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/attributes/StaravodaFluidAttributes.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/StaravodaFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/StaravodaBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/staravoda.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/StaravodaItem.java"
+        ]
       }
     },
     {
@@ -380,7 +653,10 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amongsus"
+      "registry_name": "amongsus",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "TLGHD",
@@ -388,7 +664,15 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tlghd"
+      "registry_name": "tlghd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/tlghd.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/TLGHDBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/tlghd.json",
+          "src/main/resources/assets/chaosmod/models/block/tlghd.json"
+        ]
+      }
     },
     {
       "name": "Xmasterwoopainting",
@@ -396,7 +680,10 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xmasterwoopainting"
+      "registry_name": "xmasterwoopainting",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "AmongUSpp",
@@ -404,7 +691,12 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "among_u_spp"
+      "registry_name": "among_u_spp",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/AmongUSppFeature.java"
+        ]
+      }
     },
     {
       "name": "AmongUSpORTAL",
@@ -412,7 +704,12 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "among_u_sp_ortal"
+      "registry_name": "among_u_sp_ortal",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/AmongUSpORTALFeature.java"
+        ]
+      }
     },
     {
       "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
@@ -420,7 +717,14 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu"
+      "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/kondomnepitajzastoovoradimalispoileralertonimarupu.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/KondomnepitajzastoovoradimalispoileralertonimarupuEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/KondomnepitajzastoovoradimalispoileralertonimarupuItem.java"
+        ]
+      }
     },
     {
       "name": "PeePool",
@@ -428,7 +732,12 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pee_pool"
+      "registry_name": "pee_pool",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/PeePoolFeature.java"
+        ]
+      }
     },
     {
       "name": "WoodRuinedPortal",
@@ -436,7 +745,12 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wood_ruined_portal"
+      "registry_name": "wood_ruined_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/WoodRuinedPortalFeature.java"
+        ]
+      }
     },
     {
       "name": "Amugus",
@@ -449,7 +763,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/amugus_chestplate.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AmugusItem.java",
+          "src/main/resources/assets/chaosmod/models/item/amugus_helmet.json",
+          "src/main/resources/assets/chaosmod/models/item/amugus_boots.json",
+          "src/main/resources/assets/chaosmod/models/item/amugus_leggings.json"
+        ]
       }
     },
     {
@@ -458,7 +779,12 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "juke_box_cave"
+      "registry_name": "juke_box_cave",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/JukeBoxCaveFeature.java"
+        ]
+      }
     },
     {
       "name": "AmongUsDungeon",
@@ -466,7 +792,12 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "among_us_dungeon"
+      "registry_name": "among_us_dungeon",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/AmongUsDungeonFeature.java"
+        ]
+      }
     },
     {
       "name": "SusSword",
@@ -474,7 +805,13 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sus_sword"
+      "registry_name": "sus_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/sus_sword.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SusSwordItem.java"
+        ]
+      }
     },
     {
       "name": "Susord",
@@ -482,7 +819,12 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "susord"
+      "registry_name": "susord",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/susord.json"
+        ]
+      }
     },
     {
       "name": "Suschest",
@@ -490,7 +832,12 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "suschest"
+      "registry_name": "suschest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/suschest.json"
+        ]
+      }
     },
     {
       "name": "Sushead",
@@ -498,7 +845,12 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sushead"
+      "registry_name": "sushead",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/sushead.json"
+        ]
+      }
     },
     {
       "name": "Suslegs",
@@ -506,7 +858,12 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "suslegs"
+      "registry_name": "suslegs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/suslegs.json"
+        ]
+      }
     },
     {
       "name": "Susboot",
@@ -514,7 +871,12 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "susboot"
+      "registry_name": "susboot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/susboot.json"
+        ]
+      }
     },
     {
       "name": "PressSoulButton",
@@ -524,6 +886,9 @@
       "locked_code": false,
       "registry_name": "press_soul_button",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PressSoulButtonProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -540,7 +905,15 @@
       "locked_code": false,
       "registry_name": "orange_fluid",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/orange_fluid_bucket.json",
+          "src/main/resources/assets/chaosmod/blockstates/orange_fluid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/OrangeFluidFluid.java",
+          "src/main/resources/assets/chaosmod/models/block/orange_fluid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/OrangeFluidItem.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/OrangeFluidBlock.java"
+        ]
       }
     },
     {
@@ -551,7 +924,15 @@
       "locked_code": false,
       "registry_name": "oil",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/oil.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/OilFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/OilBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/oil_bucket.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/OilItem.java",
+          "src/main/resources/assets/chaosmod/blockstates/oil.json"
+        ]
       }
     },
     {
@@ -562,7 +943,15 @@
       "locked_code": false,
       "registry_name": "gatorade",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/gatorade.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/GatoradeBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/gatorade_bucket.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/GatoradeFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/GatoradeItem.java",
+          "src/main/resources/assets/chaosmod/blockstates/gatorade.json"
+        ]
       }
     },
     {
@@ -573,6 +962,9 @@
       "locked_code": false,
       "registry_name": "green_plant_plant_right_clicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/GreenPlantPlantRightClickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -587,7 +979,16 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "green_plant"
+      "registry_name": "green_plant",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/GreenPlantFeature.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/GreenPlantBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/green_plant.json",
+          "src/main/resources/assets/chaosmod/models/block/green_plant.json",
+          "src/main/resources/assets/chaosmod/models/item/green_plant.json"
+        ]
+      }
     },
     {
       "name": "WaterCup",
@@ -595,7 +996,14 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "water_cup"
+      "registry_name": "water_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/water_cup.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/WaterCupItem.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/WaterCupEntity.java"
+        ]
+      }
     },
     {
       "name": "Splank",
@@ -603,7 +1011,14 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "splank"
+      "registry_name": "splank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/splank_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/SplankEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/SplankRenderer.java"
+        ]
+      }
     },
     {
       "name": "IkeaDesk",
@@ -611,7 +1026,14 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ikea_desk"
+      "registry_name": "ikea_desk",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/IkeaDeskRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/ikea_desk_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/IkeaDeskEntity.java"
+        ]
+      }
     },
     {
       "name": "Fallgays",
@@ -619,7 +1041,13 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fallgays"
+      "registry_name": "fallgays",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/fallgays.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FallgaysItem.java"
+        ]
+      }
     },
     {
       "name": "Tombstone",
@@ -627,7 +1055,16 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tombstone"
+      "registry_name": "tombstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/tombstone.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/TombstoneBlockEntity.java",
+          "src/main/resources/assets/chaosmod/models/block/tombstone.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/TombstoneBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/tombstone.json"
+        ]
+      }
     },
     {
       "name": "Ekesmasterbait",
@@ -635,7 +1072,12 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ekesmasterbait"
+      "registry_name": "ekesmasterbait",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/EkesmasterbaitBiome.java"
+        ]
+      }
     },
     {
       "name": "JosipovDrpanje",
@@ -643,7 +1085,12 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josipov_drpanje"
+      "registry_name": "josipov_drpanje",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/JosipovDrpanjeFeature.java"
+        ]
+      }
     },
     {
       "name": "SasiAmangas",
@@ -651,7 +1098,13 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sasi_amangas"
+      "registry_name": "sasi_amangas",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SasiAmangasItem.java",
+          "src/main/resources/assets/chaosmod/models/item/sasi_amangas.json"
+        ]
+      }
     },
     {
       "name": "WhiteCell",
@@ -659,7 +1112,12 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "white_cell"
+      "registry_name": "white_cell",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/WhiteCellFeature.java"
+        ]
+      }
     },
     {
       "name": "OilMountain",
@@ -667,7 +1125,12 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oil_mountain"
+      "registry_name": "oil_mountain",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/OilMountainFeature.java"
+        ]
+      }
     },
     {
       "name": "SecretTnt",
@@ -675,7 +1138,12 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "secret_tnt"
+      "registry_name": "secret_tnt",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/SecretTntFeature.java"
+        ]
+      }
     },
     {
       "name": "HerobrineShrine",
@@ -683,7 +1151,12 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "herobrine_shrine"
+      "registry_name": "herobrine_shrine",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/HerobrineShrineFeature.java"
+        ]
+      }
     },
     {
       "name": "OakHouse",
@@ -691,7 +1164,12 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oak_house"
+      "registry_name": "oak_house",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/OakHouseFeature.java"
+        ]
+      }
     },
     {
       "name": "JOSIP",
@@ -699,7 +1177,14 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josip"
+      "registry_name": "josip",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JOSIPEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JOSIPRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/josip_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "Brown",
@@ -707,7 +1192,13 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "brown"
+      "registry_name": "brown",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/brown.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BrownItem.java"
+        ]
+      }
     },
     {
       "name": "BrownItemInInventoryTick",
@@ -717,6 +1208,9 @@
       "locked_code": false,
       "registry_name": "brown_item_in_inventory_tick",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BrownItemInInventoryTickProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -731,7 +1225,10 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fuck_you"
+      "registry_name": "fuck_you",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "CarbonMonoxide",
@@ -741,7 +1238,15 @@
       "locked_code": false,
       "registry_name": "carbon_monoxide",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CarbonMonoxideFluid.java",
+          "src/main/resources/assets/chaosmod/models/item/carbon_monoxide_bucket.json",
+          "src/main/resources/assets/chaosmod/blockstates/carbon_monoxide.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CarbonMonoxideBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CarbonMonoxideItem.java",
+          "src/main/resources/assets/chaosmod/models/block/carbon_monoxide.json"
+        ]
       }
     },
     {
@@ -752,6 +1257,9 @@
       "locked_code": false,
       "registry_name": "co_death",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CODeathProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -766,7 +1274,12 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rssure_6t"
+      "registry_name": "rssure_6t",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/rssure_6t.json"
+        ]
+      }
     },
     {
       "name": "Rec8pe",
@@ -774,7 +1287,12 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rec_8pe"
+      "registry_name": "rec_8pe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/rec_8pe.json"
+        ]
+      }
     },
     {
       "name": "Ambyss",
@@ -782,7 +1300,12 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ambyss"
+      "registry_name": "ambyss",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/AmbyssFeature.java"
+        ]
+      }
     },
     {
       "name": "StructureLoot",
@@ -790,7 +1313,12 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "structure_loot"
+      "registry_name": "structure_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/loot_tables/chests/structure_loot.json"
+        ]
+      }
     },
     {
       "name": "KillJosipoLoot",
@@ -798,7 +1326,12 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kill_josipo_loot"
+      "registry_name": "kill_josipo_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/loot_tables/chests/kill_josipo_loot.json"
+        ]
+      }
     },
     {
       "name": "Corruptstaff",
@@ -806,7 +1339,13 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "corruptstaff"
+      "registry_name": "corruptstaff",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CorruptstaffItem.java",
+          "src/main/resources/assets/chaosmod/models/item/corruptstaff.json"
+        ]
+      }
     },
     {
       "name": "Josipdvatockanula",
@@ -814,7 +1353,14 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josipdvatockanula"
+      "registry_name": "josipdvatockanula",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipdvatockanulaRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/josipdvatockanula_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipdvatockanulaEntity.java"
+        ]
+      }
     },
     {
       "name": "CorruptstaffLivingEntityIsHitWithTool",
@@ -824,6 +1370,9 @@
       "locked_code": false,
       "registry_name": "corruptstaff_living_entity_is_hit_with_tool",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CorruptstaffLivingEntityIsHitWithToolProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -843,7 +1392,13 @@
         "eh": false,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/turtle_armor_chestplate.json",
+          "src/main/resources/assets/chaosmod/models/item/turtle_armor_leggings.json",
+          "src/main/resources/assets/chaosmod/models/item/turtle_armor_boots.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TurtleArmorItem.java"
+        ]
       }
     },
     {
@@ -857,7 +1412,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_helmet.json",
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_leggings.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BeefArmorItem.java",
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_boots.json",
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_chestplate.json"
+        ]
       }
     },
     {
@@ -866,7 +1428,10 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stuck"
+      "registry_name": "stuck",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "DirtSwordRecipe",
@@ -874,7 +1439,12 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dirt_sword_recipe"
+      "registry_name": "dirt_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/dirt_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "GasChamber",
@@ -882,7 +1452,12 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gas_chamber"
+      "registry_name": "gas_chamber",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/GasChamberFeature.java"
+        ]
+      }
     },
     {
       "name": "JosipPet",
@@ -890,7 +1465,14 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josip_pet"
+      "registry_name": "josip_pet",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPetEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipPetRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/josip_pet_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "JosipPett",
@@ -898,7 +1480,14 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josip_pett"
+      "registry_name": "josip_pett",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/josip_pett_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipPettRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPettEntity.java"
+        ]
+      }
     },
     {
       "name": "JosipRange",
@@ -906,7 +1495,14 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "josip_range"
+      "registry_name": "josip_range",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipRangeEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/josip_range.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/JosipRangeItem.java"
+        ]
+      }
     },
     {
       "name": "MothOfAggrevation",
@@ -914,7 +1510,14 @@
       "sortid": 78,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "moth_of_aggrevation"
+      "registry_name": "moth_of_aggrevation",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/MothOfAggrevationEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/MothOfAggrevationRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/moth_of_aggrevation_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "TombstonePlaceProcd",
@@ -924,6 +1527,9 @@
       "locked_code": false,
       "registry_name": "tombstone_place_procd",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/TombstonePlaceProcdProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -956,6 +1562,9 @@
       "locked_code": false,
       "registry_name": "corruptstaff_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CorruptstaffRightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -982,7 +1591,13 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bullet"
+      "registry_name": "bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/bullet.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BulletItem.java"
+        ]
+      }
     },
     {
       "name": "AK47",
@@ -990,7 +1605,14 @@
       "sortid": 79,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ak_47"
+      "registry_name": "ak_47",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AK47Item.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AK47Entity.java",
+          "src/main/resources/assets/chaosmod/models/item/ak_47.json"
+        ]
+      }
     },
     {
       "name": "Shep",
@@ -998,7 +1620,14 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "shep"
+      "registry_name": "shep",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/ShepEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/ShepRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/shep_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "VikkiVukGui",
@@ -1006,7 +1635,14 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vikki_vuk_gui"
+      "registry_name": "vikki_vuk_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/VikkiVukGuiButtonMessage.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/VikkiVukGuiMenu.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/VikkiVukGuiScreen.java"
+        ]
+      }
     },
     {
       "name": "Vikkivuk",
@@ -1014,7 +1650,14 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "vikkivuk"
+      "registry_name": "vikkivuk",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/VikkivukEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/VikkivukRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/vikkivuk_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "Blaz",
@@ -1022,7 +1665,14 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blaz"
+      "registry_name": "blaz",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/BlazRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/blaz_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/BlazEntity.java"
+        ]
+      }
     },
     {
       "name": "CursedDog",
@@ -1030,7 +1680,14 @@
       "sortid": 80,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cursed_dog"
+      "registry_name": "cursed_dog",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CursedDogRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/cursed_dog_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/CursedDogEntity.java"
+        ]
+      }
     },
     {
       "name": "Trashitems",
@@ -1040,6 +1697,9 @@
       "locked_code": false,
       "registry_name": "trashitems",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/TrashitemsProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1056,6 +1716,9 @@
       "locked_code": false,
       "registry_name": "k_on_key_pressed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/KOnKeyPressedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1070,7 +1733,12 @@
       "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "one"
+      "registry_name": "one",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/OneMessage.java"
+        ]
+      }
     },
     {
       "name": "Meth",
@@ -1078,7 +1746,13 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "meth"
+      "registry_name": "meth",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/MethItem.java",
+          "src/main/resources/assets/chaosmod/models/item/meth.json"
+        ]
+      }
     },
     {
       "name": "EmergencyRecipe",
@@ -1086,7 +1760,12 @@
       "sortid": 105,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "emergency_recipe"
+      "registry_name": "emergency_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/emergency_recipe.json"
+        ]
+      }
     },
     {
       "name": "K",
@@ -1094,7 +1773,12 @@
       "sortid": 101,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "k"
+      "registry_name": "k",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/KMessage.java"
+        ]
+      }
     },
     {
       "name": "BeefPants",
@@ -1102,7 +1786,12 @@
       "sortid": 94,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beef_pants"
+      "registry_name": "beef_pants",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/beef_pants.json"
+        ]
+      }
     },
     {
       "name": "DeathWish",
@@ -1112,6 +1801,9 @@
       "locked_code": false,
       "registry_name": "death_wish",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DeathWishProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1146,7 +1838,14 @@
       "sortid": 113,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "walter_wight"
+      "registry_name": "walter_wight",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/WalterWightEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/WalterWightRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/walter_wight_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "AdolfHitler",
@@ -1154,7 +1853,14 @@
       "sortid": 108,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adolf_hitler"
+      "registry_name": "adolf_hitler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/adolf_hitler_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AdolfHitlerRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AdolfHitlerEntity.java"
+        ]
+      }
     },
     {
       "name": "Dream",
@@ -1162,7 +1868,14 @@
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dream"
+      "registry_name": "dream",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/DreamEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/dream_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/DreamRenderer.java"
+        ]
+      }
     },
     {
       "name": "Scratest",
@@ -1170,7 +1883,13 @@
       "sortid": 107,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "scratest"
+      "registry_name": "scratest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/scratest.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ScratestItem.java"
+        ]
+      }
     },
     {
       "name": "OneOnKeyPressed",
@@ -1180,6 +1899,9 @@
       "locked_code": false,
       "registry_name": "one_on_key_pressed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/OneOnKeyPressedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1206,7 +1928,16 @@
       "sortid": 96,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "youtube"
+      "registry_name": "youtube",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/youtube.json",
+          "src/main/resources/assets/chaosmod/blockstates/youtube.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/YoutubeFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/youtube.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/YoutubeBlock.java"
+        ]
+      }
     },
     {
       "name": "Plante",
@@ -1214,7 +1945,16 @@
       "sortid": 97,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "plante"
+      "registry_name": "plante",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/plante.json",
+          "src/main/resources/assets/chaosmod/models/block/plante.json",
+          "src/main/resources/assets/chaosmod/models/item/plante.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/PlanteFeature.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PlanteBlock.java"
+        ]
+      }
     },
     {
       "name": "TesticleOnStickRightclickedOnBlock",
@@ -1224,6 +1964,9 @@
       "locked_code": false,
       "registry_name": "testicle_on_stick_rightclicked_on_block",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/TesticleOnStickRightclickedOnBlockProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "itemstack",
@@ -1257,6 +2000,9 @@
       "registry_name": "josipdvatockanula_natural_entity_spawning_condition",
       "metadata": {
         "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/JosipdvatockanulaNaturalEntitySpawningConditionProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "world",
@@ -1271,7 +2017,12 @@
       "sortid": 106,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "water_cup_recipe"
+      "registry_name": "water_cup_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/water_cup_recipe.json"
+        ]
+      }
     },
     {
       "name": "High",
@@ -1281,6 +2032,9 @@
       "locked_code": false,
       "registry_name": "high",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/HighProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1295,7 +2049,13 @@
       "sortid": 109,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "testicle_on_stick"
+      "registry_name": "testicle_on_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/testicle_on_stick.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TesticleOnStickItem.java"
+        ]
+      }
     },
     {
       "name": "GraveLoot",
@@ -1303,7 +2063,12 @@
       "sortid": 115,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grave_loot"
+      "registry_name": "grave_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/loot_tables/blocks/grave.json"
+        ]
+      }
     },
     {
       "name": "BeefChest",
@@ -1311,7 +2076,12 @@
       "sortid": 93,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beef_chest"
+      "registry_name": "beef_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/beef_chest.json"
+        ]
+      }
     },
     {
       "name": "RickrollBlock",
@@ -1319,7 +2089,15 @@
       "sortid": 110,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rickroll_block"
+      "registry_name": "rickroll_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/rickroll_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/RickrollBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/rickroll_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/rickroll_block.json"
+        ]
+      }
     },
     {
       "name": "BeefBoots",
@@ -1327,7 +2105,12 @@
       "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beef_boots"
+      "registry_name": "beef_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/beef_boots.json"
+        ]
+      }
     },
     {
       "name": "Seven",
@@ -1335,7 +2118,12 @@
       "sortid": 103,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "seven"
+      "registry_name": "seven",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/SevenMessage.java"
+        ]
+      }
     },
     {
       "name": "Dipexrecipe",
@@ -1343,7 +2131,12 @@
       "sortid": 90,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dipexrecipe"
+      "registry_name": "dipexrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/dipexrecipe.json"
+        ]
+      }
     },
     {
       "name": "DeathR",
@@ -1351,7 +2144,12 @@
       "sortid": 91,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "death_r"
+      "registry_name": "death_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/death_r.json"
+        ]
+      }
     },
     {
       "name": "BeefHead",
@@ -1359,7 +2157,12 @@
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beef_head"
+      "registry_name": "beef_head",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/beef_head.json"
+        ]
+      }
     },
     {
       "name": "Grave",
@@ -1367,7 +2170,15 @@
       "sortid": 114,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grave"
+      "registry_name": "grave",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/grave.json",
+          "src/main/resources/assets/chaosmod/blockstates/grave.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/GraveBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/grave.json"
+        ]
+      }
     },
     {
       "name": "Milk2",
@@ -1377,7 +2188,15 @@
       "locked_code": false,
       "registry_name": "milk_2",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/Milk2Fluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/Milk2Item.java",
+          "src/main/resources/assets/chaosmod/models/item/milk_2_bucket.json",
+          "src/main/resources/assets/chaosmod/blockstates/milk_2.json",
+          "src/main/resources/assets/chaosmod/models/block/milk_2.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/Milk2Block.java"
+        ]
       }
     },
     {
@@ -1388,6 +2207,9 @@
       "locked_code": false,
       "registry_name": "use_in_emergencies_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/UseInEmergenciesRightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1414,7 +2236,13 @@
       "sortid": 104,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "use_in_emergencies"
+      "registry_name": "use_in_emergencies",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/use_in_emergencies.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/UseInEmergenciesItem.java"
+        ]
+      }
     },
     {
       "name": "MethPlayerFinishesUsingItem",
@@ -1424,6 +2252,9 @@
       "locked_code": false,
       "registry_name": "meth_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/MethPlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1438,7 +2269,12 @@
       "sortid": 118,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "high_effect"
+      "registry_name": "high_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/HighEffectMobEffect.java"
+        ]
+      }
     },
     {
       "name": "CodButBetter",
@@ -1446,7 +2282,14 @@
       "sortid": 117,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cod_but_better"
+      "registry_name": "cod_but_better",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/CodButBetterEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CodButBetterRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/cod_but_better_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "HighEffectEffectExpires",
@@ -1456,6 +2299,9 @@
       "locked_code": false,
       "registry_name": "high_effect_effect_expires",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/HighEffectEffectExpiresProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1472,7 +2318,8 @@
       "locked_code": false,
       "registry_name": "doGraveCreation",
       "metadata": {
-        "type": "logic"
+        "type": "logic",
+        "files": []
       }
     },
     {
@@ -1481,7 +2328,15 @@
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "backrooms_lvl_1light"
+      "registry_name": "backrooms_lvl_1light",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1light.json",
+          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1light.json",
+          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1light.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1lightBlock.java"
+        ]
+      }
     },
     {
       "name": "SSSR",
@@ -1489,7 +2344,13 @@
       "sortid": 123,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sssr"
+      "registry_name": "sssr",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/sssr.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SSSRItem.java"
+        ]
+      }
     },
     {
       "name": "Stalin",
@@ -1497,7 +2358,14 @@
       "sortid": 124,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stalin"
+      "registry_name": "stalin",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/StalinEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/StalinRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/stalin_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "BleachOverlay",
@@ -1505,7 +2373,12 @@
       "sortid": 135,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bleach_overlay"
+      "registry_name": "bleach_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/BleachOverlayOverlay.java"
+        ]
+      }
     },
     {
       "name": "RickAstley",
@@ -1513,7 +2386,14 @@
       "sortid": 131,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rick_astley"
+      "registry_name": "rick_astley",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/rick_astley_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/RickAstleyEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/RickAstleyRenderer.java"
+        ]
+      }
     },
     {
       "name": "BleachedOnEffectActiveTick",
@@ -1523,6 +2403,9 @@
       "locked_code": false,
       "registry_name": "bleached_on_effect_active_tick",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BleachedOnEffectActiveTickProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1537,7 +2420,15 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "backrooms_lvl_1_wall"
+      "registry_name": "backrooms_lvl_1_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1_wall.json",
+          "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1_wall.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1WallBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_wall.json"
+        ]
+      }
     },
     {
       "name": "DropMumboTokens",
@@ -1547,7 +2438,8 @@
       "locked_code": false,
       "registry_name": "dropMumboTokens",
       "metadata": {
-        "type": "logic"
+        "type": "logic",
+        "files": []
       }
     },
     {
@@ -1559,6 +2451,9 @@
       "registry_name": "bleach_overlay_display_overlay_ingame",
       "metadata": {
         "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BleachOverlayDisplayOverlayIngameProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1575,6 +2470,9 @@
       "locked_code": false,
       "registry_name": "block_broken",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BlockBrokenProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1607,6 +2505,9 @@
       "locked_code": false,
       "registry_name": "radiation_liquid_mobplayer_collides_block",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/RadiationLiquidMobplayerCollidesBlockProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1623,7 +2524,15 @@
       "locked_code": false,
       "registry_name": "radiation_liquid",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/radiation_liquid_bucket.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/RadiationLiquidFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/RadiationLiquidBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/radiation_liquid.json",
+          "src/main/resources/assets/chaosmod/models/block/radiation_liquid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/RadiationLiquidItem.java"
+        ]
       }
     },
     {
@@ -1632,7 +2541,12 @@
       "sortid": 133,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bleached"
+      "registry_name": "bleached",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/BleachedMobEffect.java"
+        ]
+      }
     },
     {
       "name": "Bleach",
@@ -1640,7 +2554,13 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bleach"
+      "registry_name": "bleach",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/bleach.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BleachItem.java"
+        ]
+      }
     },
     {
       "name": "BrazilPlayerEntersDimension",
@@ -1650,6 +2570,9 @@
       "locked_code": false,
       "registry_name": "brazil_player_enters_dimension",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BrazilPlayerEntersDimensionProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1678,6 +2601,9 @@
       "locked_code": false,
       "registry_name": "player_jump",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PlayerJumpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1708,7 +2634,15 @@
       "sortid": 137,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "brazil_block"
+      "registry_name": "brazil_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/brazil_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/brazil_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BrazilBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/brazil_block.json"
+        ]
+      }
     },
     {
       "name": "NokiaBlock",
@@ -1716,7 +2650,15 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "nokia_block"
+      "registry_name": "nokia_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/NokiaBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/nokia_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/nokia_block.json",
+          "src/main/resources/assets/chaosmod/models/item/nokia_block.json"
+        ]
+      }
     },
     {
       "name": "Brazil",
@@ -1726,7 +2668,20 @@
       "locked_code": false,
       "registry_name": "brazil",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/BrazilDimension.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilPortalShape.java",
+          "src/main/resources/data/chaosmod/dimension_type/brazil.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilTeleporter.java",
+          "src/main/resources/assets/chaosmod/models/item/brazil.json",
+          "src/main/resources/assets/chaosmod/blockstates/brazil_portal.json",
+          "src/main/resources/data/chaosmod/dimension/brazil.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BrazilPortalBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BrazilItem.java",
+          "src/main/resources/assets/chaosmod/models/block/brazil_portal_ns.json",
+          "src/main/resources/assets/chaosmod/models/block/brazil_portal_ew.json"
+        ]
       }
     },
     {
@@ -1735,7 +2690,13 @@
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mumbo_token"
+      "registry_name": "mumbo_token",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/mumbo_token.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/MumboTokenItem.java"
+        ]
+      }
     },
     {
       "name": "BleachPlayerFinishesUsingItem",
@@ -1745,6 +2706,9 @@
       "locked_code": false,
       "registry_name": "bleach_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BleachPlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1759,7 +2723,15 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "backrooms_lvl_1_floor"
+      "registry_name": "backrooms_lvl_1_floor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1FloorBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1_floor.json",
+          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_floor.json",
+          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1_floor.json"
+        ]
+      }
     },
     {
       "name": "South",
@@ -1767,7 +2739,15 @@
       "sortid": 125,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "south"
+      "registry_name": "south",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/south.json",
+          "src/main/resources/assets/chaosmod/models/block/south.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SouthBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/south.json"
+        ]
+      }
     },
     {
       "name": "BlockPlaced",
@@ -1777,6 +2757,9 @@
       "locked_code": false,
       "registry_name": "block_placed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BlockPlacedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -1803,7 +2786,14 @@
       "sortid": 144,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "legs"
+      "registry_name": "legs",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/LegsEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/legs_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/LegsRenderer.java"
+        ]
+      }
     },
     {
       "name": "LongLegChicken",
@@ -1811,7 +2801,14 @@
       "sortid": 145,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "long_leg_chicken"
+      "registry_name": "long_leg_chicken",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/LongLegChickenEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/LongLegChickenRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/long_leg_chicken_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "Firefly",
@@ -1819,7 +2816,14 @@
       "sortid": 146,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "firefly"
+      "registry_name": "firefly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/firefly_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/FireflyEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/FireflyRenderer.java"
+        ]
+      }
     },
     {
       "name": "SamsungNote7Rightclicked",
@@ -1829,6 +2833,9 @@
       "locked_code": false,
       "registry_name": "samsung_note_7_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/SamsungNote7RightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1859,7 +2866,13 @@
       "sortid": 151,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "totem_of_amogus"
+      "registry_name": "totem_of_amogus",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TotemOfAmogusItem.java",
+          "src/main/resources/assets/chaosmod/models/item/totem_of_amogus.json"
+        ]
+      }
     },
     {
       "name": "DepressionBlock",
@@ -1867,7 +2880,15 @@
       "sortid": 149,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "depression_block"
+      "registry_name": "depression_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/DepressionBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/depression_block.json",
+          "src/main/resources/assets/chaosmod/models/item/depression_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/depression_block.json"
+        ]
+      }
     },
     {
       "name": "TPoseEntity",
@@ -1875,7 +2896,14 @@
       "sortid": 154,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "t_pose_entity"
+      "registry_name": "t_pose_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/TPoseEntityEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TPoseEntityRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/t_pose_entity_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "AmogusGun",
@@ -1883,7 +2911,14 @@
       "sortid": 152,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amogus_gun"
+      "registry_name": "amogus_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/amogus_gun.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AmogusGunEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AmogusGunItem.java"
+        ]
+      }
     },
     {
       "name": "ImpostorKnife",
@@ -1891,7 +2926,13 @@
       "sortid": 155,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "impostor_knife"
+      "registry_name": "impostor_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/impostor_knife.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ImpostorKnifeItem.java"
+        ]
+      }
     },
     {
       "name": "SamsungNote7",
@@ -1899,7 +2940,13 @@
       "sortid": 148,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "samsung_note_7"
+      "registry_name": "samsung_note_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/samsung_note_7.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SamsungNote7Item.java"
+        ]
+      }
     },
     {
       "name": "AlmondWater",
@@ -1907,7 +2954,13 @@
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "almond_water"
+      "registry_name": "almond_water",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/almond_water.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AlmondWaterItem.java"
+        ]
+      }
     },
     {
       "name": "Zenith",
@@ -1915,7 +2968,13 @@
       "sortid": 153,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "zenith"
+      "registry_name": "zenith",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ZenithItem.java",
+          "src/main/resources/assets/chaosmod/models/item/zenith.json"
+        ]
+      }
     },
     {
       "name": "ComunisamBlock",
@@ -1923,7 +2982,15 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "comunisam_block"
+      "registry_name": "comunisam_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/ComunisamBlockBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/comunisam_block.json",
+          "src/main/resources/assets/chaosmod/models/item/comunisam_block.json",
+          "src/main/resources/assets/chaosmod/models/block/comunisam_block.json"
+        ]
+      }
     },
     {
       "name": "Cccp",
@@ -1933,6 +3000,9 @@
       "locked_code": false,
       "registry_name": "cccp",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CccpProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1967,7 +3037,15 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poland_block"
+      "registry_name": "poland_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/poland_block.json",
+          "src/main/resources/assets/chaosmod/models/block/poland_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PolandBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/poland_block.json"
+        ]
+      }
     },
     {
       "name": "HEC",
@@ -1975,7 +3053,12 @@
       "sortid": 147,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hec"
+      "registry_name": "hec",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/HECFeature.java"
+        ]
+      }
     },
     {
       "name": "Polska",
@@ -1983,7 +3066,12 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "polska"
+      "registry_name": "polska",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/PolskaFeature.java"
+        ]
+      }
     },
     {
       "name": "CyberBlock",
@@ -1991,7 +3079,15 @@
       "sortid": 157,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cyber_block"
+      "registry_name": "cyber_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/cyber_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CyberBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/cyber_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/cyber_block.json"
+        ]
+      }
     },
     {
       "name": "TotemOfDream",
@@ -1999,7 +3095,13 @@
       "sortid": 160,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "totem_of_dream"
+      "registry_name": "totem_of_dream",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TotemOfDreamItem.java",
+          "src/main/resources/assets/chaosmod/models/item/totem_of_dream.json"
+        ]
+      }
     },
     {
       "name": "Rock",
@@ -2007,7 +3109,14 @@
       "sortid": 156,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rock"
+      "registry_name": "rock",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/RockEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/rock.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/RockItem.java"
+        ]
+      }
     },
     {
       "name": "Cyberspace",
@@ -2017,7 +3126,12 @@
       "locked_code": false,
       "registry_name": "cyberspace",
       "metadata": {
-        "ep": false
+        "ep": false,
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CyberspaceDimension.java",
+          "src/main/resources/data/chaosmod/dimension/cyberspace.json",
+          "src/main/resources/data/chaosmod/dimension_type/cyberspace.json"
+        ]
       }
     },
     {
@@ -2026,7 +3140,16 @@
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "computer"
+      "registry_name": "computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/computer.json",
+          "src/main/resources/assets/chaosmod/blockstates/computer.json",
+          "src/main/resources/assets/chaosmod/models/item/computer.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/ComputerBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/ComputerFeature.java"
+        ]
+      }
     },
     {
       "name": "ComputerGui",
@@ -2034,7 +3157,14 @@
       "sortid": 159,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "computer_gui"
+      "registry_name": "computer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/ComputerGuiMenu.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/ComputerGuiScreen.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/network/ComputerGuiButtonMessage.java"
+        ]
+      }
     },
     {
       "name": "Igla",
@@ -2042,7 +3172,13 @@
       "sortid": 128,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "igla"
+      "registry_name": "igla",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/igla.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/IglaItem.java"
+        ]
+      }
     },
     {
       "name": "FASTTOPASSRightclicked",
@@ -2052,6 +3188,9 @@
       "locked_code": false,
       "registry_name": "fasttopass_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/FASTTOPASSRightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2068,7 +3207,20 @@
       "locked_code": false,
       "registry_name": "cioao",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CioaoPortalBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/cioao.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CioaoItem.java",
+          "src/main/resources/data/chaosmod/dimension/cioao.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/CioaoPortalShape.java",
+          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ns.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CioaoDimension.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/CioaoTeleporter.java",
+          "src/main/resources/data/chaosmod/dimension_type/cioao.json",
+          "src/main/resources/assets/chaosmod/blockstates/cioao_portal.json"
+        ]
       }
     },
     {
@@ -2077,7 +3229,13 @@
       "sortid": 126,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "to"
+      "registry_name": "to",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TOItem.java",
+          "src/main/resources/assets/chaosmod/models/item/to.json"
+        ]
+      }
     },
     {
       "name": "HmmmmDRIP",
@@ -2085,7 +3243,10 @@
       "sortid": 130,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hmmmm_drip"
+      "registry_name": "hmmmm_drip",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "FortniteA1",
@@ -2093,7 +3254,13 @@
       "sortid": 131,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fortnite_a_1"
+      "registry_name": "fortnite_a_1",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FortniteA1Item.java",
+          "src/main/resources/assets/chaosmod/models/item/fortnite_a_1.json"
+        ]
+      }
     },
     {
       "name": "Greengiscreenda",
@@ -2101,7 +3268,15 @@
       "sortid": 132,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "greengiscreenda"
+      "registry_name": "greengiscreenda",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/greengiscreenda.json",
+          "src/main/resources/assets/chaosmod/models/block/greengiscreenda.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/GreengiscreendaBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/greengiscreenda.json"
+        ]
+      }
     },
     {
       "name": "FASTTOPASS",
@@ -2109,7 +3284,13 @@
       "sortid": 127,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fasttopass"
+      "registry_name": "fasttopass",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FASTTOPASSItem.java",
+          "src/main/resources/assets/chaosmod/models/item/fasttopass.json"
+        ]
+      }
     },
     {
       "name": "EnterCyberspaceButtonPressed",
@@ -2119,6 +3300,9 @@
       "locked_code": false,
       "registry_name": "enter_cyberspace_button_pressed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/EnterCyberspaceButtonPressedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2133,7 +3317,12 @@
       "sortid": 162,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cyber_biome"
+      "registry_name": "cyber_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/CyberBiomeBiome.java"
+        ]
+      }
     },
     {
       "name": "Stroater",
@@ -2141,7 +3330,14 @@
       "sortid": 163,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stroater"
+      "registry_name": "stroater",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/StroaterRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/StroaterEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/stroater_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "HalfGoldenApple",
@@ -2149,7 +3345,13 @@
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "half_golden_apple"
+      "registry_name": "half_golden_apple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/half_golden_apple.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/HalfGoldenAppleItem.java"
+        ]
+      }
     },
     {
       "name": "HalfGoldenAppleRecipe",
@@ -2157,7 +3359,12 @@
       "sortid": 165,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "half_golden_apple_recipe"
+      "registry_name": "half_golden_apple_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/half_golden_apple_recipe.json"
+        ]
+      }
     },
     {
       "name": "Beef",
@@ -2165,7 +3372,13 @@
       "sortid": 166,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beef"
+      "registry_name": "beef",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BeefItem.java",
+          "src/main/resources/assets/chaosmod/models/item/beef.json"
+        ]
+      }
     },
     {
       "name": "Baguette",
@@ -2173,7 +3386,13 @@
       "sortid": 167,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "baguette"
+      "registry_name": "baguette",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BaguetteItem.java",
+          "src/main/resources/assets/chaosmod/models/item/baguette.json"
+        ]
+      }
     },
     {
       "name": "Obamium",
@@ -2181,7 +3400,13 @@
       "sortid": 168,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "obamium"
+      "registry_name": "obamium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/obamium.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ObamiumItem.java"
+        ]
+      }
     },
     {
       "name": "DoBossSpawning",
@@ -2191,7 +3416,8 @@
       "locked_code": false,
       "registry_name": "doBossSpawning",
       "metadata": {
-        "type": "logic"
+        "type": "logic",
+        "files": []
       }
     },
     {
@@ -2200,7 +3426,13 @@
       "sortid": 171,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lava_bottle"
+      "registry_name": "lava_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/lava_bottle.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/LavaBottleItem.java"
+        ]
+      }
     },
     {
       "name": "SpongebobBoss",
@@ -2208,7 +3440,14 @@
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spongebob_boss"
+      "registry_name": "spongebob_boss",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/SpongebobBossRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/spongebob_boss_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/SpongebobBossEntity.java"
+        ]
+      }
     },
     {
       "name": "CobbleFluid",
@@ -2218,7 +3457,15 @@
       "locked_code": false,
       "registry_name": "cobble_fluid",
       "metadata": {
-        "gb": true
+        "gb": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/blockstates/cobble_fluid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CobbleFluidItem.java",
+          "src/main/resources/assets/chaosmod/models/item/cobble_fluid_bucket.json",
+          "src/main/resources/assets/chaosmod/models/block/cobble_fluid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CobbleFluidFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CobbleFluidBlock.java"
+        ]
       }
     },
     {
@@ -2227,7 +3474,13 @@
       "sortid": 172,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beengot"
+      "registry_name": "beengot",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BeengotItem.java",
+          "src/main/resources/assets/chaosmod/models/item/beengot.json"
+        ]
+      }
     },
     {
       "name": "CobblestoneFluidRecipe",
@@ -2235,7 +3488,12 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cobblestone_fluid_recipe"
+      "registry_name": "cobblestone_fluid_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/cobblestone_fluid_recipe.json"
+        ]
+      }
     },
     {
       "name": "LavaBottlePlayerFinishesUsingItem",
@@ -2245,6 +3503,9 @@
       "locked_code": false,
       "registry_name": "lava_bottle_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/LavaBottlePlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2259,7 +3520,12 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_armor_helmet_recipe"
+      "registry_name": "adidas_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasAxeRecipe",
@@ -2267,7 +3533,12 @@
       "sortid": 186,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_axe_recipe"
+      "registry_name": "adidas_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasArmor",
@@ -2280,7 +3551,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/adidas_armor_chestplate.json",
+          "src/main/resources/assets/chaosmod/models/item/adidas_armor_boots.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasArmorItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_armor_leggings.json",
+          "src/main/resources/assets/chaosmod/models/item/adidas_armor_helmet.json"
+        ]
       }
     },
     {
@@ -2289,7 +3567,13 @@
       "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_sword"
+      "registry_name": "adidas_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasSwordItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_sword.json"
+        ]
+      }
     },
     {
       "name": "AdidasShovel",
@@ -2297,7 +3581,13 @@
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_shovel"
+      "registry_name": "adidas_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasShovelItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_shovel.json"
+        ]
+      }
     },
     {
       "name": "AdidasBlock",
@@ -2305,7 +3595,16 @@
       "sortid": 174,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_block"
+      "registry_name": "adidas_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/adidas_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/AdidasBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/adidas_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/adidas_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/AdidasBlockFeature.java"
+        ]
+      }
     },
     {
       "name": "AdidasAxe",
@@ -2313,7 +3612,13 @@
       "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_axe"
+      "registry_name": "adidas_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasAxeItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_axe.json"
+        ]
+      }
     },
     {
       "name": "AdidasArmorBootsRecipe",
@@ -2321,7 +3626,12 @@
       "sortid": 179,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_armor_boots_recipe"
+      "registry_name": "adidas_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "AMOGUS3BLU",
@@ -2329,7 +3639,14 @@
       "sortid": 169,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amogus_3_blu"
+      "registry_name": "amogus_3_blu",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AMOGUS3BLURenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AMOGUS3BLUEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_3_blu_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "AdidasPickaxeRecipe",
@@ -2337,7 +3654,12 @@
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_pickaxe_recipe"
+      "registry_name": "adidas_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasHoe",
@@ -2345,7 +3667,13 @@
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_hoe"
+      "registry_name": "adidas_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasHoeItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_hoe.json"
+        ]
+      }
     },
     {
       "name": "AdidasShovelRecipe",
@@ -2353,7 +3681,12 @@
       "sortid": 188,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_shovel_recipe"
+      "registry_name": "adidas_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasArmorLeggingsRecipe",
@@ -2361,7 +3694,12 @@
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_armor_leggings_recipe"
+      "registry_name": "adidas_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasPickaxe",
@@ -2369,7 +3707,13 @@
       "sortid": 180,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_pickaxe"
+      "registry_name": "adidas_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/adidas_pickaxe.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "AdidasSwordRecipe",
@@ -2377,7 +3721,12 @@
       "sortid": 187,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_sword_recipe"
+      "registry_name": "adidas_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "AdidasHoeRecipe",
@@ -2385,7 +3734,12 @@
       "sortid": 189,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_hoe_recipe"
+      "registry_name": "adidas_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_hoe_recipe.json"
+        ]
+      }
     },
     {
       "name": "AMOGUS3GRIN",
@@ -2393,7 +3747,14 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amogus_3_grin"
+      "registry_name": "amogus_3_grin",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AMOGUS3GRINEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_3_grin_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AMOGUS3GRINRenderer.java"
+        ]
+      }
     },
     {
       "name": "AdidasArmorBodyRecipe",
@@ -2401,7 +3762,12 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "adidas_armor_body_recipe"
+      "registry_name": "adidas_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/adidas_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "CheatGUI",
@@ -2409,7 +3775,14 @@
       "sortid": 199,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheat_gui"
+      "registry_name": "cheat_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/CheatGUIButtonMessage.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/CheatGUIMenu.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/CheatGUIScreen.java"
+        ]
+      }
     },
     {
       "name": "MissingTexture",
@@ -2417,7 +3790,15 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "missing_texture"
+      "registry_name": "missing_texture",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/missing_texture.json",
+          "src/main/resources/assets/chaosmod/blockstates/missing_texture.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/MissingTextureBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/missing_texture.json"
+        ]
+      }
     },
     {
       "name": "JavelinLauncher",
@@ -2425,7 +3806,14 @@
       "sortid": 198,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "javelin_launcher"
+      "registry_name": "javelin_launcher",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JavelinLauncherEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/JavelinLauncherItem.java",
+          "src/main/resources/assets/chaosmod/models/item/javelin_launcher.json"
+        ]
+      }
     },
     {
       "name": "PlayerSleep",
@@ -2435,6 +3823,9 @@
       "locked_code": false,
       "registry_name": "player_sleep",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PlayerSleepProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2455,6 +3846,9 @@
       "locked_code": false,
       "registry_name": "player_joined_world",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PlayerJoinedWorldProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2473,7 +3867,12 @@
       "sortid": 193,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sanity_overlay"
+      "registry_name": "sanity_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/SanityOverlayOverlay.java"
+        ]
+      }
     },
     {
       "name": "TheRock",
@@ -2481,7 +3880,14 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "the_rock"
+      "registry_name": "the_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/the_rock_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/TheRockEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TheRockRenderer.java"
+        ]
+      }
     },
     {
       "name": "EatableCommandBlock",
@@ -2489,7 +3895,13 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "eatable_command_block"
+      "registry_name": "eatable_command_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/EatableCommandBlockItem.java",
+          "src/main/resources/assets/chaosmod/models/item/eatable_command_block.json"
+        ]
+      }
     },
     {
       "name": "XSORD",
@@ -2497,7 +3909,13 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xsord"
+      "registry_name": "xsord",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/XSORDItem.java",
+          "src/main/resources/assets/chaosmod/models/item/xsord.json"
+        ]
+      }
     },
     {
       "name": "Xite",
@@ -2505,7 +3923,13 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xite"
+      "registry_name": "xite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/xite.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/XiteItem.java"
+        ]
+      }
     },
     {
       "name": "RadiationPoisioning",
@@ -2513,7 +3937,12 @@
       "sortid": 190,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "radiation_poisioning"
+      "registry_name": "radiation_poisioning",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/RadiationPoisioningMobEffect.java"
+        ]
+      }
     },
     {
       "name": "RadiationPoisioningActiveTickCondition",
@@ -2523,6 +3952,9 @@
       "locked_code": false,
       "registry_name": "radiation_poisioning_active_tick_condition",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/RadiationPoisioningActiveTickConditionProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2541,7 +3973,12 @@
       "sortid": 191,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "katana"
+      "registry_name": "katana",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/katana.json"
+        ]
+      }
     },
     {
       "name": "XSORDLivingEntityIsHitWithTool",
@@ -2551,6 +3988,9 @@
       "locked_code": false,
       "registry_name": "xsord_living_entity_is_hit_with_tool",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/XSORDLivingEntityIsHitWithToolProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2565,7 +4005,13 @@
       "sortid": 200,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bottle_of_piss"
+      "registry_name": "bottle_of_piss",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BottleOfPissItem.java",
+          "src/main/resources/assets/chaosmod/models/item/bottle_of_piss.json"
+        ]
+      }
     },
     {
       "name": "EatableCommandBlockPlayerFinishesUsingItem",
@@ -2575,6 +4021,9 @@
       "locked_code": false,
       "registry_name": "eatable_command_block_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/EatableCommandBlockPlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2607,6 +4056,9 @@
       "locked_code": false,
       "registry_name": "bottle_of_piss_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/BottleOfPissPlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2621,7 +4073,13 @@
       "sortid": 201,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinted_glass_bottle"
+      "registry_name": "tinted_glass_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/tinted_glass_bottle.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TintedGlassBottleItem.java"
+        ]
+      }
     },
     {
       "name": "IronEgg",
@@ -2629,7 +4087,13 @@
       "sortid": 207,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "iron_egg"
+      "registry_name": "iron_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/iron_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/IronEggItem.java"
+        ]
+      }
     },
     {
       "name": "DoritoCoolRanch",
@@ -2637,7 +4101,13 @@
       "sortid": 208,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dorito_cool_ranch"
+      "registry_name": "dorito_cool_ranch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/dorito_cool_ranch.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DoritoCoolRanchItem.java"
+        ]
+      }
     },
     {
       "name": "AteDorito",
@@ -2647,6 +4117,9 @@
       "locked_code": false,
       "registry_name": "ate_dorito",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/AteDoritoProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2661,7 +4134,12 @@
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fat"
+      "registry_name": "fat",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/FatMobEffect.java"
+        ]
+      }
     },
     {
       "name": "DoNotPressPressed",
@@ -2671,6 +4149,9 @@
       "locked_code": false,
       "registry_name": "do_not_press_pressed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DoNotPressPressedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -2697,7 +4178,13 @@
       "sortid": 205,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dorito_nacho"
+      "registry_name": "dorito_nacho",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/dorito_nacho.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DoritoNachoItem.java"
+        ]
+      }
     },
     {
       "name": "TintedGlassBottleRecipe",
@@ -2705,7 +4192,12 @@
       "sortid": 202,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tinted_glass_bottle_recipe"
+      "registry_name": "tinted_glass_bottle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/tinted_glass_bottle_recipe.json"
+        ]
+      }
     },
     {
       "name": "KFCC",
@@ -2713,7 +4205,12 @@
       "sortid": 193,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kfcc"
+      "registry_name": "kfcc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/kfcc.json"
+        ]
+      }
     },
     {
       "name": "KentuckyFriedChickenFries",
@@ -2721,7 +4218,13 @@
       "sortid": 194,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kentucky_fried_chicken_fries"
+      "registry_name": "kentucky_fried_chicken_fries",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/KentuckyFriedChickenFriesItem.java",
+          "src/main/resources/assets/chaosmod/models/item/kentucky_fried_chicken_fries.json"
+        ]
+      }
     },
     {
       "name": "KentuckyFriedChicken",
@@ -2729,7 +4232,13 @@
       "sortid": 192,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kentucky_fried_chicken"
+      "registry_name": "kentucky_fried_chicken",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/kentucky_fried_chicken.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/KentuckyFriedChickenItem.java"
+        ]
+      }
     },
     {
       "name": "PotaatoBaketRecepti",
@@ -2737,7 +4246,12 @@
       "sortid": 197,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "potaato_baket_recepti"
+      "registry_name": "potaato_baket_recepti",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/potaato_baket_recepti.json"
+        ]
+      }
     },
     {
       "name": "KFCF",
@@ -2745,7 +4259,12 @@
       "sortid": 196,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kfcf"
+      "registry_name": "kfcf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/kfcf.json"
+        ]
+      }
     },
     {
       "name": "KFCE",
@@ -2753,7 +4272,13 @@
       "sortid": 195,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "kfce"
+      "registry_name": "kfce",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/KFCEItem.java",
+          "src/main/resources/assets/chaosmod/models/item/kfce.json"
+        ]
+      }
     },
     {
       "name": "Big",
@@ -2761,7 +4286,14 @@
       "sortid": 210,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "big"
+      "registry_name": "big",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/BigEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/big_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/BigRenderer.java"
+        ]
+      }
     },
     {
       "name": "Aether",
@@ -2771,7 +4303,20 @@
       "locked_code": false,
       "registry_name": "aether",
       "metadata": {
-        "ep": true
+        "ep": true,
+        "files": [
+          "src/main/resources/assets/chaosmod/models/block/aether_portal_ns.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/AetherPortalBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AetherItem.java",
+          "src/main/resources/data/chaosmod/dimension_type/aether.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/AetherTeleporter.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/AetherPortalShape.java",
+          "src/main/resources/assets/chaosmod/models/block/aether_portal_ew.json",
+          "src/main/resources/assets/chaosmod/models/item/aether.json",
+          "src/main/resources/data/chaosmod/dimension/aether.json",
+          "src/main/resources/assets/chaosmod/blockstates/aether_portal.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/AetherDimension.java"
+        ]
       }
     },
     {
@@ -2780,7 +4325,13 @@
       "sortid": 211,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spit_ball"
+      "registry_name": "spit_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/spit_ball.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SpitBallItem.java"
+        ]
+      }
     },
     {
       "name": "Two",
@@ -2788,7 +4339,12 @@
       "sortid": 212,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "two"
+      "registry_name": "two",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/TwoMessage.java"
+        ]
+      }
     },
     {
       "name": "TwoOnKeyPressed",
@@ -2798,6 +4354,9 @@
       "locked_code": false,
       "registry_name": "two_on_key_pressed",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/TwoOnKeyPressedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -2824,7 +4383,12 @@
       "sortid": 209,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ironeggg"
+      "registry_name": "ironeggg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/ironeggg.json"
+        ]
+      }
     },
     {
       "name": "Blind",
@@ -2832,7 +4396,12 @@
       "sortid": 213,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blind"
+      "registry_name": "blind",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/BlindMobEffect.java"
+        ]
+      }
     },
     {
       "name": "GlowRightclicked",
@@ -2842,6 +4411,9 @@
       "locked_code": false,
       "registry_name": "glow_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/GlowRightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2860,7 +4432,13 @@
       "sortid": 213,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glow"
+      "registry_name": "glow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/glow.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/GlowItem.java"
+        ]
+      }
     },
     {
       "name": "GlowRecipe",
@@ -2868,7 +4446,12 @@
       "sortid": 214,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glow_recipe"
+      "registry_name": "glow_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/glow_recipe.json"
+        ]
+      }
     },
     {
       "name": "MercuryPlayerFinishesUsingItem",
@@ -2878,6 +4461,9 @@
       "locked_code": false,
       "registry_name": "mercury_player_finishes_using_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/MercuryPlayerFinishesUsingItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2896,7 +4482,13 @@
       "sortid": 215,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mercury"
+      "registry_name": "mercury",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/MercuryItem.java",
+          "src/main/resources/assets/chaosmod/models/item/mercury.json"
+        ]
+      }
     },
     {
       "name": "JebBlock",
@@ -2904,7 +4496,16 @@
       "sortid": 216,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "jeb_block"
+      "registry_name": "jeb_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/jeb_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/JebBlockFeature.java",
+          "src/main/resources/assets/chaosmod/blockstates/jeb_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/JebBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/jeb_block.json"
+        ]
+      }
     },
     {
       "name": "FryingPanLivingEntityIsHitWithItem",
@@ -2914,6 +4515,9 @@
       "locked_code": false,
       "registry_name": "frying_pan_living_entity_is_hit_with_item",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/FryingPanLivingEntityIsHitWithItemProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "x",
@@ -2940,7 +4544,13 @@
       "sortid": 217,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frying_pan"
+      "registry_name": "frying_pan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/frying_pan.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FryingPanItem.java"
+        ]
+      }
     },
     {
       "name": "AppleIngot",
@@ -2948,7 +4558,13 @@
       "sortid": 218,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "apple_ingot"
+      "registry_name": "apple_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/apple_ingot.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AppleIngotItem.java"
+        ]
+      }
     },
     {
       "name": "AppleIngotRecipe",
@@ -2956,7 +4572,12 @@
       "sortid": 219,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "apple_ingot_recipe"
+      "registry_name": "apple_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/apple_ingot_recipe.json"
+        ]
+      }
     },
     {
       "name": "Technoblade",
@@ -2964,7 +4585,14 @@
       "sortid": 220,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "technoblade"
+      "registry_name": "technoblade",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/TechnobladeEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TechnobladeRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/technoblade_spawn_egg.json"
+        ]
+      }
     },
     {
       "name": "StoneStair",
@@ -2972,7 +4600,12 @@
       "sortid": 221,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stone_stair"
+      "registry_name": "stone_stair",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/StoneStairFeature.java"
+        ]
+      }
     },
     {
       "name": "PondOfCobblestone",
@@ -2980,7 +4613,12 @@
       "sortid": 222,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "pond_of_cobblestone"
+      "registry_name": "pond_of_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/PondOfCobblestoneFeature.java"
+        ]
+      }
     },
     {
       "name": "RickrollStairs",
@@ -2988,7 +4626,12 @@
       "sortid": 223,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rickroll_stairs"
+      "registry_name": "rickroll_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/RickrollStairsFeature.java"
+        ]
+      }
     },
     {
       "name": "Fue",
@@ -2996,7 +4639,10 @@
       "sortid": 224,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fue"
+      "registry_name": "fue",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "DioriteFuel",
@@ -3004,7 +4650,259 @@
       "sortid": 225,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diorite_fuel"
+      "registry_name": "diorite_fuel",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Cupcakke",
+      "type": "livingentity",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cupcakke",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CupcakkeRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/cupcakke_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/CupcakkeEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BirchForest",
+      "type": "biome",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_forest",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/BirchForestBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "BirchTree",
+      "type": "structure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/BirchTreeFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "BirchTreeBig",
+      "type": "structure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tree_big",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/BirchTreeBigFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "Desert",
+      "type": "biome",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/DesertBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "Cactus",
+      "type": "structure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/CactusFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "Ohio",
+      "type": "biome",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ohio",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/OhioBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "MoreExtremeHills",
+      "type": "biome",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_extreme_hills",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/MoreExtremeHillsBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "Plains",
+      "type": "biome",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plains",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/PlainsBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "PeeFeature",
+      "type": "feature",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pee_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/PeeFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "CumFeature",
+      "type": "feature",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/CumFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "StaravodaFeature",
+      "type": "feature",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staravoda_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/StaravodaFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "OrangeFluidFeature",
+      "type": "feature",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_fluid_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/OrangeFluidFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "OilFeature",
+      "type": "feature",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/OilFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "GatoradeFeature",
+      "type": "feature",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gatorade_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/GatoradeFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "CarbonMonoxideFeature",
+      "type": "feature",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon_monoxide_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/CarbonMonoxideFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "Milk2Feature",
+      "type": "feature",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk_2_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/Milk2FeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "RadiationLiquidFeature",
+      "type": "feature",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_liquid_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/RadiationLiquidFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "CobbleFluidFeature",
+      "type": "feature",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobble_fluid_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/CobbleFluidFeatureFeature.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3183,23 +5081,56 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "smack_my_ass",
+      "files": [
+        "papi_smack_my_a_-_cupcakke_sound_effect-youtubeconvert.cc"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    },
+    {
+      "name": "ugh_cupcakke",
+      "files": [
+        "cupcakke-ugh-by-tuna"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    },
+    {
+      "name": "gulp_gulp",
+      "files": [
+        "cupcakke-gulp-gulp-by-tuna"
+      ],
+      "category": "voice",
+      "subtitle": ""
+    },
+    {
+      "name": "wet_cupcakke",
+      "files": [
+        "cupcakke-by-tuna"
+      ],
+      "category": "voice",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.cum_bucket": "Cum Bucket",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "block.chaosmod.missing_texture": "Missing Texture",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
@@ -3217,11 +5148,13 @@
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.youtube": "Youtube",
+      "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "block.chaosmod.pee": "Pee",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
+      "entity.chaosmod.cupcakke": "Cupcakke",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "subtitles.dudeshutt": "",
@@ -3236,6 +5169,7 @@
       "effect.chaosmod.blind": "Blind",
       "item.chaosmod.adidas_sword": "Adidas Sword",
       "block.chaosmod.poland_block": "Poland Block",
+      "subtitles.smack_my_ass": "",
       "block.chaosmod.milk_2": "Milk 2",
       "death.attack.cccp": "%1$s was a fool",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
@@ -3246,16 +5180,20 @@
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "entity.chaosmod.cod_but_better": "Cod But Better",
       "item.chaosmod.amugus_helmet": "Amugus Helmet",
+      "gui.chaosmod.computer_gui.button_enter_cyberspace": "Enter Cyberspace",
       "subtitles.girl_moan": "aah",
       "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "biome.chaosmod.plains": "Plains",
       "block.chaosmod.tombstone": "Tombstone",
       "item.chaosmod.brazil": "Brazil Portal Igniter",
+      "item.chaosmod.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
       "item.chaosmod.sus_sword": "Sus Sword",
       "entity.chaosmod.blaz": "Blaz",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
       "subtitles.pan_hit": "",
       "entity.chaosmod.josip": "JOSIP",
+      "subtitles.ugh_cupcakke": "",
       "block.chaosmod.noblock": "mmmmm",
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "item.chaosmod.adidas_armor_boots": "Adidas Boots",
@@ -3275,9 +5213,11 @@
       "death.attack.drank_lava": "%1$s drank lava",
       "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
+      "biome.chaosmod.more_extreme_hills": "More Extreme Hills",
       "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "block.chaosmod.south": "South",
+      "biome.chaosmod.birch_forest": "Birch Forest",
       "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
@@ -3332,8 +5272,10 @@
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
       "item.chaosmod.obamium": "Obamium",
       "subtitles.crnidani": "crnidanijebani",
+      "gui.chaosmod.cheat_gui.button_switch_dimension": "Switch Dimension",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.adidas_axe": "Adidas Axe",
+      "subtitles.wet_cupcakke": "",
       "item.chaosmod.glow": "Glow",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "key.chaosmod.one": "ma",
@@ -3363,6 +5305,7 @@
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.amogus_gun": "Amogus Gun",
       "key.chaosmod.two": "Spit",
+      "gui.chaosmod.vikki_vuk_gui.label_vstorage": "VStorage",
       "item.chaosmod.bullet": "Bullet",
       "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
@@ -3384,6 +5327,7 @@
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "item.chaosmod.cioao": "Ciao Portal Igniter",
+      "gui.chaosmod.cheat_gui.label_cheat_menu": "Cheat Menu",
       "item.chaosmod.baguette": "Baguette",
       "block.chaosmod.adidas_block": "Adidas Block",
       "item.chaosmod.dorito_nacho": "Nacho Doritos",
@@ -3393,6 +5337,7 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
+      "subtitles.gulp_gulp": "",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "item.chaosmod.impostor_knife": "Impostor Knife",
       "item.chaosmod.eatable_command_block": "Command Block",
@@ -3406,10 +5351,12 @@
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
       "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
+      "biome.chaosmod.desert": "Desert",
       "entity.chaosmod.the_rock": "The Rock",
       "item.chaosmod.adidas_armor_chestplate": "Adidas Chestplate",
       "death.attack.takehome": "%1$s was taken home",
       "item.chaosmod.kfce": "KFCE",
+      "gui.chaosmod.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
       "itemGroup.tabgfdgsfdgfdgfdgfdgfdgfdg": "JosipTLG\u0027s Apocalypse",
@@ -3446,6 +5393,7 @@
       "item.chaosmod.water_cup": "Water Cup",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
+      "biome.chaosmod.ohio": "Ohio",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "entity.chaosmod.endy": "Endy",
       "item.chaosmod.xite": "Xite",
@@ -3464,6 +5412,7 @@
       "item.chaosmod.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "effect.chaosmod.high_effect": "High",
+      "gui.chaosmod.sanity_overlay.label_sanity_varintegersanity": "Sanity: \u003cVAR:integer:sanity\u003e",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.sssr": "SSSR",
       "entity.chaosmod.firefly": "Firefly",
@@ -3505,5 +5454,5 @@
     "modElementsPackage": "xyz.vikkivuk.chaosmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200234517
+  "mcreatorVersion": 202300110610
 }

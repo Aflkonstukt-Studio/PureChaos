@@ -23,8 +23,7 @@ import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.BlockPos;
 
 public abstract class CumFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CUM,
-			ChaosmodModFluids.FLOWING_CUM,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ChaosmodModFluids.CUM, ChaosmodModFluids.FLOWING_CUM,
 			FluidAttributes.builder(new ResourceLocation("chaosmod:blocks/cum"), new ResourceLocation("chaosmod:blocks/cum")).luminosity(9)
 
 					.temperature(69420)

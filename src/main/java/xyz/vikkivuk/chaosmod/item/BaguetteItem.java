@@ -16,10 +16,9 @@ import java.util.List;
 
 public class BaguetteItem extends Item {
 	public BaguetteItem() {
-		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(14).saturationMod(10f)
+		super(new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(14).saturationMod(10f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override
