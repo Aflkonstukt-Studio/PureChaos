@@ -1,6 +1,7 @@
 package xyz.vikkivuk.chaosmod.procedures;
 
 import xyz.vikkivuk.chaosmod.network.ChaosmodModVariables;
+import xyz.vikkivuk.chaosmod.init.ChaosmodModMobEffects;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -10,6 +11,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.Mth;
 
@@ -33,6 +35,12 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		if (ChaosmodModVariables.WorldVariables.get(world).sanity <= 50) {
+			if (Mth.nextDouble(new Random(), 1, 6000) <= 5) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.addEffect(new MobEffectInstance(ChaosmodModMobEffects.DEMENTIA.get(), 600, 1, (true), (true)));
+			}
+		}
 		if (ChaosmodModVariables.WorldVariables.get(world).sanity <= 0) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.hurt(new DamageSource("sanity").bypassArmor(), 99999);

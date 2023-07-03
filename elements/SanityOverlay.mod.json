@@ -9,7 +9,8 @@
         "data": {
           "name": "label_sanity_varintegersanity",
           "text": {
-            "fixedValue": "Sanity: <VAR:integer:sanity>"
+            "fixedValue": "",
+            "name": "SanityOverlayValue"
           },
           "color": {
             "value": -1,

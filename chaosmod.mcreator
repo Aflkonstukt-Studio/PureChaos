@@ -28,8 +28,8 @@
       "registry_name": "dirtsword",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/DirtswordItem.java",
-          "src/main/resources/assets/chaosmod/models/item/dirtsword.json"
+          "src/main/resources/assets/chaosmod/models/item/dirtsword.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DirtswordItem.java"
         ]
       }
     },
@@ -90,9 +90,9 @@
       "registry_name": "deek",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DeekItem.java",
           "src/main/resources/assets/chaosmod/models/item/deek.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/DeekEntity.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/DeekItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/DeekEntity.java"
         ]
       }
     },
@@ -106,12 +106,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/pee.json",
-          "src/main/resources/assets/chaosmod/models/item/pee_bucket.json",
           "src/main/resources/assets/chaosmod/blockstates/pee.json",
+          "src/main/resources/assets/chaosmod/models/item/pee_bucket.json",
+          "src/main/resources/assets/chaosmod/models/block/pee.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/PeeItem.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/PeeBlock.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/PeeFluid.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/PeeFluid.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PeeBlock.java"
         ]
       }
     },
@@ -172,17 +172,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/PeemensionItem.java",
-          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ew.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/PeemensionPortalBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/PeemensionDimension.java",
           "src/main/resources/data/chaosmod/dimension_type/peemension.json",
           "src/main/resources/assets/chaosmod/models/item/peemension.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/PeemensionTeleporter.java",
-          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ns.json",
           "src/main/resources/assets/chaosmod/blockstates/peemension_portal.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/PeemensionPortalShape.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PeemensionPortalBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PeemensionItem.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/PeemensionTeleporter.java",
           "src/main/resources/data/chaosmod/dimension/peemension.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/PeemensionDimension.java"
+          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ew.json",
+          "src/main/resources/assets/chaosmod/models/block/peemension_portal_ns.json"
         ]
       }
     },
@@ -206,12 +206,12 @@
       "registry_name": "pee_block",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/PeeBlockFeature.java",
+          "src/main/resources/assets/chaosmod/models/block/pee_block.json",
           "src/main/resources/assets/chaosmod/blockstates/pee_block.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/PeeBlockBlock.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/PeeBlockFeature.java",
           "src/main/resources/assets/chaosmod/models/item/pee_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/PeeBlockBlockEntity.java",
-          "src/main/resources/assets/chaosmod/models/block/pee_block.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/PeeBlockBlockEntity.java"
         ]
       }
     },
@@ -224,8 +224,8 @@
       "registry_name": "pickax",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/PickaxItem.java",
-          "src/main/resources/assets/chaosmod/models/item/pickax.json"
+          "src/main/resources/assets/chaosmod/models/item/pickax.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PickaxItem.java"
         ]
       }
     },
@@ -238,8 +238,8 @@
       "registry_name": "fooditem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/fooditem.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/FooditemItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FooditemItem.java",
+          "src/main/resources/assets/chaosmod/models/item/fooditem.json"
         ]
       }
     },
@@ -252,9 +252,9 @@
       "registry_name": "aentity",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/aentity_spawn_egg.json",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/AentityEntity.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AentityRenderer.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AentityRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/aentity_spawn_egg.json"
         ]
       }
     },
@@ -295,10 +295,10 @@
       "registry_name": "hell_but_overworld",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/HellButOverworldBiome.java",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldTrunkDecorator.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldLeaveDecorator.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldFruitDecorator.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldFruitDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/biome/HellButOverworldBiome.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/HellButOverworldLeaveDecorator.java"
         ]
       }
     },
@@ -311,11 +311,11 @@
       "registry_name": "potatus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/potatus.json",
+          "src/main/resources/assets/chaosmod/blockstates/potatus.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/PotatusFeature.java",
+          "src/main/resources/assets/chaosmod/models/block/potatus.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/PotatusBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/potatus.json",
-          "src/main/resources/assets/chaosmod/blockstates/potatus.json"
+          "src/main/resources/assets/chaosmod/models/item/potatus.json"
         ]
       }
     },
@@ -329,17 +329,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/WoodDimensionPortalBlock.java",
-          "src/main/resources/data/chaosmod/dimension_type/wood_dimension.json",
-          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ew.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/WoodDimensionDimension.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/WoodDimensionPortalShape.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/WoodDimensionItem.java",
-          "src/main/resources/assets/chaosmod/blockstates/wood_dimension_portal.json",
-          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ns.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/WoodDimensionTeleporter.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/WoodDimensionPortalShape.java",
+          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ns.json",
+          "src/main/resources/data/chaosmod/dimension_type/wood_dimension.json",
           "src/main/resources/data/chaosmod/dimension/wood_dimension.json",
-          "src/main/resources/assets/chaosmod/models/item/wood_dimension.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/WoodDimensionPortalBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/WoodDimensionDimension.java",
+          "src/main/resources/assets/chaosmod/blockstates/wood_dimension_portal.json",
+          "src/main/resources/assets/chaosmod/models/block/wood_dimension_portal_ew.json",
+          "src/main/resources/assets/chaosmod/models/item/wood_dimension.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/WoodDimensionItem.java"
         ]
       }
     },
@@ -393,8 +393,8 @@
       "registry_name": "trident",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/TridentEntity.java",
           "src/main/resources/assets/chaosmod/models/item/trident_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/TridentEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TridentRenderer.java"
         ]
       }
@@ -408,11 +408,11 @@
       "registry_name": "death",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/death.json",
-          "src/main/resources/assets/chaosmod/models/block/death.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/DeathBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/death.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/DeathFeature.java",
-          "src/main/resources/assets/chaosmod/models/item/death.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/DeathBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/death.json",
+          "src/main/resources/assets/chaosmod/models/block/death.json"
         ]
       }
     },
@@ -425,12 +425,12 @@
       "registry_name": "sa_ds",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/SADsBlockEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/sa_ds.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/SADsFeature.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/SADsBlock.java",
           "src/main/resources/assets/chaosmod/models/block/sa_ds.json",
-          "src/main/resources/assets/chaosmod/blockstates/sa_ds.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/SADsBlockEntity.java",
+          "src/main/resources/assets/chaosmod/blockstates/sa_ds.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/SADsFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/sa_ds.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SADsBlock.java"
         ]
       }
     },
@@ -443,8 +443,8 @@
       "registry_name": "netherit_pickax",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/NetheritPickaxItem.java",
-          "src/main/resources/assets/chaosmod/models/item/netherit_pickax.json"
+          "src/main/resources/assets/chaosmod/models/item/netherit_pickax.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/NetheritPickaxItem.java"
         ]
       }
     },
@@ -457,11 +457,11 @@
       "registry_name": "emepee",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/emepee.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/EmepeeBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/EmepeeFeature.java",
           "src/main/resources/assets/chaosmod/blockstates/emepee.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/EmepeeBlock.java",
           "src/main/resources/assets/chaosmod/models/block/emepee.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/EmepeeFeature.java"
+          "src/main/resources/assets/chaosmod/models/item/emepee.json"
         ]
       }
     },
@@ -488,8 +488,8 @@
       "registry_name": "spear",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/SpearItem.java",
-          "src/main/resources/assets/chaosmod/models/item/spear.json"
+          "src/main/resources/assets/chaosmod/models/item/spear.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SpearItem.java"
         ]
       }
     },
@@ -503,8 +503,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/chaosmod/models/item/sus_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/SusBlockBlock.java",
           "src/main/resources/assets/chaosmod/blockstates/sus_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/SusBlockBlock.java",
           "src/main/resources/assets/chaosmod/models/block/sus_block.json"
         ]
       }
@@ -533,12 +533,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/cum.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/CumItem.java",
-          "src/main/resources/assets/chaosmod/models/item/cum_bucket.json",
+          "src/main/resources/assets/chaosmod/blockstates/cum.json",
+          "src/main/resources/assets/chaosmod/models/block/cum.json",
           "src/main/java/xyz/vikkivuk/chaosmod/fluid/CumFluid.java",
           "src/main/java/xyz/vikkivuk/chaosmod/block/CumBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/cum.json"
+          "src/main/resources/assets/chaosmod/models/item/cum_bucket.json"
         ]
       }
     },
@@ -552,8 +552,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AmongUsRenderer.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/AmongUsEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/among_us_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/among_us_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AmongUsEntity.java"
         ]
       }
     },
@@ -567,17 +567,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/SusItem.java",
-          "src/main/resources/assets/chaosmod/blockstates/sus_portal.json",
-          "src/main/resources/assets/chaosmod/models/block/sus_portal_ns.json",
-          "src/main/resources/data/chaosmod/dimension_type/sus.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/SusDimension.java",
-          "src/main/resources/assets/chaosmod/models/item/sus.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/SusTeleporter.java",
+          "src/main/resources/data/chaosmod/dimension_type/sus.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/SusPortalBlock.java",
-          "src/main/resources/data/chaosmod/dimension/sus.json",
+          "src/main/resources/assets/chaosmod/models/item/sus.json",
           "src/main/resources/assets/chaosmod/models/block/sus_portal_ew.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/SusPortalShape.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/SusDimension.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SusItem.java",
+          "src/main/resources/data/chaosmod/dimension/sus.json",
+          "src/main/resources/assets/chaosmod/blockstates/sus_portal.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/SusPortalShape.java",
+          "src/main/resources/assets/chaosmod/models/block/sus_portal_ns.json"
         ]
       }
     },
@@ -590,10 +590,10 @@
       "registry_name": "susus",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususLeaveDecorator.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususTrunkDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususFruitDecorator.java",
           "src/main/java/xyz/vikkivuk/chaosmod/world/biome/SususBiome.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususFruitDecorator.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususLeaveDecorator.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/treedecorators/SususTrunkDecorator.java"
         ]
       }
     },
@@ -607,8 +607,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/entity/Amogus2Entity.java",
-          "src/main/resources/assets/chaosmod/models/item/amogus_2_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus2Renderer.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus2Renderer.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_2_spawn_egg.json"
         ]
       }
     },
@@ -621,8 +621,8 @@
       "registry_name": "amogus_3",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus3Renderer.java",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/Amogus3Entity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/Amogus3Renderer.java",
           "src/main/resources/assets/chaosmod/models/item/amogus_3_spawn_egg.json"
         ]
       }
@@ -637,13 +637,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/staravoda_bucket.json",
-          "src/main/resources/assets/chaosmod/models/block/staravoda.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/attributes/StaravodaFluidAttributes.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/StaravodaItem.java",
           "src/main/java/xyz/vikkivuk/chaosmod/fluid/StaravodaFluid.java",
           "src/main/java/xyz/vikkivuk/chaosmod/block/StaravodaBlock.java",
           "src/main/resources/assets/chaosmod/blockstates/staravoda.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/StaravodaItem.java"
+          "src/main/resources/assets/chaosmod/models/block/staravoda.json",
+          "src/main/resources/assets/chaosmod/models/item/staravoda_bucket.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/attributes/StaravodaFluidAttributes.java"
         ]
       }
     },
@@ -667,10 +667,10 @@
       "registry_name": "tlghd",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/tlghd.json",
+          "src/main/resources/assets/chaosmod/models/block/tlghd.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/TLGHDBlock.java",
           "src/main/resources/assets/chaosmod/models/item/tlghd.json",
-          "src/main/resources/assets/chaosmod/models/block/tlghd.json"
+          "src/main/resources/assets/chaosmod/blockstates/tlghd.json"
         ]
       }
     },
@@ -765,9 +765,9 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/amugus_chestplate.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/AmugusItem.java",
           "src/main/resources/assets/chaosmod/models/item/amugus_helmet.json",
+          "src/main/resources/assets/chaosmod/models/item/amugus_chestplate.json",
           "src/main/resources/assets/chaosmod/models/item/amugus_boots.json",
           "src/main/resources/assets/chaosmod/models/item/amugus_leggings.json"
         ]
@@ -907,12 +907,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/orange_fluid_bucket.json",
-          "src/main/resources/assets/chaosmod/blockstates/orange_fluid.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/OrangeFluidFluid.java",
-          "src/main/resources/assets/chaosmod/models/block/orange_fluid.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/OrangeFluidItem.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/OrangeFluidBlock.java"
+          "src/main/resources/assets/chaosmod/blockstates/orange_fluid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/OrangeFluidBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/OrangeFluidFluid.java",
+          "src/main/resources/assets/chaosmod/models/item/orange_fluid_bucket.json",
+          "src/main/resources/assets/chaosmod/models/block/orange_fluid.json"
         ]
       }
     },
@@ -945,10 +945,10 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/gatorade.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/GatoradeFluid.java",
           "src/main/java/xyz/vikkivuk/chaosmod/block/GatoradeBlock.java",
           "src/main/resources/assets/chaosmod/models/item/gatorade_bucket.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/GatoradeFluid.java",
+          "src/main/resources/assets/chaosmod/models/block/gatorade.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/GatoradeItem.java",
           "src/main/resources/assets/chaosmod/blockstates/gatorade.json"
         ]
@@ -982,11 +982,11 @@
       "registry_name": "green_plant",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/GreenPlantFeature.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/GreenPlantBlock.java",
-          "src/main/resources/assets/chaosmod/blockstates/green_plant.json",
           "src/main/resources/assets/chaosmod/models/block/green_plant.json",
-          "src/main/resources/assets/chaosmod/models/item/green_plant.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/GreenPlantBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/GreenPlantFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/green_plant.json",
+          "src/main/resources/assets/chaosmod/blockstates/green_plant.json"
         ]
       }
     },
@@ -999,9 +999,9 @@
       "registry_name": "water_cup",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/WaterCupEntity.java",
           "src/main/resources/assets/chaosmod/models/item/water_cup.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/WaterCupItem.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/WaterCupEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/WaterCupItem.java"
         ]
       }
     },
@@ -1014,9 +1014,9 @@
       "registry_name": "splank",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/SplankRenderer.java",
           "src/main/resources/assets/chaosmod/models/item/splank_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/SplankEntity.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/SplankRenderer.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/SplankEntity.java"
         ]
       }
     },
@@ -1029,9 +1029,9 @@
       "registry_name": "ikea_desk",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/IkeaDeskRenderer.java",
           "src/main/resources/assets/chaosmod/models/item/ikea_desk_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/IkeaDeskEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/IkeaDeskEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/IkeaDeskRenderer.java"
         ]
       }
     },
@@ -1058,11 +1058,11 @@
       "registry_name": "tombstone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/chaosmod/models/item/tombstone.json",
           "src/main/resources/assets/chaosmod/blockstates/tombstone.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/TombstoneBlockEntity.java",
-          "src/main/resources/assets/chaosmod/models/block/tombstone.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/TombstoneBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/tombstone.json"
+          "src/main/resources/assets/chaosmod/models/block/tombstone.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/entity/TombstoneBlockEntity.java"
         ]
       }
     },
@@ -1101,8 +1101,8 @@
       "registry_name": "sasi_amangas",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/SasiAmangasItem.java",
-          "src/main/resources/assets/chaosmod/models/item/sasi_amangas.json"
+          "src/main/resources/assets/chaosmod/models/item/sasi_amangas.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SasiAmangasItem.java"
         ]
       }
     },
@@ -1180,9 +1180,9 @@
       "registry_name": "josip",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/JOSIPEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JOSIPRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/josip_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/josip_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JOSIPEntity.java"
         ]
       }
     },
@@ -1195,8 +1195,8 @@
       "registry_name": "brown",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/brown.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BrownItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BrownItem.java",
+          "src/main/resources/assets/chaosmod/models/item/brown.json"
         ]
       }
     },
@@ -1240,11 +1240,11 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CarbonMonoxideFluid.java",
-          "src/main/resources/assets/chaosmod/models/item/carbon_monoxide_bucket.json",
-          "src/main/resources/assets/chaosmod/blockstates/carbon_monoxide.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/CarbonMonoxideBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/carbon_monoxide.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CarbonMonoxideFluid.java",
           "src/main/java/xyz/vikkivuk/chaosmod/item/CarbonMonoxideItem.java",
+          "src/main/resources/assets/chaosmod/models/item/carbon_monoxide_bucket.json",
           "src/main/resources/assets/chaosmod/models/block/carbon_monoxide.json"
         ]
       }
@@ -1356,9 +1356,9 @@
       "registry_name": "josipdvatockanula",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipdvatockanulaEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipdvatockanulaRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/josipdvatockanula_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipdvatockanulaEntity.java"
+          "src/main/resources/assets/chaosmod/models/item/josipdvatockanula_spawn_egg.json"
         ]
       }
     },
@@ -1394,10 +1394,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/turtle_armor_chestplate.json",
           "src/main/resources/assets/chaosmod/models/item/turtle_armor_leggings.json",
           "src/main/resources/assets/chaosmod/models/item/turtle_armor_boots.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/TurtleArmorItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TurtleArmorItem.java",
+          "src/main/resources/assets/chaosmod/models/item/turtle_armor_chestplate.json"
         ]
       }
     },
@@ -1414,11 +1414,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/beef_armor_helmet.json",
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_chestplate.json",
           "src/main/resources/assets/chaosmod/models/item/beef_armor_leggings.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BeefArmorItem.java",
+          "src/main/resources/assets/chaosmod/models/item/beef_armor_helmet.json",
           "src/main/resources/assets/chaosmod/models/item/beef_armor_boots.json",
-          "src/main/resources/assets/chaosmod/models/item/beef_armor_chestplate.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BeefArmorItem.java"
         ]
       }
     },
@@ -1468,9 +1468,9 @@
       "registry_name": "josip_pet",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPetEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipPetRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/josip_pet_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/josip_pet_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPetEntity.java"
         ]
       }
     },
@@ -1483,9 +1483,9 @@
       "registry_name": "josip_pett",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/josip_pett_spawn_egg.json",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/JosipPettRenderer.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPettEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipPettEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/josip_pett_spawn_egg.json"
         ]
       }
     },
@@ -1498,9 +1498,9 @@
       "registry_name": "josip_range",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/JosipRangeItem.java",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/JosipRangeEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/josip_range.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/JosipRangeItem.java"
+          "src/main/resources/assets/chaosmod/models/item/josip_range.json"
         ]
       }
     },
@@ -1513,8 +1513,8 @@
       "registry_name": "moth_of_aggrevation",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/MothOfAggrevationEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/MothOfAggrevationRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/MothOfAggrevationEntity.java",
           "src/main/resources/assets/chaosmod/models/item/moth_of_aggrevation_spawn_egg.json"
         ]
       }
@@ -1594,8 +1594,8 @@
       "registry_name": "bullet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/bullet.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BulletItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BulletItem.java",
+          "src/main/resources/assets/chaosmod/models/item/bullet.json"
         ]
       }
     },
@@ -1608,9 +1608,9 @@
       "registry_name": "ak_47",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AK47Item.java",
+          "src/main/resources/assets/chaosmod/models/item/ak_47.json",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/AK47Entity.java",
-          "src/main/resources/assets/chaosmod/models/item/ak_47.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AK47Item.java"
         ]
       }
     },
@@ -1638,9 +1638,9 @@
       "registry_name": "vikki_vuk_gui",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/VikkiVukGuiScreen.java",
           "src/main/java/xyz/vikkivuk/chaosmod/network/VikkiVukGuiButtonMessage.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/VikkiVukGuiMenu.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/VikkiVukGuiScreen.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/VikkiVukGuiMenu.java"
         ]
       }
     },
@@ -1653,8 +1653,8 @@
       "registry_name": "vikkivuk",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/VikkivukEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/VikkivukRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/VikkivukEntity.java",
           "src/main/resources/assets/chaosmod/models/item/vikkivuk_spawn_egg.json"
         ]
       }
@@ -1668,9 +1668,9 @@
       "registry_name": "blaz",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/BlazEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/BlazRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/blaz_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/BlazEntity.java"
+          "src/main/resources/assets/chaosmod/models/item/blaz_spawn_egg.json"
         ]
       }
     },
@@ -1683,9 +1683,9 @@
       "registry_name": "cursed_dog",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CursedDogRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/CursedDogEntity.java",
           "src/main/resources/assets/chaosmod/models/item/cursed_dog_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/CursedDogEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CursedDogRenderer.java"
         ]
       }
     },
@@ -1749,8 +1749,8 @@
       "registry_name": "meth",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/MethItem.java",
-          "src/main/resources/assets/chaosmod/models/item/meth.json"
+          "src/main/resources/assets/chaosmod/models/item/meth.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/MethItem.java"
         ]
       }
     },
@@ -1841,9 +1841,9 @@
       "registry_name": "walter_wight",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/WalterWightEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/WalterWightRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/walter_wight_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/walter_wight_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/WalterWightEntity.java"
         ]
       }
     },
@@ -1857,8 +1857,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/chaosmod/models/item/adolf_hitler_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AdolfHitlerRenderer.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/AdolfHitlerEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AdolfHitlerEntity.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AdolfHitlerRenderer.java"
         ]
       }
     },
@@ -1871,8 +1871,8 @@
       "registry_name": "dream",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/DreamEntity.java",
           "src/main/resources/assets/chaosmod/models/item/dream_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/DreamEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/DreamRenderer.java"
         ]
       }
@@ -1886,8 +1886,8 @@
       "registry_name": "scratest",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/scratest.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/ScratestItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ScratestItem.java",
+          "src/main/resources/assets/chaosmod/models/item/scratest.json"
         ]
       }
     },
@@ -1931,11 +1931,11 @@
       "registry_name": "youtube",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/youtube.json",
-          "src/main/resources/assets/chaosmod/blockstates/youtube.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/YoutubeFeature.java",
+          "src/main/resources/assets/chaosmod/models/block/youtube.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/YoutubeBlock.java",
           "src/main/resources/assets/chaosmod/models/item/youtube.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/YoutubeBlock.java"
+          "src/main/resources/assets/chaosmod/blockstates/youtube.json"
         ]
       }
     },
@@ -1948,11 +1948,11 @@
       "registry_name": "plante",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/plante.json",
-          "src/main/resources/assets/chaosmod/models/block/plante.json",
-          "src/main/resources/assets/chaosmod/models/item/plante.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/plants/PlanteFeature.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/PlanteBlock.java"
+          "src/main/resources/assets/chaosmod/models/item/plante.json",
+          "src/main/resources/assets/chaosmod/models/block/plante.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/PlanteBlock.java",
+          "src/main/resources/assets/chaosmod/blockstates/plante.json"
         ]
       }
     },
@@ -2052,8 +2052,8 @@
       "registry_name": "testicle_on_stick",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/testicle_on_stick.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/TesticleOnStickItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TesticleOnStickItem.java",
+          "src/main/resources/assets/chaosmod/models/item/testicle_on_stick.json"
         ]
       }
     },
@@ -2092,10 +2092,10 @@
       "registry_name": "rickroll_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/rickroll_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/RickrollBlockBlock.java",
           "src/main/resources/assets/chaosmod/models/item/rickroll_block.json",
-          "src/main/resources/assets/chaosmod/blockstates/rickroll_block.json"
+          "src/main/resources/assets/chaosmod/blockstates/rickroll_block.json",
+          "src/main/resources/assets/chaosmod/models/block/rickroll_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/RickrollBlockBlock.java"
         ]
       }
     },
@@ -2190,12 +2190,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/Milk2Fluid.java",
           "src/main/java/xyz/vikkivuk/chaosmod/item/Milk2Item.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/Milk2Block.java",
           "src/main/resources/assets/chaosmod/models/item/milk_2_bucket.json",
           "src/main/resources/assets/chaosmod/blockstates/milk_2.json",
-          "src/main/resources/assets/chaosmod/models/block/milk_2.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/Milk2Block.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/Milk2Fluid.java",
+          "src/main/resources/assets/chaosmod/models/block/milk_2.json"
         ]
       }
     },
@@ -2285,8 +2285,8 @@
       "registry_name": "cod_but_better",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/CodButBetterEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CodButBetterRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/CodButBetterEntity.java",
           "src/main/resources/assets/chaosmod/models/item/cod_but_better_spawn_egg.json"
         ]
       }
@@ -2332,8 +2332,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1light.json",
-          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1light.json",
           "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1light.json",
+          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1light.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1lightBlock.java"
         ]
       }
@@ -2347,8 +2347,8 @@
       "registry_name": "sssr",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/sssr.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/SSSRItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SSSRItem.java",
+          "src/main/resources/assets/chaosmod/models/item/sssr.json"
         ]
       }
     },
@@ -2361,9 +2361,9 @@
       "registry_name": "stalin",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/StalinEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/stalin_spawn_egg.json",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/StalinRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/stalin_spawn_egg.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/StalinEntity.java"
         ]
       }
     },
@@ -2389,8 +2389,8 @@
       "registry_name": "rick_astley",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/rick_astley_spawn_egg.json",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/RickAstleyEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/rick_astley_spawn_egg.json",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/RickAstleyRenderer.java"
         ]
       }
@@ -2425,8 +2425,8 @@
         "files": [
           "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1_wall.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1WallBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_wall.json"
+          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_wall.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1WallBlock.java"
         ]
       }
     },
@@ -2526,12 +2526,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/radiation_liquid_bucket.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/RadiationLiquidFluid.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/RadiationLiquidBlock.java",
           "src/main/resources/assets/chaosmod/blockstates/radiation_liquid.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/RadiationLiquidItem.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/RadiationLiquidBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/radiation_liquid_bucket.json",
           "src/main/resources/assets/chaosmod/models/block/radiation_liquid.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/RadiationLiquidItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/RadiationLiquidFluid.java"
         ]
       }
     },
@@ -2557,8 +2557,8 @@
       "registry_name": "bleach",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/bleach.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BleachItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BleachItem.java",
+          "src/main/resources/assets/chaosmod/models/item/bleach.json"
         ]
       }
     },
@@ -2637,10 +2637,10 @@
       "registry_name": "brazil_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/brazil_block.json",
-          "src/main/resources/assets/chaosmod/blockstates/brazil_block.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/BrazilBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/brazil_block.json"
+          "src/main/resources/assets/chaosmod/models/item/brazil_block.json",
+          "src/main/resources/assets/chaosmod/models/block/brazil_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/brazil_block.json"
         ]
       }
     },
@@ -2653,10 +2653,10 @@
       "registry_name": "nokia_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/NokiaBlockBlock.java",
           "src/main/resources/assets/chaosmod/models/block/nokia_block.json",
-          "src/main/resources/assets/chaosmod/blockstates/nokia_block.json",
-          "src/main/resources/assets/chaosmod/models/item/nokia_block.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/NokiaBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/nokia_block.json",
+          "src/main/resources/assets/chaosmod/blockstates/nokia_block.json"
         ]
       }
     },
@@ -2670,17 +2670,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/BrazilDimension.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilPortalShape.java",
-          "src/main/resources/data/chaosmod/dimension_type/brazil.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilTeleporter.java",
-          "src/main/resources/assets/chaosmod/models/item/brazil.json",
-          "src/main/resources/assets/chaosmod/blockstates/brazil_portal.json",
-          "src/main/resources/data/chaosmod/dimension/brazil.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/BrazilPortalBlock.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BrazilItem.java",
           "src/main/resources/assets/chaosmod/models/block/brazil_portal_ns.json",
-          "src/main/resources/assets/chaosmod/models/block/brazil_portal_ew.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BrazilPortalBlock.java",
+          "src/main/resources/data/chaosmod/dimension_type/brazil.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilPortalShape.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/BrazilTeleporter.java",
+          "src/main/resources/data/chaosmod/dimension/brazil.json",
+          "src/main/resources/assets/chaosmod/models/block/brazil_portal_ew.json",
+          "src/main/resources/assets/chaosmod/models/item/brazil.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BrazilItem.java",
+          "src/main/resources/assets/chaosmod/blockstates/brazil_portal.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/BrazilDimension.java"
         ]
       }
     },
@@ -2726,10 +2726,10 @@
       "registry_name": "backrooms_lvl_1_floor",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1FloorBlock.java",
           "src/main/resources/assets/chaosmod/models/block/backrooms_lvl_1_floor.json",
-          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_floor.json",
-          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1_floor.json"
+          "src/main/resources/assets/chaosmod/blockstates/backrooms_lvl_1_floor.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/BackroomsLvl1FloorBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/backrooms_lvl_1_floor.json"
         ]
       }
     },
@@ -2742,10 +2742,10 @@
       "registry_name": "south",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/south.json",
           "src/main/resources/assets/chaosmod/models/block/south.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/SouthBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/south.json"
+          "src/main/resources/assets/chaosmod/models/item/south.json",
+          "src/main/resources/assets/chaosmod/blockstates/south.json"
         ]
       }
     },
@@ -2789,9 +2789,9 @@
       "registry_name": "legs",
       "metadata": {
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/LegsRenderer.java",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/LegsEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/legs_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/LegsRenderer.java"
+          "src/main/resources/assets/chaosmod/models/item/legs_spawn_egg.json"
         ]
       }
     },
@@ -2804,9 +2804,9 @@
       "registry_name": "long_leg_chicken",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/LongLegChickenEntity.java",
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/LongLegChickenRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/long_leg_chicken_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/long_leg_chicken_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/LongLegChickenEntity.java"
         ]
       }
     },
@@ -2869,8 +2869,8 @@
       "registry_name": "totem_of_amogus",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/TotemOfAmogusItem.java",
-          "src/main/resources/assets/chaosmod/models/item/totem_of_amogus.json"
+          "src/main/resources/assets/chaosmod/models/item/totem_of_amogus.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TotemOfAmogusItem.java"
         ]
       }
     },
@@ -2883,10 +2883,10 @@
       "registry_name": "depression_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/DepressionBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/depression_block.json",
           "src/main/resources/assets/chaosmod/models/item/depression_block.json",
-          "src/main/resources/assets/chaosmod/blockstates/depression_block.json"
+          "src/main/resources/assets/chaosmod/blockstates/depression_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/DepressionBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/depression_block.json"
         ]
       }
     },
@@ -2900,8 +2900,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/entity/TPoseEntityEntity.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TPoseEntityRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/t_pose_entity_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/t_pose_entity_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/TPoseEntityRenderer.java"
         ]
       }
     },
@@ -2914,9 +2914,9 @@
       "registry_name": "amogus_gun",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/amogus_gun.json",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/AmogusGunEntity.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AmogusGunItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AmogusGunItem.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_gun.json"
         ]
       }
     },
@@ -2929,8 +2929,8 @@
       "registry_name": "impostor_knife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/impostor_knife.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/ImpostorKnifeItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/ImpostorKnifeItem.java",
+          "src/main/resources/assets/chaosmod/models/item/impostor_knife.json"
         ]
       }
     },
@@ -2985,10 +2985,10 @@
       "registry_name": "comunisam_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/block/ComunisamBlockBlock.java",
           "src/main/resources/assets/chaosmod/blockstates/comunisam_block.json",
+          "src/main/resources/assets/chaosmod/models/block/comunisam_block.json",
           "src/main/resources/assets/chaosmod/models/item/comunisam_block.json",
-          "src/main/resources/assets/chaosmod/models/block/comunisam_block.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/ComunisamBlockBlock.java"
         ]
       }
     },
@@ -3040,10 +3040,10 @@
       "registry_name": "poland_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/poland_block.json",
-          "src/main/resources/assets/chaosmod/models/block/poland_block.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/PolandBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/poland_block.json"
+          "src/main/resources/assets/chaosmod/blockstates/poland_block.json",
+          "src/main/resources/assets/chaosmod/models/item/poland_block.json",
+          "src/main/resources/assets/chaosmod/models/block/poland_block.json"
         ]
       }
     },
@@ -3082,10 +3082,10 @@
       "registry_name": "cyber_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/cyber_block.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/CyberBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/cyber_block.json",
-          "src/main/resources/assets/chaosmod/blockstates/cyber_block.json"
+          "src/main/resources/assets/chaosmod/blockstates/cyber_block.json",
+          "src/main/resources/assets/chaosmod/models/block/cyber_block.json",
+          "src/main/resources/assets/chaosmod/models/item/cyber_block.json"
         ]
       }
     },
@@ -3128,8 +3128,8 @@
       "metadata": {
         "ep": false,
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CyberspaceDimension.java",
           "src/main/resources/data/chaosmod/dimension/cyberspace.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CyberspaceDimension.java",
           "src/main/resources/data/chaosmod/dimension_type/cyberspace.json"
         ]
       }
@@ -3143,10 +3143,10 @@
       "registry_name": "computer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/computer.json",
-          "src/main/resources/assets/chaosmod/blockstates/computer.json",
-          "src/main/resources/assets/chaosmod/models/item/computer.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/ComputerBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/computer.json",
+          "src/main/resources/assets/chaosmod/models/item/computer.json",
+          "src/main/resources/assets/chaosmod/blockstates/computer.json",
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/ComputerFeature.java"
         ]
       }
@@ -3161,8 +3161,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/world/inventory/ComputerGuiMenu.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/ComputerGuiScreen.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/network/ComputerGuiButtonMessage.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/network/ComputerGuiButtonMessage.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/gui/ComputerGuiScreen.java"
         ]
       }
     },
@@ -3175,8 +3175,8 @@
       "registry_name": "igla",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/igla.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/IglaItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/IglaItem.java",
+          "src/main/resources/assets/chaosmod/models/item/igla.json"
         ]
       }
     },
@@ -3209,17 +3209,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ew.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/CioaoPortalBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/cioao.json",
+          "src/main/resources/data/chaosmod/dimension_type/cioao.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/CioaoItem.java",
           "src/main/resources/data/chaosmod/dimension/cioao.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/CioaoPortalShape.java",
-          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ns.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CioaoDimension.java",
           "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/CioaoTeleporter.java",
-          "src/main/resources/data/chaosmod/dimension_type/cioao.json",
-          "src/main/resources/assets/chaosmod/blockstates/cioao_portal.json"
+          "src/main/resources/assets/chaosmod/blockstates/cioao_portal.json",
+          "src/main/resources/assets/chaosmod/models/item/cioao.json",
+          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/CioaoDimension.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/CioaoPortalShape.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CioaoPortalBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/cioao_portal_ns.json"
         ]
       }
     },
@@ -3257,8 +3257,8 @@
       "registry_name": "fortnite_a_1",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/FortniteA1Item.java",
-          "src/main/resources/assets/chaosmod/models/item/fortnite_a_1.json"
+          "src/main/resources/assets/chaosmod/models/item/fortnite_a_1.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FortniteA1Item.java"
         ]
       }
     },
@@ -3271,10 +3271,10 @@
       "registry_name": "greengiscreenda",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/blockstates/greengiscreenda.json",
-          "src/main/resources/assets/chaosmod/models/block/greengiscreenda.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/GreengiscreendaBlock.java",
-          "src/main/resources/assets/chaosmod/models/item/greengiscreenda.json"
+          "src/main/resources/assets/chaosmod/blockstates/greengiscreenda.json",
+          "src/main/resources/assets/chaosmod/models/item/greengiscreenda.json",
+          "src/main/resources/assets/chaosmod/models/block/greengiscreenda.json"
         ]
       }
     },
@@ -3287,8 +3287,8 @@
       "registry_name": "fasttopass",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/FASTTOPASSItem.java",
-          "src/main/resources/assets/chaosmod/models/item/fasttopass.json"
+          "src/main/resources/assets/chaosmod/models/item/fasttopass.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/FASTTOPASSItem.java"
         ]
       }
     },
@@ -3333,9 +3333,9 @@
       "registry_name": "stroater",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/StroaterRenderer.java",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/StroaterEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/stroater_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/stroater_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/StroaterRenderer.java"
         ]
       }
     },
@@ -3389,8 +3389,8 @@
       "registry_name": "baguette",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BaguetteItem.java",
-          "src/main/resources/assets/chaosmod/models/item/baguette.json"
+          "src/main/resources/assets/chaosmod/models/item/baguette.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BaguetteItem.java"
         ]
       }
     },
@@ -3444,8 +3444,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/SpongebobBossRenderer.java",
-          "src/main/resources/assets/chaosmod/models/item/spongebob_boss_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/SpongebobBossEntity.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/SpongebobBossEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/spongebob_boss_spawn_egg.json"
         ]
       }
     },
@@ -3459,12 +3459,12 @@
       "metadata": {
         "gb": true,
         "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/block/CobbleFluidBlock.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CobbleFluidFluid.java",
+          "src/main/resources/assets/chaosmod/models/item/cobble_fluid_bucket.json",
           "src/main/resources/assets/chaosmod/blockstates/cobble_fluid.json",
           "src/main/java/xyz/vikkivuk/chaosmod/item/CobbleFluidItem.java",
-          "src/main/resources/assets/chaosmod/models/item/cobble_fluid_bucket.json",
-          "src/main/resources/assets/chaosmod/models/block/cobble_fluid.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/fluid/CobbleFluidFluid.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/CobbleFluidBlock.java"
+          "src/main/resources/assets/chaosmod/models/block/cobble_fluid.json"
         ]
       }
     },
@@ -3477,8 +3477,8 @@
       "registry_name": "beengot",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/BeengotItem.java",
-          "src/main/resources/assets/chaosmod/models/item/beengot.json"
+          "src/main/resources/assets/chaosmod/models/item/beengot.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/BeengotItem.java"
         ]
       }
     },
@@ -3553,10 +3553,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/adidas_armor_chestplate.json",
           "src/main/resources/assets/chaosmod/models/item/adidas_armor_boots.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasArmorItem.java",
           "src/main/resources/assets/chaosmod/models/item/adidas_armor_leggings.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasArmorItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_armor_chestplate.json",
           "src/main/resources/assets/chaosmod/models/item/adidas_armor_helmet.json"
         ]
       }
@@ -3570,8 +3570,8 @@
       "registry_name": "adidas_sword",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasSwordItem.java",
-          "src/main/resources/assets/chaosmod/models/item/adidas_sword.json"
+          "src/main/resources/assets/chaosmod/models/item/adidas_sword.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasSwordItem.java"
         ]
       }
     },
@@ -3598,11 +3598,11 @@
       "registry_name": "adidas_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/adidas_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/AdidasBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/adidas_block.json",
           "src/main/resources/assets/chaosmod/blockstates/adidas_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/AdidasBlockFeature.java"
+          "src/main/resources/assets/chaosmod/models/block/adidas_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/AdidasBlockFeature.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/AdidasBlockBlock.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_block.json"
         ]
       }
     },
@@ -3643,8 +3643,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AMOGUS3BLURenderer.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/entity/AMOGUS3BLUEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/amogus_3_blu_spawn_egg.json"
+          "src/main/resources/assets/chaosmod/models/item/amogus_3_blu_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/AMOGUS3BLUEntity.java"
         ]
       }
     },
@@ -3710,8 +3710,8 @@
       "registry_name": "adidas_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/adidas_pickaxe.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasPickaxeItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AdidasPickaxeItem.java",
+          "src/main/resources/assets/chaosmod/models/item/adidas_pickaxe.json"
         ]
       }
     },
@@ -3751,8 +3751,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/vikkivuk/chaosmod/entity/AMOGUS3GRINEntity.java",
-          "src/main/resources/assets/chaosmod/models/item/amogus_3_grin_spawn_egg.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AMOGUS3GRINRenderer.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/AMOGUS3GRINRenderer.java",
+          "src/main/resources/assets/chaosmod/models/item/amogus_3_grin_spawn_egg.json"
         ]
       }
     },
@@ -3794,9 +3794,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/chaosmod/models/item/missing_texture.json",
-          "src/main/resources/assets/chaosmod/blockstates/missing_texture.json",
           "src/main/java/xyz/vikkivuk/chaosmod/block/MissingTextureBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/missing_texture.json"
+          "src/main/resources/assets/chaosmod/models/block/missing_texture.json",
+          "src/main/resources/assets/chaosmod/blockstates/missing_texture.json"
         ]
       }
     },
@@ -3912,8 +3912,8 @@
       "registry_name": "xsord",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/XSORDItem.java",
-          "src/main/resources/assets/chaosmod/models/item/xsord.json"
+          "src/main/resources/assets/chaosmod/models/item/xsord.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/XSORDItem.java"
         ]
       }
     },
@@ -4076,8 +4076,8 @@
       "registry_name": "tinted_glass_bottle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/tinted_glass_bottle.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/TintedGlassBottleItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/TintedGlassBottleItem.java",
+          "src/main/resources/assets/chaosmod/models/item/tinted_glass_bottle.json"
         ]
       }
     },
@@ -4104,8 +4104,8 @@
       "registry_name": "dorito_cool_ranch",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/dorito_cool_ranch.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/DoritoCoolRanchItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DoritoCoolRanchItem.java",
+          "src/main/resources/assets/chaosmod/models/item/dorito_cool_ranch.json"
         ]
       }
     },
@@ -4221,8 +4221,8 @@
       "registry_name": "kentucky_fried_chicken_fries",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/KentuckyFriedChickenFriesItem.java",
-          "src/main/resources/assets/chaosmod/models/item/kentucky_fried_chicken_fries.json"
+          "src/main/resources/assets/chaosmod/models/item/kentucky_fried_chicken_fries.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/KentuckyFriedChickenFriesItem.java"
         ]
       }
     },
@@ -4305,17 +4305,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/resources/assets/chaosmod/models/block/aether_portal_ns.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/AetherPortalBlock.java",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/AetherItem.java",
-          "src/main/resources/data/chaosmod/dimension_type/aether.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/AetherTeleporter.java",
           "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/AetherPortalShape.java",
-          "src/main/resources/assets/chaosmod/models/block/aether_portal_ew.json",
+          "src/main/resources/assets/chaosmod/models/block/aether_portal_ns.json",
+          "src/main/resources/assets/chaosmod/blockstates/aether_portal.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/teleporter/AetherTeleporter.java",
           "src/main/resources/assets/chaosmod/models/item/aether.json",
           "src/main/resources/data/chaosmod/dimension/aether.json",
-          "src/main/resources/assets/chaosmod/blockstates/aether_portal.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/AetherDimension.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/block/AetherPortalBlock.java",
+          "src/main/resources/assets/chaosmod/models/block/aether_portal_ew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/world/dimension/AetherDimension.java",
+          "src/main/resources/data/chaosmod/dimension_type/aether.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/AetherItem.java"
         ]
       }
     },
@@ -4328,8 +4328,8 @@
       "registry_name": "spit_ball",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/spit_ball.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/item/SpitBallItem.java"
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SpitBallItem.java",
+          "src/main/resources/assets/chaosmod/models/item/spit_ball.json"
         ]
       }
     },
@@ -4485,8 +4485,8 @@
       "registry_name": "mercury",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/item/MercuryItem.java",
-          "src/main/resources/assets/chaosmod/models/item/mercury.json"
+          "src/main/resources/assets/chaosmod/models/item/mercury.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/MercuryItem.java"
         ]
       }
     },
@@ -4499,11 +4499,11 @@
       "registry_name": "jeb_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/chaosmod/models/item/jeb_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/JebBlockFeature.java",
+          "src/main/resources/assets/chaosmod/models/block/jeb_block.json",
           "src/main/resources/assets/chaosmod/blockstates/jeb_block.json",
-          "src/main/java/xyz/vikkivuk/chaosmod/block/JebBlockBlock.java",
-          "src/main/resources/assets/chaosmod/models/block/jeb_block.json"
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/ores/JebBlockFeature.java",
+          "src/main/resources/assets/chaosmod/models/item/jeb_block.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/block/JebBlockBlock.java"
         ]
       }
     },
@@ -4664,8 +4664,8 @@
       "registry_name": "cupcakke",
       "metadata": {
         "files": [
-          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CupcakkeRenderer.java",
           "src/main/resources/assets/chaosmod/models/item/cupcakke_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/CupcakkeRenderer.java",
           "src/main/java/xyz/vikkivuk/chaosmod/entity/CupcakkeEntity.java"
         ]
       }
@@ -4903,6 +4903,354 @@
           "src/main/java/xyz/vikkivuk/chaosmod/world/features/CobbleFluidFeatureFeature.java"
         ]
       }
+    },
+    {
+      "name": "SickEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sick_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/SickEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SickEffectExpires",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sick_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/SickEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sick",
+      "type": "potioneffect",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/SickMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DingotPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dingot_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DingotPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dingot",
+      "type": "item",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/dingot.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/DingotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SanityOverlayValue",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_overlay_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/SanityOverlayValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AlmondWaterPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "almond_water_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/AlmondWaterPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Veganism",
+      "type": "gamerule",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veganism",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "PlayerEat",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_eat",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PlayerEatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meat",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meat",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/tags/items/meat.json"
+        ]
+      }
+    },
+    {
+      "name": "PoopPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PoopPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Poop",
+      "type": "item",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/poop.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/PoopItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ShitOnKeyPressed",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/ShitOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shit",
+      "type": "keybind",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/network/ShitMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "BaldiMinus",
+      "type": "livingentity",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baldi_minus",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/BaldiMinusRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/BaldiMinusEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/baldi_minus_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "DementiaEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementia_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DementiaEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DementiaEffectExpires",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementia_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/DementiaEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dementia",
+      "type": "potioneffect",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementia",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/potion/DementiaMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Herobrine",
+      "type": "livingentity",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrine",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/HerobrineRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/HerobrineEntity.java",
+          "src/main/resources/assets/chaosmod/models/item/herobrine_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5113,6 +5461,22 @@
       ],
       "category": "voice",
       "subtitle": ""
+    },
+    {
+      "name": "ruler_slap",
+      "files": [
+        "ruler-slap"
+      ],
+      "category": "hostile",
+      "subtitle": "slap"
+    },
+    {
+      "name": "fart",
+      "files": [
+        "perfect-fart"
+      ],
+      "category": "player",
+      "subtitle": "fart"
     }
   ],
   "language_map": {
@@ -5129,27 +5493,31 @@
       "block.chaosmod.missing_texture": "Missing Texture",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
-      "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.chaosmod.fooditem": "Food Item 1",
+      "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
-      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "entity.chaosmod.aentity": "Aentity",
+      "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "death.attack.vegan": "%1$s ate meat",
+      "entity.chaosmod.herobrine": "Herobrine",
+      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
-      "block.chaosmod.green_plant": "Green Plant",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.green_plant": "Green Plant",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
+      "effect.chaosmod.sick": "Sick",
       "fluid.chaosmod.gatorade": "Gatorade",
       "subtitles.never_gonna_give_you_up": "",
       "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
-      "block.chaosmod.youtube": "Youtube",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
+      "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
@@ -5216,9 +5584,11 @@
       "biome.chaosmod.more_extreme_hills": "More Extreme Hills",
       "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
+      "item.chaosmod.poop": "Poop",
       "block.chaosmod.south": "South",
       "biome.chaosmod.birch_forest": "Birch Forest",
       "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
+      "item.chaosmod.baldi_minus_spawn_egg": "Baldi Minus Spawn Egg",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.brown": "Brown",
@@ -5237,6 +5607,7 @@
       "item.chaosmod.oil_bucket": "Oil Bucket",
       "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
       "item.chaosmod.josip_range": "Josip Range",
+      "subtitles.fart": "fart",
       "effect.chaosmod.bleached": "Bleached Eyes",
       "entity.chaosmod.amogus_3_crew_blu": "Amogus 3 (Crewmate, Blue)",
       "item.chaosmod.broken_chestplate_1_boots": "Broken Chestplate 1 Boots",
@@ -5253,6 +5624,7 @@
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
       "item.chaosmod.the_rock_spawn_egg": "The Rock Spawn Egg",
       "item.chaosmod.bleach": "Bleach",
+      "subtitles.ruler_slap": "slap",
       "item.chaosmod.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
       "entity.chaosmod.josip_pet": "Josip Pet",
@@ -5300,7 +5672,7 @@
       "subtitles.vine_boom": "",
       "entity.chaosmod.splank": "Splank",
       "block.chaosmod.pee_block": "Pee Block",
-      "death.attack.radiation": "%1$s had too much radiation",
+      "death.attack.radiation": "%1$s saw the blue light",
       "item.chaosmod.ak_47": "AK 47",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "item.chaosmod.amogus_gun": "Amogus Gun",
@@ -5325,6 +5697,7 @@
       "block.chaosmod.comunisam_block": "Comunisam Block",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
+      "gamerule.veganism": "Veganism",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "item.chaosmod.cioao": "Ciao Portal Igniter",
       "gui.chaosmod.cheat_gui.label_cheat_menu": "Cheat Menu",
@@ -5367,6 +5740,8 @@
       "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
       "item.chaosmod.mumbo_token": "Mumbo Token",
       "item.chaosmod.josip_pett_spawn_egg": "Josip GRR pet Spawn Egg",
+      "item.chaosmod.dingot": "Dingot",
+      "key.chaosmod.shit": "Shit",
       "item.chaosmod.dirtsword": "Dirtsword",
       "item.chaosmod.beef_armor_leggings": "Beef Armor Leggings",
       "item.chaosmod.scratest.desc": "idk man stop asking me",
@@ -5394,6 +5769,7 @@
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "itemGroup.tabchaostab": "Chaos",
       "biome.chaosmod.ohio": "Ohio",
+      "gamerule.veganism.description": "Meat isn\u0027t allowed",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
       "entity.chaosmod.endy": "Endy",
       "item.chaosmod.xite": "Xite",
@@ -5412,7 +5788,7 @@
       "item.chaosmod.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "effect.chaosmod.high_effect": "High",
-      "gui.chaosmod.sanity_overlay.label_sanity_varintegersanity": "Sanity: \u003cVAR:integer:sanity\u003e",
+      "gui.chaosmod.sanity_overlay.label_sanity_varintegersanity": "",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.chaosmod.sssr": "SSSR",
       "entity.chaosmod.firefly": "Firefly",
@@ -5425,6 +5801,8 @@
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "subtitles.ahdude": "ff",
+      "entity.chaosmod.baldi_minus": "Baldi Minus",
+      "effect.chaosmod.dementia": "Dementia",
       "item.chaosmod.technoblade_spawn_egg": "Technoblade Spawn Egg",
       "item.chaosmod.deek": "Ender Eye ",
       "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",

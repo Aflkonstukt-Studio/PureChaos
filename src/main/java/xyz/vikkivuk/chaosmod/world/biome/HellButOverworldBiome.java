@@ -41,12 +41,12 @@ import com.google.common.collect.ImmutableList;
 
 public class HellButOverworldBiome {
 	public static final List<Climate.ParameterPoint> PARAMETER_POINTS = List.of(
-			new Climate.ParameterPoint(Climate.Parameter.span(0.4f, 1.6f), Climate.Parameter.span(-1.6f, -0.4f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f),
-					Climate.Parameter.point(0.0f), Climate.Parameter.span(-1.4389929886453405f, -0.2389929886453407f), 0),
-			new Climate.ParameterPoint(Climate.Parameter.span(0.4f, 1.6f), Climate.Parameter.span(-1.6f, -0.4f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f),
-					Climate.Parameter.point(1.0f), Climate.Parameter.span(-1.4389929886453405f, -0.2389929886453407f), 0));
-	public static final List<Climate.ParameterPoint> UNDERGROUND_PARAMETER_POINTS = List.of(new Climate.ParameterPoint(Climate.Parameter.span(0.4f, 1.6f), Climate.Parameter.span(-1.6f, -0.4f),
-			Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.4389929886453405f, -0.2389929886453407f), 0));
+			new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f),
+					Climate.Parameter.point(0.0f), Climate.Parameter.span(-2f, 2f), 0),
+			new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f),
+					Climate.Parameter.point(1.0f), Climate.Parameter.span(-2f, 2f), 0));
+	public static final List<Climate.ParameterPoint> UNDERGROUND_PARAMETER_POINTS = List.of(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f),
+			Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-2f, 2f), 0));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3407872).waterColor(-52429).waterFogColor(-52429).skyColor(-3407872).foliageColorOverride(-3407872).grassColorOverride(-3407821)

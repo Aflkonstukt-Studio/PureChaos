@@ -7,6 +7,9 @@
     "mobModelName": "Modelfireflies",
     "mobModelTexture": "fireflies.png",
     "mobModelGlowTexture": "",
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
     "modelWidth": 0.1,
     "modelHeight": 0.1,
     "modelShadowSize": 0.1,
@@ -107,7 +110,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 18,
+    "spawningProbability": 70,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 6,

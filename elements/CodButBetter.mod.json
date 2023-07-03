@@ -7,6 +7,9 @@
     "mobModelName": "Modelcod_but_better",
     "mobModelTexture": "cod_but_better.png",
     "mobModelGlowTexture": "",
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
     "modelWidth": 0.6,
     "modelHeight": 0.5,
     "modelShadowSize": 0.5,
@@ -107,7 +110,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
+    "spawningProbability": 40,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,

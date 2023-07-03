@@ -29,6 +29,7 @@ import xyz.vikkivuk.chaosmod.entity.JosipPetEntity;
 import xyz.vikkivuk.chaosmod.entity.JavelinLauncherEntity;
 import xyz.vikkivuk.chaosmod.entity.JOSIPEntity;
 import xyz.vikkivuk.chaosmod.entity.IkeaDeskEntity;
+import xyz.vikkivuk.chaosmod.entity.HerobrineEntity;
 import xyz.vikkivuk.chaosmod.entity.FireflyEntity;
 import xyz.vikkivuk.chaosmod.entity.DreamEntity;
 import xyz.vikkivuk.chaosmod.entity.DeekEntity;
@@ -37,6 +38,7 @@ import xyz.vikkivuk.chaosmod.entity.CupcakkeEntity;
 import xyz.vikkivuk.chaosmod.entity.CodButBetterEntity;
 import xyz.vikkivuk.chaosmod.entity.BlazEntity;
 import xyz.vikkivuk.chaosmod.entity.BigEntity;
+import xyz.vikkivuk.chaosmod.entity.BaldiMinusEntity;
 import xyz.vikkivuk.chaosmod.entity.AmongUsEntity;
 import xyz.vikkivuk.chaosmod.entity.AmogusGunEntity;
 import xyz.vikkivuk.chaosmod.entity.Amogus3Entity;
@@ -196,6 +198,14 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<CupcakkeEntity>of(CupcakkeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CupcakkeEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BaldiMinusEntity>> BALDI_MINUS = register("baldi_minus",
+			EntityType.Builder.<BaldiMinusEntity>of(BaldiMinusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BaldiMinusEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HerobrineEntity>> HEROBRINE = register("herobrine",
+			EntityType.Builder.<HerobrineEntity>of(HerobrineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HerobrineEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -238,6 +248,8 @@ public class ChaosmodModEntities {
 			BigEntity.init();
 			TechnobladeEntity.init();
 			CupcakkeEntity.init();
+			BaldiMinusEntity.init();
+			HerobrineEntity.init();
 		});
 	}
 
@@ -277,5 +289,7 @@ public class ChaosmodModEntities {
 		event.put(BIG.get(), BigEntity.createAttributes().build());
 		event.put(TECHNOBLADE.get(), TechnobladeEntity.createAttributes().build());
 		event.put(CUPCAKKE.get(), CupcakkeEntity.createAttributes().build());
+		event.put(BALDI_MINUS.get(), BaldiMinusEntity.createAttributes().build());
+		event.put(HEROBRINE.get(), HerobrineEntity.createAttributes().build());
 	}
 }

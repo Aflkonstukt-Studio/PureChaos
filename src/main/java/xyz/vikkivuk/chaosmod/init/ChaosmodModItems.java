@@ -28,6 +28,7 @@ import xyz.vikkivuk.chaosmod.item.SSSRItem;
 import xyz.vikkivuk.chaosmod.item.RockItem;
 import xyz.vikkivuk.chaosmod.item.RadiationLiquidItem;
 import xyz.vikkivuk.chaosmod.item.PotatoSpudsItem;
+import xyz.vikkivuk.chaosmod.item.PoopItem;
 import xyz.vikkivuk.chaosmod.item.PickaxItem;
 import xyz.vikkivuk.chaosmod.item.PeemensionItem;
 import xyz.vikkivuk.chaosmod.item.PeeItem;
@@ -64,6 +65,7 @@ import xyz.vikkivuk.chaosmod.item.DoritoNachoItem;
 import xyz.vikkivuk.chaosmod.item.DoritoCoolRanchItem;
 import xyz.vikkivuk.chaosmod.item.DirtswordItem;
 import xyz.vikkivuk.chaosmod.item.DipexItem;
+import xyz.vikkivuk.chaosmod.item.DingotItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.CorruptstaffItem;
@@ -277,6 +279,11 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> APPLE_INGOT = REGISTRY.register("apple_ingot", () -> new AppleIngotItem());
 	public static final RegistryObject<Item> TECHNOBLADE_SPAWN_EGG = REGISTRY.register("technoblade_spawn_egg", () -> new ForgeSpawnEggItem(ChaosmodModEntities.TECHNOBLADE, -39271, -3342541, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> CUPCAKKE_SPAWN_EGG = REGISTRY.register("cupcakke_spawn_egg", () -> new ForgeSpawnEggItem(ChaosmodModEntities.CUPCAKKE, -1, -1, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> DINGOT = REGISTRY.register("dingot", () -> new DingotItem());
+	public static final RegistryObject<Item> POOP = REGISTRY.register("poop", () -> new PoopItem());
+	public static final RegistryObject<Item> BALDI_MINUS_SPAWN_EGG = REGISTRY.register("baldi_minus_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.BALDI_MINUS, -11618049, -16711936, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> HEROBRINE_SPAWN_EGG = REGISTRY.register("herobrine_spawn_egg", () -> new ForgeSpawnEggItem(ChaosmodModEntities.HEROBRINE, -1, -9777153, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

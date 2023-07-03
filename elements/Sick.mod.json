@@ -1,0 +1,23 @@
+{
+  "_fv": 39,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Sick",
+    "icon": "sick.png",
+    "color": {
+      "value": -16711885,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "SickEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "SickEffectExpires"
+    }
+  }
+}

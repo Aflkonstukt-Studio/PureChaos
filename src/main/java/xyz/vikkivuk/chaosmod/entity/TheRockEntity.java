@@ -37,7 +37,7 @@ import net.minecraft.network.protocol.Packet;
 public class TheRockEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.THE_ROCK.get(), 15, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.THE_ROCK.get(), 40, 1, 3));
 	}
 
 	public TheRockEntity(PlayMessages.SpawnEntity packet, Level world) {

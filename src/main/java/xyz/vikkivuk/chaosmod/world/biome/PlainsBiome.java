@@ -20,10 +20,10 @@ import java.util.List;
 
 public class PlainsBiome {
 	public static final List<Climate.ParameterPoint> PARAMETER_POINTS = List.of(
-			new Climate.ParameterPoint(Climate.Parameter.span(-0.2666666666666667f, 0.9333333333333332f), Climate.Parameter.span(0.4f, 1.6f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f),
-					Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.382114850893048f, 0.817885149106952f), 0),
-			new Climate.ParameterPoint(Climate.Parameter.span(-0.2666666666666667f, 0.9333333333333332f), Climate.Parameter.span(0.4f, 1.6f), Climate.Parameter.span(-0.08999999999999997f, 1.1099999999999999f),
-					Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.382114850893048f, 0.817885149106952f), 0));
+			new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.point(0.0f),
+					Climate.Parameter.span(-0.4f, 1f), 0),
+			new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.1099999999999999f), Climate.Parameter.span(0.20000000000000007f, 1.4f), Climate.Parameter.point(1.0f),
+					Climate.Parameter.span(-0.4f, 1f), 0));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3342337).waterColor(4159204).waterFogColor(329011).skyColor(-3342337).foliageColorOverride(10387789).grassColorOverride(9470285).build();

@@ -37,7 +37,7 @@ import net.minecraft.network.protocol.Packet;
 public class LongLegChickenEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), 15, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.LONG_LEG_CHICKEN.get(), 50, 2, 4));
 	}
 
 	public LongLegChickenEntity(PlayMessages.SpawnEntity packet, Level world) {

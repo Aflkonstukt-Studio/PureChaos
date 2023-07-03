@@ -236,5 +236,25 @@
         "stream": false
       }
     ]
+  },
+  "ruler_slap": {
+    "category": "hostile",
+    "subtitle": "subtitles.ruler_slap",
+    "sounds": [
+      {
+        "name": "chaosmod:ruler-slap",
+        "stream": false
+      }
+    ]
+  },
+  "fart": {
+    "category": "player",
+    "subtitle": "subtitles.fart",
+    "sounds": [
+      {
+        "name": "chaosmod:perfect-fart",
+        "stream": false
+      }
+    ]
   }
 }

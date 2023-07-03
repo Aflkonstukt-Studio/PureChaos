@@ -7,6 +7,9 @@
     "mobModelName": "Modelmoth",
     "mobModelTexture": "moth.png",
     "mobModelGlowTexture": "",
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
     "modelWidth": 0.3,
     "modelHeight": 0.6,
     "modelShadowSize": 0.3,
@@ -107,7 +110,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 12,
+    "spawningProbability": 30,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,

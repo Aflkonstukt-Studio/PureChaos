@@ -13,4 +13,5 @@ public class ChaosmodModGameRules {
 	public static final GameRules.Key<GameRules.BooleanValue> DOGRAVECREATION = GameRules.register("doGraveCreation", GameRules.Category.SPAWNING, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> DROPMUMBOTOKENS = GameRules.register("dropMumboTokens", GameRules.Category.MISC, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> DOBOSSSPAWNING = GameRules.register("doBossSpawning", GameRules.Category.SPAWNING, GameRules.BooleanValue.create(false));
+	public static final GameRules.Key<GameRules.BooleanValue> VEGANISM = GameRules.register("veganism", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 }

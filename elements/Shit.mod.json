@@ -1,0 +1,12 @@
+{
+  "_fv": 39,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LSHIFT",
+    "keyBindingName": "Shit",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "ShitOnKeyPressed"
+    }
+  }
+}

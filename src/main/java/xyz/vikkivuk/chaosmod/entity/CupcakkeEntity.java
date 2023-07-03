@@ -46,7 +46,7 @@ import java.util.EnumSet;
 public class CupcakkeEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.CUPCAKKE.get(), 20, 1, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.CUPCAKKE.get(), 25, 1, 4));
 	}
 
 	public CupcakkeEntity(PlayMessages.SpawnEntity packet, Level world) {

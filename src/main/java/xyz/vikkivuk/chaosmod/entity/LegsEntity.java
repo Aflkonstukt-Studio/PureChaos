@@ -38,7 +38,7 @@ import net.minecraft.network.protocol.Packet;
 public class LegsEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.LEGS.get(), 10, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.LEGS.get(), 70, 2, 4));
 	}
 
 	public LegsEntity(PlayMessages.SpawnEntity packet, Level world) {

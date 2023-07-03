@@ -35,7 +35,7 @@ import net.minecraft.network.protocol.Packet;
 public class BigEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.BIG.get(), 10, 2, 4));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.BIG.get(), 30, 2, 4));
 	}
 
 	public BigEntity(PlayMessages.SpawnEntity packet, Level world) {

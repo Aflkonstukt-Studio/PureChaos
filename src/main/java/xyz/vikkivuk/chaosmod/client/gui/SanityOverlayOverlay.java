@@ -1,6 +1,8 @@
 
 package xyz.vikkivuk.chaosmod.client.gui;
 
+import xyz.vikkivuk.chaosmod.procedures.SanityOverlayValueProcedure;
+
 import org.checkerframework.checker.units.qual.h;
 
 import net.minecraftforge.fml.common.Mod;
@@ -11,7 +13,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.client.Minecraft;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
@@ -35,7 +36,9 @@ public class SanityOverlayOverlay {
 				z = entity.getZ();
 			}
 			if (true) {
-				Minecraft.getInstance().font.draw(event.getMatrixStack(), new TranslatableComponent("gui.chaosmod.sanity_overlay.label_sanity_varintegersanity"), posX + -207, posY + -112, -1);
+				Minecraft.getInstance().font.draw(event.getMatrixStack(),
+
+						SanityOverlayValueProcedure.execute(world), posX + -207, posY + -112, -1);
 			}
 		}
 	}

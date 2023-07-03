@@ -22,6 +22,7 @@ import xyz.vikkivuk.chaosmod.client.model.Modeldog;
 import xyz.vikkivuk.chaosmod.client.model.Modelcustom_model;
 import xyz.vikkivuk.chaosmod.client.model.Modelcod_but_better;
 import xyz.vikkivuk.chaosmod.client.model.Modelblaze;
+import xyz.vikkivuk.chaosmod.client.model.Modelbaldi;
 import xyz.vikkivuk.chaosmod.client.model.Modelamongus_woo;
 import xyz.vikkivuk.chaosmod.client.model.Modelamiogyhus;
 
@@ -43,6 +44,7 @@ public class ChaosmodModModels {
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
 		event.registerLayerDefinition(Modelfireflies.LAYER_LOCATION, Modelfireflies::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
+		event.registerLayerDefinition(Modelbaldi.LAYER_LOCATION, Modelbaldi::createBodyLayer);
 		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);
 		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
 		event.registerLayerDefinition(Modelspongebob_boss.LAYER_LOCATION, Modelspongebob_boss::createBodyLayer);

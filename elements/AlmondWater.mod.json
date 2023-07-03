@@ -33,6 +33,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "AlmondWaterPlayerFinishesUsingItem"
+    },
     "isFood": true,
     "nutritionalValue": 10,
     "saturation": 20.0,

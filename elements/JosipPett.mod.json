@@ -7,6 +7,9 @@
     "mobModelName": "Modeljosipmmarket",
     "mobModelTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
     "mobModelGlowTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
     "modelWidth": 0.6,
     "modelHeight": 0.6,
     "modelShadowSize": 0.6,
@@ -111,7 +114,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 10,
+    "spawningProbability": 40,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,

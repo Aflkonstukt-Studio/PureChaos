@@ -36,15 +36,15 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.6,
-      "max": 0.6
+      "min": -1.0,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -0.6,
-      "max": 0.6
+      "min": -1.0,
+      "max": 1.0
     },
     "genContinentalness": {
-      "min": -0.08999999999999997,
+      "min": -1.0,
       "max": 1.1099999999999999
     },
     "genErosion": {
@@ -52,8 +52,8 @@
       "max": 1.4
     },
     "genWeirdness": {
-      "min": -0.2507407549388575,
-      "max": 0.9492592450611425
+      "min": -0.5,
+      "max": 1.0
     },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,

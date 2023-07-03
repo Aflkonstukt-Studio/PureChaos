@@ -58,7 +58,7 @@ import net.minecraft.core.BlockPos;
 public class AentityEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AENTITY.get(), 10, 1, 3));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ChaosmodModEntities.AENTITY.get(), 20, 1, 3));
 	}
 
 	public AentityEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -51,10 +51,8 @@ import com.google.common.collect.ImmutableList;
 
 public class SususBiome {
 	public static final List<Climate.ParameterPoint> PARAMETER_POINTS = List.of(
-			new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.2f), Climate.Parameter.span(-0.2f, 0.2f), Climate.Parameter.span(0.31f, 0.71f), Climate.Parameter.span(0.6000000000000001f, 1f), Climate.Parameter.point(0.0f),
-					Climate.Parameter.span(0.05326917448766183f, 0.45326917448766185f), 0),
-			new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 0.2f), Climate.Parameter.span(-0.2f, 0.2f), Climate.Parameter.span(0.31f, 0.71f), Climate.Parameter.span(0.6000000000000001f, 1f), Climate.Parameter.point(1.0f),
-					Climate.Parameter.span(0.05326917448766183f, 0.45326917448766185f), 0));
+			new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.1f, 0.6f), 0),
+			new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.1f, 0.6f), 0));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-65536).waterColor(-13369600).waterFogColor(-16711936).skyColor(-65536).foliageColorOverride(-65536).grassColorOverride(-65536)

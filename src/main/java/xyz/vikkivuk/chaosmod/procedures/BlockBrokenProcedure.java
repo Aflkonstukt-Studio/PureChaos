@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.world.BlockEvent;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -38,6 +39,15 @@ public class BlockBrokenProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
+			if (Mth.nextDouble(new Random(), 1, 5) == 2) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(ChaosmodModItems.DINGOT.get());
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+			}
+		}
 		if (world.getLevelData().getGameRules().getBoolean(ChaosmodModGameRules.DROPMUMBOTOKENS)) {
 			if (Mth.nextDouble(new Random(), 1, 6) == 3) {
 				if (world instanceof Level _level) {
