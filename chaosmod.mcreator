@@ -5251,6 +5251,200 @@
           "src/main/resources/assets/chaosmod/models/item/herobrine_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "PensiveCube",
+      "type": "livingentity",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pensive_cube",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/pensive_cube_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/PensiveCubeRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/PensiveCubeEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PensiveCubeTransparentEntityModelCondition",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pensive_cube_transparent_entity_model_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/PensiveCubeTransparentEntityModelConditionProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TotemOfDreamItemInHandTick",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_of_dream_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/TotemOfDreamItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommunismOrbRightclicked",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism_orb_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CommunismOrbRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CommunismOrb",
+      "type": "item",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "communism_orb",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CommunismOrbItem.java",
+          "src/main/resources/assets/chaosmod/models/item/communism_orb.json"
+        ]
+      }
+    },
+    {
+      "name": "CocaColaPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coca_cola_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/procedures/CocaColaPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CocaCola",
+      "type": "item",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coca_cola",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/item/CocaColaItem.java",
+          "src/main/resources/assets/chaosmod/models/item/coca_cola.json"
+        ]
+      }
+    },
+    {
+      "name": "DrugVan",
+      "type": "structure",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drug_van",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/vikkivuk/chaosmod/world/features/DrugVanFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "Nerd",
+      "type": "livingentity",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nerd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/nerd_spawn_egg.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/client/renderer/NerdRenderer.java",
+          "src/main/java/xyz/vikkivuk/chaosmod/entity/NerdEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Bedrock",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/chaosmod/recipes/bedrock.json"
+        ]
+      }
+    },
+    {
+      "name": "SussySusStew",
+      "type": "item",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sussy_sus_stew",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/chaosmod/models/item/sussy_sus_stew.json",
+          "src/main/java/xyz/vikkivuk/chaosmod/item/SussySusStewItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -5399,14 +5593,6 @@
       "subtitle": ""
     },
     {
-      "name": "nerd_pacman_meme",
-      "files": [
-        "nerd_pacman_meme"
-      ],
-      "category": "music",
-      "subtitle": "Nerd Pacman Meme"
-    },
-    {
       "name": "girl_moan",
       "files": [
         "girl_moan"
@@ -5477,6 +5663,46 @@
       ],
       "category": "player",
       "subtitle": "fart"
+    },
+    {
+      "name": "espuma",
+      "files": [
+        "cola-explosion"
+      ],
+      "category": "player",
+      "subtitle": "coca cola espuma"
+    },
+    {
+      "name": "nerd",
+      "files": [
+        "nerd-emoji-sound"
+      ],
+      "category": "neutral",
+      "subtitle": "nerd"
+    },
+    {
+      "name": "nerd_pacman_meme",
+      "files": [
+        "nerd_pacman_meme"
+      ],
+      "category": "music",
+      "subtitle": "Nerd Pacman Meme"
+    },
+    {
+      "name": "rock_living",
+      "files": [
+        "rock_living"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "rock_death",
+      "files": [
+        "rock_death"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -5484,30 +5710,32 @@
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
-      "item.chaosmod.cum_bucket": "Cum Bucket",
-      "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
+      "item.chaosmod.sasi_amangas": "Sasi Amangas",
+      "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "entity.chaosmod.cursed_dog": "Dgo",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "block.chaosmod.missing_texture": "Missing Texture",
+      "subtitles.espuma": "coca cola espuma",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
-      "item.chaosmod.fooditem": "Food Item 1",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
+      "item.chaosmod.fooditem": "Food Item 1",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
-      "entity.chaosmod.aentity": "Aentity",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
-      "death.attack.vegan": "%1$s ate meat",
+      "entity.chaosmod.aentity": "Aentity",
       "entity.chaosmod.herobrine": "Herobrine",
+      "death.attack.vegan": "%1$s ate meat",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
+      "item.chaosmod.coca_cola": "Coca Cola",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
-      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.green_plant": "Green Plant",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "block.chaosmod.sus_block": "Sus Block",
@@ -5536,8 +5764,10 @@
       "subtitles.amogus": "sus",
       "effect.chaosmod.blind": "Blind",
       "item.chaosmod.adidas_sword": "Adidas Sword",
+      "item.chaosmod.nerd_spawn_egg": "Nerd Spawn Egg",
       "block.chaosmod.poland_block": "Poland Block",
       "subtitles.smack_my_ass": "",
+      "entity.chaosmod.pensive_cube": "Pensive Cube",
       "block.chaosmod.milk_2": "Milk 2",
       "death.attack.cccp": "%1$s was a fool",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
@@ -5579,6 +5809,7 @@
       "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "block.chaosmod.grave": "Grave",
       "death.attack.drank_lava": "%1$s drank lava",
+      "item.chaosmod.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.chaosmod.beef": "Beef",
       "block.chaosmod.brazil_block": "Brazil Block",
       "biome.chaosmod.more_extreme_hills": "More Extreme Hills",
@@ -5591,6 +5822,8 @@
       "item.chaosmod.baldi_minus_spawn_egg": "Baldi Minus Spawn Egg",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
+      "subtitles.nerd": "nerd",
+      "subtitles.rock_death": "",
       "item.chaosmod.brown": "Brown",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
@@ -5614,9 +5847,11 @@
       "entity.chaosmod.legs": "Legs",
       "item.chaosmod.tinted_glass_bottle": "Tinted Glass Bottle",
       "fluid.chaosmod.oil": "Oil",
+      "item.chaosmod.communism_orb": "Orb o\u0027 Communism",
       "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "entity.chaosmod.amogus_3_crew": "Amogus 3 (Crewmate, Red)",
       "subtitles.spit": "",
+      "entity.chaosmod.nerd": "Nerd",
       "entity.chaosmod.stalin": "Stalin",
       "item.chaosmod.iron_egg": "Iron Egg",
       "item.chaosmod.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
@@ -5661,6 +5896,7 @@
       "item.chaosmod.beengot": "Beengot",
       "item.chaosmod.adidas_shovel": "Adidas Shovel",
       "block.chaosmod.tlghd": "TLG Block",
+      "subtitles.rock_living": "",
       "item.chaosmod.half_golden_apple": "Half Golden Apple",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "item.chaosmod.adidas_pickaxe": "Adidas Pickaxe",
@@ -5684,6 +5920,7 @@
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "gamerule.dropMumboTokens.description": "Do you want mumbo tokens to be dropped (by chance) on block break",
+      "item.chaosmod.sussy_sus_stew": "Very Suspicious Stew",
       "entity.chaosmod.shep": "Shep",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.spit_ball": "Spit Ball",

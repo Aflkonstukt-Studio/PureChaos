@@ -37,6 +37,7 @@ import xyz.vikkivuk.chaosmod.world.features.HerobrineShrineFeature;
 import xyz.vikkivuk.chaosmod.world.features.HECFeature;
 import xyz.vikkivuk.chaosmod.world.features.GatoradeFeatureFeature;
 import xyz.vikkivuk.chaosmod.world.features.GasChamberFeature;
+import xyz.vikkivuk.chaosmod.world.features.DrugVanFeature;
 import xyz.vikkivuk.chaosmod.world.features.CumFeatureFeature;
 import xyz.vikkivuk.chaosmod.world.features.CobbleFluidFeatureFeature;
 import xyz.vikkivuk.chaosmod.world.features.CarbonMonoxideFeatureFeature;
@@ -139,6 +140,7 @@ public class ChaosmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, RadiationLiquidFeatureFeature.GENERATE_BIOMES, RadiationLiquidFeatureFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> COBBLE_FLUID_FEATURE = register("cobble_fluid_feature", CobbleFluidFeatureFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.LAKES, CobbleFluidFeatureFeature.GENERATE_BIOMES, CobbleFluidFeatureFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DRUG_VAN = register("drug_van", DrugVanFeature::feature, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, DrugVanFeature.GENERATE_BIOMES, DrugVanFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

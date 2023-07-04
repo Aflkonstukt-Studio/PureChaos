@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dream_totem",
+    "texture": "communism_orb",
     "customModelName": "Normal",
-    "name": "Totem Of Dream",
-    "rarity": "EPIC",
+    "name": "Orb o' Communism",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
@@ -19,20 +19,20 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "i dont know what the heck this is"
+      "You are wondering what kind of power it possesses"
     ],
-    "hasGlow": false,
+    "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInUseTick": {
-      "name": "TotemOfDreamItemInHandTick"
+    "onRightClickedInAir": {
+      "name": "CommunismOrbRightclicked"
     },
     "isFood": false,
     "nutritionalValue": 4,
@@ -42,6 +42,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "none"
   }
 }

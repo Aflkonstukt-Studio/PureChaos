@@ -18,6 +18,8 @@ import xyz.vikkivuk.chaosmod.entity.SplankEntity;
 import xyz.vikkivuk.chaosmod.entity.ShepEntity;
 import xyz.vikkivuk.chaosmod.entity.RockEntity;
 import xyz.vikkivuk.chaosmod.entity.RickAstleyEntity;
+import xyz.vikkivuk.chaosmod.entity.PensiveCubeEntity;
+import xyz.vikkivuk.chaosmod.entity.NerdEntity;
 import xyz.vikkivuk.chaosmod.entity.MothOfAggrevationEntity;
 import xyz.vikkivuk.chaosmod.entity.LongLegChickenEntity;
 import xyz.vikkivuk.chaosmod.entity.LegsEntity;
@@ -206,6 +208,14 @@ public class ChaosmodModEntities {
 			EntityType.Builder.<HerobrineEntity>of(HerobrineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HerobrineEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PensiveCubeEntity>> PENSIVE_CUBE = register("pensive_cube",
+			EntityType.Builder.<PensiveCubeEntity>of(PensiveCubeEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PensiveCubeEntity::new)
+
+					.sized(1f, 1f));
+	public static final RegistryObject<EntityType<NerdEntity>> NERD = register("nerd",
+			EntityType.Builder.<NerdEntity>of(NerdEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NerdEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -250,6 +260,8 @@ public class ChaosmodModEntities {
 			CupcakkeEntity.init();
 			BaldiMinusEntity.init();
 			HerobrineEntity.init();
+			PensiveCubeEntity.init();
+			NerdEntity.init();
 		});
 	}
 
@@ -291,5 +303,7 @@ public class ChaosmodModEntities {
 		event.put(CUPCAKKE.get(), CupcakkeEntity.createAttributes().build());
 		event.put(BALDI_MINUS.get(), BaldiMinusEntity.createAttributes().build());
 		event.put(HEROBRINE.get(), HerobrineEntity.createAttributes().build());
+		event.put(PENSIVE_CUBE.get(), PensiveCubeEntity.createAttributes().build());
+		event.put(NERD.get(), NerdEntity.createAttributes().build());
 	}
 }

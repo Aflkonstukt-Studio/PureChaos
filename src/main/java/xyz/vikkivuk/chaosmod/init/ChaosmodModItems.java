@@ -16,6 +16,7 @@ import xyz.vikkivuk.chaosmod.item.TotemOfAmogusItem;
 import xyz.vikkivuk.chaosmod.item.TintedGlassBottleItem;
 import xyz.vikkivuk.chaosmod.item.TesticleOnStickItem;
 import xyz.vikkivuk.chaosmod.item.TOItem;
+import xyz.vikkivuk.chaosmod.item.SussySusStewItem;
 import xyz.vikkivuk.chaosmod.item.SusSwordItem;
 import xyz.vikkivuk.chaosmod.item.SusItem;
 import xyz.vikkivuk.chaosmod.item.StaravodaItem;
@@ -69,7 +70,9 @@ import xyz.vikkivuk.chaosmod.item.DingotItem;
 import xyz.vikkivuk.chaosmod.item.DeekItem;
 import xyz.vikkivuk.chaosmod.item.CumItem;
 import xyz.vikkivuk.chaosmod.item.CorruptstaffItem;
+import xyz.vikkivuk.chaosmod.item.CommunismOrbItem;
 import xyz.vikkivuk.chaosmod.item.ComicallyLargeSpoonItem;
+import xyz.vikkivuk.chaosmod.item.CocaColaItem;
 import xyz.vikkivuk.chaosmod.item.CobbleFluidItem;
 import xyz.vikkivuk.chaosmod.item.CioaoItem;
 import xyz.vikkivuk.chaosmod.item.CarbonMonoxideItem;
@@ -284,6 +287,12 @@ public class ChaosmodModItems {
 	public static final RegistryObject<Item> BALDI_MINUS_SPAWN_EGG = REGISTRY.register("baldi_minus_spawn_egg",
 			() -> new ForgeSpawnEggItem(ChaosmodModEntities.BALDI_MINUS, -11618049, -16711936, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
 	public static final RegistryObject<Item> HEROBRINE_SPAWN_EGG = REGISTRY.register("herobrine_spawn_egg", () -> new ForgeSpawnEggItem(ChaosmodModEntities.HEROBRINE, -1, -9777153, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg",
+			() -> new ForgeSpawnEggItem(ChaosmodModEntities.PENSIVE_CUBE, -11711155, -16314, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> COMMUNISM_ORB = REGISTRY.register("communism_orb", () -> new CommunismOrbItem());
+	public static final RegistryObject<Item> COCA_COLA = REGISTRY.register("coca_cola", () -> new CocaColaItem());
+	public static final RegistryObject<Item> NERD_SPAWN_EGG = REGISTRY.register("nerd_spawn_egg", () -> new ForgeSpawnEggItem(ChaosmodModEntities.NERD, -205, -3355444, new Item.Properties().tab(ChaosmodModTabs.TAB_CHAOSTAB)));
+	public static final RegistryObject<Item> SUSSY_SUS_STEW = REGISTRY.register("sussy_sus_stew", () -> new SussySusStewItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -163,16 +163,6 @@
       }
     ]
   },
-  "nerd_pacman_meme": {
-    "category": "music",
-    "subtitle": "subtitles.nerd_pacman_meme",
-    "sounds": [
-      {
-        "name": "chaosmod:nerd_pacman_meme",
-        "stream": true
-      }
-    ]
-  },
   "girl_moan": {
     "category": "voice",
     "subtitle": "subtitles.girl_moan",
@@ -253,6 +243,54 @@
     "sounds": [
       {
         "name": "chaosmod:perfect-fart",
+        "stream": false
+      }
+    ]
+  },
+  "espuma": {
+    "category": "player",
+    "subtitle": "subtitles.espuma",
+    "sounds": [
+      {
+        "name": "chaosmod:cola-explosion",
+        "stream": false
+      }
+    ]
+  },
+  "nerd": {
+    "category": "neutral",
+    "subtitle": "subtitles.nerd",
+    "sounds": [
+      {
+        "name": "chaosmod:nerd-emoji-sound",
+        "stream": false
+      }
+    ]
+  },
+  "nerd_pacman_meme": {
+    "category": "music",
+    "subtitle": "subtitles.nerd_pacman_meme",
+    "sounds": [
+      {
+        "name": "chaosmod:nerd_pacman_meme",
+        "stream": true
+      }
+    ]
+  },
+  "rock_living": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:rock_living",
+        "stream": false
+      }
+    ]
+  },
+  "rock_death": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "chaosmod:rock_death",
         "stream": false
       }
     ]

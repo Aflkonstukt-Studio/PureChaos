@@ -1,9 +1,9 @@
 {
-  "_fv": 28,
+  "_fv": 39,
   "_type": "structure",
   "definition": {
     "structure": "drugvan",
-    "randomlyRotateStructure": true,
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 5000,
     "minCountPerChunk": 1,
@@ -13,7 +13,16 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "Nether",
+      "End",
+      "CUSTOM:Peemension",
+      "CUSTOM:WoodDimension",
+      "CUSTOM:Sus",
+      "CUSTOM:Brazil",
+      "CUSTOM:Cyberspace",
+      "CUSTOM:Cioao",
+      "CUSTOM:Aether"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],

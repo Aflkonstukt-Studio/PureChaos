@@ -16,6 +16,8 @@ import xyz.vikkivuk.chaosmod.client.renderer.SpongebobBossRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.SplankRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.ShepRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.RickAstleyRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.PensiveCubeRenderer;
+import xyz.vikkivuk.chaosmod.client.renderer.NerdRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.MothOfAggrevationRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.LongLegChickenRenderer;
 import xyz.vikkivuk.chaosmod.client.renderer.LegsRenderer;
@@ -96,5 +98,7 @@ public class ChaosmodModEntityRenderers {
 		event.registerEntityRenderer(ChaosmodModEntities.CUPCAKKE.get(), CupcakkeRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.BALDI_MINUS.get(), BaldiMinusRenderer::new);
 		event.registerEntityRenderer(ChaosmodModEntities.HEROBRINE.get(), HerobrineRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
+		event.registerEntityRenderer(ChaosmodModEntities.NERD.get(), NerdRenderer::new);
 	}
 }

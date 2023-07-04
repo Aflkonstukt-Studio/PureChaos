@@ -35,7 +35,6 @@ public class ChaosmodModSounds {
 		REGISTRY.put(new ResourceLocation("chaosmod", "ahdude"), new SoundEvent(new ResourceLocation("chaosmod", "ahdude")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "fu-k"), new SoundEvent(new ResourceLocation("chaosmod", "fu-k")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "dudeshutt"), new SoundEvent(new ResourceLocation("chaosmod", "dudeshutt")));
-		REGISTRY.put(new ResourceLocation("chaosmod", "nerd_pacman_meme"), new SoundEvent(new ResourceLocation("chaosmod", "nerd_pacman_meme")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "girl_moan"), new SoundEvent(new ResourceLocation("chaosmod", "girl_moan")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "spit"), new SoundEvent(new ResourceLocation("chaosmod", "spit")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "pan_hit"), new SoundEvent(new ResourceLocation("chaosmod", "pan_hit")));
@@ -45,6 +44,11 @@ public class ChaosmodModSounds {
 		REGISTRY.put(new ResourceLocation("chaosmod", "wet_cupcakke"), new SoundEvent(new ResourceLocation("chaosmod", "wet_cupcakke")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "ruler_slap"), new SoundEvent(new ResourceLocation("chaosmod", "ruler_slap")));
 		REGISTRY.put(new ResourceLocation("chaosmod", "fart"), new SoundEvent(new ResourceLocation("chaosmod", "fart")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "espuma"), new SoundEvent(new ResourceLocation("chaosmod", "espuma")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "nerd"), new SoundEvent(new ResourceLocation("chaosmod", "nerd")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "nerd_pacman_meme"), new SoundEvent(new ResourceLocation("chaosmod", "nerd_pacman_meme")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "rock_living"), new SoundEvent(new ResourceLocation("chaosmod", "rock_living")));
+		REGISTRY.put(new ResourceLocation("chaosmod", "rock_death"), new SoundEvent(new ResourceLocation("chaosmod", "rock_death")));
 	}
 
 	@SubscribeEvent
