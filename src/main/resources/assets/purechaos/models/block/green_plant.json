@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "purechaos:blocks/greenplant",
+    "particle": "purechaos:blocks/greenplant"
+  }
+}

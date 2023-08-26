@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "purechaos:blocks/food_item_4",
+    "particle": "purechaos:blocks/food_item_4"
+  }
+}

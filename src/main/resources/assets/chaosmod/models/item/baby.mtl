@@ -1,7 +1,0 @@
-newmtl StandingBaby
-Ka 1.0 1.0 1.0
-Kd 1.0 1.0 1.0
-Ks 0.135 0.135 0.135
-map_Kd chaosmod:blocks/standingbabydiffusemap
-Ns 15.0
-d 1.0

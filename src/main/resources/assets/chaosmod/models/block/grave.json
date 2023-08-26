@@ -1,8 +1,0 @@
-{
-  "parent": "chaosmod:custom/dedgrave",
-  "textures": {
-    "all": "chaosmod:blocks/gravetexture",
-    "particle": "chaosmod:blocks/gravetexture",
-    "0": "chaosmod:blocks/gravetexture"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "purechaos:items/a3e496b664fd44d"
+  }
+}

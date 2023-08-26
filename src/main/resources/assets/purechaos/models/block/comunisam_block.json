@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/comunist",
+    "up": "purechaos:blocks/comunist",
+    "north": "purechaos:blocks/comunist",
+    "east": "purechaos:blocks/comunist",
+    "south": "purechaos:blocks/comunist",
+    "west": "purechaos:blocks/comunist",
+    "particle": "purechaos:blocks/comunist"
+  }
+}

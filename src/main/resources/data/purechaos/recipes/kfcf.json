@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "purechaos:potato_spuds"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "purechaos:potato_spuds"
+    },
+    {
+      "item": "purechaos:kfce"
+    }
+  ],
+  "result": {
+    "item": "purechaos:kentucky_fried_chicken_fries",
+    "count": 1
+  }
+}

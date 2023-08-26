@@ -1,8 +1,0 @@
-{
-  "parent": "chaosmod:custom/dedtomb",
-  "textures": {
-    "all": "chaosmod:blocks/tombtexture",
-    "particle": "chaosmod:blocks/tombtexture",
-    "0": "chaosmod:blocks/tombtexture"
-  }
-}

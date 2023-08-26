@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "purechaos:block/brazil_portal_ew"
+    },
+    "axis=x": {
+      "model": "purechaos:block/brazil_portal_ns"
+    }
+  }
+}

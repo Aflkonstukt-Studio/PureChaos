@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/missing_texture",
+    "up": "purechaos:blocks/missing_texture",
+    "north": "purechaos:blocks/missing_texture",
+    "east": "purechaos:blocks/missing_texture",
+    "south": "purechaos:blocks/missing_texture",
+    "west": "purechaos:blocks/missing_texture",
+    "particle": "purechaos:blocks/missing_texture"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/rickroll",
+    "up": "purechaos:blocks/rickroll",
+    "north": "purechaos:blocks/rickroll",
+    "east": "purechaos:blocks/rickroll",
+    "south": "purechaos:blocks/rickroll",
+    "west": "purechaos:blocks/rickroll",
+    "particle": "purechaos:blocks/rickroll"
+  }
+}

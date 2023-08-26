@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purechaos:adidas_block"
+    },
+    "2": {
+      "item": "purechaos:adidas_block"
+    },
+    "3": {
+      "item": "purechaos:adidas_block"
+    },
+    "4": {
+      "item": "purechaos:adidas_block"
+    },
+    "5": {
+      "item": "purechaos:adidas_block"
+    },
+    "6": {
+      "item": "purechaos:adidas_block"
+    },
+    "7": {
+      "item": "purechaos:adidas_block"
+    },
+    "8": {
+      "item": "purechaos:adidas_block"
+    }
+  },
+  "result": {
+    "item": "purechaos:adidas_armor_chestplate",
+    "count": 1
+  }
+}

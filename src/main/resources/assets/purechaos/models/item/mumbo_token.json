@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "parent": "forge:item/default",
+  "loader": "forge:obj",
+  "model": "purechaos:models/item/mumbo_token.obj",
+  "textures": {
+    "m_0": "purechaos:blocks/mumbotoken",
+    "particle": "purechaos:items/tlgf"
+  }
+}

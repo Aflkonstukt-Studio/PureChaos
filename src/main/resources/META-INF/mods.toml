@@ -3,17 +3,18 @@ loaderVersion="[40,)"
 license="All rights reserved"
 
 [[mods]]
-modId="chaosmod"
-version="1.0.0"
-displayName="chaosmod"
-credits="All credits go to our sponsor, you!"
-displayURL="https://vikkivuk.xyz"
+modId="purechaos"
+version="1.0.4"
+displayName="Pure Chaos"
+credits="We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!"
+displayURL="https://modrinth.com/mod/chaos"
+logoFile="logo.png"
 authors="VikkiVuk, JosipTLG, X Master Woo"
 description='''
-This mod is everything but normal
+Add a little bit of, spice.
 '''
 
-[[dependencies.chaosmod]]
+[[dependencies.purechaos]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2]"

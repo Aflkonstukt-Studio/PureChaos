@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "purechaos:blocks/youtube",
+    "particle": "purechaos:blocks/youtube"
+  }
+}

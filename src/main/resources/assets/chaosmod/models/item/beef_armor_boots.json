@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "chaosmod:items/beef_armor_boots"
-  }
-}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/death_block",
+    "up": "purechaos:blocks/death_block",
+    "north": "purechaos:blocks/death_block",
+    "east": "purechaos:blocks/death_block",
+    "south": "purechaos:blocks/death_block",
+    "west": "purechaos:blocks/death_block",
+    "particle": "purechaos:blocks/death_block"
+  }
+}

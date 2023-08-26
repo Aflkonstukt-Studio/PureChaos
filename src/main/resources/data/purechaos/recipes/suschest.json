@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "purechaos:sus_block"
+    },
+    "2": {
+      "item": "purechaos:sus_block"
+    },
+    "3": {
+      "item": "purechaos:sus_block"
+    },
+    "4": {
+      "item": "purechaos:sus_block"
+    },
+    "5": {
+      "item": "purechaos:sus_block"
+    },
+    "6": {
+      "item": "purechaos:sus_block"
+    },
+    "7": {
+      "item": "purechaos:sus_block"
+    },
+    "8": {
+      "item": "purechaos:sus_block"
+    }
+  },
+  "result": {
+    "item": "purechaos:amugus_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "purechaos:adidas_block"
+    },
+    "2": {
+      "item": "purechaos:adidas_block"
+    },
+    "3": {
+      "item": "purechaos:adidas_block"
+    },
+    "5": {
+      "item": "purechaos:adidas_block"
+    }
+  },
+  "result": {
+    "item": "purechaos:adidas_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "purechaos:xite"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "purechaos:xite"
+    },
+    "5": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "purechaos:xsord",
+    "count": 1
+  }
+}

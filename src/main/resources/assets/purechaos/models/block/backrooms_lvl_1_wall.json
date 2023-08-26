@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/backrooms_wall",
+    "up": "purechaos:blocks/backrooms_wall",
+    "north": "purechaos:blocks/backrooms_wall",
+    "east": "purechaos:blocks/backrooms_wall",
+    "south": "purechaos:blocks/backrooms_wall",
+    "west": "purechaos:blocks/backrooms_wall",
+    "particle": "purechaos:blocks/backrooms_wall"
+  }
+}

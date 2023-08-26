@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "purechaos:block/sus_block"
+    }
+  }
+}

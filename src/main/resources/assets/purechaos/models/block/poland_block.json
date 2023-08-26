@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/polskabotom",
+    "up": "purechaos:blocks/polskatop",
+    "north": "purechaos:blocks/polska",
+    "east": "purechaos:blocks/polska",
+    "south": "purechaos:blocks/polska",
+    "west": "purechaos:blocks/polska",
+    "particle": "purechaos:blocks/polskabotom"
+  }
+}

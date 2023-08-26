@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "purechaos:sus_block"
+    },
+    "1": {
+      "item": "purechaos:sus_block"
+    },
+    "2": {
+      "item": "purechaos:sus_block"
+    },
+    "3": {
+      "item": "purechaos:sus_block"
+    },
+    "5": {
+      "item": "purechaos:sus_block"
+    },
+    "6": {
+      "item": "purechaos:sus_block"
+    },
+    "8": {
+      "item": "purechaos:sus_block"
+    }
+  },
+  "result": {
+    "item": "purechaos:amugus_leggings",
+    "count": 1
+  }
+}

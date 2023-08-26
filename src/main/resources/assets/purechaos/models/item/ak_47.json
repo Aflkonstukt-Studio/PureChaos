@@ -1,0 +1,7 @@
+{
+  "parent": "purechaos:custom/ak47java",
+  "textures": {
+    "0": "purechaos:blocks/texture",
+    "particle": "purechaos:items/texture"
+  }
+}

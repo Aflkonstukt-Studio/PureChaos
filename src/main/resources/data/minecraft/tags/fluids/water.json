@@ -1,19 +1,19 @@
 {
   "replace": false,
   "values": [
-    "chaosmod:pee",
-    "chaosmod:flowing_pee",
-    "chaosmod:staravoda",
-    "chaosmod:flowing_staravoda",
-    "chaosmod:gatorade",
-    "chaosmod:flowing_gatorade",
-    "chaosmod:carbon_monoxide",
-    "chaosmod:flowing_carbon_monoxide",
-    "chaosmod:milk_2",
-    "chaosmod:flowing_milk_2",
-    "chaosmod:radiation_liquid",
-    "chaosmod:flowing_radiation_liquid",
-    "chaosmod:cobble_fluid",
-    "chaosmod:flowing_cobble_fluid"
+    "purechaos:pee",
+    "purechaos:flowing_pee",
+    "purechaos:staravoda",
+    "purechaos:flowing_staravoda",
+    "purechaos:gatorade",
+    "purechaos:flowing_gatorade",
+    "purechaos:carbon_monoxide",
+    "purechaos:flowing_carbon_monoxide",
+    "purechaos:milk_2",
+    "purechaos:flowing_milk_2",
+    "purechaos:radiation_liquid",
+    "purechaos:flowing_radiation_liquid",
+    "purechaos:cobble_fluid",
+    "purechaos:flowing_cobble_fluid"
   ]
 }

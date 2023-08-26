@@ -1,0 +1,318 @@
+{
+  "amogus": {
+    "category": "music",
+    "subtitle": "subtitles.amogus",
+    "sounds": [
+      {
+        "name": "purechaos:amogus-sound-effect",
+        "stream": true
+      }
+    ]
+  },
+  "footstep_metal_amogus": {
+    "category": "hostile",
+    "subtitle": "subtitles.footstep_metal_amogus",
+    "sounds": [
+      {
+        "name": "purechaos:footstep-metal-03",
+        "stream": false
+      }
+    ]
+  },
+  "kill": {
+    "category": "hostile",
+    "subtitle": "subtitles.kill",
+    "sounds": [
+      {
+        "name": "purechaos:impostor-kill_1_",
+        "stream": false
+      }
+    ]
+  },
+  "amongus_ambient": {
+    "category": "ambient",
+    "subtitle": "subtitles.amongus_ambient",
+    "sounds": [
+      {
+        "name": "purechaos:ambience-main-ambience",
+        "stream": false
+      }
+    ]
+  },
+  "fallguyswooh": {
+    "category": "music",
+    "subtitle": "subtitles.fallguyswooh",
+    "sounds": [
+      {
+        "name": "purechaos:fall_guys_woo_sound_67108864_times_320_kbps",
+        "stream": true
+      }
+    ]
+  },
+  "jusif": {
+    "category": "music",
+    "subtitle": "subtitles.jusif",
+    "sounds": [
+      {
+        "name": "purechaos:untitled_1",
+        "stream": true
+      }
+    ]
+  },
+  "redacted": {
+    "category": "hostile",
+    "subtitle": "subtitles.redacted",
+    "sounds": [
+      {
+        "name": "purechaos:scary_static_sound_effect_320_kbps",
+        "stream": false
+      }
+    ]
+  },
+  "scratest": {
+    "category": "music",
+    "subtitle": "subtitles.scratest",
+    "sounds": [
+      {
+        "name": "purechaos:scratest",
+        "stream": true
+      }
+    ]
+  },
+  "jumpscare": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "purechaos:jumpscare",
+        "stream": false
+      }
+    ]
+  },
+  "sssr": {
+    "category": "music",
+    "subtitle": "subtitles.sssr",
+    "sounds": [
+      {
+        "name": "purechaos:soviet-anthem_en",
+        "stream": true
+      }
+    ]
+  },
+  "vine_boom": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:vine_boom",
+        "stream": false
+      }
+    ]
+  },
+  "eekum_bokum": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:eekum_bokum",
+        "stream": false
+      }
+    ]
+  },
+  "never_gonna_give_you_up": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:never_gonna_give_you_up",
+        "stream": false
+      }
+    ]
+  },
+  "crnidani": {
+    "category": "music",
+    "subtitle": "subtitles.crnidani",
+    "sounds": [
+      {
+        "name": "purechaos:crnidani",
+        "stream": true
+      }
+    ]
+  },
+  "ahdude": {
+    "category": "block",
+    "subtitle": "subtitles.ahdude",
+    "sounds": [
+      {
+        "name": "purechaos:faster_you_dumpass",
+        "stream": false
+      }
+    ]
+  },
+  "fu-k": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "purechaos:lego-yoda-death-soundg",
+        "stream": false
+      }
+    ]
+  },
+  "dudeshutt": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "purechaos:bruga",
+        "stream": false
+      }
+    ]
+  },
+  "girl_moan": {
+    "category": "voice",
+    "subtitle": "subtitles.girl_moan",
+    "sounds": [
+      {
+        "name": "purechaos:girl_moan",
+        "stream": false
+      }
+    ]
+  },
+  "spit": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "purechaos:spit",
+        "stream": false
+      }
+    ]
+  },
+  "pan_hit": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:pan_hit",
+        "stream": false
+      }
+    ]
+  },
+  "smack_my_ass": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "purechaos:papi_smack_my_a_-_cupcakke_sound_effect-youtubeconvert.cc",
+        "stream": false
+      }
+    ]
+  },
+  "ugh_cupcakke": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "purechaos:cupcakke-ugh-by-tuna",
+        "stream": false
+      }
+    ]
+  },
+  "gulp_gulp": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "purechaos:cupcakke-gulp-gulp-by-tuna",
+        "stream": false
+      }
+    ]
+  },
+  "wet_cupcakke": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "purechaos:cupcakke-by-tuna",
+        "stream": false
+      }
+    ]
+  },
+  "ruler_slap": {
+    "category": "hostile",
+    "subtitle": "subtitles.ruler_slap",
+    "sounds": [
+      {
+        "name": "purechaos:ruler-slap",
+        "stream": false
+      }
+    ]
+  },
+  "fart": {
+    "category": "player",
+    "subtitle": "subtitles.fart",
+    "sounds": [
+      {
+        "name": "purechaos:perfect-fart",
+        "stream": false
+      }
+    ]
+  },
+  "espuma": {
+    "category": "player",
+    "subtitle": "subtitles.espuma",
+    "sounds": [
+      {
+        "name": "purechaos:cola-explosion",
+        "stream": false
+      }
+    ]
+  },
+  "nerd": {
+    "category": "neutral",
+    "subtitle": "subtitles.nerd",
+    "sounds": [
+      {
+        "name": "purechaos:nerd-emoji-sound",
+        "stream": false
+      }
+    ]
+  },
+  "nerd_pacman_meme": {
+    "category": "music",
+    "subtitle": "subtitles.nerd_pacman_meme",
+    "sounds": [
+      {
+        "name": "purechaos:nerd_pacman_meme",
+        "stream": true
+      }
+    ]
+  },
+  "rock_living": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:rock_living",
+        "stream": false
+      }
+    ]
+  },
+  "rock_death": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "purechaos:rock_death",
+        "stream": false
+      }
+    ]
+  },
+  "kilometer": {
+    "category": "neutral",
+    "subtitle": "subtitles.kilometer",
+    "sounds": [
+      {
+        "name": "purechaos:what_the_fuck_is_a_kilometer_original_upload",
+        "stream": false
+      }
+    ]
+  },
+  "fbi_open": {
+    "category": "neutral",
+    "subtitle": "subtitles.fbi_open",
+    "sounds": [
+      {
+        "name": "purechaos:fbi-open-up-sfx",
+        "stream": false
+      }
+    ]
+  }
+}

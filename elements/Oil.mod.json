@@ -22,7 +22,7 @@
     "temperature": 300,
     "type": "LAVA",
     "generateBucket": true,
-    "textureBucket": "",
+    "textureBucket": "oil",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },

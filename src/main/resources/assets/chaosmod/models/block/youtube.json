@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "chaosmod:blocks/youtube",
-    "particle": "chaosmod:blocks/youtube"
-  }
-}

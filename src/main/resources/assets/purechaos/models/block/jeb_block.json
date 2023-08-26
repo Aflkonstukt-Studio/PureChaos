@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/jeb_block",
+    "up": "purechaos:blocks/jeb_block",
+    "north": "purechaos:blocks/jeb_block",
+    "east": "purechaos:blocks/jeb_block",
+    "south": "purechaos:blocks/jeb_block",
+    "west": "purechaos:blocks/jeb_block",
+    "particle": "purechaos:blocks/jeb_block"
+  }
+}

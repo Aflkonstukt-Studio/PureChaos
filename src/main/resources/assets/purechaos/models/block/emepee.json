@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/emerald_block",
+    "up": "purechaos:blocks/emerald_block",
+    "north": "purechaos:blocks/emerald_block",
+    "east": "purechaos:blocks/emerald_block",
+    "south": "purechaos:blocks/emerald_block",
+    "west": "purechaos:blocks/emerald_block",
+    "particle": "purechaos:blocks/emerald_block"
+  }
+}

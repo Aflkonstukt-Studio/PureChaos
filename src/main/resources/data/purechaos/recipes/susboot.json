@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "purechaos:sus_block"
+    },
+    "2": {
+      "item": "purechaos:sus_block"
+    },
+    "3": {
+      "item": "purechaos:sus_block"
+    },
+    "5": {
+      "item": "purechaos:sus_block"
+    }
+  },
+  "result": {
+    "item": "purechaos:amugus_boots",
+    "count": 1
+  }
+}

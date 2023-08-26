@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "chaosmod:cum",
-    "chaosmod:flowing_cum",
-    "chaosmod:orange_fluid",
-    "chaosmod:flowing_orange_fluid",
-    "chaosmod:oil",
-    "chaosmod:flowing_oil"
+    "purechaos:cum",
+    "purechaos:flowing_cum",
+    "purechaos:orange_fluid",
+    "purechaos:flowing_orange_fluid",
+    "purechaos:oil",
+    "purechaos:flowing_oil"
   ]
 }

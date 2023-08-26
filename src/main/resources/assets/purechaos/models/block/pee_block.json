@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/pee_block",
+    "up": "purechaos:blocks/pee_block",
+    "north": "purechaos:blocks/pee_block",
+    "east": "purechaos:blocks/pee_block",
+    "south": "purechaos:blocks/pee_block",
+    "west": "purechaos:blocks/pee_block",
+    "particle": "purechaos:blocks/pee_block"
+  }
+}

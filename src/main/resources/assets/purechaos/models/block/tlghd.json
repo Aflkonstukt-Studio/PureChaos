@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/josip_tee_lee_gay",
+    "up": "purechaos:blocks/josip_tee_lee_gay",
+    "north": "purechaos:blocks/josip_tee_lee_gay",
+    "east": "purechaos:blocks/josip_tee_lee_gay",
+    "south": "purechaos:blocks/josip_tee_lee_gay",
+    "west": "purechaos:blocks/josip_tee_lee_gay",
+    "particle": "purechaos:blocks/josip_tee_lee_gay"
+  }
+}

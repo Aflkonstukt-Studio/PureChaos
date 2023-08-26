@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "result": {
+    "item": "purechaos:use_in_emergencies",
+    "count": 1
+  }
+}

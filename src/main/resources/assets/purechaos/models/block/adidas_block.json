@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:blocks/adidas_gore",
+    "up": "purechaos:blocks/adidas_gore",
+    "north": "purechaos:blocks/adidas",
+    "east": "purechaos:blocks/adidas",
+    "south": "purechaos:blocks/adidas",
+    "west": "purechaos:blocks/adidas",
+    "particle": "purechaos:blocks/adidas_gore"
+  }
+}

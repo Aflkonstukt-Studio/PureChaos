@@ -1,7 +1,0 @@
-{
-  "parent": "chaosmod:custom/katana",
-  "textures": {
-    "0": "chaosmod:blocks/keten",
-    "particle": "chaosmod:items/keten"
-  }
-}
