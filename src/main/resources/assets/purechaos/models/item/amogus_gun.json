@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/gun"
+    "layer0": "purechaos:item/gun"
   },
   "display": {
     "thirdperson_righthand": {

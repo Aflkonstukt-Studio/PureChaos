@@ -4,7 +4,6 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
 
 import java.util.HashMap;
 
@@ -21,6 +20,6 @@ public class BoomCommandExecutedProcedure {
 					}
 					return 0;
 				}
-			}.convert(cmdparams.containsKey("0") ? cmdparams.get("0").toString() : ""), Explosion.BlockInteraction.DESTROY);
+			}.convert(cmdparams.containsKey("0") ? cmdparams.get("0").toString() : ""), Level.ExplosionInteraction.BLOCK);
 	}
 }

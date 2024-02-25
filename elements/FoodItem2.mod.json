@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "food_item2",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Food Item 2",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": true,
     "enableMeleeDamage": true,
     "damageVsEntity": 10.0,
-    "specialInfo": [
-      "You are confused about what this is... Try eating it?"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "You are confused about what this is... Try eating it?"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 5,
     "saturation": 20.0,

@@ -1,18 +1,22 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "dirtswordtext",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Dirtsword",
-    "specialInfo": [
-      "How hasn't it fallen apart yet?!"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "How hasn't it fallen apart yet?!"
+      ]
+    },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 3.0,
@@ -20,7 +24,6 @@
     "damageVsEntity": 2.0,
     "usageCount": 40,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "Items.WHEAT_SEEDS"

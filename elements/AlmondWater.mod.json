@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "almond_water",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Almond Water",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,18 +26,21 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "A sweet almond/vanilla flavored water",
-      "that is a critical source of hydration",
-      "and slight nutritional value"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "A sweet almond/vanilla flavored water",
+        "that is a critical source of hydration",
+        "and slight nutritional value"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
       "name": "AlmondWaterPlayerFinishesUsingItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 10,
     "saturation": 20.0,

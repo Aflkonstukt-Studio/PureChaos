@@ -8,16 +8,16 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import java.util.Random;
 import java.util.Map;
 
 public class TesticleOnStickRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		{
-			BlockPos _bp = new BlockPos(x, y, z);
+			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockState _bs = PurechaosModBlocks.CUM.get().defaultBlockState();
 			BlockState _bso = world.getBlockState(_bp);
 			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -47,7 +47,7 @@ public class TesticleOnStickRightclickedOnBlockProcedure {
 		}
 		{
 			ItemStack _ist = itemstack;
-			if (_ist.hurt(1, new Random(), null)) {
+			if (_ist.hurt(1, RandomSource.create(), null)) {
 				_ist.shrink(1);
 				_ist.setDamageValue(0);
 			}

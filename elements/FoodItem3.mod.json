@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "food_item_3",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Food Item 3",
     "rarity": "RARE",
     "creativeTab": {
@@ -24,14 +26,17 @@
     "damageOnCrafting": true,
     "enableMeleeDamage": true,
     "damageVsEntity": 5.0,
-    "specialInfo": [
-      "Looks kind of gross",
-      "you can eat it but... maybe dont?"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "Looks kind of gross",
+        "you can eat it but... maybe dont?"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": -2,
     "saturation": -20.0,

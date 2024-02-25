@@ -31,7 +31,6 @@ public class CumDripParticle extends TextureSheetParticle {
 	}
 
 	private final SpriteSet spriteSet;
-
 	private float angularVelocity;
 	private float angularAcceleration;
 

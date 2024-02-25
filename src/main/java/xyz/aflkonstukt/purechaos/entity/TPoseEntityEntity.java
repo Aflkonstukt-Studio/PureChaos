@@ -7,14 +7,10 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -34,36 +30,32 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Difficulty;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import java.util.Random;
 import java.util.EnumSet;
 
-@Mod.EventBusSubscriber
 public class TPoseEntityEntity extends Monster implements RangedAttackMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurechaosModEntities.T_POSE_ENTITY.get(), 60, 2, 4));
-	}
-
 	public TPoseEntityEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PurechaosModEntities.T_POSE_ENTITY.get(), world);
 	}
 
 	public TPoseEntityEntity(EntityType<TPoseEntityEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(PurechaosModItems.AMOGUS_GUN.get()));
@@ -71,7 +63,7 @@ public class TPoseEntityEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -125,7 +117,7 @@ public class TPoseEntityEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = TPoseEntityEntity.this.getRandom();
+				RandomSource random = TPoseEntityEntity.this.getRandom();
 				double dir_x = TPoseEntityEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = TPoseEntityEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = TPoseEntityEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
@@ -175,9 +167,16 @@ public class TPoseEntityEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
+		return super.hurt(damagesource, amount);
+	}
+
+	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
-		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 		super.mobInteract(sourceentity, hand);
 		sourceentity.startRiding(this);
 		return retval;
@@ -185,7 +184,7 @@ public class TPoseEntityEntity extends Monster implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		AmogusGunEntity.shoot(this, target);
+		AmogusGunProjectileEntity.shoot(this, target);
 	}
 
 	@Override

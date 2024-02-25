@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "purechaos:items/adidas_axe"
+    "layer0": "purechaos:item/adidas_axe"
   }
 }

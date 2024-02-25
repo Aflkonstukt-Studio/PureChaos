@@ -4,7 +4,7 @@
   "loader": "forge:obj",
   "model": "purechaos:models/item/mumbo_token.obj",
   "textures": {
-    "m_0": "purechaos:blocks/mumbotoken",
-    "particle": "purechaos:items/tlgf"
+    "m_0": "purechaos:block/mumbotoken",
+    "particle": "purechaos:item/tlgf"
   }
 }

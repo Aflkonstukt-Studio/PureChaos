@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/oak_planks"
+    "layer0": "purechaos:item/oak_planks"
   }
 }

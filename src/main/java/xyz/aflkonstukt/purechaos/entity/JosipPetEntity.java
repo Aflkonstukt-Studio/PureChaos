@@ -7,16 +7,12 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -39,47 +35,42 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import java.util.Random;
-import java.util.List;
-
-@Mod.EventBusSubscriber
 public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(PurechaosModEntities.JOSIP_PET.get(), 40, 1, 4));
-	}
-
 	public JosipPetEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PurechaosModEntities.JOSIP_PET.get(), world);
 	}
 
 	public JosipPetEntity(EntityType<JosipPetEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("Marketable Josip"));
+		setCustomName(Component.literal("Marketable Josip"));
 		setCustomNameVisible(true);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -99,7 +90,7 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = JosipPetEntity.this.getRandom();
+				RandomSource random = JosipPetEntity.this.getRandom();
 				double dir_x = JosipPetEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = JosipPetEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = JosipPetEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
@@ -136,32 +127,32 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.FALL)
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
-		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 		Item item = itemstack.getItem();
 		if (itemstack.getItem() instanceof SpawnEggItem) {
 			retval = super.mobInteract(sourceentity, hand);
-		} else if (this.level.isClientSide()) {
-			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack)) ? InteractionResult.sidedSuccess(this.level.isClientSide()) : InteractionResult.PASS;
+		} else if (this.level().isClientSide()) {
+			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack)) ? InteractionResult.sidedSuccess(this.level().isClientSide()) : InteractionResult.PASS;
 		} else {
 			if (this.isTame()) {
 				if (this.isOwnedBy(sourceentity)) {
 					if (item.isEdible() && this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
 						this.usePlayerItem(sourceentity, hand, itemstack);
 						this.heal((float) item.getFoodProperties().getNutrition());
-						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+						retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 					} else if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
 						this.usePlayerItem(sourceentity, hand, itemstack);
 						this.heal(4);
-						retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+						retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 					} else {
 						retval = super.mobInteract(sourceentity, hand);
 					}
@@ -170,12 +161,12 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 				this.usePlayerItem(sourceentity, hand, itemstack);
 				if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
 					this.tame(sourceentity);
-					this.level.broadcastEntityEvent(this, (byte) 7);
+					this.level().broadcastEntityEvent(this, (byte) 7);
 				} else {
-					this.level.broadcastEntityEvent(this, (byte) 6);
+					this.level().broadcastEntityEvent(this, (byte) 6);
 				}
 				this.setPersistenceRequired();
-				retval = InteractionResult.sidedSuccess(this.level.isClientSide());
+				retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 			} else {
 				retval = super.mobInteract(sourceentity, hand);
 				if (retval == InteractionResult.SUCCESS || retval == InteractionResult.CONSUME)
@@ -188,7 +179,7 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		JosipRangeEntity.shoot(this, target);
+		JosipRangeProjectileEntity.shoot(this, target);
 	}
 
 	@Override
@@ -200,7 +191,7 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(PurechaosModBlocks.GREEN_PLANT.get().asItem()).contains(stack.getItem());
+		return Ingredient.of(new ItemStack(PurechaosModBlocks.GREEN_PLANT.get())).test(stack);
 	}
 
 	@Override
@@ -211,28 +202,24 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 			this.yRotO = this.getYRot();
 			this.setXRot(entity.getXRot() * 0.5F);
 			this.setRot(this.getYRot(), this.getXRot());
-			this.flyingSpeed = this.getSpeed() * 0.15F;
 			this.yBodyRot = entity.getYRot();
 			this.yHeadRot = entity.getYRot();
-			this.maxUpStep = 1.0F;
 			if (entity instanceof LivingEntity passenger) {
 				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
 				float forward = passenger.zza;
 				float strafe = passenger.xxa;
 				super.travel(new Vec3(strafe, 0, forward));
 			}
-			this.animationSpeedOld = this.animationSpeed;
 			double d1 = this.getX() - this.xo;
 			double d0 = this.getZ() - this.zo;
 			float f1 = (float) Math.sqrt(d1 * d1 + d0 * d0) * 4;
 			if (f1 > 1.0F)
 				f1 = 1.0F;
-			this.animationSpeed += (f1 - this.animationSpeed) * 0.4F;
-			this.animationPosition += this.animationSpeed;
+			this.walkAnimation.setSpeed(this.walkAnimation.speed() + (f1 - this.walkAnimation.speed()) * 0.4F);
+			this.walkAnimation.position(this.walkAnimation.position() + this.walkAnimation.speed());
+			this.calculateEntityAnimation(true);
 			return;
 		}
-		this.maxUpStep = 0.5F;
-		this.flyingSpeed = 0.02F;
 		super.travel(dir);
 	}
 
@@ -252,7 +239,7 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 
 	public static void init() {
 		SpawnPlacements.register(PurechaosModEntities.JOSIP_PET.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

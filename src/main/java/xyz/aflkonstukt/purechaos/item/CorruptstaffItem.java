@@ -3,7 +3,6 @@ package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.CorruptstaffRightclickedProcedure;
 import xyz.aflkonstukt.purechaos.procedures.CorruptstaffLivingEntityIsHitWithToolProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -16,7 +15,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -45,9 +43,9 @@ public class CorruptstaffItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, 3, 8f, new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).fireResistant());
+		}, 3, 8f, new Item.Properties().fireResistant());
 	}
 
 	@Override
@@ -67,6 +65,6 @@ public class CorruptstaffItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("#[]CORRUPTED[]#"));
+		list.add(Component.literal("#[]CORRUPTED[]#"));
 	}
 }

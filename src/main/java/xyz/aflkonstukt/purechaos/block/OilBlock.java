@@ -5,19 +5,19 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class OilBlock extends LiquidBlock {
 	public OilBlock() {
-		super(() -> (FlowingFluid) PurechaosModFluids.OIL.get(), BlockBehaviour.Properties.of(Material.LAVA).strength(100f)
-
-				.lightLevel(s -> 15));
+		super(() -> PurechaosModFluids.OIL.get(),
+				BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).lightLevel(s -> 15).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

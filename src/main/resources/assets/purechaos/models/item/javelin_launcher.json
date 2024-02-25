@@ -1,7 +1,7 @@
 {
   "parent": "purechaos:custom/javelin_launcher",
   "textures": {
-    "0": "purechaos:blocks/javelin_launcher",
-    "particle": "purechaos:items/javelin_launcher"
+    "0": "purechaos:block/javelin_launcher",
+    "particle": "purechaos:item/javelin_launcher"
   }
 }

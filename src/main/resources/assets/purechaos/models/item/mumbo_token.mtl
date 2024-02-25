@@ -1,13 +1,13 @@
 newmtl m_0
+Ns 100.0
+d 1.0
 Ka 0.0 0.0 0.0
 Kd 0.0 0.0 0.0
 Ks 0.0 0.0 0.0
-map_Kd purechaos:blocks/mumbotoken
-Ns 100.0
-d 1.0
+map_Kd purechaos:block/mumbotoken
 newmtl none
+Ns 100.0
+d 1.0
 Ka 0.0 0.0 0.0
 Kd 0.0 0.0 0.0
 Ks 0.0 0.0 0.0
-Ns 100.0
-d 1.0

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "purechaos:items/spear"
+    "layer0": "purechaos:item/spear"
   }
 }

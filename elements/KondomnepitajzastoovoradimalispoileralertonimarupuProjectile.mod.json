@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:PotatoSpuds"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.boat.paddle_water"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 0.1,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

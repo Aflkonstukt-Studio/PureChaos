@@ -1,7 +1,7 @@
 {
   "parent": "purechaos:custom/katana",
   "textures": {
-    "0": "purechaos:blocks/keten",
-    "particle": "purechaos:items/keten"
+    "0": "purechaos:block/keten",
+    "particle": "purechaos:item/keten"
   }
 }

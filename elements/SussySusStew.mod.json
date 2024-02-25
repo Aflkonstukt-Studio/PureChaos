@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "sussy_sus_stew",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Very Suspicious Stew",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "very sus indeed"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "very sus indeed"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 4,
     "saturation": 0.3,

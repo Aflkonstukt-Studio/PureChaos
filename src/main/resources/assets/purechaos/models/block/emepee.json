@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/emerald_block",
-    "up": "purechaos:blocks/emerald_block",
-    "north": "purechaos:blocks/emerald_block",
-    "east": "purechaos:blocks/emerald_block",
-    "south": "purechaos:blocks/emerald_block",
-    "west": "purechaos:blocks/emerald_block",
-    "particle": "purechaos:blocks/emerald_block"
-  }
+    "down": "purechaos:block/emerald_block",
+    "up": "purechaos:block/emerald_block",
+    "north": "purechaos:block/emerald_block",
+    "east": "purechaos:block/emerald_block",
+    "south": "purechaos:block/emerald_block",
+    "west": "purechaos:block/emerald_block",
+    "particle": "purechaos:block/emerald_block"
+  },
+  "render_type": "solid"
 }

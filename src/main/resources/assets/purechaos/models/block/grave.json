@@ -1,8 +1,9 @@
 {
   "parent": "purechaos:custom/dedgrave",
   "textures": {
-    "all": "purechaos:blocks/gravetexture",
-    "particle": "purechaos:blocks/gravetexture",
-    "0": "purechaos:blocks/gravetexture"
-  }
+    "all": "purechaos:block/gravetexture",
+    "particle": "purechaos:block/gravetexture",
+    "0": "purechaos:block/gravetexture"
+  },
+  "render_type": "solid"
 }

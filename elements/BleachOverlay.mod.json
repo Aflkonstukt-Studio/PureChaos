@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "overlay",
   "definition": {
     "priority": "LOWEST",
@@ -9,6 +9,7 @@
         "data": {
           "image": "white_screen.png",
           "use1Xscale": false,
+          "anchorPoint": "CENTER",
           "x": -552,
           "y": -323
         }

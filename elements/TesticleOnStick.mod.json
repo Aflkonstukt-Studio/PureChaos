@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "testicle_on_stick",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Testicle On Stick",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,16 +26,19 @@
     "damageOnCrafting": true,
     "enableMeleeDamage": true,
     "damageVsEntity": 999.0,
-    "specialInfo": [
-      "dont ask who it is from"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "dont ask who it is from"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
       "name": "TesticleOnStickRightclickedOnBlock"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

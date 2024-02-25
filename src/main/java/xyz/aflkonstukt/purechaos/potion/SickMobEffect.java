@@ -32,9 +32,7 @@ public class SickMobEffect extends MobEffect {
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		SickEffectExpiresProcedure.execute(
-
-		);
+		SickEffectExpiresProcedure.execute();
 	}
 
 	@Override

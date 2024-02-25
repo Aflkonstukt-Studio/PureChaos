@@ -2,48 +2,29 @@
 package xyz.aflkonstukt.purechaos.world.dimension;
 
 import xyz.aflkonstukt.purechaos.procedures.BrazilPlayerEntersDimensionProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.client.event.RegisterDimensionSpecialEffectsEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.levelgen.carver.WorldCarver;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
-
-import java.util.Set;
-import java.util.HashSet;
-
-import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber
 public class BrazilDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class Fixers {
-		@SubscribeEvent
-		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
-			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(PurechaosModBlocks.BRAZIL_BLOCK.get());
-			event.enqueueWork(() -> {
-				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
-				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();
-			});
-		}
-
+	public static class DimensionSpecialEffectsHandler {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
-		public static void registerDimensionSpecialEffects(FMLClientSetupEvent event) {
+		public static void registerDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(Float.NaN, true, DimensionSpecialEffects.SkyType.NONE, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
@@ -55,19 +36,18 @@ public class BrazilDimension {
 					return false;
 				}
 			};
-			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("purechaos:brazil"), customEffect));
+			event.register(new ResourceLocation("purechaos:brazil"), customEffect);
 		}
 	}
 
 	@SubscribeEvent
 	public static void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
-		Entity entity = event.getPlayer();
-		Level world = entity.level;
+		Entity entity = event.getEntity();
+		Level world = entity.level();
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		if (event.getTo() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("purechaos:brazil"))) {
-
+		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:brazil"))) {
 			BrazilPlayerEntersDimensionProcedure.execute(world, x, y, z);
 		}
 	}

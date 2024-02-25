@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/tlgf"
+    "layer0": "purechaos:item/tlgf"
   },
   "display": {
     "thirdperson_righthand": {

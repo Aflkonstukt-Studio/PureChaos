@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "note_7",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Samsung Note 7",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,16 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Don't try to use it (might explode)"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "Don't try to use it (might explode)"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "SamsungNote7Rightclicked"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

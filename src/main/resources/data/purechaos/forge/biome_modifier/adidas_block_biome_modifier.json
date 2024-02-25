@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:adidas_block",
+  "step": "underground_ores"
+}

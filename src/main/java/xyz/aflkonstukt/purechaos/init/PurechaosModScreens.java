@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package xyz.aflkonstukt.purechaos.init;
 
@@ -20,9 +20,9 @@ public class PurechaosModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(PurechaosModMenus.VIKKI_VUK_GUI, VikkiVukGuiScreen::new);
-			MenuScreens.register(PurechaosModMenus.COMPUTER_GUI, ComputerGuiScreen::new);
-			MenuScreens.register(PurechaosModMenus.CHEAT_GUI, CheatGUIScreen::new);
+			MenuScreens.register(PurechaosModMenus.VIKKI_VUK_GUI.get(), VikkiVukGuiScreen::new);
+			MenuScreens.register(PurechaosModMenus.COMPUTER_GUI.get(), ComputerGuiScreen::new);
+			MenuScreens.register(PurechaosModMenus.CHEAT_GUI.get(), CheatGUIScreen::new);
 		});
 	}
 }

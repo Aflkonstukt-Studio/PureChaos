@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "purechaos:items/comically_large_spoon"
+    "layer0": "purechaos:item/comically_large_spoon"
   }
 }

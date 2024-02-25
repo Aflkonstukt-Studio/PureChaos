@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:cursed_dog",
+    "weight": 60,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

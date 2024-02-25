@@ -1,4 +1,3 @@
-
 package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.ComputerGuiMenu;
@@ -9,15 +8,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> {
@@ -41,19 +38,18 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/computer_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 
@@ -72,25 +68,23 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_enter_cyberspace = new Button(this.leftPos + 33, this.topPos + 12, 108, 20, new TranslatableComponent("gui.purechaos.computer_gui.button_enter_cyberspace"), e -> {
+		button_enter_cyberspace = Button.builder(Component.translatable("gui.purechaos.computer_gui.button_enter_cyberspace"), e -> {
 			if (true) {
 				PurechaosMod.PACKET_HANDLER.sendToServer(new ComputerGuiButtonMessage(0, x, y, z));
 				ComputerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		});
+		}).bounds(this.leftPos + 33, this.topPos + 12, 108, 20).build();
 		guistate.put("button:button_enter_cyberspace", button_enter_cyberspace);
 		this.addRenderableWidget(button_enter_cyberspace);
 	}

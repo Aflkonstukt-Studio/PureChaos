@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/josip_tee_lee_gay",
-    "up": "purechaos:blocks/josip_tee_lee_gay",
-    "north": "purechaos:blocks/josip_tee_lee_gay",
-    "east": "purechaos:blocks/josip_tee_lee_gay",
-    "south": "purechaos:blocks/josip_tee_lee_gay",
-    "west": "purechaos:blocks/josip_tee_lee_gay",
-    "particle": "purechaos:blocks/josip_tee_lee_gay"
-  }
+    "down": "purechaos:block/josip_tee_lee_gay",
+    "up": "purechaos:block/josip_tee_lee_gay",
+    "north": "purechaos:block/josip_tee_lee_gay",
+    "east": "purechaos:block/josip_tee_lee_gay",
+    "south": "purechaos:block/josip_tee_lee_gay",
+    "west": "purechaos:block/josip_tee_lee_gay",
+    "particle": "purechaos:block/josip_tee_lee_gay"
+  },
+  "render_type": "solid"
 }

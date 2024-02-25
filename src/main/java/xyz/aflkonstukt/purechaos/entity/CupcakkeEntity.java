@@ -7,13 +7,9 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -28,41 +24,36 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
-import java.util.Random;
 import java.util.EnumSet;
 
-@Mod.EventBusSubscriber
 public class CupcakkeEntity extends Monster {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurechaosModEntities.CUPCAKKE.get(), 25, 1, 4));
-	}
-
 	public CupcakkeEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PurechaosModEntities.CUPCAKKE.get(), world);
 	}
 
 	public CupcakkeEntity(EntityType<CupcakkeEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("Cupcakke"));
+		setCustomName(Component.literal("Cupcakke"));
 		setCustomNameVisible(true);
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -111,7 +102,7 @@ public class CupcakkeEntity extends Monster {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = CupcakkeEntity.this.getRandom();
+				RandomSource random = CupcakkeEntity.this.getRandom();
 				double dir_x = CupcakkeEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = CupcakkeEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = CupcakkeEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

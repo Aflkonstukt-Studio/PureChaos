@@ -1,23 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "3 5"
+    "aaa",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "purechaos:adidas_block"
-    },
-    "1": {
-      "item": "purechaos:adidas_block"
-    },
-    "2": {
-      "item": "purechaos:adidas_block"
-    },
-    "3": {
-      "item": "purechaos:adidas_block"
-    },
-    "5": {
+    "a": {
       "item": "purechaos:adidas_block"
     }
   },

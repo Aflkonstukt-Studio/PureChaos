@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/spit_ball"
+    "layer0": "purechaos:item/spit_ball"
   }
 }

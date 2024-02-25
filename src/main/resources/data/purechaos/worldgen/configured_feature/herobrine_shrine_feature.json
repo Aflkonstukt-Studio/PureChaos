@@ -1,0 +1,7 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:herobrine_shrine",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

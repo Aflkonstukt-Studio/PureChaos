@@ -19,7 +19,7 @@ public class RadiationPoisioningMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		RadiationPoisioningActiveTickConditionProcedure.execute(entity.level, entity);
+		RadiationPoisioningActiveTickConditionProcedure.execute(entity.level(), entity);
 	}
 
 	@Override

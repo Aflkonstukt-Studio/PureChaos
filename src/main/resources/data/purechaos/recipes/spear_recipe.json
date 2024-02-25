@@ -1,6 +1,7 @@
 {
-  "group": "tools",
   "type": "minecraft:crafting_shapeless",
+  "group": "tools",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:iron_sword"

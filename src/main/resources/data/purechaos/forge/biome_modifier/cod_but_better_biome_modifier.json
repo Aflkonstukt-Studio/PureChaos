@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:cod_but_better",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

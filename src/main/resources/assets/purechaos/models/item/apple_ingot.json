@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/apple_ingot"
+    "layer0": "purechaos:item/apple_ingot"
   }
 }

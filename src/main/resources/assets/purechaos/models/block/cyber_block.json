@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/cyberblock",
-    "up": "purechaos:blocks/cyberblock",
-    "north": "purechaos:blocks/cyberblock",
-    "east": "purechaos:blocks/cyberblock",
-    "south": "purechaos:blocks/cyberblock",
-    "west": "purechaos:blocks/cyberblock",
-    "particle": "purechaos:blocks/cyberblock"
-  }
+    "down": "purechaos:block/cyberblock",
+    "up": "purechaos:block/cyberblock",
+    "north": "purechaos:block/cyberblock",
+    "east": "purechaos:block/cyberblock",
+    "south": "purechaos:block/cyberblock",
+    "west": "purechaos:block/cyberblock",
+    "particle": "purechaos:block/cyberblock"
+  },
+  "render_type": "solid"
 }

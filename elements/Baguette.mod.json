@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "baguette",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Baguette",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "oui oui"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "oui oui"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 14,
     "saturation": 10.0,

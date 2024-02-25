@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -30,6 +30,7 @@
         "data": {
           "name": "button_switch_gamemode",
           "text": "Switch Gamemode",
+          "isUndecorated": false,
           "width": 103,
           "height": 20,
           "x": 162,
@@ -41,6 +42,7 @@
         "data": {
           "name": "button_switch_dimension",
           "text": "Switch Dimension",
+          "isUndecorated": false,
           "width": 108,
           "height": 20,
           "x": 159,
@@ -52,6 +54,7 @@
         "data": {
           "name": "button_do_not_press",
           "text": "DO_NOT_PRESS",
+          "isUndecorated": false,
           "onClick": {
             "name": "DoNotPressPressed"
           },

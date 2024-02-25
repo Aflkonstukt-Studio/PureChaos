@@ -1,16 +1,20 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Pickaxe",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "diplex",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "DiPixk",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "toolType": "Pickaxe",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 3.0,
@@ -18,7 +22,6 @@
     "damageVsEntity": 6.0,
     "usageCount": 982,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

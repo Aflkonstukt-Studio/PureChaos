@@ -2,8 +2,8 @@
 package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.FASTTOPASSRightclickedProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
-import xyz.aflkonstukt.purechaos.init.PurechaosModSounds;
+
+import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -15,20 +15,19 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
 public class FASTTOPASSItem extends RecordItem {
 	public FASTTOPASSItem() {
-		super(0, PurechaosModSounds.REGISTRY.get(new ResourceLocation("purechaos:ahdude")), new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:ahdude")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("HEHE"));
+		list.add(Component.literal("HEHE"));
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/iron_egg"
+    "layer0": "purechaos:item/iron_egg"
   }
 }

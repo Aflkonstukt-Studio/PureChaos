@@ -1,4 +1,3 @@
-
 package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
@@ -9,15 +8,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
@@ -43,19 +40,18 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/cheat_gui.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 
@@ -74,34 +70,32 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, new TranslatableComponent("gui.purechaos.cheat_gui.label_cheat_menu"), 58, 10, -12829636);
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.purechaos.cheat_gui.label_cheat_menu"), 58, 10, -12829636, false);
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		button_switch_gamemode = new Button(this.leftPos + 36, this.topPos + 31, 103, 20, new TranslatableComponent("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {
-		});
+		button_switch_gamemode = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {
+		}).bounds(this.leftPos + 36, this.topPos + 31, 103, 20).build();
 		guistate.put("button:button_switch_gamemode", button_switch_gamemode);
 		this.addRenderableWidget(button_switch_gamemode);
-		button_switch_dimension = new Button(this.leftPos + 33, this.topPos + 62, 108, 20, new TranslatableComponent("gui.purechaos.cheat_gui.button_switch_dimension"), e -> {
-		});
+		button_switch_dimension = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_dimension"), e -> {
+		}).bounds(this.leftPos + 33, this.topPos + 62, 108, 20).build();
 		guistate.put("button:button_switch_dimension", button_switch_dimension);
 		this.addRenderableWidget(button_switch_dimension);
-		button_do_not_press = new Button(this.leftPos + 42, this.topPos + 129, 88, 20, new TranslatableComponent("gui.purechaos.cheat_gui.button_do_not_press"), e -> {
+		button_do_not_press = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_do_not_press"), e -> {
 			if (true) {
 				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(2, x, y, z));
 				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		});
+		}).bounds(this.leftPos + 42, this.topPos + 129, 88, 20).build();
 		guistate.put("button:button_do_not_press", button_do_not_press);
 		this.addRenderableWidget(button_do_not_press);
 	}

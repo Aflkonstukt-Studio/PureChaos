@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:stroater",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

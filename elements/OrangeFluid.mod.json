@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Orange Gatorade",
@@ -30,9 +30,11 @@
       "value": ""
     },
     "rarity": "EPIC",
-    "specialInfo": [
-      "Sus Liquid"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Sus Liquid"
+      ]
+    },
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 0,

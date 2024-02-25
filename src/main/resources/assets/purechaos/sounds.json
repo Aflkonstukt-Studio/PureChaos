@@ -1,6 +1,5 @@
 {
   "amogus": {
-    "category": "music",
     "subtitle": "subtitles.amogus",
     "sounds": [
       {
@@ -10,7 +9,6 @@
     ]
   },
   "footstep_metal_amogus": {
-    "category": "hostile",
     "subtitle": "subtitles.footstep_metal_amogus",
     "sounds": [
       {
@@ -20,7 +18,6 @@
     ]
   },
   "kill": {
-    "category": "hostile",
     "subtitle": "subtitles.kill",
     "sounds": [
       {
@@ -30,7 +27,6 @@
     ]
   },
   "amongus_ambient": {
-    "category": "ambient",
     "subtitle": "subtitles.amongus_ambient",
     "sounds": [
       {
@@ -40,7 +36,6 @@
     ]
   },
   "fallguyswooh": {
-    "category": "music",
     "subtitle": "subtitles.fallguyswooh",
     "sounds": [
       {
@@ -50,7 +45,6 @@
     ]
   },
   "jusif": {
-    "category": "music",
     "subtitle": "subtitles.jusif",
     "sounds": [
       {
@@ -60,7 +54,6 @@
     ]
   },
   "redacted": {
-    "category": "hostile",
     "subtitle": "subtitles.redacted",
     "sounds": [
       {
@@ -70,7 +63,6 @@
     ]
   },
   "scratest": {
-    "category": "music",
     "subtitle": "subtitles.scratest",
     "sounds": [
       {
@@ -80,7 +72,6 @@
     ]
   },
   "jumpscare": {
-    "category": "hostile",
     "sounds": [
       {
         "name": "purechaos:jumpscare",
@@ -89,7 +80,6 @@
     ]
   },
   "sssr": {
-    "category": "music",
     "subtitle": "subtitles.sssr",
     "sounds": [
       {
@@ -99,7 +89,6 @@
     ]
   },
   "vine_boom": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:vine_boom",
@@ -108,7 +97,6 @@
     ]
   },
   "eekum_bokum": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:eekum_bokum",
@@ -117,7 +105,6 @@
     ]
   },
   "never_gonna_give_you_up": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:never_gonna_give_you_up",
@@ -126,7 +113,6 @@
     ]
   },
   "crnidani": {
-    "category": "music",
     "subtitle": "subtitles.crnidani",
     "sounds": [
       {
@@ -136,7 +122,6 @@
     ]
   },
   "ahdude": {
-    "category": "block",
     "subtitle": "subtitles.ahdude",
     "sounds": [
       {
@@ -146,7 +131,6 @@
     ]
   },
   "fu-k": {
-    "category": "block",
     "sounds": [
       {
         "name": "purechaos:lego-yoda-death-soundg",
@@ -155,7 +139,6 @@
     ]
   },
   "dudeshutt": {
-    "category": "block",
     "sounds": [
       {
         "name": "purechaos:bruga",
@@ -164,7 +147,6 @@
     ]
   },
   "girl_moan": {
-    "category": "voice",
     "subtitle": "subtitles.girl_moan",
     "sounds": [
       {
@@ -174,7 +156,6 @@
     ]
   },
   "spit": {
-    "category": "player",
     "sounds": [
       {
         "name": "purechaos:spit",
@@ -183,7 +164,6 @@
     ]
   },
   "pan_hit": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:pan_hit",
@@ -192,7 +172,6 @@
     ]
   },
   "smack_my_ass": {
-    "category": "voice",
     "sounds": [
       {
         "name": "purechaos:papi_smack_my_a_-_cupcakke_sound_effect-youtubeconvert.cc",
@@ -201,7 +180,6 @@
     ]
   },
   "ugh_cupcakke": {
-    "category": "voice",
     "sounds": [
       {
         "name": "purechaos:cupcakke-ugh-by-tuna",
@@ -210,7 +188,6 @@
     ]
   },
   "gulp_gulp": {
-    "category": "voice",
     "sounds": [
       {
         "name": "purechaos:cupcakke-gulp-gulp-by-tuna",
@@ -219,7 +196,6 @@
     ]
   },
   "wet_cupcakke": {
-    "category": "voice",
     "sounds": [
       {
         "name": "purechaos:cupcakke-by-tuna",
@@ -228,7 +204,6 @@
     ]
   },
   "ruler_slap": {
-    "category": "hostile",
     "subtitle": "subtitles.ruler_slap",
     "sounds": [
       {
@@ -238,7 +213,6 @@
     ]
   },
   "fart": {
-    "category": "player",
     "subtitle": "subtitles.fart",
     "sounds": [
       {
@@ -248,7 +222,6 @@
     ]
   },
   "espuma": {
-    "category": "player",
     "subtitle": "subtitles.espuma",
     "sounds": [
       {
@@ -258,7 +231,6 @@
     ]
   },
   "nerd": {
-    "category": "neutral",
     "subtitle": "subtitles.nerd",
     "sounds": [
       {
@@ -268,7 +240,6 @@
     ]
   },
   "nerd_pacman_meme": {
-    "category": "music",
     "subtitle": "subtitles.nerd_pacman_meme",
     "sounds": [
       {
@@ -278,7 +249,6 @@
     ]
   },
   "rock_living": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:rock_living",
@@ -287,7 +257,6 @@
     ]
   },
   "rock_death": {
-    "category": "neutral",
     "sounds": [
       {
         "name": "purechaos:rock_death",
@@ -296,7 +265,6 @@
     ]
   },
   "kilometer": {
-    "category": "neutral",
     "subtitle": "subtitles.kilometer",
     "sounds": [
       {
@@ -306,7 +274,6 @@
     ]
   },
   "fbi_open": {
-    "category": "neutral",
     "subtitle": "subtitles.fbi_open",
     "sounds": [
       {

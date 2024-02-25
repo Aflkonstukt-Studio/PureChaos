@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "More Extreme Hills",
@@ -59,15 +59,6 @@
       "min": -0.2,
       "max": 1.1324942015616828
     },
-    "grassPerChunk": 4,
-    "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
-    "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
     "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 0,
@@ -84,6 +75,13 @@
     "treeFruits": {
       "value": ""
     },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "ForestGrass",
+      "DefaultFlowers"
+    ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
@@ -104,11 +102,6 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
-    ],
     "spawnEntries": []
   }
 }

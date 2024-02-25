@@ -1,37 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:cobblestone"
     },
-    "1": {
-      "item": "minecraft:cobblestone"
-    },
-    "2": {
-      "item": "minecraft:cobblestone"
-    },
-    "3": {
-      "item": "minecraft:cobblestone"
-    },
-    "4": {
+    "b": {
       "item": "minecraft:white_bed"
-    },
-    "5": {
-      "item": "minecraft:cobblestone"
-    },
-    "6": {
-      "item": "minecraft:cobblestone"
-    },
-    "7": {
-      "item": "minecraft:cobblestone"
-    },
-    "8": {
-      "item": "minecraft:cobblestone"
     }
   },
   "result": {

@@ -1,15 +1,17 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Fall Guys' Anthem",
+    "rarity": "RARE",
     "texture": "wohoohhoo",
     "description": "WOOO WooooO wwOoOoOooOoOo",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
     "music": {
       "value": "CUSTOM:fallguyswooh"
     },

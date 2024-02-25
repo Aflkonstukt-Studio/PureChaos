@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "up": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "north": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "east": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "south": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "west": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "particle": "purechaos:blocks/death_block"
-  }
+    "down": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "up": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "north": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "east": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "south": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "west": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "particle": "purechaos:block/death_block"
+  },
+  "render_type": "solid"
 }

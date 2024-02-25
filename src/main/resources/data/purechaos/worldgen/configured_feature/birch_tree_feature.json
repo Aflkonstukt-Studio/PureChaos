@@ -1,0 +1,9 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:birch_forest_tree",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

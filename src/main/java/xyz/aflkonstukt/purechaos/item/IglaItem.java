@@ -1,8 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -13,14 +11,13 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
 public class IglaItem extends Item {
 	public IglaItem() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).durability(69).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().durability(69).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override
@@ -47,6 +44,6 @@ public class IglaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("mnogo ostra uh!ALI MOCNA I RETKA"));
+		list.add(Component.literal("mnogo ostra uh!ALI MOCNA I RETKA"));
 	}
 }

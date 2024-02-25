@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "communism_orb",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Orb o' Communism",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,16 +26,22 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "You are wondering what kind of power it possesses"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "You are wondering what kind of power it possesses"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "CommunismOrbRightclicked"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

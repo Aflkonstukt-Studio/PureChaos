@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "deep_frozen_ocean",
+  "features": "purechaos:cum_feature",
+  "step": "lakes"
+}

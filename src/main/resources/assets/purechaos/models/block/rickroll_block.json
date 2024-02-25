@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/rickroll",
-    "up": "purechaos:blocks/rickroll",
-    "north": "purechaos:blocks/rickroll",
-    "east": "purechaos:blocks/rickroll",
-    "south": "purechaos:blocks/rickroll",
-    "west": "purechaos:blocks/rickroll",
-    "particle": "purechaos:blocks/rickroll"
-  }
+    "down": "purechaos:block/rickroll",
+    "up": "purechaos:block/rickroll",
+    "north": "purechaos:block/rickroll",
+    "east": "purechaos:block/rickroll",
+    "south": "purechaos:block/rickroll",
+    "west": "purechaos:block/rickroll",
+    "particle": "purechaos:block/rickroll"
+  },
+  "render_type": "solid"
 }

@@ -1,0 +1,7 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:peepool",
+    "ignored_blocks": "minecraft:air"
+  }
+}

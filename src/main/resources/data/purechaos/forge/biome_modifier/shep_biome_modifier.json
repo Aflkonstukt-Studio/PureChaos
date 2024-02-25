@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:shep",
+    "weight": 70,
+    "minCount": 2,
+    "maxCount": 6
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "jeb_block",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "jeb_ Block",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
@@ -117,23 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface",
-      "Nether",
-      "End",
-      "CUSTOM:Peemension",
-      "CUSTOM:WoodDimension",
-      "CUSTOM:Sus",
-      "CUSTOM:Brazil",
-      "CUSTOM:Cyberspace",
-      "CUSTOM:Cioao",
-      "CUSTOM:Aether"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      },
       {
         "value": "CUSTOM:Pee"
       },

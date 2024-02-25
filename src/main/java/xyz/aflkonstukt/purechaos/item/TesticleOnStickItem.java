@@ -2,7 +2,6 @@
 package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.TesticleOnStickRightclickedOnBlockProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
@@ -17,7 +16,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -27,7 +25,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class TesticleOnStickItem extends Item {
 	public TesticleOnStickItem() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).durability(50).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(50).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -42,7 +40,7 @@ public class TesticleOnStickItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-		return 5F;
+		return 5f;
 	}
 
 	@Override
@@ -65,7 +63,7 @@ public class TesticleOnStickItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("dont ask who it is from"));
+		list.add(Component.literal("dont ask who it is from"));
 	}
 
 	@Override

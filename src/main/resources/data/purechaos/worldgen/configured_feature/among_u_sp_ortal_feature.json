@@ -1,0 +1,12 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:amongusportal",
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      5,
+      0
+    ]
+  }
+}

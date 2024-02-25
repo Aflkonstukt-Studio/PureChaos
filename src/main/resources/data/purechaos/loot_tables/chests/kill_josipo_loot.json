@@ -247,5 +247,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "purechaos:chests/kill_josipo_loot"
 }

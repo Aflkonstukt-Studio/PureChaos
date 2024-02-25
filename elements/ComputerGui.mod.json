@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,6 +15,7 @@
         "data": {
           "name": "button_enter_cyberspace",
           "text": "Enter Cyberspace",
+          "isUndecorated": false,
           "onClick": {
             "name": "EnterCyberspaceButtonPressed"
           },

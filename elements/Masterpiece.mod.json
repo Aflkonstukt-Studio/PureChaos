@@ -1,9 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "painting",
   "definition": {
     "texture": "rick_kurac.png",
     "width": 400,
-    "height": 200
+    "height": 200,
+    "title": "Masterpiece",
+    "author": "Unknown"
   }
 }

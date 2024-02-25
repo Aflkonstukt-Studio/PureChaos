@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "purechaos:blocks/oak_planks",
-    "portal": "purechaos:blocks/oak_planks"
+    "particle": "purechaos:block/oak_planks",
+    "portal": "purechaos:block/oak_planks"
   },
   "elements": [
     {
@@ -36,5 +36,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "translucent"
 }

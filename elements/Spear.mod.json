@@ -1,16 +1,20 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "spear",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Spear",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 4.0,
     "attackSpeed": 10.0,
@@ -18,7 +22,6 @@
     "damageVsEntity": 18.0,
     "usageCount": 371,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:wood_ruined_portal_feature",
+  "step": "surface_structures"
+}

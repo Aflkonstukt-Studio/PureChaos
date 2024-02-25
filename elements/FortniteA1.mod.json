@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fortnitea1",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Fortnite A 1",
     "rarity": "RARE",
     "creativeTab": {
@@ -24,13 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 21.0,
-    "specialInfo": [
-      "no more FORTNITE!"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "no more FORTNITE!"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

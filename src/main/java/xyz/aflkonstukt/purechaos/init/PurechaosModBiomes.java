@@ -4,108 +4,92 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
-import xyz.aflkonstukt.purechaos.world.biome.SususBiome;
-import xyz.aflkonstukt.purechaos.world.biome.PlainsBiome;
-import xyz.aflkonstukt.purechaos.world.biome.OhioBiome;
-import xyz.aflkonstukt.purechaos.world.biome.MoreExtremeHillsBiome;
-import xyz.aflkonstukt.purechaos.world.biome.HellButOverworldBiome;
-import xyz.aflkonstukt.purechaos.world.biome.EkesmasterbaitBiome;
-import xyz.aflkonstukt.purechaos.world.biome.DesertBiome;
-import xyz.aflkonstukt.purechaos.world.biome.CyberBiomeBiome;
-import xyz.aflkonstukt.purechaos.world.biome.BirchForestBiome;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
-
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.server.ServerAboutToStartEvent;
 
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
-import net.minecraft.world.level.levelgen.WorldGenSettings;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.dimension.DimensionType;
+import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
+import net.minecraft.world.level.biome.FeatureSorter;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
 
 import com.mojang.datafixers.util.Pair;
 
+import com.google.common.base.Suppliers;
+
 @Mod.EventBusSubscriber
 public class PurechaosModBiomes {
-	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, PurechaosMod.MODID);
-	public static final RegistryObject<Biome> HELL_BUT_OVERWORLD = REGISTRY.register("hell_but_overworld", () -> HellButOverworldBiome.createBiome());
-	public static final RegistryObject<Biome> SUSUS = REGISTRY.register("susus", () -> SususBiome.createBiome());
-	public static final RegistryObject<Biome> EKESMASTERBAIT = REGISTRY.register("ekesmasterbait", () -> EkesmasterbaitBiome.createBiome());
-	public static final RegistryObject<Biome> CYBER_BIOME = REGISTRY.register("cyber_biome", () -> CyberBiomeBiome.createBiome());
-	public static final RegistryObject<Biome> BIRCH_FOREST = REGISTRY.register("birch_forest", () -> BirchForestBiome.createBiome());
-	public static final RegistryObject<Biome> DESERT = REGISTRY.register("desert", () -> DesertBiome.createBiome());
-	public static final RegistryObject<Biome> OHIO = REGISTRY.register("ohio", () -> OhioBiome.createBiome());
-	public static final RegistryObject<Biome> MORE_EXTREME_HILLS = REGISTRY.register("more_extreme_hills", () -> MoreExtremeHillsBiome.createBiome());
-	public static final RegistryObject<Biome> PLAINS = REGISTRY.register("plains", () -> PlainsBiome.createBiome());
-
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
 		MinecraftServer server = event.getServer();
-		Registry<DimensionType> dimensionTypeRegistry = server.registryAccess().registryOrThrow(Registry.DIMENSION_TYPE_REGISTRY);
-		Registry<Biome> biomeRegistry = server.registryAccess().registryOrThrow(Registry.BIOME_REGISTRY);
-		WorldGenSettings worldGenSettings = server.getWorldData().worldGenSettings();
-		for (Map.Entry<ResourceKey<LevelStem>, LevelStem> entry : worldGenSettings.dimensions().entrySet()) {
-			DimensionType dimensionType = entry.getValue().typeHolder().value();
-			if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.OVERWORLD_LOCATION)) {
-				ChunkGenerator chunkGenerator = entry.getValue().generator();
+		Registry<DimensionType> dimensionTypeRegistry = server.registryAccess().registryOrThrow(Registries.DIMENSION_TYPE);
+		Registry<LevelStem> levelStemTypeRegistry = server.registryAccess().registryOrThrow(Registries.LEVEL_STEM);
+		Registry<Biome> biomeRegistry = server.registryAccess().registryOrThrow(Registries.BIOME);
+		for (LevelStem levelStem : levelStemTypeRegistry.stream().toList()) {
+			DimensionType dimensionType = levelStem.type().value();
+			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.OVERWORLD)) {
+				ChunkGenerator chunkGenerator = levelStem.generator();
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
-					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-					for (Climate.ParameterPoint parameterPoint : HellButOverworldBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : SususBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : EkesmasterbaitBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : BirchForestBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, BIRCH_FOREST.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : DesertBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, DESERT.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : OhioBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, OHIO.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : MoreExtremeHillsBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, MORE_EXTREME_HILLS.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : PlainsBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, PLAINS.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : HellButOverworldBiome.UNDERGROUND_PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : EkesmasterbaitBiome.UNDERGROUND_PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
-					}
-
-					MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
-					chunkGenerator.biomeSource = moddedNoiseSource;
-					chunkGenerator.runtimeBiomeSource = moddedNoiseSource;
+					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "birch_forest")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "birch_forest")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.3f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "desert")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.3f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "desert")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.5f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.3f, 1.0148638066f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.5f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.3f, 1.0148638066f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.2f, 1.1324942016f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "more_extreme_hills")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.2f, 1.1324942016f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "more_extreme_hills")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.4f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "plains")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.4f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "plains")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f),
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.span(0.2f, 0.9f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
+					chunkGenerator.featuresPerStep = Suppliers
+							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
 				}
 				// Inject surface rules
 				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
@@ -113,42 +97,49 @@ public class PurechaosModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState()));
-						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
-						surfaceRules.add(1,
-								preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SUSUS.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), PurechaosModBlocks.SUS_BLOCK.get().defaultBlockState(),
+						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
+								Blocks.NETHERRACK.defaultBlockState()));
+						surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(),
+								Blocks.SAND.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
+								Blocks.NETHERRACK.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")), Blocks.GRASS_BLOCK.defaultBlockState(), PurechaosModBlocks.SUS_BLOCK.get().defaultBlockState(),
 								Blocks.OAK_PLANKS.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, BIRCH_FOREST.getId()), Blocks.POLISHED_ANDESITE.defaultBlockState(), Blocks.POLISHED_ANDESITE.defaultBlockState(),
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(),
+								Blocks.SAND.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "birch_forest")), Blocks.POLISHED_ANDESITE.defaultBlockState(), Blocks.POLISHED_ANDESITE.defaultBlockState(),
 								Blocks.POLISHED_ANDESITE.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "desert")), Blocks.YELLOW_CONCRETE.defaultBlockState(), Blocks.YELLOW_CONCRETE.defaultBlockState(),
+								Blocks.YELLOW_CONCRETE.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")), Blocks.PODZOL.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(),
+								Blocks.COARSE_DIRT.defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "more_extreme_hills")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(),
+								Blocks.STONE.defaultBlockState()));
 						surfaceRules.add(1,
-								preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, DESERT.getId()), Blocks.YELLOW_CONCRETE.defaultBlockState(), Blocks.YELLOW_CONCRETE.defaultBlockState(), Blocks.YELLOW_CONCRETE.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, OHIO.getId()), Blocks.PODZOL.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, MORE_EXTREME_HILLS.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.STONE.defaultBlockState()));
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, PLAINS.getId()), Blocks.GRASS.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.STONE.defaultBlockState()));
+								preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "plains")), Blocks.GRASS.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.STONE.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
-								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])), noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
-								noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
-						noiseGenerator.settings = new Holder.Direct(moddedNoiseGeneratorSettings);
+								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
+								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
+						noiseGenerator.settings = new Holder.Direct<>(moddedNoiseGeneratorSettings);
 					}
 				}
 			}
-
-			if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.NETHER_LOCATION)) {
-				ChunkGenerator chunkGenerator = entry.getValue().generator();
+			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.NETHER)) {
+				ChunkGenerator chunkGenerator = levelStem.generator();
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
-					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-					for (Climate.ParameterPoint parameterPoint : HellButOverworldBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()))));
-					}
-					for (Climate.ParameterPoint parameterPoint : EkesmasterbaitBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()))));
-					}
-					MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
-					chunkGenerator.biomeSource = moddedNoiseSource;
-					chunkGenerator.runtimeBiomeSource = moddedNoiseSource;
+					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
+					chunkGenerator.featuresPerStep = Suppliers
+							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
 				}
 				// Inject surface rules
 				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
@@ -156,12 +147,14 @@ public class PurechaosModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, HELL_BUT_OVERWORLD.getId()), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState()));
-						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, EKESMASTERBAIT.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
+						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
+								Blocks.NETHERRACK.defaultBlockState()));
+						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(),
+								Blocks.SAND.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
-								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])), noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
-								noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
-						noiseGenerator.settings = new Holder.Direct(moddedNoiseGeneratorSettings);
+								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
+								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
+						noiseGenerator.settings = new Holder.Direct<>(moddedNoiseGeneratorSettings);
 					}
 				}
 			}

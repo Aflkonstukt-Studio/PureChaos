@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "purechaos mod resources",
-    "pack_format": 9
+    "pack_format": 15,
+    "description": "Add a little bit of, spice."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "Neover",
@@ -75,15 +75,6 @@
       "min": -2.0,
       "max": 2.0
     },
-    "grassPerChunk": 4,
-    "seagrassPerChunk": 0,
-    "flowersPerChunk": 0,
-    "mushroomsPerChunk": 0,
-    "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
-    "gravelPatchesPerChunk": 0,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
     "treesPerChunk": 3,
     "vanillaTreeType": "Default",
     "treeType": 1,
@@ -100,6 +91,12 @@
     "treeFruits": {
       "value": "Blocks.QUARTZ_ORE"
     },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "ForestGrass"
+    ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
@@ -120,11 +117,6 @@
     "spawnBastionRemnant": true,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
-    ],
     "spawnEntries": [
       {
         "entity": {

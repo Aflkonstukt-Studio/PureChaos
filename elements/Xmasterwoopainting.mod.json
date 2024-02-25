@@ -1,9 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "painting",
   "definition": {
     "texture": "lore_.png",
     "width": 16,
-    "height": 16
+    "height": 16,
+    "title": "Xmasterwoopainting",
+    "author": "Unknown"
   }
 }

@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "mercury",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Mercury",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,16 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "love me some mercury on the side"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "love me some mercury on the side"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
       "name": "MercuryPlayerFinishesUsingItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": -20,
     "saturation": -20.0,

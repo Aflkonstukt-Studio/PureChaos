@@ -1,20 +1,28 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.block.CioaoPortalBlock;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
+
+import java.util.List;
 
 public class CioaoItem extends Item {
 	public CioaoItem() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).durability(64));
+		super(new Item.Properties().durability(64));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

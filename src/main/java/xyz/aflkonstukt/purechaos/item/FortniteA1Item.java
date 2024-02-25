@@ -1,8 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -16,7 +14,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -26,7 +23,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class FortniteA1Item extends Item {
 	public FortniteA1Item() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override
@@ -60,6 +57,6 @@ public class FortniteA1Item extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("no more FORTNITE!"));
+		list.add(Component.literal("no more FORTNITE!"));
 	}
 }

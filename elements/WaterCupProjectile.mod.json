@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:WaterCup"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "power": 2.0,
+    "damage": 1000.0,
+    "knockback": 99,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

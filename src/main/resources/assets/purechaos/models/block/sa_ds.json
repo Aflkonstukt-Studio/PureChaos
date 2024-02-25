@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/sads",
-    "up": "purechaos:blocks/sads",
-    "north": "purechaos:blocks/sads",
-    "east": "purechaos:blocks/sads",
-    "south": "purechaos:blocks/sads",
-    "west": "purechaos:blocks/sads",
-    "particle": "purechaos:blocks/sads"
-  }
+    "down": "purechaos:block/sads",
+    "up": "purechaos:block/sads",
+    "north": "purechaos:block/sads",
+    "east": "purechaos:block/sads",
+    "south": "purechaos:block/sads",
+    "west": "purechaos:block/sads",
+    "particle": "purechaos:block/sads"
+  },
+  "render_type": "solid"
 }

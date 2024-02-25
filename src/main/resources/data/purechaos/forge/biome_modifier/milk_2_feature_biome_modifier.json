@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:milk_2_feature",
+  "step": "lakes"
+}

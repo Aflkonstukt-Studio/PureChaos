@@ -1,0 +1,7 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:pond_o_cobblestone",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

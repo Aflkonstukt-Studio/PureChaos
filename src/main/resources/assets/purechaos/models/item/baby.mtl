@@ -1,7 +1,7 @@
 newmtl StandingBaby
+Ns 15.0
+d 1.0
 Ka 1.0 1.0 1.0
 Kd 1.0 1.0 1.0
 Ks 0.135 0.135 0.135
-map_Kd purechaos:blocks/standingbabydiffusemap
-Ns 15.0
-d 1.0
+map_Kd purechaos:block/standingbabydiffusemap

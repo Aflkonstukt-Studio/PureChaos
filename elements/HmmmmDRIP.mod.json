@@ -1,9 +1,11 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "painting",
   "definition": {
     "texture": "e39.png",
     "width": 69,
-    "height": 60
+    "height": 60,
+    "title": "Hmmmm DRIP",
+    "author": "Unknown"
   }
 }

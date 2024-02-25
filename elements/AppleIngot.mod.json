@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "apple_ingot",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Apple Ingot",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 12.0,
-    "specialInfo": [
-      "huh?"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "huh?"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 20,
     "saturation": 20.0,

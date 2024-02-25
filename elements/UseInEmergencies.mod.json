@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "emergency_item",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Use In Emergencies",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,16 +26,22 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Right click in case of emergencies (dont use this while in range 100 blocks of your base)"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "Right click in case of emergencies (dont use this while in range 100 blocks of your base)"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "UseInEmergenciesRightclicked"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

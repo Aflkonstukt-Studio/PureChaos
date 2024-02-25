@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/adidas_gore",
-    "up": "purechaos:blocks/adidas_gore",
-    "north": "purechaos:blocks/adidas",
-    "east": "purechaos:blocks/adidas",
-    "south": "purechaos:blocks/adidas",
-    "west": "purechaos:blocks/adidas",
-    "particle": "purechaos:blocks/adidas_gore"
-  }
+    "down": "purechaos:block/adidas_gore",
+    "up": "purechaos:block/adidas_gore",
+    "north": "purechaos:block/adidas",
+    "east": "purechaos:block/adidas",
+    "south": "purechaos:block/adidas",
+    "west": "purechaos:block/adidas",
+    "particle": "purechaos:block/adidas_gore"
+  },
+  "render_type": "solid"
 }

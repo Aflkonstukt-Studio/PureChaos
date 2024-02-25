@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -35,7 +35,11 @@
     "portalSound": {
       "value": "block.anvil.fall"
     },
+    "enableIgniter": true,
     "igniterName": "Dirt Sword but Igniter",
+    "specialInformation": {
+      "fixedValue": []
+    },
     "igniterTab": {
       "value": "CUSTOM:Chaostab"
     },

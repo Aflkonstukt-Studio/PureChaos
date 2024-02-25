@@ -1,17 +1,19 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "FASTTOPASS",
+    "rarity": "RARE",
     "texture": "fffa69",
     "description": "GOTTA GO!",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "specialInfo": [
-      "HEHE"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "HEHE"
+      ]
+    },
     "music": {
       "value": "CUSTOM:ahdude"
     },

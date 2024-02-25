@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:american_soldat",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

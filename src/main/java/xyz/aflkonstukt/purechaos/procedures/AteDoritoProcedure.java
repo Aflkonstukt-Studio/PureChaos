@@ -10,7 +10,7 @@ public class AteDoritoProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.FAT.get(), 999999, 1));
 	}
 }

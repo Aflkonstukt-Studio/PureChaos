@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/condom"
+    "layer0": "purechaos:item/condom"
   },
   "display": {
     "thirdperson_righthand": {

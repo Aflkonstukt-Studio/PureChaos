@@ -9,9 +9,9 @@ public class BleachOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PurechaosModMobEffects.BLEACHED.get()) : false) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PurechaosModMobEffects.BLEACHED.get())) {
 			return true;
-		} else if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PurechaosModMobEffects.BLIND.get()) : false) {
+		} else if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PurechaosModMobEffects.BLIND.get())) {
 			return true;
 		}
 		return false;

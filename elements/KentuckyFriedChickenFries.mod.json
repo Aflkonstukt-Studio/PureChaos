@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "kfcf",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Kentucky Fried Chicken Fries",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "MMMMMMMMMMMMM som frays"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "MMMMMMMMMMMMM som frays"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 6,
     "saturation": 0.6,

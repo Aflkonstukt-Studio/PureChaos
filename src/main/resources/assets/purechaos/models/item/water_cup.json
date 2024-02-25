@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/water_overflow_cup"
+    "layer0": "purechaos:item/water_overflow_cup"
   },
   "display": {
     "thirdperson_righthand": {

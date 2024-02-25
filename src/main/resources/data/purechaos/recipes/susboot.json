@@ -1,20 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "0 2",
-    "3 5"
+    "a a",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "purechaos:sus_block"
-    },
-    "2": {
-      "item": "purechaos:sus_block"
-    },
-    "3": {
-      "item": "purechaos:sus_block"
-    },
-    "5": {
+    "a": {
       "item": "purechaos:sus_block"
     }
   },

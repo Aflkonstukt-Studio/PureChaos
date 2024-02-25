@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "purechaos:blocks/pee_flowing",
-    "portal": "purechaos:blocks/pee_flowing"
+    "particle": "purechaos:block/pee_flowing",
+    "portal": "purechaos:block/pee_flowing"
   },
   "elements": [
     {
@@ -36,5 +36,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "translucent"
 }

@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "dream_totem",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Totem Of Dream",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,16 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "i dont know what the heck this is"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "i dont know what the heck this is"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInUseTick": {
       "name": "TotemOfDreamItemInHandTick"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

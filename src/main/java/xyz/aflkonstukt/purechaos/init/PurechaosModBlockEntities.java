@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 public class PurechaosModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, PurechaosMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PurechaosMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> PEE_BLOCK = register("pee_block", PurechaosModBlocks.PEE_BLOCK, PeeBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SA_DS = register("sa_ds", PurechaosModBlocks.SA_DS, SADsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TOMBSTONE = register("tombstone", PurechaosModBlocks.TOMBSTONE, TombstoneBlockEntity::new);

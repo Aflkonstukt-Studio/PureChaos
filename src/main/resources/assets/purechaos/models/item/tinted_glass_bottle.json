@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/tinted_glass_bottle"
+    "layer0": "purechaos:item/tinted_glass_bottle"
   }
 }

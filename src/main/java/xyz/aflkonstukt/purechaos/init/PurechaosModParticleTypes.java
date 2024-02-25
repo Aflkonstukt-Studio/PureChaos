@@ -15,5 +15,5 @@ import net.minecraft.core.particles.ParticleType;
 
 public class PurechaosModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, PurechaosMod.MODID);
-	public static final RegistryObject<ParticleType<?>> CUM_DRIP = REGISTRY.register("cum_drip", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> CUM_DRIP = REGISTRY.register("cum_drip", () -> new SimpleParticleType(false));
 }

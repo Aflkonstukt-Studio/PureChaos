@@ -28,11 +28,13 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 public class WalterWightEntity extends Monster {
 	public WalterWightEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -41,9 +43,10 @@ public class WalterWightEntity extends Monster {
 
 	public WalterWightEntity(EntityType<WalterWightEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(new TextComponent("Walter White"));
+		setCustomName(Component.literal("Walter White"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(PurechaosModItems.PICKAX.get()));
@@ -51,7 +54,7 @@ public class WalterWightEntity extends Monster {
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -85,6 +88,11 @@ public class WalterWightEntity extends Monster {
 		return false;
 	}
 
+	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(PurechaosModItems.METH.get()));
@@ -101,10 +109,10 @@ public class WalterWightEntity extends Monster {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.CACTUS)
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
-		return super.hurt(source, amount);
+		return super.hurt(damagesource, amount);
 	}
 
 	public static void init() {

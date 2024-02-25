@@ -2,7 +2,6 @@
 package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.CocaColaPlayerFinishesUsingItemProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
 import net.minecraft.world.level.Level;
@@ -14,16 +13,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
 public class CocaColaItem extends Item {
 	public CocaColaItem() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(8f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(8f).alwaysEat().build()));
 	}
 
 	@Override
@@ -34,7 +30,7 @@ public class CocaColaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("coca cola espuma"));
+		list.add(Component.literal("coca cola espuma"));
 	}
 
 	@Override
@@ -44,7 +40,6 @@ public class CocaColaItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		CocaColaPlayerFinishesUsingItemProcedure.execute(world, x, y, z);
 		if (itemstack.isEmpty()) {
 			return retval;
@@ -59,7 +54,7 @@ public class CocaColaItem extends Item {
 
 	@Override
 	public boolean onDroppedByPlayer(ItemStack itemstack, Player entity) {
-		CocaColaPlayerFinishesUsingItemProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ());
+		CocaColaPlayerFinishesUsingItemProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
 		return true;
 	}
 }

@@ -1,0 +1,158 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "downfall": 0.6,
+  "effects": {
+    "ambient_sound": "ambient.crimson_forest.loop",
+    "additions_sound": {
+      "sound": "block.amethyst_cluster.step",
+      "tick_chance": 0.0111
+    },
+    "particle": {
+      "options": {
+        "type": "falling_water"
+      },
+      "probability": 0.005
+    },
+    "foliage_color": -16751002,
+    "grass_color": -10092442,
+    "sky_color": -1,
+    "fog_color": -1,
+    "water_color": -16763956,
+    "water_fog_color": -52429
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "purechaos:aentity",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:amogus_2",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:amogus_3",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:among_us",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:blaz",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:cursed_dog",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:ikea_desk",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:josip",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:josip_pet",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:moth_of_aggrevation",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:shep",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:splank",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:trident",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:vikkivuk",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "purechaos:josip_pett",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone",
+      "minecraft:forest_rock"
+    ],
+    [],
+    [
+      "minecraft:desert_well"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "purechaos:ekesmasterbait_tree",
+      "minecraft:patch_grass_forest",
+      "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
+      "minecraft:lush_caves_clay",
+      "minecraft:lush_caves_vegetation",
+      "minecraft:rooted_azalea_tree",
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

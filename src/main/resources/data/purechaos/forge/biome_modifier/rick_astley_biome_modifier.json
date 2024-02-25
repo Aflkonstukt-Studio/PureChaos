@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "purechaos:rick_astley",
+    "weight": 30,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

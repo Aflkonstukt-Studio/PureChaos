@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/untitled"
+    "layer0": "purechaos:item/untitled"
   }
 }

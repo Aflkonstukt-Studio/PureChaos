@@ -1,18 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "a",
+    "b"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:dirt"
+    "a": {
+      "tag": "minecraft:dirt"
     },
-    "1": {
-      "item": "minecraft:dirt"
-    },
-    "2": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

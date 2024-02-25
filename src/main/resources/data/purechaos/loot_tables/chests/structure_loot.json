@@ -313,5 +313,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "purechaos:chests/structure_loot"
 }

@@ -8,16 +8,13 @@ import xyz.aflkonstukt.purechaos.client.particle.CumDripParticle;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.client.Minecraft;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PurechaosModParticles {
 	@SubscribeEvent
-	public static void registerParticles(ParticleFactoryRegisterEvent event) {
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) PurechaosModParticleTypes.CUM_DRIP.get(), CumDripParticle::provider);
+	public static void registerParticles(RegisterParticleProvidersEvent event) {
+		event.registerSpriteSet(PurechaosModParticleTypes.CUM_DRIP.get(), CumDripParticle::provider);
 	}
 }

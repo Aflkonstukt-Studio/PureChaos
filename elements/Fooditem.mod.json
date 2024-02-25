@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "fooditem1",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Food Item 1",
     "rarity": "UNCOMMON",
     "creativeTab": {
@@ -24,13 +26,16 @@
     "damageOnCrafting": true,
     "enableMeleeDamage": true,
     "damageVsEntity": 5.0,
-    "specialInfo": [
-      "You get a fuzzy feeling as you hold this in your hands..."
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "You get a fuzzy feeling as you hold this in your hands..."
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 7,
     "saturation": 15.0,

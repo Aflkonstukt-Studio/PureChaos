@@ -1,18 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "a",
+    "a",
+    "b"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "purechaos:adidas_block"
     },
-    "1": {
-      "item": "purechaos:adidas_block"
-    },
-    "2": {
+    "b": {
       "item": "minecraft:stick"
     }
   },

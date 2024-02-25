@@ -1,33 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "0 2",
-    "345",
-    "678"
+    "a a",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:beef"
-    },
-    "2": {
-      "item": "minecraft:beef"
-    },
-    "3": {
-      "item": "minecraft:beef"
-    },
-    "4": {
-      "item": "minecraft:beef"
-    },
-    "5": {
-      "item": "minecraft:beef"
-    },
-    "6": {
-      "item": "minecraft:beef"
-    },
-    "7": {
-      "item": "minecraft:beef"
-    },
-    "8": {
+    "a": {
       "item": "minecraft:beef"
     }
   },

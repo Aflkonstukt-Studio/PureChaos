@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/coca_cola"
+    "layer0": "purechaos:item/coca_cola"
   }
 }

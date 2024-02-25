@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/depression_block",
-    "up": "purechaos:blocks/depression_block",
-    "north": "purechaos:blocks/depression_block",
-    "east": "purechaos:blocks/depression_block",
-    "south": "purechaos:blocks/depression_block",
-    "west": "purechaos:blocks/depression_block",
-    "particle": "purechaos:blocks/depression_block"
-  }
+    "down": "purechaos:block/depression_block",
+    "up": "purechaos:block/depression_block",
+    "north": "purechaos:block/depression_block",
+    "east": "purechaos:block/depression_block",
+    "south": "purechaos:block/depression_block",
+    "west": "purechaos:block/depression_block",
+    "particle": "purechaos:block/depression_block"
+  },
+  "render_type": "solid"
 }

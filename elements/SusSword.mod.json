@@ -1,18 +1,22 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
+    "blockingRenderType": 0,
     "texture": "susord",
     "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
     "name": "Sus Sword",
-    "specialInfo": [
-      "sasi sord"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "sasi sord"
+      ]
+    },
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "toolType": "Sword",
     "harvestLevel": 9,
     "efficiency": 5.5,
     "attackSpeed": 69.0,
@@ -20,7 +24,6 @@
     "damageVsEntity": 6.0,
     "usageCount": 2000,
     "blocksAffected": [],
-    "hasGlow": false,
     "repairItems": [
       {
         "value": "CUSTOM:SusBlock"

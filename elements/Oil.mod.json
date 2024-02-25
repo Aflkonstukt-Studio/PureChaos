@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Oil",
@@ -30,9 +30,11 @@
       "value": ""
     },
     "rarity": "EPIC",
-    "specialInfo": [
-      "oil."
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "oil."
+      ]
+    },
     "resistance": 100.0,
     "luminance": 15,
     "lightOpacity": 0,

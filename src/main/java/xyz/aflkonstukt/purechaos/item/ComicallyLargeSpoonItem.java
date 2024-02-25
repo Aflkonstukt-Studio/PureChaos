@@ -1,8 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
-
 import net.minecraftforge.common.ToolActions;
 import net.minecraftforge.common.ToolAction;
 
@@ -20,7 +18,6 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -53,9 +50,9 @@ public class ComicallyLargeSpoonItem extends TieredItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
-		}, new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).fireResistant());
+		}, new Item.Properties().fireResistant());
 	}
 
 	@Override
@@ -110,6 +107,6 @@ public class ComicallyLargeSpoonItem extends TieredItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A really really really large spoon"));
+		list.add(Component.literal("A really really really large spoon"));
 	}
 }

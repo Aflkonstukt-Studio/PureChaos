@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/nokia_block",
-    "up": "purechaos:blocks/nokia_block",
-    "north": "purechaos:blocks/nokia_block",
-    "east": "purechaos:blocks/nokia_block",
-    "south": "purechaos:blocks/nokia_block",
-    "west": "purechaos:blocks/nokia_block",
-    "particle": "purechaos:blocks/nokia_block"
-  }
+    "down": "purechaos:block/nokia_block",
+    "up": "purechaos:block/nokia_block",
+    "north": "purechaos:block/nokia_block",
+    "east": "purechaos:block/nokia_block",
+    "south": "purechaos:block/nokia_block",
+    "west": "purechaos:block/nokia_block",
+    "particle": "purechaos:block/nokia_block"
+  },
+  "render_type": "solid"
 }

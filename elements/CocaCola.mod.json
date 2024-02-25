@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "coca_cola",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Coca Cola",
     "rarity": "UNCOMMON",
     "creativeTab": {
@@ -24,10 +26,11 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "coca cola espuma"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "coca cola espuma"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -37,6 +40,8 @@
     "onFinishUsingItem": {
       "name": "CocaColaPlayerFinishesUsingItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 8.0,

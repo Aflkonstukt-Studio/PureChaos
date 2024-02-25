@@ -6,14 +6,10 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
@@ -32,43 +28,39 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import java.util.Random;
 import java.util.EnumSet;
 
-@Mod.EventBusSubscriber
 public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(PurechaosModEntities.ADOLF_HITLER.get(), 20, 1, 3));
-	}
-
 	public AdolfHitlerEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(PurechaosModEntities.ADOLF_HITLER.get(), world);
 	}
 
 	public AdolfHitlerEntity(EntityType<AdolfHitlerEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 5000;
 		setNoAi(false);
-		setCustomName(new TextComponent("Hitler"));
+		setCustomName(Component.literal("Hitler"));
 		setCustomNameVisible(true);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -122,7 +114,7 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = AdolfHitlerEntity.this.getRandom();
+				RandomSource random = AdolfHitlerEntity.this.getRandom();
 				double dir_x = AdolfHitlerEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = AdolfHitlerEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = AdolfHitlerEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
@@ -152,6 +144,11 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -167,31 +164,33 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.FALL)
+	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
-		if (source == DamageSource.CACTUS)
+		if (damagesource.is(DamageTypes.FALL))
 			return false;
-		if (source == DamageSource.DROWN)
+		if (damagesource.is(DamageTypes.CACTUS))
 			return false;
-		if (source == DamageSource.LIGHTNING_BOLT)
+		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (source.isExplosion())
+		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (source == DamageSource.ANVIL)
+		if (damagesource.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source == DamageSource.DRAGON_BREATH)
+		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
-		if (source == DamageSource.WITHER)
+		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
-		if (source.getMsgId().equals("witherSkull"))
+		if (damagesource.is(DamageTypes.WITHER))
 			return false;
-		return super.hurt(source, amount);
+		if (damagesource.is(DamageTypes.WITHER_SKULL))
+			return false;
+		return super.hurt(damagesource, amount);
 	}
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		AK47Entity.shoot(this, target);
+		AK47ProjectileEntity.shoot(this, target);
 	}
 
 	@Override

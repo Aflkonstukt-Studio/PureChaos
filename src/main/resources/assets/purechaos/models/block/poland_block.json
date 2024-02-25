@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/polskabotom",
-    "up": "purechaos:blocks/polskatop",
-    "north": "purechaos:blocks/polska",
-    "east": "purechaos:blocks/polska",
-    "south": "purechaos:blocks/polska",
-    "west": "purechaos:blocks/polska",
-    "particle": "purechaos:blocks/polskabotom"
-  }
+    "down": "purechaos:block/polskabotom",
+    "up": "purechaos:block/polskatop",
+    "north": "purechaos:block/polska",
+    "east": "purechaos:block/polska",
+    "south": "purechaos:block/polska",
+    "west": "purechaos:block/polska",
+    "particle": "purechaos:block/polskabotom"
+  },
+  "render_type": "solid"
 }

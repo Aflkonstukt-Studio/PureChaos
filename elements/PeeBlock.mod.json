@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "pee_block",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Pee Block",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 5.0,
     "resistance": 9999999.0,
     "hasGravity": false,
@@ -128,15 +130,20 @@
         "value": "CUSTOM:Pee:Flowing"
       }
     ],
-    "spawnWorldTypes": [
-      "Surface",
-      "Nether",
-      "End"
-    ],
+    "generateFeature": true,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
       }
     ],
     "generationShape": "TRIANGLE",

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "purechaos:items/corrupt_schyte"
+    "layer0": "purechaos:item/corrupt_schyte"
   }
 }

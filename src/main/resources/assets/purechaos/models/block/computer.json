@@ -1,8 +1,9 @@
 {
   "parent": "purechaos:custom/computer",
   "textures": {
-    "all": "purechaos:blocks/computer",
-    "particle": "purechaos:blocks/computer",
-    "1": "purechaos:blocks/computer"
-  }
+    "all": "purechaos:block/computer",
+    "particle": "purechaos:block/computer",
+    "1": "purechaos:block/computer"
+  },
+  "render_type": "cutout_mipped"
 }

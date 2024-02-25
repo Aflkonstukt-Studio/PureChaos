@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/brazil",
-    "up": "purechaos:blocks/brazil",
-    "north": "purechaos:blocks/brazil",
-    "east": "purechaos:blocks/brazil",
-    "south": "purechaos:blocks/brazil",
-    "west": "purechaos:blocks/brazil",
-    "particle": "purechaos:blocks/brazil"
-  }
+    "down": "purechaos:block/brazil",
+    "up": "purechaos:block/brazil",
+    "north": "purechaos:block/brazil",
+    "east": "purechaos:block/brazil",
+    "south": "purechaos:block/brazil",
+    "west": "purechaos:block/brazil",
+    "particle": "purechaos:block/brazil"
+  },
+  "render_type": "solid"
 }

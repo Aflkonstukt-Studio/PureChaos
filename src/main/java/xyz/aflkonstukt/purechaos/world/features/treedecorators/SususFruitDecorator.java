@@ -1,29 +1,31 @@
+
 package xyz.aflkonstukt.purechaos.world.features.treedecorators;
 
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelSimulatedReader;
+import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.function.BiConsumer;
-import java.util.Random;
 import java.util.List;
 
+import com.mojang.serialization.Codec;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SususFruitDecorator extends CocoaDecorator {
-	public static final SususFruitDecorator INSTANCE = new SususFruitDecorator();
-	public static com.mojang.serialization.Codec<SususFruitDecorator> codec;
-	public static TreeDecoratorType<?> tdt;
-	static {
-		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		tdt = new TreeDecoratorType<>(codec);
-		tdt.setRegistryName("susus_tree_fruit_decorator");
-		ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
+	public static Codec<SususFruitDecorator> CODEC = Codec.unit(SususFruitDecorator::new);
+	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
+
+	@SubscribeEvent
+	public static void registerPointOfInterest(RegisterEvent event) {
+		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("susus_tree_fruit_decorator", DECORATOR_TYPE));
 	}
 
 	public SususFruitDecorator() {
@@ -32,22 +34,24 @@ public class SususFruitDecorator extends CocoaDecorator {
 
 	@Override
 	protected TreeDecoratorType<?> type() {
-		return tdt;
+		return DECORATOR_TYPE;
 	}
 
 	@Override
-	public void place(LevelSimulatedReader level, BiConsumer<BlockPos, BlockState> biConsumer, Random random, List<BlockPos> blocks, List<BlockPos> blocks2) {
-		if (!(random.nextFloat() >= 0.2F)) {
-			int i = blocks.get(0).getY();
-			blocks.stream().filter((p_69980_) -> {
+	public void place(TreeDecorator.Context context) {
+		RandomSource randomsource = context.random();
+		if (!(randomsource.nextFloat() >= 0.2F)) {
+			List<BlockPos> list = context.logs();
+			int i = list.get(0).getY();
+			list.stream().filter((p_69980_) -> {
 				return p_69980_.getY() - i <= 2;
-			}).forEach((p_161728_) -> {
+			}).forEach((p_226026_) -> {
 				for (Direction direction : Direction.Plane.HORIZONTAL) {
-					if (random.nextFloat() <= 0.25F) {
+					if (randomsource.nextFloat() <= 0.25F) {
 						Direction direction1 = direction.getOpposite();
-						BlockPos blockpos = p_161728_.offset(direction1.getStepX(), 0, direction1.getStepZ());
-						if (Feature.isAir(level, blockpos)) {
-							biConsumer.accept(blockpos, Blocks.LIGHT.defaultBlockState());
+						BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
+						if (context.isAir(blockpos)) {
+							context.setBlock(blockpos, Blocks.LIGHT.defaultBlockState());
 						}
 					}
 				}

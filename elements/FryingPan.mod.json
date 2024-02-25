@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "frying_pan",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Frying Pan",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,14 +26,20 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 50.0,
-    "specialInfo": [],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onEntityHitWith": {
       "name": "FryingPanLivingEntityIsHitWithItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

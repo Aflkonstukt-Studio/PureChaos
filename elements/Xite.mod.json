@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "xite",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Xite",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,16 +26,22 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "an unstable radioactive material"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "an unstable radioactive material"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onEntityHitWith": {
       "name": "RadiationPoisioningActiveTickCondition"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

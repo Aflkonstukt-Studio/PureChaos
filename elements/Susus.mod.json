@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "Susus",
@@ -75,15 +75,6 @@
       "min": -0.1,
       "max": 0.6
     },
-    "grassPerChunk": 6,
-    "seagrassPerChunk": 69,
-    "flowersPerChunk": 0,
-    "mushroomsPerChunk": 55,
-    "bigMushroomsChunk": 42,
-    "sandPatchesPerChunk": 1,
-    "gravelPatchesPerChunk": 1,
-    "reedsPerChunk": 0,
-    "cactiPerChunk": 5,
     "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 1,
@@ -100,6 +91,13 @@
     "treeFruits": {
       "value": "Blocks.LIGHT"
     },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "ForestGrass",
+      "DesertFeatures"
+    ],
     "spawnStronghold": true,
     "spawnMineshaft": true,
     "spawnMineshaftMesa": true,
@@ -120,11 +118,6 @@
     "spawnBastionRemnant": true,
     "spawnEndCity": true,
     "spawnRuinedPortal": "NETHER",
-    "defaultFeatures": [
-      "Caves",
-      "Ores",
-      "FrozenTopLayer"
-    ],
     "spawnEntries": [
       {
         "entity": {

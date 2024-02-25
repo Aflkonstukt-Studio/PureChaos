@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "poop",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Poop",
     "rarity": "COMMON",
     "creativeTab": {
@@ -24,18 +26,21 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "as it smiles at you",
-      "you get a weird feeling \"this came out of me?\"",
-      "you are curios about what it tastes like."
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "as it smiles at you",
+        "you get a weird feeling \"this came out of me?\"",
+        "you are curios about what it tastes like."
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
       "name": "PoopPlayerFinishesUsingItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": -20,
     "saturation": -20.0,

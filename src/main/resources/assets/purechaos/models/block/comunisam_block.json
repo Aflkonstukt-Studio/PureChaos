@@ -1,12 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:blocks/comunist",
-    "up": "purechaos:blocks/comunist",
-    "north": "purechaos:blocks/comunist",
-    "east": "purechaos:blocks/comunist",
-    "south": "purechaos:blocks/comunist",
-    "west": "purechaos:blocks/comunist",
-    "particle": "purechaos:blocks/comunist"
-  }
+    "down": "purechaos:block/comunist",
+    "up": "purechaos:block/comunist",
+    "north": "purechaos:block/comunist",
+    "east": "purechaos:block/comunist",
+    "south": "purechaos:block/comunist",
+    "west": "purechaos:block/comunist",
+    "particle": "purechaos:block/comunist"
+  },
+  "render_type": "solid"
 }

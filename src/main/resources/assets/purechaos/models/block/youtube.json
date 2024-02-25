@@ -1,7 +1,8 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "purechaos:blocks/youtube",
-    "particle": "purechaos:blocks/youtube"
-  }
+    "cross": "purechaos:block/youtube",
+    "particle": "purechaos:block/youtube"
+  },
+  "render_type": "cutout"
 }

@@ -2,7 +2,6 @@
 package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.DingotPlayerFinishesUsingItemProcedure;
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.minecraft.world.level.Level;
@@ -13,22 +12,19 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
 public class DingotItem extends Item {
 	public DingotItem() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).stacksTo(16).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationMod(10f)
-
-				.meat().build()));
+		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationMod(10f).meat().build()));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("very tasty"));
+		list.add(Component.literal("very tasty"));
 	}
 
 	@Override
@@ -38,7 +34,6 @@ public class DingotItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		DingotPlayerFinishesUsingItemProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;

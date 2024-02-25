@@ -1,0 +1,10 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:amongus",
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ]
+  }
+}

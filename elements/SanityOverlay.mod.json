@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -16,6 +16,7 @@
             "value": -1,
             "falpha": 0.0
           },
+          "anchorPoint": "CENTER",
           "x": 6,
           "y": 8
         }

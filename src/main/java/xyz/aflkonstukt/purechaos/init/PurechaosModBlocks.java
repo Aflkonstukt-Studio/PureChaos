@@ -53,10 +53,6 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -106,24 +102,4 @@ public class PurechaosModBlocks {
 	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
 	public static final RegistryObject<Block> AETHER_PORTAL = REGISTRY.register("aether_portal", () -> new AetherPortalBlock());
 	public static final RegistryObject<Block> JEB_BLOCK = REGISTRY.register("jeb_block", () -> new JebBlockBlock());
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			PeemensionPortalBlock.registerRenderLayer();
-			PotatusBlock.registerRenderLayer();
-			WoodDimensionPortalBlock.registerRenderLayer();
-			SusPortalBlock.registerRenderLayer();
-			GreenPlantBlock.registerRenderLayer();
-			TombstoneBlock.registerRenderLayer();
-			YoutubeBlock.registerRenderLayer();
-			PlanteBlock.registerRenderLayer();
-			GraveBlock.registerRenderLayer();
-			CioaoPortalBlock.registerRenderLayer();
-			BrazilPortalBlock.registerRenderLayer();
-			ComputerBlock.registerRenderLayer();
-			AetherPortalBlock.registerRenderLayer();
-		}
-	}
 }

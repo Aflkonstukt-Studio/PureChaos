@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:pee_block",
+    "minecraft:oak_planks",
+    "purechaos:sus_block",
+    "minecraft:netherrack",
+    "minecraft:grass_block",
+    "purechaos:brazil_block",
+    "purechaos:cyber_block",
+    "minecraft:azalea",
+    "minecraft:stone",
+    "minecraft:cobblestone"
+  ]
+}

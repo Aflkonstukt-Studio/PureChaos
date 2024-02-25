@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Carbon Monoxide",
@@ -30,9 +30,11 @@
       "value": ""
     },
     "rarity": "COMMON",
-    "specialInfo": [
-      "dont use it on jews"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "dont use it on jews"
+      ]
+    },
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 0,

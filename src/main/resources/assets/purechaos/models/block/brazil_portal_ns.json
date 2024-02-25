@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "purechaos:blocks/radiation_liquid",
-    "portal": "purechaos:blocks/radiation_liquid"
+    "particle": "purechaos:block/radiation_liquid",
+    "portal": "purechaos:block/radiation_liquid"
   },
   "elements": [
     {
@@ -36,5 +36,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "translucent"
 }

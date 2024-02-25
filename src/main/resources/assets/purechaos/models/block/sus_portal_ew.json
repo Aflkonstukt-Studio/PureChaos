@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
-    "portal": "purechaos:blocks/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview"
+    "particle": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview",
+    "portal": "purechaos:block/among_us_character__8__by_unitedworldmedia_de5dkfo-fullview"
   },
   "elements": [
     {
@@ -36,5 +36,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "translucent"
 }

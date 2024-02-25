@@ -1,15 +1,15 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "livingentity",
   "definition": {
     "mobName": "Among Us",
     "mobLabel": "Sussy Baka",
     "mobModelName": "Biped",
     "mobModelTexture": "among_us_biped.png",
-    "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
     },
+    "modelLayers": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -53,12 +53,16 @@
     "attackKnockback": 16.0,
     "knockbackResistance": 5.0,
     "movementSpeed": 0.7,
+    "stepHeight": 0.6,
     "armorBaseValue": 0.0,
     "trackingRange": 69,
     "followRange": 16,
     "health": 69,
     "xpAmount": 420,
     "waterMob": false,
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -95,6 +99,7 @@
     "stepSound": {
       "value": "CUSTOM:footstep_metal_amogus"
     },
+    "entityDataEntries": [],
     "whenMobDies": {
       "name": "DirtswordLivingEntityIsHitWithTool"
     },

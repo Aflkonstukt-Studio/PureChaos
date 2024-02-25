@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Cum",
@@ -30,9 +30,11 @@
       "value": "block.soul_soil.break"
     },
     "rarity": "UNCOMMON",
-    "specialInfo": [
-      "JU HEV ENTERD D CUM ZONE"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "JU HEV ENTERD D CUM ZONE"
+      ]
+    },
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 1,

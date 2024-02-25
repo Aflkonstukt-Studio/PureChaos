@@ -1,0 +1,19 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Items.ENDER_EYE"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.endermen.teleport"
+    },
+    "igniteFire": false,
+    "power": 4.0,
+    "damage": 8.0,
+    "knockback": 2,
+    "entityModel": "Default",
+    "customModelTexture": ""
+  }
+}

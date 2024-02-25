@@ -1,37 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "cbc",
+    "aba"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "purechaos:sus_block"
     },
-    "1": {
-      "item": "minecraft:dirt"
+    "b": {
+      "tag": "minecraft:dirt"
     },
-    "2": {
-      "item": "purechaos:sus_block"
-    },
-    "3": {
-      "tag": "forge:stone"
-    },
-    "4": {
-      "item": "minecraft:dirt"
-    },
-    "5": {
-      "tag": "forge:stone"
-    },
-    "6": {
-      "item": "purechaos:sus_block"
-    },
-    "7": {
-      "item": "minecraft:dirt"
-    },
-    "8": {
-      "item": "purechaos:sus_block"
+    "c": {
+      "tag": "minecraft:stone"
     }
   },
   "result": {

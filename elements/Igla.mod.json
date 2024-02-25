@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "boc",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Igla",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,13 +26,19 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 11.0,
-    "specialInfo": [
-      "mnogo ostra uh!ALI MOCNA I RETKA"
-    ],
-    "hasGlow": true,
+    "specialInformation": {
+      "fixedValue": [
+        "mnogo ostra uh!ALI MOCNA I RETKA"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

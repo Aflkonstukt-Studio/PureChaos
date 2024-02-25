@@ -12,7 +12,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
@@ -22,7 +22,7 @@ public class TombstonePlaceProcdProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 		}
 	}
 
@@ -35,11 +35,11 @@ public class TombstonePlaceProcdProcedure {
 			return;
 		if (entity instanceof Player) {
 			if (world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DOGRAVECREATION)) {
-				world.setBlock(new BlockPos(x, y, z), PurechaosModBlocks.GRAVE.get().defaultBlockState(), 3);
+				world.setBlock(BlockPos.containing(x, y, z), PurechaosModBlocks.GRAVE.get().defaultBlockState(), 3);
 				PurechaosModVariables.WorldVariables.get(world).sanity = 100;
 				PurechaosModVariables.WorldVariables.get(world).syncData(world);
-				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent("You died! A grave has been placed at the place of your death."), (false));
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("You died! A grave has been placed at the place of your death."), false);
 			}
 		}
 	}

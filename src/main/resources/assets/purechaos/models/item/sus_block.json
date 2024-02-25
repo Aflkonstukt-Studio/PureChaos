@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/de5g6u1-de580faf-a210-480e-a49c-0f297b178fd1"
-  }
+    "layer0": "purechaos:item/de5g6u1-de580faf-a210-480e-a49c-0f297b178fd1"
+  },
+  "render_type": "translucent"
 }

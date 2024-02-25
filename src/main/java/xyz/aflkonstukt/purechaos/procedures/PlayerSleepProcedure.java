@@ -10,7 +10,7 @@ import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 public class PlayerSleepProcedure {
 	@SubscribeEvent
 	public static void onEntityEndSleep(PlayerWakeUpEvent event) {
-		execute(event, event.getEntity().level, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -30,7 +30,7 @@ public class PlayerSleepProcedure {
 			return;
 		PurechaosModVariables.WorldVariables.get(world).sanity = 100;
 		PurechaosModVariables.WorldVariables.get(world).syncData(world);
-		if (entity instanceof Player _player && !_player.level.isClientSide())
-			_player.displayClientMessage(new TextComponent("Rise and shine! Its a new day and your sanity has been restored to a 100."), (false));
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("Rise and shine! Its a new day and your sanity has been restored to a 100."), false);
 	}
 }

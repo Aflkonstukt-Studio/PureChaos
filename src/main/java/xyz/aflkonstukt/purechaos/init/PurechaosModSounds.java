@@ -4,58 +4,48 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import xyz.aflkonstukt.purechaos.PurechaosMod;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import java.util.Map;
-import java.util.HashMap;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModSounds {
-	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
-	static {
-		REGISTRY.put(new ResourceLocation("purechaos", "amogus"), new SoundEvent(new ResourceLocation("purechaos", "amogus")));
-		REGISTRY.put(new ResourceLocation("purechaos", "footstep_metal_amogus"), new SoundEvent(new ResourceLocation("purechaos", "footstep_metal_amogus")));
-		REGISTRY.put(new ResourceLocation("purechaos", "kill"), new SoundEvent(new ResourceLocation("purechaos", "kill")));
-		REGISTRY.put(new ResourceLocation("purechaos", "amongus_ambient"), new SoundEvent(new ResourceLocation("purechaos", "amongus_ambient")));
-		REGISTRY.put(new ResourceLocation("purechaos", "fallguyswooh"), new SoundEvent(new ResourceLocation("purechaos", "fallguyswooh")));
-		REGISTRY.put(new ResourceLocation("purechaos", "jusif"), new SoundEvent(new ResourceLocation("purechaos", "jusif")));
-		REGISTRY.put(new ResourceLocation("purechaos", "redacted"), new SoundEvent(new ResourceLocation("purechaos", "redacted")));
-		REGISTRY.put(new ResourceLocation("purechaos", "scratest"), new SoundEvent(new ResourceLocation("purechaos", "scratest")));
-		REGISTRY.put(new ResourceLocation("purechaos", "jumpscare"), new SoundEvent(new ResourceLocation("purechaos", "jumpscare")));
-		REGISTRY.put(new ResourceLocation("purechaos", "sssr"), new SoundEvent(new ResourceLocation("purechaos", "sssr")));
-		REGISTRY.put(new ResourceLocation("purechaos", "vine_boom"), new SoundEvent(new ResourceLocation("purechaos", "vine_boom")));
-		REGISTRY.put(new ResourceLocation("purechaos", "eekum_bokum"), new SoundEvent(new ResourceLocation("purechaos", "eekum_bokum")));
-		REGISTRY.put(new ResourceLocation("purechaos", "never_gonna_give_you_up"), new SoundEvent(new ResourceLocation("purechaos", "never_gonna_give_you_up")));
-		REGISTRY.put(new ResourceLocation("purechaos", "crnidani"), new SoundEvent(new ResourceLocation("purechaos", "crnidani")));
-		REGISTRY.put(new ResourceLocation("purechaos", "ahdude"), new SoundEvent(new ResourceLocation("purechaos", "ahdude")));
-		REGISTRY.put(new ResourceLocation("purechaos", "fu-k"), new SoundEvent(new ResourceLocation("purechaos", "fu-k")));
-		REGISTRY.put(new ResourceLocation("purechaos", "dudeshutt"), new SoundEvent(new ResourceLocation("purechaos", "dudeshutt")));
-		REGISTRY.put(new ResourceLocation("purechaos", "girl_moan"), new SoundEvent(new ResourceLocation("purechaos", "girl_moan")));
-		REGISTRY.put(new ResourceLocation("purechaos", "spit"), new SoundEvent(new ResourceLocation("purechaos", "spit")));
-		REGISTRY.put(new ResourceLocation("purechaos", "pan_hit"), new SoundEvent(new ResourceLocation("purechaos", "pan_hit")));
-		REGISTRY.put(new ResourceLocation("purechaos", "smack_my_ass"), new SoundEvent(new ResourceLocation("purechaos", "smack_my_ass")));
-		REGISTRY.put(new ResourceLocation("purechaos", "ugh_cupcakke"), new SoundEvent(new ResourceLocation("purechaos", "ugh_cupcakke")));
-		REGISTRY.put(new ResourceLocation("purechaos", "gulp_gulp"), new SoundEvent(new ResourceLocation("purechaos", "gulp_gulp")));
-		REGISTRY.put(new ResourceLocation("purechaos", "wet_cupcakke"), new SoundEvent(new ResourceLocation("purechaos", "wet_cupcakke")));
-		REGISTRY.put(new ResourceLocation("purechaos", "ruler_slap"), new SoundEvent(new ResourceLocation("purechaos", "ruler_slap")));
-		REGISTRY.put(new ResourceLocation("purechaos", "fart"), new SoundEvent(new ResourceLocation("purechaos", "fart")));
-		REGISTRY.put(new ResourceLocation("purechaos", "espuma"), new SoundEvent(new ResourceLocation("purechaos", "espuma")));
-		REGISTRY.put(new ResourceLocation("purechaos", "nerd"), new SoundEvent(new ResourceLocation("purechaos", "nerd")));
-		REGISTRY.put(new ResourceLocation("purechaos", "nerd_pacman_meme"), new SoundEvent(new ResourceLocation("purechaos", "nerd_pacman_meme")));
-		REGISTRY.put(new ResourceLocation("purechaos", "rock_living"), new SoundEvent(new ResourceLocation("purechaos", "rock_living")));
-		REGISTRY.put(new ResourceLocation("purechaos", "rock_death"), new SoundEvent(new ResourceLocation("purechaos", "rock_death")));
-		REGISTRY.put(new ResourceLocation("purechaos", "kilometer"), new SoundEvent(new ResourceLocation("purechaos", "kilometer")));
-		REGISTRY.put(new ResourceLocation("purechaos", "fbi_open"), new SoundEvent(new ResourceLocation("purechaos", "fbi_open")));
-	}
-
-	@SubscribeEvent
-	public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
-		for (Map.Entry<ResourceLocation, SoundEvent> sound : REGISTRY.entrySet())
-			event.getRegistry().register(sound.getValue().setRegistryName(sound.getKey()));
-	}
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, PurechaosMod.MODID);
+	public static final RegistryObject<SoundEvent> AMOGUS = REGISTRY.register("amogus", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "amogus")));
+	public static final RegistryObject<SoundEvent> FOOTSTEP_METAL_AMOGUS = REGISTRY.register("footstep_metal_amogus", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "footstep_metal_amogus")));
+	public static final RegistryObject<SoundEvent> KILL = REGISTRY.register("kill", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "kill")));
+	public static final RegistryObject<SoundEvent> AMONGUS_AMBIENT = REGISTRY.register("amongus_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "amongus_ambient")));
+	public static final RegistryObject<SoundEvent> FALLGUYSWOOH = REGISTRY.register("fallguyswooh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "fallguyswooh")));
+	public static final RegistryObject<SoundEvent> JUSIF = REGISTRY.register("jusif", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "jusif")));
+	public static final RegistryObject<SoundEvent> REDACTED = REGISTRY.register("redacted", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "redacted")));
+	public static final RegistryObject<SoundEvent> SCRATEST = REGISTRY.register("scratest", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "scratest")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE = REGISTRY.register("jumpscare", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "jumpscare")));
+	public static final RegistryObject<SoundEvent> SSSR = REGISTRY.register("sssr", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "sssr")));
+	public static final RegistryObject<SoundEvent> VINE_BOOM = REGISTRY.register("vine_boom", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "vine_boom")));
+	public static final RegistryObject<SoundEvent> EEKUM_BOKUM = REGISTRY.register("eekum_bokum", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "eekum_bokum")));
+	public static final RegistryObject<SoundEvent> NEVER_GONNA_GIVE_YOU_UP = REGISTRY.register("never_gonna_give_you_up", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "never_gonna_give_you_up")));
+	public static final RegistryObject<SoundEvent> CRNIDANI = REGISTRY.register("crnidani", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "crnidani")));
+	public static final RegistryObject<SoundEvent> AHDUDE = REGISTRY.register("ahdude", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "ahdude")));
+	public static final RegistryObject<SoundEvent> FU_K = REGISTRY.register("fu-k", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "fu-k")));
+	public static final RegistryObject<SoundEvent> DUDESHUTT = REGISTRY.register("dudeshutt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "dudeshutt")));
+	public static final RegistryObject<SoundEvent> GIRL_MOAN = REGISTRY.register("girl_moan", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "girl_moan")));
+	public static final RegistryObject<SoundEvent> SPIT = REGISTRY.register("spit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "spit")));
+	public static final RegistryObject<SoundEvent> PAN_HIT = REGISTRY.register("pan_hit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "pan_hit")));
+	public static final RegistryObject<SoundEvent> SMACK_MY_ASS = REGISTRY.register("smack_my_ass", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "smack_my_ass")));
+	public static final RegistryObject<SoundEvent> UGH_CUPCAKKE = REGISTRY.register("ugh_cupcakke", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "ugh_cupcakke")));
+	public static final RegistryObject<SoundEvent> GULP_GULP = REGISTRY.register("gulp_gulp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "gulp_gulp")));
+	public static final RegistryObject<SoundEvent> WET_CUPCAKKE = REGISTRY.register("wet_cupcakke", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "wet_cupcakke")));
+	public static final RegistryObject<SoundEvent> RULER_SLAP = REGISTRY.register("ruler_slap", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "ruler_slap")));
+	public static final RegistryObject<SoundEvent> FART = REGISTRY.register("fart", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "fart")));
+	public static final RegistryObject<SoundEvent> ESPUMA = REGISTRY.register("espuma", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "espuma")));
+	public static final RegistryObject<SoundEvent> NERD = REGISTRY.register("nerd", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "nerd")));
+	public static final RegistryObject<SoundEvent> NERD_PACMAN_MEME = REGISTRY.register("nerd_pacman_meme", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "nerd_pacman_meme")));
+	public static final RegistryObject<SoundEvent> ROCK_LIVING = REGISTRY.register("rock_living", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "rock_living")));
+	public static final RegistryObject<SoundEvent> ROCK_DEATH = REGISTRY.register("rock_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "rock_death")));
+	public static final RegistryObject<SoundEvent> KILOMETER = REGISTRY.register("kilometer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "kilometer")));
+	public static final RegistryObject<SoundEvent> FBI_OPEN = REGISTRY.register("fbi_open", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "fbi_open")));
 }

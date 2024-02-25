@@ -1,24 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "bab",
+    " c "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "purechaos:xite"
     },
-    "3": {
+    "b": {
       "item": "minecraft:obsidian"
     },
-    "4": {
-      "item": "purechaos:xite"
-    },
-    "5": {
-      "item": "minecraft:obsidian"
-    },
-    "7": {
+    "c": {
       "item": "minecraft:iron_sword"
     }
   },

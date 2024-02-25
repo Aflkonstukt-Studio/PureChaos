@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "purechaos:items/totem_of_lying"
+    "layer0": "purechaos:item/totem_of_lying"
   }
 }

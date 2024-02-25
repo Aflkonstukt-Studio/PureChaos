@@ -1,7 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.minecraft.world.level.Level;
@@ -11,7 +10,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -42,12 +40,12 @@ public class SusSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(PurechaosModBlocks.SUS_BLOCK.get()));
 			}
-		}, 3, 65f, new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).fireResistant());
+		}, 3, 65f, new Item.Properties().fireResistant());
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("sasi sord"));
+		list.add(Component.literal("sasi sord"));
 	}
 }

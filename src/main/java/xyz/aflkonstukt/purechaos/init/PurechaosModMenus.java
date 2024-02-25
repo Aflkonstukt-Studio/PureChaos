@@ -1,40 +1,24 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.world.inventory.VikkiVukGuiMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.ComputerGuiMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
+import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.minecraftforge.network.IContainerFactory;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModMenus {
-	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<VikkiVukGuiMenu> VIKKI_VUK_GUI = register("vikki_vuk_gui", (id, inv, extraData) -> new VikkiVukGuiMenu(id, inv, extraData));
-	public static final MenuType<ComputerGuiMenu> COMPUTER_GUI = register("computer_gui", (id, inv, extraData) -> new ComputerGuiMenu(id, inv, extraData));
-	public static final MenuType<CheatGUIMenu> CHEAT_GUI = register("cheat_gui", (id, inv, extraData) -> new CheatGUIMenu(id, inv, extraData));
-
-	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
-		MenuType<T> menuType = new MenuType<T>(containerFactory);
-		menuType.setRegistryName(registryname);
-		REGISTRY.add(menuType);
-		return menuType;
-	}
-
-	@SubscribeEvent
-	public static void registerContainers(RegistryEvent.Register<MenuType<?>> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new MenuType[0]));
-	}
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, PurechaosMod.MODID);
+	public static final RegistryObject<MenuType<VikkiVukGuiMenu>> VIKKI_VUK_GUI = REGISTRY.register("vikki_vuk_gui", () -> IForgeMenuType.create(VikkiVukGuiMenu::new));
+	public static final RegistryObject<MenuType<ComputerGuiMenu>> COMPUTER_GUI = REGISTRY.register("computer_gui", () -> IForgeMenuType.create(ComputerGuiMenu::new));
+	public static final RegistryObject<MenuType<CheatGUIMenu>> CHEAT_GUI = REGISTRY.register("cheat_gui", () -> IForgeMenuType.create(CheatGUIMenu::new));
 }

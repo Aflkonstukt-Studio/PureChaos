@@ -1,7 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.minecraft.world.level.Level;
@@ -16,7 +15,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import java.util.List;
@@ -26,9 +24,7 @@ import com.google.common.collect.ImmutableMultimap;
 
 public class FoodItem2Item extends Item {
 	public FoodItem2Item() {
-		super(new Item.Properties().tab(PurechaosModTabs.TAB_CHAOSTAB).stacksTo(1).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(5).saturationMod(20f).alwaysEat()
-
-				.build()));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(5).saturationMod(20f).alwaysEat().build()));
 	}
 
 	@Override
@@ -37,7 +33,7 @@ public class FoodItem2Item extends Item {
 	}
 
 	@Override
-	public ItemStack getContainerItem(ItemStack itemstack) {
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
 		return new ItemStack(this);
 	}
 
@@ -56,7 +52,7 @@ public class FoodItem2Item extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("You are confused about what this is... Try eating it?"));
+		list.add(Component.literal("You are confused about what this is... Try eating it?"));
 	}
 
 	@Override

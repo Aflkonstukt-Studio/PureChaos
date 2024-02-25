@@ -1,5 +1,5 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "fluid",
   "definition": {
     "name": "Staravoda",
@@ -30,9 +30,11 @@
       "value": "CUSTOM:amogus"
     },
     "rarity": "COMMON",
-    "specialInfo": [
-      "Old water from clasic versions of the game"
-    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Old water from clasic versions of the game"
+      ]
+    },
     "resistance": 100.0,
     "luminance": 0,
     "lightOpacity": 0,

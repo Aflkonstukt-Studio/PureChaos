@@ -1,10 +1,12 @@
 {
-  "_fv": 39,
+  "_fv": 57,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "grimace_shake",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Grimace Shake",
     "rarity": "EPIC",
     "creativeTab": {
@@ -24,16 +26,19 @@
     "damageOnCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "no dont do it"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "no dont do it"
+      ]
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
       "name": "GrimaceShakePlayerFinishesUsingItem"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 8.0,

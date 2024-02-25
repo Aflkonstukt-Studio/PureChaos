@@ -1,30 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "012",
-    "3 5",
-    "6 8"
+    "aaa",
+    "a a",
+    "a a"
   ],
   "key": {
-    "0": {
-      "item": "purechaos:sus_block"
-    },
-    "1": {
-      "item": "purechaos:sus_block"
-    },
-    "2": {
-      "item": "purechaos:sus_block"
-    },
-    "3": {
-      "item": "purechaos:sus_block"
-    },
-    "5": {
-      "item": "purechaos:sus_block"
-    },
-    "6": {
-      "item": "purechaos:sus_block"
-    },
-    "8": {
+    "a": {
       "item": "purechaos:sus_block"
     }
   },

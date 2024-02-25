@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "purechaos:blocks/gogoaa",
-    "portal": "purechaos:blocks/gogoaa"
+    "particle": "purechaos:block/gogoaa",
+    "portal": "purechaos:block/gogoaa"
   },
   "elements": [
     {
@@ -36,5 +36,6 @@
         }
       }
     }
-  ]
+  ],
+  "render_type": "translucent"
 }
