@@ -16,6 +16,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.SpongebobBossRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.SplankRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.ShepRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.RickAstleyRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.PensiveCubeRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.NerdRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MuricaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MothOfAggrevationRenderer;
@@ -106,5 +107,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.AMOGUS_GUN_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.ROCK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.JAVELIN_LAUNCHER_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
 	}
 }

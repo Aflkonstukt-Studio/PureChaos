@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 2,
-    "texture": "tlgf",
+    "texture": "mumbotoken2",
     "customModelName": "mumbo_token:default",
     "customProperties": {},
     "states": [],
@@ -31,11 +31,17 @@
         "EEKUM BOKUM"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

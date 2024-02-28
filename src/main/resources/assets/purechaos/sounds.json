@@ -281,5 +281,23 @@
         "stream": false
       }
     ]
+  },
+  "boolets": {
+    "subtitle": "subtitles.boolets",
+    "sounds": [
+      {
+        "name": "purechaos:i-need-more-bullets-made-with-voicemod",
+        "stream": false
+      }
+    ]
+  },
+  "moreboolets": {
+    "subtitle": "subtitles.moreboolets",
+    "sounds": [
+      {
+        "name": "purechaos:i-need-more-bullets_-_320-kbps_-made-with-voicemod",
+        "stream": false
+      }
+    ]
   }
 }

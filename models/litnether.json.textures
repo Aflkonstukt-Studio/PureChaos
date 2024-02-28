@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "netherrack",
+        "1": "fire",
+        "missing": "fire"
+      },
+      "name": "default"
+    }
+  }
+}

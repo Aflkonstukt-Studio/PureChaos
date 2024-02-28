@@ -28,6 +28,7 @@ import xyz.aflkonstukt.purechaos.item.SamsungNote7Item;
 import xyz.aflkonstukt.purechaos.item.SSSRItem;
 import xyz.aflkonstukt.purechaos.item.RockItem;
 import xyz.aflkonstukt.purechaos.item.RadiationLiquidItem;
+import xyz.aflkonstukt.purechaos.item.PufferBalloonItem;
 import xyz.aflkonstukt.purechaos.item.PotatoSpudsItem;
 import xyz.aflkonstukt.purechaos.item.PoopItem;
 import xyz.aflkonstukt.purechaos.item.PickaxItem;
@@ -49,6 +50,7 @@ import xyz.aflkonstukt.purechaos.item.KFCEItem;
 import xyz.aflkonstukt.purechaos.item.JosipRangeItem;
 import xyz.aflkonstukt.purechaos.item.JavelinLauncherItem;
 import xyz.aflkonstukt.purechaos.item.IronEggItem;
+import xyz.aflkonstukt.purechaos.item.InfiniteFuelItem;
 import xyz.aflkonstukt.purechaos.item.ImpostorKnifeItem;
 import xyz.aflkonstukt.purechaos.item.IglaItem;
 import xyz.aflkonstukt.purechaos.item.HalfGoldenAppleItem;
@@ -285,6 +287,10 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> AMOGUS_GUN = REGISTRY.register("amogus_gun", () -> new AmogusGunItem());
 	public static final RegistryObject<Item> ROCK = REGISTRY.register("rock", () -> new RockItem());
 	public static final RegistryObject<Item> JAVELIN_LAUNCHER = REGISTRY.register("javelin_launcher", () -> new JavelinLauncherItem());
+	public static final RegistryObject<Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.PENSIVE_CUBE, -10066330, -256, new Item.Properties()));
+	public static final RegistryObject<Item> PUFFER_BALLOON = REGISTRY.register("puffer_balloon", () -> new PufferBalloonItem());
+	public static final RegistryObject<Item> INFINITE_FUEL = REGISTRY.register("infinite_fuel", () -> new InfiniteFuelItem());
+	public static final RegistryObject<Item> PLANTABLE_STEVE = block(PurechaosModBlocks.PLANTABLE_STEVE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -12,10 +12,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:crnidani"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 3260,
     "analogOutput": 0
   }
 }

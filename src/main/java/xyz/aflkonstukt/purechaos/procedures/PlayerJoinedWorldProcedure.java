@@ -7,7 +7,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
@@ -17,19 +16,24 @@ import javax.annotation.Nullable;
 public class PlayerJoinedWorldProcedure {
 	@SubscribeEvent
 	public static void onEntityJoin(EntityJoinLevelEvent event) {
-		execute(event, event.getLevel(), event.getEntity());
+		execute(event, event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
-			PurechaosModVariables.WorldVariables.get(world).sanity = 100;
-			PurechaosModVariables.WorldVariables.get(world).syncData(world);
+			{
+				double _setval = 100;
+				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.sanity = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

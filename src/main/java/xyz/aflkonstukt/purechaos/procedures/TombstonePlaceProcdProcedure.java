@@ -36,8 +36,13 @@ public class TombstonePlaceProcdProcedure {
 		if (entity instanceof Player) {
 			if (world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DOGRAVECREATION)) {
 				world.setBlock(BlockPos.containing(x, y, z), PurechaosModBlocks.GRAVE.get().defaultBlockState(), 3);
-				PurechaosModVariables.WorldVariables.get(world).sanity = 100;
-				PurechaosModVariables.WorldVariables.get(world).syncData(world);
+				{
+					double _setval = 100;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.sanity = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("You died! A grave has been placed at the place of your death."), false);
 			}

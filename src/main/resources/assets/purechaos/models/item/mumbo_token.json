@@ -5,6 +5,6 @@
   "model": "purechaos:models/item/mumbo_token.obj",
   "textures": {
     "m_0": "purechaos:block/mumbotoken",
-    "particle": "purechaos:item/tlgf"
+    "particle": "purechaos:item/mumbotoken2"
   }
 }

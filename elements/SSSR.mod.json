@@ -12,10 +12,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:sssr"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 4800,
     "analogOutput": 0
   }
 }

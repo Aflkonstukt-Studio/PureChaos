@@ -16,7 +16,7 @@ import java.util.List;
 
 public class SasiAmangasItem extends RecordItem {
 	public SasiAmangasItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:jusif")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:jusif")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 240);
 	}
 
 	@Override

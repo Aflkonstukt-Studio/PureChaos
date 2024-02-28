@@ -35,7 +35,7 @@ public class SanityOverlayOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					SanityOverlayValueProcedure.execute(world), w / 2 + -207, h / 2 + -112, -1, false);
+					SanityOverlayValueProcedure.execute(entity), w / 2 + -207, h / 2 + -112, -1, false);
 		}
 	}
 }

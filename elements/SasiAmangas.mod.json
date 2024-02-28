@@ -14,10 +14,13 @@
         "Josip is making an amogus"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:jusif"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 240,
     "analogOutput": 0
   }
 }

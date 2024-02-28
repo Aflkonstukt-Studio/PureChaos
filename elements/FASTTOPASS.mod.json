@@ -14,10 +14,13 @@
         "HEHE"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:ahdude"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 2360,
     "analogOutput": 0,
     "onRightClickedInAir": {
       "name": "FASTTOPASSRightclicked"

@@ -1,0 +1,70 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 192,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_please_do_a_captcha",
+          "text": {
+            "fixedValue": "What is 2 + 2?",
+            "name": "CaptchaProcedure"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 89
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Your Answer",
+          "name": "answer",
+          "width": 120,
+          "height": 20,
+          "x": 129,
+          "y": 105
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_submit",
+          "text": "Submit",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ValidateCaptcha"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 129,
+          "y": 129
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "NewCaptchaProcedure"
+    },
+    "onClosed": {
+      "name": "CaptchaGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 16,
+      "sy": 8,
+      "ox": 16,
+      "oy": 8,
+      "snapOnGrid": true
+    }
+  }
+}

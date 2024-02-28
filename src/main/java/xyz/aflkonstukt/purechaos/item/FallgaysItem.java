@@ -16,7 +16,7 @@ import java.util.List;
 
 public class FallgaysItem extends RecordItem {
 	public FallgaysItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:fallguyswooh")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:fallguyswooh")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1160);
 	}
 
 	@Override

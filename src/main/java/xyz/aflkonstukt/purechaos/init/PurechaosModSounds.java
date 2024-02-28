@@ -48,4 +48,6 @@ public class PurechaosModSounds {
 	public static final RegistryObject<SoundEvent> ROCK_DEATH = REGISTRY.register("rock_death", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "rock_death")));
 	public static final RegistryObject<SoundEvent> KILOMETER = REGISTRY.register("kilometer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "kilometer")));
 	public static final RegistryObject<SoundEvent> FBI_OPEN = REGISTRY.register("fbi_open", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "fbi_open")));
+	public static final RegistryObject<SoundEvent> BOOLETS = REGISTRY.register("boolets", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "boolets")));
+	public static final RegistryObject<SoundEvent> MOREBOOLETS = REGISTRY.register("moreboolets", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "moreboolets")));
 }

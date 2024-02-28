@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TOItem extends RecordItem {
 	public TOItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:crnidani")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:crnidani")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3260);
 	}
 
 	@Override

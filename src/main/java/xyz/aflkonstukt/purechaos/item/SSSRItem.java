@@ -16,7 +16,7 @@ import java.util.List;
 
 public class SSSRItem extends RecordItem {
 	public SSSRItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:sssr")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:sssr")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 4800);
 	}
 
 	@Override

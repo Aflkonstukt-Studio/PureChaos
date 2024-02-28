@@ -12,10 +12,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:fallguyswooh"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 1160,
     "analogOutput": 0
   }
 }

@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
@@ -15,7 +16,9 @@ import net.minecraft.core.BlockPos;
 import java.util.Map;
 
 public class TesticleOnStickRightclickedOnBlockProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return;
 		{
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockState _bs = PurechaosModBlocks.CUM.get().defaultBlockState();
@@ -52,7 +55,12 @@ public class TesticleOnStickRightclickedOnBlockProcedure {
 				_ist.setDamageValue(0);
 			}
 		}
-		PurechaosModVariables.WorldVariables.get(world).sanity = PurechaosModVariables.WorldVariables.get(world).sanity - 2;
-		PurechaosModVariables.WorldVariables.get(world).syncData(world);
+		{
+			double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity - 2;
+			entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.sanity = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

@@ -1774,6 +1774,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -3584,10 +3588,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -3607,10 +3607,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -4701,8 +4697,8 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
@@ -4720,8 +4716,8 @@
         ],
         "dependencies": [
           {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
@@ -4952,21 +4948,6 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/HerobrineRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/HerobrineEntity.java"
         ]
-      }
-    },
-    {
-      "name": "PensiveCubeTransparentEntityModelCondition",
-      "type": "procedure",
-      "sortid": 264,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pensive_cube_transparent_entity_model_condition",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PensiveCubeTransparentEntityModelConditionProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -5813,14 +5794,643 @@
         ],
         "has_nbt_structure": true
       }
+    },
+    {
+      "name": "CaptchaGUI",
+      "type": "gui",
+      "sortid": 322,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captcha_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CaptchaGUIMenu.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/network/CaptchaGUIButtonMessage.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CaptchaGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "PensiveCube",
+      "type": "animatedentity",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pensive_cube",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/pensive_cube_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/PensiveCubeEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/PensiveCubeRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/model/PensiveCubeModel.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/pensive_cube_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "CaptchaCode",
+      "type": "code",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "captcha_code",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/CaptchaCode.java"
+        ]
+      }
+    },
+    {
+      "name": "CaptchaProcedure",
+      "type": "procedure",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "captcha_procedure",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaProcedureProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "NewCaptchaProcedure",
+      "type": "procedure",
+      "sortid": 327,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "new_captcha_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/NewCaptchaProcedureProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PensiveCubeRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pensive_cube_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PensiveCubeRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Captcha",
+      "type": "command",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captcha",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/CaptchaCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ValidateCaptcha",
+      "type": "procedure",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "validate_captcha",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ValidateCaptchaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Golp",
+      "type": "procedure",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golp",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/GolpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PufferBalloonItemInHandTick",
+      "type": "procedure",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puffer_balloon_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PufferBalloonItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PufferBalloon",
+      "type": "item",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puffer_balloon",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PufferBalloonItem.java",
+          "src/main/resources/assets/purechaos/models/item/puffer_balloon.json"
+        ]
+      }
+    },
+    {
+      "name": "InfiniteFuel",
+      "type": "item",
+      "sortid": 334,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_fuel",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/InfiniteFuelItem.java",
+          "src/main/resources/assets/purechaos/models/item/infinite_fuel.json"
+        ]
+      }
+    },
+    {
+      "name": "InfiniteFuelExt",
+      "type": "itemextension",
+      "sortid": 335,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_fuel_ext",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PlantableSteve",
+      "type": "plant",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plantable_steve",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/block/PlantableSteveBlock.java",
+          "src/main/resources/assets/purechaos/models/item/plantable_steve.json",
+          "src/main/resources/assets/purechaos/blockstates/plantable_steve.json",
+          "src/main/resources/assets/purechaos/models/block/plantable_steve.json"
+        ]
+      }
+    },
+    {
+      "name": "CaptchaGUIThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 337,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "captcha_gui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaGUIThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BooletsShow1",
+      "type": "procedure",
+      "sortid": 338,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow1Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow2",
+      "type": "procedure",
+      "sortid": 339,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow2Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow3",
+      "type": "procedure",
+      "sortid": 340,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow3Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow4",
+      "type": "procedure",
+      "sortid": 341,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow4Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow5",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow5Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow6",
+      "type": "procedure",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow6Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow7",
+      "type": "procedure",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow7Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow8",
+      "type": "procedure",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow8Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow9",
+      "type": "procedure",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow9Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow10",
+      "type": "procedure",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow10Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow11",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow11Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BooletsShow12",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boolets_show_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow12Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "MoreBoolets1DisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_boolets_1_display_overlay_ingame",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MoreBoolets1DisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoreBoolets1",
+      "type": "overlay",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_boolets_1",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/screens/MoreBoolets1Overlay.java"
+        ]
+      }
+    },
+    {
+      "name": "MoreBoolets1DisplayOverlayIngame2",
+      "type": "procedure",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_boolets_1_display_overlay_ingame_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MoreBoolets1DisplayOverlayIngame2Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "INeedBooletsTrigger",
+      "type": "procedure",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "i_need_boolets_trigger",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/INeedBooletsTriggerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
       "name": "sanity",
       "type": "number",
-      "scope": "world",
+      "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "bl1",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl2",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl3",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl4",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl5",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl6",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl7",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl8",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl9",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl10",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl11",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl12",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "bl",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -6087,6 +6697,22 @@
       ],
       "category": "neutral",
       "subtitle": "FBI OPEN UP"
+    },
+    {
+      "name": "boolets",
+      "files": [
+        "i-need-more-bullets-made-with-voicemod"
+      ],
+      "category": "neutral",
+      "subtitle": "I NEED MORE BOOLETS"
+    },
+    {
+      "name": "moreboolets",
+      "files": [
+        "i-need-more-bullets_-_320-kbps_-made-with-voicemod"
+      ],
+      "category": "neutral",
+      "subtitle": "I NEED MORE BOOLETS BIGGER WEAPONS"
     }
   ],
   "language_map": {
@@ -6105,23 +6731,24 @@
       "item.purechaos.big_spawn_egg": "Big Spawn Egg",
       "entity.purechaos.spongebob_boss": "Spongebob Boss",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.chaosmod.herobrine": "Herobrine",
-      "death.attack.vegan": "%1$s ate meat",
-      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "entity.purechaos.stalin": "Stalin",
-      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
+      "death.attack.vegan": "%1$s ate meat",
+      "entity.chaosmod.herobrine": "Herobrine",
       "item.purechaos.scratest.desc": "idk man stop asking me",
+      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
       "entity.purechaos.josip_pett": "Josip GRR pet",
       "item.purechaos.to": "CRNIDANIALBUM",
       "item.purechaos.fasttopass.desc": "GOTTA GO!",
-      "block.chaosmod.green_plant": "Green Plant",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
-      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "block.chaosmod.green_plant": "Green Plant",
       "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
+      "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
+      "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.purechaos.technoblade_spawn_egg": "Technoblade Spawn Egg",
       "subtitles.never_gonna_give_you_up": "",
       "subtitles.kilometer": "WHAT THE FUCK IS A KILOMETER",
@@ -6132,8 +6759,8 @@
       "item.purechaos.fallgays": "Fall Guys\u0027 Anthem",
       "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
+      "item.chaosmod.amugus_chestplate": "Amugus Body",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "subtitles.dudeshutt": "",
@@ -6147,8 +6774,8 @@
       "block.chaosmod.poland_block": "Poland Block",
       "subtitles.smack_my_ass": "",
       "item.purechaos.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
-      "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "item.purechaos.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
+      "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "key.chaosmod.summonsus": "Summonsus",
       "entity.chaosmod.big": "Big",
       "block.purechaos.plante": "Plante",
@@ -6159,12 +6786,12 @@
       "block.purechaos.green_plant": "Green Plant",
       "item.purechaos.iron_egg": "Iron Egg",
       "block.purechaos.pee_block": "Pee Block",
-      "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
-      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "entity.purechaos.josip_pet": "Josip Pet",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
+      "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "block.chaosmod.tombstone": "Tombstone",
-      "item.chaosmod.brazil": "Brazil Portal Igniter",
       "item.purechaos.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
+      "item.chaosmod.brazil": "Brazil Portal Igniter",
       "item.chaosmod.sus_sword": "Sus Sword",
       "block.purechaos.tombstone": "Tombstone",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
@@ -6202,6 +6829,7 @@
       "item.purechaos.potato_spuds": "Potato Spuds",
       "item.purechaos.fortnite_a_1": "Fortnite A 1",
       "item.purechaos.kentucky_fried_chicken": "KFC Chicken",
+      "item.purechaos.puffer_balloon": "Puffer on a String",
       "painting.purechaos.xmasterwoopainting.title": "Xmasterwoopainting",
       "biome.chaosmod.birch_forest": "Birch Forest",
       "item.chaosmod.baldi_minus_spawn_egg": "Baldi Minus Spawn Egg",
@@ -6315,6 +6943,8 @@
       "subtitles.gulp_gulp": "",
       "block.purechaos.oil": "Oil",
       "effect.purechaos.bleached": "Bleached Eyes",
+      "item.purechaos.infinite_fuel": "Infinite Fuel",
+      "subtitles.moreboolets": "I NEED MORE BOOLETS BIGGER WEAPONS",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "block.purechaos.sus_block": "Sus Block",
       "item.chaosmod.sus": "Sus Portal Birther",
@@ -6424,6 +7054,7 @@
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "item.purechaos.amugus_chestplate": "Amugus Body",
       "item.purechaos.xite": "Xite",
+      "block.purechaos.plantable_steve": "Plantable Steve",
       "entity.chaosmod.fbi": "FBI",
       "item.chaosmod.coca_cola": "Coca Cola",
       "block.purechaos.gatorade": "Gatorade",
@@ -6439,7 +7070,9 @@
       "entity.chaosmod.cupcakke": "Cupcakke",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.purechaos.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
+      "gui.purechaos.captcha_gui.answer": "Your Answer",
       "fluid.purechaos.pee": "Pee",
+      "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.purechaos.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
       "block.chaosmod.cyber_block": "Cyber Block",
@@ -6613,6 +7246,7 @@
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "item.chaosmod.cioao": "Ciao Portal Igniter",
+      "gui.purechaos.captcha_gui.label_please_do_a_captcha": "What is 2 + 2?",
       "item.chaosmod.baguette": "Baguette",
       "block.chaosmod.adidas_block": "Adidas Block",
       "item.chaosmod.dorito_nacho": "Nacho Doritos",
@@ -6693,9 +7327,11 @@
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.purechaos.cobble_fluid_bucket": "Bucket of Cobblestone",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
+      "subtitles.boolets": "I NEED MORE BOOLETS",
       "item.purechaos.beengot": "Beengot",
       "entity.chaosmod.amogus_3_crew_grin": "Amogus 3 (Crewmate, Green)",
       "item.purechaos.tinted_glass_bottle": "Tinted Glass Bottle",
+      "gui.purechaos.captcha_gui.button_submit": "Submit",
       "item.purechaos.coca_cola": "Coca Cola",
       "block.purechaos.cyber_block": "Cyber Block",
       "item.chaosmod.fasttopass": "FASTTOPASS",
@@ -6725,7 +7361,7 @@
   "workspaceSettings": {
     "modid": "purechaos",
     "modName": "Pure Chaos",
-    "version": "1.0.4",
+    "version": "1.20.1-1.0.0",
     "description": "Add a little bit of, spice.",
     "author": "VikkiVuk, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",
@@ -6736,7 +7372,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
     "credits": "We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!",
     "modElementsPackage": "xyz.aflkonstukt.purechaos",

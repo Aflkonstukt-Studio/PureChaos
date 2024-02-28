@@ -1,0 +1,9 @@
+{
+  "parent": "purechaos:custom/litnether",
+  "textures": {
+    "0": "purechaos:block/netherrack",
+    "1": "purechaos:block/fire",
+    "missing": "purechaos:block/fire",
+    "particle": "purechaos:item/netherrack"
+  }
+}

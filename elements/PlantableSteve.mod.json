@@ -1,0 +1,144 @@
+{
+  "_fv": 57,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "steve",
+    "textureBottom": "",
+    "customModelName": "stevemodel:default",
+    "itemTexture": "steveidk",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "growapable",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 10,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 4.0,
+        "my": 12.0,
+        "mz": 6.0,
+        "Mx": 12.0,
+        "My": 24.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 4.0,
+        "my": 24.0,
+        "mz": 4.0,
+        "Mx": 12.0,
+        "My": 32.0,
+        "Mz": 12.0,
+        "subtract": false
+      },
+      {
+        "mx": 3.5,
+        "my": 23.0,
+        "mz": 3.5,
+        "Mx": 12.5,
+        "My": 32.0,
+        "Mz": 12.5,
+        "subtract": false
+      },
+      {
+        "mx": 12.0,
+        "my": 12.0,
+        "mz": 6.0,
+        "Mx": 16.0,
+        "My": 24.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 12.0,
+        "mz": 6.0,
+        "Mx": 4.0,
+        "My": 24.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 7.9,
+        "my": 0.0,
+        "mz": 6.0,
+        "Mx": 11.9,
+        "My": 12.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 4.1,
+        "my": 0.0,
+        "mz": 6.0,
+        "Mx": 8.1,
+        "My": 12.0,
+        "Mz": 10.0,
+        "subtract": false
+      }
+    ],
+    "name": "Plantable Steve",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Chaostab"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": "CUSTOM:Obamium"
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "isBonemealable": false,
+    "frequencyOnChunks": 5,
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "generationType": "Flower",
+    "patchSize": 64,
+    "generateAtAnyHeight": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 57,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:InfiniteFuel"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 1.410065407E9
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

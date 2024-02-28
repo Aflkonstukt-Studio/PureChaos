@@ -1,11 +1,13 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -14,23 +16,30 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
+
+import io.netty.buffer.Unpooled;
 
 @Mod.EventBusSubscriber
 public class PlayerTickProcedure {
@@ -48,13 +57,31 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (PurechaosModVariables.WorldVariables.get(world).sanity <= 50) {
+		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 80) {
+			if (Mth.nextDouble(RandomSource.create(), 1, 3000) <= 5) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("CaptchaGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new CaptchaGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			}
+		}
+		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 50) {
 			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEMENTIA.get(), 600, 1, true, true));
 			}
 		}
-		if (PurechaosModVariables.WorldVariables.get(world).sanity <= 0) {
+		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 0) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.hurt(new DamageSource(_entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)) {
 					@Override
@@ -78,13 +105,23 @@ public class PlayerTickProcedure {
 		} else {
 			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 7) <= 2) {
-					if (!(PurechaosModVariables.WorldVariables.get(world).sanity >= 80)) {
-						PurechaosModVariables.WorldVariables.get(world).sanity = PurechaosModVariables.WorldVariables.get(world).sanity + Mth.nextDouble(RandomSource.create(), 1, 3);
-						PurechaosModVariables.WorldVariables.get(world).syncData(world);
+					if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity >= 80)) {
+						{
+							double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity + Mth.nextDouble(RandomSource.create(), 1, 3);
+							entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.sanity = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
 					}
 				} else {
-					PurechaosModVariables.WorldVariables.get(world).sanity = PurechaosModVariables.WorldVariables.get(world).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
-					PurechaosModVariables.WorldVariables.get(world).syncData(world);
+					{
+						double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
+						entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.sanity = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 				}
 			}
 		}

@@ -21,4 +21,10 @@ description="Add a little bit of, spice."
 
 
 
+[[dependencies.purechaos]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

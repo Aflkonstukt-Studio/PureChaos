@@ -18,6 +18,7 @@ import xyz.aflkonstukt.purechaos.block.RadiationLiquidBlock;
 import xyz.aflkonstukt.purechaos.block.PotatusBlock;
 import xyz.aflkonstukt.purechaos.block.PolandBlockBlock;
 import xyz.aflkonstukt.purechaos.block.PlanteBlock;
+import xyz.aflkonstukt.purechaos.block.PlantableSteveBlock;
 import xyz.aflkonstukt.purechaos.block.PeemensionPortalBlock;
 import xyz.aflkonstukt.purechaos.block.PeeBlockBlock;
 import xyz.aflkonstukt.purechaos.block.PeeBlock;
@@ -102,4 +103,5 @@ public class PurechaosModBlocks {
 	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
 	public static final RegistryObject<Block> AETHER_PORTAL = REGISTRY.register("aether_portal", () -> new AetherPortalBlock());
 	public static final RegistryObject<Block> JEB_BLOCK = REGISTRY.register("jeb_block", () -> new JebBlockBlock());
+	public static final RegistryObject<Block> PLANTABLE_STEVE = REGISTRY.register("plantable_steve", () -> new PlantableSteveBlock());
 }

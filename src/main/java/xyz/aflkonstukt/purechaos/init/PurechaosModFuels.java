@@ -20,5 +20,7 @@ public class PurechaosModFuels {
 			event.setBurnTime(1600);
 		else if (itemstack.getItem() == Blocks.DIORITE.asItem())
 			event.setBurnTime(1000);
+		else if (itemstack.getItem() == PurechaosModItems.INFINITE_FUEL.get())
+			event.setBurnTime(1410065407);
 	}
 }

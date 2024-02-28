@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ScratestItem extends RecordItem {
 	public ScratestItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:scratest")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:scratest")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1980);
 	}
 
 	@Override

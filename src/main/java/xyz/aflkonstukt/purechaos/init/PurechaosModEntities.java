@@ -18,6 +18,7 @@ import xyz.aflkonstukt.purechaos.entity.SplankEntity;
 import xyz.aflkonstukt.purechaos.entity.ShepEntity;
 import xyz.aflkonstukt.purechaos.entity.RockProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.RickAstleyEntity;
+import xyz.aflkonstukt.purechaos.entity.PensiveCubeEntity;
 import xyz.aflkonstukt.purechaos.entity.NerdEntity;
 import xyz.aflkonstukt.purechaos.entity.MuricaEntity;
 import xyz.aflkonstukt.purechaos.entity.MothOfAggrevationEntity;
@@ -233,6 +234,10 @@ public class PurechaosModEntities {
 	public static final RegistryObject<EntityType<JavelinLauncherProjectileEntity>> JAVELIN_LAUNCHER_PROJECTILE = register("projectile_javelin_launcher_projectile",
 			EntityType.Builder.<JavelinLauncherProjectileEntity>of(JavelinLauncherProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(JavelinLauncherProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PensiveCubeEntity>> PENSIVE_CUBE = register("pensive_cube",
+			EntityType.Builder.<PensiveCubeEntity>of(PensiveCubeEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PensiveCubeEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -282,6 +287,7 @@ public class PurechaosModEntities {
 			FBIEntity.init();
 			AmericanSoldatEntity.init();
 			MuricaEntity.init();
+			PensiveCubeEntity.init();
 		});
 	}
 
@@ -328,5 +334,6 @@ public class PurechaosModEntities {
 		event.put(FBI.get(), FBIEntity.createAttributes().build());
 		event.put(AMERICAN_SOLDAT.get(), AmericanSoldatEntity.createAttributes().build());
 		event.put(MURICA.get(), MuricaEntity.createAttributes().build());
+		event.put(PENSIVE_CUBE.get(), PensiveCubeEntity.createAttributes().build());
 	}
 }
