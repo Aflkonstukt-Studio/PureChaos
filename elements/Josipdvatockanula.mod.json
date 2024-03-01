@@ -6,6 +6,21 @@
     "mobLabel": "||[ ?o?i?T?G ]||",
     "mobModelName": "Biped",
     "mobModelTexture": "entity02redacted_form_2.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
     "modelLayers": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -58,6 +73,9 @@
     "xpAmount": 0,
     "waterMob": true,
     "breatheUnderwater": {
+      "fixedValue": true
+    },
+    "pushedByFluids": {
       "fixedValue": true
     },
     "flyingMob": true,
@@ -122,6 +140,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
       }
     ],
     "spawnInDungeons": false

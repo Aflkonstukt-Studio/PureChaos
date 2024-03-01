@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelblaze",
     "mobModelTexture": "blaze_texture.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
@@ -60,6 +72,9 @@
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -119,7 +134,14 @@
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "nether"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

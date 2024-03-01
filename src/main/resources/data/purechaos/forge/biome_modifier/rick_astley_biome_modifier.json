@@ -1,8 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "purechaos:ohio",
+    "purechaos:cyber_biome"
+  ],
   "spawners": {
     "type": "purechaos:rick_astley",
     "weight": 30,

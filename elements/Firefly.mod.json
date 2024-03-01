@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelfireflies",
     "mobModelTexture": "fireflies.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.1,
@@ -60,6 +72,9 @@
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -119,7 +134,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 6,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "mangrove_swamp"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

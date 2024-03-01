@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modellong_leg_chicken",
     "mobModelTexture": "long_leg_chicken.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
@@ -60,6 +72,9 @@
     "health": 10,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -119,7 +134,26 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:MoreExtremeHills"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:Desert"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

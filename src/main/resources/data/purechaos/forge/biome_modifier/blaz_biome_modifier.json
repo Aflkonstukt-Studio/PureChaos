@@ -1,8 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "nether_wastes",
+    "purechaos:cyber_biome"
+  ],
   "spawners": {
     "type": "purechaos:blaz",
     "weight": 40,

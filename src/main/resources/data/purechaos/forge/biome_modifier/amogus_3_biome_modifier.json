@@ -1,8 +1,13 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "purechaos:cyber_biome",
+    "purechaos:desert",
+    "purechaos:ekesmasterbait",
+    "purechaos:hell_but_overworld",
+    "purechaos:ohio",
+    "purechaos:susus"
+  ],
   "spawners": {
     "type": "purechaos:amogus_3",
     "weight": 60,

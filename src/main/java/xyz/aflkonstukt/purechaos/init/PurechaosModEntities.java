@@ -240,7 +240,7 @@ public class PurechaosModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GroggoEntity>> GROGGO = register("groggo",
-			EntityType.Builder.<GroggoEntity>of(GroggoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GroggoEntity::new)
+			EntityType.Builder.<GroggoEntity>of(GroggoEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GroggoEntity::new)
 
 					.sized(0.6f, 1.8f));
 

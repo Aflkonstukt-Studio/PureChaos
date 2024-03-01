@@ -1,8 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "purechaos:ohio",
   "spawners": {
     "type": "purechaos:irs",
     "weight": 20,

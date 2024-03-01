@@ -1,8 +1,12 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:cyber_biome",
+    "purechaos:more_extreme_hills",
+    "purechaos:ohio",
+    "purechaos:plains"
+  ],
   "spawners": {
     "type": "purechaos:ikea_desk",
     "weight": 40,

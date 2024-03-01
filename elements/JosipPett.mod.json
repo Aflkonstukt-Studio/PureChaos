@@ -6,8 +6,20 @@
     "mobLabel": "Evil Josip",
     "mobModelName": "Modeljosipmmarket",
     "mobModelTexture": "mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -66,6 +78,9 @@
     "health": 100,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -129,7 +144,17 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

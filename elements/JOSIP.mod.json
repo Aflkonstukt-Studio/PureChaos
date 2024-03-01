@@ -6,8 +6,20 @@
     "mobLabel": "Josip The Little Gay",
     "mobModelName": "Biped",
     "mobModelTexture": "422888e8f9292a0c.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -69,6 +81,9 @@
     "breatheUnderwater": {
       "fixedValue": true
     },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -125,7 +140,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

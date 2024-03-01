@@ -1,8 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "purechaos:cyber_biome",
+    "purechaos:desert",
+    "purechaos:hell_but_overworld"
+  ],
   "spawners": {
     "type": "purechaos:spongebob_boss",
     "weight": 10,

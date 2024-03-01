@@ -6,8 +6,20 @@
     "mobLabel": "Sussy Baka",
     "mobModelName": "Biped",
     "mobModelTexture": "among_us_biped.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
@@ -60,6 +72,9 @@
     "health": 69,
     "xpAmount": 420,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -122,7 +137,20 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

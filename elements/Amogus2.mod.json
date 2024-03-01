@@ -6,8 +6,20 @@
     "mobLabel": "amogus",
     "mobModelName": "Modelamiogyhus",
     "mobModelTexture": "aaas.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.6,
@@ -61,6 +73,9 @@
     "xpAmount": 0,
     "waterMob": true,
     "breatheUnderwater": {
+      "fixedValue": true
+    },
+    "pushedByFluids": {
       "fixedValue": true
     },
     "flyingMob": true,
@@ -119,7 +134,29 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      }
+    ],
     "spawnInDungeons": true
   }
 }

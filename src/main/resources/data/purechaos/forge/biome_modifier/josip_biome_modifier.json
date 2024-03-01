@@ -1,8 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": [
+    "purechaos:ekesmasterbait",
+    "purechaos:cyber_biome"
+  ],
   "spawners": {
     "type": "purechaos:josip",
     "weight": 15,
