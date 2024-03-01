@@ -47,42 +47,14 @@
         "max": 8
       },
       "bonus_rolls": {
-        "min": 2,
+        "min": 1,
         "max": 4
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "purechaos:fallgays",
-          "weight": 35,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 0,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "purechaos:sus_block",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 0,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "purechaos:comically_large_spoon",
-          "weight": 10,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -96,7 +68,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:spear",
-          "weight": 3,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -166,7 +138,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:ak_47",
-          "weight": 10,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -180,7 +152,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:use_in_emergencies",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -194,13 +166,139 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:water_cup",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 1,
                 "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:grimace_shake",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:brown",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:nokia_block",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:sssr",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:totem_of_dream",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:bleach",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:tlghd",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:puffer_balloon",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:adidas_block",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -212,11 +310,15 @@
         "min": 4,
         "max": 8
       },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 4
+      },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "purechaos:food_item_3",
-          "weight": 20,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -230,7 +332,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:food_item_2",
-          "weight": 20,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -244,7 +346,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:fooditem",
-          "weight": 20,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -258,7 +360,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:wood_dimension",
-          "weight": 10,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -272,7 +374,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:sus",
-          "weight": 10,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -286,7 +388,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:staravoda_bucket",
-          "weight": 10,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -307,6 +409,216 @@
               "count": {
                 "min": 15,
                 "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:testicle_on_stick",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:corruptstaff",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:half_golden_apple",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:kentucky_fried_chicken",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:dorito_nacho",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:beef",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:kentucky_fried_chicken_fries",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:death",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:xite",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:coca_cola",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:sussy_sus_stew",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:baguette",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:impostor_knife",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:almond_water",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:brazil_block",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
               }
             }
           ]

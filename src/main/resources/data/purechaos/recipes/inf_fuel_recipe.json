@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "b": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "result": {
+    "item": "purechaos:infinite_fuel",
+    "count": 1
+  }
+}

@@ -6345,6 +6345,48 @@
           }
         ]
       }
+    },
+    {
+      "name": "InfFuelRecipe",
+      "type": "recipe",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inf_fuel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/recipes/inf_fuel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PufferBalloonRecipe",
+      "type": "recipe",
+      "sortid": 355,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puffer_balloon_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/recipes/puffer_balloon_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Groggo",
+      "type": "livingentity",
+      "sortid": 356,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "groggo",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/GroggoEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/GroggoRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/groggo_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/groggo_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6352,7 +6394,7 @@
       "name": "sanity",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "100.0"
     },
     {
       "name": "bl1",
@@ -6731,22 +6773,23 @@
       "item.purechaos.big_spawn_egg": "Big Spawn Egg",
       "entity.purechaos.spongebob_boss": "Spongebob Boss",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.purechaos.stalin": "Stalin",
-      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
-      "death.attack.vegan": "%1$s ate meat",
       "entity.chaosmod.herobrine": "Herobrine",
-      "item.purechaos.scratest.desc": "idk man stop asking me",
+      "death.attack.vegan": "%1$s ate meat",
+      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
+      "entity.purechaos.stalin": "Stalin",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "item.purechaos.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
       "entity.purechaos.josip_pett": "Josip GRR pet",
       "item.purechaos.to": "CRNIDANIALBUM",
+      "entity.purechaos.groggo": "Greg",
       "item.purechaos.fasttopass.desc": "GOTTA GO!",
-      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
-      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.green_plant": "Green Plant",
-      "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
+      "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
+      "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
       "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.purechaos.technoblade_spawn_egg": "Technoblade Spawn Egg",
@@ -6759,8 +6802,8 @@
       "item.purechaos.fallgays": "Fall Guys\u0027 Anthem",
       "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
+      "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "subtitles.dudeshutt": "",
@@ -6774,8 +6817,8 @@
       "block.chaosmod.poland_block": "Poland Block",
       "subtitles.smack_my_ass": "",
       "item.purechaos.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
-      "item.purechaos.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
+      "item.purechaos.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
       "key.chaosmod.summonsus": "Summonsus",
       "entity.chaosmod.big": "Big",
       "block.purechaos.plante": "Plante",
@@ -7310,6 +7353,7 @@
       "item.purechaos.brazil": "Brazil Portal Igniter",
       "painting.purechaos.hmmmm_drip.title": "Hmmmm DRIP",
       "item.purechaos.kfce": "KFCE",
+      "item.purechaos.groggo_spawn_egg": "Greg Spawn Egg",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.aether": "Aether Portal Igniter",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",

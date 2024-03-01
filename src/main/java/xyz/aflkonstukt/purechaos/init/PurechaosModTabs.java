@@ -192,6 +192,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.PUFFER_BALLOON.get());
 				tabData.accept(PurechaosModItems.INFINITE_FUEL.get());
 				tabData.accept(PurechaosModBlocks.PLANTABLE_STEVE.get().asItem());
+				tabData.accept(PurechaosModItems.GROGGO_SPAWN_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

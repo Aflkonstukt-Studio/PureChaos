@@ -41,10 +41,10 @@
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -2.0,
-      "max": 2.0
+      "max": 0.0
     },
     "genHumidity": {
-      "min": -2.0,
+      "min": -1.0,
       "max": 2.0
     },
     "genContinentalness": {

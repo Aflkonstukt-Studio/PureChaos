@@ -29,6 +29,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.JOSIPRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.IkeaDeskRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.IRSRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.HerobrineRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.GroggoRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.FireflyRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.FBIRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.DreamRenderer;
@@ -108,5 +109,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.ROCK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.JAVELIN_LAUNCHER_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.GROGGO.get(), GroggoRenderer::new);
 	}
 }

@@ -291,6 +291,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> PUFFER_BALLOON = REGISTRY.register("puffer_balloon", () -> new PufferBalloonItem());
 	public static final RegistryObject<Item> INFINITE_FUEL = REGISTRY.register("infinite_fuel", () -> new InfiniteFuelItem());
 	public static final RegistryObject<Item> PLANTABLE_STEVE = block(PurechaosModBlocks.PLANTABLE_STEVE);
+	public static final RegistryObject<Item> GROGGO_SPAWN_EGG = REGISTRY.register("groggo_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.GROGGO, -16724992, -6737152, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

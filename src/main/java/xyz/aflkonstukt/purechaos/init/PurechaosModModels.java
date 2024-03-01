@@ -19,6 +19,7 @@ import xyz.aflkonstukt.purechaos.client.model.Modellong_leg_chicken;
 import xyz.aflkonstukt.purechaos.client.model.Modellegs;
 import xyz.aflkonstukt.purechaos.client.model.Modeljosipmmarket;
 import xyz.aflkonstukt.purechaos.client.model.Modelikea_desk;
+import xyz.aflkonstukt.purechaos.client.model.Modelgroggo;
 import xyz.aflkonstukt.purechaos.client.model.Modelfireflies;
 import xyz.aflkonstukt.purechaos.client.model.Modeldog;
 import xyz.aflkonstukt.purechaos.client.model.Modelcustom_model;
@@ -50,6 +51,7 @@ public class PurechaosModModels {
 		event.registerLayerDefinition(Modelbaldi.LAYER_LOCATION, Modelbaldi::createBodyLayer);
 		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);
 		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
+		event.registerLayerDefinition(Modelgroggo.LAYER_LOCATION, Modelgroggo::createBodyLayer);
 		event.registerLayerDefinition(Modelspongebob_boss.LAYER_LOCATION, Modelspongebob_boss::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);

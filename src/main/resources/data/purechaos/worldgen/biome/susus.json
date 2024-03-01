@@ -34,104 +34,7 @@
     "water_fog_color": -16711936
   },
   "spawners": {
-    "monster": [
-      {
-        "type": "purechaos:aentity",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:amogus_2",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:amogus_3",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:among_us",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:blaz",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:cursed_dog",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:ikea_desk",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josip",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josipdvatockanula",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "purechaos:josip_pet",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josip_pett",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:moth_of_aggrevation",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:shep",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:splank",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:trident",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:vikkivuk",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      }
-    ],
+    "monster": [],
     "creature": [],
     "ambient": [],
     "axolotls": [],
@@ -141,42 +44,17 @@
     "misc": []
   },
   "spawn_costs": {},
-  "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
-  },
+  "carvers": {},
   "features": [
     [],
-    [
-      "minecraft:lake_lava_underground"
-    ],
+    [],
     [],
     [],
     [
       "minecraft:desert_well"
     ],
     [],
-    [
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma"
-    ],
+    [],
     [],
     [],
     [

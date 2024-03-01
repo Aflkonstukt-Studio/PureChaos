@@ -51,41 +51,41 @@ public class PurechaosModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.6f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.6f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "birch_forest")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "birch_forest")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.3f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "desert")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.3f, 0.2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "desert")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.5f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(0.0f),
-							Climate.Parameter.span(-0.3f, 1.0148638066f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.5f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(1.0f),
-							Climate.Parameter.span(-0.3f, 1.0148638066f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.3f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.3f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.2f, 1.1324942016f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "more_extreme_hills")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 2f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.2f, 1.1324942016f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "more_extreme_hills")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.4f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "plains")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-1f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(0f, 1.5f), Climate.Parameter.span(-1f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.4f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "plains")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.span(0.2f, 0.9f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.span(0.2f, 0.9f),
+							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.6f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.span(0.2f, 0.9f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
@@ -129,14 +129,22 @@ public class PurechaosModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 1f), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-2f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.1f, 0.6f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.6f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.6f), Climate.Parameter.span(-1f, 0.7f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.span(-0.5f, 1.3f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-0.5f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(0.0f),
+							Climate.Parameter.span(-0.3f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.2f, 1.8f), Climate.Parameter.point(1.0f),
+							Climate.Parameter.span(-0.3f, 0.5f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -149,8 +157,12 @@ public class PurechaosModBiomes {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState(),
 								Blocks.NETHERRACK.defaultBlockState()));
+						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "susus")), Blocks.GRASS_BLOCK.defaultBlockState(), PurechaosModBlocks.SUS_BLOCK.get().defaultBlockState(),
+								Blocks.OAK_PLANKS.defaultBlockState()));
 						surfaceRules.add(2, anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.COBBLESTONE.defaultBlockState(),
 								Blocks.SAND.defaultBlockState()));
+						surfaceRules.add(2,
+								anySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("purechaos", "ohio")), Blocks.PODZOL.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
 								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());

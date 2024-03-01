@@ -34,6 +34,7 @@ import xyz.aflkonstukt.purechaos.entity.JOSIPEntity;
 import xyz.aflkonstukt.purechaos.entity.IkeaDeskEntity;
 import xyz.aflkonstukt.purechaos.entity.IRSEntity;
 import xyz.aflkonstukt.purechaos.entity.HerobrineEntity;
+import xyz.aflkonstukt.purechaos.entity.GroggoEntity;
 import xyz.aflkonstukt.purechaos.entity.FireflyEntity;
 import xyz.aflkonstukt.purechaos.entity.FBIEntity;
 import xyz.aflkonstukt.purechaos.entity.DreamEntity;
@@ -238,6 +239,10 @@ public class PurechaosModEntities {
 			EntityType.Builder.<PensiveCubeEntity>of(PensiveCubeEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PensiveCubeEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GroggoEntity>> GROGGO = register("groggo",
+			EntityType.Builder.<GroggoEntity>of(GroggoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GroggoEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -288,6 +293,7 @@ public class PurechaosModEntities {
 			AmericanSoldatEntity.init();
 			MuricaEntity.init();
 			PensiveCubeEntity.init();
+			GroggoEntity.init();
 		});
 	}
 
@@ -335,5 +341,6 @@ public class PurechaosModEntities {
 		event.put(AMERICAN_SOLDAT.get(), AmericanSoldatEntity.createAttributes().build());
 		event.put(MURICA.get(), MuricaEntity.createAttributes().build());
 		event.put(PENSIVE_CUBE.get(), PensiveCubeEntity.createAttributes().build());
+		event.put(GROGGO.get(), GroggoEntity.createAttributes().build());
 	}
 }

@@ -9,12 +9,12 @@
           "biome": "purechaos:hell_but_overworld",
           "parameters": {
             "temperature": [
-              -2,
+              0,
               2
             ],
             "humidity": [
               -2,
-              0.5
+              1
             ],
             "continentalness": [
               -0.09,
@@ -36,11 +36,11 @@
           "biome": "purechaos:susus",
           "parameters": {
             "temperature": [
-              -0.2,
-              2
+              0,
+              1
             ],
             "humidity": [
-              -1,
+              -0.2,
               2
             ],
             "continentalness": [

@@ -117,7 +117,7 @@ public class PurechaosModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double sanity = 0;
+		public double sanity = 100.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)

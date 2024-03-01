@@ -22,98 +22,7 @@
     "water_fog_color": -52429
   },
   "spawners": {
-    "monster": [
-      {
-        "type": "purechaos:aentity",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:amogus_2",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:amogus_3",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:among_us",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:blaz",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:cursed_dog",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:ikea_desk",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josip",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josip_pet",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:moth_of_aggrevation",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:shep",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:splank",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:trident",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:vikkivuk",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "purechaos:josip_pett",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      }
-    ],
+    "monster": [],
     "creature": [],
     "ambient": [],
     "axolotls": [],
@@ -128,6 +37,8 @@
     [],
     [],
     [
+      "minecraft:iceberg_packed",
+      "minecraft:iceberg_blue",
       "minecraft:amethyst_geode",
       "minecraft:large_dripstone",
       "minecraft:forest_rock"
@@ -142,14 +53,38 @@
     [],
     [
       "purechaos:ekesmasterbait_tree",
+      "minecraft:forest_flowers",
+      "minecraft:patch_large_fern",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_taiga_2",
+      "minecraft:brown_mushroom_taiga",
+      "minecraft:red_mushroom_taiga",
       "minecraft:patch_grass_forest",
+      "minecraft:bamboo_light",
+      "minecraft:trees_jungle",
+      "minecraft:patch_dead_bush_2",
+      "minecraft:trees_swamp",
+      "minecraft:flower_swamp",
+      "minecraft:patch_grass_normal",
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_waterlily",
+      "minecraft:brown_mushroom_swamp",
+      "minecraft:red_mushroom_swamp",
+      "minecraft:trees_savanna",
+      "minecraft:patch_grass_jungle",
       "minecraft:lush_caves_ceiling_vegetation",
       "minecraft:cave_vines",
       "minecraft:lush_caves_clay",
       "minecraft:lush_caves_vegetation",
       "minecraft:rooted_azalea_tree",
       "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:classic_vines_cave_feature",
+      "minecraft:patch_grass_plain",
+      "minecraft:flower_meadow",
+      "minecraft:trees_meadow",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:seagrass_simple"
     ],
     [
       "minecraft:freeze_top_layer"
