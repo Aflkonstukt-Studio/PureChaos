@@ -31,18 +31,18 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModVariables {
-	public static boolean bl1 = false;
-	public static boolean bl2 = false;
-	public static boolean bl3 = false;
-	public static boolean bl4 = false;
-	public static boolean bl5 = false;
-	public static boolean bl6 = false;
-	public static boolean bl7 = false;
-	public static boolean bl8 = false;
 	public static boolean bl9 = false;
-	public static boolean bl10 = false;
-	public static boolean bl11 = false;
+	public static boolean bl8 = false;
+	public static boolean bl7 = false;
+	public static boolean bl6 = false;
+	public static boolean bl5 = false;
+	public static boolean bl4 = false;
+	public static boolean bl3 = false;
+	public static boolean bl2 = false;
 	public static boolean bl12 = false;
+	public static boolean bl11 = false;
+	public static boolean bl10 = false;
+	public static boolean bl1 = false;
 	public static boolean bl = false;
 
 	@SubscribeEvent
@@ -82,6 +82,7 @@ public class PurechaosModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.sanity = original.sanity;
 			if (!event.isWasDeath()) {
+				clone.wrong_answers = original.wrong_answers;
 			}
 		}
 	}
@@ -117,6 +118,7 @@ public class PurechaosModVariables {
 	}
 
 	public static class PlayerVariables {
+		public double wrong_answers = 0.0;
 		public double sanity = 100.0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -126,12 +128,14 @@ public class PurechaosModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
+			nbt.putDouble("wrong_answers", wrong_answers);
 			nbt.putDouble("sanity", sanity);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
+			wrong_answers = nbt.getDouble("wrong_answers");
 			sanity = nbt.getDouble("sanity");
 		}
 	}
@@ -157,6 +161,7 @@ public class PurechaosModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					variables.wrong_answers = message.data.wrong_answers;
 					variables.sanity = message.data.sanity;
 				}
 			});

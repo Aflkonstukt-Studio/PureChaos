@@ -1,16 +1,11 @@
 package xyz.aflkonstukt.purechaos;
 
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.fml.common.Mod;
-import org.jetbrains.annotations.NotNull;
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 
-import java.util.Objects;
 import java.util.Random;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -18,7 +13,6 @@ public class CaptchaCode {
     private static ChallengeType type;
     private static String challengeText;
     private static String correctAnswer;
-    private static int wrongAnswers = 0;
     private static boolean challengeInProgress = false;
     private static boolean captchaInProgress = false;
 
@@ -80,24 +74,34 @@ public class CaptchaCode {
             return false;
 
         challengeInProgress = true; // Set the flag
-
         boolean correct = userAnswer.equals(correctAnswer);
+        int wrongAnswers = (int) (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).wrong_answers;
         if (!correct) {
-            wrongAnswers++;
-            _player.displayClientMessage(Component.nullToEmpty("Incorrect. " + (4 - wrongAnswers) + " attempt" + ((4 - wrongAnswers) != 1 ? "s" : "") +  " remaining."), true);
+            double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).wrong_answers + 1;
+            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                capability.wrong_answers = _setval;
+                capability.syncPlayerVariables(entity);
+            });
+            _player.displayClientMessage(Component.nullToEmpty("Incorrect. " + (3 - wrongAnswers) + " attempt" + ((3 - wrongAnswers) != 1 ? "s" : "") +  " remaining."), true);
             challengeInProgress = false; // Reset the flag
         } else {
             captchaInProgress = false;
-            _player.closeContainer();
             challengeInProgress = false; // Reset the flag
-            wrongAnswers = 0; // Reset the counter
+            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                capability.wrong_answers = 0;
+                capability.syncPlayerVariables(entity);
+            });
+            _player.closeContainer();
         }
 
-        if (wrongAnswers >= 3) {
+        if (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables()).wrong_answers >= 4) {
             captchaInProgress = false;
-            _player.kill();
-            wrongAnswers = 0;
+            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+                capability.wrong_answers = 0;
+                capability.syncPlayerVariables(entity);
+            });
             challengeInProgress = false; // Reset the flag
+            _player.kill();
         }
 
         return true;
