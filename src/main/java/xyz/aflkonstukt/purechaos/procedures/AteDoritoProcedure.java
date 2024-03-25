@@ -26,7 +26,7 @@ public class AteDoritoProcedure {
 			}
 		}
 		PurechaosModVariables.show_nikocado = true;
-		PurechaosMod.queueServerWork(40, () -> {
+		PurechaosMod.queueServerWork(30, () -> {
 			PurechaosModVariables.show_nikocado = false;
 		});
 	}

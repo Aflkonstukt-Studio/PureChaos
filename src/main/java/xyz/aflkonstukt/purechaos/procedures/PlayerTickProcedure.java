@@ -36,6 +36,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
@@ -172,6 +173,11 @@ public class PlayerTickProcedure {
 				if (entityToSpawn != null) {
 					entityToSpawn.setDeltaMovement(0, 0, 0);
 				}
+			}
+		}
+		if (world.isClientSide() && entity instanceof Player) {
+			if (Minecraft.getInstance().gameRenderer.currentEffect() != null && !(entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+				Minecraft.getInstance().gameRenderer.shutdownEffect();
 			}
 		}
 	}

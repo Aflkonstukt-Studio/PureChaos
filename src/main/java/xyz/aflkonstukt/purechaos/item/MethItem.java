@@ -1,7 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.procedures.HighProcedure;
+import xyz.aflkonstukt.purechaos.procedures.MethPlayerFinishesUsingItemProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -36,7 +36,7 @@ public class MethItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		HighProcedure.execute(world, entity);
+		MethPlayerFinishesUsingItemProcedure.execute(world, entity);
 		return retval;
 	}
 }
