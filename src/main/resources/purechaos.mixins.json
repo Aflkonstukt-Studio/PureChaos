@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.aflkonstukt.purechaos.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "IconsMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "purechaos-forge-refmap.json"
+}

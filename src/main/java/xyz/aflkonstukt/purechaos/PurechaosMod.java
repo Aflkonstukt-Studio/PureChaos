@@ -13,6 +13,16 @@
  */
 package xyz.aflkonstukt.purechaos;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.TitleScreen;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.ScreenEvent;
+import net.minecraftforge.fml.IExtensionPoint;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import xyz.aflkonstukt.purechaos.world.features.StructureFeature;
 import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModSounds;
@@ -45,6 +55,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import javax.json.JsonObject;
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -62,6 +73,9 @@ public class PurechaosMod {
 	public PurechaosMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class, () -> new IExtensionPoint.DisplayTest(() -> IExtensionPoint.DisplayTest.IGNORESERVERONLY, (a, b) -> true));
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
+
 		PurechaosModSounds.REGISTRY.register(bus);
 		PurechaosModBlocks.REGISTRY.register(bus);
 		PurechaosModBlockEntities.REGISTRY.register(bus);
@@ -93,11 +107,28 @@ public class PurechaosMod {
 	private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
 	public static void queueServerWork(int tick, Runnable action) {
-		workQueue.add(new AbstractMap.SimpleEntry(action, tick));
+		workQueue.add(new AbstractMap.SimpleEntry<>(action, tick));
+	}
+
+	@SubscribeEvent
+	public void onClientSetup(final FMLClientSetupEvent e) {
+		e.enqueueWork(this::updateTitle);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	@SubscribeEvent
+	public void screenEvent(ScreenEvent event) {
+		this.updateTitle();
+	}
+
+	private void updateTitle() {
+		Minecraft.getInstance().getWindow().setTitle("Pure Chaos");
 	}
 
 	@SubscribeEvent
 	public void tick(TickEvent.ServerTickEvent event) {
+		Minecraft.getInstance().getWindow().setTitle("Pure Chaos");
+
 		if (event.phase == TickEvent.Phase.END) {
 			List<AbstractMap.SimpleEntry<Runnable, Integer>> actions = new ArrayList<>();
 			workQueue.forEach(work -> {

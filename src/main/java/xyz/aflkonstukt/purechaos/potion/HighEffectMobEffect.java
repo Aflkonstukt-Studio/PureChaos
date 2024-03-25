@@ -21,13 +21,13 @@ public class HighEffectMobEffect extends MobEffect {
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		HighProcedure.execute(entity);
+		HighProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		HighEffectEffectExpiresProcedure.execute(entity);
+		HighEffectEffectExpiresProcedure.execute(entity.level(), entity);
 	}
 
 	@Override

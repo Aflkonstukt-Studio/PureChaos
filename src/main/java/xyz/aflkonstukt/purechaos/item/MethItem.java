@@ -36,7 +36,7 @@ public class MethItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		HighProcedure.execute(entity);
+		HighProcedure.execute(world, entity);
 		return retval;
 	}
 }

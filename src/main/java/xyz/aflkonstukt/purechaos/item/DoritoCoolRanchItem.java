@@ -31,7 +31,7 @@ public class DoritoCoolRanchItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		AteDoritoProcedure.execute(entity);
+		AteDoritoProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

@@ -44,6 +44,7 @@ public class PurechaosModVariables {
 	public static boolean bl10 = false;
 	public static boolean bl1 = false;
 	public static boolean bl = false;
+	public static boolean show_nikocado = false;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

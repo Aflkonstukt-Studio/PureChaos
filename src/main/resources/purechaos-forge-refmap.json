@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "xyz/aflkonstukt/purechaos/mixins/IconsMixin": {
+      "getIcons": "Lcom/mojang/blaze3d/platform/IconSet;m_280284_(Lnet/minecraft/server/packs/PackResources;)Ljava/util/List;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "xyz/aflkonstukt/purechaos/mixins/IconsMixin": {
+        "getIcons": "Lcom/mojang/blaze3d/platform/IconSet;m_280284_(Lnet/minecraft/server/packs/PackResources;)Ljava/util/List;"
+      }
+    }
+  }
+}

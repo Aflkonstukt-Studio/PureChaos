@@ -1,0 +1,36 @@
+{
+  "targets": [
+    "wobble",
+    "blobs",
+    "deconverge", 
+    "bumpy",
+    "swap4"
+  ],
+  "passes": [
+    {
+      "name": "wobble",
+      "intarget": "minecraft:main",
+      "outtarget": "wobble"
+    },
+    {
+      "name": "blobs",
+      "intarget": "wobble",
+      "outtarget": "blobs"
+    },
+    {
+      "name": "deconverge",
+      "intarget": "blobs",
+      "outtarget": "deconverge"
+    },
+    {
+      "name": "bumpy",
+      "intarget": "deconverge",
+      "outtarget": "bumpy" 
+    },
+    {
+      "name": "blit",
+      "intarget": "bumpy",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

@@ -20,6 +20,12 @@ description="Add a little bit of, spice."
     side="BOTH"
 
 
+[[dependencies.purechaos]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.purechaos]]
     modId="geckolib"
