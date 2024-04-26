@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "purechaos:blocks/jeb_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:jeb_block"
+        }
+      ]
+    }
+  ]
+}

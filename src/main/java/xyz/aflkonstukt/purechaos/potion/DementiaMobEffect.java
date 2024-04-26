@@ -16,11 +16,6 @@ public class DementiaMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.purechaos.dementia";
-	}
-
-	@Override
 	public boolean isInstantenous() {
 		return true;
 	}

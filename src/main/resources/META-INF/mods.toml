@@ -12,13 +12,15 @@ credits="We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJi
 authors="VikkiVuk, JosipTLG, X Master Woo"
 description="Add a little bit of, spice."
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.purechaos]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
-
 
 [[dependencies.purechaos]]
     modId="geckolib"

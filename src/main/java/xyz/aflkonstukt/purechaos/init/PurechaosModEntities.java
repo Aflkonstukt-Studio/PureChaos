@@ -110,14 +110,6 @@ public class PurechaosModEntities {
 			EntityType.Builder.<MothOfAggrevationEntity>of(MothOfAggrevationEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MothOfAggrevationEntity::new)
 
 					.sized(0.3f, 0.6f));
-	public static final RegistryObject<EntityType<CursedDogEntity>> CURSED_DOG = register("cursed_dog",
-			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedDogEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BlazEntity>> BLAZ = register("blaz",
-			EntityType.Builder.<BlazEntity>of(BlazEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlazEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ShepEntity>> SHEP = register("shep",
 			EntityType.Builder.<ShepEntity>of(ShepEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShepEntity::new)
 
@@ -126,14 +118,22 @@ public class PurechaosModEntities {
 			EntityType.Builder.<VikkivukEntity>of(VikkivukEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(VikkivukEntity::new)
 
 					.sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
-			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
+	public static final RegistryObject<EntityType<BlazEntity>> BLAZ = register("blaz",
+			EntityType.Builder.<BlazEntity>of(BlazEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlazEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CursedDogEntity>> CURSED_DOG = register("cursed_dog",
+			EntityType.Builder.<CursedDogEntity>of(CursedDogEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CursedDogEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WalterWightEntity>> WALTER_WIGHT = register("walter_wight",
+			EntityType.Builder.<WalterWightEntity>of(WalterWightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WalterWightEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<AdolfHitlerEntity>> ADOLF_HITLER = register("adolf_hitler", EntityType.Builder.<AdolfHitlerEntity>of(AdolfHitlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(AdolfHitlerEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WalterWightEntity>> WALTER_WIGHT = register("walter_wight",
-			EntityType.Builder.<WalterWightEntity>of(WalterWightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WalterWightEntity::new)
+	public static final RegistryObject<EntityType<DreamEntity>> DREAM = register("dream",
+			EntityType.Builder.<DreamEntity>of(DreamEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DreamEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<CodButBetterEntity>> COD_BUT_BETTER = register("cod_but_better",
@@ -166,14 +166,14 @@ public class PurechaosModEntities {
 			EntityType.Builder.<StroaterEntity>of(StroaterEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StroaterEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<AMOGUS3BLUEntity>> AMOGUS_3_BLU = register("amogus_3_blu", EntityType.Builder.<AMOGUS3BLUEntity>of(AMOGUS3BLUEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3BLUEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<AMOGUS3GRINEntity>> AMOGUS_3_GRIN = register("amogus_3_grin", EntityType.Builder.<AMOGUS3GRINEntity>of(AMOGUS3GRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3GRINEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpongebobBossEntity>> SPONGEBOB_BOSS = register("spongebob_boss",
 			EntityType.Builder.<SpongebobBossEntity>of(SpongebobBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(SpongebobBossEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AMOGUS3BLUEntity>> AMOGUS_3_BLU = register("amogus_3_blu", EntityType.Builder.<AMOGUS3BLUEntity>of(AMOGUS3BLUEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3BLUEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AMOGUS3GRINEntity>> AMOGUS_3_GRIN = register("amogus_3_grin", EntityType.Builder.<AMOGUS3GRINEntity>of(AMOGUS3GRINEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(AMOGUS3GRINEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TheRockEntity>> THE_ROCK = register("the_rock",
 			EntityType.Builder.<TheRockEntity>of(TheRockEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheRockEntity::new)
 
@@ -216,23 +216,23 @@ public class PurechaosModEntities {
 			EntityType.Builder.<MuricaEntity>of(MuricaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MuricaEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DeekProjectileEntity>> DEEK_PROJECTILE = register("deek_projectile",
+			EntityType.Builder.<DeekProjectileEntity>of(DeekProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(DeekProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity>> KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU_PROJECTILE = register(
-			"projectile_kondomnepitajzastoovoradimalispoileralertonimarupu_projectile",
+			"kondomnepitajzastoovoradimalispoileralertonimarupu_projectile",
 			EntityType.Builder.<KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity>of(KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<DeekProjectileEntity>> DEEK_PROJECTILE = register("projectile_deek_projectile",
-			EntityType.Builder.<DeekProjectileEntity>of(DeekProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(DeekProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<WaterCupProjectileEntity>> WATER_CUP_PROJECTILE = register("projectile_water_cup_projectile", EntityType.Builder.<WaterCupProjectileEntity>of(WaterCupProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<WaterCupProjectileEntity>> WATER_CUP_PROJECTILE = register("water_cup_projectile", EntityType.Builder.<WaterCupProjectileEntity>of(WaterCupProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(WaterCupProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<JosipRangeProjectileEntity>> JOSIP_RANGE_PROJECTILE = register("projectile_josip_range_projectile", EntityType.Builder.<JosipRangeProjectileEntity>of(JosipRangeProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<JosipRangeProjectileEntity>> JOSIP_RANGE_PROJECTILE = register("josip_range_projectile", EntityType.Builder.<JosipRangeProjectileEntity>of(JosipRangeProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(JosipRangeProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<AK47ProjectileEntity>> AK_47_PROJECTILE = register("projectile_ak_47_projectile",
+	public static final RegistryObject<EntityType<AK47ProjectileEntity>> AK_47_PROJECTILE = register("ak_47_projectile",
 			EntityType.Builder.<AK47ProjectileEntity>of(AK47ProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(AK47ProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<AmogusGunProjectileEntity>> AMOGUS_GUN_PROJECTILE = register("projectile_amogus_gun_projectile", EntityType.Builder.<AmogusGunProjectileEntity>of(AmogusGunProjectileEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<AmogusGunProjectileEntity>> AMOGUS_GUN_PROJECTILE = register("amogus_gun_projectile", EntityType.Builder.<AmogusGunProjectileEntity>of(AmogusGunProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(AmogusGunProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RockProjectileEntity>> ROCK_PROJECTILE = register("projectile_rock_projectile",
+	public static final RegistryObject<EntityType<RockProjectileEntity>> ROCK_PROJECTILE = register("rock_projectile",
 			EntityType.Builder.<RockProjectileEntity>of(RockProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(RockProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<JavelinLauncherProjectileEntity>> JAVELIN_LAUNCHER_PROJECTILE = register("projectile_javelin_launcher_projectile",
+	public static final RegistryObject<EntityType<JavelinLauncherProjectileEntity>> JAVELIN_LAUNCHER_PROJECTILE = register("javelin_launcher_projectile",
 			EntityType.Builder.<JavelinLauncherProjectileEntity>of(JavelinLauncherProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(JavelinLauncherProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PensiveCubeEntity>> PENSIVE_CUBE = register("pensive_cube",
@@ -263,13 +263,13 @@ public class PurechaosModEntities {
 			JosipPetEntity.init();
 			JosipPettEntity.init();
 			MothOfAggrevationEntity.init();
-			CursedDogEntity.init();
-			BlazEntity.init();
 			ShepEntity.init();
 			VikkivukEntity.init();
-			DreamEntity.init();
-			AdolfHitlerEntity.init();
+			BlazEntity.init();
+			CursedDogEntity.init();
 			WalterWightEntity.init();
+			AdolfHitlerEntity.init();
+			DreamEntity.init();
 			CodButBetterEntity.init();
 			StalinEntity.init();
 			RickAstleyEntity.init();
@@ -278,9 +278,9 @@ public class PurechaosModEntities {
 			FireflyEntity.init();
 			TPoseEntityEntity.init();
 			StroaterEntity.init();
+			SpongebobBossEntity.init();
 			AMOGUS3BLUEntity.init();
 			AMOGUS3GRINEntity.init();
-			SpongebobBossEntity.init();
 			TheRockEntity.init();
 			BigEntity.init();
 			TechnobladeEntity.init();
@@ -311,13 +311,13 @@ public class PurechaosModEntities {
 		event.put(JOSIP_PET.get(), JosipPetEntity.createAttributes().build());
 		event.put(JOSIP_PETT.get(), JosipPettEntity.createAttributes().build());
 		event.put(MOTH_OF_AGGREVATION.get(), MothOfAggrevationEntity.createAttributes().build());
-		event.put(CURSED_DOG.get(), CursedDogEntity.createAttributes().build());
-		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
 		event.put(SHEP.get(), ShepEntity.createAttributes().build());
 		event.put(VIKKIVUK.get(), VikkivukEntity.createAttributes().build());
-		event.put(DREAM.get(), DreamEntity.createAttributes().build());
-		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
+		event.put(BLAZ.get(), BlazEntity.createAttributes().build());
+		event.put(CURSED_DOG.get(), CursedDogEntity.createAttributes().build());
 		event.put(WALTER_WIGHT.get(), WalterWightEntity.createAttributes().build());
+		event.put(ADOLF_HITLER.get(), AdolfHitlerEntity.createAttributes().build());
+		event.put(DREAM.get(), DreamEntity.createAttributes().build());
 		event.put(COD_BUT_BETTER.get(), CodButBetterEntity.createAttributes().build());
 		event.put(STALIN.get(), StalinEntity.createAttributes().build());
 		event.put(RICK_ASTLEY.get(), RickAstleyEntity.createAttributes().build());
@@ -326,9 +326,9 @@ public class PurechaosModEntities {
 		event.put(FIREFLY.get(), FireflyEntity.createAttributes().build());
 		event.put(T_POSE_ENTITY.get(), TPoseEntityEntity.createAttributes().build());
 		event.put(STROATER.get(), StroaterEntity.createAttributes().build());
+		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
 		event.put(AMOGUS_3_BLU.get(), AMOGUS3BLUEntity.createAttributes().build());
 		event.put(AMOGUS_3_GRIN.get(), AMOGUS3GRINEntity.createAttributes().build());
-		event.put(SPONGEBOB_BOSS.get(), SpongebobBossEntity.createAttributes().build());
 		event.put(THE_ROCK.get(), TheRockEntity.createAttributes().build());
 		event.put(BIG.get(), BigEntity.createAttributes().build());
 		event.put(TECHNOBLADE.get(), TechnobladeEntity.createAttributes().build());

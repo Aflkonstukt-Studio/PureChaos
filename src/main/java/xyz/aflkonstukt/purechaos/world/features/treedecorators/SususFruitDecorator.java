@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
@@ -24,7 +26,7 @@ public class SususFruitDecorator extends CocoaDecorator {
 	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
 
 	@SubscribeEvent
-	public static void registerPointOfInterest(RegisterEvent event) {
+	public static void registerTreeDecorator(RegisterEvent event) {
 		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("susus_tree_fruit_decorator", DECORATOR_TYPE));
 	}
 
@@ -51,11 +53,20 @@ public class SususFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (context.isAir(blockpos)) {
-							context.setBlock(blockpos, Blocks.LIGHT.defaultBlockState());
+							context.setBlock(blockpos, oriented(Blocks.LIGHT.defaultBlockState(), direction1));
 						}
 					}
 				}
 			});
 		}
+	}
+
+	private static BlockState oriented(BlockState blockstate, Direction direction) {
+		return switch (direction) {
+			case SOUTH -> blockstate.getBlock().rotate(blockstate, Rotation.CLOCKWISE_180);
+			case EAST -> blockstate.getBlock().rotate(blockstate, Rotation.CLOCKWISE_90);
+			case WEST -> blockstate.getBlock().rotate(blockstate, Rotation.COUNTERCLOCKWISE_90);
+			default -> blockstate;
+		};
 	}
 }

@@ -26,8 +26,8 @@ public class LavaBottleItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("drink for insta-death"));
 	}
 
@@ -37,7 +37,7 @@ public class LavaBottleItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		LavaBottlePlayerFinishesUsingItemProcedure.execute(entity);
+		LavaBottlePlayerFinishesUsingItemProcedure.execute(world, entity);
 		return retval;
 	}
 }

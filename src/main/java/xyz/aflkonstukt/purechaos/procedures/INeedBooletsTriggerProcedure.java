@@ -45,7 +45,7 @@ public class INeedBooletsTriggerProcedure {
 				}
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PurechaosModItems.BULLET.get());
+				ItemStack _setstack = new ItemStack(PurechaosModItems.BULLET.get()).copy();
 				_setstack.setCount(90);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

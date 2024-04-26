@@ -4,9 +4,7 @@ package xyz.aflkonstukt.purechaos.item;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -15,9 +13,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 public abstract class AmugusItem extends ArmorItem {
 	public AmugusItem(ArmorItem.Type type, Item.Properties properties) {
@@ -70,11 +65,6 @@ public abstract class AmugusItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "purechaos:textures/models/armor/dgfdgfdgfdgfdgdgfamoguws_layer_1.png";
 		}
@@ -83,11 +73,6 @@ public abstract class AmugusItem extends ArmorItem {
 	public static class Chestplate extends AmugusItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override
@@ -102,11 +87,6 @@ public abstract class AmugusItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "purechaos:textures/models/armor/dgfdgfdgfdgfdgdgfamoguws_layer_2.png";
 		}
@@ -115,11 +95,6 @@ public abstract class AmugusItem extends ArmorItem {
 	public static class Boots extends AmugusItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

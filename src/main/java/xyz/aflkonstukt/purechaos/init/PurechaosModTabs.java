@@ -197,21 +197,14 @@ public class PurechaosModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(PurechaosModItems.ADIDAS_SWORD.get());
 			tabData.accept(PurechaosModItems.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(PurechaosModItems.KFCE.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(PurechaosModBlocks.POTATUS.get().asItem());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(PurechaosModItems.ADIDAS_PICKAXE.get());
 			tabData.accept(PurechaosModItems.ADIDAS_AXE.get());
 			tabData.accept(PurechaosModItems.ADIDAS_SHOVEL.get());

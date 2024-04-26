@@ -82,11 +82,6 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		answer = new EditBox(this.font, this.leftPos + 12, this.topPos + 26, 118, 18, Component.translatable("gui.purechaos.captcha_gui.answer")) {

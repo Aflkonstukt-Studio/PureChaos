@@ -73,11 +73,6 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_trash = Button.builder(Component.translatable("gui.purechaos.vikki_vuk_gui.button_trash"), e -> {

@@ -41,7 +41,7 @@ public class BlockBrokenProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.GRASS_BLOCK) {
 			if (Mth.nextDouble(RandomSource.create(), 1, 5) == 2) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PurechaosModItems.DINGOT.get());
+					ItemStack _setstack = new ItemStack(PurechaosModItems.DINGOT.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
@@ -57,7 +57,7 @@ public class BlockBrokenProcedure {
 					}
 				}
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PurechaosModItems.MUMBO_TOKEN.get());
+					ItemStack _setstack = new ItemStack(PurechaosModItems.MUMBO_TOKEN.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

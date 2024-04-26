@@ -28,6 +28,6 @@ public class RadiationLiquidBlock extends LiquidBlock {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		RadiationLiquidMobplayerCollidesBlockProcedure.execute(entity);
+		RadiationLiquidMobplayerCollidesBlockProcedure.execute(world, entity);
 	}
 }

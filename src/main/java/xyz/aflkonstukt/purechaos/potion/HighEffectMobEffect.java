@@ -15,11 +15,6 @@ public class HighEffectMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.purechaos.high_effect";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		HighProcedure.execute(entity);
 	}

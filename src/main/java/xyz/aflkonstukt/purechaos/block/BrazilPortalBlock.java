@@ -37,7 +37,7 @@ public class BrazilPortalBlock extends NetherPortalBlock {
 	}
 
 	@Override
-	public void randomTick(BlockState state, ServerLevel world, BlockPos pos, RandomSource random) {
+	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 	}
 
 	public static void portalSpawn(Level world, BlockPos pos) {

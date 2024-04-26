@@ -28,6 +28,7 @@ import xyz.aflkonstukt.purechaos.client.model.Modelblaze;
 import xyz.aflkonstukt.purechaos.client.model.Modelbaldi;
 import xyz.aflkonstukt.purechaos.client.model.Modelamongus_woo;
 import xyz.aflkonstukt.purechaos.client.model.Modelamiogyhus;
+import xyz.aflkonstukt.purechaos.client.model.ModelCustomModel;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -39,6 +40,7 @@ public class PurechaosModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelamiogyhus.LAYER_LOCATION, Modelamiogyhus::createBodyLayer);
+		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modelblaze.LAYER_LOCATION, Modelblaze::createBodyLayer);
 		event.registerLayerDefinition(Modelikea_desk.LAYER_LOCATION, Modelikea_desk::createBodyLayer);
 		event.registerLayerDefinition(Modelnextbot.LAYER_LOCATION, Modelnextbot::createBodyLayer);

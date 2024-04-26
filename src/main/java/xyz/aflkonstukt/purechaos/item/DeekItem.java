@@ -6,7 +6,6 @@ import xyz.aflkonstukt.purechaos.entity.DeekProjectileEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
@@ -21,9 +20,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
@@ -53,7 +49,7 @@ public class DeekItem extends Item {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 4d, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 5d, AttributeModifier.Operation.ADDITION));
 			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
@@ -61,30 +57,25 @@ public class DeekItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			entity.startUsingItem(hand);
+		}
+		return ar;
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-		entity.startUsingItem(hand);
-		return ar;
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		itemstack.hurtAndBreak(1, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+		return true;
 	}
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
-			ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == DeekProjectileEntity.PROJECTILE_ITEM.getItem());
-			if (stack == ItemStack.EMPTY) {
-				for (int i = 0; i < player.getInventory().items.size(); i++) {
-					ItemStack teststack = player.getInventory().items.get(i);
-					if (teststack != null && teststack.getItem() == DeekProjectileEntity.PROJECTILE_ITEM.getItem()) {
-						stack = teststack;
-						break;
-					}
-				}
-			}
+			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
 				DeekProjectileEntity projectile = DeekProjectileEntity.shoot(world, entity, world.getRandom());
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
@@ -106,5 +97,19 @@ public class DeekItem extends Item {
 				}
 			}
 		}
+	}
+
+	private ItemStack findAmmo(Player player) {
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == DeekProjectileEntity.PROJECTILE_ITEM.getItem());
+		if (stack == ItemStack.EMPTY) {
+			for (int i = 0; i < player.getInventory().items.size(); i++) {
+				ItemStack teststack = player.getInventory().items.get(i);
+				if (teststack != null && teststack.getItem() == DeekProjectileEntity.PROJECTILE_ITEM.getItem()) {
+					stack = teststack;
+					break;
+				}
+			}
+		}
+		return stack;
 	}
 }

@@ -72,11 +72,6 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_enter_cyberspace = Button.builder(Component.translatable("gui.purechaos.computer_gui.button_enter_cyberspace"), e -> {

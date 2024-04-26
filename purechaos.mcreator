@@ -206,6 +206,7 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/PeeBlockBlock.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/pee_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/pee_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/pee_block.json",
           "src/main/resources/assets/purechaos/models/block/pee_block.json",
           "src/main/resources/assets/purechaos/blockstates/pee_block.json",
@@ -317,6 +318,7 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/PotatusBlock.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/potatus.json",
           "src/main/resources/assets/purechaos/models/item/potatus.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/potatus.json",
           "src/main/resources/assets/purechaos/blockstates/potatus.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/potatus_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/block/potatus.json",
@@ -418,6 +420,7 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/death.json",
           "src/main/resources/assets/purechaos/models/block/death.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/death.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/death.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/DeathBlock.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/death_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/death.json"
@@ -438,6 +441,7 @@
           "src/main/resources/assets/purechaos/models/block/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/sa_ds.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SADsBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/sa_ds.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/entity/SADsBlockEntity.java",
           "src/main/resources/assets/purechaos/blockstates/sa_ds.json"
@@ -473,6 +477,7 @@
           "src/main/resources/assets/purechaos/models/block/emepee.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/emepee.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/EmepeeBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/emepee.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/emepee_biome_modifier.json"
         ]
       }
@@ -517,7 +522,8 @@
           "src/main/resources/assets/purechaos/models/block/sus_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SusBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/sus_block.json",
-          "src/main/resources/assets/purechaos/models/item/sus_block.json"
+          "src/main/resources/assets/purechaos/models/item/sus_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/sus_block.json"
         ]
       }
     },
@@ -688,7 +694,8 @@
           "src/main/resources/assets/purechaos/models/item/tlghd.json",
           "src/main/resources/assets/purechaos/models/block/tlghd.json",
           "src/main/resources/assets/purechaos/blockstates/tlghd.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json"
         ]
       }
     },
@@ -919,6 +926,7 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/green_plant.json",
           "src/main/resources/assets/purechaos/blockstates/green_plant.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/green_plant.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/green_plant.json",
           "src/main/resources/assets/purechaos/models/item/green_plant.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreenPlantBlock.java"
         ]
@@ -981,6 +989,7 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/entity/TombstoneBlockEntity.java",
           "src/main/resources/assets/purechaos/models/block/tombstone.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/tombstone.json",
           "src/main/resources/assets/purechaos/models/item/tombstone.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/TombstoneBlock.java",
           "src/main/resources/assets/purechaos/blockstates/tombstone.json"
@@ -1111,6 +1120,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1738,6 +1751,7 @@
           "src/main/resources/data/purechaos/forge/biome_modifier/youtube_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/youtube.json",
           "src/main/resources/assets/purechaos/models/block/youtube.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/youtube.json",
           "src/main/resources/assets/purechaos/models/item/youtube.json"
         ]
       }
@@ -1757,7 +1771,8 @@
           "src/main/resources/assets/purechaos/models/block/plante.json",
           "src/main/resources/assets/purechaos/models/item/plante.json",
           "src/main/resources/assets/purechaos/blockstates/plante.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/plante.json"
         ]
       }
     },
@@ -1903,6 +1918,7 @@
         "files": [
           "src/main/resources/assets/purechaos/blockstates/rickroll_block.json",
           "src/main/resources/assets/purechaos/models/block/rickroll_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/rickroll_block.json",
           "src/main/resources/assets/purechaos/models/item/rickroll_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RickrollBlockBlock.java"
         ]
@@ -2147,6 +2163,7 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1lightBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1light.json"
@@ -2227,6 +2244,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -2243,6 +2264,7 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1WallBlock.java",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_wall.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_wall.json"
         ]
       }
@@ -2329,6 +2351,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -2458,6 +2484,7 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/BrazilBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/brazil_block.json",
           "src/main/resources/assets/purechaos/models/item/brazil_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/brazil_block.json",
           "src/main/resources/assets/purechaos/models/block/brazil_block.json"
         ]
       }
@@ -2473,6 +2500,7 @@
         "files": [
           "src/main/resources/assets/purechaos/models/block/nokia_block.json",
           "src/main/resources/assets/purechaos/blockstates/nokia_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/nokia_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/NokiaBlockBlock.java",
           "src/main/resources/assets/purechaos/models/item/nokia_block.json"
         ]
@@ -2547,6 +2575,7 @@
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_floor.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1FloorBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_floor.json"
         ]
       }
@@ -2560,6 +2589,7 @@
       "registry_name": "south",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_tables/blocks/south.json",
           "src/main/resources/assets/purechaos/models/item/south.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SouthBlock.java",
           "src/main/resources/assets/purechaos/models/block/south.json",
@@ -2707,6 +2737,7 @@
           "src/main/resources/assets/purechaos/blockstates/depression_block.json",
           "src/main/resources/assets/purechaos/models/block/depression_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/DepressionBlockBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/depression_block.json",
           "src/main/resources/assets/purechaos/models/item/depression_block.json"
         ]
       }
@@ -2792,6 +2823,7 @@
       "registry_name": "comunisam_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_tables/blocks/comunisam_block.json",
           "src/main/resources/assets/purechaos/models/item/comunisam_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/ComunisamBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/comunisam_block.json",
@@ -2848,6 +2880,7 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/PolandBlockBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/poland_block.json",
           "src/main/resources/assets/purechaos/blockstates/poland_block.json",
           "src/main/resources/assets/purechaos/models/block/poland_block.json",
           "src/main/resources/assets/purechaos/models/item/poland_block.json"
@@ -2866,7 +2899,8 @@
           "src/main/resources/assets/purechaos/blockstates/cyber_block.json",
           "src/main/resources/assets/purechaos/models/item/cyber_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CyberBlockBlock.java",
-          "src/main/resources/assets/purechaos/models/block/cyber_block.json"
+          "src/main/resources/assets/purechaos/models/block/cyber_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/cyber_block.json"
         ]
       }
     },
@@ -2915,7 +2949,8 @@
           "src/main/resources/data/purechaos/forge/biome_modifier/computer_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/computer.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/computer.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/computer.json"
         ]
       }
     },
@@ -3041,6 +3076,7 @@
         "files": [
           "src/main/resources/assets/purechaos/models/block/greengiscreenda.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreengiscreendaBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/greengiscreenda.json",
           "src/main/resources/assets/purechaos/blockstates/greengiscreenda.json",
           "src/main/resources/assets/purechaos/models/item/greengiscreenda.json"
         ]
@@ -3283,6 +3319,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -3371,6 +3411,7 @@
       "registry_name": "adidas_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_tables/blocks/adidas_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/adidas_block.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/adidas_block.json",
           "src/main/resources/assets/purechaos/models/item/adidas_block.json",
@@ -3572,6 +3613,7 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/MissingTextureBlock.java",
           "src/main/resources/assets/purechaos/models/block/missing_texture.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/missing_texture.json",
           "src/main/resources/assets/purechaos/models/item/missing_texture.json",
           "src/main/resources/assets/purechaos/blockstates/missing_texture.json"
         ]
@@ -3879,18 +3921,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -4273,6 +4303,7 @@
         "files": [
           "src/main/resources/data/purechaos/forge/biome_modifier/jeb_block_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/jeb_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/jeb_block.json",
           "src/main/resources/assets/purechaos/models/block/jeb_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/JebBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/jeb_block.json",
@@ -4790,19 +4821,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "Meat",
-      "type": "tag",
-      "sortid": 319,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meat",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/purechaos/tags/items/meat.json"
         ]
       }
     },
@@ -6073,6 +6091,7 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/PlantableSteveBlock.java",
           "src/main/resources/assets/purechaos/models/item/plantable_steve.json",
           "src/main/resources/assets/purechaos/blockstates/plantable_steve.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/plantable_steve.json",
           "src/main/resources/assets/purechaos/models/block/plantable_steve.json"
         ]
       }
@@ -6830,14 +6849,160 @@
       "subtitle": "I NEED MORE BOOLETS BIGGER WEAPONS"
     }
   ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:CobbleFluid",
+      "~CUSTOM:RadiationLiquid",
+      "~CUSTOM:Milk2",
+      "~CUSTOM:CarbonMonoxide",
+      "~CUSTOM:Gatorade",
+      "~CUSTOM:Oil",
+      "~CUSTOM:OrangeFluid",
+      "~CUSTOM:Staravoda",
+      "~CUSTOM:Cum",
+      "~CUSTOM:SADs",
+      "~CUSTOM:PeeBlock",
+      "~CUSTOM:Pee"
+    ],
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "ITEMS:mod:meat": [
+      "Items.FISH#0",
+      "Items.FISH#1",
+      "Items.FISH#2",
+      "Items.FISH#3",
+      "Items.COOKED_FISH#0",
+      "Items.COOKED_FISH#1",
+      "Items.PORKCHOP",
+      "Items.COOKED_PORKCHOP",
+      "Items.BEEF",
+      "Items.COOKED_BEEF",
+      "Items.CHICKEN",
+      "Items.COOKED_CHICKEN",
+      "Items.RABBIT",
+      "Items.COOKED_RABBIT",
+      "Items.RABBIT_FOOT",
+      "Items.RABBIT_STEW",
+      "Items.MUTTON",
+      "Items.COOKED_MUTTON",
+      "Items.ROTTEN_FLESH"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus",
+      "~CUSTOM:HellButOverworld"
+    ],
+    "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus",
+      "~CUSTOM:HellButOverworld"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/swamp_hut": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fortress": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus",
+      "~CUSTOM:HellButOverworld"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_monument": [
+      "~CUSTOM:Susus"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Emepee"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_nether": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.COBBLESTONE",
+      "~Blocks.STONE#0",
+      "~Blocks.AZALEA",
+      "~CUSTOM:CyberBlock",
+      "~CUSTOM:BrazilBlock",
+      "~CUSTOM:SusBlock",
+      "~Blocks.NETHERRACK",
+      "~Blocks.GRASS",
+      "~Blocks.PLANKS#0",
+      "~CUSTOM:PeeBlock"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:FASTTOPASS",
+      "~CUSTOM:TO",
+      "~CUSTOM:SSSR",
+      "~CUSTOM:Scratest",
+      "~CUSTOM:SasiAmangas",
+      "~CUSTOM:Fallgays"
+    ],
+    "BIOMES:minecraft:has_structure/end_city": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/village_taiga": [
+      "~CUSTOM:Ekesmasterbait"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Emepee"
+    ],
+    "BIOMES:minecraft:has_structure/village_savanna": [
+      "~CUSTOM:Susus"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
       "item.purechaos.netherit_pickax": "Netherit Pickax",
-      "selectWorld.backupWarning.experimental": "Minecraft wants us to really make sure you want to do this, so just give us your consent and we can continue, or you can burn in the fiery pits of he.. i mean nothing...",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
+      "selectWorld.backupWarning.experimental": "Minecraft wants us to really make sure you want to do this, so just give us your consent and we can continue, or you can burn in the fiery pits of he.. i mean nothing...",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -6847,12 +7012,12 @@
       "item.purechaos.big_spawn_egg": "Big Spawn Egg",
       "entity.purechaos.spongebob_boss": "Spongebob Boss",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.purechaos.stalin": "Stalin",
-      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
-      "death.attack.vegan": "%1$s ate meat",
       "entity.chaosmod.herobrine": "Herobrine",
-      "item.purechaos.scratest.desc": "idk man stop asking me",
+      "death.attack.vegan": "%1$s ate meat",
+      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
+      "entity.purechaos.stalin": "Stalin",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "item.purechaos.scratest.desc": "idk man stop asking me",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
       "entity.purechaos.josip_pett": "Josip GRR pet",
@@ -6862,8 +7027,8 @@
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
       "block.chaosmod.green_plant": "Green Plant",
-      "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
       "item.chaosmod.trident_spawn_egg": "Tridet Spawn Egg",
+      "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
       "fluid.chaosmod.gatorade": "Gatorade",
       "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.purechaos.technoblade_spawn_egg": "Technoblade Spawn Egg",
@@ -6876,8 +7041,8 @@
       "item.purechaos.fallgays": "Fall Guys\u0027 Anthem",
       "block.chaosmod.youtube": "Youtube",
       "block.chaosmod.pee": "Pee",
-      "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.chaosmod.amugus_chestplate": "Amugus Body",
+      "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "subtitles.dudeshutt": "",
@@ -7515,7 +7680,6 @@
     "author": "VikkiVuk, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",
     "license": "All rights reserved",
-    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "pure_chaos",
     "requiredMods": [
@@ -7528,8 +7692,7 @@
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!",
-    "modElementsPackage": "xyz.aflkonstukt.purechaos",
-    "lockBaseModFiles": true
+    "modElementsPackage": "xyz.aflkonstukt.purechaos"
   },
-  "mcreatorVersion": 202300452316
+  "mcreatorVersion": 202400117319
 }

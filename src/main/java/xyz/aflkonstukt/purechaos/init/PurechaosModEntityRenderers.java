@@ -71,13 +71,13 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.JOSIP_PET.get(), JosipPetRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.JOSIP_PETT.get(), JosipPettRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.MOTH_OF_AGGREVATION.get(), MothOfAggrevationRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.CURSED_DOG.get(), CursedDogRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.BLAZ.get(), BlazRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.SHEP.get(), ShepRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.VIKKIVUK.get(), VikkivukRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.DREAM.get(), DreamRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.BLAZ.get(), BlazRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.CURSED_DOG.get(), CursedDogRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.WALTER_WIGHT.get(), WalterWightRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.ADOLF_HITLER.get(), AdolfHitlerRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.DREAM.get(), DreamRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.COD_BUT_BETTER.get(), CodButBetterRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.STALIN.get(), StalinRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.RICK_ASTLEY.get(), RickAstleyRenderer::new);
@@ -86,9 +86,9 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.FIREFLY.get(), FireflyRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.T_POSE_ENTITY.get(), TPoseEntityRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.STROATER.get(), StroaterRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.SPONGEBOB_BOSS.get(), SpongebobBossRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.AMOGUS_3_BLU.get(), AMOGUS3BLURenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.AMOGUS_3_GRIN.get(), AMOGUS3GRINRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.SPONGEBOB_BOSS.get(), SpongebobBossRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.THE_ROCK.get(), TheRockRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.BIG.get(), BigRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.TECHNOBLADE.get(), TechnobladeRenderer::new);
@@ -100,8 +100,8 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.FBI.get(), FBIRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.AMERICAN_SOLDAT.get(), AmericanSoldatRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.MURICA.get(), MuricaRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.DEEK_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.WATER_CUP_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.JOSIP_RANGE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.AK_47_PROJECTILE.get(), ThrownItemRenderer::new);

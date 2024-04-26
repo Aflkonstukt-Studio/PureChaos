@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "purechaos:fallgays",
-    "purechaos:sasi_amangas",
-    "purechaos:scratest",
-    "purechaos:sssr",
+    "purechaos:fasttopass",
     "purechaos:to",
-    "purechaos:fasttopass"
+    "purechaos:sssr",
+    "purechaos:scratest",
+    "purechaos:sasi_amangas",
+    "purechaos:fallgays"
   ]
 }

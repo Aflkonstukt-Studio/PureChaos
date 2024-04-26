@@ -4,14 +4,10 @@ package xyz.aflkonstukt.purechaos.item;
 import xyz.aflkonstukt.purechaos.procedures.PufferBalloonItemInHandTickProcedure;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 public class PufferBalloonItem extends Item {
 	public PufferBalloonItem() {
@@ -36,11 +32,6 @@ public class PufferBalloonItem extends Item {
 	@Override
 	public boolean isRepairable(ItemStack itemstack) {
 		return false;
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

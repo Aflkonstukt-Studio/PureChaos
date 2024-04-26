@@ -134,8 +134,8 @@ public class PurechaosModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			wrong_answers = nbt.getDouble("wrong_answers");
 			sanity = nbt.getDouble("sanity");
 		}

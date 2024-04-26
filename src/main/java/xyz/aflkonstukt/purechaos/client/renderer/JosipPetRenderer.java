@@ -24,7 +24,7 @@ public class JosipPetRenderer extends MobRenderer<JosipPetEntity, Modeljosipmmar
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, JosipPetEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, 15728640, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
 			}
 		});
 	}

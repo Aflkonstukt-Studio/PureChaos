@@ -83,26 +83,7 @@ public class PlayerTickProcedure {
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 0) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.hurt(new DamageSource(_entity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)) {
-					@Override
-					public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-						String _translatekey = "death.attack." + "sanity";
-						if (this.getEntity() == null && this.getDirectEntity() == null) {
-							return _msgEntity.getKillCredit() != null
-									? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-									: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-						} else {
-							Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-							ItemStack _itemstack = ItemStack.EMPTY;
-							if (this.getEntity() instanceof LivingEntity _livingentity)
-								_itemstack = _livingentity.getMainHandItem();
-							return !_itemstack.isEmpty() && _itemstack.hasCustomHoverName()
-									? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-									: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-						}
-					}
-				}, 99999);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 99999);
 		} else {
 			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 7) <= 2) {
@@ -176,7 +157,7 @@ public class PlayerTickProcedure {
 			}
 		}
 		if (world.isClientSide() && entity instanceof Player) {
-			if (Minecraft.getInstance().gameRenderer.currentEffect() != null && !(entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+			if (Minecraft.getInstance().gameRenderer.currentEffect() != null && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
 				Minecraft.getInstance().gameRenderer.shutdownEffect();
 			}
 		}

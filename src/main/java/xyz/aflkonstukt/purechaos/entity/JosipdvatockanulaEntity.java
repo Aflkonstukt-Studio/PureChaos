@@ -156,6 +156,11 @@ public class JosipdvatockanulaEntity extends Monster {
 	}
 
 	@Override
+	public boolean fireImmune() {
+		return true;
+	}
+
+	@Override
 	public boolean checkSpawnObstruction(LevelReader world) {
 		return world.isUnobstructed(this);
 	}

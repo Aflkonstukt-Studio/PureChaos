@@ -13,11 +13,6 @@ public class RadiationPoisioningMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.purechaos.radiation_poisioning";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		RadiationPoisioningActiveTickConditionProcedure.execute(entity.level(), entity);
 	}

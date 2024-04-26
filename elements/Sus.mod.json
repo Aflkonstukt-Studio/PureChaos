@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -40,6 +40,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Sus Portal Birther",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },

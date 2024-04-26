@@ -6,7 +6,6 @@ import xyz.aflkonstukt.purechaos.entity.RockProjectileEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
@@ -17,9 +16,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 public class RockItem extends Item {
 	public RockItem() {
@@ -42,33 +38,21 @@ public class RockItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-		entity.startUsingItem(hand);
+		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			entity.startUsingItem(hand);
+		}
 		return ar;
 	}
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
-			ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == RockProjectileEntity.PROJECTILE_ITEM.getItem());
-			if (stack == ItemStack.EMPTY) {
-				for (int i = 0; i < player.getInventory().items.size(); i++) {
-					ItemStack teststack = player.getInventory().items.get(i);
-					if (teststack != null && teststack.getItem() == RockProjectileEntity.PROJECTILE_ITEM.getItem()) {
-						stack = teststack;
-						break;
-					}
-				}
-			}
+			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
 				RockProjectileEntity projectile = RockProjectileEntity.shoot(world, entity, world.getRandom());
-				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				if (player.getAbilities().instabuild) {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {
@@ -87,5 +71,19 @@ public class RockItem extends Item {
 				}
 			}
 		}
+	}
+
+	private ItemStack findAmmo(Player player) {
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == RockProjectileEntity.PROJECTILE_ITEM.getItem());
+		if (stack == ItemStack.EMPTY) {
+			for (int i = 0; i < player.getInventory().items.size(); i++) {
+				ItemStack teststack = player.getInventory().items.get(i);
+				if (teststack != null && teststack.getItem() == RockProjectileEntity.PROJECTILE_ITEM.getItem()) {
+					stack = teststack;
+					break;
+				}
+			}
+		}
+		return stack;
 	}
 }

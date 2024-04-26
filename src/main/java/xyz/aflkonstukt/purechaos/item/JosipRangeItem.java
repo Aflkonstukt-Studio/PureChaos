@@ -51,31 +51,25 @@ public class JosipRangeItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("you shold not have this unless u use creative or comands"));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-		entity.startUsingItem(hand);
+		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
+			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			entity.startUsingItem(hand);
+		}
 		return ar;
 	}
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
-			ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == JosipRangeProjectileEntity.PROJECTILE_ITEM.getItem());
-			if (stack == ItemStack.EMPTY) {
-				for (int i = 0; i < player.getInventory().items.size(); i++) {
-					ItemStack teststack = player.getInventory().items.get(i);
-					if (teststack != null && teststack.getItem() == JosipRangeProjectileEntity.PROJECTILE_ITEM.getItem()) {
-						stack = teststack;
-						break;
-					}
-				}
-			}
+			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
 				JosipRangeProjectileEntity projectile = JosipRangeProjectileEntity.shoot(world, entity, world.getRandom());
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
@@ -97,5 +91,19 @@ public class JosipRangeItem extends Item {
 				}
 			}
 		}
+	}
+
+	private ItemStack findAmmo(Player player) {
+		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == JosipRangeProjectileEntity.PROJECTILE_ITEM.getItem());
+		if (stack == ItemStack.EMPTY) {
+			for (int i = 0; i < player.getInventory().items.size(); i++) {
+				ItemStack teststack = player.getInventory().items.get(i);
+				if (teststack != null && teststack.getItem() == JosipRangeProjectileEntity.PROJECTILE_ITEM.getItem()) {
+					stack = teststack;
+					break;
+				}
+			}
+		}
+		return stack;
 	}
 }

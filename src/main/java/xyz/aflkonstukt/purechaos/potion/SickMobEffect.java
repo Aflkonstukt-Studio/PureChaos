@@ -15,11 +15,6 @@ public class SickMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.purechaos.sick";
-	}
-
-	@Override
 	public boolean isInstantenous() {
 		return true;
 	}

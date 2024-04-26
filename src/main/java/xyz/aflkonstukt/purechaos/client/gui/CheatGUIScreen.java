@@ -75,11 +75,6 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_switch_gamemode = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {

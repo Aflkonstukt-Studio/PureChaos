@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "purechaos:blocks/green_plant",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:green_plant"
+        }
+      ]
+    }
+  ]
+}

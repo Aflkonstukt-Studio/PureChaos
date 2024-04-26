@@ -13,18 +13,13 @@ public class BleachedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.purechaos.bleached";
-	}
-
-	@Override
 	public boolean isInstantenous() {
 		return true;
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		BleachedOnEffectActiveTickProcedure.execute(entity);
+		BleachedOnEffectActiveTickProcedure.execute(entity.level(), entity);
 	}
 
 	@Override

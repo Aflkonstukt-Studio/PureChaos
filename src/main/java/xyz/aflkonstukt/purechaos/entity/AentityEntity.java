@@ -147,11 +147,21 @@ public class AentityEntity extends PathfinderMob {
 			return false;
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
-		if (damagesource.is(DamageTypes.EXPLOSION))
+		if (damagesource.is(DamageTypes.EXPLOSION) || damagesource.is(DamageTypes.PLAYER_EXPLOSION))
 			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public boolean ignoreExplosion() {
+		return true;
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	@Override

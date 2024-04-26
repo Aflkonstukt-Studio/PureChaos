@@ -3,16 +3,11 @@ package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.Component;
-
-import java.util.List;
 
 public class AdidasSwordItem extends SwordItem {
 	public AdidasSwordItem() {
@@ -26,7 +21,7 @@ public class AdidasSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return -2f;
 			}
 
 			public int getLevel() {
@@ -41,10 +36,5 @@ public class AdidasSwordItem extends SwordItem {
 				return Ingredient.of(new ItemStack(PurechaosModBlocks.ADIDAS_BLOCK.get()));
 			}
 		}, 3, -3f, new Item.Properties());
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 }
