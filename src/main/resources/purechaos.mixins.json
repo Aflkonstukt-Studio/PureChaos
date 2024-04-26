@@ -6,7 +6,9 @@
   "mixins": [
     "IconsMixin"
   ],
-  "client": [],
+  "client": [
+    "DisableVanillaTitle"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
