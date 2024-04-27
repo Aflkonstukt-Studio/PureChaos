@@ -82,6 +82,7 @@ import xyz.aflkonstukt.purechaos.item.CarbonMonoxideItem;
 import xyz.aflkonstukt.purechaos.item.BulletItem;
 import xyz.aflkonstukt.purechaos.item.BrownItem;
 import xyz.aflkonstukt.purechaos.item.BrazilItem;
+import xyz.aflkonstukt.purechaos.item.BrakeFluidItem;
 import xyz.aflkonstukt.purechaos.item.BottleOfPissItem;
 import xyz.aflkonstukt.purechaos.item.BleachItem;
 import xyz.aflkonstukt.purechaos.item.BeengotItem;
@@ -291,6 +292,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> PUFFER_BALLOON = REGISTRY.register("puffer_balloon", () -> new PufferBalloonItem());
 	public static final RegistryObject<Item> INFINITE_FUEL = REGISTRY.register("infinite_fuel", () -> new InfiniteFuelItem());
 	public static final RegistryObject<Item> GROGGO_SPAWN_EGG = REGISTRY.register("groggo_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.GROGGO, -16724992, -6737152, new Item.Properties()));
+	public static final RegistryObject<Item> BRAKE_FLUID = REGISTRY.register("brake_fluid", () -> new BrakeFluidItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

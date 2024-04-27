@@ -52,7 +52,7 @@ public class KMessage {
 			return;
 		if (type == 0) {
 
-			KOnKeyPressedProcedure.execute(entity);
+			KOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

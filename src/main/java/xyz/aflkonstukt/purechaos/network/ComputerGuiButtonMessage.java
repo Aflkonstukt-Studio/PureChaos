@@ -64,7 +64,7 @@ public class ComputerGuiButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			EnterCyberspaceButtonPressedProcedure.execute(entity);
+			EnterCyberspaceButtonPressedProcedure.execute(world, x, z, entity);
 		}
 	}
 

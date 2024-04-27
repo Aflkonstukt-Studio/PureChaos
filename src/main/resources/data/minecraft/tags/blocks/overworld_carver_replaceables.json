@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "minecraft:coarse_dirt",
+    "purechaos:backrooms_lvl_1_wall",
+    "minecraft:podzol",
     "minecraft:cobblestone",
     "minecraft:stone",
     "minecraft:azalea",

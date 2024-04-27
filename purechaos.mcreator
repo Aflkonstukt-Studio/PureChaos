@@ -1535,6 +1535,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -3111,6 +3127,18 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -6655,6 +6683,89 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "BrakeFluid",
+      "type": "item",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brake_fluid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/brake_fluid.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BrakeFluidItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NightmareDimension",
+      "type": "dimension",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/dimension_type/nightmare_dimension.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/NightmareDimensionDimension.java",
+          "src/main/resources/data/purechaos/dimension/nightmare_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "NightmareDimensionPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_dimension_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/NightmareDimensionPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhenPlayerSleep",
+      "type": "procedure",
+      "sortid": 381,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_player_sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/WhenPlayerSleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6667,7 +6778,7 @@
     {
       "name": "sanity",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "100.0"
     },
     {
@@ -6752,6 +6863,18 @@
       "name": "show_nikocado",
       "type": "logic",
       "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "nightmare_duration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "having_nightmare",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -7146,6 +7269,9 @@
       "~CUSTOM:Susus"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#1",
+      "~CUSTOM:BackroomsLvl1Wall",
+      "~Blocks.DIRT#2",
       "~Blocks.COBBLESTONE",
       "~Blocks.STONE#0",
       "~Blocks.AZALEA",
@@ -7820,6 +7946,7 @@
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "fluid.purechaos.oil": "Oil",
       "selectWorld.gameMode.survival": "Death",
+      "item.purechaos.brake_fluid": "Brake Fluid",
       "item.chaosmod.kfce": "KFCE",
       "gui.chaosmod.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
