@@ -1,0 +1,46 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "ambient_sound": "entity.warden.heartbeat",
+    "foliage_color": -13421773,
+    "grass_color": 9470285,
+    "sky_color": -13421773,
+    "fog_color": -13421773,
+    "water_color": -16764058,
+    "water_fog_color": -16764058
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "skeleton_horse",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
+}

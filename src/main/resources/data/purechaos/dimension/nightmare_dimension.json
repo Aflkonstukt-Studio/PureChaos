@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "purechaos:hell_but_overworld",
+          "biome": "purechaos:nightmare_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -27,7 +27,7 @@
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "purechaos:backrooms_lvl_1_wall"
+        "Name": "minecraft:sculk"
       },
       "default_fluid": {
         "Name": "purechaos:staravoda",
@@ -383,7 +383,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "purechaos:hell_but_overworld"
+                "purechaos:nightmare_biome"
               ]
             },
             "then_run": {
@@ -417,14 +417,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:netherrack"
+                              "Name": "minecraft:sculk"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:netherrack"
+                            "Name": "minecraft:sculk"
                           }
                         }
                       ]
@@ -442,7 +442,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:netherrack"
+                        "Name": "minecraft:sculk"
                       }
                     }
                   }

@@ -28,7 +28,7 @@ public class NightmareDimensionDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(Float.NaN, true, DimensionSpecialEffects.SkyType.NONE, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(1, 0, 0);
+					return new Vec3(0.2, 0.2, 0.2);
 				}
 
 				@Override

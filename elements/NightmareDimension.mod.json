@@ -4,18 +4,18 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:HellButOverworld"
+        "value": "CUSTOM:NightmareBiome"
       }
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "CUSTOM:BackroomsLvl1Wall"
+      "value": "Blocks.SCULK"
     },
     "fluidBlock": {
       "value": "CUSTOM:Staravoda"
     },
     "airColor": {
-      "value": -65536,
+      "value": -13421773,
       "falpha": 0.0
     },
     "canRespawnHere": false,

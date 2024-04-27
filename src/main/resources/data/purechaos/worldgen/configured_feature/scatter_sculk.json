@@ -1,0 +1,12 @@
+{
+  "type": "purechaos:structure_feature",
+  "config": {
+    "structure": "purechaos:shriek_contraption",
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      -2,
+      0
+    ]
+  }
+}

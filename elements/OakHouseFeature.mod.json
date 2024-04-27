@@ -3,7 +3,227 @@
   "_type": "feature",
   "definition": {
     "generationStep": "SURFACE_STRUCTURES",
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:MoreExtremeHills"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      },
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "basalt_deltas"
+      },
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "cherry_grove"
+      },
+      {
+        "value": "cold_ocean"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "deep_cold_ocean"
+      },
+      {
+        "value": "deep_dark"
+      },
+      {
+        "value": "deep_frozen_ocean"
+      },
+      {
+        "value": "deep_lukewarm_ocean"
+      },
+      {
+        "value": "deep_ocean"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "dripstone_caves"
+      },
+      {
+        "value": "end_barrens"
+      },
+      {
+        "value": "end_highlands"
+      },
+      {
+        "value": "end_midlands"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "frozen_ocean"
+      },
+      {
+        "value": "frozen_peaks"
+      },
+      {
+        "value": "frozen_river"
+      },
+      {
+        "value": "grove"
+      },
+      {
+        "value": "mutated_ice_flats"
+      },
+      {
+        "value": "jagged_peaks"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "lukewarm_ocean"
+      },
+      {
+        "value": "lush_caves"
+      },
+      {
+        "value": "mangrove_swamp"
+      },
+      {
+        "value": "meadow"
+      },
+      {
+        "value": "mushroom_fields"
+      },
+      {
+        "value": "nether"
+      },
+      {
+        "value": "ocean"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "redwood_taiga"
+      },
+      {
+        "value": "mutated_redwood_taiga"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "river"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
+      },
+      {
+        "value": "small_end_islands"
+      },
+      {
+        "value": "snowy_slopes"
+      },
+      {
+        "value": "cold_beach"
+      },
+      {
+        "value": "snowy_tundra"
+      },
+      {
+        "value": "taiga_cold"
+      },
+      {
+        "value": "soul_sand_valley"
+      },
+      {
+        "value": "jungle_edge"
+      },
+      {
+        "value": "stony_peaks"
+      },
+      {
+        "value": "stone_beach"
+      },
+      {
+        "value": "mutated_plains"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "taiga"
+      },
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "void"
+      },
+      {
+        "value": "warm_ocean"
+      },
+      {
+        "value": "warped_forest"
+      },
+      {
+        "value": "extreme_hills_with_trees"
+      },
+      {
+        "value": "mutated_extreme_hills"
+      },
+      {
+        "value": "mountains"
+      },
+      {
+        "value": "mutated_savanna"
+      },
+      {
+        "value": "wooded_badlands_plateau"
+      }
+    ],
     "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">oak_house</field><field name=\"x\">0</field><field name=\"y\">-2</field><field name=\"z\">0</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">67</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

@@ -167,8 +167,15 @@ public class PlayerTickProcedure {
 			}
 		}
 		if (world.isClientSide() && entity instanceof Player) {
-			if (Minecraft.getInstance().gameRenderer.currentEffect() != null && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
-				Minecraft.getInstance().gameRenderer.shutdownEffect();
+			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
+				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt24 && _livEnt24.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+					Minecraft.getInstance().gameRenderer.shutdownEffect();
+				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/desaturate.json")
+						&& !(entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).having_nightmare) {
+					Minecraft.getInstance().gameRenderer.shutdownEffect();
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeAllEffects();
+				}
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).nightmare_duration > 1
@@ -183,6 +190,9 @@ public class PlayerTickProcedure {
 					capability.nightmare_duration = _setval;
 					capability.syncPlayerVariables(entity);
 				});
+			}
+			if (Minecraft.getInstance().gameRenderer.currentEffect() == null) {
+				Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/desaturate.json"));
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).nightmare_duration <= 1
@@ -236,6 +246,8 @@ public class PlayerTickProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeAllEffects();
 		}
 	}
 }

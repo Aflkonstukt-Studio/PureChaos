@@ -6766,6 +6766,35 @@
           }
         ]
       }
+    },
+    {
+      "name": "NightmareBiome",
+      "type": "biome",
+      "sortid": 382,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/nightmare_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "ScatterSculk",
+      "type": "feature",
+      "sortid": 383,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scatter_sculk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/scatter_sculk.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/scatter_sculk.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/scatter_sculk_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      }
     }
   ],
   "variable_elements": [
@@ -7179,11 +7208,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -7269,6 +7298,7 @@
       "~CUSTOM:Susus"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.SCULK",
       "~Blocks.DIRT#1",
       "~CUSTOM:BackroomsLvl1Wall",
       "~Blocks.DIRT#2",
@@ -7905,6 +7935,7 @@
       "fluid.chaosmod.orange_fluid": "Orange Gatorade",
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "effect.purechaos.dementia": "Dementia",
+      "biome.purechaos.nightmare_biome": "Nightmare",
       "entity.chaosmod.t_pose_entity": "T Pose Entity",
       "item.purechaos.lava_bottle": "Lava Bottle",
       "item.purechaos.dipex": "DiPixk",
