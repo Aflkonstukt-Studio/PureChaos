@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "buckshot_time.png",
+    "width": 16,
+    "height": 28,
+    "title": "Buckshot Time",
+    "author": "boykisser"
+  }
+}

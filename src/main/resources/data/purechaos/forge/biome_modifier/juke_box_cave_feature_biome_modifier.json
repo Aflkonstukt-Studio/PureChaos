@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "purechaos:juke_box_cave_feature",
   "step": "surface_structures"
 }

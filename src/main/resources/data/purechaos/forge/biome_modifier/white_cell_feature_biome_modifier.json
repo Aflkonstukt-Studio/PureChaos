@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "purechaos:white_cell_feature",
   "step": "surface_structures"
 }

@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "big_tails.png",
+    "width": 16,
+    "height": 16,
+    "title": "Big Tails",
+    "author": "aaaa"
+  }
+}

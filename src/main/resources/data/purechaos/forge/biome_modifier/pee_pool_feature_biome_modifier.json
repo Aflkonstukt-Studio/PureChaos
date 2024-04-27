@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "purechaos:pee_pool_feature",
   "step": "surface_structures"
 }

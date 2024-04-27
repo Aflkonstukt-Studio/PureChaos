@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "this_is_how_you_look.png",
+    "width": 16,
+    "height": 19,
+    "title": "This Is How You Look",
+    "author": "boykisser"
+  }
+}

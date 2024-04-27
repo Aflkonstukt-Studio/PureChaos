@@ -1,9 +1,0 @@
-{
-  "parent": "purechaos:custom/stevemodel",
-  "textures": {
-    "all": "purechaos:block/steve",
-    "particle": "purechaos:block/steve",
-    "0": "purechaos:block/steve"
-  },
-  "render_type": "cutout"
-}

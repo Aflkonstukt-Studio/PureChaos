@@ -6080,23 +6080,6 @@
       }
     },
     {
-      "name": "PlantableSteve",
-      "type": "plant",
-      "sortid": 336,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "plantable_steve",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/PlantableSteveBlock.java",
-          "src/main/resources/assets/purechaos/models/item/plantable_steve.json",
-          "src/main/resources/assets/purechaos/blockstates/plantable_steve.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/plantable_steve.json",
-          "src/main/resources/assets/purechaos/models/block/plantable_steve.json"
-        ]
-      }
-    },
-    {
       "name": "CaptchaGUIThisGUIIsClosed",
       "type": "procedure",
       "sortid": 337,
@@ -6466,6 +6449,211 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/overdose.json"
         ]
+      }
+    },
+    {
+      "name": "PureChaos",
+      "type": "achievement",
+      "sortid": 360,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_chaos",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/advancements/pure_chaos.json"
+        ]
+      }
+    },
+    {
+      "name": "UpsideDownHouse",
+      "type": "feature",
+      "sortid": 361,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upside_down_house",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/placed_feature/upside_down_house.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/upside_down_house.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/upside_down_house_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "IOfferYouBrainrot",
+      "type": "painting",
+      "sortid": 362,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "i_offer_you_brainrot",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "YouLikeKissingBoys",
+      "type": "painting",
+      "sortid": 363,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "you_like_kissing_boys",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "APainting",
+      "type": "painting",
+      "sortid": 364,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_painting",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "NoMeme",
+      "type": "painting",
+      "sortid": 365,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_meme",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Bombkisser",
+      "type": "painting",
+      "sortid": 366,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombkisser",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BigTails",
+      "type": "painting",
+      "sortid": 367,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_tails",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ISeeYouMasturbating",
+      "type": "painting",
+      "sortid": 368,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "i_see_you_masturbating",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "YouThinkYoureAlone",
+      "type": "painting",
+      "sortid": 369,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "you_think_youre_alone",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BuckshotTime",
+      "type": "painting",
+      "sortid": 370,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buckshot_time",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "YouLikeSeeingMe",
+      "type": "painting",
+      "sortid": 371,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "you_like_seeing_me",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "NuhUh",
+      "type": "painting",
+      "sortid": 372,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuh_uh",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "McKisser",
+      "type": "painting",
+      "sortid": 373,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mc_kisser",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StaringAtGay",
+      "type": "painting",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staring_at_gay",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ItsImpossible",
+      "type": "painting",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "its_impossible",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ThisIsHowYouLook",
+      "type": "painting",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "this_is_how_you_look",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ShurUp",
+      "type": "painting",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shur_up",
+      "metadata": {
+        "files": []
       }
     }
   ],
@@ -6868,11 +7056,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -7001,8 +7189,9 @@
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
       "item.purechaos.netherit_pickax": "Netherit Pickax",
-      "item.chaosmod.fasttopass.desc": "GOTTA GO!",
+      "painting.purechaos.staring_at_gay.title": "Staring At Gay",
       "selectWorld.backupWarning.experimental": "Minecraft wants us to really make sure you want to do this, so just give us your consent and we can continue, or you can burn in the fiery pits of he.. i mean nothing...",
+      "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "block.chaosmod.death": "Death",
       "item.chaosmod.fooditem": "Food Item 1",
@@ -7010,19 +7199,21 @@
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.purechaos.beef_armor_helmet": "Beef Armor Helmet",
       "item.purechaos.big_spawn_egg": "Big Spawn Egg",
+      "item.minecraft.golden_axe": "Golden Chop Chop Stick",
       "entity.purechaos.spongebob_boss": "Spongebob Boss",
       "entity.chaosmod.aentity": "Aentity",
       "entity.chaosmod.herobrine": "Herobrine",
       "death.attack.vegan": "%1$s ate meat",
       "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "entity.purechaos.stalin": "Stalin",
-      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "item.purechaos.scratest.desc": "idk man stop asking me",
+      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "entity.chaosmod.walter_wight": "Walter White",
       "effect.chaosmod.fat": "Fat",
       "entity.purechaos.josip_pett": "Josip GRR pet",
       "item.purechaos.to": "CRNIDANIALBUM",
       "entity.purechaos.groggo": "Greg",
+      "item.minecraft.wooden_pickaxe": "Wooden Diggy Diggy Blocky",
       "item.purechaos.fasttopass.desc": "GOTTA GO!",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "item.chaosmod.broken_chestplate_1_helmet": "Broken Chestplate 1 Helmet",
@@ -7034,7 +7225,7 @@
       "item.purechaos.technoblade_spawn_egg": "Technoblade Spawn Egg",
       "subtitles.never_gonna_give_you_up": "",
       "subtitles.kilometer": "WHAT THE FUCK IS A KILOMETER",
-      "death.attack.carbon_monoxide": "%1$s was suffocated by Carbon Monoxide",
+      "death.attack.carbon_monoxide": "%1$s got gassed",
       "item.purechaos.beef_armor_boots": "Beef Armor Boots",
       "biome.purechaos.hell_but_overworld": "Neover",
       "item.chaosmod.netherit_pickax": "Netherit Pickax",
@@ -7057,6 +7248,7 @@
       "block.chaosmod.poland_block": "Poland Block",
       "subtitles.smack_my_ass": "",
       "item.purechaos.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
+      "painting.purechaos.a_painting.title": "A Painting",
       "item.purechaos.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
       "key.chaosmod.summonsus": "Summonsus",
@@ -7075,11 +7267,14 @@
       "block.chaosmod.tombstone": "Tombstone",
       "item.purechaos.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "item.chaosmod.brazil": "Brazil Portal Igniter",
+      "death.attack.badRespawnPoint.message": "%1$s was boo boo\u0027d by %2$s",
       "item.chaosmod.sus_sword": "Sus Sword",
       "block.purechaos.tombstone": "Tombstone",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
       "entity.purechaos.the_rock": "The Rock",
+      "painting.purechaos.no_meme.author": "google images",
+      "menu.singleplayer": "I dont have friends",
       "item.purechaos.peemension": "Dirt Sword but Igniter",
       "createWorld.preparing": "Thinking about how to torture you...",
       "block.purechaos.cum": "Cum",
@@ -7108,6 +7303,7 @@
       "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "painting.purechaos.masterpiece.author": "Unknown",
       "item.purechaos.pee_bucket": "Pee Bucket",
+      "death.attack.fall": "%1$s kissed the floor",
       "block.chaosmod.grave": "Grave",
       "item.purechaos.dirtsword": "Dirtsword",
       "block.chaosmod.brazil_block": "Brazil Block",
@@ -7120,6 +7316,7 @@
       "biome.chaosmod.birch_forest": "Birch Forest",
       "item.chaosmod.baldi_minus_spawn_egg": "Baldi Minus Spawn Egg",
       "key.purechaos.one": "ma",
+      "painting.purechaos.mc_kisser.author": "boykisser",
       "item.purechaos.cum_bucket": "Cum Bucket",
       "item.purechaos.mercury": "Mercury",
       "entity.purechaos.blaz": "Blaz",
@@ -7132,7 +7329,7 @@
       "biome.purechaos.birch_forest": "Birch Forest",
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "fluid.chaosmod.staravoda": "Staravoda",
-      "death.attack.sanity": "%1$s went insane",
+      "death.attack.sanity": "%1$s didnt take their schizophrenia pills",
       "item.purechaos.spear": "Spear",
       "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
       "entity.chaosmod.amogus_3_grin": "Amogus 3 (Impostor, Green)",
@@ -7146,6 +7343,7 @@
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
+      "advancements.pure_chaos.title": "Pure Chaos",
       "item.chaosmod.endy_spawn_egg": "Endy Spawn Egg",
       "item.purechaos.fasttopass": "FASTTOPASS",
       "block.purechaos.south": "South",
@@ -7158,6 +7356,7 @@
       "item.purechaos.orange_fluid_bucket": "Orange Fluid Bucket",
       "item.chaosmod.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.purechaos.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
+      "painting.purechaos.this_is_how_you_look.title": "This Is How You Look",
       "block.chaosmod.oil": "Oil",
       "item.minecraft.lingering_potion.effect.amongsus": "Lingering Potion of Amongsus",
       "block.purechaos.cobble_fluid": "Cobblestone Fluid",
@@ -7172,6 +7371,7 @@
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
       "fluid.purechaos.carbon_monoxide": "Carbon Monoxide",
       "item.purechaos.beef": "Beef",
+      "death.attack.genericKill": "%1$s was boo boo\u0027d",
       "item.chaosmod.spear": "Spear",
       "item.chaosmod.adidas_axe": "Adidas Axe",
       "subtitles.wet_cupcakke": "",
@@ -7193,6 +7393,7 @@
       "item.chaosmod.half_golden_apple": "Half Golden Apple",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "gui.no": "Nuh uh",
+      "painting.purechaos.you_think_youre_alone.title": "You Think You\u0027re Alone",
       "item.chaosmod.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "block.chaosmod.rickroll_block": "Rickroll",
       "subtitles.eekum_bokum": "",
@@ -7201,8 +7402,9 @@
       "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "key.chaosmod.two": "Spit",
-      "death.attack.drank_bleach": "%1$s was too fkn stupid and drank a whole bottle of bleach",
+      "death.attack.drank_bleach": "%1$s didnt feel like seeing anymore",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
+      "painting.purechaos.its_impossible.author": "boykisser",
       "gamerule.dropMumboTokens.description": "Do you want mumbo tokens to be dropped (by chance) on block break",
       "item.purechaos.spit_ball": "Spit Ball",
       "item.chaosmod.sussy_sus_stew": "Very Suspicious Stew",
@@ -7211,6 +7413,7 @@
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.spit_ball": "Spit Ball",
       "item.purechaos.sasi_amangas": "Sasi Amangas",
+      "death.attack.drown": "%1$s forgor to breathe",
       "item.purechaos.xsord": "Xite Containment Blade",
       "item.purechaos.irs_spawn_egg": "IRS Spawn Egg",
       "item.chaosmod.sasi_amangas.desc": "HE is sus",
@@ -7222,6 +7425,7 @@
       "selectWorld.create": "Start the Misery",
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "item.purechaos.dream_spawn_egg": "Dream Spawn Egg",
+      "death.fell.accident.generic": "%1$s didnt have slow falling",
       "gamerule.veganism": "Veganism",
       "gui.chaosmod.cheat_gui.label_cheat_menu": "Cheat Menu",
       "item.chaosmod.fbi_spawn_egg": "FBI Spawn Egg",
@@ -7262,7 +7466,9 @@
       "entity.purechaos.stroater": "Stroater",
       "item.purechaos.aether": "Aether Portal Igniter",
       "entity.purechaos.splank": "Splank",
+      "painting.purechaos.you_like_seeing_me.title": "You Like Seeing Me",
       "item.chaosmod.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
+      "painting.purechaos.this_is_how_you_look.author": "boykisser",
       "gui.yes": "Consent",
       "subtitles.nerd_pacman_meme": "Nerd Pacman Meme",
       "gui.purechaos.vikki_vuk_gui.label_vstorage": "VStorage",
@@ -7312,6 +7518,7 @@
       "gui.purechaos.computer_gui.button_enter_cyberspace": "Enter Cyberspace",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "item.purechaos.deek": "Ender Eye ",
+      "advancements.pure_chaos.descr": "It\u0027s not too late to go back!",
       "painting.purechaos.hmmmm_drip.author": "Unknown",
       "item.chaosmod.grimace_shake": "Grimace Shake",
       "selectWorld.gameMode.adventure": "Why",
@@ -7336,6 +7543,7 @@
       "gamerule.doJBossSpawning.description": "Should the Josip 2.0 Boss Spawn naturally?",
       "item.purechaos.murica_spawn_egg": "\u0027Murica Spawn Egg",
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
+      "menu.multiplayer": "Playdate Time!",
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
       "item.chaosmod.cum_bucket": "Cum Bucket",
@@ -7346,13 +7554,16 @@
       "entity.purechaos.long_leg_chicken": "Long Leg Chicken",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
+      "painting.purechaos.you_like_kissing_boys.author": "boykisser",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
       "selectWorld.gameMode.hardcore": "No.",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "painting.purechaos.nuh_uh.title": "Nuh Uh",
       "item.purechaos.amugus_chestplate": "Amugus Body",
       "item.purechaos.xite": "Xite",
-      "block.purechaos.plantable_steve": "Plantable Steve",
+      "painting.purechaos.buckshot_time.title": "Buckshot Time",
       "entity.chaosmod.fbi": "FBI",
+      "painting.purechaos.bombkisser.author": "internr dood",
       "item.chaosmod.coca_cola": "Coca Cola",
       "block.purechaos.gatorade": "Gatorade",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
@@ -7367,14 +7578,17 @@
       "entity.chaosmod.cupcakke": "Cupcakke",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.purechaos.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
+      "item.minecraft.netherite_axe": "Netherite Chop Chop Stick",
       "gui.purechaos.captcha_gui.answer": "Your Answer",
       "fluid.purechaos.pee": "Pee",
       "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.purechaos.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
+      "painting.purechaos.i_see_you_masturbating.author": "boykisser",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
       "block.chaosmod.cyber_block": "Cyber Block",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
       "item.purechaos.aentity_spawn_egg": "Aentity Spawn Egg",
+      "painting.purechaos.you_like_seeing_me.author": "boykisser",
       "subtitles.amogus": "sus",
       "item.purechaos.bullet": "Bullet",
       "effect.chaosmod.blind": "Blind",
@@ -7382,14 +7596,17 @@
       "item.chaosmod.nerd_spawn_egg": "Nerd Spawn Egg",
       "gameMode.spectator": "Dead body reported",
       "entity.purechaos.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
+      "painting.purechaos.i_offer_you_brainrot.title": "I Offer You Brainrot",
       "block.chaosmod.milk_2": "Milk 2",
       "item.purechaos.almond_water": "Almond Water",
       "gui.purechaos.cheat_gui.label_cheat_menu": "Cheat Menu",
       "item.purechaos.adidas_pickaxe": "Adidas Pickaxe",
       "entity.purechaos.amogus_3_grin": "Amogus 3 (Impostor, Green)",
+      "painting.purechaos.you_like_kissing_boys.title": "You Like Kissing Boys",
       "death.attack.cccp": "%1$s was a fool",
       "item.chaosmod.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
       "entity.chaosmod.rick_astley": "Rick Astley",
+      "item.minecraft.stone_pickaxe": "Stone Diggy Diggy Blocky",
       "item.chaosmod.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "item.purechaos.glow": "Glow",
       "entity.chaosmod.cod_but_better": "Cod But Better",
@@ -7403,6 +7620,7 @@
       "mco.configure.world.buttons.delete": "Kaboom it",
       "item.purechaos.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "item.chaosmod.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
+      "painting.purechaos.big_tails.title": "Big Tails",
       "entity.chaosmod.blaz": "Blaz",
       "item.purechaos.adidas_hoe": "Adidas Hoe",
       "item.minecraft.tipped_arrow.effect.amongsus": "Arrow of Amongsus",
@@ -7416,15 +7634,19 @@
       "subtitles.ugh_cupcakke": "",
       "item.chaosmod.adidas_armor_boots": "Adidas Boots",
       "item.purechaos.bleach": "Bleach",
+      "painting.purechaos.staring_at_gay.author": "boykisser",
       "item.purechaos.staravoda_bucket": "Staravoda Bucket",
       "item.chaosmod.american_soldat_spawn_egg": "American Soldier Spawn Egg",
       "block.purechaos.emepee": "Emepee",
+      "death.attack.drown.player": "%1$s forgor to breathe while trying to run away from %2$s",
       "biome.purechaos.desert": "Desert",
       "item.purechaos.adidas_armor_leggings": "Adidas Leggings",
       "fluid.chaosmod.cum": "Cum",
       "entity.chaosmod.among_us": "Among Us",
       "item.chaosmod.murica_spawn_egg": "\u0027Murica Spawn Egg",
       "item.purechaos.brown": "Brown",
+      "menu.options": "Settings for grown ups",
+      "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.mumbo_token": "Mumbo Token",
       "gameMode.adventure": "Why",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
@@ -7438,12 +7660,14 @@
       "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
       "entity.purechaos.cupcakke": "Cupcakke",
       "item.purechaos.dingot": "Dingot",
+      "painting.purechaos.i_see_you_masturbating.title": "I See You Masturbating",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "item.chaosmod.poop": "Poop",
       "entity.purechaos.firefly": "Firefly",
       "fluid.purechaos.cobble_fluid": "Cobblestone Fluid",
       "block.chaosmod.south": "South",
       "block.purechaos.sa_ds": "Block ?",
+      "item.minecraft.diamond_axe": "Diamond Chop Chop Stick",
       "block.purechaos.death": "Death",
       "item.purechaos.totem_of_amogus": "Totem Of Lying",
       "selectWorld.data_read": "Reliving your past mistakes...",
@@ -7453,15 +7677,18 @@
       "item.chaosmod.brown": "Brown",
       "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
+      "item.minecraft.golden_pickaxe": "Golden Diggy Diggy Blocky",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "selectWorld.select": "Continue the Misery",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "entity.purechaos.herobrine": "Herobrine",
       "block.chaosmod.plante": "Plante",
+      "painting.purechaos.big_tails.author": "aaaa",
       "block.chaosmod.jeb_block": "jeb_ Block",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
       "entity.purechaos.t_pose_entity": "T Pose Entity",
       "entity.purechaos.cod_but_better": "Cod But Better",
+      "death.attack.genericKill.player": "%1$s was boo boo\u0027d by %2$s",
       "item.chaosmod.turtle_armor_leggings": "Turtle Leggings",
       "gameMode.creative": "Minimal Suffering",
       "item.chaosmod.oil_bucket": "Oil Bucket",
@@ -7473,6 +7700,7 @@
       "fluid.chaosmod.oil": "Oil",
       "item.chaosmod.communism_orb": "Orb o\u0027 Communism",
       "item.purechaos.apple_ingot": "Apple Ingot",
+      "painting.purechaos.mc_kisser.title": "Mc Kisser",
       "entity.chaosmod.amogus_3_crew": "Amogus 3 (Crewmate, Red)",
       "subtitles.spit": "",
       "entity.chaosmod.nerd": "Nerd",
@@ -7484,8 +7712,11 @@
       "item.purechaos.meth": "Meth",
       "item.purechaos.baguette": "Baguette",
       "block.purechaos.missing_texture": "Missing Texture",
+      "painting.purechaos.a_painting.author": "some reddit user",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
+      "painting.purechaos.no_meme.title": "No Meme",
       "item.chaosmod.bleach": "Bleach",
+      "item.minecraft.diamond_pickaxe": "Diamond Diggy Diggy Blocky",
       "subtitles.ruler_slap": "slap",
       "entity.purechaos.moth_of_aggrevation": "Moth Of Aggrevation",
       "item.purechaos.adidas_sword": "Adidas Sword",
@@ -7507,11 +7738,13 @@
       "item.chaosmod.obamium": "Obamium",
       "subtitles.crnidani": "crnidanijebani",
       "gui.chaosmod.cheat_gui.button_switch_dimension": "Switch Dimension",
+      "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
       "selectWorld.gameMode.creative": "Minimal Suffering",
       "item.purechaos.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "entity.chaosmod.technoblade": "Technoblade",
       "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
+      "painting.purechaos.i_offer_you_brainrot.author": "some internet guy",
       "item.purechaos.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "enchantment.purechaos.sexy_enchanetement": "Sexy",
       "entity.purechaos.baldi_minus": "Baldi Minus",
@@ -7524,11 +7757,14 @@
       "gui.purechaos.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.rock_living": "",
       "item.chaosmod.adidas_pickaxe": "Adidas Pickaxe",
+      "death.attack.outOfWorld": "%1$s broke the fourth wall",
       "block.purechaos.backrooms_lvl_1_floor": "Backrooms (1) Floor",
+      "item.minecraft.stone_axe": "Stone Chop Chop Stick",
       "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "block.purechaos.computer": "Computer",
       "item.purechaos.ak_47": "AK 47",
       "effect.purechaos.blind": "Blind",
+      "menu.quit": "Bye bye",
       "item.chaosmod.samsung_note_7": "Samsung Note 7",
       "subtitles.vine_boom": "",
       "entity.chaosmod.splank": "Splank",
@@ -7549,6 +7785,7 @@
       "gui.proceed": "Consent",
       "item.chaosmod.potato_spuds": "Potato Spuds",
       "item.chaosmod.comically_large_spoon": "Comically Large Spoon",
+      "item.minecraft.netherite_pickaxe": "Netherite Diggy Diggy Blocky",
       "item.purechaos.radiation_liquid_bucket": "Radiation Liquid Bucket",
       "item.purechaos.legs_spawn_egg": "Legs Spawn Egg",
       "block.chaosmod.comunisam_block": "Comunisam Block",
@@ -7568,6 +7805,7 @@
       "item.purechaos.sasi_amangas.desc": "HE is sus",
       "gui.purechaos.cheat_gui.button_switch_dimension": "Switch Dimension",
       "block.purechaos.potatus": "Potatus",
+      "painting.purechaos.bombkisser.title": "Bombkisser",
       "item.chaosmod.impostor_knife": "Impostor Knife",
       "item.chaosmod.eatable_command_block": "Command Block",
       "item.chaosmod.splank_spawn_egg": "Splank Spawn Egg",
@@ -7587,7 +7825,9 @@
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.chaosmod.staravoda": "Staravoda",
       "item.purechaos.pickax": "Pickax",
+      "painting.purechaos.nuh_uh.author": "boykisser",
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
+      "item.minecraft.iron_axe": "Iron Chop Chop Stick",
       "selectWorld.gameMode.hardcore.info": "Literally why would you ever want to do this, if you ever click this you are actually a psychopath and you need mental help go ky-",
       "item.purechaos.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.adidas_armor_leggings": "Adidas Leggings",
@@ -7603,6 +7843,7 @@
       "entity.chaosmod.dream": "Dream",
       "subtitles.footstep_metal_amogus": "idk",
       "item.purechaos.sus": "Sus Portal Birther",
+      "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
       "item.purechaos.amugus_leggings": "Amugus Leggings",
       "item.chaosmod.apple_ingot": "Apple Ingot",
       "item.chaosmod.dipex": "DiPixk",
@@ -7613,6 +7854,7 @@
       "item.purechaos.zenith": "Zenith",
       "item.purechaos.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "block.chaosmod.depression_block": "Depression Block",
+      "painting.purechaos.you_think_youre_alone.author": "boykisser",
       "block.chaosmod.ggggggg": "slipped and slipped",
       "biome.purechaos.plains": "Plains",
       "gamerule.veganism.description": "Meat isn\u0027t allowed",
@@ -7640,6 +7882,7 @@
       "effect.chaosmod.high_effect": "High",
       "item.chaosmod.broken_chestplate_1_leggings": "Broken Chestplate 1 Leggings",
       "item.purechaos.cobble_fluid_bucket": "Bucket of Cobblestone",
+      "painting.purechaos.its_impossible.title": "Its Impossible",
       "item.chaosmod.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
       "subtitles.boolets": "I NEED MORE BOOLETS",
       "item.purechaos.beengot": "Beengot",
@@ -7656,8 +7899,10 @@
       "item.purechaos.adidas_shovel": "Adidas Shovel",
       "subtitles.ahdude": "ff",
       "item.purechaos.igla": "Igla",
+      "painting.purechaos.buckshot_time.author": "boykisser",
       "item.purechaos.corruptstaff": "Corrupt Staff",
       "effect.chaosmod.dementia": "Dementia",
+      "painting.purechaos.shur_up.title": "Shur Up",
       "item.purechaos.milk_2_bucket": "Milk 2.0 Bucket",
       "item.purechaos.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.purechaos.bottle_of_piss": "Bottle Of Piss",

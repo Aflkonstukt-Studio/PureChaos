@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "painting",
+  "definition": {
+    "texture": "bombkisser.png",
+    "width": 17,
+    "height": 16,
+    "title": "Bombkisser",
+    "author": "internr dood"
+  }
+}
