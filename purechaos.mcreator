@@ -6936,6 +6936,19 @@
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/RecipeillegalsubstanceBrewingRecipe.java"
         ]
       }
+    },
+    {
+      "name": "OILRAAAH",
+      "type": "recipe",
+      "sortid": 395,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oilraaah",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/OILRAAAHBrewingRecipe.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
