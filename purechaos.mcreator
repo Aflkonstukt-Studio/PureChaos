@@ -6886,6 +6886,32 @@
           "src/main/resources/data/purechaos/damage_type/vegan_death.json"
         ]
       }
+    },
+    {
+      "name": "CustomTitle",
+      "type": "mixin",
+      "sortid": 391,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "custom_title",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/CustomTitleMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "CustomIcon",
+      "type": "mixin",
+      "sortid": 392,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "custom_icon",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/CustomIconMixin.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

@@ -6,8 +6,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import net.minecraft.world.entity.Entity;
+
 @Mixin(Minecraft.class)
-public final class DisableVanillaTitle {
+public abstract class CustomTitleMixin {
+	public CustomTitleMixin() {
+	}
+	
     @Inject(method = "updateTitle()V", at = @At("HEAD"), cancellable = true)
     private void updateTitle(final CallbackInfo info) {
         info.cancel();

@@ -12,8 +12,8 @@ import java.io.InputStream;
 import java.util.List;
 
 @Mixin({IconSet.class})
-public abstract class IconsMixin {
-    public IconsMixin() {
+public abstract class CustomIconMixin {
+    public CustomIconMixin() {
     }
 
     @Inject(
