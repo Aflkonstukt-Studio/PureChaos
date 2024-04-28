@@ -6912,6 +6912,17 @@
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/CustomIconMixin.java"
         ]
       }
+    },
+    {
+      "name": "Illegalsubstance",
+      "type": "potion",
+      "sortid": 393,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "illegalsubstance",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -7325,11 +7336,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -7504,6 +7515,7 @@
       "item.chaosmod.amugus_chestplate": "Amugus Body",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "death.attack.cccp_death.item": "%1$s used the wrong keyboard",
+      "item.minecraft.tipped_arrow.effect.illegalsubstance": "Laced Arrow",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
       "subtitles.dudeshutt": "",
@@ -7861,6 +7873,7 @@
       "death.attack.cccp_death.player": "%1$s used the wrong keyboard whilst trying to escape %2$s",
       "fluid.purechaos.pee": "Pee",
       "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
+      "item.minecraft.splash_potion.effect.illegalsubstance": "Splash Bottle of Illegal substance",
       "item.purechaos.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "painting.purechaos.i_see_you_masturbating.author": "boykisser",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
@@ -8032,6 +8045,7 @@
       "painting.purechaos.stuck.title": "Stuck",
       "item.purechaos.cioao": "Ciao Portal Igniter",
       "entity.purechaos.fbi": "FBI",
+      "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
       "item.chaosmod.adidas_shovel": "Adidas Shovel",
       "gui.purechaos.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.rock_living": "",
@@ -8150,6 +8164,7 @@
       "item.purechaos.kfce": "KFCE",
       "selectWorld.gameMode.survival.info": "We are not responsible for any suicidal thoughts that may arise from playing this",
       "item.purechaos.groggo_spawn_egg": "Greg Spawn Egg",
+      "item.minecraft.potion.effect.illegalsubstance": "Bottle of Illegal substance",
       "biome.chaosmod.susus": "Susus",
       "item.chaosmod.aether": "Aether Portal Igniter",
       "item.chaosmod.peemension": "Dirt Sword but Igniter",
