@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
+    "purechaos:oil",
     "purechaos:cobble_fluid",
     "purechaos:radiation_liquid",
     "purechaos:milk_2",
     "purechaos:carbon_monoxide",
     "purechaos:gatorade",
-    "purechaos:oil",
     "purechaos:orange_fluid",
     "purechaos:staravoda",
     "purechaos:cum",

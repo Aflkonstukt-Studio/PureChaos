@@ -21,14 +21,14 @@ public class CaptchaCode {
     private static final Random random = new Random();
 
     private static final String[] mathChallenges = {
-            "2 + 2", "5 * 3", "10 - 7", "8 / 2", "9 * 9", "12 / 4", "3 + 5", "7 * 7", "10 - 3", "6 / 2", "4 * 4", "9 / 3", "5 + 7", "8 * 8", "12 - 5", "10 / 2"
+            "2 + 2", "5 * 3", "10 - 7", "8 / 2", "9 * 9", "12 / 4", "3 + 5", "7 * 7", "10 - 3", "6 / 2", "4 * 4", "9 / 3", "5 + 7", "8 * 8", "12 - 5", "10 / 2", "100 - 21"
     };
     private static final String[] mathAnswers = {
-            "4", "15", "3", "4", "81", "3", "8", "49", "7", "3", "16", "3", "12", "64", "7", "5"
+            "4", "15", "3", "4", "81", "3", "8", "49", "7", "3", "16", "3", "12", "64", "7", "5", "79"
     };
 
     private static final String[] wordChallenges = {
-            "hello", "world", "programming", "minecraft", "forge", "blockbench", "yourmom", "java", "modding", "fabric", "chaos", "giggity", "poggers", "pogchamp", "pog", "champ"
+            "hello", "world", "programming", "minecraft", "forge", "blockbench", "yourmom", "java", "modding", "fabric", "chaos", "giggity", "poggers", "pogchamp", "pog", "champ", "meow", "boykisser", "kawaii", "onii-chan", "captcha", "I am not a robot"
     };
 
     public enum ChallengeType {

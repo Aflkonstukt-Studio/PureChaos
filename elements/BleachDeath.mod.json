@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s didnt feel like seeing anymore",
+    "itemDeathMessage": "%1$s didnt feel like seeing anymore",
+    "playerDeathMessage": "%1$s didnt feel like seeing anymore whilst trying to escape %2$s"
+  }
+}

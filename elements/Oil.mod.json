@@ -2,8 +2,8 @@
   "_fv": 60,
   "_type": "fluid",
   "definition": {
-    "name": "Oil",
-    "bucketName": "Oil Bucket",
+    "name": "Crude Oil",
+    "bucketName": "Crude Oil Bucket",
     "textureStill": "oil_still",
     "textureFlowing": "oil_flowing",
     "tintType": "No tint",

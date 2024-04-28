@@ -144,7 +144,7 @@
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "purechaos:oil",
+            "Name": "purechaos:crude_oil",
             "Properties": {
               "level": "0"
             }

@@ -49,7 +49,7 @@ public class MeteorHandler {
                 }
             }
 
-            if (meteor.timeUntilImpact / 20 <= 0) {
+            if (meteor.timeUntilImpact / 20 <= 1) {
                 triggerMeteorExplosion(world, meteor);
                 return true;
             }
