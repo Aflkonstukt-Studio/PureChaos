@@ -6923,6 +6923,19 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Recipeillegalsubstance",
+      "type": "recipe",
+      "sortid": 394,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipeillegalsubstance",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/RecipeillegalsubstanceBrewingRecipe.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
