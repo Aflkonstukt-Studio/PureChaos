@@ -7362,11 +7362,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
