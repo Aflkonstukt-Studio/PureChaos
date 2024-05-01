@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "purechaos:block/backrooms_wall",
-    "up": "purechaos:block/backrooms_wall",
-    "north": "purechaos:block/backrooms_wall",
-    "east": "purechaos:block/backrooms_wall",
-    "south": "purechaos:block/backrooms_wall",
-    "west": "purechaos:block/backrooms_wall",
-    "particle": "purechaos:block/backrooms_wall"
+    "down": "purechaos:block/stripped_bamboo_block",
+    "up": "purechaos:block/stripped_bamboo_block",
+    "north": "purechaos:block/stripped_bamboo_block",
+    "east": "purechaos:block/stripped_bamboo_block",
+    "south": "purechaos:block/stripped_bamboo_block",
+    "west": "purechaos:block/stripped_bamboo_block",
+    "particle": "purechaos:block/stripped_bamboo_block"
   },
   "render_type": "solid"
 }

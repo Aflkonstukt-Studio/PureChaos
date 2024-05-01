@@ -96,12 +96,9 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.WALTER_WIGHT_SPAWN_EGG.get());
 				tabData.accept(PurechaosModBlocks.GRAVE.get().asItem());
 				tabData.accept(PurechaosModItems.COD_BUT_BETTER_SPAWN_EGG.get());
-				tabData.accept(PurechaosModBlocks.BACKROOMS_LVL_1LIGHT.get().asItem());
 				tabData.accept(PurechaosModItems.SSSR.get());
 				tabData.accept(PurechaosModItems.STALIN_SPAWN_EGG.get());
-				tabData.accept(PurechaosModBlocks.BACKROOMS_LVL_1_WALL.get().asItem());
 				tabData.accept(PurechaosModBlocks.SOUTH.get().asItem());
-				tabData.accept(PurechaosModBlocks.BACKROOMS_LVL_1_FLOOR.get().asItem());
 				tabData.accept(PurechaosModBlocks.COMUNISAM_BLOCK.get().asItem());
 				tabData.accept(PurechaosModItems.TO.get());
 				tabData.accept(PurechaosModBlocks.POLAND_BLOCK.get().asItem());

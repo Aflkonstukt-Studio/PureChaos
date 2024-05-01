@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "backrooms_light",
+    "texture": "redstone_lamp_on",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -44,7 +44,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Chaostab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -58,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "REDSTONE_LIGHT"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,

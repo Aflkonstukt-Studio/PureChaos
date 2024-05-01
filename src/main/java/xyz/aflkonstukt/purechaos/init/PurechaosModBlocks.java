@@ -46,6 +46,8 @@ import xyz.aflkonstukt.purechaos.block.BrazilBlockBlock;
 import xyz.aflkonstukt.purechaos.block.BackroomsLvl1lightBlock;
 import xyz.aflkonstukt.purechaos.block.BackroomsLvl1WallBlock;
 import xyz.aflkonstukt.purechaos.block.BackroomsLvl1FloorBlock;
+import xyz.aflkonstukt.purechaos.block.BackroomsCeilingBlock;
+import xyz.aflkonstukt.purechaos.block.BackroomWallBottomBlock;
 import xyz.aflkonstukt.purechaos.block.AetherPortalBlock;
 import xyz.aflkonstukt.purechaos.block.AdidasBlockBlock;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
@@ -102,6 +104,8 @@ public class PurechaosModBlocks {
 	public static final RegistryObject<Block> MISSING_TEXTURE = REGISTRY.register("missing_texture", () -> new MissingTextureBlock());
 	public static final RegistryObject<Block> AETHER_PORTAL = REGISTRY.register("aether_portal", () -> new AetherPortalBlock());
 	public static final RegistryObject<Block> JEB_BLOCK = REGISTRY.register("jeb_block", () -> new JebBlockBlock());
+	public static final RegistryObject<Block> BACKROOM_WALL_BOTTOM = REGISTRY.register("backroom_wall_bottom", () -> new BackroomWallBottomBlock());
+	public static final RegistryObject<Block> BACKROOMS_CEILING = REGISTRY.register("backrooms_ceiling", () -> new BackroomsCeilingBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

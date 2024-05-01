@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
+import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
@@ -38,19 +39,21 @@ public class GolpProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() <= 0.1) {
-			if (entity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = BlockPos.containing(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return Component.literal("CaptchaGUI");
-					}
+			if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("CaptchaGUI");
+						}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new CaptchaGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new CaptchaGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

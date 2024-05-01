@@ -6949,6 +6949,140 @@
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/OILRAAAHBrewingRecipe.java"
         ]
       }
+    },
+    {
+      "name": "DisableCaptcha",
+      "type": "gamerule",
+      "sortid": 396,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disable_captcha",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "BackroomWallBottom",
+      "type": "block",
+      "sortid": 397,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backroom_wall_bottom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/block/backroom_wall_bottom.json",
+          "src/main/resources/assets/purechaos/models/item/backroom_wall_bottom.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backroom_wall_bottom.json",
+          "src/main/resources/assets/purechaos/blockstates/backroom_wall_bottom.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomWallBottomBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BackroomsCeiling",
+      "type": "block",
+      "sortid": 398,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_ceiling",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsCeilingBlock.java",
+          "src/main/resources/assets/purechaos/models/block/backrooms_ceiling.json",
+          "src/main/resources/assets/purechaos/models/item/backrooms_ceiling.json",
+          "src/main/resources/assets/purechaos/blockstates/backrooms_ceiling.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_ceiling.json"
+        ]
+      }
+    },
+    {
+      "name": "Backrooms",
+      "type": "structure",
+      "sortid": 399,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/structure/backrooms.json",
+          "src/main/resources/data/purechaos/worldgen/structure_set/backrooms.json",
+          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms_backrooms.json",
+          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms.json"
+        ]
+      }
+    },
+    {
+      "name": "BackroomsBiome",
+      "type": "biome",
+      "sortid": 400,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/backrooms_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "BackroomsDimension",
+      "type": "dimension",
+      "sortid": 401,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/dimension/backrooms_dimension.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BackroomsDimensionDimension.java",
+          "src/main/resources/data/purechaos/dimension_type/backrooms_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "SendToBackrooms",
+      "type": "procedure",
+      "sortid": 402,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "send_to_backrooms",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SendToBackroomsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BackroomsCommand",
+      "type": "command",
+      "sortid": 403,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backrooms_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/BackroomsCommandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7452,6 +7586,10 @@
       "~CUSTOM:Susus"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.CONCRETE_POWDER#7",
+      "~CUSTOM:BackroomsLvl1Floor",
+      "~Blocks.DIRT#0",
+      "~Blocks.AIR",
       "~Blocks.SCULK",
       "~Blocks.COBBLESTONE",
       "~Blocks.STONE#0",
@@ -7621,6 +7759,7 @@
       "item.purechaos.potato_spuds": "Potato Spuds",
       "item.purechaos.fortnite_a_1": "Fortnite A 1",
       "item.purechaos.kentucky_fried_chicken": "KFC Chicken",
+      "gamerule.disableCaptcha.description": "This gamerule just disables the annoying captcha",
       "item.purechaos.puffer_balloon": "Puffer on a String",
       "death.attack.taken_home_death.item": "%1$s was taken home by %2$s using %3$s",
       "painting.purechaos.xmasterwoopainting.title": "Xmasterwoopainting",
@@ -7631,6 +7770,7 @@
       "item.purechaos.cum_bucket": "Cum Bucket",
       "item.purechaos.mercury": "Mercury",
       "entity.purechaos.blaz": "Blaz",
+      "block.purechaos.backroom_wall_bottom": "Backroom Wall Bottom",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "subtitles.nerd": "nerd",
@@ -7992,6 +8132,7 @@
       "block.purechaos.youtube": "Youtube",
       "gamerule.doBossSpawning.description": "Should bosses from chaos mod spawn naturally?",
       "gameMode.changed": "Sussy things done, you are now %s",
+      "biome.purechaos.backrooms_biome": "Backrooms",
       "item.chaosmod.brown": "Brown",
       "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
@@ -8052,6 +8193,7 @@
       "item.chaosmod.lava_bottle": "Lava Bottle",
       "item.purechaos.half_golden_apple": "Half Golden Apple",
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
+      "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
       "item.chaosmod.obamium": "Obamium",
       "subtitles.crnidani": "crnidanijebani",
@@ -8216,6 +8358,7 @@
       "item.purechaos.tinted_glass_bottle": "Tinted Glass Bottle",
       "gui.purechaos.captcha_gui.button_submit": "Submit",
       "item.purechaos.coca_cola": "Coca Cola",
+      "gamerule.disableCaptcha": "Disable Captcha?",
       "block.purechaos.cyber_block": "Cyber Block",
       "item.chaosmod.fasttopass": "FASTTOPASS",
       "fluid.purechaos.staravoda": "Staravoda",

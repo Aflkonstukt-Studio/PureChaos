@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "minecraft:gray_concrete_powder",
+    "purechaos:backrooms_lvl_1_floor",
+    "minecraft:dirt",
+    "minecraft:air",
     "minecraft:sculk",
     "minecraft:cobblestone",
     "minecraft:stone",

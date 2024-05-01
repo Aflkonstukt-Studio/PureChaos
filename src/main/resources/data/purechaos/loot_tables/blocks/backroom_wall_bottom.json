@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "purechaos:blocks/backroom_wall_bottom",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:backroom_wall_bottom"
+        }
+      ]
+    }
+  ]
+}

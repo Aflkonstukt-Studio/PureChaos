@@ -293,6 +293,8 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> INFINITE_FUEL = REGISTRY.register("infinite_fuel", () -> new InfiniteFuelItem());
 	public static final RegistryObject<Item> GROGGO_SPAWN_EGG = REGISTRY.register("groggo_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.GROGGO, -16724992, -6737152, new Item.Properties()));
 	public static final RegistryObject<Item> BRAKE_FLUID = REGISTRY.register("brake_fluid", () -> new BrakeFluidItem());
+	public static final RegistryObject<Item> BACKROOM_WALL_BOTTOM = block(PurechaosModBlocks.BACKROOM_WALL_BOTTOM);
+	public static final RegistryObject<Item> BACKROOMS_CEILING = block(PurechaosModBlocks.BACKROOMS_CEILING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

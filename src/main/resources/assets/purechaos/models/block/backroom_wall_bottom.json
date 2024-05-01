@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:block/birch_planks",
+    "up": "purechaos:block/birch_planks",
+    "north": "purechaos:block/birch_planks",
+    "east": "purechaos:block/birch_planks",
+    "south": "purechaos:block/birch_planks",
+    "west": "purechaos:block/birch_planks",
+    "particle": "purechaos:block/birch_planks"
+  },
+  "render_type": "solid"
+}

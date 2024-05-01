@@ -2,12 +2,12 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "sandstone_bottom",
-    "textureTop": "backrooms_floor",
-    "textureLeft": "backrooms_floor",
-    "textureFront": "backrooms_floor",
-    "textureRight": "backrooms_floor",
-    "textureBack": "backrooms_floor",
+    "texture": "hay_block_top",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Chaostab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -99,7 +99,7 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,

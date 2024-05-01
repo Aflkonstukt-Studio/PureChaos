@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:block/polished_diorite",
+    "up": "purechaos:block/polished_diorite",
+    "north": "purechaos:block/polished_diorite",
+    "east": "purechaos:block/polished_diorite",
+    "south": "purechaos:block/polished_diorite",
+    "west": "purechaos:block/polished_diorite",
+    "particle": "purechaos:block/polished_diorite"
+  },
+  "render_type": "solid"
+}
