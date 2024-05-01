@@ -31,21 +31,6 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModVariables {
-	public static boolean bl9 = false;
-	public static boolean bl8 = false;
-	public static boolean bl7 = false;
-	public static boolean bl6 = false;
-	public static boolean bl5 = false;
-	public static boolean bl4 = false;
-	public static boolean bl3 = false;
-	public static boolean bl2 = false;
-	public static boolean bl12 = false;
-	public static boolean bl11 = false;
-	public static boolean bl10 = false;
-	public static boolean bl1 = false;
-	public static boolean bl = false;
-	public static boolean show_nikocado = false;
-
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		PurechaosMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
@@ -84,6 +69,20 @@ public class PurechaosModVariables {
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
+				clone.bl9 = original.bl9;
+				clone.bl8 = original.bl8;
+				clone.bl7 = original.bl7;
+				clone.bl6 = original.bl6;
+				clone.bl5 = original.bl5;
+				clone.bl4 = original.bl4;
+				clone.bl3 = original.bl3;
+				clone.bl2 = original.bl2;
+				clone.bl12 = original.bl12;
+				clone.bl11 = original.bl11;
+				clone.bl10 = original.bl10;
+				clone.bl1 = original.bl1;
+				clone.bl = original.bl;
+				clone.show_nikocado = original.show_nikocado;
 				clone.nightmare_duration = original.nightmare_duration;
 				clone.having_nightmare = original.having_nightmare;
 			}
@@ -123,6 +122,20 @@ public class PurechaosModVariables {
 	public static class PlayerVariables {
 		public double wrong_answers = 0.0;
 		public double sanity = 100.0;
+		public boolean bl9 = false;
+		public boolean bl8 = false;
+		public boolean bl7 = false;
+		public boolean bl6 = false;
+		public boolean bl5 = false;
+		public boolean bl4 = false;
+		public boolean bl3 = false;
+		public boolean bl2 = false;
+		public boolean bl12 = false;
+		public boolean bl11 = false;
+		public boolean bl10 = false;
+		public boolean bl1 = false;
+		public boolean bl = false;
+		public boolean show_nikocado = false;
 		public double nightmare_duration = 0;
 		public boolean having_nightmare = false;
 
@@ -135,6 +148,20 @@ public class PurechaosModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("wrong_answers", wrong_answers);
 			nbt.putDouble("sanity", sanity);
+			nbt.putBoolean("bl9", bl9);
+			nbt.putBoolean("bl8", bl8);
+			nbt.putBoolean("bl7", bl7);
+			nbt.putBoolean("bl6", bl6);
+			nbt.putBoolean("bl5", bl5);
+			nbt.putBoolean("bl4", bl4);
+			nbt.putBoolean("bl3", bl3);
+			nbt.putBoolean("bl2", bl2);
+			nbt.putBoolean("bl12", bl12);
+			nbt.putBoolean("bl11", bl11);
+			nbt.putBoolean("bl10", bl10);
+			nbt.putBoolean("bl1", bl1);
+			nbt.putBoolean("bl", bl);
+			nbt.putBoolean("show_nikocado", show_nikocado);
 			nbt.putDouble("nightmare_duration", nightmare_duration);
 			nbt.putBoolean("having_nightmare", having_nightmare);
 			return nbt;
@@ -144,6 +171,20 @@ public class PurechaosModVariables {
 			CompoundTag nbt = (CompoundTag) tag;
 			wrong_answers = nbt.getDouble("wrong_answers");
 			sanity = nbt.getDouble("sanity");
+			bl9 = nbt.getBoolean("bl9");
+			bl8 = nbt.getBoolean("bl8");
+			bl7 = nbt.getBoolean("bl7");
+			bl6 = nbt.getBoolean("bl6");
+			bl5 = nbt.getBoolean("bl5");
+			bl4 = nbt.getBoolean("bl4");
+			bl3 = nbt.getBoolean("bl3");
+			bl2 = nbt.getBoolean("bl2");
+			bl12 = nbt.getBoolean("bl12");
+			bl11 = nbt.getBoolean("bl11");
+			bl10 = nbt.getBoolean("bl10");
+			bl1 = nbt.getBoolean("bl1");
+			bl = nbt.getBoolean("bl");
+			show_nikocado = nbt.getBoolean("show_nikocado");
 			nightmare_duration = nbt.getDouble("nightmare_duration");
 			having_nightmare = nbt.getBoolean("having_nightmare");
 		}
@@ -172,6 +213,20 @@ public class PurechaosModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.wrong_answers = message.data.wrong_answers;
 					variables.sanity = message.data.sanity;
+					variables.bl9 = message.data.bl9;
+					variables.bl8 = message.data.bl8;
+					variables.bl7 = message.data.bl7;
+					variables.bl6 = message.data.bl6;
+					variables.bl5 = message.data.bl5;
+					variables.bl4 = message.data.bl4;
+					variables.bl3 = message.data.bl3;
+					variables.bl2 = message.data.bl2;
+					variables.bl12 = message.data.bl12;
+					variables.bl11 = message.data.bl11;
+					variables.bl10 = message.data.bl10;
+					variables.bl1 = message.data.bl1;
+					variables.bl = message.data.bl;
+					variables.show_nikocado = message.data.show_nikocado;
 					variables.nightmare_duration = message.data.nightmare_duration;
 					variables.having_nightmare = message.data.having_nightmare;
 				}

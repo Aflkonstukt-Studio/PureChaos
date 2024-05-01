@@ -36,7 +36,13 @@ public class INeedBooletsTriggerProcedure {
 		if (entity == null || text == null)
 			return;
 		if ((text).equals("i need more boolets")) {
-			PurechaosModVariables.bl = true;
+			{
+				boolean _setval = true;
+				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.bl = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:moreboolets")), SoundSource.NEUTRAL, 1, 1);

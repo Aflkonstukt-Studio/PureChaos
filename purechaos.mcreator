@@ -2054,6 +2054,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3931,29 +3935,6 @@
         "files": [
           "src/main/resources/assets/purechaos/models/item/dorito_cool_ranch.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/DoritoCoolRanchItem.java"
-        ]
-      }
-    },
-    {
-      "name": "AteDorito",
-      "type": "procedure",
-      "sortid": 206,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ate_dorito",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/AteDoritoProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -6142,7 +6123,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow1Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6157,7 +6143,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow2Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6172,7 +6163,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow3Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6187,7 +6183,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow4Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6202,7 +6203,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow5Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6217,7 +6223,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow6Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6232,7 +6243,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow7Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6247,7 +6263,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow8Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6262,7 +6283,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow9Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6277,7 +6303,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow10Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6292,7 +6323,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow11Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6307,7 +6343,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/BooletsShow12Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6322,6 +6363,10 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/MoreBoolets1DisplayOverlayIngameProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "world",
             "type": "world"
@@ -6354,7 +6399,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/MoreBoolets1DisplayOverlayIngame2Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -6450,7 +6500,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/NikocadoAvocadoJumpscareDisplayOverlayIngameProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -7079,6 +7134,41 @@
           "src/main/java/xyz/aflkonstukt/purechaos/command/BackroomsCommandCommand.java"
         ]
       }
+    },
+    {
+      "name": "DoritoFinishedEating",
+      "type": "procedure",
+      "sortid": 404,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dorito_finished_eating",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DoritoFinishedEatingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7097,85 +7187,85 @@
     {
       "name": "bl9",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl8",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl7",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl6",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl5",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl4",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl3",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl2",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl12",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl11",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl10",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl1",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "bl",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
       "name": "show_nikocado",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {

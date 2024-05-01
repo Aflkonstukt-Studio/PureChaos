@@ -38,7 +38,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "AteDorito"
+      "name": "DoritoFinishedEating"
     },
     "enableRanged": false,
     "shootConstantly": false,

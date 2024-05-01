@@ -1,7 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import xyz.aflkonstukt.purechaos.procedures.AteDoritoProcedure;
+import xyz.aflkonstukt.purechaos.procedures.DoritoFinishedEatingProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -31,7 +31,7 @@ public class DoritoCoolRanchItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		AteDoritoProcedure.execute(world, entity);
+		DoritoFinishedEatingProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

@@ -2,8 +2,12 @@ package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 
+import net.minecraft.world.entity.Entity;
+
 public class NikocadoAvocadoJumpscareDisplayOverlayIngameProcedure {
-	public static boolean execute() {
-		return PurechaosModVariables.show_nikocado;
+	public static boolean execute(Entity entity) {
+		if (entity == null)
+			return false;
+		return (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).show_nikocado;
 	}
 }

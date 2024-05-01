@@ -31,14 +31,20 @@
         "mmmmm"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "AteDorito"
+      "name": "DoritoFinishedEating"
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": true,
     "nutritionalValue": 20,
     "saturation": -10.0,
