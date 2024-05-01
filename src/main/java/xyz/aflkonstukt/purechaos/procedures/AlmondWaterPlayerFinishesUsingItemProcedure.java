@@ -19,7 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 public class AlmondWaterPlayerFinishesUsingItemProcedure {
-	public static void execute(LevelAccessor world, double x, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -46,9 +46,9 @@ public class AlmondWaterPlayerFinishesUsingItemProcedure {
 			}
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)), z);
+				_ent.teleportTo((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()));
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)), z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
 			}
 		}
 	}

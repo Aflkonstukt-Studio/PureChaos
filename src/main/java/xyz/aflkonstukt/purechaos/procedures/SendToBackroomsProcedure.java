@@ -41,6 +41,6 @@ public class SendToBackroomsProcedure {
 				_serverPlayer.connection.teleport(x, 10, z, _ent.getYRot(), _ent.getXRot());
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal("Looks like you are now in the backrooms! To get out you can either drink almond water or kill yours-"), false);
+			_player.displayClientMessage(Component.literal("Looks like you are now in the backrooms! To get out, you can either drink almond water or kill yourse-"), false);
 	}
 }
