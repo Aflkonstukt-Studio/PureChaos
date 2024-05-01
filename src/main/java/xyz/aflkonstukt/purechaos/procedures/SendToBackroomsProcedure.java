@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
@@ -11,6 +12,7 @@ import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
 import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
 import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
@@ -38,5 +40,7 @@ public class SendToBackroomsProcedure {
 			if (_ent instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.connection.teleport(x, 10, z, _ent.getYRot(), _ent.getXRot());
 		}
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("Looks like you are now in the backrooms! To get out you can either drink almond water or kill yours-"), false);
 	}
 }
