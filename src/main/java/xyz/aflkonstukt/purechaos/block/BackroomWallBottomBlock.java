@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class BackroomWallBottomBlock extends Block {
 	public BackroomWallBottomBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(-1, 3600000));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.BAMBOO_WOOD).strength(-1, 3600000));
 	}
 
 	@Override

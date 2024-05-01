@@ -1,6 +1,5 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -14,10 +13,9 @@ import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 public class SendToBackroomsProcedure {
-	public static void execute(LevelAccessor world, double x, double z, Entity entity) {
+	public static void execute(double x, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
@@ -40,6 +38,5 @@ public class SendToBackroomsProcedure {
 			if (_ent instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.connection.teleport(x, 10, z, _ent.getYRot(), _ent.getXRot());
 		}
-		Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
 	}
 }

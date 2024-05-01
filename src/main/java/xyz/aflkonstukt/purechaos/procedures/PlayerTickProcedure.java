@@ -94,7 +94,7 @@ public class PlayerTickProcedure {
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 0) {
-			SendToBackroomsProcedure.execute(world, x, z, entity);
+			SendToBackroomsProcedure.execute(x, z, entity);
 		} else {
 			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {

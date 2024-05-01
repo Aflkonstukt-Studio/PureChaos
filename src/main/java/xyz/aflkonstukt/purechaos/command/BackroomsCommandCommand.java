@@ -32,7 +32,7 @@ public class BackroomsCommandCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					SendToBackroomsProcedure.execute(world, x, z, entity);
+					SendToBackroomsProcedure.execute(x, z, entity);
 					return 0;
 				}));
 	}
