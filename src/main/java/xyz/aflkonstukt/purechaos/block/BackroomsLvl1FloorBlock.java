@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class BackroomsLvl1FloorBlock extends Block {
 	public BackroomsLvl1FloorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(-1, 3600000));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOL).strength(-1, 3600000));
 	}
 
 	@Override

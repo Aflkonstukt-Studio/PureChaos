@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class BackroomsCeilingBlock extends Block {
 	public BackroomsCeilingBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(-1, 3600000));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(-1, 3600000));
 	}
 
 	@Override

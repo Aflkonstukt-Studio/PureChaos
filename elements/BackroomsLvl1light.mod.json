@@ -58,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "ROCK"
+      "value": "GLASS"
     },
     "tickRate": 10,
     "tickRandomly": false,

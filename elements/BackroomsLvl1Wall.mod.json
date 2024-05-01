@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -81,7 +81,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "BAMBOO_WOOD"
     },
     "breakSound": {
       "value": ""

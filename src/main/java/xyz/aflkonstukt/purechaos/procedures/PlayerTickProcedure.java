@@ -96,24 +96,26 @@ public class PlayerTickProcedure {
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 0) {
 			SendToBackroomsProcedure.execute(world, x, z, entity);
 		} else {
-			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
-				if (Mth.nextDouble(RandomSource.create(), 1, 7) <= 2) {
-					if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity >= 80)) {
+			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
+				if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
+					if (Mth.nextDouble(RandomSource.create(), 1, 7) <= 2) {
+						if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity >= 80)) {
+							{
+								double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity + Mth.nextDouble(RandomSource.create(), 1, 3);
+								entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.sanity = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+						}
+					} else {
 						{
-							double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity + Mth.nextDouble(RandomSource.create(), 1, 3);
+							double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
 							entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.sanity = _setval;
 								capability.syncPlayerVariables(entity);
 							});
 						}
-					}
-				} else {
-					{
-						double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
-						entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.sanity = _setval;
-							capability.syncPlayerVariables(entity);
-						});
 					}
 				}
 			}
@@ -169,7 +171,7 @@ public class PlayerTickProcedure {
 		}
 		if (world.isClientSide() && entity instanceof Player) {
 			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
-				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt26 && _livEnt26.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/desaturate.json")
 						&& !(entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).having_nightmare) {
