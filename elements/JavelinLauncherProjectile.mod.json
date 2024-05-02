@@ -3,17 +3,20 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:SamsungNote7"
+      "value": "CUSTOM:CocaCola"
     },
     "showParticles": false,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "CUSTOM:espuma"
     },
     "igniteFire": false,
     "power": 1.0,
     "damage": 5.0,
     "knockback": 5,
     "entityModel": "Default",
-    "customModelTexture": ""
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "JavelinLauncherProjectileProjectileHitsBlock"
+    }
   }
 }

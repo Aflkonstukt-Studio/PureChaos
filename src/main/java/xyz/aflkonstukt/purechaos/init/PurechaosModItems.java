@@ -41,6 +41,7 @@ import xyz.aflkonstukt.purechaos.item.NetheritPickaxItem;
 import xyz.aflkonstukt.purechaos.item.Milk2Item;
 import xyz.aflkonstukt.purechaos.item.MethItem;
 import xyz.aflkonstukt.purechaos.item.MercuryItem;
+import xyz.aflkonstukt.purechaos.item.MelatoninPillItem;
 import xyz.aflkonstukt.purechaos.item.LavaBottleItem;
 import xyz.aflkonstukt.purechaos.item.KondomnepitajzastoovoradimalispoileralertonimarupuItem;
 import xyz.aflkonstukt.purechaos.item.KentuckyFriedChickenItem;
@@ -292,6 +293,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> BRAKE_FLUID = REGISTRY.register("brake_fluid", () -> new BrakeFluidItem());
 	public static final RegistryObject<Item> BACKROOM_WALL_BOTTOM = block(PurechaosModBlocks.BACKROOM_WALL_BOTTOM);
 	public static final RegistryObject<Item> BACKROOMS_CEILING = block(PurechaosModBlocks.BACKROOMS_CEILING);
+	public static final RegistryObject<Item> MELATONIN_PILL = REGISTRY.register("melatonin_pill", () -> new MelatoninPillItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

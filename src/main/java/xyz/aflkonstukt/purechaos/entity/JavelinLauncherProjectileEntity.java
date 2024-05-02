@@ -1,6 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.entity;
 
+import xyz.aflkonstukt.purechaos.procedures.JavelinLauncherProjectileProjectileHitsBlockProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
@@ -10,6 +11,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -24,7 +26,7 @@ import net.minecraft.network.protocol.Packet;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class JavelinLauncherProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(PurechaosModItems.SAMSUNG_NOTE_7.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(PurechaosModItems.COCA_COLA.get());
 
 	public JavelinLauncherProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(PurechaosModEntities.JAVELIN_LAUNCHER_PROJECTILE.get(), world);
@@ -65,6 +67,12 @@ public class JavelinLauncherProjectileEntity extends AbstractArrow implements It
 	}
 
 	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		JavelinLauncherProjectileProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
 		if (this.inGround)
@@ -83,7 +91,7 @@ public class JavelinLauncherProjectileEntity extends AbstractArrow implements It
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:espuma")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -98,7 +106,7 @@ public class JavelinLauncherProjectileEntity extends AbstractArrow implements It
 		entityarrow.setKnockback(5);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
-		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:espuma")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

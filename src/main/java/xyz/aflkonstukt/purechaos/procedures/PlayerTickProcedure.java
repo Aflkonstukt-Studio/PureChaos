@@ -66,7 +66,17 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double tick_count = 0;
+		if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
+			if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance >= 2.5) {
+				{
+					double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance - 2.5;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.heart_attack_chance = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 75) {
 			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
 				if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
@@ -173,7 +183,7 @@ public class PlayerTickProcedure {
 		}
 		if (world.isClientSide() && entity instanceof Player) {
 			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
-				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt27 && _livEnt27.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/desaturate.json")
 						&& !(entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).having_nightmare) {
@@ -187,7 +197,7 @@ public class PlayerTickProcedure {
 			} else {
 				if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
-				} else if (entity instanceof LivingEntity _livEnt41 && _livEnt41.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
+				} else if (entity instanceof LivingEntity _livEnt42 && _livEnt42.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/meth.json"));
 				}
 			}

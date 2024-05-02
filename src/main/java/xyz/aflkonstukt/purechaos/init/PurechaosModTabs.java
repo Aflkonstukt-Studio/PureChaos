@@ -188,6 +188,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.INFINITE_FUEL.get());
 				tabData.accept(PurechaosModItems.GROGGO_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BRAKE_FLUID.get());
+				tabData.accept(PurechaosModItems.MELATONIN_PILL.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

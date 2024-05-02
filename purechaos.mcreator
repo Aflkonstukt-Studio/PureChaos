@@ -7354,12 +7354,7 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/ShowSanityLabelProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -7377,10 +7372,6 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       }
@@ -7395,6 +7386,146 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/OldSanityCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "MelatoninPill",
+      "type": "item",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melatonin_pill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/melatonin_pill.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/MelatoninPillItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ItemTooltips",
+      "type": "procedure",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_tooltips",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ItemTooltipsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MelatoninPillPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "melatonin_pill_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MelatoninPillPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HeartAttackDeath",
+      "type": "damagetype",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_attack_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/damage_type/heart_attack_death.json"
+        ]
+      }
+    },
+    {
+      "name": "MakePlayerSleep",
+      "type": "procedure",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "make_player_sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MakePlayerSleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JavelinLauncherProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "javelin_launcher_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/JavelinLauncherProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KPressDeath",
+      "type": "damagetype",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "k_press_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/damage_type/k_press_death.json"
         ]
       }
     }
@@ -7523,8 +7654,14 @@
     {
       "name": "show_sanity_label",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "global",
       "value": "false"
+    },
+    {
+      "name": "heart_attack_chance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -8184,6 +8321,7 @@
       "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "key.chaosmod.two": "Spit",
+      "death.attack.heart_attack_death.player": "%1$s got a heart attack while trying to escape %2$s",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "painting.purechaos.its_impossible.author": "boykisser",
       "item.purechaos.spit_ball": "Spit Ball",
@@ -8200,6 +8338,7 @@
       "subtitles.amongus_ambient": "amogus",
       "item.chaosmod.broken_chestplate_1_chestplate": "Broken Chestpla?",
       "block.purechaos.jeb_block": "jeb_ Block",
+      "item.purechaos.melatonin_pill": "Melatonin Pill",
       "item.chaosmod.josip_spawn_egg": "JOSIP Spawn Egg",
       "block.purechaos.backrooms_lvl_1light": "Backrooms (1) Light",
       "selectWorld.create": "Start the Misery",
@@ -8344,6 +8483,7 @@
       "item.purechaos.amugus_chestplate": "Amugus Body",
       "item.purechaos.xite": "Xite",
       "painting.purechaos.buckshot_time.title": "Buckshot Time",
+      "death.attack.k_press_death": "%1$s pressed K",
       "entity.chaosmod.fbi": "FBI",
       "painting.purechaos.bombkisser.author": "internr dood",
       "item.chaosmod.coca_cola": "Coca Cola",
@@ -8422,6 +8562,7 @@
       "item.purechaos.bleach": "Bleach",
       "painting.purechaos.staring_at_gay.author": "boykisser",
       "item.purechaos.staravoda_bucket": "Staravoda Bucket",
+      "death.attack.k_press_death.player": "%1$s pressed K while trying to escape %2$s",
       "item.chaosmod.american_soldat_spawn_egg": "American Soldier Spawn Egg",
       "block.purechaos.emepee": "Emepee",
       "death.attack.drown.player": "%1$s forgor to breathe while trying to run away from %2$s",
@@ -8538,6 +8679,7 @@
       "item.purechaos.communism_orb": "Orb o\u0027 Communism",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
       "painting.purechaos.stuck.title": "Stuck",
+      "death.attack.k_press_death.item": "%1$s pressed K",
       "item.purechaos.cioao": "Ciao Portal Igniter",
       "entity.purechaos.fbi": "FBI",
       "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
@@ -8606,6 +8748,7 @@
       "item.chaosmod.rock": "Rock",
       "item.chaosmod.mercury": "Mercury",
       "block.purechaos.grave": "Grave",
+      "death.attack.heart_attack_death.item": "%1$s got a heart attack",
       "item.chaosmod.amogus_3_spawn_egg": "Amogus 3 Spawn Egg",
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "selectWorld.gameMode.survival": "Death",
@@ -8648,6 +8791,7 @@
       "item.purechaos.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "block.chaosmod.depression_block": "Depression Block",
       "painting.purechaos.you_think_youre_alone.author": "boykisser",
+      "death.attack.heart_attack_death": "%1$s got a heart attack",
       "block.chaosmod.ggggggg": "slipped and slipped",
       "biome.purechaos.plains": "Plains",
       "gamerule.veganism.description": "Meat isn\u0027t allowed",

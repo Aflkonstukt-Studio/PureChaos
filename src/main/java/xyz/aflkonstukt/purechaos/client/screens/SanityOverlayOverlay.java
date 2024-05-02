@@ -61,7 +61,7 @@ public class SanityOverlayOverlay {
 			if (Show25SanityProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/sanity25.png"), w - 70, h - 61, 0, 0, 52, 52, 52, 52);
 			}
-			if (ShowSanityLabelProcedure.execute(entity))
+			if (ShowSanityLabelProcedure.execute())
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 						SanityOverlayValueProcedure.execute(entity), 6, 8, -1, false);

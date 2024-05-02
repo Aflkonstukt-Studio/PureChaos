@@ -35,7 +35,7 @@ public class OldSanityCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					OldSanityCommandExecutedProcedure.execute(arguments, entity);
+					OldSanityCommandExecutedProcedure.execute(arguments);
 					return 0;
 				})));
 	}
