@@ -36,7 +36,7 @@ public class ItemTooltipsProcedure {
 			return;
 		if (itemstack.getItem() == PurechaosModItems.MELATONIN_PILL.get()) {
 			tooltip.add(
-					Component.literal(("\u00A74Your current heart attack chance: " + ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance + "%"))));
+					Component.literal(("\u00A74Your current side effect chance: " + ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance + "%"))));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal(
 						"\u00A77Side effects include: heart attacks, heart palpitations, migraines, recurring nightmares, weird cheese dreams, fever dreams, increased chance of dementia, hallucinations, possible chance of never waking up."));
