@@ -1,5 +1,5 @@
 {
-  "type": "purechaos:structure_feature",
+  "type": "purechaos:hec_feature",
   "config": {
     "structure": "purechaos:hec",
     "random_rotation": true,

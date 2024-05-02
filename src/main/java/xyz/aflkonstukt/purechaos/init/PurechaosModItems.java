@@ -38,7 +38,6 @@ import xyz.aflkonstukt.purechaos.item.OrangeFluidItem;
 import xyz.aflkonstukt.purechaos.item.OilItem;
 import xyz.aflkonstukt.purechaos.item.ObamiumItem;
 import xyz.aflkonstukt.purechaos.item.NetheritPickaxItem;
-import xyz.aflkonstukt.purechaos.item.MumboTokenItem;
 import xyz.aflkonstukt.purechaos.item.Milk2Item;
 import xyz.aflkonstukt.purechaos.item.MethItem;
 import xyz.aflkonstukt.purechaos.item.MercuryItem;
@@ -198,7 +197,6 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> BRAZIL_BLOCK = block(PurechaosModBlocks.BRAZIL_BLOCK);
 	public static final RegistryObject<Item> NOKIA_BLOCK = block(PurechaosModBlocks.NOKIA_BLOCK);
 	public static final RegistryObject<Item> BRAZIL = REGISTRY.register("brazil", () -> new BrazilItem());
-	public static final RegistryObject<Item> MUMBO_TOKEN = REGISTRY.register("mumbo_token", () -> new MumboTokenItem());
 	public static final RegistryObject<Item> BACKROOMS_LVL_1_FLOOR = block(PurechaosModBlocks.BACKROOMS_LVL_1_FLOOR);
 	public static final RegistryObject<Item> SOUTH = block(PurechaosModBlocks.SOUTH);
 	public static final RegistryObject<Item> LEGS_SPAWN_EGG = REGISTRY.register("legs_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.LEGS, -26368, -205, new Item.Properties()));

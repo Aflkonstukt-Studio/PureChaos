@@ -1,12 +1,10 @@
 
 package xyz.aflkonstukt.purechaos.potion;
 
-import xyz.aflkonstukt.purechaos.procedures.DementiaEffectStartedappliedProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DementiaEffectExpiresProcedure;
 
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
@@ -18,11 +16,6 @@ public class DementiaMobEffect extends MobEffect {
 	@Override
 	public boolean isInstantenous() {
 		return true;
-	}
-
-	@Override
-	public void applyInstantenousEffect(Entity source, Entity indirectSource, LivingEntity entity, int amplifier, double health) {
-		DementiaEffectStartedappliedProcedure.execute(entity);
 	}
 
 	@Override

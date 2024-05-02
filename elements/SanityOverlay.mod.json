@@ -16,9 +16,64 @@
             "value": -1,
             "falpha": 0.0
           },
+          "displayCondition": {
+            "name": "ShowSanityLabel"
+          },
           "anchorPoint": "TOP_LEFT",
           "x": 6,
           "y": 8
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sanity100.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Show100Sanity"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 357,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sanity75.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Show75Sanity"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 357,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sanity50.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Show50Sanity"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 357,
+          "y": 179
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sanity25.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Show25Sanity"
+          },
+          "anchorPoint": "BOTTOM_RIGHT",
+          "x": 357,
+          "y": 179
         }
       }
     ],

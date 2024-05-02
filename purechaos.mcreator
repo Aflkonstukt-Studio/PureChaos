@@ -1787,6 +1787,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -2272,18 +2276,6 @@
       }
     },
     {
-      "name": "DropMumboTokens",
-      "type": "gamerule",
-      "sortid": 141,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dropMumboTokens",
-      "metadata": {
-        "type": "logic",
-        "files": []
-      }
-    },
-    {
       "name": "BleachOverlayDisplayOverlayIngame",
       "type": "procedure",
       "sortid": 135,
@@ -2299,45 +2291,6 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlockBroken",
-      "type": "procedure",
-      "sortid": 140,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "block_broken",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BlockBrokenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -2533,20 +2486,6 @@
           "src/main/resources/assets/purechaos/models/item/brazil.json",
           "src/main/resources/assets/purechaos/models/block/brazil_portal_ew.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BrazilItem.java"
-        ]
-      }
-    },
-    {
-      "name": "MumboToken",
-      "type": "item",
-      "sortid": 139,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mumbo_token",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/MumboTokenItem.java",
-          "src/main/resources/assets/purechaos/models/item/mumbo_token.json"
         ]
       }
     },
@@ -4913,25 +4852,6 @@
       }
     },
     {
-      "name": "DementiaEffectStartedapplied",
-      "type": "procedure",
-      "sortid": 259,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dementia_effect_startedapplied",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DementiaEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "DementiaEffectExpires",
       "type": "procedure",
       "sortid": 260,
@@ -5621,6 +5541,7 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/configured_feature/hec_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/hec_feature_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/features/HECFeatureFeature.java",
           "src/main/resources/data/purechaos/worldgen/placed_feature/hec_feature.json"
         ],
         "has_nbt_structure": true
@@ -7301,6 +7222,181 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Show100Sanity",
+      "type": "procedure",
+      "sortid": 416,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_100_sanity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/Show100SanityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Show75Sanity",
+      "type": "procedure",
+      "sortid": 417,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_75_sanity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/Show75SanityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Show50Sanity",
+      "type": "procedure",
+      "sortid": 418,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_50_sanity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/Show50SanityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Show25Sanity",
+      "type": "procedure",
+      "sortid": 419,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_25_sanity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/Show25SanityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DementiaActiveTickCondition",
+      "type": "procedure",
+      "sortid": 420,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dementia_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DementiaActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HECFeatureAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hec_feature_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/HECFeatureAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowSanityLabel",
+      "type": "procedure",
+      "sortid": 422,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sanity_label",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ShowSanityLabelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OldSanityCommandExecuted",
+      "type": "procedure",
+      "sortid": 423,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_sanity_command_executed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/OldSanityCommandExecutedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OldSanity",
+      "type": "command",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_sanity",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/OldSanityCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7422,6 +7518,12 @@
       "name": "invert_controls",
       "type": "logic",
       "scope": "global",
+      "value": "false"
+    },
+    {
+      "name": "show_sanity_label",
+      "type": "logic",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -7726,11 +7828,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8084,7 +8186,6 @@
       "key.chaosmod.two": "Spit",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "painting.purechaos.its_impossible.author": "boykisser",
-      "gamerule.dropMumboTokens.description": "Do you want mumbo tokens to be dropped (by chance) on block break",
       "item.purechaos.spit_ball": "Spit Ball",
       "item.chaosmod.sussy_sus_stew": "Very Suspicious Stew",
       "effect.purechaos.radiation_poisioning": "Radiation Acute Sickness",
@@ -8229,7 +8330,6 @@
       "subtitles.kill": "huvh",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "gamerule.dropMumboTokens": "Drop Mumbo Tokens",
       "block.chaosmod.missing_texture": "Missing Texture",
       "subtitles.espuma": "coca cola espuma",
       "entity.chaosmod.cursed_dog": "Dgo",
@@ -8333,7 +8433,6 @@
       "item.purechaos.brown": "Brown",
       "menu.options": "Settings for grown ups",
       "painting.purechaos.shur_up.author": "boykisser",
-      "item.purechaos.mumbo_token": "Mumbo Token",
       "gameMode.adventure": "Why",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",

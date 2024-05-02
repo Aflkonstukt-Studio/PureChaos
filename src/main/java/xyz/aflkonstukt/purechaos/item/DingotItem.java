@@ -18,7 +18,7 @@ import java.util.List;
 
 public class DingotItem extends Item {
 	public DingotItem() {
-		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationMod(10f).meat().build()));
+		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationMod(10f).alwaysEat().meat().build()));
 	}
 
 	@Override

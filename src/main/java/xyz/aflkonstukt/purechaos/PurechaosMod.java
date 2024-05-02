@@ -11,6 +11,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModMenus;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
+import xyz.aflkonstukt.purechaos.init.PurechaosModFeatures;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEnchantments;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
@@ -59,7 +60,7 @@ public class PurechaosMod {
 		PurechaosModEntities.REGISTRY.register(bus);
 		PurechaosModEnchantments.REGISTRY.register(bus);
 		PurechaosModTabs.REGISTRY.register(bus);
-
+		PurechaosModFeatures.REGISTRY.register(bus);
 		StructureFeature.REGISTRY.register(bus);
 		PurechaosModMobEffects.REGISTRY.register(bus);
 		PurechaosModPotions.REGISTRY.register(bus);

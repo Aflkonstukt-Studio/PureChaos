@@ -31,6 +31,9 @@
         "very tasty"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -39,6 +42,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": true,
     "nutritionalValue": 10,
     "saturation": 10.0,
@@ -46,7 +52,7 @@
       "value": "CUSTOM:Sus.portal"
     },
     "isMeat": true,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat"
   }
 }

@@ -112,7 +112,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.GREENGISCREENDA.get().asItem());
 				tabData.accept(PurechaosModBlocks.BRAZIL_BLOCK.get().asItem());
 				tabData.accept(PurechaosModItems.BRAZIL.get());
-				tabData.accept(PurechaosModItems.MUMBO_TOKEN.get());
 				tabData.accept(PurechaosModItems.LEGS_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.LONG_LEG_CHICKEN_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.FIREFLY_SPAWN_EGG.get());

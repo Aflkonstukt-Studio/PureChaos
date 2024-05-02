@@ -68,6 +68,7 @@ public class PurechaosModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.show_sanity_label = original.show_sanity_label;
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
@@ -142,6 +143,7 @@ public class PurechaosModVariables {
 		public double nightmare_duration = 0;
 		public boolean having_nightmare = false;
 		public double jump_count = 0;
+		public boolean show_sanity_label = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -169,6 +171,7 @@ public class PurechaosModVariables {
 			nbt.putDouble("nightmare_duration", nightmare_duration);
 			nbt.putBoolean("having_nightmare", having_nightmare);
 			nbt.putDouble("jump_count", jump_count);
+			nbt.putBoolean("show_sanity_label", show_sanity_label);
 			return nbt;
 		}
 
@@ -193,6 +196,7 @@ public class PurechaosModVariables {
 			nightmare_duration = nbt.getDouble("nightmare_duration");
 			having_nightmare = nbt.getBoolean("having_nightmare");
 			jump_count = nbt.getDouble("jump_count");
+			show_sanity_label = nbt.getBoolean("show_sanity_label");
 		}
 	}
 
@@ -236,6 +240,7 @@ public class PurechaosModVariables {
 					variables.nightmare_duration = message.data.nightmare_duration;
 					variables.having_nightmare = message.data.having_nightmare;
 					variables.jump_count = message.data.jump_count;
+					variables.show_sanity_label = message.data.show_sanity_label;
 				}
 			});
 			context.setPacketHandled(true);
