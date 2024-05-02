@@ -6,7 +6,8 @@
   "mixins": [
     "CustomTitleMixin",
     "CustomIconMixin",
-    "BottleMixinMixin"
+    "BottleMixinMixin",
+    "KeyboardInputMixin"
   ],
   "client": [],
   "minVersion": "0.8"

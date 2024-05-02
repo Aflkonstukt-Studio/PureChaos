@@ -7247,6 +7247,60 @@
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/BottleMixinMixin.java"
         ]
       }
+    },
+    {
+      "name": "KeyboardInput",
+      "type": "mixin",
+      "sortid": 412,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "keyboard_input",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/KeyboardInputMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "Drunk",
+      "type": "potioneffect",
+      "sortid": 413,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drunk",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/potion/DrunkMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DrunkEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 414,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drunk_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DrunkEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DrunkEffectExpires",
+      "type": "procedure",
+      "sortid": 415,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drunk_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DrunkEffectExpiresProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -7363,6 +7417,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "invert_controls",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -8007,6 +8067,7 @@
       "biome.purechaos.cyber_biome": "Cyber Biome",
       "item.purechaos.eatable_command_block": "Eatable Command Block",
       "item.chaosmod.beengot": "Beengot",
+      "effect.purechaos.drunk": "Drunk",
       "block.chaosmod.tlghd": "TLG Block",
       "item.purechaos.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.half_golden_apple": "Half Golden Apple",

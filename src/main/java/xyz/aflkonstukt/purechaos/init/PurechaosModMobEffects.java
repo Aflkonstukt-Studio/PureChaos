@@ -8,6 +8,7 @@ import xyz.aflkonstukt.purechaos.potion.SickMobEffect;
 import xyz.aflkonstukt.purechaos.potion.RadiationPoisioningMobEffect;
 import xyz.aflkonstukt.purechaos.potion.HighEffectMobEffect;
 import xyz.aflkonstukt.purechaos.potion.FatMobEffect;
+import xyz.aflkonstukt.purechaos.potion.DrunkMobEffect;
 import xyz.aflkonstukt.purechaos.potion.DementiaMobEffect;
 import xyz.aflkonstukt.purechaos.potion.BlindMobEffect;
 import xyz.aflkonstukt.purechaos.potion.BleachedMobEffect;
@@ -28,4 +29,5 @@ public class PurechaosModMobEffects {
 	public static final RegistryObject<MobEffect> BLIND = REGISTRY.register("blind", () -> new BlindMobEffect());
 	public static final RegistryObject<MobEffect> SICK = REGISTRY.register("sick", () -> new SickMobEffect());
 	public static final RegistryObject<MobEffect> DEMENTIA = REGISTRY.register("dementia", () -> new DementiaMobEffect());
+	public static final RegistryObject<MobEffect> DRUNK = REGISTRY.register("drunk", () -> new DrunkMobEffect());
 }

@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Drunk",
+    "icon": "dementia.png",
+    "color": {
+      "value": -16711885,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "DrunkEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "DrunkEffectExpires"
+    }
+  }
+}
