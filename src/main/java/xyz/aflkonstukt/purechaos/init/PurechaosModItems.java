@@ -154,7 +154,6 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> SPLANK_SPAWN_EGG = REGISTRY.register("splank_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.SPLANK, -3355648, -154, new Item.Properties()));
 	public static final RegistryObject<Item> IKEA_DESK_SPAWN_EGG = REGISTRY.register("ikea_desk_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.IKEA_DESK, -13421773, -1, new Item.Properties()));
 	public static final RegistryObject<Item> FALLGAYS = REGISTRY.register("fallgays", () -> new FallgaysItem());
-	public static final RegistryObject<Item> TOMBSTONE = block(PurechaosModBlocks.TOMBSTONE);
 	public static final RegistryObject<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", () -> new SasiAmangasItem());
 	public static final RegistryObject<Item> JOSIP_SPAWN_EGG = REGISTRY.register("josip_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.JOSIP, -3407617, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> BROWN = REGISTRY.register("brown", () -> new BrownItem());

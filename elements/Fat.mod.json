@@ -12,6 +12,12 @@
     "isBad": true,
     "isBenefitical": false,
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "FatEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "FatEffectExpires"
+    }
   }
 }

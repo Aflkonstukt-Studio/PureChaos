@@ -1,5 +1,5 @@
 {
-  "parent": "purechaos:custom/dedgrave",
+  "parent": "purechaos:custom/grave",
   "textures": {
     "all": "purechaos:block/gravetexture",
     "particle": "purechaos:block/gravetexture",

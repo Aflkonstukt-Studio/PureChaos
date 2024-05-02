@@ -6,7 +6,6 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.block.YoutubeBlock;
 import xyz.aflkonstukt.purechaos.block.WoodDimensionPortalBlock;
-import xyz.aflkonstukt.purechaos.block.TombstoneBlock;
 import xyz.aflkonstukt.purechaos.block.TLGHDBlock;
 import xyz.aflkonstukt.purechaos.block.SusPortalBlock;
 import xyz.aflkonstukt.purechaos.block.SusBlockBlock;
@@ -77,7 +76,6 @@ public class PurechaosModBlocks {
 	public static final RegistryObject<Block> OIL = REGISTRY.register("oil", () -> new OilBlock());
 	public static final RegistryObject<Block> GATORADE = REGISTRY.register("gatorade", () -> new GatoradeBlock());
 	public static final RegistryObject<Block> GREEN_PLANT = REGISTRY.register("green_plant", () -> new GreenPlantBlock());
-	public static final RegistryObject<Block> TOMBSTONE = REGISTRY.register("tombstone", () -> new TombstoneBlock());
 	public static final RegistryObject<Block> CARBON_MONOXIDE = REGISTRY.register("carbon_monoxide", () -> new CarbonMonoxideBlock());
 	public static final RegistryObject<Block> YOUTUBE = REGISTRY.register("youtube", () -> new YoutubeBlock());
 	public static final RegistryObject<Block> PLANTE = REGISTRY.register("plante", () -> new PlanteBlock());

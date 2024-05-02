@@ -7,6 +7,6 @@
     "effects": "drowning",
     "normalDeathMessage": "%1$s was gassed",
     "itemDeathMessage": "%1$s was gassed by %2$s",
-    "playerDeathMessage": "%1$s was gassed whilst trying to escape %2$s"
+    "playerDeathMessage": "%1$s was gassed by %2$s"
   }
 }

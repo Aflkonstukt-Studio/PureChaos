@@ -1,8 +1,16 @@
 {
   "_fv": 60,
-  "_type": "feature",
+  "_type": "structure",
   "definition": {
-    "generationStep": "SURFACE_STRUCTURES",
+    "structure": "josip_kill_gas",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 25,
+    "separation": 20,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:BirchForest"
@@ -224,6 +232,11 @@
         "value": "wooded_badlands_plateau"
       }
     ],
-    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">josip_kill_gas</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">FALSE</field><field name=\"random_mirror\">FALSE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.STRUCTURE_BLOCK</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5000</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
   }
 }

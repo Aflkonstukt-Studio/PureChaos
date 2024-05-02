@@ -31,6 +31,9 @@
           "name": "button_switch_gamemode",
           "text": "Switch Gamemode",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CheatGUISwitchGamemode"
+          },
           "width": 103,
           "height": 20,
           "x": 162,
@@ -43,6 +46,9 @@
           "name": "button_switch_dimension",
           "text": "Switch Dimension",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CheatGUISwitchDimension"
+          },
           "width": 108,
           "height": 20,
           "x": 159,

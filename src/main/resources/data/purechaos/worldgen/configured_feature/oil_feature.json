@@ -4,7 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:crude_oil",
+        "Name": "purechaos:oil",
         "Properties": {
           "level": "0"
         }

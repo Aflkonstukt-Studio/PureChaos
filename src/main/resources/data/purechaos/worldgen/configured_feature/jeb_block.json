@@ -183,21 +183,6 @@
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "purechaos:tombstone",
-            "Properties": {
-              "waterlogged": "false",
-              "facing": "north"
-            }
-          }
-        },
-        "state": {
-          "Name": "purechaos:jeb_block"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
             "Name": "purechaos:carbon_monoxide",
             "Properties": {
               "level": "0"
@@ -235,20 +220,6 @@
           "predicate_type": "blockstate_match",
           "block_state": {
             "Name": "purechaos:rickroll_block"
-          }
-        },
-        "state": {
-          "Name": "purechaos:jeb_block"
-        }
-      },
-      {
-        "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "purechaos:grave",
-            "Properties": {
-              "waterlogged": "false"
-            }
           }
         },
         "state": {

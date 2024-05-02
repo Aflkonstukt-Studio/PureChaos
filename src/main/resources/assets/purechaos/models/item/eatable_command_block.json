@@ -1,6 +1,9 @@
 {
-  "parent": "item/generated",
+  "parent": "purechaos:custom/command_block",
   "textures": {
-    "layer0": "purechaos:item/command_block"
+    "0": "purechaos:block/side",
+    "1": "purechaos:block/front",
+    "2": "purechaos:block/back",
+    "particle": "purechaos:item/command_block"
   }
 }

@@ -2,12 +2,12 @@
   "_fv": 60,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "command_block",
-    "customModelName": "Normal",
+    "customModelName": "command_block:default",
     "customProperties": {},
     "states": [],
-    "name": "Command Block",
+    "name": "Eatable Command Block",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
@@ -31,6 +31,9 @@
         "eat it"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -39,6 +42,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,

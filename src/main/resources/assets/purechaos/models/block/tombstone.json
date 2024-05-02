@@ -1,9 +1,0 @@
-{
-  "parent": "purechaos:custom/dedtomb",
-  "textures": {
-    "all": "purechaos:block/tombtexture",
-    "particle": "purechaos:block/tombtexture",
-    "0": "purechaos:block/tombtexture"
-  },
-  "render_type": "solid"
-}

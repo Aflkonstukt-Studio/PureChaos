@@ -67,8 +67,8 @@ public class PlayerTickProcedure {
 		if (entity == null)
 			return;
 		double tick_count = 0;
-		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 80) {
-			if (Mth.nextDouble(RandomSource.create(), 1, 3000) <= 5) {
+		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 75) {
+			if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
 				if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);
@@ -99,7 +99,7 @@ public class PlayerTickProcedure {
 			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 5) {
 					if (Mth.nextDouble(RandomSource.create(), 1, 7) <= 2) {
-						if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity >= 80)) {
+						if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity >= 75)) {
 							{
 								double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity + Mth.nextDouble(RandomSource.create(), 1, 3);
 								entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -185,6 +185,8 @@ public class PlayerTickProcedure {
 			} else {
 				if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
+				} else if (entity instanceof LivingEntity _livEnt40 && _livEnt40.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
+					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/meth.json"));
 				}
 			}
 		}

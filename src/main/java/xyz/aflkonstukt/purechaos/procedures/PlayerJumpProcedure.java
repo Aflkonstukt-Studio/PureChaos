@@ -1,5 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,10 +32,15 @@ public class PlayerJumpProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double count = 0;
 		if (entity instanceof Player) {
-			if (count >= 3) {
-				count = 0;
+			if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).jump_count >= 3) {
+				{
+					double _setval = 0;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.jump_count = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:vine_boom")), SoundSource.NEUTRAL, 1, 1);
@@ -42,7 +49,13 @@ public class PlayerJumpProcedure {
 					}
 				}
 			} else {
-				count = count + 1;
+				{
+					double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).jump_count + 1;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.jump_count = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

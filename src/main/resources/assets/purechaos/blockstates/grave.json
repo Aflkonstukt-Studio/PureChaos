@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "purechaos:block/grave"
+    },
+    "facing=east": {
+      "model": "purechaos:block/grave",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purechaos:block/grave",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purechaos:block/grave",
+      "y": 270
     }
   }
 }

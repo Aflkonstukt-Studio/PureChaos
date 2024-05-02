@@ -85,6 +85,7 @@ public class PurechaosModVariables {
 				clone.show_nikocado = original.show_nikocado;
 				clone.nightmare_duration = original.nightmare_duration;
 				clone.having_nightmare = original.having_nightmare;
+				clone.jump_count = original.jump_count;
 			}
 		}
 	}
@@ -138,6 +139,7 @@ public class PurechaosModVariables {
 		public boolean show_nikocado = false;
 		public double nightmare_duration = 0;
 		public boolean having_nightmare = false;
+		public double jump_count = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -164,6 +166,7 @@ public class PurechaosModVariables {
 			nbt.putBoolean("show_nikocado", show_nikocado);
 			nbt.putDouble("nightmare_duration", nightmare_duration);
 			nbt.putBoolean("having_nightmare", having_nightmare);
+			nbt.putDouble("jump_count", jump_count);
 			return nbt;
 		}
 
@@ -187,6 +190,7 @@ public class PurechaosModVariables {
 			show_nikocado = nbt.getBoolean("show_nikocado");
 			nightmare_duration = nbt.getDouble("nightmare_duration");
 			having_nightmare = nbt.getBoolean("having_nightmare");
+			jump_count = nbt.getDouble("jump_count");
 		}
 	}
 
@@ -229,6 +233,7 @@ public class PurechaosModVariables {
 					variables.show_nikocado = message.data.show_nikocado;
 					variables.nightmare_duration = message.data.nightmare_duration;
 					variables.having_nightmare = message.data.having_nightmare;
+					variables.jump_count = message.data.jump_count;
 				}
 			});
 			context.setPacketHandled(true);

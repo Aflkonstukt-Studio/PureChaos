@@ -61,7 +61,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.SPLANK_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.FALLGAYS.get());
 				tabData.accept(PurechaosModItems.IKEA_DESK_SPAWN_EGG.get());
-				tabData.accept(PurechaosModBlocks.TOMBSTONE.get().asItem());
 				tabData.accept(PurechaosModItems.SASI_AMANGAS.get());
 				tabData.accept(PurechaosModItems.JOSIP_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BROWN.get());

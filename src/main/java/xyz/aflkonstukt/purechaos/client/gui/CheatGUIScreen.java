@@ -78,10 +78,18 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	public void init() {
 		super.init();
 		button_switch_gamemode = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {
+			if (true) {
+				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(0, x, y, z));
+				CheatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 36, this.topPos + 31, 103, 20).build();
 		guistate.put("button:button_switch_gamemode", button_switch_gamemode);
 		this.addRenderableWidget(button_switch_gamemode);
 		button_switch_dimension = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_dimension"), e -> {
+			if (true) {
+				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(1, x, y, z));
+				CheatGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + 33, this.topPos + 62, 108, 20).build();
 		guistate.put("button:button_switch_dimension", button_switch_dimension);
 		this.addRenderableWidget(button_switch_dimension);

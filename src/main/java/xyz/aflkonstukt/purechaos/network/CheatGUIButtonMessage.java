@@ -3,6 +3,8 @@ package xyz.aflkonstukt.purechaos.network;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
 import xyz.aflkonstukt.purechaos.procedures.DoNotPressPressedProcedure;
+import xyz.aflkonstukt.purechaos.procedures.CheatGUISwitchGamemodeProcedure;
+import xyz.aflkonstukt.purechaos.procedures.CheatGUISwitchDimensionProcedure;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -62,6 +64,14 @@ public class CheatGUIButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			CheatGUISwitchGamemodeProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			CheatGUISwitchDimensionProcedure.execute(entity);
+		}
 		if (buttonID == 2) {
 
 			DoNotPressPressedProcedure.execute(world, x, y, z);

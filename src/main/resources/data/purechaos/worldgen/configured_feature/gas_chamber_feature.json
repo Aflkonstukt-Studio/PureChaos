@@ -1,7 +1,0 @@
-{
-  "type": "purechaos:structure_feature",
-  "config": {
-    "structure": "purechaos:josip_kill_gas",
-    "ignored_blocks": "minecraft:structure_block"
-  }
-}

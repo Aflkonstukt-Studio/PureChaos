@@ -12,6 +12,9 @@ public class DoNotPressPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"fill ~50 ~50 ~50 ~-50 ~-50 ~-50 chaosmod:missing_texture 0 replace grass");
+					"/fill ~25 ~5 ~25 ~-25 ~-5 ~-25 purechaos:missing_texture replace #minecraft:dirt");
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/fill ~25 ~5 ~25 ~-25 ~-5 ~-25 purechaos:missing_texture replace #forge:stone");
 	}
 }
