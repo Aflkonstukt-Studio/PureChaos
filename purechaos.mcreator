@@ -7528,6 +7528,58 @@
           "src/main/resources/data/purechaos/damage_type/k_press_death.json"
         ]
       }
+    },
+    {
+      "name": "IconStorage",
+      "type": "code",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "icon_storage",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/IconStorage.java"
+        ]
+      }
+    },
+    {
+      "name": "Meteor",
+      "type": "code",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/Meteor.java"
+        ]
+      }
+    },
+    {
+      "name": "MeteorHandler",
+      "type": "code",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/MeteorHandler.java"
+        ]
+      }
+    },
+    {
+      "name": "MeteorCommand",
+      "type": "command",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "meteor_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/MeteorCommandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7659,6 +7711,12 @@
     },
     {
       "name": "heart_attack_chance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "dementia_chance",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -7965,11 +8023,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],

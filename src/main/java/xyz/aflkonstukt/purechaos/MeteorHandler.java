@@ -1,4 +1,18 @@
-package xyz.aflkonstukt.purechaos.meteors;
+/**
+ * The code of this mod element is always locked.
+ *
+ * You can register new events in this class too.
+ *
+ * If you want to make a plain independent class, create it using
+ * Project Browser -> New... and make sure to make the class
+ * outside xyz.aflkonstukt.purechaos as this package is managed by MCreator.
+ *
+ * If you change workspace package, modid or prefix, you will need
+ * to manually adapt this file to these changes or remake it.
+ *
+ * This class will be added in the mod root package.
+*/
+package xyz.aflkonstukt.purechaos;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -10,7 +24,9 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,48 +41,45 @@ import java.util.Random;
 public class MeteorHandler {
     private static final List<Meteor> meteors = new ArrayList<>();
     private static final Random random = new Random();
-    private static final int METEOR_CHANCE = 1000;
-    private static final int MAX_BLAST_RADIUS = 50;
+    private static final int METEOR_CHANCE = 100;
+    private static final int MAX_BLAST_RADIUS = 80;
     private static long lastMeteorTime = 0;
-    private static final long METEOR_COOLDOWN = 15 * 60 * 1000; // 10 minutes
-    private static final int METEOR_TIME = 5 * 60 * 20; // 5 minutes
+    private static final long METEOR_COOLDOWN = 15 * 60; // 15 minutes
+    private static final int METEOR_TIME = 5 * 60; // 5 minutes
     private static int METEOR_ANNOUNCMENT_COOLDOWN = 0;
+    private static long lastUpdate = System.currentTimeMillis();
 
     @SubscribeEvent
-    public static void onWorldTick(TickEvent.LevelTickEvent event) {
-        if (event.level instanceof ClientLevel) return; // Don't run on client (dedicated server only)
-        Level world = event.level;
-        meteors.removeIf(meteor -> {
-            if (event.level.getGameTime() % 20 != 0) return false;
-            meteor.timeUntilImpact--;
+    public static void onServerTick(TickEvent.ServerTickEvent event) {
+        long currentTime = System.currentTimeMillis();
+        if (currentTime - lastUpdate < 1000) return;
+        lastUpdate = currentTime;
 
-            if (meteor.timeUntilImpact / 20 <= 20) {
+        if (!meteors.isEmpty()) {
+            Meteor meteor = meteors.get(0);
+
+            meteor.timeUntilImpact--;
+            if (meteor.timeUntilImpact <= 10) {
                 if (METEOR_ANNOUNCMENT_COOLDOWN == 0) {
-                    announceMeteor(meteor, meteor.timeUntilImpact / 20 + "s");
-                    METEOR_ANNOUNCMENT_COOLDOWN = 20;
+                    announceMeteor(meteor, meteor.timeUntilImpact + "s");
+                    METEOR_ANNOUNCMENT_COOLDOWN = 1;
                 } else {
                     METEOR_ANNOUNCMENT_COOLDOWN--;
                 }
             }
 
-            if (meteor.timeUntilImpact / 20 <= 1) {
-                triggerMeteorExplosion(world, meteor);
-                return true;
+            if (meteor.timeUntilImpact < 1) {
+                meteor.world.explode(null, meteor.position.getX(), meteor.position.getY(), meteor.position.getZ(), meteor.blastRadius, Level.ExplosionInteraction.BLOCK);
+                meteors.remove(0);
             }
-            return false;
-        });
-    }
-
-    @SubscribeEvent
-    public static void onServerTick(TickEvent.ServerTickEvent event) {
-        if (random.nextInt(METEOR_CHANCE) == 0 && System.currentTimeMillis() - lastMeteorTime >= METEOR_COOLDOWN) {
-            if (meteors.isEmpty()) {
+        } else {
+            if (random.nextInt(METEOR_CHANCE) == 0 && lastMeteorTime - METEOR_COOLDOWN < currentTime) {
                 if (event.getServer().getPlayerList().getPlayers().size() == 1) {
                     generateMeteor((ServerLevel) event.getServer().getPlayerList().getPlayers().get(0).level());
                 } else if (event.getServer().getPlayerList().getPlayers().size() > 1) {
                     generateMeteor((ServerLevel) event.getServer().getPlayerList().getPlayers().get(random.nextInt(event.getServer().getPlayerList().getPlayers().size())).level());
                 }
-                lastMeteorTime = System.currentTimeMillis();
+                lastMeteorTime = currentTime;
             }
         }
     }
@@ -74,24 +87,20 @@ public class MeteorHandler {
     private static void generateMeteor(ServerLevel world) {
         Entity potentialTarget = findMeteorTarget(world);
         if (potentialTarget != null) {
-            BlockPos targetPos = potentialTarget.blockPosition().offset(randomOffset(), 200, randomOffset());
-            int blastRadius = random.nextInt(10, MAX_BLAST_RADIUS);
+            BlockPos targetPos = potentialTarget.blockPosition().offset(randomOffset(), 100, randomOffset());
+            targetPos = findGroundPosition(world, targetPos);
+            int blastRadius = random.nextInt(25, MAX_BLAST_RADIUS);
 
             Meteor meteor = new Meteor(targetPos, blastRadius, METEOR_TIME, world);
             meteors.add(meteor);
-            announceMeteor(meteor, METEOR_TIME / 20 / 60 + " minutes");
+            announceMeteor(meteor, METEOR_TIME / 60 + " minutes");
             lastMeteorTime = System.currentTimeMillis();
         }
     }
 
-    private static void triggerMeteorExplosion(Level world, Meteor meteor) {
-        meteor.position = findGroundPosition(world, meteor.position); // Adjust position to the ground
-        world.explode(null, meteor.position.getX(), meteor.position.getY(), meteor.position.getZ(), meteor.blastRadius, Level.ExplosionInteraction.BLOCK);
-    }
-
     private static void announceMeteor(Meteor meteor, String timeRemaining) {
         for (ServerPlayer player : meteor.world.players()) {
-            BlockPos pos = findGroundPosition(meteor.world, meteor.position);
+            BlockPos pos = meteor.position;
             Component component = Component.literal(Arrays.toString(new Object[]{pos.getX(),pos.getY(), pos.getZ()})).withStyle((p_214489_) -> p_214489_.withColor(ChatFormatting.GREEN).withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " +  pos.getX() + " " + pos.getY() + " " +  pos.getZ())).withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("chat.coordinates.tooltip"))));
 
             player.sendSystemMessage(Component.literal("Meteor inbound at: ").append(component).append(Component.literal(", blast radius: " + meteor.blastRadius + ". Impact in " + timeRemaining)).withStyle(ChatFormatting.RED));
@@ -99,11 +108,15 @@ public class MeteorHandler {
     }
 
     private static BlockPos findGroundPosition(Level world, BlockPos startPos) {
-        BlockPos pos = startPos.below();
-        while(pos.getY() > 0 && !world.getBlockState(pos).isSolidRender(world, pos)) {
-            pos = pos.below();
+        int y = world.getMaxBuildHeight();
+        while (y > 0) {
+            BlockPos pos = new BlockPos(startPos.getX(), y, startPos.getZ());
+            if (!world.getBlockState(pos).isAir()) {
+                return pos; // Return the first non-air block from the top
+            }
+            y--;
         }
-        return pos.above(); // Move up one block for the explosion
+        return startPos; // Return the original position if no non-air block is found
     }
 
     private static int randomOffset() {
@@ -120,10 +133,10 @@ public class MeteorHandler {
         if (meteors.isEmpty()) {
             generateMeteor(world);
         } else {
-            BlockPos pos = findGroundPosition(meteors.get(0).world, meteors.get(0).position);
+            BlockPos pos = meteors.get(0).position;
             Component component = Component.literal(Arrays.toString(new Object[]{pos.getX(),pos.getY(), pos.getZ()})).withStyle((p_214489_) -> p_214489_.withColor(ChatFormatting.GREEN).withClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/tp @s " +  pos.getX() + " " + pos.getY() + " " +  pos.getZ())).withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Component.translatable("chat.coordinates.tooltip"))));
 
-            player.sendSystemMessage(Component.literal("Meteor already inbound at: ").append(component).append(Component.literal(", blast radius: " + meteors.get(0).blastRadius + ". Impact in " + meteors.get(0).timeUntilImpact / 20 + "s")).withStyle(ChatFormatting.RED));
+            player.sendSystemMessage(Component.literal("Meteor already inbound at: ").append(component).append(Component.literal(", blast radius: " + meteors.get(0).blastRadius + ". Impact in " + meteors.get(0).timeUntilImpact + "s")).withStyle(ChatFormatting.RED));
         }
     }
 }

@@ -90,6 +90,7 @@ public class PurechaosModVariables {
 				clone.having_nightmare = original.having_nightmare;
 				clone.jump_count = original.jump_count;
 				clone.heart_attack_chance = original.heart_attack_chance;
+				clone.dementia_chance = original.dementia_chance;
 			}
 		}
 	}
@@ -145,6 +146,7 @@ public class PurechaosModVariables {
 		public boolean having_nightmare = false;
 		public double jump_count = 0;
 		public double heart_attack_chance = 0;
+		public double dementia_chance = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -173,6 +175,7 @@ public class PurechaosModVariables {
 			nbt.putBoolean("having_nightmare", having_nightmare);
 			nbt.putDouble("jump_count", jump_count);
 			nbt.putDouble("heart_attack_chance", heart_attack_chance);
+			nbt.putDouble("dementia_chance", dementia_chance);
 			return nbt;
 		}
 
@@ -198,6 +201,7 @@ public class PurechaosModVariables {
 			having_nightmare = nbt.getBoolean("having_nightmare");
 			jump_count = nbt.getDouble("jump_count");
 			heart_attack_chance = nbt.getDouble("heart_attack_chance");
+			dementia_chance = nbt.getDouble("dementia_chance");
 		}
 	}
 
@@ -242,6 +246,7 @@ public class PurechaosModVariables {
 					variables.having_nightmare = message.data.having_nightmare;
 					variables.jump_count = message.data.jump_count;
 					variables.heart_attack_chance = message.data.heart_attack_chance;
+					variables.dementia_chance = message.data.dementia_chance;
 				}
 			});
 			context.setPacketHandled(true);
