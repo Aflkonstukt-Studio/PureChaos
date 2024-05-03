@@ -10,7 +10,7 @@
     "name": "KFCE",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Chaostab"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

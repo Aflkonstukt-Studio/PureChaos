@@ -8,17 +8,12 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PurechaosMod.MODID);
 	public static final RegistryObject<CreativeModeTab> CHAOSTAB = REGISTRY.register("chaostab",
@@ -34,6 +29,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.SA_DS.get().asItem());
 				tabData.accept(PurechaosModItems.FOOD_ITEM_3.get());
 				tabData.accept(PurechaosModItems.POTATO_SPUDS.get());
+				tabData.accept(PurechaosModBlocks.POTATUS.get().asItem());
 				tabData.accept(PurechaosModItems.SPEAR.get());
 				tabData.accept(PurechaosModItems.DIPEX.get());
 				tabData.accept(PurechaosModBlocks.DEATH.get().asItem());
@@ -141,6 +137,11 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.ADIDAS_ARMOR_CHESTPLATE.get());
 				tabData.accept(PurechaosModItems.ADIDAS_ARMOR_LEGGINGS.get());
 				tabData.accept(PurechaosModItems.ADIDAS_ARMOR_BOOTS.get());
+				tabData.accept(PurechaosModItems.ADIDAS_PICKAXE.get());
+				tabData.accept(PurechaosModItems.ADIDAS_AXE.get());
+				tabData.accept(PurechaosModItems.ADIDAS_SWORD.get());
+				tabData.accept(PurechaosModItems.ADIDAS_SHOVEL.get());
+				tabData.accept(PurechaosModItems.ADIDAS_HOE.get());
 				tabData.accept(PurechaosModItems.THE_ROCK_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.XSORD.get());
 				tabData.accept(PurechaosModBlocks.MISSING_TEXTURE.get().asItem());
@@ -148,6 +149,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.EATABLE_COMMAND_BLOCK.get());
 				tabData.accept(PurechaosModItems.KENTUCKY_FRIED_CHICKEN.get());
 				tabData.accept(PurechaosModItems.KENTUCKY_FRIED_CHICKEN_FRIES.get());
+				tabData.accept(PurechaosModItems.KFCE.get());
 				tabData.accept(PurechaosModItems.BOTTLE_OF_PISS.get());
 				tabData.accept(PurechaosModItems.TINTED_GLASS_BOTTLE.get());
 				tabData.accept(PurechaosModItems.DORITO_NACHO.get());
@@ -177,6 +179,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.MURICA_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.GRIMACE_SHAKE.get());
 				tabData.accept(PurechaosModItems.DEEK.get());
+				tabData.accept(PurechaosModItems.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get());
 				tabData.accept(PurechaosModItems.WATER_CUP.get());
 				tabData.accept(PurechaosModItems.JOSIP_RANGE.get());
 				tabData.accept(PurechaosModItems.AK_47.get());
@@ -190,21 +193,4 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.BRAKE_FLUID.get());
 				tabData.accept(PurechaosModItems.MELATONIN_PILL.get());
 			}).withSearchBar().build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(PurechaosModItems.ADIDAS_SWORD.get());
-			tabData.accept(PurechaosModItems.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(PurechaosModItems.KFCE.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(PurechaosModBlocks.POTATUS.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(PurechaosModItems.ADIDAS_PICKAXE.get());
-			tabData.accept(PurechaosModItems.ADIDAS_AXE.get());
-			tabData.accept(PurechaosModItems.ADIDAS_SHOVEL.get());
-			tabData.accept(PurechaosModItems.ADIDAS_HOE.get());
-		}
-	}
 }
