@@ -192,5 +192,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.GROGGO_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BRAKE_FLUID.get());
 				tabData.accept(PurechaosModItems.MELATONIN_PILL.get());
+				tabData.accept(PurechaosModItems.BEER.get());
 			}).withSearchBar().build());
 }

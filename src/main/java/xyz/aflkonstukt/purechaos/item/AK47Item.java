@@ -5,6 +5,7 @@ import xyz.aflkonstukt.purechaos.entity.AK47ProjectileEntity;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
@@ -23,6 +24,11 @@ import java.util.List;
 public class AK47Item extends Item {
 	public AK47Item() {
 		super(new Item.Properties().durability(100).rarity(Rarity.COMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
 	}
 
 	@Override
@@ -52,7 +58,7 @@ public class AK47Item extends Item {
 	}
 
 	@Override
-	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
+	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int count) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
@@ -75,6 +81,7 @@ public class AK47Item extends Item {
 					}
 				}
 			}
+			entity.releaseUsingItem();
 		}
 	}
 

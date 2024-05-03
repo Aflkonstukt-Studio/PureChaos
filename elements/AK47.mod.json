@@ -17,6 +17,9 @@
     "useDuration": 72000,
     "toolType": 0.0,
     "damageCount": 100,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -34,15 +37,18 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": true,
-    "shootConstantly": false,
+    "shootConstantly": true,
     "projectile": {
       "value": "CUSTOM:AK47Projectile"
     },
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "none"
+    "animation": "bow"
   }
 }

@@ -85,6 +85,7 @@ import xyz.aflkonstukt.purechaos.item.BrazilItem;
 import xyz.aflkonstukt.purechaos.item.BrakeFluidItem;
 import xyz.aflkonstukt.purechaos.item.BottleOfPissItem;
 import xyz.aflkonstukt.purechaos.item.BleachItem;
+import xyz.aflkonstukt.purechaos.item.BeerItem;
 import xyz.aflkonstukt.purechaos.item.BeengotItem;
 import xyz.aflkonstukt.purechaos.item.BeefItem;
 import xyz.aflkonstukt.purechaos.item.BeefArmorItem;
@@ -294,6 +295,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> BACKROOM_WALL_BOTTOM = block(PurechaosModBlocks.BACKROOM_WALL_BOTTOM);
 	public static final RegistryObject<Item> BACKROOMS_CEILING = block(PurechaosModBlocks.BACKROOMS_CEILING);
 	public static final RegistryObject<Item> MELATONIN_PILL = REGISTRY.register("melatonin_pill", () -> new MelatoninPillItem());
+	public static final RegistryObject<Item> BEER = REGISTRY.register("beer", () -> new BeerItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
