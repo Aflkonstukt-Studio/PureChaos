@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Ethanol",
+    "splashName": "Splash Ethanol",
+    "lingeringName": "Lingering Ethanol",
+    "arrowName": "Arrow of Ethanol",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Drunk"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

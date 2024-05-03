@@ -11,7 +11,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class HighEffectMobEffect extends MobEffect {
 	public HighEffectMobEffect() {
-		super(MobEffectCategory.HARMFUL, -16737793);
+		super(MobEffectCategory.NEUTRAL, -16737793);
 	}
 
 	@Override

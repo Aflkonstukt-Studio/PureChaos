@@ -11,7 +11,7 @@ import net.minecraft.world.effect.MobEffect;
 
 public class DrunkMobEffect extends MobEffect {
 	public DrunkMobEffect() {
-		super(MobEffectCategory.HARMFUL, -16711885);
+		super(MobEffectCategory.NEUTRAL, -16711885);
 	}
 
 	@Override
