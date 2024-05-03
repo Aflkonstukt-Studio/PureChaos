@@ -9,8 +9,8 @@
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": true,
-    "isBenefitical": true,
+    "isBad": false,
+    "isBenefitical": false,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onStarted": {

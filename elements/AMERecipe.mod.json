@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:WATER"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:BrakeFluid"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:ModifiedEthanol"
+    },
+    "name": "ame_recipe",
+    "namespace": "mod"
+  }
+}
