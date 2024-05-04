@@ -298,6 +298,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> RAINBOWRACK = block(PurechaosModBlocks.RAINBOWRACK);
 	public static final RegistryObject<Item> RAINBOW_GRASS = block(PurechaosModBlocks.RAINBOW_GRASS);
 	public static final RegistryObject<Item> POLAND_ITEM = REGISTRY.register("poland_item", () -> new PolandItemItem());
+	public static final RegistryObject<Item> YUGOSLAVIA_SPAWN_EGG = REGISTRY.register("yugoslavia_spawn_egg", () -> new ForgeSpawnEggItem(PurechaosModEntities.YUGOSLAVIA, -65485, -16776961, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -8,6 +8,7 @@ import xyz.aflkonstukt.purechaos.world.inventory.VikkiVukGuiMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.ComputerGuiMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
+import xyz.aflkonstukt.purechaos.world.inventory.AdGUIMenu;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -23,4 +24,5 @@ public class PurechaosModMenus {
 	public static final RegistryObject<MenuType<ComputerGuiMenu>> COMPUTER_GUI = REGISTRY.register("computer_gui", () -> IForgeMenuType.create(ComputerGuiMenu::new));
 	public static final RegistryObject<MenuType<CheatGUIMenu>> CHEAT_GUI = REGISTRY.register("cheat_gui", () -> IForgeMenuType.create(CheatGUIMenu::new));
 	public static final RegistryObject<MenuType<CaptchaGUIMenu>> CAPTCHA_GUI = REGISTRY.register("captcha_gui", () -> IForgeMenuType.create(CaptchaGUIMenu::new));
+	public static final RegistryObject<MenuType<AdGUIMenu>> AD_GUI = REGISTRY.register("ad_gui", () -> IForgeMenuType.create(AdGUIMenu::new));
 }

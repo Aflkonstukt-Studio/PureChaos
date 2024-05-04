@@ -4,6 +4,7 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
+import xyz.aflkonstukt.purechaos.client.renderer.YugoslaviaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.WalterWightRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.VikkivukRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.TridentRenderer;
@@ -110,5 +111,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.JAVELIN_LAUNCHER_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.GROGGO.get(), GroggoRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.YUGOSLAVIA.get(), YugoslaviaRenderer::new);
 	}
 }

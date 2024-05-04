@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
@@ -36,24 +37,29 @@ public class INeedBooletsTriggerProcedure {
 		if (entity == null || text == null)
 			return;
 		if ((text).equals("i need more boolets")) {
-			{
-				boolean _setval = true;
-				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.bl = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:moreboolets")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:moreboolets")), SoundSource.NEUTRAL, 1, 1, false);
+			if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 0) {
+				{
+					double _setval = 100;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.boolets = _setval;
+						capability.syncPlayerVariables(entity);
+					});
 				}
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PurechaosModItems.BULLET.get()).copy();
-				_setstack.setCount(90);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:moreboolets")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:moreboolets")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(PurechaosModItems.BULLET.get()).copy();
+					_setstack.setCount(90);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("sorry another need more boolets instance is already running!"), false);
 			}
 		}
 	}

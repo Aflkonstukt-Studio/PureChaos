@@ -8,6 +8,7 @@ import xyz.aflkonstukt.purechaos.client.gui.VikkiVukGuiScreen;
 import xyz.aflkonstukt.purechaos.client.gui.ComputerGuiScreen;
 import xyz.aflkonstukt.purechaos.client.gui.CheatGUIScreen;
 import xyz.aflkonstukt.purechaos.client.gui.CaptchaGUIScreen;
+import xyz.aflkonstukt.purechaos.client.gui.AdGUIScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +26,7 @@ public class PurechaosModScreens {
 			MenuScreens.register(PurechaosModMenus.COMPUTER_GUI.get(), ComputerGuiScreen::new);
 			MenuScreens.register(PurechaosModMenus.CHEAT_GUI.get(), CheatGUIScreen::new);
 			MenuScreens.register(PurechaosModMenus.CAPTCHA_GUI.get(), CaptchaGUIScreen::new);
+			MenuScreens.register(PurechaosModMenus.AD_GUI.get(), AdGUIScreen::new);
 		});
 	}
 }

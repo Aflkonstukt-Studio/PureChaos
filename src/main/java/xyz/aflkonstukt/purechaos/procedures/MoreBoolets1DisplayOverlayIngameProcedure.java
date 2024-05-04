@@ -29,205 +29,147 @@ public class MoreBoolets1DisplayOverlayIngameProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).bl == true) {
+		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100) {
 			{
-				boolean _setval = true;
+				double _setval = 1;
 				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.bl1 = _setval;
+					capability.boolets = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			PurechaosMod.queueServerWork(10, () -> {
-				{
-					boolean _setval = true;
-					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.bl2 = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-				PurechaosMod.queueServerWork(10, () -> {
+				if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
 					{
-						boolean _setval = true;
+						double _setval = 2;
 						entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.bl3 = _setval;
+							capability.boolets = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
 					PurechaosMod.queueServerWork(10, () -> {
-						{
-							boolean _setval = true;
-							entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.bl4 = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-						PurechaosMod.queueServerWork(10, () -> {
+						if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
 							{
-								boolean _setval = true;
+								double _setval = 3;
 								entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.bl5 = _setval;
+									capability.boolets = _setval;
 									capability.syncPlayerVariables(entity);
 								});
 							}
 							PurechaosMod.queueServerWork(10, () -> {
-								{
-									boolean _setval = true;
-									entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-										capability.bl6 = _setval;
-										capability.syncPlayerVariables(entity);
-									});
-								}
-								PurechaosMod.queueServerWork(10, () -> {
+								if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
 									{
-										boolean _setval = true;
+										double _setval = 4;
 										entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-											capability.bl7 = _setval;
+											capability.boolets = _setval;
 											capability.syncPlayerVariables(entity);
 										});
 									}
 									PurechaosMod.queueServerWork(10, () -> {
-										{
-											boolean _setval = true;
-											entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-												capability.bl8 = _setval;
-												capability.syncPlayerVariables(entity);
-											});
-										}
-										PurechaosMod.queueServerWork(10, () -> {
+										if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
 											{
-												boolean _setval = true;
+												double _setval = 5;
 												entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-													capability.bl9 = _setval;
+													capability.boolets = _setval;
 													capability.syncPlayerVariables(entity);
 												});
 											}
 											PurechaosMod.queueServerWork(10, () -> {
-												{
-													boolean _setval = true;
-													entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-														capability.bl10 = _setval;
-														capability.syncPlayerVariables(entity);
-													});
-												}
-												PurechaosMod.queueServerWork(10, () -> {
+												if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
 													{
-														boolean _setval = true;
+														double _setval = 6;
 														entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-															capability.bl11 = _setval;
+															capability.boolets = _setval;
 															capability.syncPlayerVariables(entity);
 														});
 													}
 													PurechaosMod.queueServerWork(10, () -> {
-														{
-															boolean _setval = true;
-															entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																capability.bl12 = _setval;
-																capability.syncPlayerVariables(entity);
+														if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+															{
+																double _setval = 7;
+																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																	capability.boolets = _setval;
+																	capability.syncPlayerVariables(entity);
+																});
+															}
+															PurechaosMod.queueServerWork(10, () -> {
+																if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																	{
+																		double _setval = 8;
+																		entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																			capability.boolets = _setval;
+																			capability.syncPlayerVariables(entity);
+																		});
+																	}
+																	PurechaosMod.queueServerWork(10, () -> {
+																		if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																			{
+																				double _setval = 9;
+																				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																					capability.boolets = _setval;
+																					capability.syncPlayerVariables(entity);
+																				});
+																			}
+																			PurechaosMod.queueServerWork(10, () -> {
+																				if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																					{
+																						double _setval = 10;
+																						entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																							capability.boolets = _setval;
+																							capability.syncPlayerVariables(entity);
+																						});
+																					}
+																					PurechaosMod.queueServerWork(10, () -> {
+																						if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																							{
+																								double _setval = 11;
+																								entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																									capability.boolets = _setval;
+																									capability.syncPlayerVariables(entity);
+																								});
+																							}
+																							PurechaosMod.queueServerWork(10, () -> {
+																								if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+																										.orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																									{
+																										double _setval = 12;
+																										entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																											capability.boolets = _setval;
+																											capability.syncPlayerVariables(entity);
+																										});
+																									}
+																									PurechaosMod.queueServerWork(10, () -> {
+																										if (!((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+																												.orElse(new PurechaosModVariables.PlayerVariables())).boolets == 100)) {
+																											{
+																												double _setval = 0;
+																												entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+																													capability.boolets = _setval;
+																													capability.syncPlayerVariables(entity);
+																												});
+																											}
+																										}
+																									});
+																								}
+																							});
+																						}
+																					});
+																				}
+																			});
+																		}
+																	});
+																}
 															});
 														}
-														PurechaosMod.queueServerWork(10, () -> {
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl1 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl2 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl3 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl4 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl5 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl6 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl7 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl8 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl9 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl10 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl11 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl12 = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-															{
-																boolean _setval = false;
-																entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-																	capability.bl = _setval;
-																	capability.syncPlayerVariables(entity);
-																});
-															}
-														});
 													});
-												});
+												}
 											});
-										});
+										}
 									});
-								});
+								}
 							});
-						});
+						}
 					});
-				});
+				}
 			});
 		}
 	}
