@@ -193,7 +193,12 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.BRAKE_FLUID.get());
 				tabData.accept(PurechaosModItems.MELATONIN_PILL.get());
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				tabData.accept(PurechaosModItems.BEER.get());
+=======
+				tabData.accept(PurechaosModBlocks.RAINBOWRACK.get().asItem());
+				tabData.accept(PurechaosModBlocks.RAINBOW_GRASS.get().asItem());
+>>>>>>> Stashed changes
 =======
 				tabData.accept(PurechaosModBlocks.RAINBOWRACK.get().asItem());
 				tabData.accept(PurechaosModBlocks.RAINBOW_GRASS.get().asItem());
