@@ -35,7 +35,9 @@
     ],
     "name": "Poland Block",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "eat it to go to poland"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -46,7 +48,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:PolandItem"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -67,7 +69,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:PolandItem"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

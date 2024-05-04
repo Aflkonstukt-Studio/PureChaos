@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "purechaos:rainbowrack",
+    "purechaos:rainbow_grass",
     "minecraft:air",
     "purechaos:backrooms_lvl_1_floor",
     "minecraft:sculk",

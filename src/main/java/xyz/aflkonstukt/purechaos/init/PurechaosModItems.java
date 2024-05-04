@@ -31,6 +31,7 @@ import xyz.aflkonstukt.purechaos.item.RadiationLiquidItem;
 import xyz.aflkonstukt.purechaos.item.PufferBalloonItem;
 import xyz.aflkonstukt.purechaos.item.PotatoSpudsItem;
 import xyz.aflkonstukt.purechaos.item.PoopItem;
+import xyz.aflkonstukt.purechaos.item.PolandItemItem;
 import xyz.aflkonstukt.purechaos.item.PickaxItem;
 import xyz.aflkonstukt.purechaos.item.PeemensionItem;
 import xyz.aflkonstukt.purechaos.item.PeeItem;
@@ -296,6 +297,7 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> MELATONIN_PILL = REGISTRY.register("melatonin_pill", () -> new MelatoninPillItem());
 	public static final RegistryObject<Item> RAINBOWRACK = block(PurechaosModBlocks.RAINBOWRACK);
 	public static final RegistryObject<Item> RAINBOW_GRASS = block(PurechaosModBlocks.RAINBOW_GRASS);
+	public static final RegistryObject<Item> POLAND_ITEM = REGISTRY.register("poland_item", () -> new PolandItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

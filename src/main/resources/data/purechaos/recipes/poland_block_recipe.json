@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "purechaos:poland_item"
+    },
+    {
+      "item": "purechaos:poland_item"
+    },
+    {
+      "item": "purechaos:poland_item"
+    },
+    {
+      "item": "purechaos:poland_item"
+    }
+  ],
+  "result": {
+    "item": "purechaos:poland_block",
+    "count": 4
+  }
+}

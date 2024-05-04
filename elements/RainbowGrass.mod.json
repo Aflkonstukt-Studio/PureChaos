@@ -2,9 +2,9 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "rainbowgrass_side",
-    "textureTop": "grass_block_top",
-    "textureLeft": "grass_block_side_overlay",
+    "texture": "dirt",
+    "textureTop": "rainbowgrass_top",
+    "textureLeft": "rainbowgrass_side",
     "textureFront": "rainbowgrass_side",
     "textureRight": "",
     "textureBack": "",

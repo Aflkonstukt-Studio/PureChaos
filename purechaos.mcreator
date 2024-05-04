@@ -7662,6 +7662,86 @@
           "src/main/resources/assets/purechaos/models/block/rainbow_grass.json"
         ]
       }
+    },
+    {
+      "name": "PolandBiome",
+      "type": "biome",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/poland_biome.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/poland_biome_tree.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/poland_biome_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "Poland",
+      "type": "dimension",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/dimension_type/poland.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/PolandDimension.java",
+          "src/main/resources/data/purechaos/dimension/poland.json"
+        ]
+      }
+    },
+    {
+      "name": "EnterPoland",
+      "type": "procedure",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_poland",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EnterPolandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolandItem",
+      "type": "item",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PolandItemItem.java",
+          "src/main/resources/assets/purechaos/models/item/poland_item.json"
+        ]
+      }
+    },
+    {
+      "name": "PolandBlockRecipe",
+      "type": "recipe",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poland_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/recipes/poland_block_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8105,11 +8185,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8153,6 +8233,7 @@
       "~CUSTOM:HellButOverworld"
     ],
     "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8195,6 +8276,8 @@
       "~CUSTOM:Susus"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:Rainbowrack",
+      "~CUSTOM:RainbowGrass",
       "~Blocks.AIR",
       "~CUSTOM:BackroomsLvl1Floor",
       "~Blocks.SCULK",
@@ -8222,10 +8305,12 @@
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/village_taiga": [
+      "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
@@ -8240,8 +8325,8 @@
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
-      "item.purechaos.netherit_pickax": "Netherit Pickax",
       "painting.purechaos.staring_at_gay.title": "Staring At Gay",
+      "item.purechaos.netherit_pickax": "Netherit Pickax",
       "selectWorld.backupWarning.experimental": "Minecraft wants us to really make sure you want to do this, so just give us your consent and we can continue, or you can burn in the fiery pits of he.. i mean nothing...",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
@@ -8599,6 +8684,7 @@
       "entity.purechaos.irs": "IRS",
       "entity.chaosmod.baldi_minus": "Baldi Minus",
       "effect.purechaos.fat": "Fat",
+      "item.purechaos.poland_item": "Poland Item",
       "block.purechaos.radiation_liquid": "Radiation Liquid",
       "item.purechaos.adidas_axe": "Adidas Axe",
       "item.purechaos.herobrine_spawn_egg": "Herobrine Spawn Egg",
@@ -8649,6 +8735,7 @@
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.purechaos.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
       "item.minecraft.netherite_axe": "Netherite Chop Chop Stick",
+      "biome.purechaos.poland_biome": "Poland",
       "gui.purechaos.captcha_gui.answer": "Your Answer",
       "death.attack.cccp_death.player": "%1$s used the wrong keyboard whilst trying to escape %2$s",
       "fluid.purechaos.pee": "Pee",
