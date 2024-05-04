@@ -28,8 +28,8 @@
       "registry_name": "dirtsword",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/DirtswordItem.java",
-          "src/main/resources/assets/purechaos/models/item/dirtsword.json"
+          "src/main/resources/assets/purechaos/models/item/dirtsword.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/DirtswordItem.java"
         ]
       }
     },
@@ -91,13 +91,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/PeeItem.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/PeeFluidType.java",
-          "src/main/resources/assets/purechaos/models/block/pee.json",
           "src/main/resources/assets/purechaos/models/item/pee_bucket.json",
-          "src/main/resources/assets/purechaos/blockstates/pee.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/PeeFluid.java",
           "src/main/java/xyz/aflkonstukt/purechaos/block/PeeBlock.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/PeeFluid.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/PeeFluidType.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PeeItem.java",
+          "src/main/resources/assets/purechaos/blockstates/pee.json",
+          "src/main/resources/assets/purechaos/models/block/pee.json"
         ]
       }
     },
@@ -170,17 +170,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/PeemensionItem.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/PeemensionDimension.java",
+          "src/main/resources/assets/purechaos/models/block/peemension_portal_ns.json",
           "src/main/resources/assets/purechaos/models/item/peemension.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/PeemensionPortalBlock.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/PeemensionTeleporter.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PeemensionItem.java",
           "src/main/resources/data/purechaos/dimension/peemension.json",
           "src/main/resources/assets/purechaos/blockstates/peemension_portal.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/PeemensionDimension.java",
-          "src/main/resources/data/purechaos/dimension_type/peemension.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/PeemensionPortalShape.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/PeemensionTeleporter.java",
           "src/main/resources/assets/purechaos/models/block/peemension_portal_ew.json",
-          "src/main/resources/assets/purechaos/models/block/peemension_portal_ns.json"
+          "src/main/resources/data/purechaos/dimension_type/peemension.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/PeemensionPortalShape.java"
         ]
       }
     },
@@ -204,14 +204,14 @@
       "registry_name": "pee_block",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/block/PeeBlockBlock.java",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/pee_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/pee_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/pee_block.json",
           "src/main/resources/assets/purechaos/models/block/pee_block.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/pee_block_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/PeeBlockBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/pee_block.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/entity/PeeBlockBlockEntity.java",
           "src/main/resources/assets/purechaos/blockstates/pee_block.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/pee_block.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/entity/PeeBlockBlockEntity.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/pee_block_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/pee_block.json"
         ]
       }
@@ -225,8 +225,8 @@
       "registry_name": "pickax",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/PickaxItem.java",
-          "src/main/resources/assets/purechaos/models/item/pickax.json"
+          "src/main/resources/assets/purechaos/models/item/pickax.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PickaxItem.java"
         ]
       }
     },
@@ -239,8 +239,8 @@
       "registry_name": "fooditem",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/FooditemItem.java",
-          "src/main/resources/assets/purechaos/models/item/fooditem.json"
+          "src/main/resources/assets/purechaos/models/item/fooditem.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/FooditemItem.java"
         ]
       }
     },
@@ -253,10 +253,10 @@
       "registry_name": "aentity",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/AentityEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AentityRenderer.java",
           "src/main/resources/assets/purechaos/models/item/aentity_spawn_egg.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/aentity_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/AentityEntity.java"
+          "src/main/resources/data/purechaos/forge/biome_modifier/aentity_biome_modifier.json"
         ]
       }
     },
@@ -298,11 +298,11 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldTrunkDecorator.java",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/hell_but_overworld_tree.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/hell_but_overworld_tree.json",
           "src/main/resources/data/purechaos/worldgen/biome/hell_but_overworld.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldFruitDecorator.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldLeaveDecorator.java",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/hell_but_overworld_tree.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldLeaveDecorator.java"
         ]
       }
     },
@@ -315,12 +315,12 @@
       "registry_name": "potatus",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/potatus_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/potatus.json",
-          "src/main/resources/assets/purechaos/blockstates/potatus.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/PotatusBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/potatus.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/potatus.json",
+          "src/main/resources/assets/purechaos/models/item/potatus.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/potatus.json",
+          "src/main/resources/assets/purechaos/blockstates/potatus.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/potatus_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/block/potatus.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/potatus.json"
         ]
@@ -337,15 +337,15 @@
         "ep": true,
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/WoodDimensionPortalBlock.java",
+          "src/main/resources/data/purechaos/dimension/wood_dimension.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/WoodDimensionDimension.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/WoodDimensionTeleporter.java",
+          "src/main/resources/assets/purechaos/blockstates/wood_dimension_portal.json",
+          "src/main/resources/assets/purechaos/models/block/wood_dimension_portal_ns.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/WoodDimensionPortalShape.java",
           "src/main/resources/data/purechaos/dimension_type/wood_dimension.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/WoodDimensionItem.java",
           "src/main/resources/assets/purechaos/models/block/wood_dimension_portal_ew.json",
-          "src/main/resources/assets/purechaos/models/block/wood_dimension_portal_ns.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/WoodDimensionPortalShape.java",
-          "src/main/resources/data/purechaos/dimension/wood_dimension.json",
-          "src/main/resources/assets/purechaos/blockstates/wood_dimension_portal.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/WoodDimensionDimension.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/WoodDimensionTeleporter.java",
           "src/main/resources/assets/purechaos/models/item/wood_dimension.json"
         ]
       }
@@ -401,9 +401,9 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/TridentRenderer.java",
+          "src/main/resources/assets/purechaos/models/item/trident_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TridentEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/trident_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/trident_spawn_egg.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/trident_biome_modifier.json"
         ]
       }
     },
@@ -416,14 +416,14 @@
       "registry_name": "death",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/DeathBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/death.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/death_biome_modifier.json",
           "src/main/resources/assets/purechaos/blockstates/death.json",
-          "src/main/resources/assets/purechaos/models/item/death.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/death.json",
+          "src/main/resources/assets/purechaos/models/block/death.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/death.json",
-          "src/main/resources/assets/purechaos/models/block/death.json"
+          "src/main/resources/data/purechaos/loot_tables/blocks/death.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/DeathBlock.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/death_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/death.json"
         ]
       }
     },
@@ -436,15 +436,15 @@
       "registry_name": "sa_ds",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/SADsBlock.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/entity/SADsBlockEntity.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/sa_ds.json",
           "src/main/resources/assets/purechaos/models/item/sa_ds.json",
-          "src/main/resources/assets/purechaos/blockstates/sa_ds.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/sa_ds_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/block/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/sa_ds.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/SADsBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/sa_ds.json",
-          "src/main/resources/assets/purechaos/models/block/sa_ds.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/entity/SADsBlockEntity.java",
+          "src/main/resources/assets/purechaos/blockstates/sa_ds.json"
         ]
       }
     },
@@ -471,14 +471,14 @@
       "registry_name": "emepee",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/EmepeeBlock.java",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/emepee.json",
+          "src/main/resources/assets/purechaos/blockstates/emepee.json",
+          "src/main/resources/assets/purechaos/models/item/emepee.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/emepee.json",
           "src/main/resources/assets/purechaos/models/block/emepee.json",
-          "src/main/resources/assets/purechaos/models/item/emepee.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/emepee_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/emepee.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/EmepeeBlock.java",
           "src/main/resources/data/purechaos/loot_tables/blocks/emepee.json",
-          "src/main/resources/assets/purechaos/blockstates/emepee.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/emepee_biome_modifier.json"
         ]
       }
     },
@@ -520,10 +520,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/block/sus_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/sus_block.json",
-          "src/main/resources/assets/purechaos/models/item/sus_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SusBlockBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/sus_block.json"
+          "src/main/resources/assets/purechaos/blockstates/sus_block.json",
+          "src/main/resources/assets/purechaos/models/item/sus_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/sus_block.json"
         ]
       }
     },
@@ -551,13 +551,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CumItem.java",
+          "src/main/resources/assets/purechaos/models/block/cum.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/CumFluid.java",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CumBlock.java",
-          "src/main/resources/assets/purechaos/models/block/cum.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CumFluidType.java",
+          "src/main/resources/assets/purechaos/blockstates/cum.json",
           "src/main/resources/assets/purechaos/models/item/cum_bucket.json",
-          "src/main/resources/assets/purechaos/blockstates/cum.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CumFluidType.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CumItem.java"
         ]
       }
     },
@@ -570,10 +570,10 @@
       "registry_name": "among_us",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/among_us_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/AmongUsEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/among_us_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AmongUsRenderer.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/AmongUsEntity.java"
+          "src/main/resources/assets/purechaos/models/item/among_us_spawn_egg.json"
         ]
       }
     },
@@ -587,17 +587,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/item/sus.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/SusPortalShape.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/SusItem.java",
-          "src/main/resources/assets/purechaos/blockstates/sus_portal.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/SusDimension.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/SusPortalShape.java",
+          "src/main/resources/assets/purechaos/models/item/sus.json",
+          "src/main/resources/data/purechaos/dimension_type/sus.json",
+          "src/main/resources/assets/purechaos/blockstates/sus_portal.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/SusTeleporter.java",
           "src/main/resources/data/purechaos/dimension/sus.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/SusItem.java",
           "src/main/resources/assets/purechaos/models/block/sus_portal_ew.json",
-          "src/main/resources/assets/purechaos/models/block/sus_portal_ns.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SusPortalBlock.java",
-          "src/main/resources/data/purechaos/dimension_type/sus.json"
+          "src/main/resources/assets/purechaos/models/block/sus_portal_ns.json"
         ]
       }
     },
@@ -610,12 +610,12 @@
       "registry_name": "susus",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/placed_feature/susus_tree.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususLeaveDecorator.java",
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususTrunkDecorator.java",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/susus_tree.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususFruitDecorator.java",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/susus_tree.json",
           "src/main/resources/data/purechaos/worldgen/biome/susus.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/susus_tree.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususFruitDecorator.java"
         ]
       }
     },
@@ -628,9 +628,9 @@
       "registry_name": "amogus_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/amogus_2_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/amogus_2_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/Amogus2Renderer.java",
+          "src/main/resources/assets/purechaos/models/item/amogus_2_spawn_egg.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/amogus_2_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/Amogus2Entity.java"
         ]
       }
@@ -644,9 +644,9 @@
       "registry_name": "amogus_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/amogus_3_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/amogus_3_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/Amogus3Renderer.java",
+          "src/main/resources/assets/purechaos/models/item/amogus_3_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/Amogus3Entity.java"
         ]
       }
@@ -661,13 +661,13 @@
       "metadata": {
         "gb": true,
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/StaravodaItem.java",
+          "src/main/resources/assets/purechaos/blockstates/staravoda.json",
           "src/main/resources/assets/purechaos/models/item/staravoda_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/StaravodaFluidType.java",
-          "src/main/resources/assets/purechaos/blockstates/staravoda.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/StaravodaBlock.java",
-          "src/main/resources/assets/purechaos/models/block/staravoda.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/StaravodaFluid.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/StaravodaItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/StaravodaBlock.java",
+          "src/main/resources/assets/purechaos/models/block/staravoda.json"
         ]
       }
     },
@@ -691,11 +691,11 @@
       "registry_name": "tlghd",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json",
+          "src/main/resources/assets/purechaos/models/item/tlghd.json",
           "src/main/resources/assets/purechaos/models/block/tlghd.json",
           "src/main/resources/assets/purechaos/blockstates/tlghd.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java",
-          "src/main/resources/assets/purechaos/models/item/tlghd.json"
+          "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json"
         ]
       }
     },
@@ -723,10 +723,10 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/item/amugus_boots.json",
-          "src/main/resources/assets/purechaos/models/item/amugus_leggings.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/AmugusItem.java",
           "src/main/resources/assets/purechaos/models/item/amugus_helmet.json",
+          "src/main/resources/assets/purechaos/models/item/amugus_leggings.json",
+          "src/main/resources/assets/purechaos/models/item/amugus_boots.json",
           "src/main/resources/assets/purechaos/models/item/amugus_chestplate.json"
         ]
       }
@@ -843,13 +843,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/item/orange_fluid_bucket.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/OrangeFluidFluid.java",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/OrangeFluidFluidType.java",
           "src/main/resources/assets/purechaos/models/block/orange_fluid.json",
+          "src/main/resources/assets/purechaos/models/item/orange_fluid_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/OrangeFluidBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/orange_fluid.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/OrangeFluidFluid.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/OrangeFluidItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/OrangeFluidItem.java",
+          "src/main/resources/assets/purechaos/blockstates/orange_fluid.json"
         ]
       }
     },
@@ -865,11 +865,11 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/OilFluid.java",
           "src/main/java/xyz/aflkonstukt/purechaos/block/OilBlock.java",
-          "src/main/resources/assets/purechaos/models/item/oil_bucket.json",
+          "src/main/resources/assets/purechaos/models/block/oil.json",
           "src/main/resources/assets/purechaos/blockstates/oil.json",
+          "src/main/resources/assets/purechaos/models/item/oil_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/OilFluidType.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/OilItem.java",
-          "src/main/resources/assets/purechaos/models/block/oil.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/OilItem.java"
         ]
       }
     },
@@ -883,13 +883,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/block/gatorade.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/GatoradeBlock.java",
+          "src/main/resources/assets/purechaos/blockstates/gatorade.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/GatoradeItem.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/GatoradeFluid.java",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/GatoradeFluidType.java",
           "src/main/resources/assets/purechaos/models/item/gatorade_bucket.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/GatoradeFluid.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/GatoradeBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/gatorade.json"
+          "src/main/resources/assets/purechaos/models/block/gatorade.json"
         ]
       }
     },
@@ -921,14 +921,14 @@
       "registry_name": "green_plant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/block/green_plant.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/green_plant.json",
-          "src/main/resources/assets/purechaos/blockstates/green_plant.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/GreenPlantBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/green_plant.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/green_plant.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/green_plant_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/green_plant.json"
+          "src/main/resources/assets/purechaos/models/block/green_plant.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/green_plant.json",
+          "src/main/resources/assets/purechaos/blockstates/green_plant.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/green_plant.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/green_plant.json",
+          "src/main/resources/assets/purechaos/models/item/green_plant.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/GreenPlantBlock.java"
         ]
       }
     },
@@ -941,10 +941,10 @@
       "registry_name": "splank",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/SplankEntity.java",
           "src/main/resources/assets/purechaos/models/item/splank_spawn_egg.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/splank_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/SplankRenderer.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/SplankEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/SplankRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/splank_biome_modifier.json"
         ]
       }
     },
@@ -957,10 +957,10 @@
       "registry_name": "ikea_desk",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/ikea_desk_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/ikea_desk_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/IkeaDeskEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/IkeaDeskRenderer.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/IkeaDeskEntity.java"
+          "src/main/resources/assets/purechaos/models/item/ikea_desk_spawn_egg.json"
         ]
       }
     },
@@ -973,8 +973,8 @@
       "registry_name": "fallgays",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/FallgaysItem.java",
-          "src/main/resources/assets/purechaos/models/item/fallgays.json"
+          "src/main/resources/assets/purechaos/models/item/fallgays.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/FallgaysItem.java"
         ]
       }
     },
@@ -987,8 +987,8 @@
       "registry_name": "ekesmasterbait",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/placed_feature/ekesmasterbait_tree.json",
           "src/main/resources/data/purechaos/worldgen/biome/ekesmasterbait.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/ekesmasterbait_tree.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/ekesmasterbait_tree.json"
         ]
       }
@@ -1002,8 +1002,8 @@
       "registry_name": "sasi_amangas",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/SasiAmangasItem.java",
-          "src/main/resources/assets/purechaos/models/item/sasi_amangas.json"
+          "src/main/resources/assets/purechaos/models/item/sasi_amangas.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/SasiAmangasItem.java"
         ]
       }
     },
@@ -1016,10 +1016,10 @@
       "registry_name": "josip",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/JOSIPEntity.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/josip_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/josip_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JOSIPRenderer.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/josip_biome_modifier.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/JOSIPEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JOSIPRenderer.java"
         ]
       }
     },
@@ -1032,8 +1032,8 @@
       "registry_name": "brown",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/brown.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BrownItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BrownItem.java",
+          "src/main/resources/assets/purechaos/models/item/brown.json"
         ]
       }
     },
@@ -1077,13 +1077,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/CarbonMonoxideBlock.java",
           "src/main/java/xyz/aflkonstukt/purechaos/item/CarbonMonoxideItem.java",
-          "src/main/resources/assets/purechaos/models/item/carbon_monoxide_bucket.json",
-          "src/main/resources/assets/purechaos/models/block/carbon_monoxide.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CarbonMonoxideFluidType.java",
           "src/main/resources/assets/purechaos/blockstates/carbon_monoxide.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/CarbonMonoxideFluid.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/CarbonMonoxideFluid.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CarbonMonoxideFluidType.java",
+          "src/main/resources/assets/purechaos/models/block/carbon_monoxide.json",
+          "src/main/resources/assets/purechaos/models/item/carbon_monoxide_bucket.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/CarbonMonoxideBlock.java"
         ]
       }
     },
@@ -1171,8 +1171,8 @@
       "registry_name": "corruptstaff",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CorruptstaffItem.java",
-          "src/main/resources/assets/purechaos/models/item/corruptstaff.json"
+          "src/main/resources/assets/purechaos/models/item/corruptstaff.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CorruptstaffItem.java"
         ]
       }
     },
@@ -1185,10 +1185,10 @@
       "registry_name": "josipdvatockanula",
       "metadata": {
         "files": [
+          "src/main/resources/assets/purechaos/models/item/josipdvatockanula_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/josipdvatockanula_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipdvatockanulaEntity.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipdvatockanulaRenderer.java",
-          "src/main/resources/assets/purechaos/models/item/josipdvatockanula_spawn_egg.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipdvatockanulaRenderer.java"
         ]
       }
     },
@@ -1225,8 +1225,8 @@
         "ec": true,
         "files": [
           "src/main/resources/assets/purechaos/models/item/turtle_armor_chestplate.json",
-          "src/main/resources/assets/purechaos/models/item/turtle_armor_leggings.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/TurtleArmorItem.java",
+          "src/main/resources/assets/purechaos/models/item/turtle_armor_leggings.json",
           "src/main/resources/assets/purechaos/models/item/turtle_armor_boots.json"
         ]
       }
@@ -1244,10 +1244,10 @@
         "eb": true,
         "ec": true,
         "files": [
+          "src/main/resources/assets/purechaos/models/item/beef_armor_chestplate.json",
           "src/main/resources/assets/purechaos/models/item/beef_armor_leggings.json",
           "src/main/resources/assets/purechaos/models/item/beef_armor_boots.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BeefArmorItem.java",
-          "src/main/resources/assets/purechaos/models/item/beef_armor_chestplate.json",
           "src/main/resources/assets/purechaos/models/item/beef_armor_helmet.json"
         ]
       }
@@ -1285,10 +1285,10 @@
       "registry_name": "josip_pet",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipPetEntity.java",
-          "src/main/resources/assets/purechaos/models/item/josip_pet_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipPetRenderer.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/josip_pet_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipPetRenderer.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipPetEntity.java",
+          "src/main/resources/assets/purechaos/models/item/josip_pet_spawn_egg.json"
         ]
       }
     },
@@ -1318,8 +1318,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/MothOfAggrevationEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/moth_of_aggrevation_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/MothOfAggrevationRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/moth_of_aggrevation_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/moth_of_aggrevation_spawn_egg.json"
         ]
       }
@@ -1399,8 +1399,8 @@
       "registry_name": "bullet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/bullet.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BulletItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BulletItem.java",
+          "src/main/resources/assets/purechaos/models/item/bullet.json"
         ]
       }
     },
@@ -1413,10 +1413,10 @@
       "registry_name": "shep",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/ShepEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/shep_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/shep_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/ShepRenderer.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/ShepRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/shep_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/ShepEntity.java"
         ]
       }
     },
@@ -1429,9 +1429,9 @@
       "registry_name": "vikki_vuk_gui",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/VikkiVukGuiScreen.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/VikkiVukGuiButtonMessage.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/VikkiVukGuiMenu.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/VikkiVukGuiScreen.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/VikkiVukGuiMenu.java"
         ]
       }
     },
@@ -1444,10 +1444,10 @@
       "registry_name": "vikkivuk",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/VikkivukRenderer.java",
           "src/main/resources/assets/purechaos/models/item/vikkivuk_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/VikkivukEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/vikkivuk_biome_modifier.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/VikkivukRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/vikkivuk_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/VikkivukEntity.java"
         ]
       }
     },
@@ -1460,10 +1460,10 @@
       "registry_name": "blaz",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BlazRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/BlazEntity.java",
           "src/main/resources/assets/purechaos/models/item/blaz_spawn_egg.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/blaz_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BlazRenderer.java"
+          "src/main/resources/data/purechaos/forge/biome_modifier/blaz_biome_modifier.json"
         ]
       }
     },
@@ -1476,9 +1476,9 @@
       "registry_name": "cursed_dog",
       "metadata": {
         "files": [
+          "src/main/resources/assets/purechaos/models/item/cursed_dog_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CursedDogRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/CursedDogEntity.java",
-          "src/main/resources/assets/purechaos/models/item/cursed_dog_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/cursed_dog_biome_modifier.json"
         ]
       }
@@ -1651,8 +1651,8 @@
       "registry_name": "walter_wight",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/WalterWightEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/WalterWightRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/WalterWightEntity.java",
           "src/main/resources/assets/purechaos/models/item/walter_wight_spawn_egg.json"
         ]
       }
@@ -1668,8 +1668,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/AdolfHitlerEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/adolf_hitler_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AdolfHitlerRenderer.java",
-          "src/main/resources/assets/purechaos/models/item/adolf_hitler_spawn_egg.json"
+          "src/main/resources/assets/purechaos/models/item/adolf_hitler_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AdolfHitlerRenderer.java"
         ]
       }
     },
@@ -1682,10 +1682,10 @@
       "registry_name": "dream",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/dream_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/DreamEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/DreamRenderer.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/dream_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/DreamEntity.java"
+          "src/main/resources/assets/purechaos/models/item/dream_spawn_egg.json"
         ]
       }
     },
@@ -1698,8 +1698,8 @@
       "registry_name": "scratest",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/ScratestItem.java",
-          "src/main/resources/assets/purechaos/models/item/scratest.json"
+          "src/main/resources/assets/purechaos/models/item/scratest.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/ScratestItem.java"
         ]
       }
     },
@@ -1743,14 +1743,14 @@
       "registry_name": "youtube",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/block/youtube.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/youtube.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/youtube.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/youtube_biome_modifier.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/youtube.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/YoutubeBlock.java",
-          "src/main/resources/assets/purechaos/models/item/youtube.json",
-          "src/main/resources/assets/purechaos/blockstates/youtube.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/youtube.json",
+          "src/main/resources/assets/purechaos/blockstates/youtube.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/youtube_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/youtube.json",
+          "src/main/resources/assets/purechaos/models/block/youtube.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/youtube.json",
+          "src/main/resources/assets/purechaos/models/item/youtube.json"
         ]
       }
     },
@@ -1763,14 +1763,14 @@
       "registry_name": "plante",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json",
-          "src/main/resources/assets/purechaos/blockstates/plante.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/plante.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/PlanteBlock.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/plante_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/plante.json",
           "src/main/resources/assets/purechaos/models/block/plante.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/plante_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/plante.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/PlanteBlock.java"
+          "src/main/resources/assets/purechaos/blockstates/plante.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/plante.json"
         ]
       }
     },
@@ -1919,9 +1919,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/blockstates/rickroll_block.json",
-          "src/main/resources/assets/purechaos/models/item/rickroll_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/rickroll_block.json",
           "src/main/resources/assets/purechaos/models/block/rickroll_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/rickroll_block.json",
+          "src/main/resources/assets/purechaos/models/item/rickroll_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RickrollBlockBlock.java"
         ]
       }
@@ -2002,8 +2002,8 @@
         "files": [
           "src/main/resources/assets/purechaos/models/block/grave.json",
           "src/main/resources/assets/purechaos/models/item/grave.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/grave.json"
+          "src/main/resources/assets/purechaos/blockstates/grave.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java"
         ]
       }
     },
@@ -2017,12 +2017,12 @@
       "metadata": {
         "gb": true,
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/Milk2Fluid.java",
           "src/main/resources/assets/purechaos/models/block/milk_2.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/Milk2FluidType.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/Milk2Block.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/Milk2Fluid.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/Milk2Item.java",
           "src/main/resources/assets/purechaos/blockstates/milk_2.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/Milk2Block.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/Milk2Item.java",
           "src/main/resources/assets/purechaos/models/item/milk_2_bucket.json"
         ]
       }
@@ -2071,8 +2071,8 @@
       "registry_name": "use_in_emergencies",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/use_in_emergencies.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/UseInEmergenciesItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/UseInEmergenciesItem.java",
+          "src/main/resources/assets/purechaos/models/item/use_in_emergencies.json"
         ]
       }
     },
@@ -2121,9 +2121,9 @@
       "registry_name": "cod_but_better",
       "metadata": {
         "files": [
+          "src/main/resources/assets/purechaos/models/item/cod_but_better_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/cod_but_better_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/CodButBetterEntity.java",
-          "src/main/resources/assets/purechaos/models/item/cod_but_better_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CodButBetterRenderer.java"
         ]
       }
@@ -2169,10 +2169,10 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1lightBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1light.json",
-          "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1light.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1light.json",
-          "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1light.json"
+          "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1light.json",
+          "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1light.json",
+          "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1light.json"
         ]
       }
     },
@@ -2199,9 +2199,9 @@
       "registry_name": "stalin",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/StalinEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/StalinRenderer.java",
           "src/main/resources/assets/purechaos/models/item/stalin_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/StalinEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/stalin_biome_modifier.json"
         ]
       }
@@ -2229,9 +2229,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/forge/biome_modifier/rick_astley_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/RickAstleyRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/RickAstleyEntity.java",
-          "src/main/resources/assets/purechaos/models/item/rick_astley_spawn_egg.json"
+          "src/main/resources/assets/purechaos/models/item/rick_astley_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/RickAstleyRenderer.java"
         ]
       }
     },
@@ -2267,10 +2267,10 @@
       "registry_name": "backrooms_lvl_1_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_wall.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1WallBlock.java",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_wall.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_wall.json"
         ]
       }
@@ -2328,13 +2328,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/block/radiation_liquid.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/RadiationLiquidFluidType.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/RadiationLiquidItem.java",
-          "src/main/resources/assets/purechaos/models/item/radiation_liquid_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/RadiationLiquidFluid.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/RadiationLiquidItem.java",
           "src/main/resources/assets/purechaos/blockstates/radiation_liquid.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/RadiationLiquidBlock.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/RadiationLiquidBlock.java",
+          "src/main/resources/assets/purechaos/models/item/radiation_liquid_bucket.json",
+          "src/main/resources/assets/purechaos/models/block/radiation_liquid.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/RadiationLiquidFluidType.java"
         ]
       }
     },
@@ -2360,8 +2360,8 @@
       "registry_name": "bleach",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BleachItem.java",
-          "src/main/resources/assets/purechaos/models/item/bleach.json"
+          "src/main/resources/assets/purechaos/models/item/bleach.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BleachItem.java"
         ]
       }
     },
@@ -2440,11 +2440,11 @@
       "registry_name": "brazil_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/block/brazil_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BrazilBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/brazil_block.json",
+          "src/main/resources/assets/purechaos/models/item/brazil_block.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/brazil_block.json",
-          "src/main/resources/assets/purechaos/models/item/brazil_block.json"
+          "src/main/resources/assets/purechaos/models/block/brazil_block.json"
         ]
       }
     },
@@ -2457,11 +2457,11 @@
       "registry_name": "nokia_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/NokiaBlockBlock.java",
+          "src/main/resources/assets/purechaos/models/block/nokia_block.json",
           "src/main/resources/assets/purechaos/blockstates/nokia_block.json",
-          "src/main/resources/assets/purechaos/models/item/nokia_block.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/nokia_block.json",
-          "src/main/resources/assets/purechaos/models/block/nokia_block.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/NokiaBlockBlock.java",
+          "src/main/resources/assets/purechaos/models/item/nokia_block.json"
         ]
       }
     },
@@ -2475,17 +2475,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/resources/assets/purechaos/blockstates/brazil_portal.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/BrazilPortalShape.java",
-          "src/main/resources/assets/purechaos/models/block/brazil_portal_ew.json",
+          "src/main/resources/assets/purechaos/models/block/brazil_portal_ns.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/BrazilTeleporter.java",
-          "src/main/resources/data/purechaos/dimension_type/brazil.json",
+          "src/main/resources/assets/purechaos/blockstates/brazil_portal.json",
           "src/main/resources/data/purechaos/dimension/brazil.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BrazilDimension.java",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BrazilPortalBlock.java",
+          "src/main/resources/data/purechaos/dimension_type/brazil.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BrazilDimension.java",
           "src/main/resources/assets/purechaos/models/item/brazil.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BrazilItem.java",
-          "src/main/resources/assets/purechaos/models/block/brazil_portal_ns.json"
+          "src/main/resources/assets/purechaos/models/block/brazil_portal_ew.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BrazilItem.java"
         ]
       }
     },
@@ -2517,11 +2517,11 @@
       "registry_name": "backrooms_lvl_1_floor",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_floor.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1FloorBlock.java",
-          "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_floor.json",
-          "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_floor.json"
+          "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_floor.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1FloorBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_floor.json",
+          "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_floor.json"
         ]
       }
     },
@@ -2534,11 +2534,11 @@
       "registry_name": "south",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/south.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/south.json",
+          "src/main/resources/assets/purechaos/models/item/south.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/SouthBlock.java",
           "src/main/resources/assets/purechaos/models/block/south.json",
-          "src/main/resources/assets/purechaos/blockstates/south.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/SouthBlock.java"
+          "src/main/resources/assets/purechaos/blockstates/south.json"
         ]
       }
     },
@@ -2582,8 +2582,8 @@
       "registry_name": "legs",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/LegsRenderer.java",
           "src/main/resources/assets/purechaos/models/item/legs_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/LegsRenderer.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/legs_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/LegsEntity.java"
         ]
@@ -2598,9 +2598,9 @@
       "registry_name": "long_leg_chicken",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/long_leg_chicken_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/LongLegChickenEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/LongLegChickenRenderer.java",
+          "src/main/resources/assets/purechaos/models/item/long_leg_chicken_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/long_leg_chicken_biome_modifier.json"
         ]
       }
@@ -2665,8 +2665,8 @@
       "registry_name": "totem_of_amogus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/totem_of_amogus.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfAmogusItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfAmogusItem.java",
+          "src/main/resources/assets/purechaos/models/item/totem_of_amogus.json"
         ]
       }
     },
@@ -2679,11 +2679,11 @@
       "registry_name": "depression_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/DepressionBlockBlock.java",
+          "src/main/resources/assets/purechaos/blockstates/depression_block.json",
           "src/main/resources/assets/purechaos/models/block/depression_block.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/DepressionBlockBlock.java",
           "src/main/resources/data/purechaos/loot_tables/blocks/depression_block.json",
-          "src/main/resources/assets/purechaos/models/item/depression_block.json",
-          "src/main/resources/assets/purechaos/blockstates/depression_block.json"
+          "src/main/resources/assets/purechaos/models/item/depression_block.json"
         ]
       }
     },
@@ -2697,8 +2697,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/TPoseEntityRenderer.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/TPoseEntityEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/t_pose_entity_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/TPoseEntityEntity.java",
           "src/main/resources/assets/purechaos/models/item/t_pose_entity_spawn_egg.json"
         ]
       }
@@ -2712,8 +2712,8 @@
       "registry_name": "impostor_knife",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/ImpostorKnifeItem.java",
-          "src/main/resources/assets/purechaos/models/item/impostor_knife.json"
+          "src/main/resources/assets/purechaos/models/item/impostor_knife.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/ImpostorKnifeItem.java"
         ]
       }
     },
@@ -2726,8 +2726,8 @@
       "registry_name": "samsung_note_7",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/SamsungNote7Item.java",
-          "src/main/resources/assets/purechaos/models/item/samsung_note_7.json"
+          "src/main/resources/assets/purechaos/models/item/samsung_note_7.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/SamsungNote7Item.java"
         ]
       }
     },
@@ -2769,10 +2769,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/loot_tables/blocks/comunisam_block.json",
-          "src/main/resources/assets/purechaos/blockstates/comunisam_block.json",
           "src/main/resources/assets/purechaos/models/item/comunisam_block.json",
-          "src/main/resources/assets/purechaos/models/block/comunisam_block.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/ComunisamBlockBlock.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/ComunisamBlockBlock.java",
+          "src/main/resources/assets/purechaos/blockstates/comunisam_block.json",
+          "src/main/resources/assets/purechaos/models/block/comunisam_block.json"
         ]
       }
     },
@@ -2824,11 +2824,11 @@
       "registry_name": "poland_block",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/block/PolandBlockBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/poland_block.json",
           "src/main/resources/assets/purechaos/blockstates/poland_block.json",
           "src/main/resources/assets/purechaos/models/block/poland_block.json",
-          "src/main/resources/assets/purechaos/models/item/poland_block.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/PolandBlockBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/poland_block.json"
+          "src/main/resources/assets/purechaos/models/item/poland_block.json"
         ]
       }
     },
@@ -2841,11 +2841,11 @@
       "registry_name": "cyber_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/cyber_block.json",
+          "src/main/resources/assets/purechaos/blockstates/cyber_block.json",
           "src/main/resources/assets/purechaos/models/item/cyber_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CyberBlockBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/cyber_block.json",
-          "src/main/resources/assets/purechaos/models/block/cyber_block.json"
+          "src/main/resources/assets/purechaos/models/block/cyber_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/cyber_block.json"
         ]
       }
     },
@@ -2858,8 +2858,8 @@
       "registry_name": "totem_of_dream",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/totem_of_dream.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfDreamItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfDreamItem.java",
+          "src/main/resources/assets/purechaos/models/item/totem_of_dream.json"
         ]
       }
     },
@@ -2888,14 +2888,14 @@
       "registry_name": "computer",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/computer_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json",
-          "src/main/resources/assets/purechaos/models/item/computer.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/ComputerBlock.java",
           "src/main/resources/assets/purechaos/blockstates/computer.json",
           "src/main/resources/assets/purechaos/models/block/computer.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/computer.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/computer.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/ComputerBlock.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/computer_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/computer.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/computer.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/computer.json"
         ]
       }
     },
@@ -2908,8 +2908,8 @@
       "registry_name": "computer_gui",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/ComputerGuiMenu.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/gui/ComputerGuiScreen.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/ComputerGuiMenu.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/ComputerGuiButtonMessage.java"
         ]
       }
@@ -2958,16 +2958,16 @@
         "ep": true,
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/CioaoDimension.java",
-          "src/main/resources/assets/purechaos/blockstates/cioao_portal.json",
-          "src/main/resources/assets/purechaos/models/block/cioao_portal_ew.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoPortalShape.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoTeleporter.java",
-          "src/main/resources/data/purechaos/dimension_type/cioao.json",
           "src/main/resources/assets/purechaos/models/item/cioao.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CioaoItem.java",
+          "src/main/resources/assets/purechaos/models/block/cioao_portal_ew.json",
           "src/main/resources/assets/purechaos/models/block/cioao_portal_ns.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoTeleporter.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoPortalShape.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/CioaoPortalBlock.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CioaoItem.java",
+          "src/main/resources/data/purechaos/dimension_type/cioao.json",
           "src/main/resources/data/purechaos/dimension/cioao.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/CioaoPortalBlock.java"
+          "src/main/resources/assets/purechaos/blockstates/cioao_portal.json"
         ]
       }
     },
@@ -2980,8 +2980,8 @@
       "registry_name": "to",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/TOItem.java",
-          "src/main/resources/assets/purechaos/models/item/to.json"
+          "src/main/resources/assets/purechaos/models/item/to.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/TOItem.java"
         ]
       }
     },
@@ -3019,11 +3019,11 @@
       "registry_name": "greengiscreenda",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/greengiscreenda.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/greengiscreenda.json",
           "src/main/resources/assets/purechaos/models/block/greengiscreenda.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreengiscreendaBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/greengiscreenda.json"
+          "src/main/resources/data/purechaos/loot_tables/blocks/greengiscreenda.json",
+          "src/main/resources/assets/purechaos/blockstates/greengiscreenda.json",
+          "src/main/resources/assets/purechaos/models/item/greengiscreenda.json"
         ]
       }
     },
@@ -3073,9 +3073,9 @@
       "registry_name": "cyber_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/biome/cyber_biome.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/cyber_biome_tree.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/cyber_biome_tree.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/cyber_biome_tree.json"
+          "src/main/resources/data/purechaos/worldgen/biome/cyber_biome.json"
         ]
       }
     },
@@ -3088,10 +3088,10 @@
       "registry_name": "stroater",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/stroater_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/StroaterEntity.java",
           "src/main/resources/assets/purechaos/models/item/stroater_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/StroaterRenderer.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/StroaterRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/stroater_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/StroaterEntity.java"
         ]
       }
     },
@@ -3200,8 +3200,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/SpongebobBossRenderer.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/SpongebobBossEntity.java",
           "src/main/resources/assets/purechaos/models/item/spongebob_boss_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/SpongebobBossEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/spongebob_boss_biome_modifier.json"
         ]
       }
@@ -3216,13 +3216,13 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/purechaos/blockstates/cobble_fluid.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/CobbleFluidBlock.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CobbleFluidFluidType.java",
           "src/main/resources/assets/purechaos/models/block/cobble_fluid.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CobbleFluidItem.java",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/CobbleFluidFluid.java",
-          "src/main/resources/assets/purechaos/models/item/cobble_fluid_bucket.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CobbleFluidFluidType.java",
+          "src/main/resources/assets/purechaos/blockstates/cobble_fluid.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CobbleFluidItem.java",
+          "src/main/resources/assets/purechaos/models/item/cobble_fluid_bucket.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/CobbleFluidBlock.java"
         ]
       }
     },
@@ -3315,11 +3315,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/purechaos/models/item/adidas_armor_helmet.json",
-          "src/main/resources/assets/purechaos/models/item/adidas_armor_chestplate.json",
-          "src/main/resources/assets/purechaos/models/item/adidas_armor_leggings.json",
           "src/main/resources/assets/purechaos/models/item/adidas_armor_boots.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasArmorItem.java"
+          "src/main/resources/assets/purechaos/models/item/adidas_armor_leggings.json",
+          "src/main/resources/assets/purechaos/models/item/adidas_armor_helmet.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasArmorItem.java",
+          "src/main/resources/assets/purechaos/models/item/adidas_armor_chestplate.json"
         ]
       }
     },
@@ -3332,8 +3332,8 @@
       "registry_name": "adidas_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/adidas_sword.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasSwordItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasSwordItem.java",
+          "src/main/resources/assets/purechaos/models/item/adidas_sword.json"
         ]
       }
     },
@@ -3360,14 +3360,14 @@
       "registry_name": "adidas_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_tables/blocks/adidas_block.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/adidas_block.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/adidas_block.json",
+          "src/main/resources/assets/purechaos/models/item/adidas_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/AdidasBlockBlock.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/adidas_block_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/adidas_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/adidas_block.json",
-          "src/main/resources/assets/purechaos/blockstates/adidas_block.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/adidas_block.json",
           "src/main/resources/assets/purechaos/models/block/adidas_block.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/adidas_block.json"
+          "src/main/resources/assets/purechaos/blockstates/adidas_block.json"
         ]
       }
     },
@@ -3380,8 +3380,8 @@
       "registry_name": "adidas_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/adidas_axe.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasAxeItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasAxeItem.java",
+          "src/main/resources/assets/purechaos/models/item/adidas_axe.json"
         ]
       }
     },
@@ -3408,9 +3408,9 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AMOGUS3BLURenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3BLUEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/amogus_3_blu_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/amogus_3_blu_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3BLUEntity.java"
+          "src/main/resources/assets/purechaos/models/item/amogus_3_blu_spawn_egg.json"
         ]
       }
     },
@@ -3436,8 +3436,8 @@
       "registry_name": "adidas_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/adidas_hoe.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasHoeItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasHoeItem.java",
+          "src/main/resources/assets/purechaos/models/item/adidas_hoe.json"
         ]
       }
     },
@@ -3518,8 +3518,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AMOGUS3GRINRenderer.java",
           "src/main/resources/assets/purechaos/models/item/amogus_3_grin_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3GRINEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/amogus_3_grin_biome_modifier.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/amogus_3_grin_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3GRINEntity.java"
         ]
       }
     },
@@ -3545,9 +3545,9 @@
       "registry_name": "cheat_gui",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CheatGUIScreen.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/CheatGUIButtonMessage.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CheatGUIMenu.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CheatGUIScreen.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CheatGUIMenu.java"
         ]
       }
     },
@@ -3560,11 +3560,11 @@
       "registry_name": "missing_texture",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/block/missing_texture.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/MissingTextureBlock.java",
-          "src/main/resources/assets/purechaos/blockstates/missing_texture.json",
+          "src/main/resources/assets/purechaos/models/block/missing_texture.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/missing_texture.json",
-          "src/main/resources/assets/purechaos/models/item/missing_texture.json"
+          "src/main/resources/assets/purechaos/models/item/missing_texture.json",
+          "src/main/resources/assets/purechaos/blockstates/missing_texture.json"
         ]
       }
     },
@@ -3629,9 +3629,9 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/TheRockRenderer.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/the_rock_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/the_rock_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TheRockEntity.java",
-          "src/main/resources/assets/purechaos/models/item/the_rock_spawn_egg.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/the_rock_biome_modifier.json"
         ]
       }
     },
@@ -3754,8 +3754,8 @@
       "registry_name": "bottle_of_piss",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BottleOfPissItem.java",
-          "src/main/resources/assets/purechaos/models/item/bottle_of_piss.json"
+          "src/main/resources/assets/purechaos/models/item/bottle_of_piss.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BottleOfPissItem.java"
         ]
       }
     },
@@ -3908,8 +3908,8 @@
       "registry_name": "dorito_nacho",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/dorito_nacho.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/DoritoNachoItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/DoritoNachoItem.java",
+          "src/main/resources/assets/purechaos/models/item/dorito_nacho.json"
         ]
       }
     },
@@ -3948,8 +3948,8 @@
       "registry_name": "kentucky_fried_chicken_fries",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken_fries.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenFriesItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenFriesItem.java",
+          "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken_fries.json"
         ]
       }
     },
@@ -3962,8 +3962,8 @@
       "registry_name": "kentucky_fried_chicken",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenItem.java",
+          "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken.json"
         ]
       }
     },
@@ -4016,10 +4016,10 @@
       "registry_name": "big",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/big_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/BigEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BigRenderer.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/big_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/BigEntity.java"
+          "src/main/resources/assets/purechaos/models/item/big_spawn_egg.json"
         ]
       }
     },
@@ -4033,17 +4033,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/resources/data/purechaos/dimension_type/aether.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/AetherTeleporter.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/AetherPortalShape.java",
+          "src/main/resources/assets/purechaos/models/block/aether_portal_ns.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/AetherItem.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/AetherDimension.java",
           "src/main/resources/data/purechaos/dimension/aether.json",
           "src/main/resources/assets/purechaos/models/block/aether_portal_ew.json",
-          "src/main/resources/assets/purechaos/models/block/aether_portal_ns.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/AetherPortalBlock.java",
+          "src/main/resources/data/purechaos/dimension_type/aether.json",
+          "src/main/resources/assets/purechaos/blockstates/aether_portal.json",
           "src/main/resources/assets/purechaos/models/item/aether.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/AetherDimension.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/AetherPortalShape.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/AetherTeleporter.java",
-          "src/main/resources/assets/purechaos/blockstates/aether_portal.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/AetherPortalBlock.java"
         ]
       }
     },
@@ -4213,8 +4213,8 @@
       "registry_name": "mercury",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/mercury.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/MercuryItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/MercuryItem.java",
+          "src/main/resources/assets/purechaos/models/item/mercury.json"
         ]
       }
     },
@@ -4227,13 +4227,13 @@
       "registry_name": "jeb_block",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/block/JebBlockBlock.java",
-          "src/main/resources/assets/purechaos/models/block/jeb_block.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/jeb_block_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/jeb_block.json",
-          "src/main/resources/assets/purechaos/models/item/jeb_block.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/jeb_block.json",
+          "src/main/resources/assets/purechaos/models/block/jeb_block.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/JebBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/jeb_block.json",
+          "src/main/resources/assets/purechaos/models/item/jeb_block.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/jeb_block.json"
         ]
       }
@@ -4278,8 +4278,8 @@
       "registry_name": "frying_pan",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/frying_pan.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/FryingPanItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/FryingPanItem.java",
+          "src/main/resources/assets/purechaos/models/item/frying_pan.json"
         ]
       }
     },
@@ -4292,8 +4292,8 @@
       "registry_name": "apple_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/apple_ingot.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/AppleIngotItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/AppleIngotItem.java",
+          "src/main/resources/assets/purechaos/models/item/apple_ingot.json"
         ]
       }
     },
@@ -4319,10 +4319,10 @@
       "registry_name": "technoblade",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/TechnobladeEntity.java",
-          "src/main/resources/assets/purechaos/models/item/technoblade_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/TechnobladeRenderer.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/technoblade_biome_modifier.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/technoblade_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/TechnobladeEntity.java",
+          "src/main/resources/assets/purechaos/models/item/technoblade_spawn_egg.json"
         ]
       }
     },
@@ -4358,9 +4358,9 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/CupcakkeEntity.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CupcakkeRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/cupcakke_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/cupcakke_spawn_egg.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/cupcakke_biome_modifier.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CupcakkeRenderer.java"
         ]
       }
     },
@@ -4412,9 +4412,9 @@
       "registry_name": "more_extreme_hills",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/more_extreme_hills.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/more_extreme_hills_tree.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/more_extreme_hills_tree.json",
-          "src/main/resources/data/purechaos/worldgen/biome/more_extreme_hills.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/more_extreme_hills_tree.json"
         ]
       }
     },
@@ -4440,9 +4440,9 @@
       "registry_name": "pee_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/pee_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/pee_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/pee_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/pee_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/pee_feature_biome_modifier.json"
         ]
       }
     },
@@ -4455,8 +4455,8 @@
       "registry_name": "cum_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/cum_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/cum_feature.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/cum_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/cum_feature.json"
         ]
       }
@@ -4470,9 +4470,9 @@
       "registry_name": "staravoda_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/forge/biome_modifier/staravoda_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/staravoda_feature.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/staravoda_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/staravoda_feature_biome_modifier.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/staravoda_feature.json"
         ]
       }
     },
@@ -4500,9 +4500,9 @@
       "registry_name": "oil_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/oil_feature.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/oil_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/oil_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/oil_feature.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/oil_feature.json"
         ]
       }
     },
@@ -4516,8 +4516,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/worldgen/placed_feature/gatorade_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/gatorade_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/gatorade_feature.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/gatorade_feature.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/gatorade_feature_biome_modifier.json"
         ]
       }
     },
@@ -4530,8 +4530,8 @@
       "registry_name": "carbon_monoxide_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/carbon_monoxide_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/carbon_monoxide_feature.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/carbon_monoxide_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/carbon_monoxide_feature_biome_modifier.json"
         ]
       }
@@ -4545,8 +4545,8 @@
       "registry_name": "milk_2_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/placed_feature/milk_2_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/milk_2_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/milk_2_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/milk_2_feature.json"
         ]
       }
@@ -4560,9 +4560,9 @@
       "registry_name": "radiation_liquid_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/radiation_liquid_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/radiation_liquid_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/radiation_liquid_feature.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/radiation_liquid_feature.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/radiation_liquid_feature.json"
         ]
       }
     },
@@ -4782,8 +4782,8 @@
       "registry_name": "poop",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/PoopItem.java",
-          "src/main/resources/assets/purechaos/models/item/poop.json"
+          "src/main/resources/assets/purechaos/models/item/poop.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PoopItem.java"
         ]
       }
     },
@@ -4844,9 +4844,9 @@
       "registry_name": "baldi_minus",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/BaldiMinusEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BaldiMinusRenderer.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/baldi_minus_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/BaldiMinusEntity.java",
           "src/main/resources/assets/purechaos/models/item/baldi_minus_spawn_egg.json"
         ]
       }
@@ -4892,8 +4892,8 @@
       "registry_name": "herobrine",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/herobrine_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/herobrine_spawn_egg.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/herobrine_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/HerobrineRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/HerobrineEntity.java"
         ]
@@ -4958,8 +4958,8 @@
       "registry_name": "communism_orb",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CommunismOrbItem.java",
-          "src/main/resources/assets/purechaos/models/item/communism_orb.json"
+          "src/main/resources/assets/purechaos/models/item/communism_orb.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CommunismOrbItem.java"
         ]
       }
     },
@@ -5017,10 +5017,10 @@
       "registry_name": "nerd",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/NerdRenderer.java",
-          "src/main/resources/assets/purechaos/models/item/nerd_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/NerdEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/nerd_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/NerdEntity.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/NerdRenderer.java",
+          "src/main/resources/assets/purechaos/models/item/nerd_spawn_egg.json"
         ]
       }
     },
@@ -5060,10 +5060,10 @@
       "registry_name": "irs",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/forge/biome_modifier/irs_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/IRSRenderer.java",
           "src/main/resources/assets/purechaos/models/item/irs_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/IRSEntity.java",
-          "src/main/resources/data/purechaos/forge/biome_modifier/irs_biome_modifier.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/IRSEntity.java"
         ]
       }
     },
@@ -5076,9 +5076,9 @@
       "registry_name": "fbi",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/fbi_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/fbi_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/FBIEntity.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/fbi_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/FBIRenderer.java"
         ]
       }
@@ -5092,10 +5092,10 @@
       "registry_name": "american_soldat",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/american_soldat_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AmericanSoldatRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/AmericanSoldatEntity.java",
           "src/main/resources/data/purechaos/forge/biome_modifier/american_soldat_biome_modifier.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/AmericanSoldatEntity.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AmericanSoldatRenderer.java",
+          "src/main/resources/assets/purechaos/models/item/american_soldat_spawn_egg.json"
         ]
       }
     },
@@ -5108,8 +5108,8 @@
       "registry_name": "murica",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/murica_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/murica_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/murica_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/MuricaEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/MuricaRenderer.java"
         ]
@@ -5197,8 +5197,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/worldgen/configured_feature/among_u_spp_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/among_u_spp_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/among_u_spp_feature_biome_modifier.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/among_u_spp_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/among_u_spp_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5212,9 +5212,9 @@
       "registry_name": "among_u_sp_ortal_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/among_u_sp_ortal_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/among_u_sp_ortal_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/among_u_sp_ortal_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/among_u_sp_ortal_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/among_u_sp_ortal_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5256,8 +5256,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/worldgen/configured_feature/pee_pool_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/pee_pool_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/pee_pool_feature_biome_modifier.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/pee_pool_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/pee_pool_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5272,8 +5272,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/forge/biome_modifier/wood_ruined_portal_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/wood_ruined_portal_feature.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/wood_ruined_portal_feature.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/wood_ruined_portal_feature.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/wood_ruined_portal_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5287,9 +5287,9 @@
       "registry_name": "juke_box_cave_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/juke_box_cave_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/juke_box_cave_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/juke_box_cave_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/juke_box_cave_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/juke_box_cave_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5303,9 +5303,9 @@
       "registry_name": "among_us_dungeon_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/among_us_dungeon_feature.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/among_us_dungeon_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/among_us_dungeon_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/among_us_dungeon_feature.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/among_us_dungeon_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5378,9 +5378,9 @@
       "registry_name": "oil_mountain_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/forge/biome_modifier/oil_mountain_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/oil_mountain_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/oil_mountain_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/oil_mountain_feature_biome_modifier.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/oil_mountain_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5394,9 +5394,9 @@
       "registry_name": "secret_tnt_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/secret_tnt_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/secret_tnt_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/secret_tnt_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/secret_tnt_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/secret_tnt_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5410,9 +5410,9 @@
       "registry_name": "herobrine_shrine_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/placed_feature/herobrine_shrine_feature.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/herobrine_shrine_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/herobrine_shrine_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/herobrine_shrine_feature.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/herobrine_shrine_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5426,9 +5426,9 @@
       "registry_name": "oak_house_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/oak_house_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/oak_house_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/oak_house_feature.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/oak_house_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/oak_house_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5443,8 +5443,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/forge/biome_modifier/ambyss_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/ambyss_feature.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/ambyss_feature.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/ambyss_feature.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/ambyss_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5471,8 +5471,8 @@
       "registry_name": "josip_range",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/JosipRangeItem.java",
-          "src/main/resources/assets/purechaos/models/item/josip_range.json"
+          "src/main/resources/assets/purechaos/models/item/josip_range.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/JosipRangeItem.java"
         ]
       }
     },
@@ -5539,10 +5539,10 @@
       "registry_name": "hec_feature",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/HECFeatureFeature.java",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/hec_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/hec_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/hec_feature_biome_modifier.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/hec_feature_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/features/HECFeatureFeature.java",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/hec_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -5585,8 +5585,8 @@
       "registry_name": "rock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/rock.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/RockItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/RockItem.java",
+          "src/main/resources/assets/purechaos/models/item/rock.json"
         ]
       }
     },
@@ -5612,8 +5612,8 @@
       "registry_name": "javelin_launcher",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/javelin_launcher.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/JavelinLauncherItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/JavelinLauncherItem.java",
+          "src/main/resources/assets/purechaos/models/item/javelin_launcher.json"
         ]
       }
     },
@@ -5626,8 +5626,8 @@
       "registry_name": "stone_stair_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/stone_stair_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/stone_stair_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/stone_stair_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/stone_stair_feature.json"
         ],
         "has_nbt_structure": true
@@ -5658,9 +5658,9 @@
       "registry_name": "rickroll_stairs_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/rickroll_stairs_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/rickroll_stairs_feature.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/rickroll_stairs_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/rickroll_stairs_feature.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/rickroll_stairs_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -5674,8 +5674,8 @@
       "registry_name": "birch_tree_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/placed_feature/birch_tree_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/birch_tree_feature_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/birch_tree_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/birch_tree_feature.json"
         ],
         "has_nbt_structure": true
@@ -5690,8 +5690,8 @@
       "registry_name": "birch_tree_big_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/configured_feature/birch_tree_big_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/birch_tree_big_feature.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/birch_tree_big_feature.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/birch_tree_big_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
@@ -5722,8 +5722,8 @@
       "registry_name": "drug_van_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/drug_van_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/drug_van_feature.json",
+          "src/main/resources/data/purechaos/forge/biome_modifier/drug_van_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/drug_van_feature.json"
         ],
         "has_nbt_structure": true
@@ -5738,9 +5738,9 @@
       "registry_name": "captcha_gui",
       "metadata": {
         "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CaptchaGUIMenu.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/CaptchaGUIButtonMessage.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CaptchaGUIScreen.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CaptchaGUIMenu.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CaptchaGUIScreen.java"
         ]
       }
     },
@@ -5753,10 +5753,10 @@
       "registry_name": "pensive_cube",
       "metadata": {
         "files": [
+          "src/main/resources/assets/purechaos/models/item/pensive_cube_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/PensiveCubeEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/PensiveCubeRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/model/PensiveCubeModel.java",
-          "src/main/resources/assets/purechaos/models/item/pensive_cube_spawn_egg.json",
           "src/main/resources/data/purechaos/forge/biome_modifier/pensive_cube_biome_modifier.json"
         ]
       }
@@ -5945,8 +5945,8 @@
       "registry_name": "puffer_balloon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/puffer_balloon.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/PufferBalloonItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PufferBalloonItem.java",
+          "src/main/resources/assets/purechaos/models/item/puffer_balloon.json"
         ]
       }
     },
@@ -5959,8 +5959,8 @@
       "registry_name": "infinite_fuel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/item/infinite_fuel.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/InfiniteFuelItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/InfiniteFuelItem.java",
+          "src/main/resources/assets/purechaos/models/item/infinite_fuel.json"
         ]
       }
     },
@@ -6368,10 +6368,10 @@
       "registry_name": "groggo",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/GroggoRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/GroggoEntity.java",
-          "src/main/resources/assets/purechaos/models/item/groggo_spawn_egg.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/groggo_biome_modifier.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/GroggoRenderer.java",
+          "src/main/resources/data/purechaos/forge/biome_modifier/groggo_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/groggo_spawn_egg.json"
         ]
       }
     },
@@ -6443,9 +6443,9 @@
       "registry_name": "upside_down_house",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/forge/biome_modifier/upside_down_house_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/upside_down_house.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/upside_down_house.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/upside_down_house.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/upside_down_house_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -6649,9 +6649,9 @@
       "registry_name": "nightmare_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/dimension/nightmare_dimension.json",
+          "src/main/resources/data/purechaos/dimension_type/nightmare_dimension.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/NightmareDimensionDimension.java",
-          "src/main/resources/data/purechaos/dimension_type/nightmare_dimension.json"
+          "src/main/resources/data/purechaos/dimension/nightmare_dimension.json"
         ]
       }
     },
@@ -6731,9 +6731,9 @@
       "registry_name": "scatter_sculk",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/scatter_sculk.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/scatter_sculk.json",
-          "src/main/resources/data/purechaos/forge/biome_modifier/scatter_sculk_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/scatter_sculk.json"
+          "src/main/resources/data/purechaos/forge/biome_modifier/scatter_sculk_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -6914,10 +6914,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/block/backroom_wall_bottom.json",
+          "src/main/resources/assets/purechaos/models/item/backroom_wall_bottom.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/backroom_wall_bottom.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomWallBottomBlock.java",
           "src/main/resources/assets/purechaos/blockstates/backroom_wall_bottom.json",
-          "src/main/resources/assets/purechaos/models/item/backroom_wall_bottom.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomWallBottomBlock.java"
         ]
       }
     },
@@ -6931,10 +6931,10 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsCeilingBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_ceiling.json",
+          "src/main/resources/assets/purechaos/models/block/backrooms_ceiling.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_ceiling.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_ceiling.json",
-          "src/main/resources/assets/purechaos/models/block/backrooms_ceiling.json"
+          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_ceiling.json"
         ]
       }
     },
@@ -6947,10 +6947,10 @@
       "registry_name": "backrooms",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms_backrooms.json",
-          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms.json",
           "src/main/resources/data/purechaos/worldgen/structure/backrooms.json",
-          "src/main/resources/data/purechaos/worldgen/structure_set/backrooms.json"
+          "src/main/resources/data/purechaos/worldgen/structure_set/backrooms.json",
+          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms_backrooms.json",
+          "src/main/resources/data/purechaos/worldgen/template_pool/backrooms.json"
         ]
       }
     },
@@ -6976,9 +6976,9 @@
       "registry_name": "backrooms_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/dimension_type/backrooms_dimension.json",
           "src/main/resources/data/purechaos/dimension/backrooms_dimension.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BackroomsDimensionDimension.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BackroomsDimensionDimension.java",
+          "src/main/resources/data/purechaos/dimension_type/backrooms_dimension.json"
         ]
       }
     },
@@ -7630,39 +7630,36 @@
       }
     },
     {
-      "name": "DrunkboionBeer",
-      "type": "procedure",
+      "name": "Rainbowrack",
+      "type": "block",
       "sortid": 440,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "drunkboion_beer",
+      "registry_name": "rainbowrack",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DrunkboionBeerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/assets/purechaos/blockstates/rainbowrack.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/rainbowrack.json",
+          "src/main/resources/assets/purechaos/models/item/rainbowrack.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/RainbowrackBlock.java",
+          "src/main/resources/assets/purechaos/models/block/rainbowrack.json"
         ]
       }
     },
     {
-      "name": "Beer",
-      "type": "item",
+      "name": "RainbowGrass",
+      "type": "block",
       "sortid": 441,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "beer",
+      "registry_name": "rainbow_grass",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/BeerItem.java",
-          "src/main/resources/assets/purechaos/models/item/beer.json"
+          "src/main/resources/data/purechaos/loot_tables/blocks/rainbow_grass.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/RainbowGrassBlock.java",
+          "src/main/resources/assets/purechaos/blockstates/rainbow_grass.json",
+          "src/main/resources/assets/purechaos/models/item/rainbow_grass.json",
+          "src/main/resources/assets/purechaos/models/block/rainbow_grass.json"
         ]
       }
     }
@@ -8424,7 +8421,6 @@
       "death.attack.radiation_death.player": "%1$s saw the blue light whilst trying to escape %2$s",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "selectWorld.warning.experimental.title": "We need your permission to make the world chaotic",
-      "item.purechaos.beer": "Beer",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "item.purechaos.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "painting.purechaos.masterpiece.title": "Masterpiece",
@@ -8554,6 +8550,7 @@
       "block.chaosmod.greengiscreenda": "Greengiscreenda",
       "item.chaosmod.food_item_3": "Food Item 3",
       "item.chaosmod.food_item_2": "Food Item 2",
+      "block.purechaos.rainbowrack": "Rainbowrack",
       "subtitles.fu-k": "",
       "block.purechaos.pee": "Pee",
       "block.chaosmod.cum": "Cum",
@@ -8596,6 +8593,7 @@
       "item.purechaos.the_rock_spawn_egg": "The Rock Spawn Egg",
       "death.attack.vegan_death.item": "%1$s ate meat",
       "item.purechaos.fooditem": "Food Item 1",
+      "block.purechaos.rainbow_grass": "Rainbow Grass",
       "block.purechaos.rickroll_block": "Rickroll",
       "item.chaosmod.javelin_launcher": "Javelin Launcher",
       "entity.purechaos.irs": "IRS",

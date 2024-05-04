@@ -295,7 +295,12 @@ public class PurechaosModItems {
 	public static final RegistryObject<Item> BACKROOM_WALL_BOTTOM = block(PurechaosModBlocks.BACKROOM_WALL_BOTTOM);
 	public static final RegistryObject<Item> BACKROOMS_CEILING = block(PurechaosModBlocks.BACKROOMS_CEILING);
 	public static final RegistryObject<Item> MELATONIN_PILL = REGISTRY.register("melatonin_pill", () -> new MelatoninPillItem());
+<<<<<<< Updated upstream
 	public static final RegistryObject<Item> BEER = REGISTRY.register("beer", () -> new BeerItem());
+=======
+	public static final RegistryObject<Item> RAINBOWRACK = block(PurechaosModBlocks.RAINBOWRACK);
+	public static final RegistryObject<Item> RAINBOW_GRASS = block(PurechaosModBlocks.RAINBOW_GRASS);
+>>>>>>> Stashed changes
 
 	// Start of user code block custom items
 	// End of user code block custom items

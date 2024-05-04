@@ -13,6 +13,8 @@ import xyz.aflkonstukt.purechaos.block.StaravodaBlock;
 import xyz.aflkonstukt.purechaos.block.SouthBlock;
 import xyz.aflkonstukt.purechaos.block.SADsBlock;
 import xyz.aflkonstukt.purechaos.block.RickrollBlockBlock;
+import xyz.aflkonstukt.purechaos.block.RainbowrackBlock;
+import xyz.aflkonstukt.purechaos.block.RainbowGrassBlock;
 import xyz.aflkonstukt.purechaos.block.RadiationLiquidBlock;
 import xyz.aflkonstukt.purechaos.block.PotatusBlock;
 import xyz.aflkonstukt.purechaos.block.PolandBlockBlock;
@@ -104,6 +106,8 @@ public class PurechaosModBlocks {
 	public static final RegistryObject<Block> JEB_BLOCK = REGISTRY.register("jeb_block", () -> new JebBlockBlock());
 	public static final RegistryObject<Block> BACKROOM_WALL_BOTTOM = REGISTRY.register("backroom_wall_bottom", () -> new BackroomWallBottomBlock());
 	public static final RegistryObject<Block> BACKROOMS_CEILING = REGISTRY.register("backrooms_ceiling", () -> new BackroomsCeilingBlock());
+	public static final RegistryObject<Block> RAINBOWRACK = REGISTRY.register("rainbowrack", () -> new RainbowrackBlock());
+	public static final RegistryObject<Block> RAINBOW_GRASS = REGISTRY.register("rainbow_grass", () -> new RainbowGrassBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
