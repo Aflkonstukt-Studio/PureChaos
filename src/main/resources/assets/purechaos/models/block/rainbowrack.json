@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:block/rainbowrack",
+    "up": "purechaos:block/rainbowrack",
+    "north": "purechaos:block/rainbowrack",
+    "east": "purechaos:block/rainbowrack",
+    "south": "purechaos:block/rainbowrack",
+    "west": "purechaos:block/rainbowrack",
+    "particle": "purechaos:block/rainbowrack"
+  },
+  "render_type": "solid"
+}
