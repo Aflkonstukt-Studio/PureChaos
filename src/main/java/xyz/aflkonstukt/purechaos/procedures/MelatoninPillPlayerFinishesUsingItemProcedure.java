@@ -48,7 +48,7 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 				}
 			} else if (random_num == 3) {
 				{
-					double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance + 5;
+					double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance + 100;
 					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.dementia_chance = _setval;
 						capability.syncPlayerVariables(entity);
@@ -56,7 +56,7 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(("Uh oh! It looks like your dementia chance just got increased! Your current chance of getting dementia (if your sanity is lower than 50) is: "
-							+ ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance + "%"))), false);
+							+ ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance / 20 + "%"))), false);
 			}
 		} else {
 			{

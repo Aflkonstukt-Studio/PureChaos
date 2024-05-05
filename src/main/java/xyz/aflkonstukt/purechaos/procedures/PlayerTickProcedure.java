@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
+import xyz.aflkonstukt.purechaos.world.inventory.AdGUIMenu;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
@@ -25,6 +26,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
@@ -98,12 +100,39 @@ public class PlayerTickProcedure {
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 50) {
-			if (Mth.nextInt(RandomSource.create(), (int) (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance, 100) > 95
+			if (Mth.nextInt(RandomSource.create(), (int) (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance, 2000) >= 1991
 					&& (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance > 0) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEMENTIA.get(), 600, 1, false, true));
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, false, false));
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Uh oh! Looks like you have dementia! Your inventory will be reset when the effect expires."), false);
+				{
+					double _setval = 0;
+					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.dementia_chance = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if (Mth.nextDouble(RandomSource.create(), 1, 3000) <= 3) {
+				if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.ADBLOCKER)) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("AdGUI");
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new AdGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				}
 			}
 		}
 		if ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity <= 0) {
@@ -184,7 +213,7 @@ public class PlayerTickProcedure {
 		}
 		if (world.isClientSide() && entity instanceof Player) {
 			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
-				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt32 && _livEnt32.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/desaturate.json")
 						&& !(entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).having_nightmare) {
@@ -194,16 +223,16 @@ public class PlayerTickProcedure {
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/ntsc.json")
 						&& !((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
-				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/art.json") && !(entity instanceof LivingEntity _livEnt39 && _livEnt39.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/art.json") && !(entity instanceof LivingEntity _livEnt43 && _livEnt43.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 					PurechaosModVariables.invert_controls = false;
 				}
 			} else {
 				if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
-				} else if (entity instanceof LivingEntity _livEnt45 && _livEnt45.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
+				} else if (entity instanceof LivingEntity _livEnt49 && _livEnt49.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/meth.json"));
-				} else if (entity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+				} else if (entity instanceof LivingEntity _livEnt51 && _livEnt51.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/art.json"));
 					PurechaosModVariables.invert_controls = true;
 				}

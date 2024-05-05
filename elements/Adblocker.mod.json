@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Adblock",
+    "description": "Enable this to disable ADs",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

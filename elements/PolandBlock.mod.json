@@ -35,9 +35,7 @@
     ],
     "name": "Poland Block",
     "specialInformation": {
-      "fixedValue": [
-        "eat it to go to poland"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

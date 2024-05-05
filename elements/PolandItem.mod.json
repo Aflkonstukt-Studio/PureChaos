@@ -27,7 +27,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "eat it to go to poland"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
