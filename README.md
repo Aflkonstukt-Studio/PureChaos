@@ -19,4 +19,4 @@ https://mcreator.net/plugin/99849/shaders-utils
 
 https://mcreator.net/plugin/97468/remote-workspaces-support-20232 (if you want to, not required)
 
-https://mcreator.net/plugin/106411/pehkui (not released yet)
+https://mcreator.net/plugin/106411/pehkui
