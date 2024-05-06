@@ -31,6 +31,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.IkeaDeskRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.IRSRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.HerobrineRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.GroggoRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.FishProjectileRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.FireflyRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.FBIRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.DreamRenderer;
@@ -49,10 +50,10 @@ import xyz.aflkonstukt.purechaos.client.renderer.AdolfHitlerRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.AMOGUS3GRINRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.AMOGUS3BLURenderer;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
@@ -112,5 +113,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.GROGGO.get(), GroggoRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.YUGOSLAVIA.get(), YugoslaviaRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.FISH_PROJECTILE.get(), FishProjectileRenderer::new);
 	}
 }

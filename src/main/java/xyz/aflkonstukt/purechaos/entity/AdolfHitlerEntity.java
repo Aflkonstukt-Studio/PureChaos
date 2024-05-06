@@ -3,14 +3,11 @@ package xyz.aflkonstukt.purechaos.entity;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
@@ -31,24 +28,20 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import java.util.EnumSet;
 
 public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
-	public AdolfHitlerEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.ADOLF_HITLER.get(), world);
-	}
-
 	public AdolfHitlerEntity(EntityType<AdolfHitlerEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -57,11 +50,6 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 		setCustomName(Component.literal("Hitler"));
 		setCustomNameVisible(true);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
 	@Override
@@ -123,8 +111,8 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 		});
 		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
@@ -144,18 +132,18 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	protected float ridingOffset(Entity entity) {
+		return -0.35F;
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override
@@ -187,7 +175,7 @@ public class AdolfHitlerEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
-	public boolean ignoreExplosion() {
+	public boolean ignoreExplosion(Explosion explosion) {
 		return true;
 	}
 

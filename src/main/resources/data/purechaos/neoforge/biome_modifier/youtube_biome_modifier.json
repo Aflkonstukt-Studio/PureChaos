@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:youtube",
+  "step": "vegetal_decoration"
+}

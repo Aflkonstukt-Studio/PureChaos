@@ -64,11 +64,9 @@ public class TesticleOnStickRightclickedOnBlockProcedure {
 				}
 			}
 			{
-				double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity - 2;
-				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.sanity = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity - 2;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

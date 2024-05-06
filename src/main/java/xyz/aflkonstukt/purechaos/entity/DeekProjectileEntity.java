@@ -3,11 +3,8 @@ package xyz.aflkonstukt.purechaos.entity;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -19,42 +16,27 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class DeekProjectileEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Items.ENDER_EYE);
 
-	public DeekProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(PurechaosModEntities.DEEK_PROJECTILE.get(), world);
-	}
-
 	public DeekProjectileEntity(EntityType<? extends DeekProjectileEntity> type, Level world) {
-		super(type, world);
+		super(type, world, PROJECTILE_ITEM);
 	}
 
 	public DeekProjectileEntity(EntityType<? extends DeekProjectileEntity> type, double x, double y, double z, Level world) {
-		super(type, x, y, z, world);
+		super(type, x, y, z, world, PROJECTILE_ITEM);
 	}
 
 	public DeekProjectileEntity(EntityType<? extends DeekProjectileEntity> type, LivingEntity entity, Level world) {
-		super(type, entity, world);
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
+		super(type, entity, world, PROJECTILE_ITEM);
 	}
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return PROJECTILE_ITEM;
-	}
-
-	@Override
-	protected ItemStack getPickupItem() {
 		return PROJECTILE_ITEM;
 	}
 
@@ -83,7 +65,7 @@ public class DeekProjectileEntity extends AbstractArrow implements ItemSupplier 
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -98,7 +80,7 @@ public class DeekProjectileEntity extends AbstractArrow implements ItemSupplier 
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(true);
 		entity.level().addFreshEntity(entityarrow);
-		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

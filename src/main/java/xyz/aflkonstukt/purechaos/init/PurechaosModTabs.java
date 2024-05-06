@@ -6,11 +6,11 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -21,7 +21,7 @@ import net.minecraft.core.registries.Registries;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PurechaosMod.MODID);
-	public static final RegistryObject<CreativeModeTab> CHAOSTAB = REGISTRY.register("chaostab",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHAOSTAB = REGISTRY.register("chaostab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.purechaos.chaostab")).icon(() -> new ItemStack(PurechaosModItems.DIRTSWORD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PurechaosModItems.DIRTSWORD.get());
 				tabData.accept(PurechaosModItems.PEE_BUCKET.get());
@@ -200,6 +200,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.RAINBOWRACK.get().asItem());
 				tabData.accept(PurechaosModBlocks.RAINBOW_GRASS.get().asItem());
 				tabData.accept(PurechaosModItems.POLAND_ITEM.get());
+				tabData.accept(PurechaosModItems.FISH_LAUNCHER.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

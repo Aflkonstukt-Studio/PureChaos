@@ -3,10 +3,6 @@ package xyz.aflkonstukt.purechaos.entity;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -27,14 +23,9 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public class LongLegChickenEntity extends Monster {
-	public LongLegChickenEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.LONG_LEG_CHICKEN.get(), world);
-	}
-
 	public LongLegChickenEntity(EntityType<LongLegChickenEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -43,17 +34,12 @@ public class LongLegChickenEntity extends Monster {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
@@ -69,17 +55,17 @@ public class LongLegChickenEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ghast.scream"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.ghast.scream"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:girl_moan"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:girl_moan"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:vine_boom"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom"));
 	}
 
 	public static void init() {

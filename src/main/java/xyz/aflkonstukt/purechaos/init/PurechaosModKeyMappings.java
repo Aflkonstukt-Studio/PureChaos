@@ -9,17 +9,17 @@ import xyz.aflkonstukt.purechaos.network.ShitMessage;
 import xyz.aflkonstukt.purechaos.network.SevenMessage;
 import xyz.aflkonstukt.purechaos.network.OneMessage;
 import xyz.aflkonstukt.purechaos.network.KMessage;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import org.lwjgl.glfw.GLFW;
 
 import org.checkerframework.checker.units.qual.K;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
@@ -33,7 +33,7 @@ public class PurechaosModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new OneMessage(0, 0));
+				PacketDistributor.SERVER.noArg().send(new OneMessage(0, 0));
 				OneMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -46,7 +46,7 @@ public class PurechaosModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new KMessage(0, 0));
+				PacketDistributor.SERVER.noArg().send(new KMessage(0, 0));
 				KMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -59,7 +59,7 @@ public class PurechaosModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new SevenMessage(0, 0));
+				PacketDistributor.SERVER.noArg().send(new SevenMessage(0, 0));
 				SevenMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -72,7 +72,7 @@ public class PurechaosModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new TwoMessage(0, 0));
+				PacketDistributor.SERVER.noArg().send(new TwoMessage(0, 0));
 				TwoMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -85,7 +85,7 @@ public class PurechaosModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new ShitMessage(0, 0));
+				PacketDistributor.SERVER.noArg().send(new ShitMessage(0, 0));
 				ShitMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;

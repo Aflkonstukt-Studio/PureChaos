@@ -6,21 +6,21 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.core.registries.Registries;
 
 public class PurechaosModPotions {
-	public static final DeferredRegister<Potion> REGISTRY = DeferredRegister.create(ForgeRegistries.POTIONS, PurechaosMod.MODID);
-	public static final RegistryObject<Potion> AMONGSUS = REGISTRY.register("amongsus",
+	public static final DeferredRegister<Potion> REGISTRY = DeferredRegister.create(Registries.POTION, PurechaosMod.MODID);
+	public static final DeferredHolder<Potion, Potion> AMONGSUS = REGISTRY.register("amongsus",
 			() -> new Potion(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.HARM, 3600, 0, false, true),
 					new MobEffectInstance(MobEffects.JUMP, 3600, 0, false, true), new MobEffectInstance(MobEffects.INVISIBILITY, 3600, 0, false, true), new MobEffectInstance(MobEffects.HUNGER, 3600, 0, false, true),
 					new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 0, false, true)));
-	public static final RegistryObject<Potion> FUCK_YOU = REGISTRY.register("fuck_you",
+	public static final DeferredHolder<Potion, Potion> FUCK_YOU = REGISTRY.register("fuck_you",
 			() -> new Potion(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0, false, false), new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, false), new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 0, false, false),
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 3600, 0, false, false), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 0, false, false), new MobEffectInstance(MobEffects.HEAL, 3600, 0, false, false),
 					new MobEffectInstance(MobEffects.HARM, 3600, 0, false, false), new MobEffectInstance(MobEffects.JUMP, 3600, 0, false, false), new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, false),
@@ -32,7 +32,7 @@ public class PurechaosModPotions {
 					new MobEffectInstance(MobEffects.LEVITATION, 3600, 0, false, false), new MobEffectInstance(MobEffects.LUCK, 3600, 0, false, false), new MobEffectInstance(MobEffects.UNLUCK, 3600, 0, false, false),
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 3600, 0, false, false), new MobEffectInstance(MobEffects.CONDUIT_POWER, 3600, 0, false, false), new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 3600, 0, false, false),
 					new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, false), new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 3600, 0, false, false)));
-	public static final RegistryObject<Potion> ILLEGALSUBSTANCE = REGISTRY.register("illegalsubstance",
+	public static final DeferredHolder<Potion, Potion> ILLEGALSUBSTANCE = REGISTRY.register("illegalsubstance",
 			() -> new Potion(new MobEffectInstance(MobEffects.DARKNESS, 3600, 100, false, true), new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT.get(), 3600, 100, false, true),
 					new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING.get(), 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.FAT.get(), 3600, 0, false, true),
 					new MobEffectInstance(PurechaosModMobEffects.BLEACHED.get(), 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, true),
@@ -41,7 +41,7 @@ public class PurechaosModPotions {
 					new MobEffectInstance(MobEffects.POISON, 3600, 0, false, true), new MobEffectInstance(MobEffects.ABSORPTION, 3600, 0, false, true), new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 0, false, true),
 					new MobEffectInstance(MobEffects.HEAL, 3600, 0, false, true), new MobEffectInstance(MobEffects.WITHER, 3600, 0, false, true), new MobEffectInstance(MobEffects.UNLUCK, 3600, 100, false, true),
 					new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0, false, true)));
-	public static final RegistryObject<Potion> MODIFIED_ETHANOL = REGISTRY.register("modified_ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, false),
+	public static final DeferredHolder<Potion, Potion> MODIFIED_ETHANOL = REGISTRY.register("modified_ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, false),
 			new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, true)));
-	public static final RegistryObject<Potion> ETHANOL = REGISTRY.register("ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.DRUNK.get(), 3600, 0, false, true)));
+	public static final DeferredHolder<Potion, Potion> ETHANOL = REGISTRY.register("ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.DRUNK.get(), 3600, 0, false, true)));
 }

@@ -8,6 +8,6 @@ public class SanityOverlayValueProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "Sanity: " + Math.round((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).sanity);
+		return "Sanity: " + Math.round(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity);
 	}
 }

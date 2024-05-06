@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:cyber_biome",
+    "purechaos:desert",
+    "purechaos:more_extreme_hills",
+    "purechaos:plains"
+  ],
+  "spawners": {
+    "type": "purechaos:splank",
+    "weight": 70,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

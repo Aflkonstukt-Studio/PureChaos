@@ -2,11 +2,6 @@
 package xyz.aflkonstukt.purechaos.entity;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
-import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
-
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -28,19 +23,15 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public class WalterWightEntity extends Monster {
-	public WalterWightEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.WALTER_WIGHT.get(), world);
-	}
-
 	public WalterWightEntity(EntityType<WalterWightEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -54,11 +45,6 @@ public class WalterWightEntity extends Monster {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(PurechaosModItems.METH.get()), false));
@@ -69,8 +55,8 @@ public class WalterWightEntity extends Monster {
 		this.goalSelector.addGoal(6, new LeapAtTargetGoal(this, (float) 0.5));
 		this.goalSelector.addGoal(7, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
 		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
@@ -89,8 +75,8 @@ public class WalterWightEntity extends Monster {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	protected float ridingOffset(Entity entity) {
+		return -0.35F;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -100,12 +86,12 @@ public class WalterWightEntity extends Monster {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override

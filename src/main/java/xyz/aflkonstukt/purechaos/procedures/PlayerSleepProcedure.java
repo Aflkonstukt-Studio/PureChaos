@@ -2,10 +2,10 @@ package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerWakeUpEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -28,11 +28,9 @@ public class PlayerSleepProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = 100;
-			entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.sanity = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.sanity = 100;
+			_vars.syncPlayerVariables(entity);
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("Rise and shine! Its a new day and your sanity has been restored to a 100."), false);

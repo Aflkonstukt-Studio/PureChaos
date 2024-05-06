@@ -23,11 +23,9 @@ public class AlmondWaterPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = 100;
-			entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.sanity = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.sanity = 100;
+			_vars.syncPlayerVariables(entity);
 		}
 		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {

@@ -7,7 +7,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -16,8 +16,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleOptions;
 
-public abstract class CumFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.CUM_TYPE.get(), () -> PurechaosModFluids.CUM.get(), () -> PurechaosModFluids.FLOWING_CUM.get()).explosionResistance(100f)
+public abstract class CumFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.CUM_TYPE.get(), () -> PurechaosModFluids.CUM.get(), () -> PurechaosModFluids.FLOWING_CUM.get()).explosionResistance(100f)
 			.tickRate(6).slopeFindDistance(1).bucket(() -> PurechaosModItems.CUM_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.CUM.get());
 
 	private CumFluid() {

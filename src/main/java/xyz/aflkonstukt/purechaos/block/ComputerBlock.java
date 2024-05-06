@@ -3,8 +3,6 @@ package xyz.aflkonstukt.purechaos.block;
 
 import xyz.aflkonstukt.purechaos.world.inventory.ComputerGuiMenu;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -95,7 +93,7 @@ public class ComputerBlock extends Block {
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openScreen(player, new MenuProvider() {
+			player.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Computer");

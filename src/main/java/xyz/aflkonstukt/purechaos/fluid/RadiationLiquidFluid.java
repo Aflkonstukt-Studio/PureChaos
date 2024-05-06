@@ -6,15 +6,15 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
-public abstract class RadiationLiquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.RADIATION_LIQUID_TYPE.get(), () -> PurechaosModFluids.RADIATION_LIQUID.get(),
+public abstract class RadiationLiquidFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.RADIATION_LIQUID_TYPE.get(), () -> PurechaosModFluids.RADIATION_LIQUID.get(),
 			() -> PurechaosModFluids.FLOWING_RADIATION_LIQUID.get()).explosionResistance(100f).bucket(() -> PurechaosModItems.RADIATION_LIQUID_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.RADIATION_LIQUID.get());
 
 	private RadiationLiquidFluid() {

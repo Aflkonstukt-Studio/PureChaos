@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "purechaos:birch_forest",
+  "features": "purechaos:birch_tree_feature",
+  "step": "surface_structures"
+}

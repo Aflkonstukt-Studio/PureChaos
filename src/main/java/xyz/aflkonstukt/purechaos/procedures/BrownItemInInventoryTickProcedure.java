@@ -2,7 +2,7 @@ package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;

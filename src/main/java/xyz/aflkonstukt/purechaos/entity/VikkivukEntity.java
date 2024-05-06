@@ -6,17 +6,12 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
-import net.minecraftforge.items.wrapper.EntityArmorInvWrapper;
-import net.minecraftforge.items.wrapper.CombinedInvWrapper;
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.DungeonHooks;
+import net.neoforged.neoforge.items.wrapper.EntityHandsInvWrapper;
+import net.neoforged.neoforge.items.wrapper.EntityArmorInvWrapper;
+import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper;
+import net.neoforged.neoforge.items.ItemStackHandler;
+import net.neoforged.neoforge.event.EventHooks;
+import net.neoforged.neoforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
@@ -52,23 +47,14 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.Direction;
-
-import javax.annotation.Nullable;
-import javax.annotation.Nonnull;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import io.netty.buffer.Unpooled;
 
 public class VikkivukEntity extends TamableAnimal {
-	public VikkivukEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.VIKKIVUK.get(), world);
-	}
-
 	public VikkivukEntity(EntityType<VikkivukEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -76,11 +62,6 @@ public class VikkivukEntity extends TamableAnimal {
 		setNoAi(false);
 		setCustomName(Component.literal("VikkiVuk Plushie"));
 		setCustomNameVisible(true);
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
 	@Override
@@ -101,12 +82,12 @@ public class VikkivukEntity extends TamableAnimal {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(9) {
@@ -117,11 +98,8 @@ public class VikkivukEntity extends TamableAnimal {
 	};
 	private final CombinedInvWrapper combined = new CombinedInvWrapper(inventory, new EntityHandsInvWrapper(this), new EntityArmorInvWrapper(this));
 
-	@Override
-	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
-		if (this.isAlive() && capability == ForgeCapabilities.ITEM_HANDLER && side == null)
-			return LazyOptional.of(() -> combined).cast();
-		return super.getCapability(capability, side);
+	public CombinedInvWrapper getCombinedInventory() {
+		return combined;
 	}
 
 	@Override
@@ -153,7 +131,7 @@ public class VikkivukEntity extends TamableAnimal {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
 		if (sourceentity instanceof ServerPlayer serverPlayer) {
-			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
+			serverPlayer.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
 					return Component.literal("Vikkivuk");
@@ -195,7 +173,7 @@ public class VikkivukEntity extends TamableAnimal {
 				}
 			} else if (this.isFood(itemstack)) {
 				this.usePlayerItem(sourceentity, hand, itemstack);
-				if (this.random.nextInt(3) == 0 && !net.minecraftforge.event.ForgeEventFactory.onAnimalTame(this, sourceentity)) {
+				if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, sourceentity)) {
 					this.tame(sourceentity);
 					this.level().broadcastEntityEvent(this, (byte) 7);
 				} else {

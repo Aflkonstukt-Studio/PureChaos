@@ -1,10 +1,9 @@
 
 package xyz.aflkonstukt.purechaos.world.features.treedecorators;
 
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
@@ -13,6 +12,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.util.RandomSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -27,7 +28,7 @@ public class HellButOverworldFruitDecorator extends CocoaDecorator {
 
 	@SubscribeEvent
 	public static void registerTreeDecorator(RegisterEvent event) {
-		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("hell_but_overworld_tree_fruit_decorator", DECORATOR_TYPE));
+		event.register(Registries.TREE_DECORATOR_TYPE, new ResourceLocation("purechaos:hell_but_overworld_tree_fruit_decorator"), () -> DECORATOR_TYPE);
 	}
 
 	public HellButOverworldFruitDecorator() {
@@ -45,9 +46,7 @@ public class HellButOverworldFruitDecorator extends CocoaDecorator {
 		if (!(randomsource.nextFloat() >= 0.2F)) {
 			List<BlockPos> list = context.logs();
 			int i = list.get(0).getY();
-			list.stream().filter((p_69980_) -> {
-				return p_69980_.getY() - i <= 2;
-			}).forEach((p_226026_) -> {
+			list.stream().filter(p_69980_ -> p_69980_.getY() - i <= 2).forEach(p_226026_ -> {
 				for (Direction direction : Direction.Plane.HORIZONTAL) {
 					if (randomsource.nextFloat() <= 0.25F) {
 						Direction direction1 = direction.getOpposite();

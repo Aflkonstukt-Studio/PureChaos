@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:cyber_biome",
+    "purechaos:more_extreme_hills",
+    "purechaos:ohio",
+    "purechaos:plains"
+  ],
+  "spawners": {
+    "type": "purechaos:ikea_desk",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

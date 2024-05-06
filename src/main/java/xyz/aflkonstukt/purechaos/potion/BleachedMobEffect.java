@@ -5,25 +5,20 @@ import xyz.aflkonstukt.purechaos.procedures.BleachedOnEffectActiveTickProcedure;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.InstantenousMobEffect;
 
-public class BleachedMobEffect extends MobEffect {
+public class BleachedMobEffect extends InstantenousMobEffect {
 	public BleachedMobEffect() {
 		super(MobEffectCategory.HARMFUL, -1);
 	}
 
 	@Override
-	public boolean isInstantenous() {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return true;
 	}
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		BleachedOnEffectActiveTickProcedure.execute(entity.level(), entity);
-	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
 	}
 }

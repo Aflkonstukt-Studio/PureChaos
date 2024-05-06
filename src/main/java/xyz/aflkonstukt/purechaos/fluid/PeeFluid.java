@@ -6,7 +6,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -15,8 +15,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 
-public abstract class PeeFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.PEE_TYPE.get(), () -> PurechaosModFluids.PEE.get(), () -> PurechaosModFluids.FLOWING_PEE.get()).explosionResistance(100f)
+public abstract class PeeFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.PEE_TYPE.get(), () -> PurechaosModFluids.PEE.get(), () -> PurechaosModFluids.FLOWING_PEE.get()).explosionResistance(100f)
 			.tickRate(10).bucket(() -> PurechaosModItems.PEE_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.PEE.get());
 
 	private PeeFluid() {

@@ -21,11 +21,9 @@ public class NightmareDimensionPlayerEntersDimensionProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = 2400;
-			entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.nightmare_duration = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.nightmare_duration = 2400;
+			_vars.syncPlayerVariables(entity);
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -43,11 +41,9 @@ public class NightmareDimensionPlayerEntersDimensionProcedure {
 				_serverPlayer.connection.teleport((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
 		}
 		{
-			boolean _setval = true;
-			entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.having_nightmare = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.having_nightmare = true;
+			_vars.syncPlayerVariables(entity);
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 9999999, 1, false, false));

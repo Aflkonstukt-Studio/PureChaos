@@ -2,7 +2,8 @@ package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
 import xyz.aflkonstukt.purechaos.network.CheatGUIButtonMessage;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
+
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -41,7 +42,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -65,11 +66,6 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.purechaos.cheat_gui.label_cheat_menu"), 58, 10, -12829636, false);
 	}
@@ -79,7 +75,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		super.init();
 		button_switch_gamemode = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {
 			if (true) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(0, x, y, z));
+				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(0, x, y, z));
 				CheatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 36, this.topPos + 31, 103, 20).build();
@@ -87,7 +83,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		this.addRenderableWidget(button_switch_gamemode);
 		button_switch_dimension = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_dimension"), e -> {
 			if (true) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(1, x, y, z));
+				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(1, x, y, z));
 				CheatGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 33, this.topPos + 62, 108, 20).build();
@@ -95,7 +91,7 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		this.addRenderableWidget(button_switch_dimension);
 		button_do_not_press = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_do_not_press"), e -> {
 			if (true) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new CheatGUIButtonMessage(2, x, y, z));
+				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(2, x, y, z));
 				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + 42, this.topPos + 129, 88, 20).build();

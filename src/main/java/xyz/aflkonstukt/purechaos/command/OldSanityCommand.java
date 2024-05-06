@@ -3,11 +3,11 @@ package xyz.aflkonstukt.purechaos.command;
 
 import xyz.aflkonstukt.purechaos.procedures.OldSanityCommandExecutedProcedure;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.common.util.FakePlayerFactory;
-import net.minecraftforge.client.event.RegisterClientCommandsEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.common.util.FakePlayerFactory;
+import net.neoforged.neoforge.client.event.RegisterClientCommandsEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;

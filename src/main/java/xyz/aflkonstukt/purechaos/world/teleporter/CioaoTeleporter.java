@@ -3,11 +3,10 @@ package xyz.aflkonstukt.purechaos.world.teleporter;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.common.util.ITeleporter;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.common.util.ITeleporter;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.portal.PortalInfo;
@@ -27,6 +26,9 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.TicketType;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Vec3i;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Direction;
@@ -47,10 +49,10 @@ public class CioaoTeleporter implements ITeleporter {
 
 	@SubscribeEvent
 	public static void registerPointOfInterest(RegisterEvent event) {
-		event.register(ForgeRegistries.Keys.POI_TYPES, registerHelper -> {
+		event.register(Registries.POINT_OF_INTEREST_TYPE, registerHelper -> {
 			PoiType poiType = new PoiType(ImmutableSet.copyOf(PurechaosModBlocks.CIOAO_PORTAL.get().getStateDefinition().getPossibleStates()), 0, 1);
-			registerHelper.register("cioao_portal", poiType);
-			poi = ForgeRegistries.POI_TYPES.getHolder(poiType).get();
+			registerHelper.register(new ResourceLocation("purechaos:cioao_portal"), poiType);
+			poi = BuiltInRegistries.POINT_OF_INTEREST_TYPE.wrapAsHolder(poiType);
 		});
 	}
 
@@ -66,32 +68,22 @@ public class CioaoTeleporter implements ITeleporter {
 		PoiManager poimanager = this.level.getPoiManager();
 		int i = p_192987_ ? 16 : 128;
 		poimanager.ensureLoadedAndValid(this.level, p_192986_, i);
-		Optional<PoiRecord> optional = poimanager.getInSquare((p_230634_) -> {
-			return p_230634_.is(poi.unwrapKey().get());
-		}, p_192986_, i, PoiManager.Occupancy.ANY).filter((p_192981_) -> {
-			return p_192988_.isWithinBounds(p_192981_.getPos());
-		}).sorted(Comparator.<PoiRecord>comparingDouble((p_192984_) -> {
-			return p_192984_.getPos().distSqr(p_192986_);
-		}).thenComparingInt((p_192992_) -> {
-			return p_192992_.getPos().getY();
-		})).filter((p_192990_) -> {
-			return this.level.getBlockState(p_192990_.getPos()).hasProperty(BlockStateProperties.HORIZONTAL_AXIS);
-		}).findFirst();
-		return optional.map((p_192975_) -> {
+		Optional<PoiRecord> optional = poimanager.getInSquare(p_230634_ -> p_230634_.is(poi.unwrapKey().get()), p_192986_, i, PoiManager.Occupancy.ANY).filter(p_192981_ -> p_192988_.isWithinBounds(p_192981_.getPos()))
+				.sorted(Comparator.<PoiRecord>comparingDouble(p_192984_ -> p_192984_.getPos().distSqr(p_192986_)).thenComparingInt(p_192992_ -> p_192992_.getPos().getY()))
+				.filter(p_192990_ -> this.level.getBlockState(p_192990_.getPos()).hasProperty(BlockStateProperties.HORIZONTAL_AXIS)).findFirst();
+		return optional.map(p_192975_ -> {
 			BlockPos blockpos = p_192975_.getPos();
 			this.level.getChunkSource().addRegionTicket(CUSTOM_PORTAL, new ChunkPos(blockpos), 3, blockpos);
 			BlockState blockstate = this.level.getBlockState(blockpos);
-			return BlockUtil.getLargestRectangleAround(blockpos, blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS), 21, Direction.Axis.Y, 21, (p_192978_) -> {
-				return this.level.getBlockState(p_192978_) == blockstate;
-			});
+			return BlockUtil.getLargestRectangleAround(blockpos, blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS), 21, Direction.Axis.Y, 21, p_192978_ -> this.level.getBlockState(p_192978_) == blockstate);
 		});
 	}
 
 	public Optional<BlockUtil.FoundRectangle> createPortal(BlockPos p_77667_, Direction.Axis p_77668_) {
 		Direction direction = Direction.get(Direction.AxisDirection.POSITIVE, p_77668_);
-		double d0 = -1.0D;
+		double d0 = -1.0;
 		BlockPos blockpos = null;
-		double d1 = -1.0D;
+		double d1 = -1.0;
 		BlockPos blockpos1 = null;
 		WorldBorder worldborder = this.level.getWorldBorder();
 		int i = Math.min(this.level.getMaxBuildHeight(), this.level.getMinBuildHeight() + this.level.getLogicalHeight()) - 1;
@@ -104,8 +96,9 @@ public class CioaoTeleporter implements ITeleporter {
 				for (int l = j; l >= this.level.getMinBuildHeight(); --l) {
 					blockpos$mutableblockpos1.setY(l);
 					if (this.canPortalReplaceBlock(blockpos$mutableblockpos1)) {
-						int i1;
-						for (i1 = l; l > this.level.getMinBuildHeight() && this.canPortalReplaceBlock(blockpos$mutableblockpos1.move(Direction.DOWN)); --l) {
+						int i1 = l;
+						while (l > this.level.getMinBuildHeight() && this.canPortalReplaceBlock(blockpos$mutableblockpos1.move(Direction.DOWN))) {
+							--l;
 						}
 						if (l + 4 <= i) {
 							int j1 = i1 - l;
@@ -113,11 +106,11 @@ public class CioaoTeleporter implements ITeleporter {
 								blockpos$mutableblockpos1.setY(l);
 								if (this.canHostFrame(blockpos$mutableblockpos1, blockpos$mutableblockpos, direction, 0)) {
 									double d2 = p_77667_.distSqr(blockpos$mutableblockpos1);
-									if (this.canHostFrame(blockpos$mutableblockpos1, blockpos$mutableblockpos, direction, -1) && this.canHostFrame(blockpos$mutableblockpos1, blockpos$mutableblockpos, direction, 1) && (d0 == -1.0D || d0 > d2)) {
+									if (this.canHostFrame(blockpos$mutableblockpos1, blockpos$mutableblockpos, direction, -1) && this.canHostFrame(blockpos$mutableblockpos1, blockpos$mutableblockpos, direction, 1) && (d0 == -1.0 || d0 > d2)) {
 										d0 = d2;
 										blockpos = blockpos$mutableblockpos1.immutable();
 									}
-									if (d0 == -1.0D && (d1 == -1.0D || d1 > d2)) {
+									if (d0 == -1.0 && (d1 == -1.0 || d1 > d2)) {
 										d1 = d2;
 										blockpos1 = blockpos$mutableblockpos1.immutable();
 									}
@@ -128,17 +121,17 @@ public class CioaoTeleporter implements ITeleporter {
 				}
 			}
 		}
-		if (d0 == -1.0D && d1 != -1.0D) {
+		if (d0 == -1.0 && d1 != -1.0) {
 			blockpos = blockpos1;
 			d0 = d1;
 		}
-		if (d0 == -1.0D) {
+		if (d0 == -1.0) {
 			int k1 = Math.max(this.level.getMinBuildHeight() - -1, 70);
 			int i2 = i - 9;
 			if (i2 < k1) {
 				return Optional.empty();
 			}
-			blockpos = (new BlockPos(p_77667_.getX(), Mth.clamp(p_77667_.getY(), k1, i2), p_77667_.getZ())).immutable();
+			blockpos = new BlockPos(p_77667_.getX(), Mth.clamp(p_77667_.getY(), k1, i2), p_77667_.getZ()).immutable();
 			Direction direction1 = direction.getClockWise();
 			if (!worldborder.isWithinBounds(blockpos)) {
 				return Optional.empty();

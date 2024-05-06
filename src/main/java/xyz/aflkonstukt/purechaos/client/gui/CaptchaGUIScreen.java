@@ -3,7 +3,8 @@ package xyz.aflkonstukt.purechaos.client.gui;
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
 import xyz.aflkonstukt.purechaos.procedures.CaptchaProcedureProcedure;
 import xyz.aflkonstukt.purechaos.network.CaptchaGUIButtonMessage;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
+
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -42,7 +43,7 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		answer.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
@@ -69,12 +70,6 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-		answer.tick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
@@ -95,21 +90,21 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.purechaos.captcha_gui.answer").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		answer.setSuggestion(Component.translatable("gui.purechaos.captcha_gui.answer").getString());
 		answer.setMaxLength(32767);
+		answer.setSuggestion(Component.translatable("gui.purechaos.captcha_gui.answer").getString());
 		guistate.put("text:answer", answer);
 		this.addWidget(this.answer);
 		button_submit = Button.builder(Component.translatable("gui.purechaos.captcha_gui.button_submit"), e -> {
 			if (true) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new CaptchaGUIButtonMessage(0, x, y, z));
+				PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(0, x, y, z));
 				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 11, this.topPos + 49, 56, 20).build();

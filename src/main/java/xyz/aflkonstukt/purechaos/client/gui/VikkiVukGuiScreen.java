@@ -2,7 +2,8 @@ package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.VikkiVukGuiMenu;
 import xyz.aflkonstukt.purechaos.network.VikkiVukGuiButtonMessage;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
+
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -39,7 +40,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -63,11 +64,6 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.purechaos.vikki_vuk_gui.label_vstorage"), 65, 10, -12829636, false);
 	}
@@ -77,7 +73,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 		super.init();
 		button_trash = Button.builder(Component.translatable("gui.purechaos.vikki_vuk_gui.button_trash"), e -> {
 			if (true) {
-				PurechaosMod.PACKET_HANDLER.sendToServer(new VikkiVukGuiButtonMessage(0, x, y, z));
+				PacketDistributor.SERVER.noArg().send(new VikkiVukGuiButtonMessage(0, x, y, z));
 				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 68, this.topPos + 53, 51, 20).build();

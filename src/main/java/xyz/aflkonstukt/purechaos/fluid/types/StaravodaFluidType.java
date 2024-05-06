@@ -1,15 +1,15 @@
 
 package xyz.aflkonstukt.purechaos.fluid.types;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fluids.FluidType;
-import net.minecraftforge.common.SoundActions;
-import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.common.SoundActions;
+import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
@@ -18,7 +18,7 @@ import java.util.function.Consumer;
 public class StaravodaFluidType extends FluidType {
 	public StaravodaFluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).canConvertToSource(true).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
-				.sound(SoundActions.BUCKET_EMPTY, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:amogus"))).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
+				.sound(SoundActions.BUCKET_EMPTY, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amogus"))).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override

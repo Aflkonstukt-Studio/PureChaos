@@ -4,9 +4,8 @@ package xyz.aflkonstukt.purechaos.block;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.block.entity.SADsBlockEntity;
 
-import net.minecraftforge.common.IPlantable;
+import net.neoforged.neoforge.common.IPlantable;
 
-import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -19,14 +18,25 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import com.mojang.serialization.MapCodec;
+
 public class SADsBlock extends FallingBlock implements EntityBlock {
+	public static final MapCodec<SADsBlock> CODEC = simpleCodec(SADsBlock::new);
+
+	public MapCodec<SADsBlock> codec() {
+		return CODEC;
+	}
+
+	public SADsBlock(BlockBehaviour.Properties ignored) {
+		this();
+	}
+
 	public SADsBlock() {
 		super(BlockBehaviour.Properties.of().liquid().sound(SoundType.BAMBOO).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
@@ -42,7 +52,7 @@ public class SADsBlock extends FallingBlock implements EntityBlock {
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
 		return new ItemStack(PurechaosModItems.PICKAX.get());
 	}
 

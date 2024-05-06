@@ -4,42 +4,47 @@ package xyz.aflkonstukt.purechaos.network;
 import xyz.aflkonstukt.purechaos.procedures.ShitOnKeyPressedProcedure;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.network.handling.PlayPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 
-import java.util.function.Supplier;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ShitMessage {
-	int type, pressedms;
-
-	public ShitMessage(int type, int pressedms) {
-		this.type = type;
-		this.pressedms = pressedms;
-	}
+public record ShitMessage(int type, int pressedms) implements CustomPacketPayload {
+	public static final ResourceLocation ID = new ResourceLocation(PurechaosMod.MODID, "key_shit");
 
 	public ShitMessage(FriendlyByteBuf buffer) {
-		this.type = buffer.readInt();
-		this.pressedms = buffer.readInt();
+		this(buffer.readInt(), buffer.readInt());
 	}
 
-	public static void buffer(ShitMessage message, FriendlyByteBuf buffer) {
-		buffer.writeInt(message.type);
-		buffer.writeInt(message.pressedms);
+	@Override
+	public void write(final FriendlyByteBuf buffer) {
+		buffer.writeInt(type);
+		buffer.writeInt(pressedms);
 	}
 
-	public static void handler(ShitMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			pressAction(context.getSender(), message.type, message.pressedms);
-		});
-		context.setPacketHandled(true);
+	@Override
+	public ResourceLocation id() {
+		return ID;
+	}
+
+	public static void handleData(final ShitMessage message, final PlayPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.workHandler().submitAsync(() -> {
+				pressAction(context.player().get(), message.type, message.pressedms);
+			}).exceptionally(e -> {
+				context.packetHandler().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
 	}
 
 	public static void pressAction(Player entity, int type, int pressedms) {
@@ -58,6 +63,6 @@ public class ShitMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PurechaosMod.addNetworkMessage(ShitMessage.class, ShitMessage::buffer, ShitMessage::new, ShitMessage::handler);
+		PurechaosMod.addNetworkMessage(ShitMessage.ID, ShitMessage::new, ShitMessage::handleData);
 	}
 }

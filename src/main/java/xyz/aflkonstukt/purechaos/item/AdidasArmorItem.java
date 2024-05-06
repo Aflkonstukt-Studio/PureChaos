@@ -3,8 +3,6 @@ package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -14,6 +12,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public abstract class AdidasArmorItem extends ArmorItem {
 	public AdidasArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -35,7 +34,7 @@ public abstract class AdidasArmorItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:amogus"));
+				return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amogus"));
 			}
 
 			@Override

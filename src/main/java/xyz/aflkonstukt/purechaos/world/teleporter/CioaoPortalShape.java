@@ -32,11 +32,9 @@ public class CioaoPortalShape {
 	public static final int MAX_WIDTH = 21;
 	private static final int MIN_HEIGHT = 3;
 	public static final int MAX_HEIGHT = 21;
-	private static final BlockBehaviour.StatePredicate FRAME = (p_77720_, p_77721_, p_77722_) -> {
-		return p_77720_.getBlock() == Blocks.EXPOSED_COPPER;
-	};
+	private static final BlockBehaviour.StatePredicate FRAME = (state, level, pos) -> state.getBlock() == Blocks.EXPOSED_COPPER;
 	private static final float SAFE_TRAVEL_MAX_ENTITY_XY = 4.0F;
-	private static final double SAFE_TRAVEL_MAX_VERTICAL_DELTA = 1.0D;
+	private static final double SAFE_TRAVEL_MAX_VERTICAL_DELTA = 1.0;
 	private final LevelAccessor level;
 	private final Direction.Axis axis;
 	private final Direction rightDir;
@@ -47,9 +45,7 @@ public class CioaoPortalShape {
 	private final int width;
 
 	public static Optional<CioaoPortalShape> findEmptyPortalShape(LevelAccessor p_77709_, BlockPos p_77710_, Direction.Axis p_77711_) {
-		return findPortalShape(p_77709_, p_77710_, (p_77727_) -> {
-			return p_77727_.isValid() && p_77727_.numPortalBlocks == 0;
-		}, p_77711_);
+		return findPortalShape(p_77709_, p_77710_, p_77727_ -> p_77727_.isValid() && p_77727_.numPortalBlocks == 0, p_77711_);
 	}
 
 	public static Optional<CioaoPortalShape> findPortalShape(LevelAccessor p_77713_, BlockPos p_77714_, Predicate<CioaoPortalShape> p_77715_, Direction.Axis p_77716_) {
@@ -81,7 +77,9 @@ public class CioaoPortalShape {
 
 	@Nullable
 	private BlockPos calculateBottomLeft(BlockPos p_77734_) {
-		for (int i = Math.max(this.level.getMinBuildHeight(), p_77734_.getY() - 21); p_77734_.getY() > i && isEmpty(this.level.getBlockState(p_77734_.below())); p_77734_ = p_77734_.below()) {
+		int i = Math.max(this.level.getMinBuildHeight(), p_77734_.getY() - 21);
+		while (p_77734_.getY() > i && isEmpty(this.level.getBlockState(p_77734_.below()))) {
+			p_77734_ = p_77734_.below();
 		}
 		Direction direction = this.rightDir.getOpposite();
 		int j = this.getDistanceUntilEdgeAboveFrame(p_77734_, direction) - 1;
@@ -162,11 +160,7 @@ public class CioaoPortalShape {
 
 	public void createPortalBlocks() {
 		BlockState blockstate = PurechaosModBlocks.CIOAO_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, this.axis);
-		BlockPos.betweenClosed(this.bottomLeft, this.bottomLeft.relative(Direction.UP, this.height - 1).relative(this.rightDir, this.width - 1)).forEach((p_77725_) -> {
-			this.level.setBlock(p_77725_, blockstate, 18);
-			if (this.level instanceof ServerLevel)
-				((ServerLevel) this.level).getPoiManager().add(p_77725_, CioaoTeleporter.poi);
-		});
+		BlockPos.betweenClosed(this.bottomLeft, this.bottomLeft.relative(Direction.UP, this.height - 1).relative(this.rightDir, this.width - 1)).forEach(p_77725_ -> this.level.setBlock(p_77725_, blockstate, 18));
 	}
 
 	public boolean isComplete() {
@@ -178,22 +172,22 @@ public class CioaoPortalShape {
 		double d1 = (double) p_77739_.axis2Size - (double) p_77742_.height;
 		BlockPos blockpos = p_77739_.minCorner;
 		double d2;
-		if (d0 > 0.0D) {
-			float f = (float) blockpos.get(p_77740_) + p_77742_.width / 2.0F;
-			d2 = Mth.clamp(Mth.inverseLerp(p_77741_.get(p_77740_) - (double) f, 0.0D, d0), 0.0D, 1.0D);
+		if (d0 > 0.0) {
+			double d3 = (double) blockpos.get(p_77740_) + (double) p_77742_.width / 2.0;
+			d2 = Mth.clamp(Mth.inverseLerp(p_77741_.get(p_77740_) - d3, 0.0, d0), 0.0, 1.0);
 		} else {
-			d2 = 0.5D;
+			d2 = 0.5;
 		}
-		double d4;
-		if (d1 > 0.0D) {
+		double d5;
+		if (d1 > 0.0) {
 			Direction.Axis direction$axis = Direction.Axis.Y;
-			d4 = Mth.clamp(Mth.inverseLerp(p_77741_.get(direction$axis) - (double) blockpos.get(direction$axis), 0.0D, d1), 0.0D, 1.0D);
+			d5 = Mth.clamp(Mth.inverseLerp(p_77741_.get(direction$axis) - (double) blockpos.get(direction$axis), 0.0, d1), 0.0, 1.0);
 		} else {
-			d4 = 0.0D;
+			d5 = 0.0;
 		}
 		Direction.Axis direction$axis1 = p_77740_ == Direction.Axis.X ? Direction.Axis.Z : Direction.Axis.X;
-		double d3 = p_77741_.get(direction$axis1) - ((double) blockpos.get(direction$axis1) + 0.5D);
-		return new Vec3(d2, d4, d3);
+		double d4 = p_77741_.get(direction$axis1) - ((double) blockpos.get(direction$axis1) + 0.5);
+		return new Vec3(d2, d5, d4);
 	}
 
 	public static PortalInfo createPortalInfo(ServerLevel p_259301_, BlockUtil.FoundRectangle p_259931_, Direction.Axis p_259901_, Vec3 p_259630_, Entity p_259166_, Vec3 p_260043_, float p_259853_, float p_259667_) {
@@ -205,9 +199,9 @@ public class CioaoPortalShape {
 		EntityDimensions entitydimensions = p_259166_.getDimensions(p_259166_.getPose());
 		int i = p_259901_ == direction$axis ? 0 : 90;
 		Vec3 vec3 = p_259901_ == direction$axis ? p_260043_ : new Vec3(p_260043_.z, p_260043_.y, -p_260043_.x);
-		double d2 = (double) entitydimensions.width / 2.0D + (d0 - (double) entitydimensions.width) * p_259630_.x();
+		double d2 = (double) entitydimensions.width / 2.0 + (d0 - (double) entitydimensions.width) * p_259630_.x();
 		double d3 = (d1 - (double) entitydimensions.height) * p_259630_.y();
-		double d4 = 0.5D + p_259630_.z();
+		double d4 = 0.5 + p_259630_.z();
 		boolean flag = direction$axis == Direction.Axis.X;
 		Vec3 vec31 = new Vec3((double) blockpos.getX() + (flag ? d2 : d4), (double) blockpos.getY() + d3, (double) blockpos.getZ() + (flag ? d4 : d2));
 		Vec3 vec32 = findCollisionFreePosition(vec31, p_259301_, p_259166_, entitydimensions);
@@ -216,13 +210,11 @@ public class CioaoPortalShape {
 
 	private static Vec3 findCollisionFreePosition(Vec3 p_260315_, ServerLevel p_259704_, Entity p_259626_, EntityDimensions p_259816_) {
 		if (!(p_259816_.width > 4.0F) && !(p_259816_.height > 4.0F)) {
-			double d0 = (double) p_259816_.height / 2.0D;
-			Vec3 vec3 = p_260315_.add(0.0D, d0, 0.0D);
-			VoxelShape voxelshape = Shapes.create(AABB.ofSize(vec3, (double) p_259816_.width, 0.0D, (double) p_259816_.width).expandTowards(0.0D, 1.0D, 0.0D).inflate(1.0E-6D));
+			double d0 = (double) p_259816_.height / 2.0;
+			Vec3 vec3 = p_260315_.add(0.0, d0, 0.0);
+			VoxelShape voxelshape = Shapes.create(AABB.ofSize(vec3, (double) p_259816_.width, 0.0, (double) p_259816_.width).expandTowards(0.0, 1.0, 0.0).inflate(1.0E-6));
 			Optional<Vec3> optional = p_259704_.findFreePosition(p_259626_, voxelshape, vec3, (double) p_259816_.width, (double) p_259816_.height, (double) p_259816_.width);
-			Optional<Vec3> optional1 = optional.map((p_259019_) -> {
-				return p_259019_.subtract(0.0D, d0, 0.0D);
-			});
+			Optional<Vec3> optional1 = optional.map(p_259019_ -> p_259019_.subtract(0.0, d0, 0.0));
 			return optional1.orElse(p_260315_);
 		} else {
 			return p_260315_;

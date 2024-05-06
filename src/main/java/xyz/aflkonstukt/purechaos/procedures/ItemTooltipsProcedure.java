@@ -3,12 +3,12 @@ package xyz.aflkonstukt.purechaos.procedures;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
@@ -35,8 +35,7 @@ public class ItemTooltipsProcedure {
 		if (entity == null || tooltip == null)
 			return;
 		if (itemstack.getItem() == PurechaosModItems.MELATONIN_PILL.get()) {
-			tooltip.add(
-					Component.literal(("\u00A74Your current side effect chance: " + ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance + "%"))));
+			tooltip.add(Component.literal(("\u00A74Your current side effect chance: " + (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance + "%"))));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal(
 						"\u00A77Side effects include: heart attacks, heart palpitations, migraines, recurring nightmares, weird cheese dreams, fever dreams, increased chance of dementia, hallucinations, possible chance of never waking up."));

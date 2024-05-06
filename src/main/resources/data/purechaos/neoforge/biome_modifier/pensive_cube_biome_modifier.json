@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "spawners": {
+    "type": "purechaos:pensive_cube",
+    "weight": 40,
+    "minCount": 4,
+    "maxCount": 8
+  }
+}

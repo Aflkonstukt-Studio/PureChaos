@@ -1,8 +1,6 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -13,6 +11,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public abstract class BeefArmorItem extends ArmorItem {
 	public BeefArmorItem(ArmorItem.Type type, Item.Properties properties) {
@@ -34,7 +33,7 @@ public abstract class BeefArmorItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:fallguyswooh"));
+				return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:fallguyswooh"));
 			}
 
 			@Override

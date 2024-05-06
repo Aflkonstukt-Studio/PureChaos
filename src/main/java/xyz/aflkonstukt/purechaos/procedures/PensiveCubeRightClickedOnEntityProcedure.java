@@ -3,8 +3,6 @@ package xyz.aflkonstukt.purechaos.procedures;
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
 import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -25,7 +23,7 @@ public class PensiveCubeRightClickedOnEntityProcedure {
 		if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = BlockPos.containing(x, y, z);
-				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				_ent.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
 						return Component.literal("CaptchaGUI");

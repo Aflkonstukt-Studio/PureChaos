@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:green_plant",
+  "step": "vegetal_decoration"
+}

@@ -3,16 +3,17 @@ package xyz.aflkonstukt.purechaos.world.features.treedecorators;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -25,7 +26,7 @@ public class SususTrunkDecorator extends TrunkVineDecorator {
 
 	@SubscribeEvent
 	public static void registerTreeDecorator(RegisterEvent event) {
-		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("susus_tree_trunk_decorator", DECORATOR_TYPE));
+		event.register(Registries.TREE_DECORATOR_TYPE, new ResourceLocation("purechaos:susus_tree_trunk_decorator"), () -> DECORATOR_TYPE);
 	}
 
 	@Override

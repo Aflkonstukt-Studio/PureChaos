@@ -5,10 +5,8 @@ import xyz.aflkonstukt.purechaos.procedures.JosipdvatockanulaNaturalEntitySpawni
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.ForgeMod;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
@@ -40,17 +38,12 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 public class JosipdvatockanulaEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED, ServerBossEvent.BossBarOverlay.PROGRESS);
-
-	public JosipdvatockanulaEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.JOSIPDVATOCKANULA.get(), world);
-	}
 
 	public JosipdvatockanulaEntity(EntityType<JosipdvatockanulaEntity> type, Level world) {
 		super(type, world);
@@ -69,11 +62,6 @@ public class JosipdvatockanulaEntity extends Monster {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
 	protected PathNavigation createNavigation(Level world) {
 		return new FlyingPathNavigation(this, world);
 	}
@@ -83,8 +71,8 @@ public class JosipdvatockanulaEntity extends Monster {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 2, false) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -104,8 +92,8 @@ public class JosipdvatockanulaEntity extends Monster {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	protected float ridingOffset(Entity entity) {
+		return -0.35F;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -115,22 +103,22 @@ public class JosipdvatockanulaEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:redacted"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:redacted"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.step")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.cow.step")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.magma_cube.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.magma_cube.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:jumpscare"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:jumpscare"));
 	}
 
 	@Override
@@ -166,13 +154,13 @@ public class JosipdvatockanulaEntity extends Monster {
 	}
 
 	@Override
-	public boolean canBreatheUnderwater() {
+	public boolean canDrownInFluidType(FluidType type) {
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Level world = this.level();
 		Entity entity = this;
-		return true;
+		return false;
 	}
 
 	@Override
@@ -231,7 +219,7 @@ public class JosipdvatockanulaEntity extends Monster {
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 4.5);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.4);
-		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0.4);
+		builder = builder.add(NeoForgeMod.SWIM_SPEED.value(), 0.4);
 		return builder;
 	}
 }

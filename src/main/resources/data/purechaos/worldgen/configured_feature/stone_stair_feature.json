@@ -1,9 +1,0 @@
-{
-  "type": "purechaos:structure_feature",
-  "config": {
-    "structure": "purechaos:stone_stair_structure",
-    "random_rotation": true,
-    "random_mirror": true,
-    "ignored_blocks": "minecraft:structure_block"
-  }
-}

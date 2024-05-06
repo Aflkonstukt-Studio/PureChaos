@@ -3,12 +3,10 @@ package xyz.aflkonstukt.purechaos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.fml.common.Mod;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 
 import java.util.Random;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CaptchaCode {
     private static ChallengeType type;
     private static String challengeText;
@@ -75,31 +73,30 @@ public class CaptchaCode {
 
         challengeInProgress = true; // Set the flag
         boolean correct = userAnswer.equals(correctAnswer);
-        int wrongAnswers = (int) (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).wrong_answers;
+        int wrongAnswers = (int) entity.getData(PurechaosModVariables.PLAYER_VARIABLES).wrong_answers;
         if (!correct) {
-            double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).wrong_answers + 1;
-            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-                capability.wrong_answers = _setval;
-                capability.syncPlayerVariables(entity);
-            });
+            PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+            _vars.wrong_answers += 1;
+            _vars.syncPlayerVariables(entity);
+
             _player.displayClientMessage(Component.nullToEmpty("Incorrect. " + (3 - wrongAnswers) + " attempt" + ((3 - wrongAnswers) != 1 ? "s" : "") +  " remaining."), true);
-            challengeInProgress = false; // Reset the flag
+            challengeInProgress = false;
         } else {
             captchaInProgress = false;
-            challengeInProgress = false; // Reset the flag
-            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-                capability.wrong_answers = 0;
-                capability.syncPlayerVariables(entity);
-            });
+            challengeInProgress = false;
+
+            PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+            _vars.wrong_answers = 0;
+            _vars.syncPlayerVariables(entity);
+
             _player.closeContainer();
         }
 
-        if (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables()).wrong_answers >= 4) {
+        PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+        if (_vars.wrong_answers >= 4) {
             captchaInProgress = false;
-            entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-                capability.wrong_answers = 0;
-                capability.syncPlayerVariables(entity);
-            });
+            _vars.wrong_answers = 0;
+            _vars.syncPlayerVariables(entity);
             challengeInProgress = false; // Reset the flag
             _player.kill();
         }

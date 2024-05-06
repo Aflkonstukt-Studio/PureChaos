@@ -4,10 +4,10 @@ import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -42,11 +42,9 @@ public class TombstonePlaceProcdProcedure {
 			if (world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DOGRAVECREATION)) {
 				world.setBlock(BlockPos.containing(x, y, z), PurechaosModBlocks.GRAVE.get().defaultBlockState(), 3);
 				{
-					double _setval = 100;
-					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.sanity = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.sanity = 100;
+					_vars.syncPlayerVariables(entity);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("You died! A grave has been placed at the place of your death."), false);

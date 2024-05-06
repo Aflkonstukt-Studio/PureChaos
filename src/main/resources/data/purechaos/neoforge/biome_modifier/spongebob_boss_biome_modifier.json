@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "purechaos:cyber_biome",
+    "purechaos:desert",
+    "purechaos:hell_but_overworld"
+  ],
+  "spawners": {
+    "type": "purechaos:spongebob_boss",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

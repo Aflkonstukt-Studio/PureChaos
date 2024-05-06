@@ -6,7 +6,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -15,8 +15,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 
-public abstract class StaravodaFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.STARAVODA_TYPE.get(), () -> PurechaosModFluids.STARAVODA.get(), () -> PurechaosModFluids.FLOWING_STARAVODA.get())
+public abstract class StaravodaFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.STARAVODA_TYPE.get(), () -> PurechaosModFluids.STARAVODA.get(), () -> PurechaosModFluids.FLOWING_STARAVODA.get())
 			.explosionResistance(100f).slopeFindDistance(1).bucket(() -> PurechaosModItems.STARAVODA_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.STARAVODA.get());
 
 	private StaravodaFluid() {

@@ -6,14 +6,14 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleType;
 
 public class PurechaosModParticleTypes {
-	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, PurechaosMod.MODID);
-	public static final RegistryObject<SimpleParticleType> CUM_DRIP = REGISTRY.register("cum_drip", () -> new SimpleParticleType(false));
+	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, PurechaosMod.MODID);
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CUM_DRIP = REGISTRY.register("cum_drip", () -> new SimpleParticleType(false));
 }

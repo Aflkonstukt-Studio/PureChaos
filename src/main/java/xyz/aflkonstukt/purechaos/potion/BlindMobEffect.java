@@ -8,9 +8,4 @@ public class BlindMobEffect extends MobEffect {
 	public BlindMobEffect() {
 		super(MobEffectCategory.HARMFUL, -1);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

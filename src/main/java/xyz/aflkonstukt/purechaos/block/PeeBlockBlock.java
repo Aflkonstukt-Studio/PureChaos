@@ -3,7 +3,7 @@ package xyz.aflkonstukt.purechaos.block;
 
 import xyz.aflkonstukt.purechaos.block.entity.PeeBlockBlockEntity;
 
-import net.minecraftforge.common.IPlantable;
+import net.neoforged.neoforge.common.IPlantable;
 
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.PushReaction;

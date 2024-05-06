@@ -20,6 +20,7 @@ import xyz.aflkonstukt.purechaos.client.model.Modellegs;
 import xyz.aflkonstukt.purechaos.client.model.Modeljosipmmarket;
 import xyz.aflkonstukt.purechaos.client.model.Modelikea_desk;
 import xyz.aflkonstukt.purechaos.client.model.Modelgroggo;
+import xyz.aflkonstukt.purechaos.client.model.Modelfish;
 import xyz.aflkonstukt.purechaos.client.model.Modelfireflies;
 import xyz.aflkonstukt.purechaos.client.model.Modeldog;
 import xyz.aflkonstukt.purechaos.client.model.Modelcustom_model;
@@ -30,10 +31,10 @@ import xyz.aflkonstukt.purechaos.client.model.Modelamongus_woo;
 import xyz.aflkonstukt.purechaos.client.model.Modelamiogyhus;
 import xyz.aflkonstukt.purechaos.client.model.ModelCustomModel;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PurechaosModModels {
@@ -49,6 +50,7 @@ public class PurechaosModModels {
 		event.registerLayerDefinition(Modeltpose_smth.LAYER_LOCATION, Modeltpose_smth::createBodyLayer);
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
 		event.registerLayerDefinition(Modelfireflies.LAYER_LOCATION, Modelfireflies::createBodyLayer);
+		event.registerLayerDefinition(Modelfish.LAYER_LOCATION, Modelfish::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
 		event.registerLayerDefinition(Modelbaldi.LAYER_LOCATION, Modelbaldi::createBodyLayer);
 		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);

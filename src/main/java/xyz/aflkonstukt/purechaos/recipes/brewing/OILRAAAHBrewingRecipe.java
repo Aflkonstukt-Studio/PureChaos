@@ -3,11 +3,11 @@ package xyz.aflkonstukt.purechaos.recipes.brewing;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.common.brewing.IBrewingRecipe;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
+import net.neoforged.neoforge.common.brewing.IBrewingRecipe;
+import net.neoforged.neoforge.common.brewing.BrewingRecipeRegistry;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;

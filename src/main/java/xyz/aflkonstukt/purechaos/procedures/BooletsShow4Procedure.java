@@ -8,6 +8,6 @@ public class BooletsShow4Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).boolets == 4;
+		return entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 4;
 	}
 }

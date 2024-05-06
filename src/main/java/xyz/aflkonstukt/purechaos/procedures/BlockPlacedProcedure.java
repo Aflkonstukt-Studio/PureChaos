@@ -1,11 +1,11 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
-import net.minecraftforge.common.PlantType;
-import net.minecraftforge.common.IPlantable;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.common.PlantType;
+import net.neoforged.neoforge.common.IPlantable;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;

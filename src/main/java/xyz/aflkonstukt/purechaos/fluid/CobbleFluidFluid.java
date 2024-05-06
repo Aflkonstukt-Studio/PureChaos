@@ -6,15 +6,15 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
-public abstract class CobbleFluidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.COBBLE_FLUID_TYPE.get(), () -> PurechaosModFluids.COBBLE_FLUID.get(), () -> PurechaosModFluids.FLOWING_COBBLE_FLUID.get())
+public abstract class CobbleFluidFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.COBBLE_FLUID_TYPE.get(), () -> PurechaosModFluids.COBBLE_FLUID.get(), () -> PurechaosModFluids.FLOWING_COBBLE_FLUID.get())
 			.explosionResistance(100f).bucket(() -> PurechaosModItems.COBBLE_FLUID_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.COBBLE_FLUID.get());
 
 	private CobbleFluidFluid() {

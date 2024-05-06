@@ -7,9 +7,8 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModParticleTypes;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,6 +25,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -53,7 +53,7 @@ public class SusPortalBlock extends NetherPortalBlock {
 		Direction.Axis direction$axis = p_54929_.getAxis();
 		Direction.Axis direction$axis1 = p_54928_.getValue(AXIS);
 		boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
-		return !flag && !p_54930_.is(this) && !(new SusPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete() ? Blocks.AIR.defaultBlockState() : super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
+		return !flag && !p_54930_.is(this) && !new SusPortalShape(p_54931_, p_54932_, direction$axis1).isComplete() ? Blocks.AIR.defaultBlockState() : super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -77,7 +77,7 @@ public class SusPortalBlock extends NetherPortalBlock {
 			world.addParticle((SimpleParticleType) (PurechaosModParticleTypes.CUM_DRIP.get()), px, py, pz, vx, vy, vz);
 		}
 		if (random.nextInt(110) == 0)
-			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(("purechaos:amogus"))), SoundSource.BLOCKS, 0.5f, random.nextFloat() * 0.4f + 0.8f);
+			world.playSound(null, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation(("purechaos:amogus"))), SoundSource.BLOCKS, 0.5f, random.nextFloat() * 0.4f + 0.8f);
 	}
 
 	@Override

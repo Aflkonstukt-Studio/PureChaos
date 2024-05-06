@@ -13,8 +13,8 @@
     "isBenefitical": false,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "onStarted": {
-      "name": "FatEffectStartedapplied"
+    "onActiveTick": {
+      "name": "FatOnEffectActiveTick"
     },
     "onExpired": {
       "name": "FatEffectExpires"

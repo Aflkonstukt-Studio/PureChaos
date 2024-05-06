@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "purechaos:ekesmasterbait",
+    "purechaos:cyber_biome"
+  ],
+  "spawners": {
+    "type": "purechaos:josip",
+    "weight": 15,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

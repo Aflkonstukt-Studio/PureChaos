@@ -4,16 +4,15 @@ package xyz.aflkonstukt.purechaos.entity;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.common.DungeonHooks;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.common.NeoForgeMod;
+import net.neoforged.neoforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
@@ -46,16 +45,11 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 public class AentityEntity extends PathfinderMob {
-	public AentityEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.AENTITY.get(), world);
-	}
-
 	public AentityEntity(EntityType<AentityEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -67,11 +61,6 @@ public class AentityEntity extends PathfinderMob {
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(PurechaosModItems.PEE_BUCKET.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.TURTLE_HELMET));
 		this.moveControl = new FlyingMoveControl(this, 10, true);
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
 	@Override
@@ -99,8 +88,8 @@ public class AentityEntity extends PathfinderMob {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	protected float ridingOffset(Entity entity) {
+		return -0.35F;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -110,22 +99,22 @@ public class AentityEntity extends PathfinderMob {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ambient.cave"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ambient.underwater.enter")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override
@@ -141,7 +130,7 @@ public class AentityEntity extends PathfinderMob {
 			return false;
 		if (damagesource.getDirectEntity() instanceof Player)
 			return false;
-		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
@@ -155,7 +144,7 @@ public class AentityEntity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean ignoreExplosion() {
+	public boolean ignoreExplosion(Explosion explosion) {
 		return true;
 	}
 
@@ -170,13 +159,13 @@ public class AentityEntity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean canBreatheUnderwater() {
+	public boolean canDrownInFluidType(FluidType type) {
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Level world = this.level();
 		Entity entity = this;
-		return true;
+		return false;
 	}
 
 	@Override
@@ -220,7 +209,7 @@ public class AentityEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.FLYING_SPEED, 1.6);
-		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.6);
+		builder = builder.add(NeoForgeMod.SWIM_SPEED.value(), 1.6);
 		return builder;
 	}
 }

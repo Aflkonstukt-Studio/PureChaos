@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:GreenPlant"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.tropical_fish.flop"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelfish",
+    "customModelTexture": "salmon.png",
+    "onHitsBlock": {
+      "name": "FishProjectileProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "FishProjectileProjectileHitsBlock"
+    }
+  }
+}

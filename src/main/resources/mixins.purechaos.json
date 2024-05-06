@@ -2,12 +2,13 @@
   "required": true,
   "package": "xyz.aflkonstukt.purechaos.mixins",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "mixins.purechaos.refmap.json",
   "mixins": [
     "CustomTitleMixin",
     "CustomIconMixin",
     "BottleMixinMixin",
-    "KeyboardInputMixin"
+    "KeyboardInputMixin",
+    "ItemstackMixin",
+    "InventoryMixin"
   ],
   "client": [],
   "minVersion": "0.8"

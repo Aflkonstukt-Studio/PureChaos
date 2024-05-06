@@ -6,15 +6,15 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
-public abstract class OilFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.OIL_TYPE.get(), () -> PurechaosModFluids.OIL.get(), () -> PurechaosModFluids.FLOWING_OIL.get()).explosionResistance(100f)
+public abstract class OilFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.OIL_TYPE.get(), () -> PurechaosModFluids.OIL.get(), () -> PurechaosModFluids.FLOWING_OIL.get()).explosionResistance(100f)
 			.tickRate(1).bucket(() -> PurechaosModItems.OIL_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.OIL.get());
 
 	private OilFluid() {

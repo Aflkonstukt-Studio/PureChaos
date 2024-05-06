@@ -7,7 +7,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
@@ -16,8 +16,8 @@ import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleOptions;
 
-public abstract class OrangeFluidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.ORANGE_FLUID_TYPE.get(), () -> PurechaosModFluids.ORANGE_FLUID.get(), () -> PurechaosModFluids.FLOWING_ORANGE_FLUID.get())
+public abstract class OrangeFluidFluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.ORANGE_FLUID_TYPE.get(), () -> PurechaosModFluids.ORANGE_FLUID.get(), () -> PurechaosModFluids.FLOWING_ORANGE_FLUID.get())
 			.explosionResistance(100f).tickRate(3).bucket(() -> PurechaosModItems.ORANGE_FLUID_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.ORANGE_FLUID.get());
 
 	private OrangeFluidFluid() {

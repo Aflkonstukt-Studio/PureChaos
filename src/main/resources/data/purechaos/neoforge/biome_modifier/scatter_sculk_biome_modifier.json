@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "purechaos:nightmare_biome",
+  "features": "purechaos:scatter_sculk",
+  "step": "surface_structures"
+}

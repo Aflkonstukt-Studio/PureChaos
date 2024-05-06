@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "purechaos:ohio",
+    "purechaos:cyber_biome"
+  ],
+  "spawners": {
+    "type": "purechaos:rick_astley",
+    "weight": 30,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

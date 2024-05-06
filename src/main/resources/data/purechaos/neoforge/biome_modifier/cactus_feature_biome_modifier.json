@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "purechaos:desert",
+  "features": "purechaos:cactus_feature",
+  "step": "surface_structures"
+}

@@ -3,8 +3,6 @@ package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.FASTTOPASSRightclickedProcedure;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.RecordItem;
@@ -16,12 +14,13 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import java.util.List;
 
 public class FASTTOPASSItem extends RecordItem {
 	public FASTTOPASSItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:ahdude")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2360);
+		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ahdude")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2360);
 	}
 
 	@Override

@@ -3,8 +3,8 @@ package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.FryingPanLivingEntityIsHitWithItemProcedure;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;

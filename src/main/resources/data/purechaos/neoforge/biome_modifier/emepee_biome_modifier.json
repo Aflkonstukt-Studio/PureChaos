@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "purechaos:emepee",
+  "step": "underground_ores"
+}

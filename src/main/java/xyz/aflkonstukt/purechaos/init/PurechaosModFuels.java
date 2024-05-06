@@ -4,9 +4,9 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
+import net.neoforged.neoforge.event.furnace.FurnaceFuelBurnTimeEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;

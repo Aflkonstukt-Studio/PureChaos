@@ -4,10 +4,8 @@ package xyz.aflkonstukt.purechaos.entity;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.DungeonHooks;
+import net.neoforged.neoforge.common.NeoForgeMod;
+import net.neoforged.neoforge.common.DungeonHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -40,16 +38,11 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 public class AMOGUS3BLUEntity extends Monster {
-	public AMOGUS3BLUEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PurechaosModEntities.AMOGUS_3_BLU.get(), world);
-	}
-
 	public AMOGUS3BLUEntity(EntityType<AMOGUS3BLUEntity> type, Level world) {
 		super(type, world);
 		setMaxUpStep(0.6f);
@@ -66,17 +59,12 @@ public class AMOGUS3BLUEntity extends Monster {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
 	protected void registerGoals() {
 		super.registerGoals();
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -97,22 +85,22 @@ public class AMOGUS3BLUEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:amogus"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amogus"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:kill")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:kill")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:kill"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:kill"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("purechaos:amongus_ambient"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amongus_ambient"));
 	}
 
 	@Override
@@ -121,7 +109,7 @@ public class AMOGUS3BLUEntity extends Monster {
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)
 			return false;
-		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;

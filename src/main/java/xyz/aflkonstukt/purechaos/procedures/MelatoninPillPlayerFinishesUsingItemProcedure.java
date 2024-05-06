@@ -27,7 +27,7 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		double random_num = 0;
-		if (Mth.nextInt(RandomSource.create(), (int) (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance, 100) >= 95) {
+		if (Mth.nextInt(RandomSource.create(), (int) entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance, 100) >= 95) {
 			random_num = Mth.nextInt(RandomSource.create(), 1, 3);
 			if (random_num == 1) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:heart_attack_death")))), 999);
@@ -48,23 +48,19 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 				}
 			} else if (random_num == 3) {
 				{
-					double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance + 100;
-					entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.dementia_chance = _setval;
-						capability.syncPlayerVariables(entity);
-					});
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.dementia_chance = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance + 100;
+					_vars.syncPlayerVariables(entity);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(("Uh oh! It looks like your dementia chance just got increased! Your current chance of getting dementia (if your sanity is lower than 50) is: "
-							+ ((entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).dementia_chance / 20 + "%"))), false);
+							+ (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance / 20 + "%"))), false);
 			}
 		} else {
 			{
-				double _setval = (entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PurechaosModVariables.PlayerVariables())).heart_attack_chance + 10;
-				entity.getCapability(PurechaosModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.heart_attack_chance = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.heart_attack_chance = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance + 10;
+				_vars.syncPlayerVariables(entity);
 			}
 			MakePlayerSleepProcedure.execute(entity);
 		}

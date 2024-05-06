@@ -6,15 +6,15 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
 
-public abstract class Milk2Fluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PurechaosModFluidTypes.MILK_2_TYPE.get(), () -> PurechaosModFluids.MILK_2.get(), () -> PurechaosModFluids.FLOWING_MILK_2.get())
+public abstract class Milk2Fluid extends BaseFlowingFluid {
+	public static final BaseFlowingFluid.Properties PROPERTIES = new BaseFlowingFluid.Properties(() -> PurechaosModFluidTypes.MILK_2_TYPE.get(), () -> PurechaosModFluids.MILK_2.get(), () -> PurechaosModFluids.FLOWING_MILK_2.get())
 			.explosionResistance(100f).tickRate(6).bucket(() -> PurechaosModItems.MILK_2_BUCKET.get()).block(() -> (LiquidBlock) PurechaosModBlocks.MILK_2.get());
 
 	private Milk2Fluid() {
