@@ -1,6 +1,0 @@
-/tp @s 99 62 307
-/old_sanity true
-/gamerule disableCaptcha true
-/gamerule adblocker
-/gamerule adblocker true
-/gamerule keepInventory true
