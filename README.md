@@ -20,3 +20,5 @@ https://mcreator.net/plugin/99849/shaders-utils
 https://mcreator.net/plugin/97468/remote-workspaces-support-20232 (if you want to, not required)
 
 https://mcreator.net/plugin/106411/pehkui
+
+https://mcreator.net/plugin/93491/custom-fog-plugin-forge-1182-1192
