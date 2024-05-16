@@ -6,9 +6,7 @@
     "CustomTitleMixin",
     "CustomIconMixin",
     "BottleMixinMixin",
-    "KeyboardInputMixin",
-    "ItemstackMixin",
-    "InventoryMixin"
+    "KeyboardInputMixin"
   ],
   "client": [],
   "minVersion": "0.8"
