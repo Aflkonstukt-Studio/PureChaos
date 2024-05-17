@@ -8,17 +8,12 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PurechaosMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHAOSTAB = REGISTRY.register("chaostab",
@@ -200,13 +195,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.RAINBOWRACK.get().asItem());
 				tabData.accept(PurechaosModBlocks.RAINBOW_GRASS.get().asItem());
 				tabData.accept(PurechaosModItems.POLAND_ITEM.get());
+				tabData.accept(PurechaosModItems.YUGOSLAVIA_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.FISH_LAUNCHER.get());
 			}).withSearchBar().build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(PurechaosModItems.YUGOSLAVIA_SPAWN_EGG.get());
-		}
-	}
 }

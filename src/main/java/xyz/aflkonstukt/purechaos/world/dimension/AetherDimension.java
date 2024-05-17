@@ -18,7 +18,7 @@ public class AetherDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(DimensionSpecialEffects.OverworldEffects.CLOUD_LEVEL, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(0.2, 0.8, 1);
+					return new Vec3(1, 1, 0.4);
 				}
 
 				@Override

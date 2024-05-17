@@ -35,5 +35,7 @@ public class CheatGUISwitchGamemodeProcedure {
 			if (entity instanceof ServerPlayer _player)
 				_player.setGameMode(GameType.SURVIVAL);
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

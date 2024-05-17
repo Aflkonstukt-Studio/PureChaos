@@ -14,8 +14,6 @@ import net.minecraft.core.registries.Registries;
 
 public class PurechaosModPaintings {
 	public static final DeferredRegister<PaintingVariant> REGISTRY = DeferredRegister.create(Registries.PAINTING_VARIANT, PurechaosMod.MODID);
-	public static final DeferredHolder<PaintingVariant, PaintingVariant> MASTERPIECE = REGISTRY.register("masterpiece", () -> new PaintingVariant(400, 200));
-	public static final DeferredHolder<PaintingVariant, PaintingVariant> XMASTERWOOPAINTING = REGISTRY.register("xmasterwoopainting", () -> new PaintingVariant(16, 16));
 	public static final DeferredHolder<PaintingVariant, PaintingVariant> STUCK = REGISTRY.register("stuck", () -> new PaintingVariant(64, 64));
 	public static final DeferredHolder<PaintingVariant, PaintingVariant> HMMMM_DRIP = REGISTRY.register("hmmmm_drip", () -> new PaintingVariant(69, 60));
 	public static final DeferredHolder<PaintingVariant, PaintingVariant> I_OFFER_YOU_BRAINROT = REGISTRY.register("i_offer_you_brainrot", () -> new PaintingVariant(16, 16));

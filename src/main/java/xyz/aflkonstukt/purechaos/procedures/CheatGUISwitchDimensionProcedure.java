@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
@@ -203,5 +204,7 @@ public class CheatGUISwitchDimensionProcedure {
 				}
 			}
 		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

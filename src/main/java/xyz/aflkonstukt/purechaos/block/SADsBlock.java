@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -24,19 +24,7 @@ import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import com.mojang.serialization.MapCodec;
-
-public class SADsBlock extends FallingBlock implements EntityBlock {
-	public static final MapCodec<SADsBlock> CODEC = simpleCodec(SADsBlock::new);
-
-	public MapCodec<SADsBlock> codec() {
-		return CODEC;
-	}
-
-	public SADsBlock(BlockBehaviour.Properties ignored) {
-		this();
-	}
-
+public class SADsBlock extends Block implements EntityBlock {
 	public SADsBlock() {
 		super(BlockBehaviour.Properties.of().liquid().sound(SoundType.BAMBOO).strength(1f, 10f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}

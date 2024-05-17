@@ -76,7 +76,7 @@ public record CheatGUIButtonMessage(int buttonID, int x, int y, int z) implement
 		}
 		if (buttonID == 2) {
 
-			DoNotPressPressedProcedure.execute(world, x, y, z);
+			DoNotPressPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

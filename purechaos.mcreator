@@ -102,17 +102,6 @@
       }
     },
     {
-      "name": "Masterpiece",
-      "type": "painting",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "masterpiece",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "PlayerTick",
       "type": "procedure",
       "sortid": 3,
@@ -697,17 +686,6 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java",
           "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json"
         ]
-      }
-    },
-    {
-      "name": "Xmasterwoopainting",
-      "type": "painting",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "xmasterwoopainting",
-      "metadata": {
-        "files": []
       }
     },
     {
@@ -3880,6 +3858,10 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/DoNotPressPressedProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -7820,14 +7802,24 @@
       "locked_code": false,
       "registry_name": "fat_on_effect_active_tick",
       "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/FatOnEffectActiveTickProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "PackPriority",
+      "type": "code",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pack_priority",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/PackPriority.java"
         ]
       }
     }
@@ -8201,11 +8193,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8348,8 +8340,8 @@
       "item.purechaos.beef_armor_helmet": "Beef Armor Helmet",
       "death.attack.gassed_death.player": "%1$s was gassed by %2$s",
       "entity.chaosmod.aentity": "Aentity",
-      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "entity.chaosmod.herobrine": "Herobrine",
+      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "item.purechaos.scratest.desc": "idk man stop asking me",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "effect.chaosmod.fat": "Fat",
@@ -8357,19 +8349,19 @@
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "block.chaosmod.green_plant": "Green Plant",
       "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
-      "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.minecraft.lingering_potion.effect.modified_ethanol": "Lingering Potion of Alchemically Modified Ethanol",
+      "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.purechaos.beef_armor_boots": "Beef Armor Boots",
       "block.chaosmod.youtube": "Youtube",
-      "block.chaosmod.pee": "Pee",
       "item.minecraft.potion.effect.ethanol": "Ethanol",
+      "block.chaosmod.pee": "Pee",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.minecraft.tipped_arrow.effect.illegalsubstance": "Laced Arrow",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
-      "death.attack.overdose.item": "%1$s overdosed on meth",
-      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
+      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
+      "death.attack.overdose.item": "%1$s overdosed on meth",
       "item.chaosmod.legs_spawn_egg": "Legs Spawn Egg",
       "item.purechaos.rock": "Rock",
       "entity.purechaos.josip": "JOSIP",
@@ -8381,8 +8373,8 @@
       "gui.purechaos.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "entity.purechaos.murica": "\u0027Murica",
       "block.purechaos.pee_block": "Pee Block",
-      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "gamerule.adblocker.description": "Enable this to disable ADs",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
@@ -8392,8 +8384,8 @@
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.stroater": "Stroater",
-      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.turtle_armor_chestplate": "Turtle Chestplate",
+      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.gatorade_bucket": "Gatorade Bucket",
       "block.purechaos.tlghd": "TLG Block",
       "item.purechaos.amogus_gun": "Amogus Gun",
@@ -8403,22 +8395,21 @@
       "entity.chaosmod.trident": "Tridet",
       "key.purechaos.shit": "Shit",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
-      "item.purechaos.pee_bucket": "Pee Bucket",
       "death.attack.fall": "%1$s kissed the floor",
+      "item.purechaos.pee_bucket": "Pee Bucket",
       "block.chaosmod.brazil_block": "Brazil Block",
       "item.purechaos.potato_spuds": "Potato Spuds",
       "item.purechaos.fortnite_a_1": "Fortnite A 1",
       "gamerule.disableCaptcha.description": "This gamerule just disables the annoying captcha",
       "item.purechaos.puffer_balloon": "Puffer on a String",
-      "painting.purechaos.xmasterwoopainting.title": "Xmasterwoopainting",
       "painting.purechaos.mc_kisser.author": "boykisser",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
-      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "subtitles.nerd": "nerd",
+      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.xsord": "Xite Containment Blade",
       "fluid.chaosmod.staravoda": "Staravoda",
-      "item.purechaos.spear": "Spear",
       "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
+      "item.purechaos.spear": "Spear",
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
@@ -8447,8 +8438,8 @@
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "painting.purechaos.you_think_youre_alone.title": "You Think You\u0027re Alone",
-      "item.purechaos.use_in_emergencies": "Use In Emergencies",
       "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
+      "item.purechaos.use_in_emergencies": "Use In Emergencies",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.purechaos.spit_ball": "Spit Ball",
@@ -8466,9 +8457,9 @@
       "item.chaosmod.fbi_spawn_egg": "FBI Spawn Egg",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
-      "item.purechaos.infinite_fuel": "Infinite Fuel",
-      "subtitles.gulp_gulp": "",
       "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
+      "subtitles.gulp_gulp": "",
+      "item.purechaos.infinite_fuel": "Infinite Fuel",
       "block.purechaos.sus_block": "Sus Block",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
@@ -8500,8 +8491,8 @@
       "block.purechaos.pee": "Pee",
       "block.chaosmod.cum": "Cum",
       "item.chaosmod.water_cup": "Water Cup",
-      "biome.chaosmod.ohio": "Ohio",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
+      "biome.chaosmod.ohio": "Ohio",
       "entity.purechaos.amogus_3": "Amogus 3",
       "item.chaosmod.xite": "Xite",
       "entity.purechaos.amogus_2": "Amogus 2",
@@ -8532,8 +8523,8 @@
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "item.minecraft.tipped_arrow.effect.ethanol": "Arrow of Ethanol",
-      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.cursed_dog": "Dgo",
+      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
@@ -8578,8 +8569,8 @@
       "block.purechaos.emepee": "Emepee",
       "item.purechaos.adidas_armor_leggings": "Adidas Leggings",
       "entity.chaosmod.among_us": "Among Us",
-      "item.purechaos.brown": "Brown",
       "menu.options": "Settings for grown ups",
+      "item.purechaos.brown": "Brown",
       "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",
@@ -8589,16 +8580,16 @@
       "painting.purechaos.i_see_you_masturbating.title": "I See You Masturbating",
       "item.chaosmod.poop": "Poop",
       "entity.purechaos.firefly": "Firefly",
-      "block.purechaos.sa_ds": "Block ?",
       "block.chaosmod.south": "South",
+      "block.purechaos.sa_ds": "Block ?",
       "block.purechaos.death": "Death",
       "item.purechaos.totem_of_amogus": "Totem Of Lying",
       "selectWorld.data_read": "Reliving your past mistakes...",
       "block.purechaos.youtube": "Youtube",
       "gameMode.changed": "Sussy things done, you are now %s",
       "biome.purechaos.backrooms_biome": "Backrooms",
-      "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
+      "entity.chaosmod.murica": "\u0027Murica",
       "item.minecraft.golden_pickaxe": "Golden Diggy Diggy Blocky",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
@@ -8614,8 +8605,8 @@
       "item.purechaos.food_item_3": "Food Item 3",
       "entity.chaosmod.stalin": "Stalin",
       "item.purechaos.food_item_2": "Food Item 2",
-      "item.purechaos.meth": "Meth",
       "item.purechaos.baguette": "Baguette",
+      "item.purechaos.meth": "Meth",
       "block.purechaos.missing_texture": "Missing Texture",
       "painting.purechaos.a_painting.author": "some reddit user",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -8631,8 +8622,8 @@
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
       "item.chaosmod.obamium": "Obamium",
-      "subtitles.crnidani": "crnidanijebani",
       "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
+      "subtitles.crnidani": "crnidanijebani",
       "selectWorld.gameMode.creative": "Minimal Suffering",
       "item.purechaos.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
@@ -8642,8 +8633,8 @@
       "item.purechaos.communism_orb": "Orb o\u0027 Communism",
       "painting.purechaos.stuck.title": "Stuck",
       "death.attack.k_press_death.item": "%1$s pressed K",
-      "entity.purechaos.fbi": "FBI",
       "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
+      "entity.purechaos.fbi": "FBI",
       "item.chaosmod.adidas_shovel": "Adidas Shovel",
       "gamerule.adblocker": "Adblock",
       "item.chaosmod.adidas_pickaxe": "Adidas Pickaxe",
@@ -8681,14 +8672,14 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.impostor_knife": "Impostor Knife",
       "fluid.purechaos.cum": "Cum",
-      "block.purechaos.grave": "Grave",
-      "item.chaosmod.mercury": "Mercury",
       "item.chaosmod.rock": "Rock",
+      "item.chaosmod.mercury": "Mercury",
+      "block.purechaos.grave": "Grave",
       "selectWorld.gameMode.survival": "Death",
       "item.chaosmod.kfce": "KFCE",
       "gui.chaosmod.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
-      "block.chaosmod.staravoda": "Staravoda",
       "painting.purechaos.nuh_uh.author": "boykisser",
+      "block.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.minecraft.iron_axe": "Iron Chop Chop Stick",
       "item.chaosmod.adidas_armor_leggings": "Adidas Leggings",
@@ -8697,8 +8688,8 @@
       "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "entity.purechaos.rick_astley": "Rick Astley",
       "entity.chaosmod.dream": "Dream",
-      "subtitles.footstep_metal_amogus": "idk",
       "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
+      "subtitles.footstep_metal_amogus": "idk",
       "item.chaosmod.apple_ingot": "Apple Ingot",
       "item.purechaos.zenith": "Zenith",
       "painting.purechaos.you_think_youre_alone.author": "boykisser",
@@ -8724,12 +8715,12 @@
       "item.purechaos.beengot": "Beengot",
       "item.purechaos.coca_cola": "Coca Cola",
       "item.minecraft.splash_potion.effect.modified_ethanol": "Splash Potion of Alchemically Modified Ethanol",
-      "entity.chaosmod.josip_pett": "Josip GRR pet",
       "item.chaosmod.pee_bucket": "Pee Bucket",
+      "entity.chaosmod.josip_pett": "Josip GRR pet",
       "effect.chaosmod.dementia": "Dementia",
       "painting.purechaos.shur_up.title": "Shur Up",
-      "item.purechaos.milk_2_bucket": "Milk 2.0 Bucket",
       "item.purechaos.bottle_of_piss": "Bottle Of Piss",
+      "item.purechaos.milk_2_bucket": "Milk 2.0 Bucket",
       "item.chaosmod.sasi_amangas": "Sasi Amangas",
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
@@ -8786,7 +8777,6 @@
       "key.chaosmod.seven": "Seven",
       "gameMode.hardcore": "No.",
       "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
-      "painting.purechaos.masterpiece.author": "Unknown",
       "block.chaosmod.grave": "Grave",
       "item.purechaos.dirtsword": "Dirtsword",
       "item.purechaos.obamium": "Obamium",
@@ -8825,7 +8815,6 @@
       "block.purechaos.cobble_fluid": "Cobblestone Fluid",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "selectWorld.warning.experimental.title": "We need your permission to make the world chaotic",
-      "painting.purechaos.masterpiece.title": "Masterpiece",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "item.chaosmod.to": "CRNIDANIALBUM",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
@@ -9108,8 +9097,7 @@
       "item.purechaos.josip_range": "Josip Range",
       "entity.purechaos.vikkivuk": "Vikkivuk",
       "item.chaosmod.kentucky_fried_chicken": "KFC Chicken",
-      "subtitles.fbi_open": "FBI OPEN UP",
-      "painting.purechaos.xmasterwoopainting.author": "Unknown"
+      "subtitles.fbi_open": "FBI OPEN UP"
     }
   },
   "foldersRoot": {

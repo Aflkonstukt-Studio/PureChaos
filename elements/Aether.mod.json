@@ -4,28 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:CyberBiome"
-      },
-      {
-        "value": "CUSTOM:Ekesmasterbait"
-      },
-      {
-        "value": "CUSTOM:HellButOverworld"
-      },
-      {
-        "value": "CUSTOM:Susus"
-      },
-      {
         "value": "badlands"
       },
       {
-        "value": "badlands_plateau"
-      },
-      {
         "value": "bamboo_jungle"
-      },
-      {
-        "value": "bamboo_jungle_hills"
       },
       {
         "value": "basalt_deltas"
@@ -37,7 +19,7 @@
         "value": "birch_forest"
       },
       {
-        "value": "birch_forest_hills"
+        "value": "cherry_grove"
       },
       {
         "value": "cold_ocean"
@@ -49,10 +31,10 @@
         "value": "roofed_forest"
       },
       {
-        "value": "mutated_roofed_forest"
+        "value": "deep_cold_ocean"
       },
       {
-        "value": "deep_cold_ocean"
+        "value": "deep_dark"
       },
       {
         "value": "deep_frozen_ocean"
@@ -64,16 +46,7 @@
         "value": "deep_ocean"
       },
       {
-        "value": "deep_warm_ocean"
-      },
-      {
         "value": "desert"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "mutated_desert"
       },
       {
         "value": "dripstone_caves"
@@ -97,9 +70,6 @@
         "value": "forest"
       },
       {
-        "value": "forest_hills"
-      },
-      {
         "value": "frozen_ocean"
       },
       {
@@ -121,37 +91,16 @@
         "value": "jungle"
       },
       {
-        "value": "jungle_hills"
-      },
-      {
         "value": "lukewarm_ocean"
       },
       {
         "value": "lush_caves"
       },
       {
+        "value": "mangrove_swamp"
+      },
+      {
         "value": "meadow"
-      },
-      {
-        "value": "mutated_mesa_clear_rock"
-      },
-      {
-        "value": "mutated_extreme_hills_with_trees"
-      },
-      {
-        "value": "mutated_jungle"
-      },
-      {
-        "value": "mutated_jungle_edge"
-      },
-      {
-        "value": "mutated_mesa_rock"
-      },
-      {
-        "value": "smaller_extreme_hills"
-      },
-      {
-        "value": "mushroom_field_shore"
       },
       {
         "value": "mushroom_fields"
@@ -166,19 +115,10 @@
         "value": "mutated_birch_forest"
       },
       {
-        "value": "mutated_birch_forest_hills"
-      },
-      {
         "value": "redwood_taiga"
       },
       {
-        "value": "redwood_taiga_hills"
-      },
-      {
         "value": "mutated_redwood_taiga"
-      },
-      {
-        "value": "mutated_redwood_taiga_hills"
       },
       {
         "value": "plains"
@@ -193,9 +133,6 @@
         "value": "savanna_rock"
       },
       {
-        "value": "mutated_savanna_rock"
-      },
-      {
         "value": "small_end_islands"
       },
       {
@@ -205,19 +142,10 @@
         "value": "cold_beach"
       },
       {
-        "value": "snowy_mountains"
-      },
-      {
         "value": "snowy_tundra"
       },
       {
         "value": "taiga_cold"
-      },
-      {
-        "value": "taiga_cold_hills"
-      },
-      {
-        "value": "mutated_taiga_cold"
       },
       {
         "value": "soul_sand_valley"
@@ -238,16 +166,7 @@
         "value": "swamp"
       },
       {
-        "value": "mutated_swampland"
-      },
-      {
         "value": "taiga"
-      },
-      {
-        "value": "taiga_hills"
-      },
-      {
-        "value": "mutated_taiga"
       },
       {
         "value": "the_end"
@@ -282,24 +201,24 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "CUSTOM:Staravoda"
     },
     "airColor": {
-      "value": -13382401,
+      "value": -154,
       "falpha": 0.0
     },
-    "canRespawnHere": false,
+    "canRespawnHere": true,
     "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "BED_EXPLODES",
-    "hasSkyLight": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.GLOWSTONE"
     },
     "portalParticles": {
-      "value": "SPIT"
+      "value": "WATER_BUBBLE"
     },
     "portalLuminance": 5,
     "portalSound": {

@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "javelin_launcher",
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "javelin_launcher",
