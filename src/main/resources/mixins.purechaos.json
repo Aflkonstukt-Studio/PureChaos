@@ -6,7 +6,8 @@
     "CustomTitleMixin",
     "CustomIconMixin",
     "BottleMixinMixin",
-    "KeyboardInputMixin"
+    "KeyboardInputMixin",
+    "EatWaterBucketMixin"
   ],
   "client": [],
   "minVersion": "0.8"

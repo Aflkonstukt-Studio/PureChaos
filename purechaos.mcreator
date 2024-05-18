@@ -7822,6 +7822,33 @@
           "src/main/java/xyz/aflkonstukt/purechaos/PackPriority.java"
         ]
       }
+    },
+    {
+      "name": "EatWaterBucket",
+      "type": "mixin",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "eat_water_bucket",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/EatWaterBucketMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "EdibleWaterBucket",
+      "type": "item",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edible_water_bucket",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/EdibleWaterBucketItem.java",
+          "src/main/resources/assets/purechaos/models/item/edible_water_bucket.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8193,11 +8220,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8393,6 +8420,7 @@
       "fluid.purechaos.gatorade": "Gatorade",
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
+      "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
       "key.purechaos.shit": "Shit",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
       "death.attack.fall": "%1$s kissed the floor",
@@ -8490,6 +8518,7 @@
       "subtitles.fu-k": "",
       "block.purechaos.pee": "Pee",
       "block.chaosmod.cum": "Cum",
+      "item.purechaos.edible_water_bucket": "Water Bucket",
       "item.chaosmod.water_cup": "Water Cup",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "biome.chaosmod.ohio": "Ohio",
@@ -8696,6 +8725,7 @@
       "death.attack.heart_attack_death": "%1$s got a heart attack",
       "block.chaosmod.ggggggg": "slipped and slipped",
       "block.purechaos.adidas_block": "Adidas Block",
+      "selectWorld.resource_load": "Reliving your past mistakes...",
       "block.purechaos.carbon_monoxide": "Carbon Monoxide",
       "item.purechaos.brazil": "Brazil Portal Igniter",
       "item.purechaos.kfce": "KFCE",
@@ -8818,6 +8848,7 @@
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "item.chaosmod.to": "CRNIDANIALBUM",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
+      "connect.joining": "Entering the dark descent into madness",
       "fluid.purechaos.carbon_monoxide": "Carbon Monoxide",
       "item.purechaos.beef": "Beef",
       "subtitles.wet_cupcakke": "",
