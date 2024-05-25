@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Fat",
-    "icon": "dorito_nacho.png",
+    "icon": "fat.png",
     "color": {
       "value": -3355648,
       "falpha": 0.0

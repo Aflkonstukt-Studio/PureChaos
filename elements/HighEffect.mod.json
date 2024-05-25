@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "High",
-    "icon": "meth.png",
+    "icon": "high.png",
     "color": {
       "value": -16737793,
       "falpha": 0.0

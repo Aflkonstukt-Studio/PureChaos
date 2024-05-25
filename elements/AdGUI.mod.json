@@ -13,8 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "ad_placeholder.png",
+          "image": "melatonin.png",
           "use1Xscale": true,
+          "displayCondition": {
+            "name": "ShowMelatoninADImage"
+          },
           "x": 90,
           "y": 57
         }
@@ -27,8 +30,20 @@
           "isUndecorated": false,
           "width": 30,
           "height": 20,
-          "x": 310,
+          "x": 316,
           "y": 56
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_gimme_it",
+          "text": "GIMME IT",
+          "isUndecorated": false,
+          "width": 66,
+          "height": 20,
+          "x": 185,
+          "y": 153
         }
       }
     ],

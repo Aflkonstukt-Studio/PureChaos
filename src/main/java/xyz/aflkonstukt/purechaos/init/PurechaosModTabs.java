@@ -197,5 +197,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.POLAND_ITEM.get());
 				tabData.accept(PurechaosModItems.YUGOSLAVIA_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.FISH_LAUNCHER.get());
+				tabData.accept(PurechaosModItems.FRANCIUM.get());
+				tabData.accept(PurechaosModItems.BEER.get());
 			}).withSearchBar().build());
 }

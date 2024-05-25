@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Blind",
-    "icon": "white_screen.png",
+    "icon": "bleached.png",
     "color": {
       "value": -1,
       "falpha": 0.0

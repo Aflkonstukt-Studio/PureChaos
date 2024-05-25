@@ -1,0 +1,26 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Fatherless",
+    "icon": "fatherless.png",
+    "color": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "CurseOfFatherlessEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "CurseOfFatherlessOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "CurseOfFatherlessEffectExpires"
+    }
+  }
+}

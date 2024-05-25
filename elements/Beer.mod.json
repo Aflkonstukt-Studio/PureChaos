@@ -12,22 +12,25 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "stackSize": 64,
-    "enchantability": 69,
+    "stackSize": 6,
+    "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": "CUSTOM:CobbleFluid"
+      "value": ""
     },
-    "destroyAnyBlock": true,
-    "immuneToFire": true,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 1.0,
+    "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "beer.",
+        "§8(might be a bit addictive)"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -36,7 +39,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "DrunkboionBeer"
+      "name": "BeerPlayerFinishesUsingItem"
     },
     "enableRanged": false,
     "shootConstantly": false,
@@ -47,10 +50,10 @@
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
-      "value": "CUSTOM:RadiationLiquid"
+      "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": true,
-    "animation": "drink"
+    "animation": "eat"
   }
 }

@@ -5416,22 +5416,6 @@
       }
     },
     {
-      "name": "AmbyssFeature",
-      "type": "feature",
-      "sortid": 292,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ambyss_feature",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/purechaos/neoforge/biome_modifier/ambyss_feature_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/ambyss_feature.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/ambyss_feature.json"
-        ],
-        "has_nbt_structure": true
-      }
-    },
-    {
       "name": "JosipRangeProjectile",
       "type": "projectile",
       "sortid": 314,
@@ -7145,7 +7129,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/DrunkEffectStartedappliedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -7849,6 +7838,329 @@
           "src/main/resources/assets/purechaos/models/item/edible_water_bucket.json"
         ]
       }
+    },
+    {
+      "name": "Suffocation",
+      "type": "mixin",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "suffocation",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/SuffocationMixin.java"
+        ]
+      }
+    },
+    {
+      "name": "CurseOfFatherless",
+      "type": "potioneffect",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_fatherless",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/potion/CurseOfFatherlessMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Depressed",
+      "type": "potioneffect",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depressed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/potion/DepressedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DepressedActiveTickCondition",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depressed_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DepressedActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurseOfFatherlessEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_fatherless_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CurseOfFatherlessEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurseOfFatherlessEffectExpires",
+      "type": "procedure",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_fatherless_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CurseOfFatherlessEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurseOfFatherlessOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_fatherless_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CurseOfFatherlessOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DepressedEffectExpires",
+      "type": "procedure",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depressed_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DepressedEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FuseEntities",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuse_entities",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/FuseEntitiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Francium",
+      "type": "item",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "francium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/francium.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/FranciumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FranciumItemInHandTick",
+      "type": "procedure",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "francium_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/FranciumItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeerPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beer_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BeerPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beer",
+      "type": "item",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/beer.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/BeerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GimmeADItem",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gimme_ad_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/GimmeADItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowMelatoninADImage",
+      "type": "procedure",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_melatonin_ad_image",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ShowMelatoninADImageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChunkGenerator",
+      "type": "mixin",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chunk_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/mixins/ChunkGeneratorMixin.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7914,6 +8226,30 @@
     },
     {
       "name": "boolets",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "last_depression",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "breakdown_chance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "depression_active",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "current_ad",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -8199,6 +8535,14 @@
       ],
       "category": "neutral",
       "subtitle": "I NEED MORE BOOLETS BIGGER WEAPONS"
+    },
+    {
+      "name": "burning_memory",
+      "files": [
+        "burning_memory"
+      ],
+      "category": "neutral",
+      "subtitle": "its just a burning memory - The Caretaker"
     }
   ],
   "tag_elements": {
@@ -8228,9 +8572,33 @@
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
+    "ITEMS:mod:hoes_above_wood": [
+      "CUSTOM:AdidasHoe",
+      "Items.STONE_HOE",
+      "Items.IRON_HOE",
+      "Items.GOLDEN_HOE",
+      "Items.DIAMOND_HOE",
+      "Items.NETHERITE_HOE"
+    ],
+    "ITEMS:mod:axes_above_wood": [
+      "CUSTOM:AdidasAxe",
+      "Items.STONE_AXE",
+      "Items.IRON_AXE",
+      "Items.GOLDEN_AXE",
+      "Items.DIAMOND_AXE",
+      "Items.NETHERITE_AXE"
+    ],
     "BIOMES:minecraft:has_structure/woodland_mansion": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
+    ],
+    "ITEMS:mod:shovels_above_wood": [
+      "CUSTOM:AdidasShovel",
+      "Items.STONE_SHOVEL",
+      "Items.IRON_SHOVEL",
+      "Items.GOLDEN_SHOVEL",
+      "Items.DIAMOND_SHOVEL",
+      "Items.NETHERITE_SHOVEL"
     ],
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:Ekesmasterbait",
@@ -8353,6 +8721,14 @@
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:Susus"
+    ],
+    "ITEMS:mod:pickaxes_above_wood": [
+      "CUSTOM:AdidasPickaxe",
+      "Items.STONE_PICKAXE",
+      "Items.IRON_PICKAXE",
+      "Items.GOLDEN_PICKAXE",
+      "Items.DIAMOND_PICKAXE",
+      "Items.NETHERITE_PICKAXE"
     ]
   },
   "language_map": {
@@ -8394,9 +8770,9 @@
       "entity.purechaos.josip": "JOSIP",
       "subtitles.smack_my_ass": "",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
-      "key.chaosmod.summonsus": "Summonsus",
-      "entity.chaosmod.big": "Big",
       "block.purechaos.plante": "Plante",
+      "entity.chaosmod.big": "Big",
+      "key.chaosmod.summonsus": "Summonsus",
       "gui.purechaos.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "entity.purechaos.murica": "\u0027Murica",
       "block.purechaos.pee_block": "Pee Block",
@@ -8471,7 +8847,7 @@
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.purechaos.spit_ball": "Spit Ball",
-      "effect.purechaos.radiation_poisioning": "Radiation Acute Sickness",
+      "effect.purechaos.radiation_poisioning": "ARS",
       "item.chaosmod.pickax": "Pickax",
       "item.chaosmod.spit_ball": "Spit Ball",
       "item.purechaos.xsord": "Xite Containment Blade",
@@ -8483,11 +8859,13 @@
       "item.purechaos.dream_spawn_egg": "Dream Spawn Egg",
       "death.fell.accident.generic": "%1$s didnt have slow falling",
       "item.chaosmod.fbi_spawn_egg": "FBI Spawn Egg",
+      "effect.purechaos.depressed": "Depressed",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
       "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
       "subtitles.gulp_gulp": "",
       "item.purechaos.infinite_fuel": "Infinite Fuel",
+      "subtitles.burning_memory": "its just a burning memory - The Caretaker",
       "block.purechaos.sus_block": "Sus Block",
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
@@ -8691,6 +9069,7 @@
       "item.minecraft.potion.effect.modified_ethanol": "Potion of Alchemically Modified Ethanol",
       "item.purechaos.nerd_spawn_egg": "Nerd Spawn Egg",
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
+      "gui.purechaos.ad_gui.button_gimme_it": "GIMME IT",
       "gamerule.doGraveCreation.description": "Should graves be spawned at the place of player death?",
       "item.chaosmod.cioao": "Ciao Portal Igniter",
       "block.chaosmod.adidas_block": "Adidas Block",
@@ -8735,6 +9114,7 @@
       "item.chaosmod.frying_pan": "Frying Pan",
       "key.chaosmod.k": "K",
       "item.purechaos.josip_pett_spawn_egg": "Josip GRR pet Spawn Egg",
+      "item.purechaos.francium": "Francium",
       "item.chaosmod.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "gui.chaosmod.sanity_overlay.label_sanity_varintegersanity": "",
       "effect.chaosmod.high_effect": "High",
@@ -8845,6 +9225,7 @@
       "block.purechaos.cobble_fluid": "Cobblestone Fluid",
       "item.chaosmod.use_in_emergencies": "Use In Emergencies",
       "selectWorld.warning.experimental.title": "We need your permission to make the world chaotic",
+      "item.purechaos.beer": "Beer",
       "item.chaosmod.turtle_armor_helmet": "Turtle Armor Helmet",
       "item.chaosmod.to": "CRNIDANIALBUM",
       "gamerule.doJBossSpawning": "Should JBoss Spawn",
@@ -8888,6 +9269,7 @@
       "subtitles.moreboolets": "I NEED MORE BOOLETS BIGGER WEAPONS",
       "block.purechaos.oil": "Crude Oil",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
+      "effect.purechaos.curse_of_fatherless": "Fatherless",
       "item.chaosmod.sus": "Sus Portal Birther",
       "gui.purechaos.vikki_vuk_gui.button_trash": "Trash",
       "entity.purechaos.dream": "Dream",

@@ -7,7 +7,7 @@
     "enableBody": true,
     "textureBody": "adidastracksuit",
     "enableLeggings": true,
-    "textureLeggings": "obamium",
+    "textureLeggings": "tracklegs",
     "enableBoots": true,
     "textureBoots": "adidastrekbuts",
     "creativeTab": {
@@ -58,6 +58,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 30,
     "damageValueHelmet": 2,
     "damageValueBody": 5,

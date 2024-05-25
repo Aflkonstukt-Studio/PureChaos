@@ -299,5 +299,14 @@
         "stream": false
       }
     ]
+  },
+  "burning_memory": {
+    "subtitle": "subtitles.burning_memory",
+    "sounds": [
+      {
+        "name": "purechaos:burning_memory",
+        "stream": false
+      }
+    ]
   }
 }

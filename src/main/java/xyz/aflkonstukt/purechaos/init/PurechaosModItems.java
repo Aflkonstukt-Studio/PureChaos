@@ -59,6 +59,7 @@ import xyz.aflkonstukt.purechaos.item.GrimaceShakeItem;
 import xyz.aflkonstukt.purechaos.item.GlowItem;
 import xyz.aflkonstukt.purechaos.item.GatoradeItem;
 import xyz.aflkonstukt.purechaos.item.FryingPanItem;
+import xyz.aflkonstukt.purechaos.item.FranciumItem;
 import xyz.aflkonstukt.purechaos.item.FortniteA1Item;
 import xyz.aflkonstukt.purechaos.item.FooditemItem;
 import xyz.aflkonstukt.purechaos.item.FoodItem3Item;
@@ -88,6 +89,7 @@ import xyz.aflkonstukt.purechaos.item.BrazilItem;
 import xyz.aflkonstukt.purechaos.item.BrakeFluidItem;
 import xyz.aflkonstukt.purechaos.item.BottleOfPissItem;
 import xyz.aflkonstukt.purechaos.item.BleachItem;
+import xyz.aflkonstukt.purechaos.item.BeerItem;
 import xyz.aflkonstukt.purechaos.item.BeengotItem;
 import xyz.aflkonstukt.purechaos.item.BeefItem;
 import xyz.aflkonstukt.purechaos.item.BeefArmorItem;
@@ -304,6 +306,8 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> YUGOSLAVIA_SPAWN_EGG = REGISTRY.register("yugoslavia_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.YUGOSLAVIA, -65485, -16776961, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> FISH_LAUNCHER = REGISTRY.register("fish_launcher", () -> new FishLauncherItem());
 	public static final DeferredHolder<Item, Item> EDIBLE_WATER_BUCKET = REGISTRY.register("edible_water_bucket", () -> new EdibleWaterBucketItem());
+	public static final DeferredHolder<Item, Item> FRANCIUM = REGISTRY.register("francium", () -> new FranciumItem());
+	public static final DeferredHolder<Item, Item> BEER = REGISTRY.register("beer", () -> new BeerItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

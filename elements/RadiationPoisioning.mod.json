@@ -2,8 +2,8 @@
   "_fv": 60,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Radiation Acute Sickness",
-    "icon": "map.png",
+    "effectName": "ARS",
+    "icon": "radiation.png",
     "color": {
       "value": -16711936,
       "falpha": 0.0

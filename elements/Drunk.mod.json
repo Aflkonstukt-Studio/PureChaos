@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Drunk",
-    "icon": "dementia.png",
+    "icon": "drunk.png",
     "color": {
       "value": -16711885,
       "falpha": 0.0

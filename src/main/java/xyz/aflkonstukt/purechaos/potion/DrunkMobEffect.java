@@ -14,6 +14,6 @@ public class DrunkMobEffect extends MobEffect {
 
 	@Override
 	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		DrunkEffectStartedappliedProcedure.execute();
+		DrunkEffectStartedappliedProcedure.execute(entity);
 	}
 }

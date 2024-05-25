@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.AdGUIMenu;
+import xyz.aflkonstukt.purechaos.procedures.ShowMelatoninADImageProcedure;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -21,6 +22,7 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 	private final int x, y, z;
 	private final Player entity;
 	Button button_x;
+	Button button_gimme_it;
 
 	public AdGUIScreen(AdGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,9 +52,9 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
-		guiGraphics.blit(new ResourceLocation("purechaos:textures/screens/ad_placeholder.png"), this.leftPos + 26, this.topPos + 27, 0, 0, 250, 128, 250, 128);
-
+		if (ShowMelatoninADImageProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("purechaos:textures/screens/melatonin.png"), this.leftPos + 26, this.topPos + 27, 0, 0, 256, 128, 256, 128);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -73,8 +75,12 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 	public void init() {
 		super.init();
 		button_x = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_x"), e -> {
-		}).bounds(this.leftPos + 246, this.topPos + 26, 30, 20).build();
+		}).bounds(this.leftPos + 252, this.topPos + 26, 30, 20).build();
 		guistate.put("button:button_x", button_x);
 		this.addRenderableWidget(button_x);
+		button_gimme_it = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_gimme_it"), e -> {
+		}).bounds(this.leftPos + 121, this.topPos + 123, 66, 20).build();
+		guistate.put("button:button_gimme_it", button_gimme_it);
+		this.addRenderableWidget(button_gimme_it);
 	}
 }

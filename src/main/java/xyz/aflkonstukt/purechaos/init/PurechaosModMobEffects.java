@@ -8,13 +8,17 @@ import xyz.aflkonstukt.purechaos.procedures.SickEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.HighEffectEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.FatEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DrunkEffectExpiresProcedure;
+import xyz.aflkonstukt.purechaos.procedures.DepressedEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DementiaEffectExpiresProcedure;
+import xyz.aflkonstukt.purechaos.procedures.CurseOfFatherlessEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.potion.SickMobEffect;
 import xyz.aflkonstukt.purechaos.potion.RadiationPoisioningMobEffect;
 import xyz.aflkonstukt.purechaos.potion.HighEffectMobEffect;
 import xyz.aflkonstukt.purechaos.potion.FatMobEffect;
 import xyz.aflkonstukt.purechaos.potion.DrunkMobEffect;
+import xyz.aflkonstukt.purechaos.potion.DepressedMobEffect;
 import xyz.aflkonstukt.purechaos.potion.DementiaMobEffect;
+import xyz.aflkonstukt.purechaos.potion.CurseOfFatherlessMobEffect;
 import xyz.aflkonstukt.purechaos.potion.BlindMobEffect;
 import xyz.aflkonstukt.purechaos.potion.BleachedMobEffect;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
@@ -41,6 +45,8 @@ public class PurechaosModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> SICK = REGISTRY.register("sick", () -> new SickMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DEMENTIA = REGISTRY.register("dementia", () -> new DementiaMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DRUNK = REGISTRY.register("drunk", () -> new DrunkMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> CURSE_OF_FATHERLESS = REGISTRY.register("curse_of_fatherless", () -> new CurseOfFatherlessMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> DEPRESSED = REGISTRY.register("depressed", () -> new DepressedMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -70,6 +76,10 @@ public class PurechaosModMobEffects {
 			DementiaEffectExpiresProcedure.execute(entity);
 		} else if (effect == DRUNK.get()) {
 			DrunkEffectExpiresProcedure.execute();
+		} else if (effect == CURSE_OF_FATHERLESS.get()) {
+			CurseOfFatherlessEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effect == DEPRESSED.get()) {
+			DepressedEffectExpiresProcedure.execute(entity);
 		}
 	}
 }

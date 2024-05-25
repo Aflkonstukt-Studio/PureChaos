@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Bleached Eyes",
-    "icon": "clorox.png",
+    "icon": "blind.png",
     "color": {
       "value": -1,
       "falpha": 0.0

@@ -7,7 +7,9 @@
     "CustomIconMixin",
     "BottleMixinMixin",
     "KeyboardInputMixin",
-    "EatWaterBucketMixin"
+    "EatWaterBucketMixin",
+    "SuffocationMixin",
+    "ChunkGeneratorMixin"
   ],
   "client": [],
   "minVersion": "0.8"

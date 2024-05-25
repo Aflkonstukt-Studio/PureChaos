@@ -4,8 +4,9 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
 public class RadiationPoisioningActiveTickConditionProcedure {
@@ -13,7 +14,7 @@ public class RadiationPoisioningActiveTickConditionProcedure {
 		if (entity == null)
 			return;
 		PurechaosMod.queueServerWork(20, () -> {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) 0.5);
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:radiation_death")))), (float) 0.5);
 		});
 	}
 }

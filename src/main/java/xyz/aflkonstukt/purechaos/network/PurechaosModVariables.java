@@ -71,6 +71,10 @@ public class PurechaosModVariables {
 				clone.heart_attack_chance = original.heart_attack_chance;
 				clone.dementia_chance = original.dementia_chance;
 				clone.boolets = original.boolets;
+				clone.last_depression = original.last_depression;
+				clone.breakdown_chance = original.breakdown_chance;
+				clone.depression_active = original.depression_active;
+				clone.current_ad = original.current_ad;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -86,6 +90,10 @@ public class PurechaosModVariables {
 		public double heart_attack_chance = 0;
 		public double dementia_chance = 0.0;
 		public double boolets = 0;
+		public double last_depression = 0;
+		public double breakdown_chance = 0;
+		public boolean depression_active = false;
+		public double current_ad = 0;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -99,6 +107,10 @@ public class PurechaosModVariables {
 			nbt.putDouble("heart_attack_chance", heart_attack_chance);
 			nbt.putDouble("dementia_chance", dementia_chance);
 			nbt.putDouble("boolets", boolets);
+			nbt.putDouble("last_depression", last_depression);
+			nbt.putDouble("breakdown_chance", breakdown_chance);
+			nbt.putBoolean("depression_active", depression_active);
+			nbt.putDouble("current_ad", current_ad);
 			return nbt;
 		}
 
@@ -113,6 +125,10 @@ public class PurechaosModVariables {
 			heart_attack_chance = nbt.getDouble("heart_attack_chance");
 			dementia_chance = nbt.getDouble("dementia_chance");
 			boolets = nbt.getDouble("boolets");
+			last_depression = nbt.getDouble("last_depression");
+			breakdown_chance = nbt.getDouble("breakdown_chance");
+			depression_active = nbt.getBoolean("depression_active");
+			current_ad = nbt.getDouble("current_ad");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
