@@ -400,6 +400,7 @@
   "entity.chaosmod.josip_pett": "Josip GRR pet",
   "item.chaosmod.pee_bucket": "Pee Bucket",
   "effect.chaosmod.dementia": "Dementia",
+  "jei.purechaos.found_in_loot": "This item is found in structure loots.\n\nThe rarity depends on your luck or well unluck, with the seed.",
   "painting.purechaos.shur_up.title": "Shur Up",
   "item.purechaos.bottle_of_piss": "Bottle Of Piss",
   "item.purechaos.milk_2_bucket": "Milk 2.0 Bucket",

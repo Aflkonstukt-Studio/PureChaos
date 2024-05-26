@@ -39,7 +39,7 @@
             "item": {
               "value": "CUSTOM:ComicallyLargeSpoon"
             },
-            "weight": 5,
+            "weight": 4,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -53,7 +53,7 @@
             "item": {
               "value": "CUSTOM:Spear"
             },
-            "weight": 5,
+            "weight": 4,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -67,7 +67,7 @@
             "item": {
               "value": "CUSTOM:Amugus.helmet"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -81,7 +81,7 @@
             "item": {
               "value": "CUSTOM:Amugus.body"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -95,7 +95,7 @@
             "item": {
               "value": "CUSTOM:Amugus.legs"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -109,7 +109,7 @@
             "item": {
               "value": "CUSTOM:Amugus.boots"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -137,7 +137,7 @@
             "item": {
               "value": "CUSTOM:UseInEmergencies"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -151,7 +151,7 @@
             "item": {
               "value": "CUSTOM:WaterCup"
             },
-            "weight": 4,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -165,7 +165,7 @@
             "item": {
               "value": "CUSTOM:GrimaceShake"
             },
-            "weight": 4,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -193,7 +193,7 @@
             "item": {
               "value": "CUSTOM:NokiaBlock"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -207,7 +207,7 @@
             "item": {
               "value": "CUSTOM:SSSR"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -235,21 +235,7 @@
             "item": {
               "value": "CUSTOM:Bleach"
             },
-            "weight": 2,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:TLGHD"
-            },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -263,7 +249,7 @@
             "item": {
               "value": "CUSTOM:PufferBalloon"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -277,7 +263,133 @@
             "item": {
               "value": "CUSTOM:AdidasBlock"
             },
-            "weight": 5,
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:FryingPan"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:FishLauncher"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:NetheritPickax"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:BrakeFluid"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:AmogusGun"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Zenith"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:JavelinLauncher"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Mercury"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Brazil"
+            },
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -300,7 +412,7 @@
             "item": {
               "value": "CUSTOM:FoodItem3"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -314,7 +426,7 @@
             "item": {
               "value": "CUSTOM:FoodItem2"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -328,7 +440,7 @@
             "item": {
               "value": "CUSTOM:Fooditem"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -342,7 +454,7 @@
             "item": {
               "value": "CUSTOM:WoodDimension"
             },
-            "weight": 3,
+            "weight": 1,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -356,7 +468,7 @@
             "item": {
               "value": "CUSTOM:Sus"
             },
-            "weight": 3,
+            "weight": 1,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -370,7 +482,7 @@
             "item": {
               "value": "CUSTOM:Staravoda.bucket"
             },
-            "weight": 3,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -384,7 +496,7 @@
             "item": {
               "value": "CUSTOM:Bullet"
             },
-            "weight": 10,
+            "weight": 7,
             "minCount": 15,
             "maxCount": 30,
             "minEnchantmentLevel": 0,
@@ -398,7 +510,7 @@
             "item": {
               "value": "CUSTOM:TesticleOnStick"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -426,7 +538,7 @@
             "item": {
               "value": "CUSTOM:HalfGoldenApple"
             },
-            "weight": 5,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

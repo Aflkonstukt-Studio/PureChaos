@@ -54,7 +54,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:comically_large_spoon",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
@@ -68,7 +68,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:spear",
-          "weight": 5,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
@@ -82,7 +82,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:amugus_helmet",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -96,7 +96,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:amugus_chestplate",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -110,7 +110,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:amugus_leggings",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -124,7 +124,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:amugus_boots",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -152,7 +152,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:use_in_emergencies",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -166,7 +166,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:water_cup",
-          "weight": 4,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -180,7 +180,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:grimace_shake",
-          "weight": 4,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -208,7 +208,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:nokia_block",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -222,7 +222,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:sssr",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -250,21 +250,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:bleach",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "purechaos:tlghd",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -278,7 +264,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:puffer_balloon",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -292,7 +278,133 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:adidas_block",
-          "weight": 5,
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:frying_pan",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:fish_launcher",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:netherit_pickax",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:brake_fluid",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:amogus_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:zenith",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:javelin_launcher",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:mercury",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "purechaos:brazil",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -318,7 +430,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:food_item_3",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -332,7 +444,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:food_item_2",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -346,7 +458,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:fooditem",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -360,7 +472,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:wood_dimension",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -374,7 +486,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:sus",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -388,7 +500,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:staravoda_bucket",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -402,7 +514,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:bullet",
-          "weight": 10,
+          "weight": 7,
           "functions": [
             {
               "function": "set_count",
@@ -416,7 +528,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:testicle_on_stick",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -444,7 +556,7 @@
         {
           "type": "minecraft:item",
           "name": "purechaos:half_golden_apple",
-          "weight": 5,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",

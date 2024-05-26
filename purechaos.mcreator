@@ -8258,6 +8258,36 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "FoundInLoot",
+      "type": "jeiinformation",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_in_loot",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HalfGoldenApplePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "half_golden_apple_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/HalfGoldenApplePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -9266,6 +9296,7 @@
       "entity.chaosmod.josip_pett": "Josip GRR pet",
       "item.chaosmod.pee_bucket": "Pee Bucket",
       "effect.chaosmod.dementia": "Dementia",
+      "jei.purechaos.found_in_loot": "This item is found in structure loots.\n\nThe rarity depends on your luck or well unluck, with the seed.",
       "painting.purechaos.shur_up.title": "Shur Up",
       "item.purechaos.bottle_of_piss": "Bottle Of Piss",
       "item.purechaos.milk_2_bucket": "Milk 2.0 Bucket",

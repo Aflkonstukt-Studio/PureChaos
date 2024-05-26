@@ -1,0 +1,154 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Fooditem"
+      },
+      {
+        "value": "CUSTOM:FoodItem2"
+      },
+      {
+        "value": "CUSTOM:PotatoSpuds"
+      },
+      {
+        "value": "CUSTOM:WoodDimension"
+      },
+      {
+        "value": "CUSTOM:FoodItem3"
+      },
+      {
+        "value": "CUSTOM:Death"
+      },
+      {
+        "value": "CUSTOM:ComicallyLargeSpoon"
+      },
+      {
+        "value": "CUSTOM:Spear"
+      },
+      {
+        "value": "CUSTOM:Sus"
+      },
+      {
+        "value": "CUSTOM:Staravoda.bucket"
+      },
+      {
+        "value": "CUSTOM:Amugus.helmet"
+      },
+      {
+        "value": "CUSTOM:Amugus.body"
+      },
+      {
+        "value": "CUSTOM:Amugus.legs"
+      },
+      {
+        "value": "CUSTOM:Amugus.boots"
+      },
+      {
+        "value": "CUSTOM:Brown"
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": "CUSTOM:UseInEmergencies"
+      },
+      {
+        "value": "CUSTOM:SSSR"
+      },
+      {
+        "value": "CUSTOM:Bleach"
+      },
+      {
+        "value": "CUSTOM:BrazilBlock"
+      },
+      {
+        "value": "CUSTOM:NokiaBlock"
+      },
+      {
+        "value": "CUSTOM:ImpostorKnife"
+      },
+      {
+        "value": "CUSTOM:AlmondWater"
+      },
+      {
+        "value": "CUSTOM:TotemOfDream"
+      },
+      {
+        "value": "CUSTOM:HalfGoldenApple"
+      },
+      {
+        "value": "CUSTOM:Beef"
+      },
+      {
+        "value": "CUSTOM:Baguette"
+      },
+      {
+        "value": "CUSTOM:AdidasBlock"
+      },
+      {
+        "value": "CUSTOM:Xite"
+      },
+      {
+        "value": "CUSTOM:DoritoNacho"
+      },
+      {
+        "value": "CUSTOM:KentuckyFriedChickenFries"
+      },
+      {
+        "value": "CUSTOM:KentuckyFriedChicken"
+      },
+      {
+        "value": "CUSTOM:CocaCola"
+      },
+      {
+        "value": "CUSTOM:SussySusStew"
+      },
+      {
+        "value": "CUSTOM:GrimaceShake"
+      },
+      {
+        "value": "CUSTOM:WaterCup"
+      },
+      {
+        "value": "CUSTOM:AK47"
+      },
+      {
+        "value": "CUSTOM:PufferBalloon"
+      },
+      {
+        "value": "CUSTOM:NetheritPickax"
+      },
+      {
+        "value": "CUSTOM:Brazil"
+      },
+      {
+        "value": "CUSTOM:Zenith"
+      },
+      {
+        "value": "CUSTOM:Mercury"
+      },
+      {
+        "value": "CUSTOM:FryingPan"
+      },
+      {
+        "value": "CUSTOM:AmogusGun"
+      },
+      {
+        "value": "CUSTOM:JavelinLauncher"
+      },
+      {
+        "value": "CUSTOM:BrakeFluid"
+      },
+      {
+        "value": "CUSTOM:FishLauncher"
+      }
+    ],
+    "information": [
+      "This item is found in structure loots.",
+      "",
+      "The rarity depends on your luck or well unluck, with the seed."
+    ]
+  }
+}
