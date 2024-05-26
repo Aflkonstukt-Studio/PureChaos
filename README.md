@@ -22,3 +22,5 @@ https://mcreator.net/plugin/97468/remote-workspaces-support-20232 (if you want t
 https://mcreator.net/plugin/106411/pehkui
 
 https://mcreator.net/plugin/93491/custom-fog-plugin-forge-1182-1192
+
+https://mcreator.net/plugin/103347/just-enough-recipes
