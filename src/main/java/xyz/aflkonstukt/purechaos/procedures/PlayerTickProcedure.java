@@ -150,11 +150,19 @@ public class PlayerTickProcedure {
 			SendToBackroomsProcedure.execute(x, z, entity);
 		} else {
 			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
-				if (Mth.nextDouble(RandomSource.create(), 1, 3000) >= 2990) {
-					{
-						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-						_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
-						_vars.syncPlayerVariables(entity);
+				if (Mth.nextDouble(RandomSource.create(), 1, 6000) >= 5995) {
+					if (Mth.nextDouble(RandomSource.create(), 1, 10) <= 2) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity + Mth.nextDouble(RandomSource.create(), 1, 4);
+							_vars.syncPlayerVariables(entity);
+						}
+					} else {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
+							_vars.syncPlayerVariables(entity);
+						}
 					}
 				}
 			}
@@ -209,13 +217,13 @@ public class PlayerTickProcedure {
 			}
 		}
 		if (world.isClientSide() && entity instanceof Player) {
-			if (PurechaosModVariables.invert_controls && !(entity instanceof LivingEntity _livEnt32 && _livEnt32.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+			if (PurechaosModVariables.invert_controls && !(entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 				PurechaosModVariables.invert_controls = false;
-			} else if (!PurechaosModVariables.invert_controls && entity instanceof LivingEntity _livEnt33 && _livEnt33.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+			} else if (!PurechaosModVariables.invert_controls && entity instanceof LivingEntity _livEnt35 && _livEnt35.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 				PurechaosModVariables.invert_controls = true;
 			}
 			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
-				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt37 && _livEnt37.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
+				if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt39 && _livEnt39.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/desaturate.json") && !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
@@ -224,15 +232,15 @@ public class PlayerTickProcedure {
 				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/ntsc.json")
 						&& !((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
-				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/art.json") && !(entity instanceof LivingEntity _livEnt48 && _livEnt48.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+				} else if (Minecraft.getInstance().gameRenderer.currentEffect().getName().equals("minecraft:shaders/post/art.json") && !(entity instanceof LivingEntity _livEnt50 && _livEnt50.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				}
 			} else {
 				if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
-				} else if (entity instanceof LivingEntity _livEnt54 && _livEnt54.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
+				} else if (entity instanceof LivingEntity _livEnt56 && _livEnt56.hasEffect(PurechaosModMobEffects.HIGH_EFFECT.get())) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/meth.json"));
-				} else if (entity instanceof LivingEntity _livEnt56 && _livEnt56.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+				} else if (entity instanceof LivingEntity _livEnt58 && _livEnt58.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/art.json"));
 				}
 			}

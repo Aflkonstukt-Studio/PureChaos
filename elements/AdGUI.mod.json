@@ -28,6 +28,9 @@
           "name": "button_x",
           "text": "X",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CloseAD"
+          },
           "width": 30,
           "height": 20,
           "x": 316,
@@ -40,6 +43,9 @@
           "name": "button_gimme_it",
           "text": "GIMME IT",
           "isUndecorated": false,
+          "onClick": {
+            "name": "GimmeADItem"
+          },
           "width": 66,
           "height": 20,
           "x": 185,

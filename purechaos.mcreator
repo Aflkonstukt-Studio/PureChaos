@@ -7705,7 +7705,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/gui/AdGUIScreen.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/AdGUIMenu.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/AdGUIMenu.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/network/AdGUIButtonMessage.java"
         ]
       }
     },
@@ -8280,6 +8281,25 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/HalfGoldenApplePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloseAD",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_ad",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CloseADProcedure.java"
         ],
         "dependencies": [
           {

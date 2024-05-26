@@ -2,6 +2,9 @@ package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.AdGUIMenu;
 import xyz.aflkonstukt.purechaos.procedures.ShowMelatoninADImageProcedure;
+import xyz.aflkonstukt.purechaos.network.AdGUIButtonMessage;
+
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -75,10 +78,18 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 	public void init() {
 		super.init();
 		button_x = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_x"), e -> {
+			if (true) {
+				PacketDistributor.SERVER.noArg().send(new AdGUIButtonMessage(0, x, y, z));
+				AdGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 252, this.topPos + 26, 30, 20).build();
 		guistate.put("button:button_x", button_x);
 		this.addRenderableWidget(button_x);
 		button_gimme_it = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_gimme_it"), e -> {
+			if (true) {
+				PacketDistributor.SERVER.noArg().send(new AdGUIButtonMessage(1, x, y, z));
+				AdGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + 121, this.topPos + 123, 66, 20).build();
 		guistate.put("button:button_gimme_it", button_gimme_it);
 		this.addRenderableWidget(button_gimme_it);
