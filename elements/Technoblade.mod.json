@@ -40,7 +40,7 @@
     },
     "isBoss": true,
     "bossBarColor": "PINK",
-    "bossBarType": "PROGRESS",
+    "bossBarType": "NOTCHED_10",
     "equipmentMainHand": {
       "value": ""
     },

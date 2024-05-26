@@ -47,7 +47,6 @@ public class DrunkEffectStartedappliedProcedure {
 		} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).ada_peu >= 5) {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:alcohol_death")))), 9999);
 		} else {
-			PurechaosModVariables.invert_controls = true;
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.ada_peu = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).ada_peu + 1;
