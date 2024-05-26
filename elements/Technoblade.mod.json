@@ -38,7 +38,7 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
-    "isBoss": true,
+    "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "NOTCHED_10",
     "equipmentMainHand": {
