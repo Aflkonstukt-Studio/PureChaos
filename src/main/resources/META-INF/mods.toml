@@ -42,6 +42,12 @@ description="Add a little bit of, spice."
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.purechaos]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 [[mixins]]

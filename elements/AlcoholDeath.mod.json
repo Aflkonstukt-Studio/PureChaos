@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 100.0,
+    "scaling": "always",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s drank himself to death",
+    "itemDeathMessage": "%1$s drank himself to death",
+    "playerDeathMessage": "%1$s drank himself to death while trying to escape %2$s"
+  }
+}

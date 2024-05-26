@@ -43,5 +43,5 @@ public class PurechaosModPotions {
 					new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0, false, true)));
 	public static final DeferredHolder<Potion, Potion> MODIFIED_ETHANOL = REGISTRY.register("modified_ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, false),
 			new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, true)));
-	public static final DeferredHolder<Potion, Potion> ETHANOL = REGISTRY.register("ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.DRUNK.get(), 3600, 0, false, true)));
+	public static final DeferredHolder<Potion, Potion> ETHANOL = REGISTRY.register("ethanol", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 3600, 2, false, true)));
 }

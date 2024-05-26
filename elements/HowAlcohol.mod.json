@@ -1,0 +1,20 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Beer"
+      },
+      {
+        "value": "CUSTOM:AppleIngot"
+      },
+      {
+        "value": "CUSTOM:BrakeFluid"
+      }
+    ],
+    "information": [
+      "To make beer, start by placing a water bottle at the bottom of a brewing stand and brake fluid at the top. This will produce AME, which is not safe to drink. To purify the AME, add an apple ingot to it in the same brewing stand, which will result in Ethanol. However, Ethanol is 100% ethanol and also not safe to drink. To dilute it, add 1 almond water to the Ethanol in the brewing stand, and you will get beer!"
+    ]
+  }
+}

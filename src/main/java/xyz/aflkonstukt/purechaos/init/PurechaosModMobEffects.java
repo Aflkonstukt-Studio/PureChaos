@@ -67,7 +67,7 @@ public class PurechaosModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		MobEffect effect = effectInstance.getEffect();
 		if (effect == HIGH_EFFECT.get()) {
-			HighEffectEffectExpiresProcedure.execute(entity);
+			HighEffectEffectExpiresProcedure.execute(entity.level(), entity);
 		} else if (effect == FAT.get()) {
 			FatEffectExpiresProcedure.execute(entity);
 		} else if (effect == SICK.get()) {

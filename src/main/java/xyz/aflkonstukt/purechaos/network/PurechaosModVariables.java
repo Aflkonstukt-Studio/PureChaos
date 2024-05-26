@@ -61,6 +61,8 @@ public class PurechaosModVariables {
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
+			clone.alcohol_addiction = original.alcohol_addiction;
+			clone.meth_addiction = original.meth_addiction;
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
@@ -75,6 +77,10 @@ public class PurechaosModVariables {
 				clone.breakdown_chance = original.breakdown_chance;
 				clone.depression_active = original.depression_active;
 				clone.current_ad = original.current_ad;
+				clone.amount_of_alcohol_drank = original.amount_of_alcohol_drank;
+				clone.amount_of_meth_used = original.amount_of_meth_used;
+				clone.mua_peu = original.mua_peu;
+				clone.ada_peu = original.ada_peu;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -94,6 +100,12 @@ public class PurechaosModVariables {
 		public double breakdown_chance = 0;
 		public boolean depression_active = false;
 		public double current_ad = 0;
+		public double alcohol_addiction = -1.0;
+		public double meth_addiction = -1.0;
+		public double amount_of_alcohol_drank = 0;
+		public double amount_of_meth_used = 0;
+		public double mua_peu = 0;
+		public double ada_peu = 0;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -111,6 +123,12 @@ public class PurechaosModVariables {
 			nbt.putDouble("breakdown_chance", breakdown_chance);
 			nbt.putBoolean("depression_active", depression_active);
 			nbt.putDouble("current_ad", current_ad);
+			nbt.putDouble("alcohol_addiction", alcohol_addiction);
+			nbt.putDouble("meth_addiction", meth_addiction);
+			nbt.putDouble("amount_of_alcohol_drank", amount_of_alcohol_drank);
+			nbt.putDouble("amount_of_meth_used", amount_of_meth_used);
+			nbt.putDouble("mua_peu", mua_peu);
+			nbt.putDouble("ada_peu", ada_peu);
 			return nbt;
 		}
 
@@ -129,6 +147,12 @@ public class PurechaosModVariables {
 			breakdown_chance = nbt.getDouble("breakdown_chance");
 			depression_active = nbt.getBoolean("depression_active");
 			current_ad = nbt.getDouble("current_ad");
+			alcohol_addiction = nbt.getDouble("alcohol_addiction");
+			meth_addiction = nbt.getDouble("meth_addiction");
+			amount_of_alcohol_drank = nbt.getDouble("amount_of_alcohol_drank");
+			amount_of_meth_used = nbt.getDouble("amount_of_meth_used");
+			mua_peu = nbt.getDouble("mua_peu");
+			ada_peu = nbt.getDouble("ada_peu");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

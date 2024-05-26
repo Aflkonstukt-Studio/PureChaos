@@ -1,0 +1,17 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:Oil.bucket"
+      },
+      {
+        "value": "CUSTOM:AK47"
+      }
+    ],
+    "information": [
+      "To make oil, you need to in a brewing stand put an AK47 into a staravoda bucket!"
+    ]
+  }
+}

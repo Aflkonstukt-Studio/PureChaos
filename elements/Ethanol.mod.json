@@ -9,10 +9,10 @@
     "effects": [
       {
         "effect": {
-          "value": "CUSTOM:Drunk"
+          "value": "WITHER"
         },
         "duration": 3600,
-        "amplifier": 0,
+        "amplifier": 2,
         "ambient": false,
         "showParticles": true
       }

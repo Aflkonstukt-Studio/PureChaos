@@ -1,0 +1,6 @@
+{
+  "exhaustion": 100,
+  "message_id": "addiction_death",
+  "scaling": "always",
+  "effects": "burning"
+}
