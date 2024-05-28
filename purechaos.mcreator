@@ -8290,6 +8290,48 @@
           }
         ]
       }
+    },
+    {
+      "name": "JosipdvatockanulaEntityDies",
+      "type": "procedure",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "josipdvatockanula_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/JosipdvatockanulaEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FoundInJosipBoss",
+      "type": "jeiinformation",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_in_josip_boss",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -9312,6 +9354,7 @@
       "item.minecraft.golden_axe": "Golden Chop Chop Stick",
       "entity.purechaos.spongebob_boss": "Spongebob Boss",
       "entity.purechaos.stalin": "Stalin",
+      "jei.purechaos.found_in_josip_boss": "This item can be obtained by killing the josip boss.",
       "entity.chaosmod.walter_wight": "Walter White",
       "entity.purechaos.josip_pett": "Josip GRR pet",
       "item.purechaos.to": "CRNIDANIALBUM",

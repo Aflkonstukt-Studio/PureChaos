@@ -39,5 +39,11 @@ public class PurechaosModJeiInformation implements IModPlugin {
 						new ItemStack(PurechaosModItems.BRAZIL.get()), new ItemStack(PurechaosModItems.ZENITH.get()), new ItemStack(PurechaosModItems.MERCURY.get()), new ItemStack(PurechaosModItems.FRYING_PAN.get()),
 						new ItemStack(PurechaosModItems.AMOGUS_GUN.get()), new ItemStack(PurechaosModItems.JAVELIN_LAUNCHER.get()), new ItemStack(PurechaosModItems.BRAKE_FLUID.get()), new ItemStack(PurechaosModItems.FISH_LAUNCHER.get())),
 				VanillaTypes.ITEM_STACK, Component.translatable("jei.purechaos.found_in_loot"));
+		registration.addIngredientInfo(List.of(new ItemStack(PurechaosModItems.SASI_AMANGAS.get()), new ItemStack(PurechaosModItems.TESTICLE_ON_STICK.get()), new ItemStack(PurechaosModItems.SSSR.get()),
+				new ItemStack(PurechaosModBlocks.DEPRESSION_BLOCK.get()), new ItemStack(PurechaosModItems.IMPOSTOR_KNIFE.get()), new ItemStack(PurechaosModItems.TOTEM_OF_DREAM.get()), new ItemStack(PurechaosModItems.OBAMIUM.get()),
+				new ItemStack(PurechaosModItems.BEENGOT.get()), new ItemStack(PurechaosModBlocks.ADIDAS_BLOCK.get()), new ItemStack(PurechaosModItems.APPLE_INGOT.get()), new ItemStack(PurechaosModItems.AMOGUS_GUN.get()),
+				new ItemStack(PurechaosModItems.PUFFER_BALLOON.get()), new ItemStack(PurechaosModItems.BRAKE_FLUID.get()), new ItemStack(PurechaosModItems.FISH_LAUNCHER.get()), new ItemStack(PurechaosModItems.FRANCIUM.get()),
+				new ItemStack(PurechaosModItems.BEER.get()), new ItemStack(PurechaosModItems.FRYING_PAN.get()), new ItemStack(PurechaosModItems.COMMUNISM_ORB.get())), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.purechaos.found_in_josip_boss"));
 	}
 }

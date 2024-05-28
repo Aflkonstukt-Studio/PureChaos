@@ -42,7 +42,7 @@ public class VikkiVukGuiMenu extends AbstractContainerMenu implements Supplier<M
 		super(PurechaosModMenus.VIKKI_VUK_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(9);
+		this.internal = new ItemStackHandler(19);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -82,32 +82,59 @@ public class VikkiVukGuiMenu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 6, 29) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 28) {
 			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 24, 29) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 28) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 42, 29) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 28) {
 			private final int slot = 2;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 60, 29) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 28) {
 			private final int slot = 3;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 78, 29) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 28) {
 			private final int slot = 4;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 96, 29) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 28) {
 			private final int slot = 5;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 114, 29) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 28) {
 			private final int slot = 6;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 132, 29) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 28) {
 			private final int slot = 7;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 150, 29) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 28) {
 			private final int slot = 8;
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 7, 10) {
+			private final int slot = 10;
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 25, 10) {
+			private final int slot = 11;
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 43, 10) {
+			private final int slot = 12;
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 61, 10) {
+			private final int slot = 13;
+		}));
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 79, 10) {
+			private final int slot = 14;
+		}));
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 97, 10) {
+			private final int slot = 15;
+		}));
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 115, 10) {
+			private final int slot = 16;
+		}));
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 133, 10) {
+			private final int slot = 17;
+		}));
+		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 151, 10) {
+			private final int slot = 18;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -136,16 +163,16 @@ public class VikkiVukGuiMenu extends AbstractContainerMenu implements Supplier<M
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 9) {
-				if (!this.moveItemStackTo(itemstack1, 9, this.slots.size(), true))
+			if (index < 18) {
+				if (!this.moveItemStackTo(itemstack1, 18, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 9, false)) {
-				if (index < 9 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 9 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 18, false)) {
+				if (index < 18 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 18 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 9, 9 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 18, 18 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

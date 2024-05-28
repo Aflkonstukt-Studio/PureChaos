@@ -1,0 +1,65 @@
+{
+  "_fv": 60,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SasiAmangas"
+      },
+      {
+        "value": "CUSTOM:TesticleOnStick"
+      },
+      {
+        "value": "CUSTOM:SSSR"
+      },
+      {
+        "value": "CUSTOM:DepressionBlock"
+      },
+      {
+        "value": "CUSTOM:ImpostorKnife"
+      },
+      {
+        "value": "CUSTOM:TotemOfDream"
+      },
+      {
+        "value": "CUSTOM:Obamium"
+      },
+      {
+        "value": "CUSTOM:Beengot"
+      },
+      {
+        "value": "CUSTOM:AdidasBlock"
+      },
+      {
+        "value": "CUSTOM:AppleIngot"
+      },
+      {
+        "value": "CUSTOM:AmogusGun"
+      },
+      {
+        "value": "CUSTOM:PufferBalloon"
+      },
+      {
+        "value": "CUSTOM:BrakeFluid"
+      },
+      {
+        "value": "CUSTOM:FishLauncher"
+      },
+      {
+        "value": "CUSTOM:Francium"
+      },
+      {
+        "value": "CUSTOM:Beer"
+      },
+      {
+        "value": "CUSTOM:FryingPan"
+      },
+      {
+        "value": "CUSTOM:CommunismOrb"
+      }
+    ],
+    "information": [
+      "This item can be obtained by killing the josip boss."
+    ]
+  }
+}

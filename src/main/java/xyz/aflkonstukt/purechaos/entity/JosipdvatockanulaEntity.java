@@ -2,6 +2,7 @@
 package xyz.aflkonstukt.purechaos.entity;
 
 import xyz.aflkonstukt.purechaos.procedures.JosipdvatockanulaNaturalEntitySpawningConditionProcedure;
+import xyz.aflkonstukt.purechaos.procedures.JosipdvatockanulaEntityDiesProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
@@ -146,6 +147,12 @@ public class JosipdvatockanulaEntity extends Monster {
 	@Override
 	public boolean fireImmune() {
 		return true;
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		JosipdvatockanulaEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

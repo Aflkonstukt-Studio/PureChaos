@@ -48,5 +48,41 @@ public class TrashitemsProcedure {
 			((Slot) _slots.get(8)).set(ItemStack.EMPTY);
 			_player.containerMenu.broadcastChanges();
 		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(10)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(11)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(12)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(13)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(14)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(15)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(16)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(17)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(18)).set(ItemStack.EMPTY);
+			_player.containerMenu.broadcastChanges();
+		}
 	}
 }

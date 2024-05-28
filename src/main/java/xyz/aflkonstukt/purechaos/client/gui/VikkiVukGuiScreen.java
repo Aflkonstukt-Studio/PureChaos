@@ -65,7 +65,6 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.purechaos.vikki_vuk_gui.label_vstorage"), 65, 10, -12829636, false);
 	}
 
 	@Override
@@ -76,7 +75,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 				PacketDistributor.SERVER.noArg().send(new VikkiVukGuiButtonMessage(0, x, y, z));
 				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 68, this.topPos + 53, 51, 20).build();
+		}).bounds(this.leftPos + 61, this.topPos + 53, 51, 20).build();
 		guistate.put("button:button_trash", button_trash);
 		this.addRenderableWidget(button_trash);
 	}
