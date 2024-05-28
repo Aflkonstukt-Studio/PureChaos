@@ -1,6 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.entity;
 
+import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
@@ -39,7 +40,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -179,8 +179,12 @@ public class PensiveCubeEntity extends Wolf implements GeoEntity {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(PurechaosModEntities.PENSIVE_CUBE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
+		SpawnPlacements.register(PurechaosModEntities.PENSIVE_CUBE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

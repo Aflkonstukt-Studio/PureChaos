@@ -9,7 +9,8 @@
     "KeyboardInputMixin",
     "EatWaterBucketMixin",
     "SuffocationMixin",
-    "ChunkGeneratorMixin"
+    "ChunkGeneratorMixin",
+    "MobCapMixin"
   ],
   "client": [],
   "minVersion": "0.8"

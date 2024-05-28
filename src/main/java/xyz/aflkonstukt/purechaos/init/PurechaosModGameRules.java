@@ -17,6 +17,7 @@ public class PurechaosModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> VEGANISM;
 	public static GameRules.Key<GameRules.BooleanValue> DISABLE_CAPTCHA;
 	public static GameRules.Key<GameRules.BooleanValue> ADBLOCKER;
+	public static GameRules.Key<GameRules.IntegerValue> MOB_CAP_MULTIPLIER;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -25,5 +26,6 @@ public class PurechaosModGameRules {
 		VEGANISM = GameRules.register("veganism", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 		DISABLE_CAPTCHA = GameRules.register("disableCaptcha", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		ADBLOCKER = GameRules.register("adblocker", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(15));
 	}
 }

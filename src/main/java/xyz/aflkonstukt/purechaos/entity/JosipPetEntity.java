@@ -1,6 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.entity;
 
+import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
@@ -43,7 +44,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -226,8 +226,12 @@ public class JosipPetEntity extends TamableAnimal implements RangedAttackMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(PurechaosModEntities.JOSIP_PET.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
+		SpawnPlacements.register(PurechaosModEntities.JOSIP_PET.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

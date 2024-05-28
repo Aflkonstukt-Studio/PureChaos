@@ -31,6 +31,7 @@ public class PurechaosModVariables {
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
 	public static boolean invert_controls = false;
 	public static boolean show_sanity_label = false;
+	public static double mob_cap_multiplier = 15.0;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

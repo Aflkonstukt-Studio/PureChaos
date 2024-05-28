@@ -141,6 +141,9 @@
     "height": 1.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "SurfaceEntitySpawningCondition"
+    },
     "spawningProbability": 40,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 4,

@@ -190,7 +190,7 @@ public class SpongebobBossEntity extends Monster {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world);
+			return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
 		});
 	}
 
