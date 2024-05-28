@@ -103,7 +103,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.CIOAO.get());
 				tabData.accept(PurechaosModItems.RADIATION_LIQUID_BUCKET.get());
 				tabData.accept(PurechaosModItems.RICK_ASTLEY_SPAWN_EGG.get());
-				tabData.accept(PurechaosModItems.FORTNITE_A_1.get());
 				tabData.accept(PurechaosModItems.BLEACH.get());
 				tabData.accept(PurechaosModBlocks.GREENGISCREENDA.get().asItem());
 				tabData.accept(PurechaosModBlocks.BRAZIL_BLOCK.get().asItem());

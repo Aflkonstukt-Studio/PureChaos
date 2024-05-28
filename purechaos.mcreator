@@ -2991,20 +2991,6 @@
       }
     },
     {
-      "name": "FortniteA1",
-      "type": "item",
-      "sortid": 131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fortnite_a_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/purechaos/models/item/fortnite_a_1.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/FortniteA1Item.java"
-        ]
-      }
-    },
-    {
       "name": "Greengiscreenda",
       "type": "block",
       "sortid": 132,
@@ -9010,7 +8996,6 @@
       "block.chaosmod.brazil_block": "Brazil Block",
       "death.attack.addiction_death": "%1$s suffered from withdrawal",
       "item.purechaos.potato_spuds": "Potato Spuds",
-      "item.purechaos.fortnite_a_1": "Fortnite A 1",
       "gamerule.disableCaptcha.description": "This gamerule just disables the annoying captcha",
       "item.purechaos.puffer_balloon": "Puffer on a String",
       "painting.purechaos.mc_kisser.author": "boykisser",

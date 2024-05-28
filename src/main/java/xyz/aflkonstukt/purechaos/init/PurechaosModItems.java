@@ -60,7 +60,6 @@ import xyz.aflkonstukt.purechaos.item.GlowItem;
 import xyz.aflkonstukt.purechaos.item.GatoradeItem;
 import xyz.aflkonstukt.purechaos.item.FryingPanItem;
 import xyz.aflkonstukt.purechaos.item.FranciumItem;
-import xyz.aflkonstukt.purechaos.item.FortniteA1Item;
 import xyz.aflkonstukt.purechaos.item.FooditemItem;
 import xyz.aflkonstukt.purechaos.item.FoodItem3Item;
 import xyz.aflkonstukt.purechaos.item.FoodItem2Item;
@@ -224,7 +223,6 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> IGLA = REGISTRY.register("igla", () -> new IglaItem());
 	public static final DeferredHolder<Item, Item> CIOAO = REGISTRY.register("cioao", () -> new CioaoItem());
 	public static final DeferredHolder<Item, Item> TO = REGISTRY.register("to", () -> new TOItem());
-	public static final DeferredHolder<Item, Item> FORTNITE_A_1 = REGISTRY.register("fortnite_a_1", () -> new FortniteA1Item());
 	public static final DeferredHolder<Item, Item> GREENGISCREENDA = block(PurechaosModBlocks.GREENGISCREENDA);
 	public static final DeferredHolder<Item, Item> FASTTOPASS = REGISTRY.register("fasttopass", () -> new FASTTOPASSItem());
 	public static final DeferredHolder<Item, Item> STROATER_SPAWN_EGG = REGISTRY.register("stroater_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.STROATER, -6724096, -16777216, new Item.Properties()));
