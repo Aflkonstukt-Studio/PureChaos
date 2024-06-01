@@ -35,6 +35,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "EdibleWaterBucketPlayerFinishesUsingItem"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

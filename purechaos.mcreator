@@ -1689,9 +1689,6 @@
       "locked_code": false,
       "registry_name": "one_on_key_pressed",
       "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/OneOnKeyPressedProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "x",
@@ -7215,12 +7212,9 @@
       "type": "procedure",
       "sortid": 426,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "item_tooltips",
       "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ItemTooltipsProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -8317,6 +8311,25 @@
       "registry_name": "found_in_josip_boss",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "EdibleWaterBucketPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edible_water_bucket_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EdibleWaterBucketPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     }
   ],

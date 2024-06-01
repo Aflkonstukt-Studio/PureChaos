@@ -59,7 +59,7 @@ public class FuseEntitiesProcedure {
 								(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(1)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ())))
 						.findFirst().orElse(null);
 				if (!(found_entity == entity) && (BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString()).equals(BuiltInRegistries.ENTITY_TYPE.getKey(found_entity.getType()).toString())) {
-					if (!(ScaleTypes.HEIGHT.getScaleData(found_entity).getTargetScale() >= 20 || ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale() >= 20)) {
+					if (!(ScaleTypes.HEIGHT.getScaleData(found_entity).getTargetScale() >= 10 || ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale() >= 10)) {
 						if (ScaleTypes.HEIGHT.getScaleData(found_entity).getTargetScale() > ScaleTypes.HEIGHT.getScaleData(entity).getTargetScale()) {
 							if (!entity.level().isClientSide())
 								entity.discard();

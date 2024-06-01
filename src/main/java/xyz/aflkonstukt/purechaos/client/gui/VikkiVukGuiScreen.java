@@ -75,7 +75,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 				PacketDistributor.SERVER.noArg().send(new VikkiVukGuiButtonMessage(0, x, y, z));
 				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 61, this.topPos + 53, 51, 20).build();
+		}).bounds(this.leftPos + 62, this.topPos + 52, 51, 20).build();
 		guistate.put("button:button_trash", button_trash);
 		this.addRenderableWidget(button_trash);
 	}
