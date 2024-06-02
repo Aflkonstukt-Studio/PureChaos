@@ -5,8 +5,8 @@
     "toolType": "Sword",
     "renderType": 1,
     "blockingRenderType": 0,
-    "texture": "keten",
-    "customModelName": "katana:default",
+    "texture": "xiteblade",
+    "customModelName": "xiteblade:default",
     "blockingModelName": "Normal blocking",
     "name": "Xite Containment Blade",
     "specialInformation": {
@@ -25,6 +25,9 @@
     "damageVsEntity": 5.0,
     "usageCount": 69420,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Blocks.OBSIDIAN"

@@ -2,7 +2,7 @@
 package xyz.aflkonstukt.purechaos.network;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
-import xyz.aflkonstukt.purechaos.procedures.ValidateCaptchaProcedure;
+import xyz.aflkonstukt.purechaos.procedures.ConfirmCaptchaProcedure;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.neoforged.neoforge.network.handling.PlayPayloadContext;
@@ -66,7 +66,7 @@ public record CaptchaGUIButtonMessage(int buttonID, int x, int y, int z) impleme
 			return;
 		if (buttonID == 0) {
 
-			ValidateCaptchaProcedure.execute(world, entity, guistate);
+			ConfirmCaptchaProcedure.execute(world, entity, guistate);
 		}
 	}
 

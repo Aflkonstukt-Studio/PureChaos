@@ -1,8 +1,10 @@
 package xyz.aflkonstukt.purechaos.mixins;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
 import net.minecraft.client.player.Input;
 import net.minecraft.client.player.KeyboardInput;
+import net.minecraft.world.entity.Entity;
 import org.spongepowered.asm.mixin.Mixin;
 
 import org.spongepowered.asm.mixin.Unique;
@@ -29,17 +31,21 @@ public abstract class KeyboardInputMixin extends Input {
 
     @Inject(method = "tick", at = @At("HEAD"), cancellable = true)
     private void tick(boolean p_234118_, float p_234119_, CallbackInfo ci) {
-         if (PurechaosModVariables.invert_controls) {
-             this.up = this.options.keyDown.isDown();
-             this.down = this.options.keyUp.isDown();
-             this.left = this.options.keyRight.isDown();
-             this.right = this.options.keyLeft.isDown();
-         } else {
-             this.up = this.options.keyUp.isDown();
-             this.down = this.options.keyDown.isDown();
-             this.left = this.options.keyLeft.isDown();
-             this.right = this.options.keyRight.isDown();
-         }
+        Entity player = Minecraft.getInstance().player;
+        if (player == null)
+            return;
+
+        if (player.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls) {
+            this.up = this.options.keyDown.isDown();
+            this.down = this.options.keyUp.isDown();
+            this.left = this.options.keyRight.isDown();
+            this.right = this.options.keyLeft.isDown();
+        } else {
+            this.up = this.options.keyUp.isDown();
+            this.down = this.options.keyDown.isDown();
+            this.left = this.options.keyLeft.isDown();
+            this.right = this.options.keyRight.isDown();
+        }
 
         this.forwardImpulse = pureChaos$calculateImpulse(this.up, this.down);
         this.leftImpulse = pureChaos$calculateImpulse(this.left, this.right);
@@ -50,6 +56,6 @@ public abstract class KeyboardInputMixin extends Input {
             this.forwardImpulse *= p_234119_;
         }
 
-         ci.cancel();
+        ci.cancel();
     }
 }

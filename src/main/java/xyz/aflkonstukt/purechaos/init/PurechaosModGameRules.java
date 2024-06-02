@@ -18,6 +18,7 @@ public class PurechaosModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> DISABLE_CAPTCHA;
 	public static GameRules.Key<GameRules.BooleanValue> ADBLOCKER;
 	public static GameRules.Key<GameRules.IntegerValue> MOB_CAP_MULTIPLIER;
+	public static GameRules.Key<GameRules.BooleanValue> MENTAL_HEALTH;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -27,5 +28,6 @@ public class PurechaosModGameRules {
 		DISABLE_CAPTCHA = GameRules.register("disableCaptcha", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		ADBLOCKER = GameRules.register("adblocker", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(15));
+		MENTAL_HEALTH = GameRules.register("mentalHealth", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 	}
 }

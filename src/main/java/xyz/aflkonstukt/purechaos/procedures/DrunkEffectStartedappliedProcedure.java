@@ -29,8 +29,9 @@ public class DrunkEffectStartedappliedProcedure {
 		} else {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).amount_of_alcohol_drank >= 8 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).alcohol_addiction == -1) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(
-							Component.literal("Oh no you are now an alcoholic! This means you are addicted to alcohol and will need to drink it every minecraft day (20 irl mins) or die.. (this persists across lives in this world!)"), false);
+					_player.displayClientMessage(Component.literal(
+							"Oh no you are now an alcoholic! This means you are addicted to alcohol and will need to drink it every minecraft day (20 irl mins) or die.. (this persists across lives in this world!) (the addiction is paused in creative and spectator!)"),
+							false);
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 					_vars.alcohol_addiction = -2;

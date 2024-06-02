@@ -75,7 +75,7 @@ public class PurechaosModMobEffects {
 		} else if (effect == DEMENTIA.get()) {
 			DementiaEffectExpiresProcedure.execute(entity);
 		} else if (effect == DRUNK.get()) {
-			DrunkEffectExpiresProcedure.execute();
+			DrunkEffectExpiresProcedure.execute(entity);
 		} else if (effect == CURSE_OF_FATHERLESS.get()) {
 			CurseOfFatherlessEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		} else if (effect == DEPRESSED.get()) {

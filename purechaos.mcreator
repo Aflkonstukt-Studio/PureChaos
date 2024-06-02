@@ -59,8 +59,8 @@
         ],
         "dependencies": [
           {
-            "name": "cmdparams",
-            "type": "map"
+            "name": "arguments",
+            "type": "cmdcontext"
           },
           {
             "name": "x",
@@ -1495,18 +1495,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -5711,48 +5699,6 @@
       }
     },
     {
-      "name": "CaptchaCode",
-      "type": "code",
-      "sortid": 325,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "captcha_code",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/CaptchaCode.java"
-        ]
-      }
-    },
-    {
-      "name": "CaptchaProcedure",
-      "type": "procedure",
-      "sortid": 326,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "captcha_procedure",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaProcedureProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "NewCaptchaProcedure",
-      "type": "procedure",
-      "sortid": 327,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "new_captcha_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/NewCaptchaProcedureProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "PensiveCubeRightClickedOnEntity",
       "type": "procedure",
       "sortid": 328,
@@ -5797,33 +5743,6 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/CaptchaCommand.java"
-        ]
-      }
-    },
-    {
-      "name": "ValidateCaptcha",
-      "type": "procedure",
-      "sortid": 330,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "validate_captcha",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ValidateCaptchaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -5922,29 +5841,6 @@
       "registry_name": "infinite_fuel_ext",
       "metadata": {
         "files": []
-      }
-    },
-    {
-      "name": "CaptchaGUIThisGUIIsClosed",
-      "type": "procedure",
-      "sortid": 337,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "captcha_gui_this_gui_is_closed",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaGUIThisGUIIsClosedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
       }
     },
     {
@@ -7151,7 +7047,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/DrunkEffectExpiresProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -7212,9 +7113,12 @@
       "type": "procedure",
       "sortid": 426,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "item_tooltips",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ItemTooltipsProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -8331,6 +8235,475 @@
           }
         ]
       }
+    },
+    {
+      "name": "MentalHealth",
+      "type": "gamerule",
+      "sortid": 491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mental_health",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "SetupCaptchaMathChallenges",
+      "type": "procedure",
+      "sortid": 492,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_captcha_math_challenges",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SetupCaptchaMathChallengesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SetupCaptchaWordChallenges",
+      "type": "procedure",
+      "sortid": 493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_captcha_word_challenges",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SetupCaptchaWordChallengesProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "GenerateCaptcha",
+      "type": "procedure",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_captcha",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaptchaDeath",
+      "type": "damagetype",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captcha_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/damage_type/captcha_death.json"
+        ]
+      }
+    },
+    {
+      "name": "ConfirmCaptcha",
+      "type": "procedure",
+      "sortid": 496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confirm_captcha",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ConfirmCaptchaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetCaptchaGUIText",
+      "type": "procedure",
+      "sortid": 498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_captcha_gui_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/GetCaptchaGUITextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaptchaGUIClosed",
+      "type": "procedure",
+      "sortid": 499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captcha_gui_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaGUIClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DepressionBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depression_block_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DepressionBlockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaptchaGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "captcha_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SanityCommandAdd",
+      "type": "procedure",
+      "sortid": 504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_command_add",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SanityCommandAddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SanityCommandRemove",
+      "type": "procedure",
+      "sortid": 505,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_command_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SanityCommandRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SanityCommandSet",
+      "type": "procedure",
+      "sortid": 506,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_command_set",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SanityCommandSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SanityCommandGet",
+      "type": "procedure",
+      "sortid": 507,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_command_get",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SanityCommandGetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SanityCommandEnable",
+      "type": "procedure",
+      "sortid": 508,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_command_enable",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SanityCommandEnableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sanity",
+      "type": "command",
+      "sortid": 509,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/SanityCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ShowSanityDisabled",
+      "type": "procedure",
+      "sortid": 510,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sanity_disabled",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ShowSanityDisabledProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TextCaptchaHandler",
+      "type": "procedure",
+      "sortid": 511,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "text_captcha_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/TextCaptchaHandlerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HandleNewCaptcha",
+      "type": "procedure",
+      "sortid": 512,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "handle_new_captcha",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckTextCaptchaAntwort",
+      "type": "procedure",
+      "sortid": 513,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_text_captcha_antwort",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CheckTextCaptchaAntwortProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CaptchaCommandProcedure",
+      "type": "procedure",
+      "sortid": 514,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "captcha_command_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CaptchaCommandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConfigureShaders",
+      "type": "procedure",
+      "sortid": 515,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "configure_shaders",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ConfigureShadersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -8373,7 +8746,7 @@
     {
       "name": "invert_controls",
       "type": "logic",
-      "scope": "global",
+      "scope": "player_lifetime",
       "value": "false"
     },
     {
@@ -8458,7 +8831,79 @@
       "name": "mob_cap_multiplier",
       "type": "number",
       "scope": "global",
-      "value": "15.0"
+      "value": "10.0"
+    },
+    {
+      "name": "word_challenges",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "math_challenges",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "word_answers",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "math_answers",
+      "type": "arraylist",
+      "scope": "global",
+      "value": "new ArrayList\u003c\u003e()"
+    },
+    {
+      "name": "captcha",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "disable_backrooms",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "captcha_challenge",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "captcha_answer",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "captcha_type",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "captcha_player_antwort",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "sanity_enabled",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "text_captcha",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -8770,11 +9215,11 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -8948,41 +9393,41 @@
       "item.purechaos.beef_armor_helmet": "Beef Armor Helmet",
       "death.attack.gassed_death.player": "%1$s was gassed by %2$s",
       "entity.chaosmod.aentity": "Aentity",
-      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "entity.chaosmod.herobrine": "Herobrine",
-      "item.purechaos.scratest.desc": "idk man stop asking me",
+      "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "item.purechaos.scratest.desc": "idk man stop asking me",
       "effect.chaosmod.fat": "Fat",
       "item.minecraft.wooden_pickaxe": "Wooden Diggy Diggy Blocky",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "block.chaosmod.green_plant": "Green Plant",
       "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
-      "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.minecraft.lingering_potion.effect.modified_ethanol": "Lingering Potion of Alchemically Modified Ethanol",
+      "entity.purechaos.pensive_cube": "Pensive Cube",
       "item.purechaos.beef_armor_boots": "Beef Armor Boots",
       "block.chaosmod.youtube": "Youtube",
-      "block.chaosmod.pee": "Pee",
       "item.minecraft.potion.effect.ethanol": "Ethanol",
+      "block.chaosmod.pee": "Pee",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.minecraft.tipped_arrow.effect.illegalsubstance": "Laced Arrow",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
-      "death.attack.overdose.item": "%1$s overdosed on meth",
-      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
+      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
+      "death.attack.overdose.item": "%1$s overdosed on meth",
       "item.chaosmod.legs_spawn_egg": "Legs Spawn Egg",
       "item.purechaos.rock": "Rock",
       "entity.purechaos.josip": "JOSIP",
       "subtitles.smack_my_ass": "",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
-      "key.chaosmod.summonsus": "Summonsus",
-      "entity.chaosmod.big": "Big",
       "block.purechaos.plante": "Plante",
+      "entity.chaosmod.big": "Big",
+      "key.chaosmod.summonsus": "Summonsus",
       "gui.purechaos.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "entity.purechaos.murica": "\u0027Murica",
       "block.purechaos.pee_block": "Pee Block",
-      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "gamerule.adblocker.description": "Enable this to disable ADs",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
@@ -8992,8 +9437,8 @@
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.stroater": "Stroater",
-      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.turtle_armor_chestplate": "Turtle Chestplate",
+      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.gatorade_bucket": "Gatorade Bucket",
       "block.purechaos.tlghd": "TLG Block",
       "item.purechaos.amogus_gun": "Amogus Gun",
@@ -9001,11 +9446,12 @@
       "fluid.purechaos.gatorade": "Gatorade",
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
-      "key.purechaos.shit": "Shit",
       "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
+      "key.purechaos.shit": "Shit",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
-      "item.purechaos.pee_bucket": "Pee Bucket",
       "death.attack.fall": "%1$s kissed the floor",
+      "item.purechaos.pee_bucket": "Pee Bucket",
+      "gui.purechaos.sanity_overlay.label_disabled": "(disabled)",
       "block.chaosmod.brazil_block": "Brazil Block",
       "death.attack.addiction_death": "%1$s suffered from withdrawal",
       "item.purechaos.potato_spuds": "Potato Spuds",
@@ -9013,12 +9459,12 @@
       "item.purechaos.puffer_balloon": "Puffer on a String",
       "painting.purechaos.mc_kisser.author": "boykisser",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
-      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "subtitles.nerd": "nerd",
+      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.xsord": "Xite Containment Blade",
       "fluid.chaosmod.staravoda": "Staravoda",
-      "item.purechaos.spear": "Spear",
       "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
+      "item.purechaos.spear": "Spear",
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
@@ -9040,6 +9486,7 @@
       "key.chaosmod.one": "ma",
       "entity.purechaos.big": "Big",
       "item.purechaos.poop": "Poop",
+      "death.attack.captcha_death.player": "%1$s failed the captcha whilst trying to escape %2$s",
       "item.chaosmod.amogus_3_crew_grin_spawn_egg": "Amogus 3 (Crewmate, Green) Spawn Egg",
       "item.chaosmod.totem_of_dream": "Totem Of Dream",
       "item.purechaos.eatable_command_block": "Eatable Command Block",
@@ -9047,9 +9494,9 @@
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "painting.purechaos.you_think_youre_alone.title": "You Think You\u0027re Alone",
-      "item.purechaos.use_in_emergencies": "Use In Emergencies",
-      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
       "death.attack.addiction_death.player": "%1$s suffered from withdrawal while trying to escape %2$s",
+      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
+      "item.purechaos.use_in_emergencies": "Use In Emergencies",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.purechaos.spit_ball": "Spit Ball",
@@ -9068,9 +9515,9 @@
       "effect.purechaos.depressed": "Depressed",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
-      "item.purechaos.infinite_fuel": "Infinite Fuel",
-      "subtitles.gulp_gulp": "",
       "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
+      "subtitles.gulp_gulp": "",
+      "item.purechaos.infinite_fuel": "Infinite Fuel",
       "subtitles.burning_memory": "its just a burning memory - The Caretaker",
       "block.purechaos.sus_block": "Sus Block",
       "biome.chaosmod.hell_but_overworld": "Neover",
@@ -9104,8 +9551,8 @@
       "block.chaosmod.cum": "Cum",
       "item.purechaos.edible_water_bucket": "Water Bucket",
       "item.chaosmod.water_cup": "Water Cup",
-      "biome.chaosmod.ohio": "Ohio",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
+      "biome.chaosmod.ohio": "Ohio",
       "entity.purechaos.amogus_3": "Amogus 3",
       "item.chaosmod.xite": "Xite",
       "entity.purechaos.amogus_2": "Amogus 2",
@@ -9137,8 +9584,8 @@
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "item.minecraft.tipped_arrow.effect.ethanol": "Arrow of Ethanol",
-      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.cursed_dog": "Dgo",
+      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
@@ -9184,8 +9631,8 @@
       "block.purechaos.emepee": "Emepee",
       "item.purechaos.adidas_armor_leggings": "Adidas Leggings",
       "entity.chaosmod.among_us": "Among Us",
-      "item.purechaos.brown": "Brown",
       "menu.options": "Settings for grown ups",
+      "item.purechaos.brown": "Brown",
       "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",
@@ -9195,16 +9642,16 @@
       "painting.purechaos.i_see_you_masturbating.title": "I See You Masturbating",
       "item.chaosmod.poop": "Poop",
       "entity.purechaos.firefly": "Firefly",
-      "block.purechaos.sa_ds": "Block ?",
       "block.chaosmod.south": "South",
+      "block.purechaos.sa_ds": "Block ?",
       "block.purechaos.death": "Death",
       "item.purechaos.totem_of_amogus": "Totem Of Lying",
       "selectWorld.data_read": "Reliving your past mistakes...",
       "block.purechaos.youtube": "Youtube",
       "gameMode.changed": "Sussy things done, you are now %s",
       "biome.purechaos.backrooms_biome": "Backrooms",
-      "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
+      "entity.chaosmod.murica": "\u0027Murica",
       "item.minecraft.golden_pickaxe": "Golden Diggy Diggy Blocky",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
@@ -9220,8 +9667,8 @@
       "item.purechaos.food_item_3": "Food Item 3",
       "entity.chaosmod.stalin": "Stalin",
       "item.purechaos.food_item_2": "Food Item 2",
-      "item.purechaos.meth": "Meth",
       "item.purechaos.baguette": "Baguette",
+      "item.purechaos.meth": "Meth",
       "block.purechaos.missing_texture": "Missing Texture",
       "painting.purechaos.a_painting.author": "some reddit user",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -9239,8 +9686,8 @@
       "death.attack.alcohol_death": "%1$s drank himself to death",
       "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
       "item.chaosmod.obamium": "Obamium",
-      "subtitles.crnidani": "crnidanijebani",
       "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
+      "subtitles.crnidani": "crnidanijebani",
       "selectWorld.gameMode.creative": "Minimal Suffering",
       "item.purechaos.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
@@ -9250,8 +9697,8 @@
       "item.purechaos.communism_orb": "Orb o\u0027 Communism",
       "painting.purechaos.stuck.title": "Stuck",
       "death.attack.k_press_death.item": "%1$s pressed K",
-      "entity.purechaos.fbi": "FBI",
       "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
+      "entity.purechaos.fbi": "FBI",
       "item.chaosmod.adidas_shovel": "Adidas Shovel",
       "gamerule.adblocker": "Adblock",
       "item.chaosmod.adidas_pickaxe": "Adidas Pickaxe",
@@ -9290,25 +9737,27 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.impostor_knife": "Impostor Knife",
       "fluid.purechaos.cum": "Cum",
-      "block.purechaos.grave": "Grave",
-      "item.chaosmod.mercury": "Mercury",
       "item.chaosmod.rock": "Rock",
+      "item.chaosmod.mercury": "Mercury",
+      "block.purechaos.grave": "Grave",
       "selectWorld.gameMode.survival": "Death",
       "item.chaosmod.kfce": "KFCE",
       "gui.chaosmod.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
-      "block.chaosmod.staravoda": "Staravoda",
       "painting.purechaos.nuh_uh.author": "boykisser",
+      "block.chaosmod.staravoda": "Staravoda",
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.minecraft.iron_axe": "Iron Chop Chop Stick",
       "item.chaosmod.adidas_armor_leggings": "Adidas Leggings",
       "item.purechaos.stalin_spawn_egg": "Stalin Spawn Egg",
       "item.chaosmod.dingot": "Dingot",
+      "gamerule.mentalHealth": "Mental Health",
       "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "entity.purechaos.rick_astley": "Rick Astley",
       "entity.chaosmod.dream": "Dream",
-      "subtitles.footstep_metal_amogus": "idk",
       "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
+      "subtitles.footstep_metal_amogus": "idk",
       "item.chaosmod.apple_ingot": "Apple Ingot",
+      "gui.purechaos.captcha_gui.button_dbg": "dbg",
       "item.purechaos.zenith": "Zenith",
       "painting.purechaos.you_think_youre_alone.author": "boykisser",
       "death.attack.heart_attack_death": "%1$s got a heart attack",
@@ -9396,6 +9845,7 @@
       "entity.chaosmod.amogus_3": "Amogus 3",
       "entity.purechaos.walter_wight": "Walter White",
       "item.purechaos.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
+      "death.attack.captcha_death": "%1$s failed the captcha",
       "entity.chaosmod.amogus_2": "Amogus 2",
       "key.chaosmod.seven": "Seven",
       "gameMode.hardcore": "No.",
@@ -9415,6 +9865,7 @@
       "subtitles.rock_death": "",
       "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
       "biome.purechaos.birch_forest": "Birch Forest",
+      "death.attack.captcha_death.item": "%1$s failed the captcha",
       "fluid.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.amogus_3_grin": "Amogus 3 (Impostor, Green)",
       "entity.chaosmod.josipdvatockanula": "[REDACTED] JosipTLG",
@@ -9503,6 +9954,7 @@
       "entity.purechaos.adolf_hitler": "Adolf Hitler",
       "item.chaosmod.adolf_hitler_spawn_egg": "Adolf Hitler Spawn Egg",
       "block.chaosmod.greengiscreenda": "Greengiscreenda",
+      "gamerule.mentalHealth.description": "This will just disable breakdowns",
       "item.chaosmod.big_spawn_egg": "Big Spawn Egg",
       "item.purechaos.dorito_cool_ranch": "Dorito Cool Ranch",
       "item.minecraft.potion.effect.amongsus": "Potion of Amongsus",
@@ -9534,7 +9986,7 @@
       "menu.multiplayer": "Playdate Time!",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
       "item.chaosmod.cum_bucket": "Cum Bucket",
-      "gamerule.mobCapMultiplier.description": "How many times do you want to multiply the vanilla minecraft mob cap (default: 15, vanilla: 1)",
+      "gamerule.mobCapMultiplier.description": "How many times do you want to multiply the vanilla minecraft mob cap (default: 10, vanilla: 1)",
       "item.purechaos.yugoslavia_spawn_egg": "Yugoslavia Spawn Egg",
       "subtitles.espuma": "coca cola espuma",
       "entity.purechaos.long_leg_chicken": "Long Leg Chicken",

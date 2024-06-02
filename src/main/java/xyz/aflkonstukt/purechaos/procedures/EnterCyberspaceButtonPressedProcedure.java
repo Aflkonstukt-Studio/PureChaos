@@ -1,5 +1,8 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+import xyz.aflkonstukt.purechaos.PurechaosMod;
+
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -20,6 +23,11 @@ public class EnterCyberspaceButtonPressedProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		{
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.disable_backrooms = true;
+			_vars.syncPlayerVariables(entity);
+		}
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:cyberspace"));
 			if (_player.level().dimension() == destinationType)
@@ -40,5 +48,12 @@ public class EnterCyberspaceButtonPressedProcedure {
 			if (_ent instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.connection.teleport((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
 		}
+		PurechaosMod.queueServerWork(60, () -> {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.disable_backrooms = false;
+				_vars.syncPlayerVariables(entity);
+			}
+		});
 	}
 }

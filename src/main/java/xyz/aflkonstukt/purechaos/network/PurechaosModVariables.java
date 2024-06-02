@@ -24,13 +24,18 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
+import java.util.List;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurechaosModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, PurechaosMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
-	public static boolean invert_controls = false;
-	public static double mob_cap_multiplier = 15.0;
+	public static double mob_cap_multiplier = 10.0;
+	public static List<Object> word_challenges = new ArrayList<>();
+	public static List<Object> math_challenges = new ArrayList<>();
+	public static List<Object> word_answers = new ArrayList<>();
+	public static List<Object> math_answers = new ArrayList<>();
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -63,6 +68,7 @@ public class PurechaosModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.alcohol_addiction = original.alcohol_addiction;
 			clone.meth_addiction = original.meth_addiction;
+			clone.sanity_enabled = original.sanity_enabled;
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
@@ -70,6 +76,7 @@ public class PurechaosModVariables {
 				clone.nightmare_duration = original.nightmare_duration;
 				clone.having_nightmare = original.having_nightmare;
 				clone.jump_count = original.jump_count;
+				clone.invert_controls = original.invert_controls;
 				clone.heart_attack_chance = original.heart_attack_chance;
 				clone.dementia_chance = original.dementia_chance;
 				clone.boolets = original.boolets;
@@ -81,6 +88,13 @@ public class PurechaosModVariables {
 				clone.amount_of_meth_used = original.amount_of_meth_used;
 				clone.mua_peu = original.mua_peu;
 				clone.ada_peu = original.ada_peu;
+				clone.captcha = original.captcha;
+				clone.disable_backrooms = original.disable_backrooms;
+				clone.captcha_challenge = original.captcha_challenge;
+				clone.captcha_answer = original.captcha_answer;
+				clone.captcha_type = original.captcha_type;
+				clone.captcha_player_antwort = original.captcha_player_antwort;
+				clone.text_captcha = original.text_captcha;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -93,6 +107,7 @@ public class PurechaosModVariables {
 		public double nightmare_duration = 0;
 		public boolean having_nightmare = false;
 		public double jump_count = 0;
+		public boolean invert_controls = false;
 		public double heart_attack_chance = 0;
 		public double dementia_chance = 0.0;
 		public double boolets = 0;
@@ -106,6 +121,14 @@ public class PurechaosModVariables {
 		public double amount_of_meth_used = 0;
 		public double mua_peu = 0;
 		public double ada_peu = 0;
+		public boolean captcha = false;
+		public boolean disable_backrooms = false;
+		public String captcha_challenge = "\"\"";
+		public String captcha_answer = "\"\"";
+		public String captcha_type = "\"\"";
+		public String captcha_player_antwort = "\"\"";
+		public boolean sanity_enabled = true;
+		public double text_captcha = 0;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -116,6 +139,7 @@ public class PurechaosModVariables {
 			nbt.putDouble("nightmare_duration", nightmare_duration);
 			nbt.putBoolean("having_nightmare", having_nightmare);
 			nbt.putDouble("jump_count", jump_count);
+			nbt.putBoolean("invert_controls", invert_controls);
 			nbt.putDouble("heart_attack_chance", heart_attack_chance);
 			nbt.putDouble("dementia_chance", dementia_chance);
 			nbt.putDouble("boolets", boolets);
@@ -129,6 +153,14 @@ public class PurechaosModVariables {
 			nbt.putDouble("amount_of_meth_used", amount_of_meth_used);
 			nbt.putDouble("mua_peu", mua_peu);
 			nbt.putDouble("ada_peu", ada_peu);
+			nbt.putBoolean("captcha", captcha);
+			nbt.putBoolean("disable_backrooms", disable_backrooms);
+			nbt.putString("captcha_challenge", captcha_challenge);
+			nbt.putString("captcha_answer", captcha_answer);
+			nbt.putString("captcha_type", captcha_type);
+			nbt.putString("captcha_player_antwort", captcha_player_antwort);
+			nbt.putBoolean("sanity_enabled", sanity_enabled);
+			nbt.putDouble("text_captcha", text_captcha);
 			return nbt;
 		}
 
@@ -140,6 +172,7 @@ public class PurechaosModVariables {
 			nightmare_duration = nbt.getDouble("nightmare_duration");
 			having_nightmare = nbt.getBoolean("having_nightmare");
 			jump_count = nbt.getDouble("jump_count");
+			invert_controls = nbt.getBoolean("invert_controls");
 			heart_attack_chance = nbt.getDouble("heart_attack_chance");
 			dementia_chance = nbt.getDouble("dementia_chance");
 			boolets = nbt.getDouble("boolets");
@@ -153,6 +186,14 @@ public class PurechaosModVariables {
 			amount_of_meth_used = nbt.getDouble("amount_of_meth_used");
 			mua_peu = nbt.getDouble("mua_peu");
 			ada_peu = nbt.getDouble("ada_peu");
+			captcha = nbt.getBoolean("captcha");
+			disable_backrooms = nbt.getBoolean("disable_backrooms");
+			captcha_challenge = nbt.getString("captcha_challenge");
+			captcha_answer = nbt.getString("captcha_answer");
+			captcha_type = nbt.getString("captcha_type");
+			captcha_player_antwort = nbt.getString("captcha_player_antwort");
+			sanity_enabled = nbt.getBoolean("sanity_enabled");
+			text_captcha = nbt.getDouble("text_captcha");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

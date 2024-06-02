@@ -1,0 +1,6 @@
+{
+  "exhaustion": 100,
+  "message_id": "captcha_death",
+  "scaling": "never",
+  "effects": "freezing"
+}

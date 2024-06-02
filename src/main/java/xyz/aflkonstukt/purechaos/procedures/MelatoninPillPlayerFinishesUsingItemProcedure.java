@@ -63,6 +63,8 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 			MakePlayerSleepProcedure.execute(entity);
+			if (world instanceof ServerLevel _level)
+				_level.setDayTime(4000);
 		}
 	}
 }

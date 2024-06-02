@@ -20,6 +20,25 @@
           "x": 6,
           "y": 8
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_disabled",
+          "text": {
+            "fixedValue": "(disabled)"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "ShowSanityDisabled"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 17
+        }
       }
     ],
     "baseTexture": "",

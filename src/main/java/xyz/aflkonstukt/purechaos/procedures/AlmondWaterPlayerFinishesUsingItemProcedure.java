@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
@@ -28,6 +29,11 @@ public class AlmondWaterPlayerFinishesUsingItemProcedure {
 			_vars.syncPlayerVariables(entity);
 		}
 		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.disable_backrooms = true;
+				_vars.syncPlayerVariables(entity);
+			}
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 				ResourceKey<Level> destinationType = Level.OVERWORLD;
 				if (_player.level().dimension() == destinationType)
@@ -48,6 +54,13 @@ public class AlmondWaterPlayerFinishesUsingItemProcedure {
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
 			}
+			PurechaosMod.queueServerWork(40, () -> {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.disable_backrooms = false;
+					_vars.syncPlayerVariables(entity);
+				}
+			});
 		}
 	}
 }

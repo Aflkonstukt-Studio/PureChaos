@@ -1,5 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+
 import net.neoforged.neoforge.event.entity.player.PlayerSleepInBedEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -40,6 +42,11 @@ public class WhenPlayerSleepProcedure {
 		if (entity == null)
 			return;
 		if (Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.disable_backrooms = true;
+				_vars.syncPlayerVariables(entity);
+			}
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"));
 				if (_player.level().dimension() == destinationType)

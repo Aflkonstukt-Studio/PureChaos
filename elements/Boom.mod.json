@@ -5,6 +5,6 @@
     "commandName": "boom",
     "type": "STANDARD",
     "permissionLevel": "4",
-    "argsxml": "<xml><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"old_command\"><field name=\"procedure\">BoomCommandExecuted</field></block></next></block></xml>"
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"number_default\"><field name=\"name\">power</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">BoomCommandExecuted</field></block></statement></block></next></block></xml>"
   }
 }

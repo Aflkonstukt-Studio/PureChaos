@@ -1,6 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.client.screens;
 
+import xyz.aflkonstukt.purechaos.procedures.ShowSanityDisabledProcedure;
 import xyz.aflkonstukt.purechaos.procedures.SanityOverlayValueProcedure;
 
 import org.checkerframework.checker.units.qual.h;
@@ -13,6 +14,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
@@ -36,6 +38,8 @@ public class SanityOverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					SanityOverlayValueProcedure.execute(entity), 6, 8, -1, false);
+			if (ShowSanityDisabledProcedure.execute(entity))
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.purechaos.sanity_overlay.label_disabled"), 6, 17, -10066330, false);
 		}
 	}
 }

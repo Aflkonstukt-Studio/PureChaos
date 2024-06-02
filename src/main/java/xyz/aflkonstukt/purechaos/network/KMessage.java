@@ -57,7 +57,7 @@ public record KMessage(int type, int pressedms) implements CustomPacketPayload {
 			return;
 		if (type == 0) {
 
-			KOnKeyPressedProcedure.execute(world, x, y, z, entity);
+			KOnKeyPressedProcedure.execute(world, entity);
 		}
 	}
 

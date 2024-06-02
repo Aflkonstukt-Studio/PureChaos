@@ -16,14 +16,14 @@
           "name": "label_please_do_a_captcha",
           "text": {
             "fixedValue": "What is 2 + 2?",
-            "name": "CaptchaProcedure"
+            "name": "GetCaptchaGUIText"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 129,
-          "y": 89
+          "x": 130,
+          "y": 91
         }
       },
       {
@@ -44,7 +44,7 @@
           "text": "Submit",
           "isUndecorated": false,
           "onClick": {
-            "name": "ValidateCaptcha"
+            "name": "ConfirmCaptcha"
           },
           "width": 56,
           "height": 20,
@@ -53,18 +53,18 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "NewCaptchaProcedure"
+    "onTick": {
+      "name": "CaptchaGUIWhileThisGUIIsOpenTick"
     },
     "onClosed": {
-      "name": "CaptchaGUIThisGUIIsClosed"
+      "name": "CaptchaGUIClosed"
     },
     "gridSettings": {
       "sx": 16,
       "sy": 8,
       "ox": 16,
       "oy": 8,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

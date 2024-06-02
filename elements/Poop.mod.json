@@ -33,6 +33,9 @@
         "you are curios about what it tastes like."
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -41,11 +44,14 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "isFood": true,
     "nutritionalValue": -20,
     "saturation": -20.0,
     "eatResultItem": {
-      "value": "CUSTOM:AlmondWater"
+      "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": true,

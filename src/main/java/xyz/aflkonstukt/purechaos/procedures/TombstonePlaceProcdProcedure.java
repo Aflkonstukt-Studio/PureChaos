@@ -52,6 +52,34 @@ public class TombstonePlaceProcdProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("bossbar remove nightmare_" + (entity.getDisplayName().getString()).toLowerCase()));
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						("bossbar remove depression_" + (entity.getDisplayName().getString()).toLowerCase()));
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.captcha = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.show_nikocado = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.having_nightmare = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.depression_active = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.invert_controls = false;
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 	}
 }

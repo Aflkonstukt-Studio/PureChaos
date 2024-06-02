@@ -32,7 +32,8 @@ public class MethPlayerFinishesUsingItemProcedure {
 		} else {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).amount_of_meth_used >= 4 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).meth_addiction == -1) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("You are now addicted to meth! You will need to take it every minecraft day (2o irl mins) or you will die!! Oh also, this will persist across all your lives in this world so.."),
+					_player.displayClientMessage(Component.literal(
+							"You are now addicted to meth! You will need to take it every minecraft day (20 irl mins) or you will die!! Oh also, this will persist across all your lives in this world so.. (the addiction is paused in creative and spectator!)"),
 							false);
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);

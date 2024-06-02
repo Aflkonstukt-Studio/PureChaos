@@ -1,7 +1,7 @@
 package xyz.aflkonstukt.purechaos.client.gui;
 
 import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
-import xyz.aflkonstukt.purechaos.procedures.CaptchaProcedureProcedure;
+import xyz.aflkonstukt.purechaos.procedures.GetCaptchaGUITextProcedure;
 import xyz.aflkonstukt.purechaos.network.CaptchaGUIButtonMessage;
 
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -73,7 +73,7 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				CaptchaProcedureProcedure.execute(), 11, 9, -12829636, false);
+				GetCaptchaGUITextProcedure.execute(entity), 12, 11, -12829636, false);
 	}
 
 	@Override
