@@ -1,6 +1,5 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
-import xyz.aflkonstukt.purechaos.world.inventory.CaptchaGUIMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.AdGUIMenu;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
@@ -105,20 +104,7 @@ public class PlayerTickProcedure {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 75) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
 					if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = BlockPos.containing(x, y, z);
-							_ent.openMenu(new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return Component.literal("CaptchaGUI");
-								}
-
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new CaptchaGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
-						}
+						HandleNewCaptchaProcedure.execute(world, x, y, z, entity);
 					}
 				}
 			}
@@ -226,13 +212,13 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt33 && _livEnt33.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = false;
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt35 && _livEnt35.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = true;
