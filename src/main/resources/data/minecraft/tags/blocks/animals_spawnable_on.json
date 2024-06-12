@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherrack",
+    "purechaos:cyber_block",
+    "minecraft:polished_andesite",
+    "minecraft:yellow_concrete",
+    "minecraft:podzol",
+    "minecraft:stone",
+    "purechaos:rainbowrack",
+    "purechaos:rainbow_grass",
+    "minecraft:bedrock",
+    "minecraft:snow",
+    "minecraft:snow_block"
+  ]
+}

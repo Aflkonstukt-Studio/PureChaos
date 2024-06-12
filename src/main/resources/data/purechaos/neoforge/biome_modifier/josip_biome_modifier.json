@@ -1,8 +1,14 @@
 {
   "type": "neoforge:add_spawns",
   "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:cyber_biome",
+    "purechaos:dream_biome",
     "purechaos:ekesmasterbait",
-    "purechaos:cyber_biome"
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:ohio",
+    "purechaos:susus"
   ],
   "spawners": {
     "type": "purechaos:josip",

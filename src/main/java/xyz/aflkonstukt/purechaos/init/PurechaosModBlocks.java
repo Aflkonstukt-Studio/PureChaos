@@ -6,6 +6,7 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.block.YoutubeBlock;
 import xyz.aflkonstukt.purechaos.block.WoodDimensionPortalBlock;
+import xyz.aflkonstukt.purechaos.block.WhiteBlock;
 import xyz.aflkonstukt.purechaos.block.TLGHDBlock;
 import xyz.aflkonstukt.purechaos.block.SusPortalBlock;
 import xyz.aflkonstukt.purechaos.block.SusBlockBlock;
@@ -28,11 +29,13 @@ import xyz.aflkonstukt.purechaos.block.NokiaBlockBlock;
 import xyz.aflkonstukt.purechaos.block.MissingTextureBlock;
 import xyz.aflkonstukt.purechaos.block.Milk2Block;
 import xyz.aflkonstukt.purechaos.block.JebBlockBlock;
+import xyz.aflkonstukt.purechaos.block.InternetExplorerBlock;
 import xyz.aflkonstukt.purechaos.block.GreengiscreendaBlock;
 import xyz.aflkonstukt.purechaos.block.GreenPlantBlock;
 import xyz.aflkonstukt.purechaos.block.GraveBlock;
 import xyz.aflkonstukt.purechaos.block.GatoradeBlock;
 import xyz.aflkonstukt.purechaos.block.EmepeeBlock;
+import xyz.aflkonstukt.purechaos.block.DiscordBlock;
 import xyz.aflkonstukt.purechaos.block.DepressionBlockBlock;
 import xyz.aflkonstukt.purechaos.block.DeathBlock;
 import xyz.aflkonstukt.purechaos.block.CyberBlockBlock;
@@ -40,7 +43,6 @@ import xyz.aflkonstukt.purechaos.block.CumBlock;
 import xyz.aflkonstukt.purechaos.block.ComunisamBlockBlock;
 import xyz.aflkonstukt.purechaos.block.ComputerBlock;
 import xyz.aflkonstukt.purechaos.block.CobbleFluidBlock;
-import xyz.aflkonstukt.purechaos.block.CioaoPortalBlock;
 import xyz.aflkonstukt.purechaos.block.CarbonMonoxideBlock;
 import xyz.aflkonstukt.purechaos.block.BrazilPortalBlock;
 import xyz.aflkonstukt.purechaos.block.BrazilBlockBlock;
@@ -97,7 +99,6 @@ public class PurechaosModBlocks {
 	public static final DeferredHolder<Block, Block> POLAND_BLOCK = REGISTRY.register("poland_block", () -> new PolandBlockBlock());
 	public static final DeferredHolder<Block, Block> CYBER_BLOCK = REGISTRY.register("cyber_block", () -> new CyberBlockBlock());
 	public static final DeferredHolder<Block, Block> COMPUTER = REGISTRY.register("computer", () -> new ComputerBlock());
-	public static final DeferredHolder<Block, Block> CIOAO_PORTAL = REGISTRY.register("cioao_portal", () -> new CioaoPortalBlock());
 	public static final DeferredHolder<Block, Block> GREENGISCREENDA = REGISTRY.register("greengiscreenda", () -> new GreengiscreendaBlock());
 	public static final DeferredHolder<Block, Block> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidBlock());
 	public static final DeferredHolder<Block, Block> ADIDAS_BLOCK = REGISTRY.register("adidas_block", () -> new AdidasBlockBlock());
@@ -108,6 +109,9 @@ public class PurechaosModBlocks {
 	public static final DeferredHolder<Block, Block> BACKROOMS_CEILING = REGISTRY.register("backrooms_ceiling", () -> new BackroomsCeilingBlock());
 	public static final DeferredHolder<Block, Block> RAINBOWRACK = REGISTRY.register("rainbowrack", () -> new RainbowrackBlock());
 	public static final DeferredHolder<Block, Block> RAINBOW_GRASS = REGISTRY.register("rainbow_grass", () -> new RainbowGrassBlock());
+	public static final DeferredHolder<Block, Block> INTERNET_EXPLORER = REGISTRY.register("internet_explorer", () -> new InternetExplorerBlock());
+	public static final DeferredHolder<Block, Block> DISCORD = REGISTRY.register("discord", () -> new DiscordBlock());
+	public static final DeferredHolder<Block, Block> WHITE = REGISTRY.register("white", () -> new WhiteBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -145,7 +145,19 @@
         "value": "CUSTOM:Desert"
       },
       {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
         "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
       }
     ],
     "spawnInDungeons": false

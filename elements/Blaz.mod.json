@@ -121,7 +121,7 @@
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": {
       "value": ""
     },
@@ -143,6 +143,42 @@
       },
       {
         "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:BuffaloLake"
+      },
+      {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "basalt_deltas"
+      },
+      {
+        "value": "crimson_forest"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "lush_caves"
+      },
+      {
+        "value": "mushroom_fields"
+      },
+      {
+        "value": "the_end"
+      },
+      {
+        "value": "warped_forest"
       }
     ],
     "spawnInDungeons": false

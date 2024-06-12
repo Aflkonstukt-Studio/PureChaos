@@ -23,7 +23,7 @@ public class CorruptstaffItem extends SwordItem {
 	public CorruptstaffItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 0;
+				return 100;
 			}
 
 			public float getSpeed() {
@@ -58,13 +58,13 @@ public class CorruptstaffItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CorruptstaffRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+		CorruptstaffRightclickedProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("#[]CORRUPTED[]#"));
+		list.add(Component.literal("\u00A7k#[]CORRUPTED[]#"));
 	}
 }

@@ -142,7 +142,25 @@
         "value": "CUSTOM:BirchForest"
       },
       {
-        "value": "CUSTOM:MoreExtremeHills"
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
       },
       {
         "value": "CUSTOM:Ohio"
@@ -151,7 +169,10 @@
         "value": "CUSTOM:Plains"
       },
       {
-        "value": "CUSTOM:CyberBiome"
+        "value": "CUSTOM:PolandBiome"
+      },
+      {
+        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": false

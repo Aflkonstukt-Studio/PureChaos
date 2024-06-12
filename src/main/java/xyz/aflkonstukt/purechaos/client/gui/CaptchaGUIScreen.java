@@ -25,7 +25,8 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox answer;
+	private final static HashMap<String, String> textstate = new HashMap<>();
+	public static EditBox answer;
 	Button button_submit;
 
 	public CaptchaGUIScreen(CaptchaGUIMenu container, Inventory inventory, Component text) {
@@ -69,6 +70,11 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		return super.keyPressed(key, b, c);
 	}
 
+	public static HashMap<String, String> getTextboxValues() {
+		textstate.put("textin:answer", answer.getValue());
+		return textstate;
+	}
+
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
@@ -104,8 +110,9 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		this.addWidget(this.answer);
 		button_submit = Button.builder(Component.translatable("gui.purechaos.captcha_gui.button_submit"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(0, x, y, z));
-				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				textstate.put("textin:answer", answer.getValue());
+				PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(0, x, y, z, textstate));
+				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		}).bounds(this.leftPos + 11, this.topPos + 49, 56, 20).build();
 		guistate.put("button:button_submit", button_submit);

@@ -139,7 +139,31 @@
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:BuffaloLake"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
         "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
       }
     ],
     "spawnInDungeons": false

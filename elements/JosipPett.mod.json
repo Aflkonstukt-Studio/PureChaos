@@ -143,16 +143,34 @@
     "spawningCondition": {
       "name": "SurfaceEntitySpawningCondition"
     },
-    "spawningProbability": 40,
+    "spawningProbability": 15,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
         "value": "CUSTOM:HellButOverworld"
       },
       {
-        "value": "CUSTOM:Ohio"
+        "value": "CUSTOM:MoreExtremeHills"
       },
       {
         "value": "CUSTOM:Susus"

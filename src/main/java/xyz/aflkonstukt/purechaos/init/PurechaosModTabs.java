@@ -17,7 +17,7 @@ import net.minecraft.core.registries.Registries;
 public class PurechaosModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PurechaosMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHAOSTAB = REGISTRY.register("chaostab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.purechaos.chaostab")).icon(() -> new ItemStack(PurechaosModItems.DIRTSWORD.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.purechaos.chaostab")).icon(() -> new ItemStack(PurechaosModItems.WATER_CUP.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PurechaosModItems.DIRTSWORD.get());
 				tabData.accept(PurechaosModItems.PEE_BUCKET.get());
 				tabData.accept(PurechaosModItems.PEEMENSION.get());
@@ -99,8 +99,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.POLAND_BLOCK.get().asItem());
 				tabData.accept(PurechaosModItems.FASTTOPASS.get());
 				tabData.accept(PurechaosModBlocks.NOKIA_BLOCK.get().asItem());
-				tabData.accept(PurechaosModItems.IGLA.get());
-				tabData.accept(PurechaosModItems.CIOAO.get());
 				tabData.accept(PurechaosModItems.RADIATION_LIQUID_BUCKET.get());
 				tabData.accept(PurechaosModItems.RICK_ASTLEY_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BLEACH.get());
@@ -177,7 +175,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.AMERICAN_SOLDAT_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.MURICA_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.GRIMACE_SHAKE.get());
-				tabData.accept(PurechaosModItems.DEEK.get());
 				tabData.accept(PurechaosModItems.KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU.get());
 				tabData.accept(PurechaosModItems.WATER_CUP.get());
 				tabData.accept(PurechaosModItems.JOSIP_RANGE.get());
@@ -198,5 +195,9 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.FISH_LAUNCHER.get());
 				tabData.accept(PurechaosModItems.FRANCIUM.get());
 				tabData.accept(PurechaosModItems.BEER.get());
+				tabData.accept(PurechaosModBlocks.INTERNET_EXPLORER.get().asItem());
+				tabData.accept(PurechaosModBlocks.DISCORD.get().asItem());
+				tabData.accept(PurechaosModItems.PING.get());
+				tabData.accept(PurechaosModBlocks.WHITE.get().asItem());
 			}).withSearchBar().build());
 }

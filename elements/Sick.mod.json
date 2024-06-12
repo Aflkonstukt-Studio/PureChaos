@@ -15,9 +15,6 @@
     "renderStatusInHUD": true,
     "onActiveTick": {
       "name": "SickEffectStartedapplied"
-    },
-    "onExpired": {
-      "name": "SickEffectExpires"
     }
   }
 }

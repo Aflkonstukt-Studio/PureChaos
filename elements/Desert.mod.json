@@ -52,11 +52,11 @@
       "max": 2.0
     },
     "genHumidity": {
-      "min": -2.0,
+      "min": 0.0,
       "max": 2.0
     },
     "genContinentalness": {
-      "min": -2.0,
+      "min": 0.0,
       "max": 2.0
     },
     "genErosion": {
@@ -64,8 +64,8 @@
       "max": 2.0
     },
     "genWeirdness": {
-      "min": -0.3,
-      "max": 0.2
+      "min": 0.0,
+      "max": 0.7
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Birch trees",

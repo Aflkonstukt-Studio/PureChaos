@@ -2,7 +2,19 @@
   "type": "neoforge:add_spawns",
   "biomes": [
     "nether_wastes",
-    "purechaos:cyber_biome"
+    "purechaos:cyber_biome",
+    "purechaos:buffalo_lake",
+    "purechaos:desert",
+    "purechaos:ekesmasterbait",
+    "purechaos:fun_land",
+    "purechaos:ohio",
+    "basalt_deltas",
+    "crimson_forest",
+    "eroded_badlands",
+    "lush_caves",
+    "mushroom_fields",
+    "the_end",
+    "warped_forest"
   ],
   "spawners": {
     "type": "purechaos:blaz",

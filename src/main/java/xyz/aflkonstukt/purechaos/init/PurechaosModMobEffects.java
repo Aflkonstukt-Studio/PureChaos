@@ -4,7 +4,6 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
-import xyz.aflkonstukt.purechaos.procedures.SickEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.HighEffectEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.FatEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DrunkEffectExpiresProcedure;
@@ -70,8 +69,6 @@ public class PurechaosModMobEffects {
 			HighEffectEffectExpiresProcedure.execute(entity.level(), entity);
 		} else if (effect == FAT.get()) {
 			FatEffectExpiresProcedure.execute(entity);
-		} else if (effect == SICK.get()) {
-			SickEffectExpiresProcedure.execute();
 		} else if (effect == DEMENTIA.get()) {
 			DementiaEffectExpiresProcedure.execute(entity);
 		} else if (effect == DRUNK.get()) {

@@ -3,7 +3,11 @@
   "biomes": [
     "purechaos:cyber_biome",
     "purechaos:desert",
-    "purechaos:hell_but_overworld"
+    "purechaos:dream_biome",
+    "purechaos:fortnite_biome",
+    "purechaos:hell_but_overworld",
+    "purechaos:ohio",
+    "purechaos:poland_biome"
   ],
   "spawners": {
     "type": "purechaos:spongebob_boss",

@@ -66,6 +66,15 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance >= 2.5) {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.heart_attack_chance = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance - 2.5;
+					_vars.syncPlayerVariables(entity);
+				}
+			}
+		}
 		if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.MENTAL_HEALTH)) {
 			if (Mth.nextInt(RandomSource.create(), 1, (int) (40000 - entity.getData(PurechaosModVariables.PLAYER_VARIABLES).breakdown_chance / 20)) <= 3) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -91,24 +100,10 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
-			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance >= 2.5) {
-				{
-					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-					_vars.heart_attack_chance = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance - 2.5;
-					_vars.syncPlayerVariables(entity);
-				}
-			}
-		}
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_enabled) {
-			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 75) {
-				if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
-					if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA)) {
-						HandleNewCaptchaProcedure.execute(world, x, y, z, entity);
-					}
-				}
-			}
-			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 50) {
+			if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.DISABLE_CAPTCHA) && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 75 && Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
+				HandleNewCaptchaProcedure.execute(world, x, y, z, entity);
+			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 50) {
 				if (Mth.nextInt(RandomSource.create(), (int) entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance, 2000) >= 1991 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance > 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEMENTIA.get(), 600, 1, false, true));
@@ -140,28 +135,102 @@ public class PlayerTickProcedure {
 						}
 					}
 				}
-			}
-			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 0) {
+			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 0) {
 				SendToBackroomsProcedure.execute(x, z, entity);
-			} else {
-				if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
-					if (Mth.nextDouble(RandomSource.create(), 1, 6000) >= 5995) {
-						if (Mth.nextDouble(RandomSource.create(), 1, 10) <= 2) {
-							{
-								PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-								_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity + Mth.nextDouble(RandomSource.create(), 1, 4);
-								_vars.syncPlayerVariables(entity);
-							}
-						} else {
-							{
-								PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-								_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
-								_vars.syncPlayerVariables(entity);
-							}
+			}
+			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
+				if (Mth.nextDouble(RandomSource.create(), 1, 6000) >= 5995) {
+					if (Mth.nextDouble(RandomSource.create(), 1, 10) <= 2) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity + Mth.nextDouble(RandomSource.create(), 1, 4);
+							_vars.syncPlayerVariables(entity);
+						}
+					} else {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.sanity = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity - Mth.nextDouble(RandomSource.create(), 1, 4);
+							_vars.syncPlayerVariables(entity);
 						}
 					}
 				}
 			}
+		}
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration > 1 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						("bossbar set nightmare_" + ((entity.getDisplayName().getString()).toLowerCase() + "" + (" value " + Math.round(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration / 20)))));
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.nightmare_duration = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration - 1;
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration <= 1 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						("bossbar remove nightmare_" + (entity.getDisplayName().getString()).toLowerCase()));
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.disable_backrooms = true;
+				_vars.syncPlayerVariables(entity);
+			}
+			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
+				ResourceKey<Level> destinationType = Level.OVERWORLD;
+				if (_player.level().dimension() == destinationType)
+					return;
+				ServerLevel nextLevel = _player.server.getLevel(destinationType);
+				if (nextLevel != null) {
+					_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
+					_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
+					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
+					for (MobEffectInstance _effectinstance : _player.getActiveEffects())
+						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
+				}
+			}
+			{
+				Entity _ent = entity;
+				_ent.teleportTo(
+						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+								: 0),
+						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+								: 0),
+						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+								: 0));
+				if (_ent instanceof ServerPlayer _serverPlayer)
+					_serverPlayer.connection.teleport(
+							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+									: 0),
+							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+									: 0),
+							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+									: 0),
+							_ent.getYRot(), _ent.getXRot());
+			}
+			if (world instanceof ServerLevel _level)
+				_level.setDayTime(4000);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("Wakey wakey"), false);
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.having_nightmare = false;
+				_vars.syncPlayerVariables(entity);
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeAllEffects();
+			PurechaosMod.queueServerWork(40, () -> {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.disable_backrooms = false;
+					_vars.syncPlayerVariables(entity);
+				}
+			});
 		}
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PurechaosModItems.OIL_BUCKET.get())) : false) {
 			if (entity instanceof Player _player) {
@@ -212,91 +281,18 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt33 && _livEnt33.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt46 && _livEnt46.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = false;
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = true;
 				_vars.syncPlayerVariables(entity);
 			}
-		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration > 1 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("bossbar set nightmare_" + ((entity.getDisplayName().getString()).toLowerCase() + "" + (" value " + Math.round(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration / 20)))));
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.nightmare_duration = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration - 1;
-				_vars.syncPlayerVariables(entity);
-			}
-		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration <= 1 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("bossbar remove nightmare_" + (entity.getDisplayName().getString()).toLowerCase()));
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.disable_backrooms = true;
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = Level.OVERWORLD;
-				if (_player.level().dimension() == destinationType)
-					return;
-				ServerLevel nextLevel = _player.server.getLevel(destinationType);
-				if (nextLevel != null) {
-					_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-					_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-					for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
-				}
-			}
-			{
-				Entity _ent = entity;
-				_ent.teleportTo(
-						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
-								: 0),
-						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
-								: 0),
-						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
-								: 0));
-				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(
-							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
-									: 0),
-							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
-									: 0),
-							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
-									: 0),
-							_ent.getYRot(), _ent.getXRot());
-			}
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.having_nightmare = false;
-				_vars.syncPlayerVariables(entity);
-			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeAllEffects();
-			PurechaosMod.queueServerWork(40, () -> {
-				{
-					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-					_vars.disable_backrooms = false;
-					_vars.syncPlayerVariables(entity);
-				}
-			});
 		}
 	}
 }

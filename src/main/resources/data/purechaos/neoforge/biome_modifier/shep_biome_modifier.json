@@ -2,10 +2,17 @@
   "type": "neoforge:add_spawns",
   "biomes": [
     "purechaos:birch_forest",
-    "purechaos:more_extreme_hills",
+    "purechaos:cyber_biome",
+    "purechaos:desert",
+    "purechaos:dream_biome",
+    "purechaos:fortnite_biome",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:hell_but_overworld",
     "purechaos:ohio",
     "purechaos:plains",
-    "purechaos:cyber_biome"
+    "purechaos:poland_biome",
+    "purechaos:susus"
   ],
   "spawners": {
     "type": "purechaos:shep",

@@ -1,15 +1,13 @@
 
 package xyz.aflkonstukt.purechaos.world.inventory;
 
-import xyz.aflkonstukt.purechaos.procedures.CaptchaGUIWhileThisGUIIsOpenTickProcedure;
-import xyz.aflkonstukt.purechaos.procedures.CaptchaGUIClosedProcedure;
+import xyz.aflkonstukt.purechaos.network.CaptchaGUIButtonMessage;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMenus;
+import xyz.aflkonstukt.purechaos.client.gui.CaptchaGUIScreen;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.event.TickEvent;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
@@ -27,7 +25,6 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class CaptchaGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -77,22 +74,17 @@ public class CaptchaGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		CaptchaGUIClosedProcedure.execute(world, entity);
+		if (this.world != null && this.world.isClientSide()) {
+			textBoxStart();
+		}
 	}
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
 	}
 
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		Player entity = event.player;
-		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof CaptchaGUIMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			CaptchaGUIWhileThisGUIIsOpenTickProcedure.execute(entity, guistate);
-		}
+	public void textBoxStart() {
+		PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(-2, x, y, z, CaptchaGUIScreen.getTextboxValues()));
+		CaptchaGUIButtonMessage.handleButtonAction(entity, -2, x, y, z, CaptchaGUIScreen.getTextboxValues());
 	}
 }

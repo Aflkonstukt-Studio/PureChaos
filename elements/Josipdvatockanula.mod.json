@@ -146,6 +146,21 @@
       },
       {
         "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:MoreExtremeHills"
+      },
+      {
+        "value": "CUSTOM:Ohio"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
       }
     ],
     "spawnInDungeons": false

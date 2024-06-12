@@ -1,6 +1,12 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "purechaos:ohio",
+  "biomes": [
+    "purechaos:buffalo_lake",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:ohio",
+    "purechaos:poland_biome"
+  ],
   "spawners": {
     "type": "purechaos:fbi",
     "weight": 20,

@@ -145,6 +145,27 @@
         "value": "CUSTOM:CyberBiome"
       },
       {
+        "value": "CUSTOM:Desert"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
         "value": "CUSTOM:MoreExtremeHills"
       },
       {
@@ -152,6 +173,12 @@
       },
       {
         "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
+      },
+      {
+        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": false

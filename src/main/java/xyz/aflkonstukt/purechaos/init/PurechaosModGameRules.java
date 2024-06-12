@@ -19,6 +19,7 @@ public class PurechaosModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> ADBLOCKER;
 	public static GameRules.Key<GameRules.IntegerValue> MOB_CAP_MULTIPLIER;
 	public static GameRules.Key<GameRules.BooleanValue> MENTAL_HEALTH;
+	public static GameRules.Key<GameRules.BooleanValue> NO_JUMP_VINE_BOOM;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -29,5 +30,6 @@ public class PurechaosModGameRules {
 		ADBLOCKER = GameRules.register("adblocker", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(15));
 		MENTAL_HEALTH = GameRules.register("mentalHealth", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+		NO_JUMP_VINE_BOOM = GameRules.register("noJumpVineBoom", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 	}
 }

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "purechaos:buffalo_lake",
+  "features": "purechaos:lava_lakes_in_buffalo",
+  "step": "surface_structures"
+}

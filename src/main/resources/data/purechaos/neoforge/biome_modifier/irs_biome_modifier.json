@@ -1,6 +1,11 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "purechaos:ohio",
+  "biomes": [
+    "purechaos:buffalo_lake",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:ohio"
+  ],
   "spawners": {
     "type": "purechaos:irs",
     "weight": 20,

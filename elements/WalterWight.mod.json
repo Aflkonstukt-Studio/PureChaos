@@ -152,6 +152,15 @@
       },
       {
         "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
       }
     ],
     "spawnInDungeons": false

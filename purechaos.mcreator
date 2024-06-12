@@ -17,7 +17,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Dirtsword",
@@ -31,7 +32,8 @@
           "src/main/resources/assets/purechaos/models/item/dirtsword.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/DirtswordItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Boom",
@@ -44,7 +46,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/BoomCommand.java"
         ]
-      }
+      },
+      "path": "~/Commands"
     },
     {
       "name": "BoomCommandExecuted",
@@ -79,7 +82,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Commands"
     },
     {
       "name": "Pee",
@@ -99,7 +103,8 @@
           "src/main/resources/assets/purechaos/blockstates/pee.json",
           "src/main/resources/assets/purechaos/models/block/pee.json"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "PlayerTick",
@@ -134,20 +139,8 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "SexyEnchanetement",
-      "type": "enchantment",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sexy_enchanetement",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/enchantment/SexyEnchanetementEnchantment.java"
-        ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "Peemension",
@@ -171,7 +164,8 @@
           "src/main/resources/data/purechaos/dimension_type/peemension.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/PeemensionPortalShape.java"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "Chaostab",
@@ -203,7 +197,8 @@
           "src/main/resources/assets/purechaos/models/item/pee_block.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/pee_block_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Pickax",
@@ -217,7 +212,8 @@
           "src/main/resources/assets/purechaos/models/item/pickax.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/PickaxItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Fooditem",
@@ -231,7 +227,8 @@
           "src/main/resources/assets/purechaos/models/item/fooditem.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/FooditemItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Aentity",
@@ -247,7 +244,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/aentity_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/aentity_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "FoodItem2",
@@ -261,7 +259,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/FoodItem2Item.java",
           "src/main/resources/assets/purechaos/models/item/food_item_2.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "PotatoSpuds",
@@ -275,7 +274,8 @@
           "src/main/resources/assets/purechaos/models/item/potato_spuds.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/PotatoSpudsItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "HellButOverworld",
@@ -293,7 +293,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldFruitDecorator.java",
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldLeaveDecorator.java"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Potatus",
@@ -313,7 +314,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/potatus_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/potatus.json"
         ]
-      }
+      },
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "WoodDimension",
@@ -337,7 +339,8 @@
           "src/main/resources/assets/purechaos/models/block/wood_dimension_portal_ew.json",
           "src/main/resources/assets/purechaos/models/item/wood_dimension.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "SpearRecipe",
@@ -350,7 +353,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/spear_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "FoodItem3",
@@ -364,7 +368,8 @@
           "src/main/resources/assets/purechaos/models/item/food_item_3.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/FoodItem3Item.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Dipex",
@@ -378,7 +383,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/DipexItem.java",
           "src/main/resources/assets/purechaos/models/item/dipex.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Trident",
@@ -394,7 +400,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TridentEntity.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/trident_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Death",
@@ -414,7 +421,8 @@
           "src/main/resources/assets/purechaos/models/item/death.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/death_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "SADs",
@@ -435,7 +443,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/sa_ds_biome_modifier.json",
           "src/main/resources/assets/purechaos/blockstates/sa_ds.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "NetheritPickax",
@@ -449,7 +458,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/NetheritPickaxItem.java",
           "src/main/resources/assets/purechaos/models/item/netherit_pickax.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Emepee",
@@ -469,7 +479,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/emepee.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/emepee_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ComicallyLargeSpoon",
@@ -483,7 +494,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/ComicallyLargeSpoonItem.java",
           "src/main/resources/assets/purechaos/models/item/comically_large_spoon.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Spear",
@@ -497,7 +509,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/SpearItem.java",
           "src/main/resources/assets/purechaos/models/item/spear.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "SusBlock",
@@ -514,7 +527,8 @@
           "src/main/resources/assets/purechaos/models/item/sus_block.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/sus_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "CumDrip",
@@ -548,7 +562,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CumFluidType.java",
           "src/main/java/xyz/aflkonstukt/purechaos/item/CumItem.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "AmongUs",
@@ -564,7 +579,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AmongUsRenderer.java",
           "src/main/resources/assets/purechaos/models/item/among_us_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Sus",
@@ -588,7 +604,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/SusPortalBlock.java",
           "src/main/resources/assets/purechaos/models/block/sus_portal_ns.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "Susus",
@@ -606,7 +623,8 @@
           "src/main/resources/data/purechaos/worldgen/biome/susus.json",
           "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususFruitDecorator.java"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Amogus2",
@@ -622,7 +640,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/Amogus2Entity.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/amogus_2_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Amogus3",
@@ -638,7 +657,8 @@
           "src/main/resources/assets/purechaos/models/item/amogus_3_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/Amogus3Entity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Staravoda",
@@ -658,7 +678,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/StaravodaBlock.java",
           "src/main/resources/assets/purechaos/models/block/staravoda.json"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "Amongsus",
@@ -669,7 +690,8 @@
       "registry_name": "amongsus",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items/Potions"
     },
     {
       "name": "TLGHD",
@@ -686,7 +708,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java",
           "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Amugus",
@@ -707,7 +730,8 @@
           "src/main/resources/assets/purechaos/models/item/amugus_boots.json",
           "src/main/resources/assets/purechaos/models/item/amugus_chestplate.json"
         ]
-      }
+      },
+      "path": "~/Items/Armor"
     },
     {
       "name": "SusSword",
@@ -721,7 +745,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/SusSwordItem.java",
           "src/main/resources/assets/purechaos/models/item/sus_sword.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Susord",
@@ -734,7 +759,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/susord.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Suschest",
@@ -747,7 +773,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/suschest.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Sushead",
@@ -760,7 +787,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/sushead.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Suslegs",
@@ -773,7 +801,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/suslegs.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Susboot",
@@ -786,30 +815,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/susboot.json"
         ]
-      }
-    },
-    {
-      "name": "PressSoulButton",
-      "type": "procedure",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "press_soul_button",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PressSoulButtonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "OrangeFluid",
@@ -829,7 +836,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/OrangeFluidItem.java",
           "src/main/resources/assets/purechaos/blockstates/orange_fluid.json"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "Oil",
@@ -849,7 +857,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/OilFluidType.java",
           "src/main/java/xyz/aflkonstukt/purechaos/item/OilItem.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "Gatorade",
@@ -869,7 +878,8 @@
           "src/main/resources/assets/purechaos/models/item/gatorade_bucket.json",
           "src/main/resources/assets/purechaos/models/block/gatorade.json"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "GreenPlantPlantRightClicked",
@@ -888,7 +898,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "GreenPlant",
@@ -908,7 +919,8 @@
           "src/main/resources/assets/purechaos/models/item/green_plant.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreenPlantBlock.java"
         ]
-      }
+      },
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "Splank",
@@ -924,7 +936,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/splank_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/SplankRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "IkeaDesk",
@@ -940,7 +953,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/IkeaDeskRenderer.java",
           "src/main/resources/assets/purechaos/models/item/ikea_desk_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Fallgays",
@@ -954,7 +968,8 @@
           "src/main/resources/assets/purechaos/models/item/fallgays.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/FallgaysItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "Ekesmasterbait",
@@ -969,7 +984,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/ekesmasterbait_tree.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/ekesmasterbait_tree.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "SasiAmangas",
@@ -983,7 +999,8 @@
           "src/main/resources/assets/purechaos/models/item/sasi_amangas.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/SasiAmangasItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "JOSIP",
@@ -999,7 +1016,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JOSIPEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JOSIPRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Brown",
@@ -1013,7 +1031,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/BrownItem.java",
           "src/main/resources/assets/purechaos/models/item/brown.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "BrownItemInInventoryTick",
@@ -1032,7 +1051,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "FuckYou",
@@ -1043,7 +1063,8 @@
       "registry_name": "fuck_you",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items/Potions"
     },
     {
       "name": "CarbonMonoxide",
@@ -1063,7 +1084,8 @@
           "src/main/resources/assets/purechaos/models/item/carbon_monoxide_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CarbonMonoxideBlock.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "CODeath",
@@ -1086,7 +1108,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Rssure6t",
@@ -1099,7 +1122,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/rssure_6t.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Rec8pe",
@@ -1112,7 +1136,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/rec_8pe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "StructureLoot",
@@ -1152,7 +1177,8 @@
           "src/main/resources/assets/purechaos/models/item/corruptstaff.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/CorruptstaffItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Josipdvatockanula",
@@ -1168,7 +1194,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipdvatockanulaEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipdvatockanulaRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "CorruptstaffLivingEntityIsHitWithTool",
@@ -1187,7 +1214,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "TurtleArmor",
@@ -1207,7 +1235,8 @@
           "src/main/resources/assets/purechaos/models/item/turtle_armor_leggings.json",
           "src/main/resources/assets/purechaos/models/item/turtle_armor_boots.json"
         ]
-      }
+      },
+      "path": "~/Items/Armor"
     },
     {
       "name": "BeefArmor",
@@ -1228,7 +1257,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/BeefArmorItem.java",
           "src/main/resources/assets/purechaos/models/item/beef_armor_helmet.json"
         ]
-      }
+      },
+      "path": "~/Items/Armor"
     },
     {
       "name": "Stuck",
@@ -1239,7 +1269,8 @@
       "registry_name": "stuck",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "DirtSwordRecipe",
@@ -1252,7 +1283,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/dirt_sword_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "JosipPet",
@@ -1268,7 +1300,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipPetEntity.java",
           "src/main/resources/assets/purechaos/models/item/josip_pet_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "JosipPett",
@@ -1284,7 +1317,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/JosipPettRenderer.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/josip_pett_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "MothOfAggrevation",
@@ -1300,7 +1334,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/MothOfAggrevationRenderer.java",
           "src/main/resources/assets/purechaos/models/item/moth_of_aggrevation_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "TombstonePlaceProcd",
@@ -1335,7 +1370,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "CorruptstaffRightclicked",
@@ -1350,23 +1386,16 @@
         ],
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Bullet",
@@ -1380,7 +1409,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/BulletItem.java",
           "src/main/resources/assets/purechaos/models/item/bullet.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Shep",
@@ -1396,7 +1426,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/shep_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/ShepEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "VikkiVukGui",
@@ -1411,7 +1442,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/network/VikkiVukGuiButtonMessage.java",
           "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/VikkiVukGuiMenu.java"
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "Vikkivuk",
@@ -1427,7 +1459,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/vikkivuk_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/VikkivukEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Blaz",
@@ -1443,7 +1476,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/BlazEntity.java",
           "src/main/resources/assets/purechaos/models/item/blaz_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "CursedDog",
@@ -1459,7 +1493,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/CursedDogEntity.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/cursed_dog_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Trashitems",
@@ -1478,7 +1513,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "KOnKeyPressed",
@@ -1501,7 +1537,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "One",
@@ -1514,7 +1551,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/network/OneMessage.java"
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "Meth",
@@ -1528,7 +1566,8 @@
           "src/main/resources/assets/purechaos/models/item/meth.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/MethItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "EmergencyRecipe",
@@ -1541,7 +1580,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/emergency_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "K",
@@ -1554,7 +1594,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/network/KMessage.java"
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "BeefPants",
@@ -1567,7 +1608,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/beef_pants.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "DeathWish",
@@ -1606,7 +1648,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "WalterWight",
@@ -1621,7 +1664,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/WalterWightEntity.java",
           "src/main/resources/assets/purechaos/models/item/walter_wight_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "AdolfHitler",
@@ -1637,7 +1681,8 @@
           "src/main/resources/assets/purechaos/models/item/adolf_hitler_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/AdolfHitlerRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Dream",
@@ -1653,7 +1698,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/DreamRenderer.java",
           "src/main/resources/assets/purechaos/models/item/dream_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Scratest",
@@ -1667,7 +1713,8 @@
           "src/main/resources/assets/purechaos/models/item/scratest.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/ScratestItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "OneOnKeyPressed",
@@ -1695,7 +1742,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "Youtube",
@@ -1715,7 +1763,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/youtube.json",
           "src/main/resources/assets/purechaos/models/item/youtube.json"
         ]
-      }
+      },
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "Plante",
@@ -1735,7 +1784,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/plante.json"
         ]
-      }
+      },
+      "path": "~/Blocks/Plants"
     },
     {
       "name": "TesticleOnStickRightclickedOnBlock",
@@ -1778,7 +1828,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "JosipdvatockanulaNaturalEntitySpawningCondition",
@@ -1810,7 +1861,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "WaterCupRecipe",
@@ -1823,7 +1875,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/water_cup_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "High",
@@ -1842,7 +1895,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "TesticleOnStick",
@@ -1856,20 +1910,8 @@
           "src/main/resources/assets/purechaos/models/item/testicle_on_stick.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/TesticleOnStickItem.java"
         ]
-      }
-    },
-    {
-      "name": "GraveLoot",
-      "type": "loottable",
-      "sortid": 115,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grave_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/grave.json"
-        ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "BeefChest",
@@ -1882,7 +1924,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/beef_chest.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "RickrollBlock",
@@ -1899,7 +1942,8 @@
           "src/main/resources/assets/purechaos/models/item/rickroll_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RickrollBlockBlock.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "BeefBoots",
@@ -1912,7 +1956,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/beef_boots.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Seven",
@@ -1925,7 +1970,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/network/SevenMessage.java"
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "Dipexrecipe",
@@ -1938,7 +1984,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/dipexrecipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "DeathR",
@@ -1951,7 +1998,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/death_r.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "BeefHead",
@@ -1964,7 +2012,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/beef_head.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Grave",
@@ -1978,9 +2027,11 @@
           "src/main/resources/assets/purechaos/models/block/grave.json",
           "src/main/resources/assets/purechaos/models/item/grave.json",
           "src/main/resources/assets/purechaos/blockstates/grave.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/grave.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Milk2",
@@ -2000,7 +2051,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/Milk2Item.java",
           "src/main/resources/assets/purechaos/models/item/milk_2_bucket.json"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "UseInEmergenciesRightclicked",
@@ -2035,7 +2087,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "UseInEmergencies",
@@ -2049,7 +2102,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/UseInEmergenciesItem.java",
           "src/main/resources/assets/purechaos/models/item/use_in_emergencies.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "MethPlayerFinishesUsingItem",
@@ -2072,7 +2126,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "HighEffect",
@@ -2085,7 +2140,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/HighEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "CodButBetter",
@@ -2101,7 +2157,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CodButBetterRenderer.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/cod_but_better_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "HighEffectEffectExpires",
@@ -2124,7 +2181,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DoGraveCreation",
@@ -2136,7 +2194,8 @@
       "metadata": {
         "type": "logic",
         "files": []
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "BackroomsLvl1light",
@@ -2153,7 +2212,8 @@
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1light.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "SSSR",
@@ -2167,7 +2227,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/SSSRItem.java",
           "src/main/resources/assets/purechaos/models/item/sssr.json"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "Stalin",
@@ -2183,7 +2244,8 @@
           "src/main/resources/assets/purechaos/models/item/stalin_spawn_egg.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/stalin_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "BleachOverlay",
@@ -2196,7 +2258,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/screens/BleachOverlayOverlay.java"
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "RickAstley",
@@ -2212,7 +2275,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/RickAstleyRenderer.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/rick_astley_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "BleachedOnEffectActiveTick",
@@ -2235,7 +2299,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "BackroomsLvl1Wall",
@@ -2252,7 +2317,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_wall.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "BleachOverlayDisplayOverlayIngame",
@@ -2272,7 +2338,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "RadiationLiquidMobplayerCollidesBlock",
@@ -2295,7 +2362,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "RadiationLiquid",
@@ -2315,7 +2383,8 @@
           "src/main/resources/assets/purechaos/models/block/radiation_liquid.json",
           "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/RadiationLiquidFluidType.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "Bleached",
@@ -2328,7 +2397,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/BleachedMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Bleach",
@@ -2342,7 +2412,8 @@
           "src/main/resources/assets/purechaos/models/item/bleach.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BleachItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "BrazilPlayerEntersDimension",
@@ -2373,7 +2444,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "PlayerJump",
@@ -2408,7 +2480,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "BrazilBlock",
@@ -2425,7 +2498,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/brazil_block.json",
           "src/main/resources/assets/purechaos/models/block/brazil_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "NokiaBlock",
@@ -2442,7 +2516,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/NokiaBlockBlock.java",
           "src/main/resources/assets/purechaos/models/item/nokia_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Brazil",
@@ -2466,7 +2541,8 @@
           "src/main/resources/assets/purechaos/models/block/brazil_portal_ew.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BrazilItem.java"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "BleachPlayerFinishesUsingItem",
@@ -2485,7 +2561,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "BackroomsLvl1Floor",
@@ -2502,7 +2579,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_floor.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "South",
@@ -2519,7 +2597,8 @@
           "src/main/resources/assets/purechaos/models/block/south.json",
           "src/main/resources/assets/purechaos/blockstates/south.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "BlockPlaced",
@@ -2550,7 +2629,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "Legs",
@@ -2566,7 +2646,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/legs_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/LegsEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "LongLegChicken",
@@ -2582,7 +2663,8 @@
           "src/main/resources/assets/purechaos/models/item/long_leg_chicken_spawn_egg.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/long_leg_chicken_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Firefly",
@@ -2598,7 +2680,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/FireflyEntity.java",
           "src/main/resources/assets/purechaos/models/item/firefly_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "SamsungNote7Rightclicked",
@@ -2633,7 +2716,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "TotemOfAmogus",
@@ -2647,7 +2731,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfAmogusItem.java",
           "src/main/resources/assets/purechaos/models/item/totem_of_amogus.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "DepressionBlock",
@@ -2664,7 +2749,8 @@
           "src/main/resources/data/purechaos/loot_tables/blocks/depression_block.json",
           "src/main/resources/assets/purechaos/models/item/depression_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "TPoseEntity",
@@ -2680,7 +2766,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TPoseEntityEntity.java",
           "src/main/resources/assets/purechaos/models/item/t_pose_entity_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "ImpostorKnife",
@@ -2694,7 +2781,8 @@
           "src/main/resources/assets/purechaos/models/item/impostor_knife.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/ImpostorKnifeItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "SamsungNote7",
@@ -2708,7 +2796,8 @@
           "src/main/resources/assets/purechaos/models/item/samsung_note_7.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/SamsungNote7Item.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "AlmondWater",
@@ -2722,7 +2811,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AlmondWaterItem.java",
           "src/main/resources/assets/purechaos/models/item/almond_water.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Zenith",
@@ -2736,7 +2826,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/ZenithItem.java",
           "src/main/resources/assets/purechaos/models/item/zenith.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "ComunisamBlock",
@@ -2753,7 +2844,8 @@
           "src/main/resources/assets/purechaos/blockstates/comunisam_block.json",
           "src/main/resources/assets/purechaos/models/block/comunisam_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Cccp",
@@ -2792,7 +2884,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "PolandBlock",
@@ -2809,7 +2902,8 @@
           "src/main/resources/assets/purechaos/models/block/poland_block.json",
           "src/main/resources/assets/purechaos/models/item/poland_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "CyberBlock",
@@ -2826,7 +2920,8 @@
           "src/main/resources/assets/purechaos/models/block/cyber_block.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/cyber_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "TotemOfDream",
@@ -2840,7 +2935,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/TotemOfDreamItem.java",
           "src/main/resources/assets/purechaos/models/item/totem_of_dream.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Cyberspace",
@@ -2856,7 +2952,8 @@
           "src/main/resources/data/purechaos/dimension_type/cyberspace.json",
           "src/main/resources/data/purechaos/dimension/cyberspace.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "Computer",
@@ -2876,7 +2973,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/computer.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ComputerGui",
@@ -2891,21 +2989,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/ComputerGuiMenu.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/ComputerGuiButtonMessage.java"
         ]
-      }
-    },
-    {
-      "name": "Igla",
-      "type": "item",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "igla",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/IglaItem.java",
-          "src/main/resources/assets/purechaos/models/item/igla.json"
-        ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "FASTTOPASSRightclicked",
@@ -2924,31 +3009,8 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "Cioao",
-      "type": "dimension",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cioao",
-      "metadata": {
-        "ep": true,
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/CioaoDimension.java",
-          "src/main/resources/assets/purechaos/models/item/cioao.json",
-          "src/main/resources/assets/purechaos/models/block/cioao_portal_ew.json",
-          "src/main/resources/assets/purechaos/models/block/cioao_portal_ns.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoTeleporter.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/teleporter/CioaoPortalShape.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/CioaoPortalBlock.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CioaoItem.java",
-          "src/main/resources/data/purechaos/dimension_type/cioao.json",
-          "src/main/resources/data/purechaos/dimension/cioao.json",
-          "src/main/resources/assets/purechaos/blockstates/cioao_portal.json"
-        ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "TO",
@@ -2962,7 +3024,8 @@
           "src/main/resources/assets/purechaos/models/item/to.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/TOItem.java"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "HmmmmDRIP",
@@ -2973,7 +3036,8 @@
       "registry_name": "hmmmm_drip",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "Greengiscreenda",
@@ -2990,7 +3054,8 @@
           "src/main/resources/assets/purechaos/blockstates/greengiscreenda.json",
           "src/main/resources/assets/purechaos/models/item/greengiscreenda.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "FASTTOPASS",
@@ -3004,7 +3069,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/FASTTOPASSItem.java",
           "src/main/resources/assets/purechaos/models/item/fasttopass.json"
         ]
-      }
+      },
+      "path": "~/Items/Discs"
     },
     {
       "name": "EnterCyberspaceButtonPressed",
@@ -3027,7 +3093,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "CyberBiome",
@@ -3042,7 +3109,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/cyber_biome_tree.json",
           "src/main/resources/data/purechaos/worldgen/biome/cyber_biome.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Stroater",
@@ -3058,7 +3126,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/stroater_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/StroaterEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "HalfGoldenApple",
@@ -3072,7 +3141,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/HalfGoldenAppleItem.java",
           "src/main/resources/assets/purechaos/models/item/half_golden_apple.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "HalfGoldenAppleRecipe",
@@ -3085,7 +3155,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/half_golden_apple_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Beef",
@@ -3099,7 +3170,8 @@
           "src/main/resources/assets/purechaos/models/item/beef.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BeefItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Baguette",
@@ -3113,7 +3185,8 @@
           "src/main/resources/assets/purechaos/models/item/baguette.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BaguetteItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Obamium",
@@ -3127,7 +3200,8 @@
           "src/main/resources/assets/purechaos/models/item/obamium.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/ObamiumItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "DoBossSpawning",
@@ -3139,7 +3213,8 @@
       "metadata": {
         "type": "logic",
         "files": []
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "LavaBottle",
@@ -3153,7 +3228,8 @@
           "src/main/resources/assets/purechaos/models/item/lava_bottle.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/LavaBottleItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "SpongebobBoss",
@@ -3169,7 +3245,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/SpongebobBossEntity.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/spongebob_boss_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "CobbleFluid",
@@ -3189,7 +3266,8 @@
           "src/main/resources/assets/purechaos/models/item/cobble_fluid_bucket.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CobbleFluidBlock.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "Beengot",
@@ -3203,7 +3281,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/BeengotItem.java",
           "src/main/resources/assets/purechaos/models/item/beengot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "CobblestoneFluidRecipe",
@@ -3216,7 +3295,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/cobblestone_fluid_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "LavaBottlePlayerFinishesUsingItem",
@@ -3239,7 +3319,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "AdidasArmorHelmetRecipe",
@@ -3252,7 +3333,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_armor_helmet_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasAxeRecipe",
@@ -3265,7 +3347,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_axe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasArmor",
@@ -3286,7 +3369,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasArmorItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_armor_chestplate.json"
         ]
-      }
+      },
+      "path": "~/Items/Armor"
     },
     {
       "name": "AdidasSword",
@@ -3300,7 +3384,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasSwordItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_sword.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "AdidasShovel",
@@ -3314,7 +3399,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasShovelItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_shovel.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "AdidasBlock",
@@ -3334,7 +3420,8 @@
           "src/main/resources/assets/purechaos/models/block/adidas_block.json",
           "src/main/resources/assets/purechaos/blockstates/adidas_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "AdidasAxe",
@@ -3348,7 +3435,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasAxeItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_axe.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "AdidasArmorBootsRecipe",
@@ -3361,7 +3449,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_armor_boots_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AMOGUS3BLU",
@@ -3377,7 +3466,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3BLUEntity.java",
           "src/main/resources/assets/purechaos/models/item/amogus_3_blu_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "AdidasPickaxeRecipe",
@@ -3390,7 +3480,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_pickaxe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasHoe",
@@ -3404,7 +3495,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasHoeItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_hoe.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "AdidasShovelRecipe",
@@ -3417,7 +3509,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_shovel_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasArmorLeggingsRecipe",
@@ -3430,7 +3523,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_armor_leggings_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasPickaxe",
@@ -3444,7 +3538,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AdidasPickaxeItem.java",
           "src/main/resources/assets/purechaos/models/item/adidas_pickaxe.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "AdidasSwordRecipe",
@@ -3457,7 +3552,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_sword_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AdidasHoeRecipe",
@@ -3470,7 +3566,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_hoe_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "AMOGUS3GRIN",
@@ -3486,7 +3583,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/amogus_3_grin_biome_modifier.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/AMOGUS3GRINEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "AdidasArmorBodyRecipe",
@@ -3499,7 +3597,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/adidas_armor_body_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "CheatGUI",
@@ -3514,7 +3613,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/network/CheatGUIButtonMessage.java",
           "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/CheatGUIMenu.java"
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "MissingTexture",
@@ -3531,7 +3631,8 @@
           "src/main/resources/assets/purechaos/models/item/missing_texture.json",
           "src/main/resources/assets/purechaos/blockstates/missing_texture.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PlayerSleep",
@@ -3550,26 +3651,8 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "PlayerJoinedWorld",
-      "type": "procedure",
-      "sortid": 197,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_joined_world",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PlayerJoinedWorldProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "SanityOverlay",
@@ -3582,7 +3665,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/screens/SanityOverlayOverlay.java"
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "TheRock",
@@ -3598,7 +3682,8 @@
           "src/main/resources/assets/purechaos/models/item/the_rock_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TheRockEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "EatableCommandBlock",
@@ -3612,7 +3697,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/EatableCommandBlockItem.java",
           "src/main/resources/assets/purechaos/models/item/eatable_command_block.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "XSORD",
@@ -3626,7 +3712,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/XSORDItem.java",
           "src/main/resources/assets/purechaos/models/item/xsord.json"
         ]
-      }
+      },
+      "path": "~/Items/Tools"
     },
     {
       "name": "Xite",
@@ -3640,7 +3727,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/XiteItem.java",
           "src/main/resources/assets/purechaos/models/item/xite.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "RadiationPoisioning",
@@ -3653,7 +3741,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/RadiationPoisioningMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "RadiationPoisioningActiveTickCondition",
@@ -3676,7 +3765,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Katana",
@@ -3689,7 +3779,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/katana.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "XSORDLivingEntityIsHitWithTool",
@@ -3708,7 +3799,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "BottleOfPiss",
@@ -3722,7 +3814,8 @@
           "src/main/resources/assets/purechaos/models/item/bottle_of_piss.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BottleOfPissItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "EatableCommandBlockPlayerFinishesUsingItem",
@@ -3757,7 +3850,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "BottleOfPissPlayerFinishesUsingItem",
@@ -3776,7 +3870,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "TintedGlassBottle",
@@ -3790,7 +3885,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/TintedGlassBottleItem.java",
           "src/main/resources/assets/purechaos/models/item/tinted_glass_bottle.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "IronEgg",
@@ -3804,7 +3900,8 @@
           "src/main/resources/assets/purechaos/models/item/iron_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/IronEggItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "DoritoCoolRanch",
@@ -3818,7 +3915,8 @@
           "src/main/resources/assets/purechaos/models/item/dorito_cool_ranch.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/DoritoCoolRanchItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Fat",
@@ -3831,7 +3929,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/FatMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DoNotPressPressed",
@@ -3866,7 +3965,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "DoritoNacho",
@@ -3880,7 +3980,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/DoritoNachoItem.java",
           "src/main/resources/assets/purechaos/models/item/dorito_nacho.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "TintedGlassBottleRecipe",
@@ -3893,7 +3994,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/tinted_glass_bottle_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "KFCC",
@@ -3906,7 +4008,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/kfcc.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "KentuckyFriedChickenFries",
@@ -3920,7 +4023,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenFriesItem.java",
           "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken_fries.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "KentuckyFriedChicken",
@@ -3934,7 +4038,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/KentuckyFriedChickenItem.java",
           "src/main/resources/assets/purechaos/models/item/kentucky_fried_chicken.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "PotaatoBaketRecepti",
@@ -3947,7 +4052,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/potaato_baket_recepti.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "KFCF",
@@ -3960,7 +4066,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/kfcf.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "KFCE",
@@ -3974,7 +4081,8 @@
           "src/main/resources/assets/purechaos/models/item/kfce.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/KFCEItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Big",
@@ -3990,7 +4098,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/big_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/big_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Aether",
@@ -4014,7 +4123,8 @@
           "src/main/resources/assets/purechaos/models/item/aether.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/AetherPortalBlock.java"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "SpitBall",
@@ -4028,7 +4138,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/SpitBallItem.java",
           "src/main/resources/assets/purechaos/models/item/spit_ball.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Two",
@@ -4041,7 +4152,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/network/TwoMessage.java"
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "TwoOnKeyPressed",
@@ -4072,7 +4184,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "Ironeggg",
@@ -4085,7 +4198,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/ironeggg.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Blind",
@@ -4098,7 +4212,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/BlindMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "GlowRightclicked",
@@ -4121,7 +4236,8 @@
             "type": "itemstack"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Glow",
@@ -4135,7 +4251,8 @@
           "src/main/resources/assets/purechaos/models/item/glow.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/GlowItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "GlowRecipe",
@@ -4148,7 +4265,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/glow_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "MercuryPlayerFinishesUsingItem",
@@ -4171,7 +4289,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Mercury",
@@ -4185,7 +4304,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/MercuryItem.java",
           "src/main/resources/assets/purechaos/models/item/mercury.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "JebBlock",
@@ -4205,7 +4325,8 @@
           "src/main/resources/assets/purechaos/models/item/jeb_block.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/jeb_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "FryingPanLivingEntityIsHitWithItem",
@@ -4236,7 +4357,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "FryingPan",
@@ -4250,7 +4372,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/FryingPanItem.java",
           "src/main/resources/assets/purechaos/models/item/frying_pan.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "AppleIngot",
@@ -4264,7 +4387,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AppleIngotItem.java",
           "src/main/resources/assets/purechaos/models/item/apple_ingot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "AppleIngotRecipe",
@@ -4277,7 +4401,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/apple_ingot_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Technoblade",
@@ -4293,18 +4418,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/TechnobladeEntity.java",
           "src/main/resources/assets/purechaos/models/item/technoblade_spawn_egg.json"
         ]
-      }
-    },
-    {
-      "name": "Fue",
-      "type": "itemextension",
-      "sortid": 224,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fue",
-      "metadata": {
-        "files": []
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "DioriteFuel",
@@ -4315,7 +4430,8 @@
       "registry_name": "diorite_fuel",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Cupcakke",
@@ -4331,7 +4447,8 @@
           "src/main/resources/assets/purechaos/models/item/cupcakke_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/CupcakkeRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "BirchForest",
@@ -4344,7 +4461,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/birch_forest.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Desert",
@@ -4357,7 +4475,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/desert.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Ohio",
@@ -4370,7 +4489,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/ohio.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "MoreExtremeHills",
@@ -4385,7 +4505,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/more_extreme_hills_tree.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/more_extreme_hills_tree.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Plains",
@@ -4398,7 +4519,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/plains.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "PeeFeature",
@@ -4413,7 +4535,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/pee_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/pee_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "CumFeature",
@@ -4428,7 +4551,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/cum_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/cum_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "StaravodaFeature",
@@ -4443,7 +4567,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/staravoda_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/staravoda_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "OrangeFluidFeature",
@@ -4458,7 +4583,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/orange_fluid_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/orange_fluid_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "OilFeature",
@@ -4473,7 +4599,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/oil_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/oil_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "GatoradeFeature",
@@ -4488,7 +4615,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/gatorade_feature.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/gatorade_feature_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "CarbonMonoxideFeature",
@@ -4503,7 +4631,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/carbon_monoxide_feature.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/carbon_monoxide_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "Milk2Feature",
@@ -4518,7 +4647,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/milk_2_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/milk_2_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "RadiationLiquidFeature",
@@ -4533,7 +4663,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/radiation_liquid_feature.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/radiation_liquid_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "CobbleFluidFeature",
@@ -4548,7 +4679,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/cobble_fluid_feature_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/cobble_fluid_feature.json"
         ]
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "SickEffectStartedapplied",
@@ -4567,21 +4699,8 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "SickEffectExpires",
-      "type": "procedure",
-      "sortid": 246,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sick_effect_expires",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SickEffectExpiresProcedure.java"
-        ],
-        "dependencies": []
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Sick",
@@ -4594,7 +4713,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/SickMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DingotPlayerFinishesUsingItem",
@@ -4613,7 +4733,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Dingot",
@@ -4627,7 +4748,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/DingotItem.java",
           "src/main/resources/assets/purechaos/models/item/dingot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "SanityOverlayValue",
@@ -4647,7 +4769,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "AlmondWaterPlayerFinishesUsingItem",
@@ -4670,7 +4793,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Veganism",
@@ -4682,7 +4806,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "PlayerEat",
@@ -4721,7 +4846,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "PoopPlayerFinishesUsingItem",
@@ -4740,7 +4866,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Poop",
@@ -4754,7 +4881,8 @@
           "src/main/resources/assets/purechaos/models/item/poop.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/PoopItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ShitOnKeyPressed",
@@ -4789,7 +4917,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "Shit",
@@ -4802,7 +4931,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/network/ShitMessage.java"
         ]
-      }
+      },
+      "path": "~/Keybinds"
     },
     {
       "name": "BaldiMinus",
@@ -4818,7 +4948,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/baldi_minus_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/baldi_minus_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "DementiaEffectExpires",
@@ -4837,7 +4968,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Dementia",
@@ -4850,7 +4982,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/DementiaMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Herobrine",
@@ -4866,7 +4999,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/HerobrineRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/HerobrineEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "TotemOfDreamItemInHandTick",
@@ -4885,7 +5019,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "CommunismOrbRightclicked",
@@ -4916,7 +5051,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "CommunismOrb",
@@ -4930,7 +5066,8 @@
           "src/main/resources/assets/purechaos/models/item/communism_orb.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/CommunismOrbItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "CocaColaPlayerFinishesUsingItem",
@@ -4961,7 +5098,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "CocaCola",
@@ -4975,7 +5113,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/CocaColaItem.java",
           "src/main/resources/assets/purechaos/models/item/coca_cola.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Nerd",
@@ -4991,7 +5130,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/NerdRenderer.java",
           "src/main/resources/assets/purechaos/models/item/nerd_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Bedrock",
@@ -5004,7 +5144,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/bedrock.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "SussySusStew",
@@ -5018,7 +5159,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/SussySusStewItem.java",
           "src/main/resources/assets/purechaos/models/item/sussy_sus_stew.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "IRS",
@@ -5034,7 +5176,8 @@
           "src/main/resources/assets/purechaos/models/item/irs_spawn_egg.json",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/IRSEntity.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "FBI",
@@ -5050,7 +5193,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/FBIEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/FBIRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "AmericanSoldat",
@@ -5066,7 +5210,8 @@
           "src/main/resources/assets/purechaos/models/item/american_soldat_spawn_egg.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/american_soldat_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Murica",
@@ -5082,7 +5227,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/MuricaEntity.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/MuricaRenderer.java"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "GrimaceShakePlayerFinishesUsingItem",
@@ -5113,7 +5259,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "GrimaceShake",
@@ -5127,7 +5274,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/GrimaceShakeItem.java",
           "src/main/resources/assets/purechaos/models/item/grimace_shake.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "DeekProjectile",
@@ -5140,21 +5288,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/DeekProjectileEntity.java"
         ]
-      }
-    },
-    {
-      "name": "Deek",
-      "type": "item",
-      "sortid": 303,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deek",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/item/DeekItem.java",
-          "src/main/resources/assets/purechaos/models/item/deek.json"
-        ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "AmongUSppFeature",
@@ -5170,7 +5305,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/among_u_spp_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "AmongUSpORTALFeature",
@@ -5186,7 +5322,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/among_u_sp_ortal_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "KondomnepitajzastoovoradimalispoileralertonimarupuProjectile",
@@ -5199,7 +5336,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
@@ -5213,7 +5351,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/KondomnepitajzastoovoradimalispoileralertonimarupuItem.java",
           "src/main/resources/assets/purechaos/models/item/kondomnepitajzastoovoradimalispoileralertonimarupu.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "PeePoolFeature",
@@ -5229,7 +5368,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/pee_pool_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features/Ponds"
     },
     {
       "name": "WoodRuinedPortalFeature",
@@ -5245,7 +5385,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/wood_ruined_portal_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "JukeBoxCaveFeature",
@@ -5261,7 +5402,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/juke_box_cave_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "AmongUsDungeonFeature",
@@ -5277,7 +5419,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/among_us_dungeon_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "WaterCupProjectile",
@@ -5290,7 +5433,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/WaterCupProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "WaterCup",
@@ -5304,7 +5448,8 @@
           "src/main/resources/assets/purechaos/models/item/water_cup.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/WaterCupItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "JosipovDrpanjeFeature",
@@ -5320,7 +5465,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/josipov_drpanje_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "WhiteCellFeature",
@@ -5336,7 +5482,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/white_cell_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "OilMountainFeature",
@@ -5352,7 +5499,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/oil_mountain_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "SecretTntFeature",
@@ -5368,7 +5516,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/secret_tnt_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "HerobrineShrineFeature",
@@ -5384,7 +5533,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/herobrine_shrine_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "OakHouseFeature",
@@ -5400,7 +5550,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/oak_house_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "JosipRangeProjectile",
@@ -5413,7 +5564,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JosipRangeProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "JosipRange",
@@ -5427,7 +5579,8 @@
           "src/main/resources/assets/purechaos/models/item/josip_range.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/JosipRangeItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "AK47Projectile",
@@ -5440,7 +5593,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/AK47ProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "AK47",
@@ -5454,7 +5608,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/AK47Item.java",
           "src/main/resources/assets/purechaos/models/item/ak_47.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "AmogusGunProjectile",
@@ -5467,7 +5622,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/AmogusGunProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "AmogusGun",
@@ -5481,7 +5637,8 @@
           "src/main/resources/assets/purechaos/models/item/amogus_gun.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/AmogusGunItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "HECFeature",
@@ -5498,7 +5655,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/hec_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "PolskaFeature",
@@ -5514,7 +5672,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/polska_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "RockProjectile",
@@ -5527,7 +5686,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/RockProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "Rock",
@@ -5541,7 +5701,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/RockItem.java",
           "src/main/resources/assets/purechaos/models/item/rock.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "JavelinLauncherProjectile",
@@ -5554,7 +5715,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/entity/JavelinLauncherProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "JavelinLauncher",
@@ -5568,7 +5730,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/JavelinLauncherItem.java",
           "src/main/resources/assets/purechaos/models/item/javelin_launcher.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "PondOfCobblestoneFeature",
@@ -5584,7 +5747,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/pond_of_cobblestone_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "RickrollStairsFeature",
@@ -5600,7 +5764,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/rickroll_stairs_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "BirchTreeFeature",
@@ -5616,7 +5781,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/birch_tree_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "BirchTreeBigFeature",
@@ -5632,7 +5798,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/birch_tree_big_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "CactusFeature",
@@ -5648,7 +5815,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/cactus_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "DrugVanFeature",
@@ -5664,7 +5832,8 @@
           "src/main/resources/data/purechaos/worldgen/configured_feature/drug_van_feature.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "CaptchaGUI",
@@ -5679,7 +5848,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/network/CaptchaGUIButtonMessage.java",
           "src/main/java/xyz/aflkonstukt/purechaos/client/gui/CaptchaGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "PensiveCube",
@@ -5696,42 +5866,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/entity/model/PensiveCubeModel.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/pensive_cube_biome_modifier.json"
         ]
-      }
-    },
-    {
-      "name": "PensiveCubeRightClickedOnEntity",
-      "type": "procedure",
-      "sortid": 328,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pensive_cube_right_clicked_on_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/PensiveCubeRightClickedOnEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Captcha",
@@ -5744,7 +5880,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/CaptchaCommand.java"
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "Golp",
@@ -5779,7 +5916,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "PufferBalloonItemInHandTick",
@@ -5802,7 +5940,8 @@
             "type": "itemstack"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "PufferBalloon",
@@ -5816,7 +5955,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/PufferBalloonItem.java",
           "src/main/resources/assets/purechaos/models/item/puffer_balloon.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "InfiniteFuel",
@@ -5830,7 +5970,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/InfiniteFuelItem.java",
           "src/main/resources/assets/purechaos/models/item/infinite_fuel.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "InfiniteFuelExt",
@@ -5841,7 +5982,8 @@
       "registry_name": "infinite_fuel_ext",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "BooletsShow1",
@@ -5861,7 +6003,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow2",
@@ -5881,7 +6024,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow3",
@@ -5901,7 +6045,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow4",
@@ -5921,7 +6066,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow5",
@@ -5941,7 +6087,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow6",
@@ -5961,7 +6108,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow7",
@@ -5981,7 +6129,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow8",
@@ -6001,7 +6150,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow9",
@@ -6021,7 +6171,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow10",
@@ -6041,7 +6192,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow11",
@@ -6061,7 +6213,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "BooletsShow12",
@@ -6081,7 +6234,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "MoreBoolets1DisplayOverlayIngame",
@@ -6104,7 +6258,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "MoreBoolets1",
@@ -6117,7 +6272,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/screens/MoreBoolets1Overlay.java"
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "MoreBoolets1DisplayOverlayIngame2",
@@ -6137,7 +6293,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "INeedBooletsTrigger",
@@ -6176,7 +6333,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays/Boolets"
     },
     {
       "name": "InfFuelRecipe",
@@ -6189,7 +6347,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/inf_fuel_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "PufferBalloonRecipe",
@@ -6202,7 +6361,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/puffer_balloon_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Groggo",
@@ -6218,7 +6378,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/GroggoRenderer.java",
           "src/main/resources/assets/purechaos/models/item/groggo_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "NikocadoAvocadoJumpscareDisplayOverlayIngame",
@@ -6238,7 +6399,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "NikocadoAvocadoJumpscare",
@@ -6251,7 +6413,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/client/screens/NikocadoAvocadoJumpscareOverlay.java"
         ]
-      }
+      },
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "Overdose",
@@ -6264,7 +6427,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/overdose.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "PureChaos",
@@ -6277,7 +6441,8 @@
         "files": [
           "src/main/resources/data/purechaos/advancements/pure_chaos.json"
         ]
-      }
+      },
+      "path": "~/Achievements"
     },
     {
       "name": "UpsideDownHouse",
@@ -6293,7 +6458,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/upside_down_house_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "IOfferYouBrainrot",
@@ -6304,7 +6470,8 @@
       "registry_name": "i_offer_you_brainrot",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "YouLikeKissingBoys",
@@ -6315,7 +6482,8 @@
       "registry_name": "you_like_kissing_boys",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "APainting",
@@ -6326,7 +6494,8 @@
       "registry_name": "a_painting",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "NoMeme",
@@ -6337,7 +6506,8 @@
       "registry_name": "no_meme",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "Bombkisser",
@@ -6348,7 +6518,8 @@
       "registry_name": "bombkisser",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "BigTails",
@@ -6359,7 +6530,8 @@
       "registry_name": "big_tails",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "ISeeYouMasturbating",
@@ -6370,7 +6542,8 @@
       "registry_name": "i_see_you_masturbating",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "YouThinkYoureAlone",
@@ -6381,7 +6554,8 @@
       "registry_name": "you_think_youre_alone",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "BuckshotTime",
@@ -6392,7 +6566,8 @@
       "registry_name": "buckshot_time",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "YouLikeSeeingMe",
@@ -6403,7 +6578,8 @@
       "registry_name": "you_like_seeing_me",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "NuhUh",
@@ -6414,7 +6590,8 @@
       "registry_name": "nuh_uh",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "McKisser",
@@ -6425,7 +6602,8 @@
       "registry_name": "mc_kisser",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "StaringAtGay",
@@ -6436,7 +6614,8 @@
       "registry_name": "staring_at_gay",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "ItsImpossible",
@@ -6447,7 +6626,8 @@
       "registry_name": "its_impossible",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "ThisIsHowYouLook",
@@ -6458,7 +6638,8 @@
       "registry_name": "this_is_how_you_look",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "ShurUp",
@@ -6469,7 +6650,8 @@
       "registry_name": "shur_up",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Paintings"
     },
     {
       "name": "BrakeFluid",
@@ -6483,7 +6665,8 @@
           "src/main/resources/assets/purechaos/models/item/brake_fluid.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BrakeFluidItem.java"
         ]
-      }
+      },
+      "path": "~/Fluids"
     },
     {
       "name": "NightmareDimension",
@@ -6498,7 +6681,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/NightmareDimensionDimension.java",
           "src/main/resources/data/purechaos/dimension/nightmare_dimension.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "NightmareDimensionPlayerEntersDimension",
@@ -6533,7 +6717,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "WhenPlayerSleep",
@@ -6552,7 +6737,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "NightmareBiome",
@@ -6565,7 +6751,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/nightmare_biome.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "ScatterSculk",
@@ -6581,7 +6768,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/scatter_sculk_biome_modifier.json"
         ],
         "has_nbt_structure": true
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "GassedDeath",
@@ -6594,7 +6782,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/gassed_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "CCCPDeath",
@@ -6607,7 +6796,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/cccp_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "BleachDeath",
@@ -6620,7 +6810,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/bleach_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "DrankLavaDeath",
@@ -6633,7 +6824,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/drank_lava_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "RadiationDeath",
@@ -6646,7 +6838,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/radiation_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "TakenHomeDeath",
@@ -6659,7 +6852,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/taken_home_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "VeganDeath",
@@ -6672,7 +6866,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/vegan_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "CustomTitle",
@@ -6685,7 +6880,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/CustomTitleMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "CustomIcon",
@@ -6698,7 +6894,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/CustomIconMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "Illegalsubstance",
@@ -6709,7 +6906,8 @@
       "registry_name": "illegalsubstance",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items/Potions"
     },
     {
       "name": "Recipeillegalsubstance",
@@ -6722,7 +6920,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/RecipeillegalsubstanceBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "OILRAAAH",
@@ -6735,7 +6934,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/OILRAAAHBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "DisableCaptcha",
@@ -6747,7 +6947,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "BackroomWallBottom",
@@ -6764,7 +6965,8 @@
           "src/main/resources/assets/purechaos/blockstates/backroom_wall_bottom.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomWallBottomBlock.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "BackroomsCeiling",
@@ -6781,7 +6983,8 @@
           "src/main/resources/assets/purechaos/blockstates/backrooms_ceiling.json",
           "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_ceiling.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Backrooms",
@@ -6797,7 +7000,8 @@
           "src/main/resources/data/purechaos/worldgen/template_pool/backrooms_backrooms.json",
           "src/main/resources/data/purechaos/worldgen/template_pool/backrooms.json"
         ]
-      }
+      },
+      "path": "~/Structures"
     },
     {
       "name": "BackroomsBiome",
@@ -6810,7 +7014,8 @@
         "files": [
           "src/main/resources/data/purechaos/worldgen/biome/backrooms_biome.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "BackroomsDimension",
@@ -6825,7 +7030,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/BackroomsDimensionDimension.java",
           "src/main/resources/data/purechaos/dimension_type/backrooms_dimension.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "SendToBackrooms",
@@ -6852,7 +7058,8 @@
             "type": "number"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "BackroomsCommand",
@@ -6865,7 +7072,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/BackroomsCommandCommand.java"
         ]
-      }
+      },
+      "path": "~/Commands"
     },
     {
       "name": "DoritoFinishedEating",
@@ -6900,7 +7108,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "CheatGUISwitchDimension",
@@ -6919,7 +7128,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "CheatGUISwitchGamemode",
@@ -6938,7 +7148,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "FatEffectExpires",
@@ -6957,7 +7168,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "GasChamber",
@@ -6972,7 +7184,8 @@
           "src/main/resources/data/purechaos/worldgen/structure_set/gas_chamber.json",
           "src/main/resources/data/purechaos/worldgen/template_pool/gas_chamber.json"
         ]
-      }
+      },
+      "path": "~/Structures"
     },
     {
       "name": "BottleMixin",
@@ -6985,7 +7198,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/BottleMixinMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "KeyboardInput",
@@ -6998,7 +7212,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/KeyboardInputMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "Drunk",
@@ -7011,7 +7226,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/DrunkMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DrunkEffectStartedapplied",
@@ -7034,7 +7250,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DrunkEffectExpires",
@@ -7053,7 +7270,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DementiaActiveTickCondition",
@@ -7072,7 +7290,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "HECFeatureAdditionalGenerationCondition",
@@ -7092,7 +7311,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Structures/Features"
     },
     {
       "name": "MelatoninPill",
@@ -7106,7 +7326,8 @@
           "src/main/resources/assets/purechaos/models/item/melatonin_pill.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/MelatoninPillItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ItemTooltips",
@@ -7133,7 +7354,8 @@
             "type": "tooltip"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "MelatoninPillPlayerFinishesUsingItem",
@@ -7156,7 +7378,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "HeartAttackDeath",
@@ -7169,7 +7392,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/heart_attack_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "MakePlayerSleep",
@@ -7188,7 +7412,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "JavelinLauncherProjectileProjectileHitsBlock",
@@ -7219,7 +7444,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "KPressDeath",
@@ -7232,7 +7458,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/k_press_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "IconStorage",
@@ -7245,7 +7472,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/IconStorage.java"
         ]
-      }
+      },
+      "path": "~/Custom Code"
     },
     {
       "name": "Meteor",
@@ -7258,7 +7486,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/Meteor.java"
         ]
-      }
+      },
+      "path": "~/Custom Code"
     },
     {
       "name": "MeteorHandler",
@@ -7271,7 +7500,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/MeteorHandler.java"
         ]
-      }
+      },
+      "path": "~/Custom Code"
     },
     {
       "name": "MeteorCommand",
@@ -7284,7 +7514,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/MeteorCommandCommand.java"
         ]
-      }
+      },
+      "path": "~/Commands"
     },
     {
       "name": "ModifiedEthanol",
@@ -7295,7 +7526,8 @@
       "registry_name": "modified_ethanol",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items/Potions"
     },
     {
       "name": "Ethanol",
@@ -7306,7 +7538,8 @@
       "registry_name": "ethanol",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Items/Potions"
     },
     {
       "name": "AMERecipe",
@@ -7319,7 +7552,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/AMERecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "EthanolRecipe",
@@ -7332,7 +7566,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/EthanolRecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Rainbowrack",
@@ -7349,7 +7584,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/RainbowrackBlock.java",
           "src/main/resources/assets/purechaos/models/block/rainbowrack.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "RainbowGrass",
@@ -7366,7 +7602,8 @@
           "src/main/resources/assets/purechaos/models/item/rainbow_grass.json",
           "src/main/resources/assets/purechaos/models/block/rainbow_grass.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "PolandBiome",
@@ -7381,7 +7618,8 @@
           "src/main/resources/data/purechaos/worldgen/placed_feature/poland_biome_tree.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/poland_biome_tree.json"
         ]
-      }
+      },
+      "path": "~/Biomes"
     },
     {
       "name": "Poland",
@@ -7396,7 +7634,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/dimension/PolandDimension.java",
           "src/main/resources/data/purechaos/dimension/poland.json"
         ]
-      }
+      },
+      "path": "~/Dimensions"
     },
     {
       "name": "EnterPoland",
@@ -7406,9 +7645,6 @@
       "locked_code": false,
       "registry_name": "enter_poland",
       "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EnterPolandProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -7419,7 +7655,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "PolandItem",
@@ -7433,7 +7670,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/PolandItemItem.java",
           "src/main/resources/assets/purechaos/models/item/poland_item.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "PolandBlockRecipe",
@@ -7446,7 +7684,8 @@
         "files": [
           "src/main/resources/data/purechaos/recipes/poland_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "Yugoslavia",
@@ -7462,7 +7701,8 @@
           "src/main/resources/assets/purechaos/models/item/yugoslavia_spawn_egg.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/yugoslavia_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "AdGUI",
@@ -7477,7 +7717,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/AdGUIMenu.java",
           "src/main/java/xyz/aflkonstukt/purechaos/network/AdGUIButtonMessage.java"
         ]
-      }
+      },
+      "path": "~/GUIs/ADs"
     },
     {
       "name": "Adblocker",
@@ -7489,7 +7730,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "FishProjectileProjectileHitsBlock",
@@ -7516,7 +7758,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "FishProjectile",
@@ -7530,7 +7773,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/FishProjectileRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/FishProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Items/Projectiles"
     },
     {
       "name": "FishLauncher",
@@ -7544,7 +7788,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/FishLauncherItem.java",
           "src/main/resources/assets/purechaos/models/item/fish_launcher.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "StoneStair",
@@ -7559,7 +7804,8 @@
           "src/main/resources/data/purechaos/worldgen/structure/stone_stair.json",
           "src/main/resources/data/purechaos/worldgen/structure_set/stone_stair.json"
         ]
-      }
+      },
+      "path": "~/Structures"
     },
     {
       "name": "FatOnEffectActiveTick",
@@ -7578,7 +7824,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "PackPriority",
@@ -7591,7 +7838,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/PackPriority.java"
         ]
-      }
+      },
+      "path": "~/Custom Code"
     },
     {
       "name": "EatWaterBucket",
@@ -7604,7 +7852,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/EatWaterBucketMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "EdibleWaterBucket",
@@ -7618,7 +7867,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/item/EdibleWaterBucketItem.java",
           "src/main/resources/assets/purechaos/models/item/edible_water_bucket.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "Suffocation",
@@ -7631,7 +7881,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/SuffocationMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "CurseOfFatherless",
@@ -7644,7 +7895,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/CurseOfFatherlessMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Depressed",
@@ -7657,7 +7909,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/potion/DepressedMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DepressedActiveTickCondition",
@@ -7676,7 +7929,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "CurseOfFatherlessEffectStartedapplied",
@@ -7711,7 +7965,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "CurseOfFatherlessEffectExpires",
@@ -7746,7 +8001,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "CurseOfFatherlessOnEffectActiveTick",
@@ -7781,7 +8037,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "DepressedEffectExpires",
@@ -7800,7 +8057,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "FuseEntities",
@@ -7837,7 +8095,8 @@
           "src/main/resources/assets/purechaos/models/item/francium.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/FranciumItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "FranciumItemInHandTick",
@@ -7856,7 +8115,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "BeerPlayerFinishesUsingItem",
@@ -7875,7 +8135,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "Beer",
@@ -7889,7 +8150,8 @@
           "src/main/resources/assets/purechaos/models/item/beer.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/BeerItem.java"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "GimmeADItem",
@@ -7908,7 +8170,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/ADs"
     },
     {
       "name": "ShowMelatoninADImage",
@@ -7928,7 +8191,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/ADs"
     },
     {
       "name": "ChunkGenerator",
@@ -7941,7 +8205,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/ChunkGeneratorMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "AddictionDeath",
@@ -7954,7 +8219,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/addiction_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "AddictionManager",
@@ -7989,7 +8255,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "AlcoholDeath",
@@ -8002,7 +8269,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/alcohol_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "BeerRecipe",
@@ -8015,7 +8283,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/BeerRecipeBrewingRecipe.java"
         ]
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "HowAlcohol",
@@ -8026,7 +8295,8 @@
       "registry_name": "how_alcohol",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "HowOil",
@@ -8037,7 +8307,8 @@
       "registry_name": "how_oil",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "HowAlmondWater",
@@ -8048,7 +8319,8 @@
       "registry_name": "how_almond_water",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "FoundInLoot",
@@ -8059,7 +8331,8 @@
       "registry_name": "found_in_loot",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "HalfGoldenApplePlayerFinishesUsingItem",
@@ -8078,7 +8351,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "CloseAD",
@@ -8097,7 +8371,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/GUIs/ADs"
     },
     {
       "name": "MobCap",
@@ -8110,7 +8385,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/mixins/MobCapMixin.java"
         ]
-      }
+      },
+      "path": "~/Custom Code/Mixins"
     },
     {
       "name": "MobCapMultiplier",
@@ -8122,7 +8398,8 @@
       "metadata": {
         "files": [],
         "type": "number"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "SyncWorldRules",
@@ -8141,7 +8418,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "SurfaceEntitySpawningCondition",
@@ -8173,7 +8451,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "JosipdvatockanulaEntityDies",
@@ -8204,7 +8483,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "FoundInJosipBoss",
@@ -8215,7 +8495,8 @@
       "registry_name": "found_in_josip_boss",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Recipes"
     },
     {
       "name": "EdibleWaterBucketPlayerFinishesUsingItem",
@@ -8234,7 +8515,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "MentalHealth",
@@ -8246,7 +8528,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/Gamerules"
     },
     {
       "name": "SetupCaptchaMathChallenges",
@@ -8260,7 +8543,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/SetupCaptchaMathChallengesProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "SetupCaptchaWordChallenges",
@@ -8274,7 +8558,8 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/SetupCaptchaWordChallengesProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "GenerateCaptcha",
@@ -8284,13 +8569,17 @@
       "locked_code": false,
       "registry_name": "generate_captcha",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/GenerateCaptchaProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "CaptchaDeath",
@@ -8303,7 +8592,8 @@
         "files": [
           "src/main/resources/data/purechaos/damage_type/captcha_death.json"
         ]
-      }
+      },
+      "path": "~/Player Procedures/Deaths"
     },
     {
       "name": "ConfirmCaptcha",
@@ -8330,7 +8620,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "GetCaptchaGUIText",
@@ -8350,7 +8641,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "CaptchaGUIClosed",
@@ -8373,7 +8665,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "DepressionBlockEntityWalksOnTheBlock",
@@ -8392,7 +8685,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "CaptchaGUIWhileThisGUIIsOpenTick",
@@ -8415,7 +8709,8 @@
             "type": "map"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "SanityCommandAdd",
@@ -8438,7 +8733,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "SanityCommandRemove",
@@ -8461,7 +8757,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "SanityCommandSet",
@@ -8484,7 +8781,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "SanityCommandGet",
@@ -8507,7 +8805,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "SanityCommandEnable",
@@ -8530,7 +8829,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "Sanity",
@@ -8543,7 +8843,8 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/command/SanityCommand.java"
         ]
-      }
+      },
+      "path": "~/Commands/Sanity"
     },
     {
       "name": "ShowSanityDisabled",
@@ -8563,35 +8864,20 @@
             "type": "entity"
           }
         ]
-      }
-    },
-    {
-      "name": "TextCaptchaHandler",
-      "type": "procedure",
-      "sortid": 511,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "text_captcha_handler",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/TextCaptchaHandlerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
+      },
+      "path": "~/GUIs"
     },
     {
       "name": "HandleNewCaptcha",
       "type": "procedure",
       "sortid": 512,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "handle_new_captcha",
       "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/HandleNewCaptchaProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -8614,34 +8900,8 @@
             "type": "world"
           }
         ]
-      }
-    },
-    {
-      "name": "CheckTextCaptchaAntwort",
-      "type": "procedure",
-      "sortid": 513,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "check_text_captcha_antwort",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CheckTextCaptchaAntwortProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "text",
-            "type": "string"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "CaptchaCommandProcedure",
@@ -8680,7 +8940,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Captcha"
     },
     {
       "name": "ConfigureShaders",
@@ -8703,7 +8964,205 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
+    },
+    {
+      "name": "BuffaloLake",
+      "type": "biome",
+      "sortid": 516,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffalo_lake",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/BuffaloLakeFruitDecorator.java",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/buffalo_lake_tree.json",
+          "src/main/resources/data/purechaos/worldgen/biome/buffalo_lake.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/buffalo_lake_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "InternetExplorer",
+      "type": "block",
+      "sortid": 517,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "internet_explorer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/blockstates/internet_explorer.json",
+          "src/main/resources/assets/purechaos/models/item/internet_explorer.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/internet_explorer.json",
+          "src/main/resources/assets/purechaos/models/block/internet_explorer.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/InternetExplorerBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DreamBiome",
+      "type": "biome",
+      "sortid": 518,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/dream_biome_tree.json",
+          "src/main/resources/data/purechaos/worldgen/biome/dream_biome.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/dream_biome_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "FortniteBiome",
+      "type": "biome",
+      "sortid": 519,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortnite_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/placed_feature/fortnite_biome_tree.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/fortnite_biome_tree.json",
+          "src/main/resources/data/purechaos/worldgen/biome/fortnite_biome.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "Discord",
+      "type": "plant",
+      "sortid": 520,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "discord",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/block/discord.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/DiscordBlock.java",
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/discord_biome_modifier.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/discord.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/discord.json",
+          "src/main/resources/assets/purechaos/models/item/discord.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/discord.json",
+          "src/main/resources/assets/purechaos/blockstates/discord.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "Ping",
+      "type": "item",
+      "sortid": 521,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ping",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/PingItem.java",
+          "src/main/resources/assets/purechaos/models/item/ping.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FunLand",
+      "type": "biome",
+      "sortid": 522,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fun_land",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/fun_land.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/fun_land_tree.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/fun_land_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "White",
+      "type": "block",
+      "sortid": 523,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/block/WhiteBlock.java",
+          "src/main/resources/data/purechaos/loot_tables/blocks/white.json",
+          "src/main/resources/assets/purechaos/models/item/white.json",
+          "src/main/resources/assets/purechaos/blockstates/white.json",
+          "src/main/resources/assets/purechaos/models/block/white.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "HeavenOrHell",
+      "type": "biome",
+      "sortid": 524,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heaven_or_hell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/biome/heaven_or_hell.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/heaven_or_hell_tree.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/heaven_or_hell_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "NoJumpVineBoom",
+      "type": "gamerule",
+      "sortid": 525,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_jump_vine_boom",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Gamerules"
+    },
+    {
+      "name": "WorldRendererSetup",
+      "type": "procedure",
+      "sortid": 526,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_renderer_setup",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/WorldRendererSetupProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Player Procedures"
+    },
+    {
+      "name": "LavaLakesInBuffalo",
+      "type": "feature",
+      "sortid": 527,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_lakes_in_buffalo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/placed_feature/lava_lakes_in_buffalo.json",
+          "src/main/resources/data/purechaos/worldgen/configured_feature/lava_lakes_in_buffalo.json",
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/lava_lakes_in_buffalo_biome_modifier.json"
+        ]
+      },
+      "path": "~/Structures/Features/Ponds"
     }
   ],
   "variable_elements": [
@@ -9194,10 +9653,19 @@
       ],
       "category": "neutral",
       "subtitle": "its just a burning memory - The Caretaker"
+    },
+    {
+      "name": "ping",
+      "files": [
+        "discord_ping_sound_effect"
+      ],
+      "category": "ambient",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
     "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9215,11 +9683,13 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
+    "BIOMES:minecraft:has_structure/igloo": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/igloo": [
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9231,6 +9701,9 @@
       "Items.DIAMOND_HOE",
       "Items.NETHERITE_HOE"
     ],
+    "BIOMES:minecraft:has_structure/ruined_portal_ocean": [
+      "~CUSTOM:FunLand"
+    ],
     "ITEMS:mod:axes_above_wood": [
       "CUSTOM:AdidasAxe",
       "Items.STONE_AXE",
@@ -9240,6 +9713,7 @@
       "Items.NETHERITE_AXE"
     ],
     "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9251,7 +9725,9 @@
       "Items.DIAMOND_SHOVEL",
       "Items.NETHERITE_SHOVEL"
     ],
+    "BLOCKS:minecraft:logs": [],
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9277,21 +9753,28 @@
       "Items.ROTTEN_FLESH"
     ],
     "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus",
       "~CUSTOM:HellButOverworld"
     ],
     "BIOMES:minecraft:has_structure/bastion_remnant": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus",
       "~CUSTOM:HellButOverworld"
     ],
     "BIOMES:minecraft:has_structure/shipwreck": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
+    "BIOMES:minecraft:has_structure/village_snowy": [
+      "~CUSTOM:FunLand"
+    ],
     "BIOMES:minecraft:has_structure/swamp_hut": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9299,29 +9782,35 @@
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/nether_fortress": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus",
       "~CUSTOM:HellButOverworld"
     ],
     "BIOMES:minecraft:has_structure/ocean_monument": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Susus"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
@@ -9336,7 +9825,6 @@
       "~CUSTOM:BackroomsLvl1Floor",
       "~Blocks.SCULK",
       "~Blocks.STONE#0",
-      "~Blocks.AZALEA",
       "~CUSTOM:CyberBlock",
       "~CUSTOM:BrazilBlock",
       "~CUSTOM:SusBlock",
@@ -9353,11 +9841,14 @@
       "~CUSTOM:SasiAmangas",
       "~CUSTOM:Fallgays"
     ],
+    "BIOMES:minecraft:is_overworld": [],
     "BIOMES:minecraft:has_structure/end_city": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
     "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:FunLand",
       "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
@@ -9366,11 +9857,38 @@
       "~CUSTOM:PolandBiome",
       "~CUSTOM:Ekesmasterbait"
     ],
+    "BLOCKS:minecraft:dirt": [
+      "Blocks.NETHERRACK",
+      "CUSTOM:CyberBlock",
+      "Blocks.STONE#6",
+      "Blocks.CONCRETE_POWDER#4",
+      "Blocks.DIRT#2",
+      "Blocks.STONE#0",
+      "CUSTOM:Rainbowrack",
+      "CUSTOM:RainbowGrass",
+      "Blocks.BEDROCK"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_ruin_cold": [
+      "~CUSTOM:FunLand"
+    ],
+    "BLOCKS:minecraft:animals_spawnable_on": [
+      "Blocks.NETHERRACK",
+      "CUSTOM:CyberBlock",
+      "Blocks.STONE#6",
+      "Blocks.CONCRETE#4",
+      "Blocks.DIRT#2",
+      "Blocks.STONE#0",
+      "CUSTOM:Rainbowrack",
+      "CUSTOM:RainbowGrass",
+      "Blocks.BEDROCK",
+      "Blocks.SNOW_LAYER",
+      "Blocks.SNOW"
     ],
     "ITEMS:mod:pickaxes_above_wood": [
       "CUSTOM:AdidasPickaxe",
@@ -9389,45 +9907,46 @@
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
       "item.chaosmod.fooditem": "Food Item 1",
-      "item_group.purechaos.chaostab": "Chaos",
+      "item_group.purechaos.chaostab": "Pure Chaos",
       "item.purechaos.beef_armor_helmet": "Beef Armor Helmet",
       "death.attack.gassed_death.player": "%1$s was gassed by %2$s",
       "entity.chaosmod.aentity": "Aentity",
-      "entity.chaosmod.herobrine": "Herobrine",
       "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
-      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "entity.chaosmod.herobrine": "Herobrine",
       "item.purechaos.scratest.desc": "idk man stop asking me",
+      "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
       "effect.chaosmod.fat": "Fat",
       "item.minecraft.wooden_pickaxe": "Wooden Diggy Diggy Blocky",
+      "subtitles.ping": "",
       "item.chaosmod.moth_of_aggrevation_spawn_egg": "Moth Of Aggrevation Spawn Egg",
       "block.chaosmod.green_plant": "Green Plant",
       "item.purechaos.american_soldat_spawn_egg": "American Soldier Spawn Egg",
-      "item.minecraft.lingering_potion.effect.modified_ethanol": "Lingering Potion of Alchemically Modified Ethanol",
       "entity.purechaos.pensive_cube": "Pensive Cube",
+      "item.minecraft.lingering_potion.effect.modified_ethanol": "Lingering Potion of Alchemically Modified Ethanol",
       "item.purechaos.beef_armor_boots": "Beef Armor Boots",
       "block.chaosmod.youtube": "Youtube",
-      "item.minecraft.potion.effect.ethanol": "Ethanol",
       "block.chaosmod.pee": "Pee",
+      "item.minecraft.potion.effect.ethanol": "Ethanol",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.minecraft.tipped_arrow.effect.illegalsubstance": "Laced Arrow",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
-      "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
-      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "death.attack.overdose.item": "%1$s overdosed on meth",
+      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
+      "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
       "item.chaosmod.legs_spawn_egg": "Legs Spawn Egg",
       "item.purechaos.rock": "Rock",
       "entity.purechaos.josip": "JOSIP",
       "subtitles.smack_my_ass": "",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
-      "block.purechaos.plante": "Plante",
-      "entity.chaosmod.big": "Big",
       "key.chaosmod.summonsus": "Summonsus",
+      "entity.chaosmod.big": "Big",
+      "block.purechaos.plante": "Plante",
       "gui.purechaos.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "entity.purechaos.murica": "\u0027Murica",
       "block.purechaos.pee_block": "Pee Block",
-      "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
+      "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "gamerule.adblocker.description": "Enable this to disable ADs",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
@@ -9437,8 +9956,8 @@
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.stroater": "Stroater",
-      "item.purechaos.turtle_armor_chestplate": "Turtle Chestplate",
       "item.purechaos.water_cup": "Water Cup",
+      "item.purechaos.turtle_armor_chestplate": "Turtle Chestplate",
       "item.purechaos.gatorade_bucket": "Gatorade Bucket",
       "block.purechaos.tlghd": "TLG Block",
       "item.purechaos.amogus_gun": "Amogus Gun",
@@ -9446,11 +9965,11 @@
       "fluid.purechaos.gatorade": "Gatorade",
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
-      "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
       "key.purechaos.shit": "Shit",
+      "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
-      "death.attack.fall": "%1$s kissed the floor",
       "item.purechaos.pee_bucket": "Pee Bucket",
+      "death.attack.fall": "%1$s kissed the floor",
       "gui.purechaos.sanity_overlay.label_disabled": "(disabled)",
       "block.chaosmod.brazil_block": "Brazil Block",
       "death.attack.addiction_death": "%1$s suffered from withdrawal",
@@ -9459,12 +9978,12 @@
       "item.purechaos.puffer_balloon": "Puffer on a String",
       "painting.purechaos.mc_kisser.author": "boykisser",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
-      "subtitles.nerd": "nerd",
       "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
+      "subtitles.nerd": "nerd",
       "item.chaosmod.xsord": "Xite Containment Blade",
       "fluid.chaosmod.staravoda": "Staravoda",
-      "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
       "item.purechaos.spear": "Spear",
+      "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
@@ -9494,9 +10013,9 @@
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "painting.purechaos.you_think_youre_alone.title": "You Think You\u0027re Alone",
-      "death.attack.addiction_death.player": "%1$s suffered from withdrawal while trying to escape %2$s",
-      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
       "item.purechaos.use_in_emergencies": "Use In Emergencies",
+      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
+      "death.attack.addiction_death.player": "%1$s suffered from withdrawal while trying to escape %2$s",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.purechaos.spit_ball": "Spit Ball",
@@ -9515,9 +10034,9 @@
       "effect.purechaos.depressed": "Depressed",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
-      "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
-      "subtitles.gulp_gulp": "",
       "item.purechaos.infinite_fuel": "Infinite Fuel",
+      "subtitles.gulp_gulp": "",
+      "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
       "subtitles.burning_memory": "its just a burning memory - The Caretaker",
       "block.purechaos.sus_block": "Sus Block",
       "biome.chaosmod.hell_but_overworld": "Neover",
@@ -9551,8 +10070,8 @@
       "block.chaosmod.cum": "Cum",
       "item.purechaos.edible_water_bucket": "Water Bucket",
       "item.chaosmod.water_cup": "Water Cup",
-      "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "biome.chaosmod.ohio": "Ohio",
+      "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
       "entity.purechaos.amogus_3": "Amogus 3",
       "item.chaosmod.xite": "Xite",
       "entity.purechaos.amogus_2": "Amogus 2",
@@ -9584,8 +10103,8 @@
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "item.minecraft.tipped_arrow.effect.ethanol": "Arrow of Ethanol",
-      "entity.chaosmod.cursed_dog": "Dgo",
       "block.chaosmod.missing_texture": "Missing Texture",
+      "entity.chaosmod.cursed_dog": "Dgo",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
@@ -9598,6 +10117,7 @@
       "death.attack.bleach_death.item": "%1$s didnt feel like seeing anymore",
       "jei.purechaos.how_oil": "To make oil, you need to in a brewing stand put an AK47 into a staravoda bucket!",
       "biome.chaosmod.cyber_biome": "Cyber Biome",
+      "biome.purechaos.heaven_or_hell": "Heaven Or Hell",
       "block.chaosmod.sus_block": "Sus Block",
       "effect.chaosmod.sick": "Sick",
       "entity.purechaos.josipdvatockanula": "[REDACTED] JosipTLG",
@@ -9631,8 +10151,8 @@
       "block.purechaos.emepee": "Emepee",
       "item.purechaos.adidas_armor_leggings": "Adidas Leggings",
       "entity.chaosmod.among_us": "Among Us",
-      "menu.options": "Settings for grown ups",
       "item.purechaos.brown": "Brown",
+      "menu.options": "Settings for grown ups",
       "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",
@@ -9642,16 +10162,16 @@
       "painting.purechaos.i_see_you_masturbating.title": "I See You Masturbating",
       "item.chaosmod.poop": "Poop",
       "entity.purechaos.firefly": "Firefly",
-      "block.chaosmod.south": "South",
       "block.purechaos.sa_ds": "Block ?",
+      "block.chaosmod.south": "South",
       "block.purechaos.death": "Death",
       "item.purechaos.totem_of_amogus": "Totem Of Lying",
       "selectWorld.data_read": "Reliving your past mistakes...",
       "block.purechaos.youtube": "Youtube",
       "gameMode.changed": "Sussy things done, you are now %s",
       "biome.purechaos.backrooms_biome": "Backrooms",
-      "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "entity.chaosmod.murica": "\u0027Murica",
+      "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "item.minecraft.golden_pickaxe": "Golden Diggy Diggy Blocky",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
@@ -9667,8 +10187,8 @@
       "item.purechaos.food_item_3": "Food Item 3",
       "entity.chaosmod.stalin": "Stalin",
       "item.purechaos.food_item_2": "Food Item 2",
-      "item.purechaos.baguette": "Baguette",
       "item.purechaos.meth": "Meth",
+      "item.purechaos.baguette": "Baguette",
       "block.purechaos.missing_texture": "Missing Texture",
       "painting.purechaos.a_painting.author": "some reddit user",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -9676,6 +10196,7 @@
       "entity.chaosmod.josip_pet": "Josip Pet",
       "item.purechaos.samsung_note_7": "Samsung Note 7",
       "entity.purechaos.yugoslavia": "Yugoslavia",
+      "biome.purechaos.dream_biome": "Dream Biome",
       "block.chaosmod.nokia_block": "Nokia Block",
       "block.purechaos.milk_2": "Milk 2",
       "entity.purechaos.shep": "Shep",
@@ -9686,8 +10207,8 @@
       "death.attack.alcohol_death": "%1$s drank himself to death",
       "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
       "item.chaosmod.obamium": "Obamium",
-      "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
       "subtitles.crnidani": "crnidanijebani",
+      "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
       "selectWorld.gameMode.creative": "Minimal Suffering",
       "item.purechaos.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
@@ -9697,8 +10218,8 @@
       "item.purechaos.communism_orb": "Orb o\u0027 Communism",
       "painting.purechaos.stuck.title": "Stuck",
       "death.attack.k_press_death.item": "%1$s pressed K",
-      "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
       "entity.purechaos.fbi": "FBI",
+      "item.minecraft.lingering_potion.effect.illegalsubstance": "Bottle of Illegal substance in gas form",
       "item.chaosmod.adidas_shovel": "Adidas Shovel",
       "gamerule.adblocker": "Adblock",
       "item.chaosmod.adidas_pickaxe": "Adidas Pickaxe",
@@ -9737,14 +10258,15 @@
       "block.chaosmod.sa_ds": "Block ?",
       "item.chaosmod.impostor_knife": "Impostor Knife",
       "fluid.purechaos.cum": "Cum",
-      "item.chaosmod.rock": "Rock",
-      "item.chaosmod.mercury": "Mercury",
       "block.purechaos.grave": "Grave",
+      "item.chaosmod.mercury": "Mercury",
+      "item.chaosmod.rock": "Rock",
+      "block.purechaos.internet_explorer": "Internet Explorer",
       "selectWorld.gameMode.survival": "Death",
       "item.chaosmod.kfce": "KFCE",
       "gui.chaosmod.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
-      "painting.purechaos.nuh_uh.author": "boykisser",
       "block.chaosmod.staravoda": "Staravoda",
+      "painting.purechaos.nuh_uh.author": "boykisser",
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
       "item.minecraft.iron_axe": "Iron Chop Chop Stick",
       "item.chaosmod.adidas_armor_leggings": "Adidas Leggings",
@@ -9754,11 +10276,12 @@
       "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "entity.purechaos.rick_astley": "Rick Astley",
       "entity.chaosmod.dream": "Dream",
-      "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
       "subtitles.footstep_metal_amogus": "idk",
+      "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
       "item.chaosmod.apple_ingot": "Apple Ingot",
       "gui.purechaos.captcha_gui.button_dbg": "dbg",
       "item.purechaos.zenith": "Zenith",
+      "biome.purechaos.fortnite_biome": "Fortnite Biome",
       "painting.purechaos.you_think_youre_alone.author": "boykisser",
       "death.attack.heart_attack_death": "%1$s got a heart attack",
       "block.chaosmod.ggggggg": "slipped and slipped",
@@ -9826,7 +10349,7 @@
       "death.attack.vegan_death.player": "%1$s ate meat whilst trying to escape %2$s",
       "item.purechaos.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
       "painting.purechaos.a_painting.title": "A Painting",
-      "item.purechaos.cupcakke_spawn_egg": "Cupcakke Spawn Egg",
+      "item.purechaos.cupcakke_spawn_egg": "CupcakKe Spawn Egg",
       "gui.chaosmod.computer_gui.button_enter_cyberspace": "Enter Cyberspace",
       "block.purechaos.orange_fluid": "Orange Gatorade",
       "block.purechaos.green_plant": "Green Plant",
@@ -9962,15 +10485,15 @@
       "item.purechaos.sussy_sus_stew": "Very Suspicious Stew",
       "itemGroup.tabchaostab": "Chaos",
       "item.chaosmod.turtle_armor_chestplate": "Turtle Chestplate",
+      "block.purechaos.discord": "Discord",
       "item.chaosmod.stroater_spawn_egg": "Stroater Spawn Egg",
       "item.purechaos.sssr": "SSSR",
       "block.purechaos.comunisam_block": "Comunisam Block",
       "block.purechaos.brazil_block": "Brazil Block",
-      "item.purechaos.kondomnepitajzastoovoradimalispoileralertonimarupu": "Penis",
+      "item.purechaos.kondomnepitajzastoovoradimalispoileralertonimarupu": "Condom",
       "item.chaosmod.irs_spawn_egg": "IRS Spawn Egg",
       "jei.purechaos.how_almond_water": "To make almond water, you need to eat your own shit! To get your shit, just press shift!",
       "gui.purechaos.computer_gui.button_enter_cyberspace": "Enter Cyberspace",
-      "item.purechaos.deek": "Ender Eye ",
       "item.chaosmod.grimace_shake": "Grimace Shake",
       "selectWorld.gameMode.adventure": "Why",
       "entity.chaosmod.firefly": "Firefly",
@@ -9988,6 +10511,7 @@
       "item.chaosmod.cum_bucket": "Cum Bucket",
       "gamerule.mobCapMultiplier.description": "How many times do you want to multiply the vanilla minecraft mob cap (default: 10, vanilla: 1)",
       "item.purechaos.yugoslavia_spawn_egg": "Yugoslavia Spawn Egg",
+      "biome.purechaos.fun_land": "Fun Land",
       "subtitles.espuma": "coca cola espuma",
       "entity.purechaos.long_leg_chicken": "Long Leg Chicken",
       "item.chaosmod.beef_armor_helmet": "Beef Armor Helmet",
@@ -10002,6 +10526,7 @@
       "biome.purechaos.susus": "Susus",
       "item.chaosmod.cursed_dog_spawn_egg": "Dgo Spawn Egg",
       "item.chaosmod.josipdvatockanula_spawn_egg": "[REDACTED] JosipTLG Spawn Egg",
+      "block.purechaos.white": "White",
       "entity.chaosmod.cupcakke": "Cupcakke",
       "block.chaosmod.backrooms_lvl_1_wall": "Backrooms (1) Wall",
       "item.purechaos.ikea_desk_spawn_egg": "Ikea Desk Spawn Egg",
@@ -10011,6 +10536,7 @@
       "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.minecraft.splash_potion.effect.illegalsubstance": "Splash Bottle of Illegal substance",
       "item.purechaos.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
+      "item.purechaos.ping": "Ping",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
       "block.chaosmod.cyber_block": "Cyber Block",
       "effect.chaosmod.blind": "Blind",
@@ -10051,7 +10577,7 @@
       "item.chaosmod.beef": "Beef",
       "item.purechaos.trident_spawn_egg": "Tridet Spawn Egg",
       "item.chaosmod.dorito_cool_ranch": "Dorito Cool Ranch",
-      "entity.purechaos.cupcakke": "Cupcakke",
+      "entity.purechaos.cupcakke": "CupcakKe",
       "item.purechaos.dingot": "Dingot",
       "item.chaosmod.amugus_leggings": "Amugus Leggings",
       "fluid.purechaos.cobble_fluid": "Cobblestone Fluid",
@@ -10084,17 +10610,17 @@
       "entity.purechaos.moth_of_aggrevation": "Moth Of Aggrevation",
       "item.purechaos.adidas_sword": "Adidas Sword",
       "item.chaosmod.blaz_spawn_egg": "Blaz Spawn Egg",
+      "gamerule.noJumpVineBoom.description": "Don\u0027t play the vine boom sound after every 3 jumps",
       "item.chaosmod.among_us_spawn_egg": "Among Us Spawn Egg",
       "selectWorld.delete": "Kaboom it",
       "item.minecraft.splash_potion.effect.fuck_you": "Splash Potion of Fuck You",
       "item.purechaos.half_golden_apple": "Half Golden Apple",
       "item.chaosmod.rick_astley_spawn_egg": "Rick Astley Spawn Egg",
       "gui.chaosmod.cheat_gui.button_switch_dimension": "Switch Dimension",
+      "gamerule.noJumpVineBoom": "No Jump Vine Boom",
       "item.chaosmod.amogus_2_spawn_egg": "Amogus 2 Spawn Egg",
       "entity.chaosmod.technoblade": "Technoblade",
-      "enchantment.purechaos.sexy_enchanetement": "Sexy",
       "item.chaosmod.corruptstaff": "Corrupt Staff",
-      "item.purechaos.cioao": "Ciao Portal Igniter",
       "gui.purechaos.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.rock_living": "",
       "item.purechaos.ak_47": "AK 47",
@@ -10171,9 +10697,9 @@
       "item.purechaos.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
       "item.purechaos.adidas_shovel": "Adidas Shovel",
       "subtitles.ahdude": "ff",
-      "item.purechaos.igla": "Igla",
       "painting.purechaos.buckshot_time.author": "boykisser",
       "item.purechaos.corruptstaff": "Corrupt Staff",
+      "biome.purechaos.buffalo_lake": "Buffalo Lake",
       "item.purechaos.firefly_spawn_egg": "Firefly Spawn Egg",
       "item.purechaos.josip_range": "Josip Range",
       "entity.purechaos.vikkivuk": "Vikkivuk",
@@ -10184,12 +10710,154 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Captcha",
+        "children": []
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Armor",
+            "children": []
+          },
+          {
+            "name": "Potions",
+            "children": []
+          },
+          {
+            "name": "Discs",
+            "children": []
+          },
+          {
+            "name": "Projectiles",
+            "children": []
+          },
+          {
+            "name": "Item Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Plants",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Fluids",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "Sanity",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dimensions",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Structures",
+        "children": [
+          {
+            "name": "Features",
+            "children": [
+              {
+                "name": "Ponds",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Custom Code",
+        "children": [
+          {
+            "name": "Mixins",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Gamerules",
+        "children": []
+      },
+      {
+        "name": "GUIs",
+        "children": [
+          {
+            "name": "Overlays",
+            "children": [
+              {
+                "name": "Boolets",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ADs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Player Procedures",
+        "children": [
+          {
+            "name": "Deaths",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Achievements",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "purechaos",
     "modName": "Pure Chaos",
-    "version": "1.20.4 1.0.1",
+    "version": "1.20.4-1.0.1",
     "description": "Add a little bit of, spice.",
     "author": "VikkiVuk, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",

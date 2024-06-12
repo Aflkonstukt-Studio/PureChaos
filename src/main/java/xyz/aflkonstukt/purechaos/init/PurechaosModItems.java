@@ -32,6 +32,7 @@ import xyz.aflkonstukt.purechaos.item.PufferBalloonItem;
 import xyz.aflkonstukt.purechaos.item.PotatoSpudsItem;
 import xyz.aflkonstukt.purechaos.item.PoopItem;
 import xyz.aflkonstukt.purechaos.item.PolandItemItem;
+import xyz.aflkonstukt.purechaos.item.PingItem;
 import xyz.aflkonstukt.purechaos.item.PickaxItem;
 import xyz.aflkonstukt.purechaos.item.PeemensionItem;
 import xyz.aflkonstukt.purechaos.item.PeeItem;
@@ -53,7 +54,6 @@ import xyz.aflkonstukt.purechaos.item.JavelinLauncherItem;
 import xyz.aflkonstukt.purechaos.item.IronEggItem;
 import xyz.aflkonstukt.purechaos.item.InfiniteFuelItem;
 import xyz.aflkonstukt.purechaos.item.ImpostorKnifeItem;
-import xyz.aflkonstukt.purechaos.item.IglaItem;
 import xyz.aflkonstukt.purechaos.item.HalfGoldenAppleItem;
 import xyz.aflkonstukt.purechaos.item.GrimaceShakeItem;
 import xyz.aflkonstukt.purechaos.item.GlowItem;
@@ -73,14 +73,12 @@ import xyz.aflkonstukt.purechaos.item.DoritoCoolRanchItem;
 import xyz.aflkonstukt.purechaos.item.DirtswordItem;
 import xyz.aflkonstukt.purechaos.item.DipexItem;
 import xyz.aflkonstukt.purechaos.item.DingotItem;
-import xyz.aflkonstukt.purechaos.item.DeekItem;
 import xyz.aflkonstukt.purechaos.item.CumItem;
 import xyz.aflkonstukt.purechaos.item.CorruptstaffItem;
 import xyz.aflkonstukt.purechaos.item.CommunismOrbItem;
 import xyz.aflkonstukt.purechaos.item.ComicallyLargeSpoonItem;
 import xyz.aflkonstukt.purechaos.item.CocaColaItem;
 import xyz.aflkonstukt.purechaos.item.CobbleFluidItem;
-import xyz.aflkonstukt.purechaos.item.CioaoItem;
 import xyz.aflkonstukt.purechaos.item.CarbonMonoxideItem;
 import xyz.aflkonstukt.purechaos.item.BulletItem;
 import xyz.aflkonstukt.purechaos.item.BrownItem;
@@ -220,8 +218,6 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> CYBER_BLOCK = block(PurechaosModBlocks.CYBER_BLOCK);
 	public static final DeferredHolder<Item, Item> TOTEM_OF_DREAM = REGISTRY.register("totem_of_dream", () -> new TotemOfDreamItem());
 	public static final DeferredHolder<Item, Item> COMPUTER = block(PurechaosModBlocks.COMPUTER);
-	public static final DeferredHolder<Item, Item> IGLA = REGISTRY.register("igla", () -> new IglaItem());
-	public static final DeferredHolder<Item, Item> CIOAO = REGISTRY.register("cioao", () -> new CioaoItem());
 	public static final DeferredHolder<Item, Item> TO = REGISTRY.register("to", () -> new TOItem());
 	public static final DeferredHolder<Item, Item> GREENGISCREENDA = block(PurechaosModBlocks.GREENGISCREENDA);
 	public static final DeferredHolder<Item, Item> FASTTOPASS = REGISTRY.register("fasttopass", () -> new FASTTOPASSItem());
@@ -282,7 +278,6 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> AMERICAN_SOLDAT_SPAWN_EGG = REGISTRY.register("american_soldat_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.AMERICAN_SOLDAT, -6684826, -10066330, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> MURICA_SPAWN_EGG = REGISTRY.register("murica_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.MURICA, -13421569, -65536, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> GRIMACE_SHAKE = REGISTRY.register("grimace_shake", () -> new GrimaceShakeItem());
-	public static final DeferredHolder<Item, Item> DEEK = REGISTRY.register("deek", () -> new DeekItem());
 	public static final DeferredHolder<Item, Item> KONDOMNEPITAJZASTOOVORADIMALISPOILERALERTONIMARUPU = REGISTRY.register("kondomnepitajzastoovoradimalispoileralertonimarupu", () -> new KondomnepitajzastoovoradimalispoileralertonimarupuItem());
 	public static final DeferredHolder<Item, Item> WATER_CUP = REGISTRY.register("water_cup", () -> new WaterCupItem());
 	public static final DeferredHolder<Item, Item> JOSIP_RANGE = REGISTRY.register("josip_range", () -> new JosipRangeItem());
@@ -306,6 +301,10 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> EDIBLE_WATER_BUCKET = REGISTRY.register("edible_water_bucket", () -> new EdibleWaterBucketItem());
 	public static final DeferredHolder<Item, Item> FRANCIUM = REGISTRY.register("francium", () -> new FranciumItem());
 	public static final DeferredHolder<Item, Item> BEER = REGISTRY.register("beer", () -> new BeerItem());
+	public static final DeferredHolder<Item, Item> INTERNET_EXPLORER = block(PurechaosModBlocks.INTERNET_EXPLORER);
+	public static final DeferredHolder<Item, Item> DISCORD = block(PurechaosModBlocks.DISCORD);
+	public static final DeferredHolder<Item, Item> PING = REGISTRY.register("ping", () -> new PingItem());
+	public static final DeferredHolder<Item, Item> WHITE = block(PurechaosModBlocks.WHITE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

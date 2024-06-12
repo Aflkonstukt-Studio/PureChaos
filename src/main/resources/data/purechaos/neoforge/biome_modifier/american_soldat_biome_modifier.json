@@ -1,6 +1,13 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "purechaos:ohio",
+  "biomes": [
+    "purechaos:buffalo_lake",
+    "purechaos:dream_biome",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:ohio",
+    "purechaos:poland_biome"
+  ],
   "spawners": {
     "type": "purechaos:american_soldat",
     "weight": 20,

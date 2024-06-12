@@ -44,11 +44,11 @@
       "max": 0.0
     },
     "genHumidity": {
-      "min": -1.0,
-      "max": 2.0
+      "min": -2.0,
+      "max": 0.0
     },
     "genContinentalness": {
-      "min": -1.0,
+      "min": 0.0,
       "max": 1.1099999999999999
     },
     "genErosion": {

@@ -139,7 +139,16 @@
     "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
         "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:FunLand"
       },
       {
         "value": "CUSTOM:HellButOverworld"
@@ -151,7 +160,13 @@
         "value": "CUSTOM:Ohio"
       },
       {
-        "value": "CUSTOM:CyberBiome"
+        "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
+      },
+      {
+        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": true

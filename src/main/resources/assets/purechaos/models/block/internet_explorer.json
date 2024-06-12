@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:block/internet_explorer",
+    "up": "purechaos:block/internet_explorer",
+    "north": "purechaos:block/internet_explorer",
+    "east": "purechaos:block/internet_explorer",
+    "south": "purechaos:block/internet_explorer",
+    "west": "purechaos:block/internet_explorer",
+    "particle": "purechaos:block/internet_explorer"
+  },
+  "render_type": "solid"
+}

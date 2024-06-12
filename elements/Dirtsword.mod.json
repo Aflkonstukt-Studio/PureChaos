@@ -24,6 +24,9 @@
     "damageVsEntity": 2.0,
     "usageCount": 40,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "Items.WHEAT_SEEDS"

@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import net.neoforged.fml.common.Mod;
@@ -32,25 +33,29 @@ public class PlayerJumpProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player) {
-			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).jump_count >= 3) {
-				{
-					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-					_vars.jump_count = 0;
-					_vars.syncPlayerVariables(entity);
-				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), SoundSource.NEUTRAL, 1, 1);
+		if (!world.isClientSide()) {
+			if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.NO_JUMP_VINE_BOOM)) {
+				if (entity instanceof Player) {
+					if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).jump_count >= 3) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.jump_count = 0;
+							_vars.syncPlayerVariables(entity);
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), SoundSource.NEUTRAL, 1, 1, false);
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.jump_count = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).jump_count + 1;
+							_vars.syncPlayerVariables(entity);
+						}
 					}
-				}
-			} else {
-				{
-					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-					_vars.jump_count = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).jump_count + 1;
-					_vars.syncPlayerVariables(entity);
 				}
 			}
 		}

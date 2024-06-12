@@ -142,25 +142,40 @@
         "value": "CUSTOM:BirchForest"
       },
       {
+        "value": "CUSTOM:BuffaloLake"
+      },
+      {
         "value": "CUSTOM:CyberBiome"
       },
       {
         "value": "CUSTOM:Desert"
       },
       {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
         "value": "CUSTOM:Ekesmasterbait"
       },
       {
-        "value": "CUSTOM:HellButOverworld"
+        "value": "CUSTOM:FortniteBiome"
       },
       {
-        "value": "CUSTOM:MoreExtremeHills"
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
       },
       {
         "value": "CUSTOM:Ohio"
       },
       {
         "value": "CUSTOM:Plains"
+      },
+      {
+        "value": "CUSTOM:PolandBiome"
       },
       {
         "value": "CUSTOM:Susus"

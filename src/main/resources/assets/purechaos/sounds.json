@@ -308,5 +308,13 @@
         "stream": false
       }
     ]
+  },
+  "ping": {
+    "sounds": [
+      {
+        "name": "purechaos:discord_ping_sound_effect",
+        "stream": false
+      }
+    ]
   }
 }

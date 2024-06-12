@@ -1,8 +1,9 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
+
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 public class DirtswordLivingEntityIsHitWithToolProcedure {
@@ -10,6 +11,6 @@ public class DirtswordLivingEntityIsHitWithToolProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 4, 1));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.SICK.get(), 4, 1));
 	}
 }

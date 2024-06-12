@@ -1,0 +1,13 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BuffaloLake"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><comment pinned=\"false\" h=\"80\" w=\"160\">This feature block represents a lake. You can change the inputs to your liking.Lakes should be generated during the \"LAKES\" generation stage.</comment><value name=\"fluid\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.LAVA</field><comment pinned=\"false\" h=\"80\" w=\"160\">This is the \"fluid\" of the lake. Here it's lava, but you can replace it with your custom fluid, or with any other block.</comment></block></value><value name=\"border\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.GRASS</field><comment pinned=\"false\" h=\"80\" w=\"160\">Surface lava lakes generate with a border made of stone.</comment></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">200</field><comment pinned=\"false\" h=\"80\" w=\"160\">This is the chance of your lake generating at all in a chunk</comment><next><block type=\"placement_in_square\"><comment pinned=\"false\" h=\"84\" w=\"215\">If the lake does generate, we move it horizontally, so that it doesn't generate in the corner of the chunk</comment><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field><comment pinned=\"false\" h=\"80\" w=\"160\">We place the lake at the top non-air block, which will be the surface during world generation</comment></block></next></block></next></block></next></block></xml>"
+  }
+}

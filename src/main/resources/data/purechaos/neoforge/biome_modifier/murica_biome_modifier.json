@@ -1,6 +1,16 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "purechaos:ohio",
+  "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:buffalo_lake",
+    "purechaos:dream_biome",
+    "purechaos:fortnite_biome",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:ohio",
+    "purechaos:plains",
+    "purechaos:poland_biome"
+  ],
   "spawners": {
     "type": "purechaos:murica",
     "weight": 20,

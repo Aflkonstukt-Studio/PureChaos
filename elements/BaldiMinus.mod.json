@@ -139,13 +139,25 @@
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
       {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
         "value": "CUSTOM:CyberBiome"
       },
       {
         "value": "CUSTOM:Desert"
       },
       {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
         "value": "CUSTOM:Ekesmasterbait"
+      },
+      {
+        "value": "CUSTOM:FortniteBiome"
+      },
+      {
+        "value": "CUSTOM:FunLand"
       },
       {
         "value": "CUSTOM:HellButOverworld"

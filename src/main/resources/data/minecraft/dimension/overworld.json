@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 0,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "preset": "minecraft:overworld",
+      "biomes": [
+        {
+          "biome": "purechaos:hell_but_overworld",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:susus",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:ekesmasterbait",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:birch_forest",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:desert",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:ohio",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:more_extreme_hills",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:plains",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:buffalo_lake",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:dream_biome",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:fortnite_biome",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:fun_land",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        },
+        {
+          "biome": "purechaos:heaven_or_hell",
+          "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+        }
+      ]
+    }
+  }
+}

@@ -2,10 +2,18 @@
   "type": "neoforge:add_spawns",
   "biomes": [
     "purechaos:birch_forest",
+    "purechaos:buffalo_lake",
     "purechaos:cyber_biome",
     "purechaos:desert",
+    "purechaos:dream_biome",
+    "purechaos:ekesmasterbait",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
     "purechaos:more_extreme_hills",
-    "purechaos:plains"
+    "purechaos:ohio",
+    "purechaos:plains",
+    "purechaos:poland_biome",
+    "purechaos:susus"
   ],
   "spawners": {
     "type": "purechaos:splank",
