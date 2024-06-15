@@ -30,7 +30,7 @@ public class DoYouSufferFromALackOfAFatherFigureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PurechaosModMobEffects.CURSE_OF_FATHERLESS.get()))) {
-			if ((entity.getDisplayName().getString()).toLowerCase().contains("dev") || (entity.getDisplayName().getString()).toLowerCase().contains("alpha") || (entity.getDisplayName().getString()).toLowerCase().contains("sigma")
+			if ((entity.getDisplayName().getString()).toLowerCase().contains("wolf") || (entity.getDisplayName().getString()).toLowerCase().contains("alpha") || (entity.getDisplayName().getString()).toLowerCase().contains("sigma")
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("daddy") || (entity.getDisplayName().getString()).toLowerCase().contains("mommy") || (entity.getDisplayName().getString()).toLowerCase().contains("xx")
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("notfound") || (entity.getDisplayName().getString()).toLowerCase().contains("dream") || (entity.getDisplayName().getString()).toLowerCase().contains("innit")
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("tlg") || (entity.getDisplayName().getString()).toLowerCase().contains("chan") || (entity.getDisplayName().getString()).toLowerCase().contains("kun")
@@ -40,7 +40,7 @@ public class DoYouSufferFromALackOfAFatherFigureProcedure {
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("20inch") || (entity.getDisplayName().getString()).toLowerCase().contains("gay") || (entity.getDisplayName().getString()).toLowerCase().contains("lesbian")
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("trans") || (entity.getDisplayName().getString()).toLowerCase().contains("lgbtq")) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.CURSE_OF_FATHERLESS.get(), 3000, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.CURSE_OF_FATHERLESS.get(), 99999999999, 1, false, false));
 			}
 		}
 	}
