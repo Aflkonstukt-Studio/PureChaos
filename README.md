@@ -26,3 +26,7 @@ https://mcreator.net/plugin/93491/custom-fog-plugin-forge-1182-1192
 https://mcreator.net/plugin/103347/just-enough-recipes
 
 https://mcreator.net/plugin/95370/vector-utils-100-forge-1165-1182-1192-fabric-1165
+
+https://mcreator.net/plugin/107077/text-fields-synchronizer
+
+https://mcreator.net/plugin/93380/plugin-damage-source-plugin-forge-1192
