@@ -199,5 +199,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.DISCORD.get().asItem());
 				tabData.accept(PurechaosModItems.PING.get());
 				tabData.accept(PurechaosModBlocks.WHITE.get().asItem());
+				tabData.accept(PurechaosModItems.MOB_CATCHER.get());
 			}).withSearchBar().build());
 }

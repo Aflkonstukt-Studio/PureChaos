@@ -13,18 +13,29 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.DoubleTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
+import java.util.function.Function;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +50,7 @@ public class PurechaosModVariables {
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
+		PurechaosMod.addNetworkMessage(SavedDataSyncMessage.ID, SavedDataSyncMessage::new, SavedDataSyncMessage::handleData);
 		PurechaosMod.addNetworkMessage(PlayerVariablesSyncMessage.ID, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handleData);
 	}
 
@@ -95,8 +107,180 @@ public class PurechaosModVariables {
 				clone.captcha_type = original.captcha_type;
 				clone.captcha_player_antwort = original.captcha_player_antwort;
 				clone.text_captcha = original.text_captcha;
+				clone.constipated = original.constipated;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
+		}
+
+		@SubscribeEvent
+		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player) {
+				SavedData mapdata = MapVariables.get(event.getEntity().level());
+				SavedData worlddata = WorldVariables.get(event.getEntity().level());
+				if (mapdata != null)
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(0, mapdata));
+				if (worlddata != null)
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (event.getEntity() instanceof ServerPlayer player) {
+				SavedData worlddata = WorldVariables.get(event.getEntity().level());
+				if (worlddata != null)
+					PacketDistributor.PLAYER.with(player).send(new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+	}
+
+	public static class WorldVariables extends SavedData {
+		public static final String DATA_NAME = "purechaos_worldvars";
+		public double last_event = 0;
+		public HashMap<String, Vec3> meteor = new HashMap<String, Vec3>();
+		public double meteor_announce = 20.0;
+
+		public static WorldVariables load(CompoundTag tag) {
+			WorldVariables data = new WorldVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+			last_event = nbt.getDouble("last_event");
+			meteor = (new Function<CompoundTag, HashMap<String, Vec3>>() {
+				@Override
+				public HashMap<String, Vec3> apply(CompoundTag compoundTag) {
+					HashMap<String, Vec3> hashMap = new HashMap<>();
+					for (String name : compoundTag.getAllKeys()) {
+						ListTag listTag = compoundTag.getList(name, 6);
+						hashMap.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
+					}
+					return hashMap;
+				}
+			}).apply(nbt.getCompound("meteor"));
+			meteor_announce = nbt.getDouble("meteor_announce");
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("last_event", last_event);
+			nbt.put("meteor", (new Function<HashMap<String, Vec3>, CompoundTag>() {
+				@Override
+				public CompoundTag apply(HashMap<String, Vec3> hashMap) {
+					CompoundTag compoundTag = new CompoundTag();
+					for (Map.Entry<String, Vec3> entry : hashMap.entrySet()) {
+						Vec3 vec3 = entry.getValue();
+						ListTag listTag = new ListTag();
+						listTag.addTag(0, DoubleTag.valueOf(vec3.x()));
+						listTag.addTag(1, DoubleTag.valueOf(vec3.y()));
+						listTag.addTag(2, DoubleTag.valueOf(vec3.z()));
+						compoundTag.put(entry.getKey(), listTag);
+					}
+					return compoundTag;
+				}
+			}).apply(meteor));
+			nbt.putDouble("meteor_announce", meteor_announce);
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level level && !level.isClientSide())
+				PacketDistributor.DIMENSION.with(level.dimension()).send(new SavedDataSyncMessage(1, this));
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(new SavedData.Factory<>(WorldVariables::new, WorldVariables::load), DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final String DATA_NAME = "purechaos_mapvars";
+
+		public static MapVariables load(CompoundTag tag) {
+			MapVariables data = new MapVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level && !world.isClientSide())
+				PacketDistributor.ALL.noArg().send(new SavedDataSyncMessage(0, this));
+		}
+
+		static MapVariables clientSide = new MapVariables();
+
+		public static MapVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevelAccessor serverLevelAcc) {
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(new SavedData.Factory<>(MapVariables::new, MapVariables::load), DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class SavedDataSyncMessage implements CustomPacketPayload {
+		public static final ResourceLocation ID = new ResourceLocation(PurechaosMod.MODID, "saved_data_sync");
+		private final int type;
+		private SavedData data;
+
+		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
+			this.type = buffer.readInt();
+			CompoundTag nbt = buffer.readNbt();
+			if (nbt != null) {
+				this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
+				if (this.data instanceof MapVariables mapVariables)
+					mapVariables.read(nbt);
+				else if (this.data instanceof WorldVariables worldVariables)
+					worldVariables.read(nbt);
+			}
+		}
+
+		public SavedDataSyncMessage(int type, SavedData data) {
+			this.type = type;
+			this.data = data;
+		}
+
+		@Override
+		public void write(final FriendlyByteBuf buffer) {
+			buffer.writeInt(type);
+			if (data != null)
+				buffer.writeNbt(data.save(new CompoundTag()));
+		}
+
+		@Override
+		public ResourceLocation id() {
+			return ID;
+		}
+
+		public static void handleData(final SavedDataSyncMessage message, final PlayPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
+				context.workHandler().submitAsync(() -> {
+					if (message.type == 0)
+						MapVariables.clientSide.read(message.data.save(new CompoundTag()));
+					else
+						WorldVariables.clientSide.read(message.data.save(new CompoundTag()));
+				}).exceptionally(e -> {
+					context.packetHandler().disconnect(Component.literal(e.getMessage()));
+					return null;
+				});
+			}
 		}
 	}
 
@@ -129,6 +313,7 @@ public class PurechaosModVariables {
 		public String captcha_player_antwort = "\"\"";
 		public boolean sanity_enabled = true;
 		public double text_captcha = 0;
+		public double constipated = 0;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -161,6 +346,7 @@ public class PurechaosModVariables {
 			nbt.putString("captcha_player_antwort", captcha_player_antwort);
 			nbt.putBoolean("sanity_enabled", sanity_enabled);
 			nbt.putDouble("text_captcha", text_captcha);
+			nbt.putDouble("constipated", constipated);
 			return nbt;
 		}
 
@@ -194,6 +380,7 @@ public class PurechaosModVariables {
 			captcha_player_antwort = nbt.getString("captcha_player_antwort");
 			sanity_enabled = nbt.getBoolean("sanity_enabled");
 			text_captcha = nbt.getDouble("text_captcha");
+			constipated = nbt.getDouble("constipated");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

@@ -7,7 +7,7 @@
     },
     "showParticles": true,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "CUSTOM:gunshot"
     },
     "igniteFire": false,
     "power": 3.0,

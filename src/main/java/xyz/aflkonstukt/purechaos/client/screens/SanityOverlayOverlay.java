@@ -37,9 +37,9 @@ public class SanityOverlayOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					SanityOverlayValueProcedure.execute(entity), 6, 8, -1, false);
+					SanityOverlayValueProcedure.execute(entity), w / 2 + 94, h - 21, -1, false);
 			if (ShowSanityDisabledProcedure.execute(entity))
-				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.purechaos.sanity_overlay.label_disabled"), 6, 17, -10066330, false);
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.purechaos.sanity_overlay.label_disabled"), w / 2 + 94, h - 12, -10066330, false);
 		}
 	}
 }

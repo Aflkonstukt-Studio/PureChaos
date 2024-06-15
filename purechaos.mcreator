@@ -7476,48 +7476,6 @@
       "path": "~/Custom Code"
     },
     {
-      "name": "Meteor",
-      "type": "code",
-      "sortid": 433,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "meteor",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/Meteor.java"
-        ]
-      },
-      "path": "~/Custom Code"
-    },
-    {
-      "name": "MeteorHandler",
-      "type": "code",
-      "sortid": 434,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "meteor_handler",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/MeteorHandler.java"
-        ]
-      },
-      "path": "~/Custom Code"
-    },
-    {
-      "name": "MeteorCommand",
-      "type": "command",
-      "sortid": 435,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "meteor_command",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/command/MeteorCommandCommand.java"
-        ]
-      },
-      "path": "~/Commands"
-    },
-    {
       "name": "ModifiedEthanol",
       "type": "potion",
       "sortid": 436,
@@ -9165,6 +9123,465 @@
       "path": "~/Structures/Features/Ponds"
     },
     {
+      "name": "MobCatcherPropertyValueProvider",
+      "type": "procedure",
+      "sortid": 528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_catcher_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MobCatcherPropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Items/Item Procedures"
+    },
+    {
+      "name": "MobCatcherRightclicked",
+      "type": "procedure",
+      "sortid": 529,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_catcher_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/MobCatcherRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Item Procedures"
+    },
+    {
+      "name": "MobCatcher",
+      "type": "item",
+      "sortid": 530,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_catcher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/mob_catcher_1.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/MobCatcherItem.java",
+          "src/main/resources/assets/purechaos/models/item/mob_catcher_0.json",
+          "src/main/resources/assets/purechaos/models/item/mob_catcher.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EntityRightclicked",
+      "type": "procedure",
+      "sortid": 531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EntityRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures"
+    },
+    {
+      "name": "EntityTick",
+      "type": "procedure",
+      "sortid": 532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EntityTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures"
+    },
+    {
+      "name": "EntityAttacked",
+      "type": "procedure",
+      "sortid": 533,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_attacked",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EntityAttackedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures"
+    },
+    {
+      "name": "EventHandler",
+      "type": "procedure",
+      "sortid": 534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventHandlerProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "StartCommunismEvent",
+      "type": "procedure",
+      "sortid": 535,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_communism_event",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/StartCommunismEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "NewMeteor",
+      "type": "procedure",
+      "sortid": 536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_meteor",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/NewMeteorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "EventWorldTick",
+      "type": "procedure",
+      "sortid": 537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "event_world_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventWorldTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "StartConstipation",
+      "type": "procedure",
+      "sortid": 538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_constipation",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/StartConstipationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "EventPlayerTick",
+      "type": "procedure",
+      "sortid": 539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "event_player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventPlayerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "CallConstipation",
+      "type": "procedure",
+      "sortid": 540,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "call_constipation",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallConstipationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "CallCommunism",
+      "type": "procedure",
+      "sortid": 541,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "call_communism",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallCommunismProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "EventCommand",
+      "type": "command",
+      "sortid": 542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "event_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/EventCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "CallMeteor",
+      "type": "procedure",
+      "sortid": 543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallMeteorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "CancelMeteor",
+      "type": "procedure",
+      "sortid": 544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CancelMeteorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
       "name": "DoYouSufferFromALackOfAFatherFigure",
       "type": "procedure",
       "sortid": 528,
@@ -9183,6 +9600,7 @@
         ]
       },
       "path": "~/Player Procedures"
+    {
     }
   ],
   "variable_elements": [
@@ -9380,6 +9798,30 @@
     },
     {
       "name": "text_captcha",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "last_event",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "meteor",
+      "type": "vectormap",
+      "scope": "world",
+      "value": "new HashMap\u003cString, Vec3\u003e()"
+    },
+    {
+      "name": "meteor_announce",
+      "type": "number",
+      "scope": "world",
+      "value": "20.0"
+    },
+    {
+      "name": "constipated",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -9681,6 +10123,14 @@
       ],
       "category": "ambient",
       "subtitle": ""
+    },
+    {
+      "name": "gunshot",
+      "files": [
+        "9mm-pistol-shoot-short-reverb-7152"
+      ],
+      "category": "player",
+      "subtitle": "mew"
     }
   ],
   "tag_elements": {
@@ -10264,6 +10714,7 @@
       "entity.chaosmod.t_pose_entity": "T Pose Entity",
       "item.purechaos.dipex": "DiPixk",
       "death.attack.bleach_death.player": "%1$s didnt feel like seeing anymore while trying to escape %2$s",
+      "item.purechaos.mob_catcher": "Mobnapper",
       "item.minecraft.potion.effect.modified_ethanol": "Potion of Alchemically Modified Ethanol",
       "item.purechaos.nerd_spawn_egg": "Nerd Spawn Egg",
       "item.chaosmod.fortnite_a_1": "Fortnite A 1",
@@ -10648,6 +11099,7 @@
       "entity.chaosmod.ikea_desk": "Ikea Desk",
       "effect.purechaos.dementia": "Dementia",
       "death.attack.radiation_death.item": "%1$s saw the blue light",
+      "subtitles.gunshot": "mew",
       "item.purechaos.lava_bottle": "Lava Bottle",
       "gui.proceed": "Consent",
       "item.chaosmod.potato_spuds": "Potato Spuds",
@@ -10795,6 +11247,10 @@
           {
             "name": "Sanity",
             "children": []
+          },
+          {
+            "name": "EventCommand",
+            "children": []
           }
         ]
       },
@@ -10864,6 +11320,10 @@
         "children": [
           {
             "name": "Deaths",
+            "children": []
+          },
+          {
+            "name": "Events",
             "children": []
           }
         ]

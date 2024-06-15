@@ -316,5 +316,14 @@
         "stream": false
       }
     ]
+  },
+  "gunshot": {
+    "subtitle": "subtitles.gunshot",
+    "sounds": [
+      {
+        "name": "purechaos:9mm-pistol-shoot-short-reverb-7152",
+        "stream": false
+      }
+    ]
   }
 }

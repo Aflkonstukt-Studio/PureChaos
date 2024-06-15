@@ -16,9 +16,9 @@
             "value": -1,
             "falpha": 0.0
           },
-          "anchorPoint": "TOP_LEFT",
-          "x": 6,
-          "y": 8
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 307,
+          "y": 219
         }
       },
       {
@@ -35,9 +35,9 @@
           "displayCondition": {
             "name": "ShowSanityDisabled"
           },
-          "anchorPoint": "TOP_LEFT",
-          "x": 6,
-          "y": 17
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 307,
+          "y": 228
         }
       }
     ],
@@ -48,7 +48,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

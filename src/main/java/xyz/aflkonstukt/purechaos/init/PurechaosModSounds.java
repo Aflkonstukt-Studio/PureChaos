@@ -52,4 +52,5 @@ public class PurechaosModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> MOREBOOLETS = REGISTRY.register("moreboolets", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "moreboolets")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BURNING_MEMORY = REGISTRY.register("burning_memory", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "burning_memory")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> PING = REGISTRY.register("ping", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "ping")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GUNSHOT = REGISTRY.register("gunshot", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "gunshot")));
 }

@@ -4,6 +4,7 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
+import xyz.aflkonstukt.purechaos.procedures.MobCatcherPropertyValueProviderProcedure;
 import xyz.aflkonstukt.purechaos.item.ZenithItem;
 import xyz.aflkonstukt.purechaos.item.XiteItem;
 import xyz.aflkonstukt.purechaos.item.XSORDItem;
@@ -40,6 +41,7 @@ import xyz.aflkonstukt.purechaos.item.OrangeFluidItem;
 import xyz.aflkonstukt.purechaos.item.OilItem;
 import xyz.aflkonstukt.purechaos.item.ObamiumItem;
 import xyz.aflkonstukt.purechaos.item.NetheritPickaxItem;
+import xyz.aflkonstukt.purechaos.item.MobCatcherItem;
 import xyz.aflkonstukt.purechaos.item.Milk2Item;
 import xyz.aflkonstukt.purechaos.item.MethItem;
 import xyz.aflkonstukt.purechaos.item.MercuryItem;
@@ -108,12 +110,19 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.client.renderer.item.ItemProperties;
 
 public class PurechaosModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, PurechaosMod.MODID);
@@ -305,6 +314,7 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> DISCORD = block(PurechaosModBlocks.DISCORD);
 	public static final DeferredHolder<Item, Item> PING = REGISTRY.register("ping", () -> new PingItem());
 	public static final DeferredHolder<Item, Item> WHITE = block(PurechaosModBlocks.WHITE);
+	public static final DeferredHolder<Item, Item> MOB_CATCHER = REGISTRY.register("mob_catcher", () -> new MobCatcherItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -314,5 +324,16 @@ public class PurechaosModItems {
 
 	private static DeferredHolder<Item, Item> block(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void clientLoad(FMLClientSetupEvent event) {
+			event.enqueueWork(() -> {
+				ItemProperties.register(MOB_CATCHER.get(), new ResourceLocation("purechaos:mob_catcher_filled"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) MobCatcherPropertyValueProviderProcedure.execute(itemStackToRender));
+			});
+		}
 	}
 }

@@ -42,6 +42,12 @@ public class ItemTooltipsProcedure {
 			} else {
 				tooltip.add(Component.literal("\u00A77Hold \u00A76SHIFT \u00A77for side effects"));
 			}
+		} else if (itemstack.getItem() == PurechaosModItems.MOB_CATCHER.get()) {
+			if (itemstack.getOrCreateTag().getBoolean("filled")) {
+				tooltip.add(Component.literal("\u00A77Right click to place entity."));
+			} else {
+				tooltip.add(Component.literal("\u00A77Right click to kidnap entity."));
+			}
 		}
 	}
 }
