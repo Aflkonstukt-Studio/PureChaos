@@ -7476,6 +7476,20 @@
       "path": "~/Custom Code"
     },
     {
+      "name": "MeteorCommand",
+      "type": "command",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/MeteorCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
       "name": "ModifiedEthanol",
       "type": "potion",
       "sortid": 436,
@@ -9582,6 +9596,7 @@
       },
       "path": "~/Commands/EventCommand"
     },
+    {
       "name": "DoYouSufferFromALackOfAFatherFigure",
       "type": "procedure",
       "sortid": 528,
@@ -9600,7 +9615,6 @@
         ]
       },
       "path": "~/Player Procedures"
-    {
     }
   ],
   "variable_elements": [
