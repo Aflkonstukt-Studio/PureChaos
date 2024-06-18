@@ -40,7 +40,7 @@ public class DoYouSufferFromALackOfAFatherFigureProcedure {
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("20inch") || (entity.getDisplayName().getString()).toLowerCase().contains("gay") || (entity.getDisplayName().getString()).toLowerCase().contains("lesbian")
 					|| (entity.getDisplayName().getString()).toLowerCase().contains("trans") || (entity.getDisplayName().getString()).toLowerCase().contains("lgbtq")) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.CURSE_OF_FATHERLESS.get(), 99999999999, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.CURSE_OF_FATHERLESS.get(), 999999999, 1, false, false));
 			}
 		}
 	}

@@ -4,6 +4,8 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
+import xyz.aflkonstukt.purechaos.client.model.Modelyippe_projectile;
+import xyz.aflkonstukt.purechaos.client.model.Modelyippe_particle;
 import xyz.aflkonstukt.purechaos.client.model.Modelvikkivuk_plushie;
 import xyz.aflkonstukt.purechaos.client.model.Modeltrident;
 import xyz.aflkonstukt.purechaos.client.model.Modeltpose_smth;
@@ -57,7 +59,9 @@ public class PurechaosModModels {
 		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);
 		event.registerLayerDefinition(Modelgroggo.LAYER_LOCATION, Modelgroggo::createBodyLayer);
 		event.registerLayerDefinition(Modelspongebob_boss.LAYER_LOCATION, Modelspongebob_boss::createBodyLayer);
+		event.registerLayerDefinition(Modelyippe_projectile.LAYER_LOCATION, Modelyippe_projectile::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
+		event.registerLayerDefinition(Modelyippe_particle.LAYER_LOCATION, Modelyippe_particle::createBodyLayer);
 		event.registerLayerDefinition(Modelamongus_woo.LAYER_LOCATION, Modelamongus_woo::createBodyLayer);
 		event.registerLayerDefinition(Modelsplank.LAYER_LOCATION, Modelsplank::createBodyLayer);
 		event.registerLayerDefinition(Modelthe_rock.LAYER_LOCATION, Modelthe_rock::createBodyLayer);

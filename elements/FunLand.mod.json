@@ -49,7 +49,7 @@
     "particleToSpawn": {
       "value": "DRIP_LAVA"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 12.0,
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "spawnBiome": true,

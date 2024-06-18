@@ -5,6 +5,7 @@
 package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.entity.YugoslaviaEntity;
+import xyz.aflkonstukt.purechaos.entity.YippeProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.WaterCupProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.WalterWightEntity;
 import xyz.aflkonstukt.purechaos.entity.VikkivukEntity;
@@ -250,6 +251,8 @@ public class PurechaosModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FishProjectileEntity>> FISH_PROJECTILE = register("fish_projectile",
 			EntityType.Builder.<FishProjectileEntity>of(FishProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<YippeProjectileEntity>> YIPPE_PROJECTILE = register("yippe_projectile",
+			EntityType.Builder.<YippeProjectileEntity>of(YippeProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

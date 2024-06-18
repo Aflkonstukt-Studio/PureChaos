@@ -325,5 +325,13 @@
         "stream": false
       }
     ]
+  },
+  "yippee": {
+    "sounds": [
+      {
+        "name": "purechaos:yippee-tbh",
+        "stream": false
+      }
+    ]
   }
 }

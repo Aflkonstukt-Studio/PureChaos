@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:PolandItem"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Modelyippe_projectile",
+    "customModelTexture": "yippee_projectile_texture.png",
+    "onHitsBlock": {
+      "name": "YippeProjectileProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "YippeProjectileWhileProjectileFlyingTick"
+    }
+  }
+}

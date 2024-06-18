@@ -32,6 +32,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
+import java.util.function.Function;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -147,33 +148,38 @@ public class PurechaosModVariables {
 
 		public void read(CompoundTag nbt) {
 			last_event = nbt.getDouble("last_event");
-			{
-				this.meteor = new HashMap<>();
-				CompoundTag compoundTag = nbt.getCompound("meteor");
-				for (String name : compoundTag.getAllKeys()) {
-					ListTag listTag = compoundTag.getList(name, 6);
-					this.meteor.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
+			meteor = (new Function<CompoundTag, HashMap<String, Vec3>>() {
+				@Override
+				public HashMap<String, Vec3> apply(CompoundTag compoundTag) {
+					HashMap<String, Vec3> hashMap = new HashMap<>();
+					for (String name : compoundTag.getAllKeys()) {
+						ListTag listTag = compoundTag.getList(name, 6);
+						hashMap.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
+					}
+					return hashMap;
 				}
-			}
+			}).apply(nbt.getCompound("meteor"));
 			meteor_announce = nbt.getDouble("meteor_announce");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("last_event", last_event);
-			{
-				CompoundTag compoundTag = new CompoundTag();
-				for (Map.Entry<String, Vec3> entry : this.meteor.entrySet()) {
-					Vec3 vec3 = entry.getValue();
-					vec3 = vec3 == null ? Vec3.ZERO : vec3;
-					ListTag listTag = new ListTag();
-					listTag.addTag(0, DoubleTag.valueOf(vec3.x()));
-					listTag.addTag(1, DoubleTag.valueOf(vec3.y()));
-					listTag.addTag(2, DoubleTag.valueOf(vec3.z()));
-					compoundTag.put(entry.getKey(), listTag);
+			nbt.put("meteor", (new Function<HashMap<String, Vec3>, CompoundTag>() {
+				@Override
+				public CompoundTag apply(HashMap<String, Vec3> hashMap) {
+					CompoundTag compoundTag = new CompoundTag();
+					for (Map.Entry<String, Vec3> entry : hashMap.entrySet()) {
+						Vec3 vec3 = entry.getValue();
+						ListTag listTag = new ListTag();
+						listTag.addTag(0, DoubleTag.valueOf(vec3.x()));
+						listTag.addTag(1, DoubleTag.valueOf(vec3.y()));
+						listTag.addTag(2, DoubleTag.valueOf(vec3.z()));
+						compoundTag.put(entry.getKey(), listTag);
+					}
+					return compoundTag;
 				}
-				nbt.put("meteor", compoundTag);
-			}
+			}).apply(meteor));
 			nbt.putDouble("meteor_announce", meteor_announce);
 			return nbt;
 		}
@@ -197,6 +203,7 @@ public class PurechaosModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "purechaos_mapvars";
+		public double yippe_particle_yrot = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -205,10 +212,12 @@ public class PurechaosModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			yippe_particle_yrot = nbt.getDouble("yippe_particle_yrot");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("yippe_particle_yrot", yippe_particle_yrot);
 			return nbt;
 		}
 
@@ -307,7 +316,7 @@ public class PurechaosModVariables {
 		public String captcha_player_antwort = "\"\"";
 		public boolean sanity_enabled = true;
 		public double text_captcha = 0;
-		public double constipated = 0;
+		public double constipated = -1.0;
 
 		@Override
 		public CompoundTag serializeNBT() {

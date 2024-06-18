@@ -156,7 +156,7 @@ public class EventWorldTickProcedure {
 						Vec3 vec3 = hashMap.get(key);
 						return vec3 == null ? Vec3.ZERO : vec3;
 					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y(), Level.ExplosionInteraction.TNT);
+				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y(), Level.ExplosionInteraction.BLOCK);
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A74Meteor exploded"), false);
 			PurechaosModVariables.WorldVariables.get(world).meteor.clear();

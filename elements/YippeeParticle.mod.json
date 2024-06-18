@@ -1,0 +1,21 @@
+{
+  "_fv": 60,
+  "_type": "particlemodel",
+  "definition": {
+    "particle": "YippeParticle",
+    "model": "Modelyippe_particle",
+    "rendertype": "Glowing",
+    "modelScale": {
+      "fixedValue": 1.5
+    },
+    "modelRotationX": {
+      "fixedValue": 0.0
+    },
+    "modelRotationY": {
+      "fixedValue": 0.0
+    },
+    "modelRotationZ": {
+      "fixedValue": 90.0
+    }
+  }
+}

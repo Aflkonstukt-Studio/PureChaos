@@ -6,6 +6,7 @@ package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.procedures.MobCatcherPropertyValueProviderProcedure;
 import xyz.aflkonstukt.purechaos.item.ZenithItem;
+import xyz.aflkonstukt.purechaos.item.YippeeItem;
 import xyz.aflkonstukt.purechaos.item.XiteItem;
 import xyz.aflkonstukt.purechaos.item.XSORDItem;
 import xyz.aflkonstukt.purechaos.item.WoodDimensionItem;
@@ -315,6 +316,7 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> PING = REGISTRY.register("ping", () -> new PingItem());
 	public static final DeferredHolder<Item, Item> WHITE = block(PurechaosModBlocks.WHITE);
 	public static final DeferredHolder<Item, Item> MOB_CATCHER = REGISTRY.register("mob_catcher", () -> new MobCatcherItem());
+	public static final DeferredHolder<Item, Item> YIPPEE = REGISTRY.register("yippee", () -> new YippeeItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
