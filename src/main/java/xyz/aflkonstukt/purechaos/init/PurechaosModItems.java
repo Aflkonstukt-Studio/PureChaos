@@ -317,6 +317,7 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> WHITE = block(PurechaosModBlocks.WHITE);
 	public static final DeferredHolder<Item, Item> MOB_CATCHER = REGISTRY.register("mob_catcher", () -> new MobCatcherItem());
 	public static final DeferredHolder<Item, Item> YIPPEE = REGISTRY.register("yippee", () -> new YippeeItem());
+	public static final DeferredHolder<Item, Item> MOYAI = block(PurechaosModBlocks.MOYAI);
 
 	// Start of user code block custom items
 	// End of user code block custom items

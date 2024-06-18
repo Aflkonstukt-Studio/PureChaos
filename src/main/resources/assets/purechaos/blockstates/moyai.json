@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purechaos:block/moyai"
+    },
+    "facing=east": {
+      "model": "purechaos:block/moyai",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purechaos:block/moyai",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purechaos:block/moyai",
+      "y": 270
+    }
+  }
+}

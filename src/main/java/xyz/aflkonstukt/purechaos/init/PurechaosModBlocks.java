@@ -26,6 +26,7 @@ import xyz.aflkonstukt.purechaos.block.PeeBlock;
 import xyz.aflkonstukt.purechaos.block.OrangeFluidBlock;
 import xyz.aflkonstukt.purechaos.block.OilBlock;
 import xyz.aflkonstukt.purechaos.block.NokiaBlockBlock;
+import xyz.aflkonstukt.purechaos.block.MoyaiBlock;
 import xyz.aflkonstukt.purechaos.block.MissingTextureBlock;
 import xyz.aflkonstukt.purechaos.block.Milk2Block;
 import xyz.aflkonstukt.purechaos.block.JebBlockBlock;
@@ -112,6 +113,7 @@ public class PurechaosModBlocks {
 	public static final DeferredHolder<Block, Block> INTERNET_EXPLORER = REGISTRY.register("internet_explorer", () -> new InternetExplorerBlock());
 	public static final DeferredHolder<Block, Block> DISCORD = REGISTRY.register("discord", () -> new DiscordBlock());
 	public static final DeferredHolder<Block, Block> WHITE = REGISTRY.register("white", () -> new WhiteBlock());
+	public static final DeferredHolder<Block, Block> MOYAI = REGISTRY.register("moyai", () -> new MoyaiBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

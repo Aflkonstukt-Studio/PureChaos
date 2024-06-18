@@ -1,0 +1,9 @@
+{
+  "parent": "purechaos:custom/moyai",
+  "textures": {
+    "all": "purechaos:block/image_2024-06-18_214508755",
+    "particle": "purechaos:block/image_2024-06-18_214508755",
+    "1": "purechaos:block/image_2024-06-18_214508755"
+  },
+  "render_type": "solid"
+}

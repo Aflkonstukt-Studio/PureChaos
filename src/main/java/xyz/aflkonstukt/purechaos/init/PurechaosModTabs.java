@@ -201,5 +201,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.WHITE.get().asItem());
 				tabData.accept(PurechaosModItems.MOB_CATCHER.get());
 				tabData.accept(PurechaosModItems.YIPPEE.get());
+				tabData.accept(PurechaosModBlocks.MOYAI.get().asItem());
 			}).withSearchBar().build());
 }
