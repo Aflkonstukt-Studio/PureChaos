@@ -1,0 +1,49 @@
+{
+  "has_precipitation": true,
+  "temperature": 0,
+  "downfall": 1,
+  "effects": {
+    "foliage_color": -16711936,
+    "grass_color": -16711936,
+    "sky_color": -8716289,
+    "fog_color": -8716289,
+    "water_color": -14151424,
+    "water_fog_color": -14151424
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "rabbit",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "purechaos:easter_tree"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

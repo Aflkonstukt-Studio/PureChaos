@@ -62,6 +62,16 @@ public class MoyaiBlock extends FallingBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(7, 4, 11, 9, 10, 13.5), box(5, 8, 12, 11, 9, 12.25), box(6, 2, 11.75, 10, 2.5, 12.25), box(11, 2, 7, 11.25, 7, 10), box(4.75, 2, 7, 5, 7, 10));
+			case NORTH -> Shapes.or(box(7, 4, 2.5, 9, 10, 5), box(5, 8, 3.75, 11, 9, 4), box(6, 2, 3.75, 10, 2.5, 4.25), box(4.75, 2, 6, 5, 7, 9), box(11, 2, 6, 11.25, 7, 9));
+			case EAST -> Shapes.or(box(11, 4, 7, 13.5, 10, 9), box(12, 8, 5, 12.25, 9, 11), box(11.75, 2, 6, 12.25, 2.5, 10), box(7, 2, 4.75, 10, 7, 5), box(7, 2, 11, 10, 7, 11.25));
+			case WEST -> Shapes.or(box(2.5, 4, 7, 5, 10, 9), box(3.75, 8, 5, 4, 9, 11), box(3.75, 2, 6, 4.25, 2.5, 10), box(6, 2, 11, 9, 7, 11.25), box(6, 2, 4.75, 9, 7, 5));
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING);
 	}

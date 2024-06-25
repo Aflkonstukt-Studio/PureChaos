@@ -1,0 +1,131 @@
+{
+  "_fv": 60,
+  "_type": "biome",
+  "definition": {
+    "name": "Easter",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "airColor": {
+      "value": -8716289,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16711936,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -14151424,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -14151424,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:CumDrip"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 1.0,
+    "temperature": 0.0,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": true,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genHumidity": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": 0.3,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "snowy",
+    "spawnWoodlandMansion": true,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": true,
+    "spawnIgloo": true,
+    "spawnOceanMonument": true,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "COLD",
+    "spawnNetherBridge": true,
+    "spawnNetherFossil": true,
+    "spawnBastionRemnant": true,
+    "spawnEndCity": true,
+    "spawnRuinedPortal": "NETHER",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityRabbit"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

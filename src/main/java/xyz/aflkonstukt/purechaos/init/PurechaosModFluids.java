@@ -51,6 +51,8 @@ public class PurechaosModFluids {
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_RADIATION_LIQUID = REGISTRY.register("flowing_radiation_liquid", () -> new RadiationLiquidFluid.Flowing());
 	public static final DeferredHolder<Fluid, FlowingFluid> COBBLE_FLUID = REGISTRY.register("cobble_fluid", () -> new CobbleFluidFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_COBBLE_FLUID = REGISTRY.register("flowing_cobble_fluid", () -> new CobbleFluidFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> COKOWADA = REGISTRY.register("cokowada", () -> new CokowadaFluid.Source());
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_COKOWADA = REGISTRY.register("flowing_cokowada", () -> new CokowadaFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -76,6 +78,8 @@ public class PurechaosModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_RADIATION_LIQUID.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(COBBLE_FLUID.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_COBBLE_FLUID.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(COKOWADA.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_COKOWADA.get(), RenderType.translucent());
 		}
 	}
 }

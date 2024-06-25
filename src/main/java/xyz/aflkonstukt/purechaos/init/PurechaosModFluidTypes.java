@@ -33,4 +33,5 @@ public class PurechaosModFluidTypes {
 	public static final DeferredHolder<FluidType, FluidType> MILK_2_TYPE = REGISTRY.register("milk_2", () -> new Milk2FluidType());
 	public static final DeferredHolder<FluidType, FluidType> RADIATION_LIQUID_TYPE = REGISTRY.register("radiation_liquid", () -> new RadiationLiquidFluidType());
 	public static final DeferredHolder<FluidType, FluidType> COBBLE_FLUID_TYPE = REGISTRY.register("cobble_fluid", () -> new CobbleFluidFluidType());
+	public static final DeferredHolder<FluidType, FluidType> COKOWADA_TYPE = REGISTRY.register("cokowada", () -> new CokowadaFluidType());
 }

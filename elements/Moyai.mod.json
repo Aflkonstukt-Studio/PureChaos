@@ -24,12 +24,48 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mx": 7.0,
+        "my": 4.0,
+        "mz": 2.5,
+        "Mx": 9.0,
+        "My": 10.0,
+        "Mz": 5.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 8.0,
+        "mz": 3.75,
+        "Mx": 11.0,
+        "My": 9.0,
+        "Mz": 4.0,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 2.0,
+        "mz": 3.75,
+        "Mx": 10.0,
+        "My": 2.5,
+        "Mz": 4.25,
+        "subtract": false
+      },
+      {
+        "mx": 4.75,
+        "my": 2.0,
+        "mz": 6.0,
+        "Mx": 5.0,
+        "My": 7.0,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 2.0,
+        "mz": 6.0,
+        "Mx": 11.25,
+        "My": 7.0,
+        "Mz": 9.0,
         "subtract": false
       }
     ],
@@ -119,16 +155,20 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": false,
-    "restrictionBiomes": [],
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Easter"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "TAG:stone_ore_replaceables"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

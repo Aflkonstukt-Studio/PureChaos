@@ -114,6 +114,7 @@ public class PurechaosModBlocks {
 	public static final DeferredHolder<Block, Block> DISCORD = REGISTRY.register("discord", () -> new DiscordBlock());
 	public static final DeferredHolder<Block, Block> WHITE = REGISTRY.register("white", () -> new WhiteBlock());
 	public static final DeferredHolder<Block, Block> MOYAI = REGISTRY.register("moyai", () -> new MoyaiBlock());
+	public static final DeferredHolder<Block, Block> COKOWADA = REGISTRY.register("cokowada", () -> new CokowadaBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
