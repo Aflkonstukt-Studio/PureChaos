@@ -12,6 +12,7 @@ import xyz.aflkonstukt.purechaos.fluid.types.OilFluidType;
 import xyz.aflkonstukt.purechaos.fluid.types.Milk2FluidType;
 import xyz.aflkonstukt.purechaos.fluid.types.GatoradeFluidType;
 import xyz.aflkonstukt.purechaos.fluid.types.CumFluidType;
+import xyz.aflkonstukt.purechaos.fluid.types.CokowadaFluidType;
 import xyz.aflkonstukt.purechaos.fluid.types.CobbleFluidFluidType;
 import xyz.aflkonstukt.purechaos.fluid.types.CarbonMonoxideFluidType;
 import xyz.aflkonstukt.purechaos.PurechaosMod;

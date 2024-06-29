@@ -1,0 +1,44 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "hand_healthy.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHandHealthy"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 104,
+          "y": 201
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hand_pain.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHandPain"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 104,
+          "y": 201
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

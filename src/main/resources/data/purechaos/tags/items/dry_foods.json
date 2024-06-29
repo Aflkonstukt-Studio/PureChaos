@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:meth",
+    "purechaos:half_golden_apple",
+    "purechaos:beef",
+    "purechaos:baguette",
+    "purechaos:dorito_cool_ranch",
+    "purechaos:dorito_nacho",
+    "purechaos:kentucky_fried_chicken",
+    "minecraft:potato",
+    "minecraft:baked_potato",
+    "minecraft:poisonous_potato",
+    "minecraft:bread",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_mutton",
+    "minecraft:cake",
+    "minecraft:cookie",
+    "minecraft:cooked_chicken",
+    "minecraft:rotten_flesh"
+  ]
+}

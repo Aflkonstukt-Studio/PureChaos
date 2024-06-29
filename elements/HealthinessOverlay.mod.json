@@ -1,0 +1,408 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 223,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 231,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 239,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 247,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 255,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 263,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 271,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 279,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 287,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthinessBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 295,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness10Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 223,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness9Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 231,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness8Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 239,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness7Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 247,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness6Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 255,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness5Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 263,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness4Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 271,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness3Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 279,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness2Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 287,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness1Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 295,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness10Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 223,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness9Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 231,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness8Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 239,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness7Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 247,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness6Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 255,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness5Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 263,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness4Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 271,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness3Half"
+          },
+          "anchorPoint": "CENTER",
+          "x": 279,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness2Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 287,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "healthiness_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowHealthiness1Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 295,
+          "y": 182
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

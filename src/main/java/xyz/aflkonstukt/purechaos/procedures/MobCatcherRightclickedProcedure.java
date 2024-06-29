@@ -1,5 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraft.world.level.LevelAccessor;
@@ -50,18 +51,33 @@ public class MobCatcherRightclickedProcedure {
 					}
 				} else {
 					if (itemstack.getOrCreateTag().getBoolean("player")) {
-						((new BiFunction<LevelAccessor, String, Entity>() {
-							@Override
-							public Entity apply(LevelAccessor levelAccessor, String uuid) {
-								if (levelAccessor instanceof ServerLevel serverLevel) {
-									try {
-										return serverLevel.getEntity(UUID.fromString(uuid));
-									} catch (Exception e) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = ((new BiFunction<LevelAccessor, String, Entity>() {
+								@Override
+								public Entity apply(LevelAccessor levelAccessor, String uuid) {
+									if (levelAccessor instanceof ServerLevel serverLevel) {
+										try {
+											return serverLevel.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
+										}
 									}
+									return null;
 								}
-								return null;
-							}
-						}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))).getPersistentData().putBoolean("kidnapped", false);
+							}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))).getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.kidnapped = false;
+							_vars.syncPlayerVariables(((new BiFunction<LevelAccessor, String, Entity>() {
+								@Override
+								public Entity apply(LevelAccessor levelAccessor, String uuid) {
+									if (levelAccessor instanceof ServerLevel serverLevel) {
+										try {
+											return serverLevel.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
+										}
+									}
+									return null;
+								}
+							}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))));
+						}
 						if (((new BiFunction<LevelAccessor, String, Entity>() {
 							@Override
 							public Entity apply(LevelAccessor levelAccessor, String uuid) {
@@ -109,18 +125,33 @@ public class MobCatcherRightclickedProcedure {
 							_player.onUpdateAbilities();
 						}
 					} else {
-						((new BiFunction<LevelAccessor, String, Entity>() {
-							@Override
-							public Entity apply(LevelAccessor levelAccessor, String uuid) {
-								if (levelAccessor instanceof ServerLevel serverLevel) {
-									try {
-										return serverLevel.getEntity(UUID.fromString(uuid));
-									} catch (Exception e) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = ((new BiFunction<LevelAccessor, String, Entity>() {
+								@Override
+								public Entity apply(LevelAccessor levelAccessor, String uuid) {
+									if (levelAccessor instanceof ServerLevel serverLevel) {
+										try {
+											return serverLevel.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
+										}
 									}
+									return null;
 								}
-								return null;
-							}
-						}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))).getPersistentData().putBoolean("kidnapped", false);
+							}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))).getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.kidnapped = false;
+							_vars.syncPlayerVariables(((new BiFunction<LevelAccessor, String, Entity>() {
+								@Override
+								public Entity apply(LevelAccessor levelAccessor, String uuid) {
+									if (levelAccessor instanceof ServerLevel serverLevel) {
+										try {
+											return serverLevel.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
+										}
+									}
+									return null;
+								}
+							}).apply(world, (itemstack.getOrCreateTag().getString("entity_uuid")))));
+						}
 						if (((new BiFunction<LevelAccessor, String, Entity>() {
 							@Override
 							public Entity apply(LevelAccessor levelAccessor, String uuid) {

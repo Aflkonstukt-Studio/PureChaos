@@ -1,0 +1,408 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 222,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 230,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 238,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 246,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 254,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 262,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 270,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 278,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 286,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirstBar"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 294,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst10Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 222,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst9Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 230,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst8Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 238,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst7Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 246,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst6Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 254,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst5Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 262,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst4Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 270,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst3Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 278,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst2Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 286,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst1Full"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 294,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst10Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 222,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst9Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 230,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst8Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 238,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst7Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 246,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst6Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 254,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst5Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 262,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst4Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 270,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst3Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 278,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst2Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 286,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "thirst_half.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowThirst1Half"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 294,
+          "y": 191
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

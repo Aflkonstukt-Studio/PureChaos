@@ -1,5 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+
 import net.neoforged.neoforge.event.entity.living.LivingEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,6 +15,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -40,7 +44,7 @@ public class EntityTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getPersistentData().getBoolean("kidnapped")) {
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).kidnapped) {
 			if (entity instanceof ServerPlayer || entity instanceof Player) {
 				if (entity instanceof Player _player) {
 					_player.getAbilities().invulnerable = true;
@@ -76,6 +80,15 @@ public class EntityTickProcedure {
 				if (entity instanceof Player _player) {
 					_player.getAbilities().invulnerable = true;
 					_player.onUpdateAbilities();
+				}
+			}
+		}
+		if (!(entity instanceof ServerPlayer || entity instanceof Player)) {
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).rizz == 0) {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.rizz = Mth.nextInt(RandomSource.create(), 1, 25);
+					_vars.syncPlayerVariables(entity);
 				}
 			}
 		}

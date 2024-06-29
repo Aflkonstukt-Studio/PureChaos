@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "always",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s was rizzed up",
+    "itemDeathMessage": "%1$s was rizzed up by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was rizzed up whilst trying to escape %2$s"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 1.0,
+    "scaling": "always",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s forgot to drink water",
+    "itemDeathMessage": "%1$s forgot to drink water",
+    "playerDeathMessage": "%1$s forgot to drink water whilst trying to escape %2$s"
+  }
+}

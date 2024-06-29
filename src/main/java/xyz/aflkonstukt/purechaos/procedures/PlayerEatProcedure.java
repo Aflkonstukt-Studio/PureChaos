@@ -1,5 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
@@ -15,6 +16,8 @@ import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -91,6 +94,32 @@ public class PlayerEatProcedure {
 					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 					_level.addFreshEntity(entityToSpawn);
 				}
+			}
+		}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:dry_foods")))) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst - Mth.nextInt(RandomSource.create(), 5, 15);
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:juicy_foods")))) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst + Mth.nextInt(RandomSource.create(), 5, 15);
+				_vars.syncPlayerVariables(entity);
+			}
+		}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:unhealthy_foods")))) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.healthiness = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).healthiness - Mth.nextInt(RandomSource.create(), 5, 15);
+				_vars.syncPlayerVariables(entity);
+			}
+		} else if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:healthy_foods")))) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.healthiness = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).healthiness + 10;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

@@ -43,6 +43,7 @@ import xyz.aflkonstukt.purechaos.block.CyberBlockBlock;
 import xyz.aflkonstukt.purechaos.block.CumBlock;
 import xyz.aflkonstukt.purechaos.block.ComunisamBlockBlock;
 import xyz.aflkonstukt.purechaos.block.ComputerBlock;
+import xyz.aflkonstukt.purechaos.block.CokowadaBlock;
 import xyz.aflkonstukt.purechaos.block.CobbleFluidBlock;
 import xyz.aflkonstukt.purechaos.block.CarbonMonoxideBlock;
 import xyz.aflkonstukt.purechaos.block.BrazilPortalBlock;

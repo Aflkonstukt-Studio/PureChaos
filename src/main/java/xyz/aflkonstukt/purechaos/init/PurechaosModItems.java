@@ -80,6 +80,7 @@ import xyz.aflkonstukt.purechaos.item.CumItem;
 import xyz.aflkonstukt.purechaos.item.CorruptstaffItem;
 import xyz.aflkonstukt.purechaos.item.CommunismOrbItem;
 import xyz.aflkonstukt.purechaos.item.ComicallyLargeSpoonItem;
+import xyz.aflkonstukt.purechaos.item.CokowadaItem;
 import xyz.aflkonstukt.purechaos.item.CocaColaItem;
 import xyz.aflkonstukt.purechaos.item.CobbleFluidItem;
 import xyz.aflkonstukt.purechaos.item.CarbonMonoxideItem;

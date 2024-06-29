@@ -1,5 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
@@ -70,7 +71,11 @@ public class EntityRightclickedProcedure {
 								_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 							}
 						}
-						entity.getPersistentData().putBoolean("kidnapped", true);
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.kidnapped = true;
+							_vars.syncPlayerVariables(entity);
+						}
 						{
 							Entity _ent = entity;
 							_ent.teleportTo((entity.getX()), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) entity.getX(), (int) entity.getZ())), (entity.getZ()));
@@ -80,7 +85,11 @@ public class EntityRightclickedProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("You have been kidnapped!"), true);
 					} else {
-						entity.getPersistentData().putBoolean("kidnapped", true);
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.kidnapped = true;
+							_vars.syncPlayerVariables(entity);
+						}
 					}
 					if (sourceentity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("Kidnapped " + entity.getDisplayName().getString())), true);

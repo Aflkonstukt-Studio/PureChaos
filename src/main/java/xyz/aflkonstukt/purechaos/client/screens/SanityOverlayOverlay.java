@@ -1,7 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.client.screens;
 
-import xyz.aflkonstukt.purechaos.procedures.ShowSanityDisabledProcedure;
+import xyz.aflkonstukt.purechaos.procedures.ShowSanityOverlayProcedure;
 import xyz.aflkonstukt.purechaos.procedures.SanityOverlayValueProcedure;
 
 import org.checkerframework.checker.units.qual.h;
@@ -35,10 +35,11 @@ public class SanityOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+			if (ShowSanityOverlayProcedure.execute(entity))
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					SanityOverlayValueProcedure.execute(entity), w / 2 + 94, h - 21, -1, false);
-			if (ShowSanityDisabledProcedure.execute(entity))
+						SanityOverlayValueProcedure.execute(entity), w / 2 + 94, h - 21, -1, false);
+			if (ShowSanityOverlayProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.purechaos.sanity_overlay.label_disabled"), w / 2 + 94, h - 12, -10066330, false);
 		}
 	}

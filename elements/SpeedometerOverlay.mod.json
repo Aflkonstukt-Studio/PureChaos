@@ -1,0 +1,174 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer1"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer2"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer3"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer4"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer5"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer6"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer7"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer8"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer9"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer10"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer11"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "speedometer_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ShowSpeedometer12"
+          },
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 103,
+          "y": 221
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "purechaos:cokowada",
     "purechaos:cobble_fluid",
     "purechaos:radiation_liquid",
     "purechaos:milk_2",

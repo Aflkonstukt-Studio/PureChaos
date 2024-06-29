@@ -32,6 +32,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.client.Minecraft;
 
 import java.util.function.Supplier;
+import java.util.function.Function;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -80,6 +81,8 @@ public class PurechaosModVariables {
 			clone.alcohol_addiction = original.alcohol_addiction;
 			clone.meth_addiction = original.meth_addiction;
 			clone.sanity_enabled = original.sanity_enabled;
+			clone.kidnapped = original.kidnapped;
+			clone.accumulated_rizz = original.accumulated_rizz;
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
@@ -107,6 +110,13 @@ public class PurechaosModVariables {
 				clone.captcha_player_antwort = original.captcha_player_antwort;
 				clone.text_captcha = original.text_captcha;
 				clone.constipated = original.constipated;
+				clone.rizz = original.rizz;
+				clone.announced_rizzed = original.announced_rizzed;
+				clone.arthritis = original.arthritis;
+				clone.thirst = original.thirst;
+				clone.speed = original.speed;
+				clone.arthritis_time = original.arthritis_time;
+				clone.healthiness = original.healthiness;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -147,33 +157,38 @@ public class PurechaosModVariables {
 
 		public void read(CompoundTag nbt) {
 			last_event = nbt.getDouble("last_event");
-			{
-				this.meteor = new HashMap<>();
-				CompoundTag compoundTag = nbt.getCompound("meteor");
-				for (String name : compoundTag.getAllKeys()) {
-					ListTag listTag = compoundTag.getList(name, 6);
-					this.meteor.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
+			meteor = (new Function<CompoundTag, HashMap<String, Vec3>>() {
+				@Override
+				public HashMap<String, Vec3> apply(CompoundTag compoundTag) {
+					HashMap<String, Vec3> hashMap = new HashMap<>();
+					for (String name : compoundTag.getAllKeys()) {
+						ListTag listTag = compoundTag.getList(name, 6);
+						hashMap.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
+					}
+					return hashMap;
 				}
-			}
+			}).apply(nbt.getCompound("meteor"));
 			meteor_announce = nbt.getDouble("meteor_announce");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("last_event", last_event);
-			{
-				CompoundTag compoundTag = new CompoundTag();
-				for (Map.Entry<String, Vec3> entry : this.meteor.entrySet()) {
-					Vec3 vec3 = entry.getValue();
-					vec3 = vec3 == null ? Vec3.ZERO : vec3;
-					ListTag listTag = new ListTag();
-					listTag.addTag(0, DoubleTag.valueOf(vec3.x()));
-					listTag.addTag(1, DoubleTag.valueOf(vec3.y()));
-					listTag.addTag(2, DoubleTag.valueOf(vec3.z()));
-					compoundTag.put(entry.getKey(), listTag);
+			nbt.put("meteor", (new Function<HashMap<String, Vec3>, CompoundTag>() {
+				@Override
+				public CompoundTag apply(HashMap<String, Vec3> hashMap) {
+					CompoundTag compoundTag = new CompoundTag();
+					for (Map.Entry<String, Vec3> entry : hashMap.entrySet()) {
+						Vec3 vec3 = entry.getValue();
+						ListTag listTag = new ListTag();
+						listTag.addTag(0, DoubleTag.valueOf(vec3.x()));
+						listTag.addTag(1, DoubleTag.valueOf(vec3.y()));
+						listTag.addTag(2, DoubleTag.valueOf(vec3.z()));
+						compoundTag.put(entry.getKey(), listTag);
+					}
+					return compoundTag;
 				}
-				nbt.put("meteor", compoundTag);
-			}
+			}).apply(meteor));
 			nbt.putDouble("meteor_announce", meteor_announce);
 			return nbt;
 		}
@@ -311,6 +326,15 @@ public class PurechaosModVariables {
 		public boolean sanity_enabled = true;
 		public double text_captcha = 0;
 		public double constipated = -1.0;
+		public double rizz = 0;
+		public boolean kidnapped = false;
+		public double accumulated_rizz = 0;
+		public boolean announced_rizzed = false;
+		public boolean arthritis = false;
+		public double thirst = 100.0;
+		public double speed = 0;
+		public double arthritis_time = 0;
+		public double healthiness = 100.0;
 
 		@Override
 		public CompoundTag serializeNBT() {
@@ -344,6 +368,15 @@ public class PurechaosModVariables {
 			nbt.putBoolean("sanity_enabled", sanity_enabled);
 			nbt.putDouble("text_captcha", text_captcha);
 			nbt.putDouble("constipated", constipated);
+			nbt.putDouble("rizz", rizz);
+			nbt.putBoolean("kidnapped", kidnapped);
+			nbt.putDouble("accumulated_rizz", accumulated_rizz);
+			nbt.putBoolean("announced_rizzed", announced_rizzed);
+			nbt.putBoolean("arthritis", arthritis);
+			nbt.putDouble("thirst", thirst);
+			nbt.putDouble("speed", speed);
+			nbt.putDouble("arthritis_time", arthritis_time);
+			nbt.putDouble("healthiness", healthiness);
 			return nbt;
 		}
 
@@ -378,6 +411,15 @@ public class PurechaosModVariables {
 			sanity_enabled = nbt.getBoolean("sanity_enabled");
 			text_captcha = nbt.getDouble("text_captcha");
 			constipated = nbt.getDouble("constipated");
+			rizz = nbt.getDouble("rizz");
+			kidnapped = nbt.getBoolean("kidnapped");
+			accumulated_rizz = nbt.getDouble("accumulated_rizz");
+			announced_rizzed = nbt.getBoolean("announced_rizzed");
+			arthritis = nbt.getBoolean("arthritis");
+			thirst = nbt.getDouble("thirst");
+			speed = nbt.getDouble("speed");
+			arthritis_time = nbt.getDouble("arthritis_time");
+			healthiness = nbt.getDouble("healthiness");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

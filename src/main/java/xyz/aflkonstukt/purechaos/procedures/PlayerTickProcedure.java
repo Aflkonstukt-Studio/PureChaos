@@ -17,6 +17,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -26,6 +27,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -45,6 +47,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
@@ -66,6 +69,11 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		{
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.speed = Math.sqrt(entity.getDeltaMovement().x() * entity.getDeltaMovement().x() + entity.getDeltaMovement().y() * entity.getDeltaMovement().y() + entity.getDeltaMovement().z() * entity.getDeltaMovement().z());
+			_vars.syncPlayerVariables(entity);
+		}
 		if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance >= 2.5) {
 				{
@@ -85,7 +93,8 @@ public class PlayerTickProcedure {
 					_vars.syncPlayerVariables(entity);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Woah you just got a breakdown! Dont worry they go by quickly, usually they last like 20s so just drink some water!"), false);
+					_player.displayClientMessage(Component.literal("\u00A7c\u00A7lWoah you just got a breakdown! \u00A7e\u00A7oDon't worry they go by quickly, usually they last like \u00A7a5-20s \u00A7e\u00A7oso just \u00A7bdrink some water!"),
+							false);
 			} else if (Mth.nextInt(RandomSource.create(), 1, 16000) <= 3) {
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
@@ -110,7 +119,7 @@ public class PlayerTickProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, false, false));
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Uh oh! Looks like you have dementia! Your inventory will be reset when the effect expires."), false);
+						_player.displayClientMessage(Component.literal("\u00A7c\u00A7lUh oh! Looks like you have dementia! \u00A7e\u00A7oYour inventory will be reset when the effect expires."), false);
 					{
 						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 						_vars.dementia_chance = 0;
@@ -232,6 +241,73 @@ public class PlayerTickProcedure {
 				}
 			});
 		}
+		if (new Object() {
+			public boolean checkGamemode(Entity _ent) {
+				if (_ent instanceof ServerPlayer _serverPlayer) {
+					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+				}
+				return false;
+			}
+		}.checkGamemode(entity)) {
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis_time != 0) {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.arthritis_time = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis_time - 1;
+					_vars.syncPlayerVariables(entity);
+				}
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.arthritis = true;
+					_vars.syncPlayerVariables(entity);
+				}
+			}
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis_time == 0) {
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.arthritis = false;
+					_vars.syncPlayerVariables(entity);
+				}
+			}
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).rizz >= 96) {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:rizzed_up")))), 1);
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, false, false));
+				if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).announced_rizzed) {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(
+								Component.literal(
+										"\u00A7d\u00A7lWhoa, you're totally rizzed up! \u00A7e\u00A7oYour rizzometer is off the charts! \u00A7a\u00A7lYou need to rizz someone up to get rid of the rizz! \u00A77\u00A7o(Just hit them multiple times)."),
+								false);
+					{
+						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+						_vars.announced_rizzed = true;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			}
+			if (entity.isSprinting()) {
+				if (Mth.nextInt(RandomSource.create(), 1, 800) <= 4) {
+					{
+						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+						_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst - 5;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			} else if (entity.getDeltaMovement().x() != 0 && entity.getDeltaMovement().y() != 0 && entity.getDeltaMovement().z() != 0) {
+				if (Mth.nextInt(RandomSource.create(), 1, 800) <= 2) {
+					{
+						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+						_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst - 5;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			}
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst < 5) {
+				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:thirst_death")))), 1);
+			}
+		}
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PurechaosModItems.OIL_BUCKET.get())) : false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(PurechaosModItems.OIL_BUCKET.get());
@@ -281,13 +357,13 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt46 && _livEnt46.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = false;
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt66 && _livEnt66.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = true;

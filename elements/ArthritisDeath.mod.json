@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s's hand imploded",
+    "itemDeathMessage": "%1$s's hand imploded",
+    "playerDeathMessage": "%1$s's hand imploded whilst trying to escape %2$s"
+  }
+}

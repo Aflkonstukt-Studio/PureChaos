@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:meth",
+    "purechaos:dorito_cool_ranch",
+    "purechaos:dorito_nacho",
+    "purechaos:kentucky_fried_chicken_fries",
+    "purechaos:kentucky_fried_chicken",
+    "purechaos:kfce",
+    "purechaos:spit_ball",
+    "purechaos:dingot",
+    "purechaos:poop",
+    "purechaos:brake_fluid",
+    "purechaos:poland_item",
+    "purechaos:beer",
+    "minecraft:poisonous_potato",
+    "minecraft:porkchop",
+    "minecraft:cooked_porkchop",
+    "minecraft:beef",
+    "minecraft:cooked_beef",
+    "minecraft:chicken",
+    "minecraft:cooked_chicken",
+    "minecraft:rabbit",
+    "minecraft:cooked_rabbit",
+    "minecraft:mutton",
+    "minecraft:cooked_mutton",
+    "minecraft:rotten_flesh"
+  ]
+}
