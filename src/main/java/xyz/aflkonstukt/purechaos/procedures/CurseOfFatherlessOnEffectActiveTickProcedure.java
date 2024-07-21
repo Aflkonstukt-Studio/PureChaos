@@ -32,7 +32,7 @@ public class CurseOfFatherlessOnEffectActiveTickProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.BAD_OMEN, 60, 1, false, false));
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).last_depression >= 6000) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED.get(), 60, 1, false, true));
+				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED, 60, 1, false, true));
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.last_depression = -1;
@@ -51,7 +51,7 @@ public class CurseOfFatherlessOnEffectActiveTickProcedure {
 			}
 		} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).last_depression == -1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED.get(), 60, 1, false, true));
+				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED, 60, 1, false, true));
 		} else {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);

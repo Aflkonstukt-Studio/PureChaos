@@ -41,6 +41,11 @@ public class AK47ProjectileEntity extends AbstractArrow implements ItemSupplier 
 	}
 
 	@Override
+	protected ItemStack getDefaultPickupItem() {
+		return new ItemStack(PurechaosModItems.BULLET.get());
+	}
+
+	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
@@ -55,6 +60,10 @@ public class AK47ProjectileEntity extends AbstractArrow implements ItemSupplier 
 
 	public static AK47ProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 3f, 5, 1);
+	}
+
+	public static AK47ProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 3f, 5, 1);
 	}
 
 	public static AK47ProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {

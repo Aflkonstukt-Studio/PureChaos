@@ -5,7 +5,7 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.common.SoundActions;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.resources.ResourceLocation;
@@ -15,7 +15,7 @@ import java.util.function.Consumer;
 
 public class CumFluidType extends FluidType {
 	public CumFluidType() {
-		super(FluidType.Properties.create().canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null).motionScale(0.021D).lightLevel(9).temperature(69420).rarity(Rarity.UNCOMMON)
+		super(FluidType.Properties.create().canSwim(false).canDrown(false).pathType(PathType.LAVA).adjacentPathType(null).motionScale(0.021D).lightLevel(9).temperature(69420).rarity(Rarity.UNCOMMON)
 				.sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.soul_soil.break")))
 				.sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}

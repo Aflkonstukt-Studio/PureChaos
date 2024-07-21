@@ -9,9 +9,7 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.context.CommandContext;
 
 public class CallCommunismProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z, CommandContext<CommandSourceStack> arguments) {
 		try {
 			for (Entity entityiterator : EntityArgument.getEntities(arguments, "name")) {
 				StartCommunismEventProcedure.execute(world, x, y, z, entityiterator);

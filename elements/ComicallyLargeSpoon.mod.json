@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
@@ -14,18 +14,20 @@
         "A really really really large spoon"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "efficiency": 15.0,
     "attackSpeed": 12.0,
     "enchantability": 20,
     "damageVsEntity": 6.0,
     "usageCount": 333,
-    "blocksAffected": [],
     "repairItems": [],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

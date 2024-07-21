@@ -13,7 +13,7 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class BleachItem extends Item {
 	public BleachItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-5).saturationMod(-5f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-5).saturationModifier(-5f).alwaysEdible().build()));
 	}
 
 	@Override

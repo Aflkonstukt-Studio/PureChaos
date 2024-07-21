@@ -4,7 +4,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.FluidTags;
-import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -31,7 +30,7 @@ public class BottleMixinMixin {
     @Inject(method = "use", at = @At("HEAD"), cancellable = true)
     private void use(Level p_40656_, Player p_40657_, InteractionHand p_40658_, CallbackInfoReturnable<InteractionResultHolder<ItemStack>> cir) {
         // If the block is lava, the bottle in the player's hand will be replaced with a Lava Bottle
-        BlockHitResult blockhitresult = pureChaos$getPlayerPOVHitResult(p_40656_, p_40657_);
+        BlockHitResult blockhitresult = pureChaos$getPlayerPOVHitResult(p_40656_, p_40657_, ClipContext.Fluid.SOURCE_ONLY);
         ItemStack itemstack = p_40657_.getItemInHand(p_40658_);
 
         if (blockhitresult.getType() != HitResult.Type.MISS) {
@@ -58,19 +57,10 @@ public class BottleMixinMixin {
     }
 
     @Unique
-    private static BlockHitResult pureChaos$getPlayerPOVHitResult(Level p_41436_, Player p_41437_) {
-        float f = p_41437_.getXRot();
-        float f1 = p_41437_.getYRot();
+    private static BlockHitResult pureChaos$getPlayerPOVHitResult(Level p_41436_, Player p_41437_, ClipContext.Fluid p_41438_) {
         Vec3 vec3 = p_41437_.getEyePosition();
-        float f2 = Mth.cos(-f1 * 0.017453292F - 3.1415927F);
-        float f3 = Mth.sin(-f1 * 0.017453292F - 3.1415927F);
-        float f4 = -Mth.cos(-f * 0.017453292F);
-        float f5 = Mth.sin(-f * 0.017453292F);
-        float f6 = f3 * f4;
-        float f7 = f2 * f4;
-        double d0 = p_41437_.getBlockReach();
-        Vec3 vec31 = vec3.add((double)f6 * d0, (double)f5 * d0, (double)f7 * d0);
-        return p_41436_.clip(new ClipContext(vec3, vec31, net.minecraft.world.level.ClipContext.Block.OUTLINE, ClipContext.Fluid.SOURCE_ONLY, p_41437_));
+        Vec3 vec31 = vec3.add(p_41437_.calculateViewVector(p_41437_.getXRot(), p_41437_.getYRot()).scale(p_41437_.blockInteractionRange()));
+        return p_41436_.clip(new ClipContext(vec3, vec31, net.minecraft.world.level.ClipContext.Block.OUTLINE, p_41438_, p_41437_));
     }
 
     @Unique

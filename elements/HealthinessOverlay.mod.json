@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -363,7 +363,7 @@
           "displayCondition": {
             "name": "ShowHealthiness3Half"
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_CENTER",
           "x": 279,
           "y": 182
         }

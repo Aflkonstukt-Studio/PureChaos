@@ -10,6 +10,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CobbleFluidItem extends BucketItem {
 	public CobbleFluidItem() {
-		super(PurechaosModFluids.COBBLE_FLUID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
+		super(PurechaosModFluids.COBBLE_FLUID.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
 	}
 }

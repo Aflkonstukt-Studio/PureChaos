@@ -20,7 +20,7 @@ import xyz.aflkonstukt.purechaos.entity.SplankEntity;
 import xyz.aflkonstukt.purechaos.entity.ShepEntity;
 import xyz.aflkonstukt.purechaos.entity.RockProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.RickAstleyEntity;
-import xyz.aflkonstukt.purechaos.entity.PensiveCubeEntity;
+import xyz.aflkonstukt.purechaos.entity.PensiveCubesEntity;
 import xyz.aflkonstukt.purechaos.entity.NerdEntity;
 import xyz.aflkonstukt.purechaos.entity.MuricaEntity;
 import xyz.aflkonstukt.purechaos.entity.MothOfAggrevationEntity;
@@ -62,11 +62,11 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.EventPriority;
 
@@ -75,7 +75,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class PurechaosModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, PurechaosMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<AentityEntity>> AENTITY = register("aentity",
@@ -237,10 +237,6 @@ public class PurechaosModEntities {
 			EntityType.Builder.<RockProjectileEntity>of(RockProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<JavelinLauncherProjectileEntity>> JAVELIN_LAUNCHER_PROJECTILE = register("javelin_launcher_projectile",
 			EntityType.Builder.<JavelinLauncherProjectileEntity>of(JavelinLauncherProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<PensiveCubeEntity>> PENSIVE_CUBE = register("pensive_cube",
-			EntityType.Builder.<PensiveCubeEntity>of(PensiveCubeEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<GroggoEntity>> GROGGO = register("groggo",
 			EntityType.Builder.<GroggoEntity>of(GroggoEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -253,6 +249,10 @@ public class PurechaosModEntities {
 			EntityType.Builder.<FishProjectileEntity>of(FishProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<YippeProjectileEntity>> YIPPE_PROJECTILE = register("yippe_projectile",
 			EntityType.Builder.<YippeProjectileEntity>of(YippeProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PensiveCubesEntity>> PENSIVE_CUBE = register("pensive_cube",
+			EntityType.Builder.<PensiveCubesEntity>of(PensiveCubesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -264,53 +264,51 @@ public class PurechaosModEntities {
 	}
 
 	@SubscribeEvent
-	public static void init(FMLCommonSetupEvent event) {
-		event.enqueueWork(() -> {
-			AentityEntity.init();
-			TridentEntity.init();
-			AmongUsEntity.init();
-			Amogus2Entity.init();
-			Amogus3Entity.init();
-			SplankEntity.init();
-			IkeaDeskEntity.init();
-			JOSIPEntity.init();
-			JosipdvatockanulaEntity.init();
-			JosipPetEntity.init();
-			JosipPettEntity.init();
-			MothOfAggrevationEntity.init();
-			ShepEntity.init();
-			VikkivukEntity.init();
-			BlazEntity.init();
-			CursedDogEntity.init();
-			WalterWightEntity.init();
-			AdolfHitlerEntity.init();
-			DreamEntity.init();
-			CodButBetterEntity.init();
-			StalinEntity.init();
-			RickAstleyEntity.init();
-			LegsEntity.init();
-			LongLegChickenEntity.init();
-			FireflyEntity.init();
-			TPoseEntityEntity.init();
-			StroaterEntity.init();
-			SpongebobBossEntity.init();
-			AMOGUS3BLUEntity.init();
-			AMOGUS3GRINEntity.init();
-			TheRockEntity.init();
-			BigEntity.init();
-			TechnobladeEntity.init();
-			CupcakkeEntity.init();
-			BaldiMinusEntity.init();
-			HerobrineEntity.init();
-			NerdEntity.init();
-			IRSEntity.init();
-			FBIEntity.init();
-			AmericanSoldatEntity.init();
-			MuricaEntity.init();
-			PensiveCubeEntity.init();
-			GroggoEntity.init();
-			YugoslaviaEntity.init();
-		});
+	public static void init(SpawnPlacementRegisterEvent event) {
+		AentityEntity.init(event);
+		TridentEntity.init(event);
+		AmongUsEntity.init(event);
+		Amogus2Entity.init(event);
+		Amogus3Entity.init(event);
+		SplankEntity.init(event);
+		IkeaDeskEntity.init(event);
+		JOSIPEntity.init(event);
+		JosipdvatockanulaEntity.init(event);
+		JosipPetEntity.init(event);
+		JosipPettEntity.init(event);
+		MothOfAggrevationEntity.init(event);
+		ShepEntity.init(event);
+		VikkivukEntity.init(event);
+		BlazEntity.init(event);
+		CursedDogEntity.init(event);
+		WalterWightEntity.init(event);
+		AdolfHitlerEntity.init(event);
+		DreamEntity.init(event);
+		CodButBetterEntity.init(event);
+		StalinEntity.init(event);
+		RickAstleyEntity.init(event);
+		LegsEntity.init(event);
+		LongLegChickenEntity.init(event);
+		FireflyEntity.init(event);
+		TPoseEntityEntity.init(event);
+		StroaterEntity.init(event);
+		SpongebobBossEntity.init(event);
+		AMOGUS3BLUEntity.init(event);
+		AMOGUS3GRINEntity.init(event);
+		TheRockEntity.init(event);
+		BigEntity.init(event);
+		TechnobladeEntity.init(event);
+		CupcakkeEntity.init(event);
+		BaldiMinusEntity.init(event);
+		HerobrineEntity.init(event);
+		NerdEntity.init(event);
+		IRSEntity.init(event);
+		FBIEntity.init(event);
+		AmericanSoldatEntity.init(event);
+		MuricaEntity.init(event);
+		GroggoEntity.init(event);
+		YugoslaviaEntity.init(event);
+		PensiveCubesEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -356,8 +354,8 @@ public class PurechaosModEntities {
 		event.put(FBI.get(), FBIEntity.createAttributes().build());
 		event.put(AMERICAN_SOLDAT.get(), AmericanSoldatEntity.createAttributes().build());
 		event.put(MURICA.get(), MuricaEntity.createAttributes().build());
-		event.put(PENSIVE_CUBE.get(), PensiveCubeEntity.createAttributes().build());
 		event.put(GROGGO.get(), GroggoEntity.createAttributes().build());
 		event.put(YUGOSLAVIA.get(), YugoslaviaEntity.createAttributes().build());
+		event.put(PENSIVE_CUBE.get(), PensiveCubesEntity.createAttributes().build());
 	}
 }

@@ -1,7 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
@@ -24,7 +23,6 @@ public class ShowSpeedometer1Procedure {
 				return false;
 			}
 		}.checkGamemode(entity))) {
-			PurechaosMod.LOGGER.info(("" + entity.getData(PurechaosModVariables.PLAYER_VARIABLES).speed / 0.0833));
 			if (Math.floor(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).speed / 0.0833) == 0) {
 				return true;
 			}

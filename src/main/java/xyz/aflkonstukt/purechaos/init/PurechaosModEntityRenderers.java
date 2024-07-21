@@ -18,7 +18,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.SpongebobBossRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.SplankRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.ShepRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.RickAstleyRenderer;
-import xyz.aflkonstukt.purechaos.client.renderer.PensiveCubeRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.PensiveCubesRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.NerdRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MuricaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MothOfAggrevationRenderer;
@@ -52,13 +52,13 @@ import xyz.aflkonstukt.purechaos.client.renderer.AMOGUS3GRINRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.AMOGUS3BLURenderer;
 
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PurechaosModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
@@ -111,10 +111,10 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.AMOGUS_GUN_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.ROCK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.JAVELIN_LAUNCHER_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubeRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.GROGGO.get(), GroggoRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.YUGOSLAVIA.get(), YugoslaviaRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.FISH_PROJECTILE.get(), FishProjectileRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.YIPPE_PROJECTILE.get(), YippeProjectileRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubesRenderer::new);
 	}
 }

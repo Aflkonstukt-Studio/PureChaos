@@ -4,10 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:milk_2",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "purechaos:milk_2"
       }
     },
     "barrier": {

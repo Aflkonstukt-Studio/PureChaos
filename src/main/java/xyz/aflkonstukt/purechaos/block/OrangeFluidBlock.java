@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class OrangeFluidBlock extends LiquidBlock {
 	public OrangeFluidBlock() {
-		super(() -> PurechaosModFluids.ORANGE_FLUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.ORANGE_FLUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

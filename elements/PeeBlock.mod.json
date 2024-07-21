@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "pee_block",
@@ -41,9 +41,11 @@
     "resistance": 9999999.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "Blocks.FLOWING_LAVA"
@@ -104,7 +106,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",

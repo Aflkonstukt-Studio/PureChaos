@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 
 public class CumBlock extends LiquidBlock {
 	public CumBlock() {
-		super(() -> PurechaosModFluids.CUM.get(), BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).strength(100f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).noCollission().noLootTable().liquid()
+		super(PurechaosModFluids.CUM.get(), BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).strength(100f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).noCollission().noLootTable().liquid()
 				.pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -40,13 +40,13 @@
       {
         "type": "button",
         "data": {
-          "name": "button_submit",
+          "name": "button_empty",
           "text": "Submit",
           "isUndecorated": false,
           "onClick": {
             "name": "ConfirmCaptcha"
           },
-          "width": 56,
+          "width": 119,
           "height": 20,
           "x": 129,
           "y": 129

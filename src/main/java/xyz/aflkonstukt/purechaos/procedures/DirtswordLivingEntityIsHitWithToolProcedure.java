@@ -11,6 +11,6 @@ public class DirtswordLivingEntityIsHitWithToolProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.SICK.get(), 4, 1));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.SICK, 4, 1));
 	}
 }

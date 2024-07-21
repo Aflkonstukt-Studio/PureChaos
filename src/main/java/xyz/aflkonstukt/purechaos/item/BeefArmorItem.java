@@ -1,104 +1,71 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
+import java.util.List;
+import java.util.EnumMap;
+
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class BeefArmorItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 10);
+				map.put(ArmorItem.Type.LEGGINGS, 15);
+				map.put(ArmorItem.Type.CHESTPLATE, 20);
+				map.put(ArmorItem.Type.HELMET, 10);
+				map.put(ArmorItem.Type.BODY, 20);
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("purechaos:fallguyswooh")), () -> Ingredient.of(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF)),
+					List.of(new ArmorMaterial.Layer(new ResourceLocation("purechaos:beef_armor"))), 6f, 0.2f);
+			registerHelper.register(new ResourceLocation("purechaos:beef_armor"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
 	public BeefArmorItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 50;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{10, 15, 20, 10}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 20;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:fallguyswooh"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF));
-			}
-
-			@Override
-			public String getName() {
-				return "beef_armor";
-			}
-
-			@Override
-			public float getToughness() {
-				return 6f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.2f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends BeefArmorItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "purechaos:textures/models/armor/beef_armor_layer_1.png";
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(50)));
 		}
 	}
 
 	public static class Chestplate extends BeefArmorItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "purechaos:textures/models/armor/beef_armor_layer_1.png";
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(50)));
 		}
 	}
 
 	public static class Leggings extends BeefArmorItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "purechaos:textures/models/armor/beef_armor_layer_2.png";
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(50)));
 		}
 	}
 
 	public static class Boots extends BeefArmorItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "purechaos:textures/models/armor/beef_armor_layer_1.png";
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(50)));
 		}
 	}
 }

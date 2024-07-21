@@ -41,6 +41,11 @@ public class DeekProjectileEntity extends AbstractArrow implements ItemSupplier 
 	}
 
 	@Override
+	protected ItemStack getDefaultPickupItem() {
+		return new ItemStack(Items.ENDER_EYE);
+	}
+
+	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
@@ -55,6 +60,10 @@ public class DeekProjectileEntity extends AbstractArrow implements ItemSupplier 
 
 	public static DeekProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 4f, 8, 2);
+	}
+
+	public static DeekProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 4f, 8, 2);
 	}
 
 	public static DeekProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {

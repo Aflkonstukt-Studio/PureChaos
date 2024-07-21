@@ -3,7 +3,7 @@ package xyz.aflkonstukt.purechaos.procedures;
 import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class GolpProcedure {
 	@SubscribeEvent
 	public static void onBlockPlace(BlockEvent.EntityPlaceEvent event) {

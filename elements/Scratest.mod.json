@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "GalaxyHunterGT - Scratest",
     "rarity": "RARE",
     "texture": "scratest_disc",
     "description": "idk man stop asking me",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "specialInformation": {
       "fixedValue": []
     },

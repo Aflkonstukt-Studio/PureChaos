@@ -11,6 +11,6 @@ import net.minecraft.world.level.block.LiquidBlock;
 
 public class CokowadaBlock extends LiquidBlock {
 	public CokowadaBlock() {
-		super(() -> PurechaosModFluids.COKOWADA.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.COKOWADA.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 }

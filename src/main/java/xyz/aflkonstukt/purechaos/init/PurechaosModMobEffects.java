@@ -25,7 +25,7 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.entity.Entity;
@@ -33,7 +33,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class PurechaosModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, PurechaosMod.MODID);
 	public static final DeferredHolder<MobEffect, MobEffect> HIGH_EFFECT = REGISTRY.register("high_effect", () -> new HighEffectMobEffect());
@@ -64,18 +64,17 @@ public class PurechaosModMobEffects {
 	}
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
-		MobEffect effect = effectInstance.getEffect();
-		if (effect == HIGH_EFFECT.get()) {
+		if (effectInstance.getEffect().is(HIGH_EFFECT)) {
 			HighEffectEffectExpiresProcedure.execute(entity.level(), entity);
-		} else if (effect == FAT.get()) {
+		} else if (effectInstance.getEffect().is(FAT)) {
 			FatEffectExpiresProcedure.execute(entity);
-		} else if (effect == DEMENTIA.get()) {
+		} else if (effectInstance.getEffect().is(DEMENTIA)) {
 			DementiaEffectExpiresProcedure.execute(entity);
-		} else if (effect == DRUNK.get()) {
+		} else if (effectInstance.getEffect().is(DRUNK)) {
 			DrunkEffectExpiresProcedure.execute(entity);
-		} else if (effect == CURSE_OF_FATHERLESS.get()) {
+		} else if (effectInstance.getEffect().is(CURSE_OF_FATHERLESS)) {
 			CurseOfFatherlessEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		} else if (effect == DEPRESSED.get()) {
+		} else if (effectInstance.getEffect().is(DEPRESSED)) {
 			DepressedEffectExpiresProcedure.execute(entity);
 		}
 	}

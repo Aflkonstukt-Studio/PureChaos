@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "gamerule",
   "definition": {
     "type": "Number",
@@ -7,6 +7,6 @@
     "description": "How many times do you want to multiply the vanilla minecraft mob cap (default: 10, vanilla: 1)",
     "category": "SPAWNING",
     "defaultValueLogic": false,
-    "defaultValueNumber": 15
+    "defaultValueNumber": 10
   }
 }

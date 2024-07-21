@@ -4,10 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:radiation_liquid",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "purechaos:radiation_liquid"
       }
     },
     "barrier": {

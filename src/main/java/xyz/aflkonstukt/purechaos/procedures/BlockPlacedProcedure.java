@@ -3,7 +3,7 @@ package xyz.aflkonstukt.purechaos.procedures;
 import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.common.PlantType;
 import net.neoforged.neoforge.common.IPlantable;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class BlockPlacedProcedure {
 	@SubscribeEvent
 	public static void onBlockPlace(BlockEvent.EntityPlaceEvent event) {

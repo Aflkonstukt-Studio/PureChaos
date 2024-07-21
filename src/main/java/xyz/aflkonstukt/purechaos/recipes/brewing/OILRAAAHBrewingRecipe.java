@@ -3,20 +3,19 @@ package xyz.aflkonstukt.purechaos.recipes.brewing;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.common.brewing.IBrewingRecipe;
-import net.neoforged.neoforge.common.brewing.BrewingRecipeRegistry;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class OILRAAAHBrewingRecipe implements IBrewingRecipe {
 	@SubscribeEvent
-	public static void init(FMLCommonSetupEvent event) {
-		event.enqueueWork(() -> BrewingRecipeRegistry.addRecipe(new OILRAAAHBrewingRecipe()));
+	public static void init(RegisterBrewingRecipesEvent event) {
+		event.getBuilder().addRecipe(new OILRAAAHBrewingRecipe());
 	}
 
 	@Override

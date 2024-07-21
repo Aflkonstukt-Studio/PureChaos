@@ -5,7 +5,7 @@ import xyz.aflkonstukt.purechaos.block.entity.PeeBlockBlockEntity;
 
 import net.neoforged.neoforge.common.IPlantable;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -63,8 +63,8 @@ public class PeeBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.POWDER_SNOW;
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.POWDER_SNOW;
 	}
 
 	@Override

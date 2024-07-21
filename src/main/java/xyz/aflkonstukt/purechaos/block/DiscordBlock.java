@@ -7,7 +7,6 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SuspiciousEffectHolder;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.LevelReader;
@@ -21,11 +20,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import java.util.List;
-
 public class DiscordBlock extends FlowerBlock implements BonemealableBlock {
 	public DiscordBlock() {
-		super(List.of(new SuspiciousEffectHolder.EffectEntry(MobEffects.MOVEMENT_SPEED, 100)),
+		super(MobEffects.MOVEMENT_SPEED, 100,
 				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
 						.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")),
 								() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")),

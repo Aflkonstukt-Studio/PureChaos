@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "purechaos:sus_sword"
   },
-  "result": "purechaos:spear"
+  "result": {
+    "id": "purechaos:spear"
+  }
 }

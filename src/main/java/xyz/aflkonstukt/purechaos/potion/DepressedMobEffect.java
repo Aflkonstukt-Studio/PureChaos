@@ -18,7 +18,8 @@ public class DepressedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		DepressedActiveTickConditionProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

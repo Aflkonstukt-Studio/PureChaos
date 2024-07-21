@@ -19,6 +19,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.IntTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -35,25 +36,25 @@ public class SADsBlockEntity extends RandomizableContainerBlockEntity implements
 	}
 
 	@Override
-	public void load(CompoundTag compound) {
-		super.load(compound);
+	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
+		super.loadAdditional(compound, lookupProvider);
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-		ContainerHelper.loadAllItems(compound, this.stacks);
+		ContainerHelper.loadAllItems(compound, this.stacks, lookupProvider);
 		if (compound.get("energyStorage") instanceof IntTag intTag)
-			energyStorage.deserializeNBT(intTag);
+			energyStorage.deserializeNBT(lookupProvider, intTag);
 		if (compound.get("fluidTank") instanceof CompoundTag compoundTag)
-			fluidTank.readFromNBT(compoundTag);
+			fluidTank.readFromNBT(lookupProvider, compoundTag);
 	}
 
 	@Override
-	public void saveAdditional(CompoundTag compound) {
-		super.saveAdditional(compound);
+	public void saveAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
+		super.saveAdditional(compound, lookupProvider);
 		if (!this.trySaveLootTable(compound)) {
-			ContainerHelper.saveAllItems(compound, this.stacks);
+			ContainerHelper.saveAllItems(compound, this.stacks, lookupProvider);
 		}
-		compound.put("energyStorage", energyStorage.serializeNBT());
-		compound.put("fluidTank", fluidTank.writeToNBT(new CompoundTag()));
+		compound.put("energyStorage", energyStorage.serializeNBT(lookupProvider));
+		compound.put("fluidTank", fluidTank.writeToNBT(lookupProvider, new CompoundTag()));
 	}
 
 	@Override
@@ -62,8 +63,8 @@ public class SADsBlockEntity extends RandomizableContainerBlockEntity implements
 	}
 
 	@Override
-	public CompoundTag getUpdateTag() {
-		return this.saveWithFullMetadata();
+	public CompoundTag getUpdateTag(HolderLookup.Provider lookupProvider) {
+		return this.saveWithFullMetadata(lookupProvider);
 	}
 
 	@Override

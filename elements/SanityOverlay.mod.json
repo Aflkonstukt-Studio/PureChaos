@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -36,7 +36,7 @@
             "falpha": 0.0
           },
           "displayCondition": {
-            "name": "ShowSanityOverlay"
+            "name": "ShowSanityDisabled"
           },
           "anchorPoint": "BOTTOM_CENTER",
           "x": 307,

@@ -52,19 +52,15 @@ public class YippeeItem extends Item {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {
 					if (stack.isDamageableItem()) {
-						if (stack.hurt(1, world.getRandom(), player)) {
+						stack.hurtAndBreak(1, world.getRandom(), player, () -> {
 							stack.shrink(1);
 							stack.setDamageValue(0);
-							if (stack.isEmpty())
-								player.getInventory().removeItem(stack);
-						}
+						});
 					} else {
 						stack.shrink(1);
-						if (stack.isEmpty())
-							player.getInventory().removeItem(stack);
 					}
 				}
-				YippeeRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+				YippeeRangedItemShootsProjectileProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
 		}
 	}

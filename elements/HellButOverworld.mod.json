@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "biome",
   "definition": {
     "name": "Neover",
@@ -86,10 +86,10 @@
       "value": "Blocks.NETHER_BRICK_FENCE"
     },
     "treeVines": {
-      "value": "Blocks.NETHER_BRICK_WALL"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.QUARTZ_ORE"
+      "value": ""
     },
     "defaultFeatures": [
       "Caves",

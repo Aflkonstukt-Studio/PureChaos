@@ -1,18 +1,20 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Sick",
-    "icon": "sick.png",
+    "icon": "sick",
     "color": {
       "value": -16711885,
       "falpha": 0.0
     },
     "isInstant": true,
-    "isBad": true,
-    "isBenefitical": false,
+    "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SickEffectSlayed"
+    },
     "onActiveTick": {
       "name": "SickEffectStartedapplied"
     }

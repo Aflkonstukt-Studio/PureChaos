@@ -15,6 +15,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -25,9 +26,8 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
-	public static EditBox answer;
-	Button button_submit;
+	EditBox answer;
+	Button button_empty;
 
 	public CaptchaGUIScreen(CaptchaGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -38,6 +38,15 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		this.entity = container.entity;
 		this.imageWidth = 192;
 		this.imageHeight = 80;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof CaptchaGUIScreen sc) {
+			textstate.put("textin:answer", sc.answer.getValue());
+
+		}
+		return textstate;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/captcha_gui.png");
@@ -70,9 +79,11 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		return super.keyPressed(key, b, c);
 	}
 
-	public static HashMap<String, String> getTextboxValues() {
-		textstate.put("textin:answer", answer.getValue());
-		return textstate;
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String answerValue = answer.getValue();
+		super.resize(minecraft, width, height);
+		answer.setValue(answerValue);
 	}
 
 	@Override
@@ -108,14 +119,13 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		answer.setSuggestion(Component.translatable("gui.purechaos.captcha_gui.answer").getString());
 		guistate.put("text:answer", answer);
 		this.addWidget(this.answer);
-		button_submit = Button.builder(Component.translatable("gui.purechaos.captcha_gui.button_submit"), e -> {
+		button_empty = Button.builder(Component.translatable("gui.purechaos.captcha_gui.button_empty"), e -> {
 			if (true) {
-				textstate.put("textin:answer", answer.getValue());
-				PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(0, x, y, z, textstate));
-				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
+				PacketDistributor.sendToServer(new CaptchaGUIButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
-		}).bounds(this.leftPos + 11, this.topPos + 49, 56, 20).build();
-		guistate.put("button:button_submit", button_submit);
-		this.addRenderableWidget(button_submit);
+		}).bounds(this.leftPos + 11, this.topPos + 49, 119, 20).build();
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

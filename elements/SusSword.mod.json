@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,22 +14,24 @@
         "sasi sord"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
-    "harvestLevel": 9,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "efficiency": 5.5,
     "attackSpeed": 69.0,
     "enchantability": 18,
     "damageVsEntity": 6.0,
     "usageCount": 2000,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:SusBlock"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

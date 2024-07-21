@@ -4,10 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:staravoda",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "purechaos:staravoda"
       }
     },
     "barrier": {

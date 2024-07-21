@@ -19,7 +19,7 @@ public class PoopPlayerFinishesUsingItemProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("Wtf why would you eat ur own poop, you are now sick for a day."), false);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.SICK.get(), 24000, 1));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.SICK, 24000, 1));
 		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(PurechaosModItems.ALMOND_WATER.get()).copy();
 			_setstack.setCount(1);

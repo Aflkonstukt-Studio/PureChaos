@@ -1,7 +1,8 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "feature",
   "definition": {
+    "skipPlacement": false,
     "generationStep": "LAKES",
     "restrictionBiomes": [
       {
@@ -224,6 +225,6 @@
         "value": "wooded_badlands_plateau"
       }
     ],
-    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:Oil</field></block></value><value name=\"border\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">256</field></block></value><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">32</field><field name=\"direction\">DOWN</field><value name=\"condition\"><block type=\"block_predicate_not\"><value name=\"condition\"><block type=\"block_predicate_is_air\"></block></value></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:Oil</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">256</field></block></value><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">32</field><field name=\"direction\">DOWN</field><value name=\"condition\"><block type=\"block_predicate_not\"><value name=\"condition\"><block type=\"block_predicate_is_air\"></block></value></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

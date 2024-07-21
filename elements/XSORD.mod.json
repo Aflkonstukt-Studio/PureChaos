@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -15,16 +15,16 @@
         "just dont get cut by it"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 2.5,
     "enchantability": 22,
     "damageVsEntity": 5.0,
     "usageCount": 69420,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -34,6 +34,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

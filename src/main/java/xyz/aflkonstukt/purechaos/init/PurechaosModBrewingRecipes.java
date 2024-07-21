@@ -2,10 +2,11 @@
 package xyz.aflkonstukt.purechaos.init;
 
 import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.component.DataComponents;
 
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.recipe.vanilla.IVanillaRecipeFactory;
@@ -34,7 +35,7 @@ public class PurechaosModBrewingRecipes implements IModPlugin {
 		List<ItemStack> inputStack = new ArrayList<>();
 		ingredientStack.add(new ItemStack(PurechaosModBlocks.GREEN_PLANT.get()));
 		inputStack.add(new ItemStack(Items.PAPER));
-		PotionUtils.setPotion(potion, PurechaosModPotions.ILLEGALSUBSTANCE.get());
+		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), potion.copy()));
 		ingredientStack.clear();
 		inputStack.clear();
@@ -44,17 +45,17 @@ public class PurechaosModBrewingRecipes implements IModPlugin {
 		inputStack.clear();
 		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(PurechaosModItems.BRAKE_FLUID.get()));
-		PotionUtils.setPotion(potion, Potions.WATER);
-		PotionUtils.setPotion(potion2, PurechaosModPotions.MODIFIED_ETHANOL.get());
+		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER));
+		potion2.set(DataComponents.POTION_CONTENTS, new PotionContents(PurechaosModPotions.MODIFIED_ETHANOL));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
 		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(PurechaosModItems.APPLE_INGOT.get()));
-		PotionUtils.setPotion(potion, PurechaosModPotions.MODIFIED_ETHANOL.get());
-		PotionUtils.setPotion(potion2, PurechaosModPotions.ETHANOL.get());
+		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(PurechaosModPotions.MODIFIED_ETHANOL));
+		potion2.set(DataComponents.POTION_CONTENTS, new PotionContents(PurechaosModPotions.ETHANOL));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), potion2.copy()));
 		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(PurechaosModItems.ALMOND_WATER.get()));
-		PotionUtils.setPotion(potion, PurechaosModPotions.ETHANOL.get());
+		potion.set(DataComponents.POTION_CONTENTS, new PotionContents(PurechaosModPotions.ETHANOL));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), potion.copy(), new ItemStack(PurechaosModItems.BEER.get())));
 		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);

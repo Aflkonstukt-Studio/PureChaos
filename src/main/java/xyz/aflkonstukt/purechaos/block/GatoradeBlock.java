@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class GatoradeBlock extends LiquidBlock {
 	public GatoradeBlock() {
-		super(() -> PurechaosModFluids.GATORADE.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.GATORADE.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Amogus Gun",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 72000,
@@ -33,6 +35,7 @@
     "inventoryStackSize": 64,
     "enableRanged": true,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:AmogusGunProjectile"
     },

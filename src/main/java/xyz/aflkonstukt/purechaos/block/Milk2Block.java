@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class Milk2Block extends LiquidBlock {
 	public Milk2Block() {
-		super(() -> PurechaosModFluids.MILK_2.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.MILK_2.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

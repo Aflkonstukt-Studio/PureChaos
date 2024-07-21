@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "[REDACTED] JosipTLG",
@@ -35,9 +35,11 @@
       "value": -65536,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "isBoss": true,
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
@@ -163,6 +165,15 @@
         "value": "CUSTOM:PolandBiome"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

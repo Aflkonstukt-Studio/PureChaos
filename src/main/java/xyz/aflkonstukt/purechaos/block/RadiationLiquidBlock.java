@@ -17,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class RadiationLiquidBlock extends LiquidBlock {
 	public RadiationLiquidBlock() {
-		super(() -> PurechaosModFluids.RADIATION_LIQUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.RADIATION_LIQUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

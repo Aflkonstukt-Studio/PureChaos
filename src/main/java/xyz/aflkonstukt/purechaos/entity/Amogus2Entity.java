@@ -6,8 +6,8 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
-import net.neoforged.neoforge.common.DungeonHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -31,8 +31,7 @@ import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -51,7 +50,6 @@ import net.minecraft.core.BlockPos;
 public class Amogus2Entity extends Monster {
 	public Amogus2Entity(EntityType<Amogus2Entity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
 		setCustomName(Component.literal("amogus"));
@@ -81,11 +79,6 @@ public class Amogus2Entity extends Monster {
 		this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(8, new MoveBackToVillageGoal(this, 0.6, false));
 		this.goalSelector.addGoal(9, new AvoidEntityGoal<>(this, Player.class, (float) 6, 1, 1.2));
-	}
-
-	@Override
-	public MobType getMobType() {
-		return MobType.UNDEAD;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -205,14 +198,13 @@ public class Amogus2Entity extends Monster {
 		this.setNoGravity(true);
 	}
 
-	public static void init() {
-		SpawnPlacements.register(PurechaosModEntities.AMOGUS_2.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+	public static void init(SpawnPlacementRegisterEvent event) {
+		event.register(PurechaosModEntities.AMOGUS_2.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		});
-		DungeonHooks.addDungeonMob(PurechaosModEntities.AMOGUS_2.get(), 180);
+		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -222,8 +214,9 @@ public class Amogus2Entity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
-		builder = builder.add(NeoForgeMod.SWIM_SPEED.value(), 0.3);
+		builder = builder.add(NeoForgeMod.SWIM_SPEED, 0.3);
 		return builder;
 	}
 }

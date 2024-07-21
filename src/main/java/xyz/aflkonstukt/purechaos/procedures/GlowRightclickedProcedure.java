@@ -14,12 +14,12 @@ public class GlowRightclickedProcedure {
 			return;
 		{
 			ItemStack _ist = itemstack;
-			if (_ist.hurt(100, RandomSource.create(), null)) {
+			_ist.hurtAndBreak(100, RandomSource.create(), null, () -> {
 				_ist.shrink(1);
 				_ist.setDamageValue(0);
-			}
+			});
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 9999999, 4, true, true));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.BLIND, 9999999, 4, true, true));
 	}
 }

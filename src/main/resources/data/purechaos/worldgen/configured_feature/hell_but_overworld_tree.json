@@ -46,16 +46,6 @@
       "offset": 0,
       "height": 3
     },
-    "decorators": [
-      {
-        "type": "purechaos:hell_but_overworld_tree_fruit_decorator"
-      },
-      {
-        "type": "purechaos:hell_but_overworld_tree_trunk_decorator"
-      },
-      {
-        "type": "purechaos:hell_but_overworld_tree_leave_decorator"
-      }
-    ]
+    "decorators": []
   }
 }

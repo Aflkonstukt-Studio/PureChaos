@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "tracklegs",
     "enableBoots": true,
     "textureBoots": "adidastrekbuts",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "armorTextureFile": "adidas",
     "helmetName": "Adidas Helmet",
     "bodyName": "Adidas Chestplate",

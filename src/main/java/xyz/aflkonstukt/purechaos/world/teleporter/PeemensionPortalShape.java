@@ -92,7 +92,7 @@ public class PeemensionPortalShape {
 
 	private int getDistanceUntilEdgeAboveFrame(BlockPos p_77736_, Direction p_77737_) {
 		BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
-		for (int i = 0; i <= 21; ++i) {
+		for (int i = 0; i <= 21; i++) {
 			blockpos$mutableblockpos.set(p_77736_).move(p_77737_, i);
 			BlockState blockstate = this.level.getBlockState(blockpos$mutableblockpos);
 			if (!isEmpty(blockstate)) {
@@ -116,7 +116,7 @@ public class PeemensionPortalShape {
 	}
 
 	private boolean hasTopFrame(BlockPos.MutableBlockPos p_77731_, int p_77732_) {
-		for (int i = 0; i < this.width; ++i) {
+		for (int i = 0; i < this.width; i++) {
 			BlockPos.MutableBlockPos blockpos$mutableblockpos = p_77731_.set(this.bottomLeft).move(Direction.UP, p_77732_).move(this.rightDir, i);
 			if (!FRAME.test(this.level.getBlockState(blockpos$mutableblockpos), this.level, blockpos$mutableblockpos)) {
 				return false;
@@ -126,7 +126,7 @@ public class PeemensionPortalShape {
 	}
 
 	private int getDistanceUntilTop(BlockPos.MutableBlockPos p_77729_) {
-		for (int i = 0; i < 21; ++i) {
+		for (int i = 0; i < 21; i++) {
 			p_77729_.set(this.bottomLeft).move(Direction.UP, i).move(this.rightDir, -1);
 			if (!FRAME.test(this.level.getBlockState(p_77729_), this.level, p_77729_)) {
 				return i;
@@ -135,14 +135,14 @@ public class PeemensionPortalShape {
 			if (!FRAME.test(this.level.getBlockState(p_77729_), this.level, p_77729_)) {
 				return i;
 			}
-			for (int j = 0; j < this.width; ++j) {
+			for (int j = 0; j < this.width; j++) {
 				p_77729_.set(this.bottomLeft).move(Direction.UP, i).move(this.rightDir, j);
 				BlockState blockstate = this.level.getBlockState(p_77729_);
 				if (!isEmpty(blockstate)) {
 					return i;
 				}
 				if (blockstate.getBlock() == PurechaosModBlocks.PEEMENSION_PORTAL.get()) {
-					++this.numPortalBlocks;
+					this.numPortalBlocks++;
 				}
 			}
 		}
@@ -167,12 +167,12 @@ public class PeemensionPortalShape {
 	}
 
 	public static Vec3 getRelativePosition(BlockUtil.FoundRectangle p_77739_, Direction.Axis p_77740_, Vec3 p_77741_, EntityDimensions p_77742_) {
-		double d0 = (double) p_77739_.axis1Size - (double) p_77742_.width;
-		double d1 = (double) p_77739_.axis2Size - (double) p_77742_.height;
+		double d0 = (double) p_77739_.axis1Size - (double) p_77742_.width();
+		double d1 = (double) p_77739_.axis2Size - (double) p_77742_.height();
 		BlockPos blockpos = p_77739_.minCorner;
 		double d2;
 		if (d0 > 0.0) {
-			double d3 = (double) blockpos.get(p_77740_) + (double) p_77742_.width / 2.0;
+			double d3 = (double) blockpos.get(p_77740_) + (double) p_77742_.width() / 2.0;
 			d2 = Mth.clamp(Mth.inverseLerp(p_77741_.get(p_77740_) - d3, 0.0, d0), 0.0, 1.0);
 		} else {
 			d2 = 0.5;
@@ -198,8 +198,8 @@ public class PeemensionPortalShape {
 		EntityDimensions entitydimensions = p_259166_.getDimensions(p_259166_.getPose());
 		int i = p_259901_ == direction$axis ? 0 : 90;
 		Vec3 vec3 = p_259901_ == direction$axis ? p_260043_ : new Vec3(p_260043_.z, p_260043_.y, -p_260043_.x);
-		double d2 = (double) entitydimensions.width / 2.0 + (d0 - (double) entitydimensions.width) * p_259630_.x();
-		double d3 = (d1 - (double) entitydimensions.height) * p_259630_.y();
+		double d2 = (double) entitydimensions.width() / 2.0 + (d0 - (double) entitydimensions.width()) * p_259630_.x();
+		double d3 = (d1 - (double) entitydimensions.height()) * p_259630_.y();
 		double d4 = 0.5 + p_259630_.z();
 		boolean flag = direction$axis == Direction.Axis.X;
 		Vec3 vec31 = new Vec3((double) blockpos.getX() + (flag ? d2 : d4), (double) blockpos.getY() + d3, (double) blockpos.getZ() + (flag ? d4 : d2));
@@ -208,11 +208,11 @@ public class PeemensionPortalShape {
 	}
 
 	private static Vec3 findCollisionFreePosition(Vec3 p_260315_, ServerLevel p_259704_, Entity p_259626_, EntityDimensions p_259816_) {
-		if (!(p_259816_.width > 4.0F) && !(p_259816_.height > 4.0F)) {
-			double d0 = (double) p_259816_.height / 2.0;
+		if (!(p_259816_.width() > 4.0F) && !(p_259816_.height() > 4.0F)) {
+			double d0 = (double) p_259816_.height() / 2.0;
 			Vec3 vec3 = p_260315_.add(0.0, d0, 0.0);
-			VoxelShape voxelshape = Shapes.create(AABB.ofSize(vec3, (double) p_259816_.width, 0.0, (double) p_259816_.width).expandTowards(0.0, 1.0, 0.0).inflate(1.0E-6));
-			Optional<Vec3> optional = p_259704_.findFreePosition(p_259626_, voxelshape, vec3, (double) p_259816_.width, (double) p_259816_.height, (double) p_259816_.width);
+			VoxelShape voxelshape = Shapes.create(AABB.ofSize(vec3, (double) p_259816_.width(), 0.0, (double) p_259816_.width()).expandTowards(0.0, 1.0, 0.0).inflate(1.0E-6));
+			Optional<Vec3> optional = p_259704_.findFreePosition(p_259626_, voxelshape, vec3, (double) p_259816_.width(), (double) p_259816_.height(), (double) p_259816_.width());
 			Optional<Vec3> optional1 = optional.map(p_259019_ -> p_259019_.subtract(0.0, d0, 0.0));
 			return optional1.orElse(p_260315_);
 		} else {

@@ -4,10 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:carbon_monoxide",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "purechaos:carbon_monoxide"
       }
     },
     "barrier": {

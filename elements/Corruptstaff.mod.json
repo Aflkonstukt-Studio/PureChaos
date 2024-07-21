@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,21 +14,23 @@
         "§k#[]CORRUPTED[]#"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 12.0,
     "enchantability": 6666,
     "damageVsEntity": 48.0,
     "usageCount": 100,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {

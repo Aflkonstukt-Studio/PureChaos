@@ -74,17 +74,17 @@ public class CaptchaGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		removeAction();
+	}
+
+	private void removeAction() {
 		if (this.world != null && this.world.isClientSide()) {
-			textBoxStart();
+			PacketDistributor.sendToServer(new CaptchaGUIButtonMessage(-2, x, y, z, CaptchaGUIScreen.getEditBoxAndCheckBoxValues()));
+			CaptchaGUIButtonMessage.handleButtonAction(entity, -2, x, y, z, CaptchaGUIScreen.getEditBoxAndCheckBoxValues());
 		}
 	}
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	public void textBoxStart() {
-		PacketDistributor.SERVER.noArg().send(new CaptchaGUIButtonMessage(-2, x, y, z, CaptchaGUIScreen.getTextboxValues()));
-		CaptchaGUIButtonMessage.handleButtonAction(entity, -2, x, y, z, CaptchaGUIScreen.getTextboxValues());
 	}
 }

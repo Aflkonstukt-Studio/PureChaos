@@ -41,6 +41,11 @@ public class AmogusGunProjectileEntity extends AbstractArrow implements ItemSupp
 	}
 
 	@Override
+	protected ItemStack getDefaultPickupItem() {
+		return new ItemStack(PurechaosModItems.BULLET.get());
+	}
+
+	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
@@ -55,6 +60,10 @@ public class AmogusGunProjectileEntity extends AbstractArrow implements ItemSupp
 
 	public static AmogusGunProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 1f, 5, 5);
+	}
+
+	public static AmogusGunProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
 	}
 
 	public static AmogusGunProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {

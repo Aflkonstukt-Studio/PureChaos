@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "JOSIP",
@@ -25,6 +25,7 @@
       {
         "model": "Default",
         "texture": "422888e8f9292a0c.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
@@ -41,9 +42,11 @@
       "value": -16777216,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PURPLE",
     "bossBarType": "PROGRESS",
@@ -169,6 +172,15 @@
         "value": "CUSTOM:Susus"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

@@ -26,7 +26,7 @@ import xyz.aflkonstukt.purechaos.procedures.ShowHealthiness10FullProcedure;
 import org.checkerframework.checker.units.qual.h;
 
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.api.distmarker.Dist;
@@ -40,12 +40,12 @@ import net.minecraft.client.Minecraft;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
-@Mod.EventBusSubscriber({Dist.CLIENT})
+@EventBusSubscriber({Dist.CLIENT})
 public class HealthinessOverlayOverlay {
 	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
-		int w = event.getWindow().getGuiScaledWidth();
-		int h = event.getWindow().getGuiScaledHeight();
+		int w = event.getGuiGraphics().guiWidth();
+		int h = event.getGuiGraphics().guiHeight();
 		Level world = null;
 		double x = 0;
 		double y = 0;
@@ -146,7 +146,7 @@ public class HealthinessOverlayOverlay {
 				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness3HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 66, h / 2 + 62, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness2HalfProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);

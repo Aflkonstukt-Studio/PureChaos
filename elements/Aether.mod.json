@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -230,9 +230,11 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "igniterTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "texture": "aether_portal_igniter",
     "portalTexture": "minecraft-water",
     "enablePortal": true

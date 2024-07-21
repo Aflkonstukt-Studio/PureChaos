@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "fluid",
   "definition": {
     "name": "Milk 2",
@@ -23,9 +23,11 @@
     "type": "WATER",
     "generateBucket": true,
     "textureBucket": "",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "emptySound": {
       "value": ""
     },

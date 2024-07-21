@@ -11,6 +11,6 @@ public class XSORDLivingEntityIsHitWithToolProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING.get(), 60, 1, false, true));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING, 60, 1, false, true));
 	}
 }

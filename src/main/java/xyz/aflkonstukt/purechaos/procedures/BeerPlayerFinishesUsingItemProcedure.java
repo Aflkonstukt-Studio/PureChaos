@@ -11,6 +11,6 @@ public class BeerPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DRUNK.get(), 500, 1, false, true));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DRUNK, 500, 1, false, true));
 	}
 }

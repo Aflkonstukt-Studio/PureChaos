@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class StaravodaBlock extends LiquidBlock {
 	public StaravodaBlock() {
-		super(() -> PurechaosModFluids.STARAVODA.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.STARAVODA.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,16 +14,16 @@
         "How hasn't it fallen apart yet?!"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 3.0,
     "enchantability": 2,
     "damageVsEntity": 2.0,
     "usageCount": 40,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -33,6 +33,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

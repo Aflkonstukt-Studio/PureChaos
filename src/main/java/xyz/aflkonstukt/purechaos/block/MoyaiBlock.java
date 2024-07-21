@@ -27,14 +27,10 @@ import com.mojang.serialization.MapCodec;
 
 public class MoyaiBlock extends FallingBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	public static final MapCodec<MoyaiBlock> CODEC = simpleCodec(MoyaiBlock::new);
+	public static final MapCodec<MoyaiBlock> CODEC = simpleCodec(properties -> new MoyaiBlock());
 
 	public MapCodec<MoyaiBlock> codec() {
 		return CODEC;
-	}
-
-	public MoyaiBlock(BlockBehaviour.Properties ignored) {
-		this();
 	}
 
 	public MoyaiBlock() {

@@ -5,12 +5,12 @@
 package xyz.aflkonstukt.purechaos.init;
 
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.GameRules;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class PurechaosModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> DOGRAVECREATION;
 	public static GameRules.Key<GameRules.BooleanValue> DOBOSSSPAWNING;
@@ -28,7 +28,7 @@ public class PurechaosModGameRules {
 		VEGANISM = GameRules.register("veganism", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 		DISABLE_CAPTCHA = GameRules.register("disableCaptcha", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		ADBLOCKER = GameRules.register("adblocker", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
-		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(15));
+		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(10));
 		MENTAL_HEALTH = GameRules.register("mentalHealth", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		NO_JUMP_VINE_BOOM = GameRules.register("noJumpVineBoom", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 	}

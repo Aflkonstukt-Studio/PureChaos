@@ -15,7 +15,7 @@ public class FatOnEffectActiveTickProcedure {
 		if (entity == null)
 			return;
 		ScaleTypes.WIDTH.getScaleData(entity).setTargetScale((float) ScaleOperations.SET.applyAsDouble(ScaleTypes.WIDTH.getScaleData(entity).getTargetScale(),
-				(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PurechaosModMobEffects.FAT.get()) ? _livEnt.getEffect(PurechaosModMobEffects.FAT.get()).getAmplifier() : 0)));
+				(entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PurechaosModMobEffects.FAT) ? _livEnt.getEffect(PurechaosModMobEffects.FAT).getAmplifier() : 0)));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 480, 3, false, false));
 	}

@@ -17,8 +17,7 @@ import net.minecraft.core.BlockPos;
 
 public class CarbonMonoxideBlock extends LiquidBlock {
 	public CarbonMonoxideBlock() {
-		super(() -> PurechaosModFluids.CARBON_MONOXIDE.get(),
-				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.CARBON_MONOXIDE.get(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

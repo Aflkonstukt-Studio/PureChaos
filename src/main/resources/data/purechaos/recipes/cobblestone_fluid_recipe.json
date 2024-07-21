@@ -10,7 +10,7 @@
     }
   ],
   "result": {
-    "item": "purechaos:cobble_fluid_bucket",
+    "id": "purechaos:cobble_fluid_bucket",
     "count": 1
   }
 }

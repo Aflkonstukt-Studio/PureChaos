@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -34,6 +35,14 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 		this.entity = container.entity;
 		this.imageWidth = 176;
 		this.imageHeight = 166;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof VikkiVukGuiScreen sc) {
+
+		}
+		return textstate;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/vikki_vuk_gui.png");
@@ -72,8 +81,8 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 		super.init();
 		button_trash = Button.builder(Component.translatable("gui.purechaos.vikki_vuk_gui.button_trash"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new VikkiVukGuiButtonMessage(0, x, y, z));
-				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PacketDistributor.sendToServer(new VikkiVukGuiButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+				VikkiVukGuiButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 62, this.topPos + 52, 51, 20).build();
 		guistate.put("button:button_trash", button_trash);

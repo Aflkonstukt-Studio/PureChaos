@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -34,6 +35,14 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		this.entity = container.entity;
 		this.imageWidth = 176;
 		this.imageHeight = 46;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof ComputerGuiScreen sc) {
+
+		}
+		return textstate;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/computer_gui.png");
@@ -72,8 +81,8 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		super.init();
 		button_enter_cyberspace = Button.builder(Component.translatable("gui.purechaos.computer_gui.button_enter_cyberspace"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new ComputerGuiButtonMessage(0, x, y, z));
-				ComputerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PacketDistributor.sendToServer(new ComputerGuiButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+				ComputerGuiButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 33, this.topPos + 12, 108, 20).build();
 		guistate.put("button:button_enter_cyberspace", button_enter_cyberspace);

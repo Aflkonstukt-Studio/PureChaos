@@ -4,10 +4,7 @@
     "fluid": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "purechaos:cobble_fluid",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "purechaos:cobble_fluid"
       }
     },
     "barrier": {

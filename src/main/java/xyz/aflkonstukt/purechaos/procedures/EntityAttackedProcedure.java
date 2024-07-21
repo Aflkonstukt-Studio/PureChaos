@@ -6,7 +6,7 @@ import xyz.aflkonstukt.purechaos.entity.StalinEntity;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -24,11 +24,11 @@ import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class EntityAttackedProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
@@ -42,9 +42,9 @@ public class EntityAttackedProcedure {
 			return;
 		if (entity instanceof Player || entity instanceof ServerPlayer) {
 			if (sourceentity instanceof StalinEntity) {
-				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerForEach) {
-					for (int _idx = 0; _idx < _modHandlerForEach.getSlots(); _idx++) {
-						ItemStack itemstackiterator = _modHandlerForEach.getStackInSlot(_idx).copy();
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+					for (int _idx = 0; _idx < _modHandler.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandler.getStackInSlot(_idx).copy();
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = itemstackiterator;
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

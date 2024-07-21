@@ -19,8 +19,8 @@ public class DoritoFinishedEatingProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.FAT.get(), 999999,
-					(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PurechaosModMobEffects.FAT.get()) ? _livEnt.getEffect(PurechaosModMobEffects.FAT.get()).getAmplifier() : 0) + 1), false, false));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.FAT, 999999,
+					(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PurechaosModMobEffects.FAT) ? _livEnt.getEffect(PurechaosModMobEffects.FAT).getAmplifier() : 0) + 1), false, false));
 		{
 			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 			_vars.show_nikocado = true;

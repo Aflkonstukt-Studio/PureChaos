@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -36,6 +37,14 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		this.entity = container.entity;
 		this.imageWidth = 176;
 		this.imageHeight = 166;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof CheatGUIScreen sc) {
+
+		}
+		return textstate;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/cheat_gui.png");
@@ -75,24 +84,24 @@ public class CheatGUIScreen extends AbstractContainerScreen<CheatGUIMenu> {
 		super.init();
 		button_switch_gamemode = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_gamemode"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(0, x, y, z));
-				CheatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PacketDistributor.sendToServer(new CheatGUIButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+				CheatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 36, this.topPos + 31, 103, 20).build();
 		guistate.put("button:button_switch_gamemode", button_switch_gamemode);
 		this.addRenderableWidget(button_switch_gamemode);
 		button_switch_dimension = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_switch_dimension"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(1, x, y, z));
-				CheatGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				PacketDistributor.sendToServer(new CheatGUIButtonMessage(1, x, y, z, getEditBoxAndCheckBoxValues()));
+				CheatGUIButtonMessage.handleButtonAction(entity, 1, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 33, this.topPos + 62, 108, 20).build();
 		guistate.put("button:button_switch_dimension", button_switch_dimension);
 		this.addRenderableWidget(button_switch_dimension);
 		button_do_not_press = Button.builder(Component.translatable("gui.purechaos.cheat_gui.button_do_not_press"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new CheatGUIButtonMessage(2, x, y, z));
-				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+				PacketDistributor.sendToServer(new CheatGUIButtonMessage(2, x, y, z, getEditBoxAndCheckBoxValues()));
+				CheatGUIButtonMessage.handleButtonAction(entity, 2, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 42, this.topPos + 129, 88, 20).build();
 		guistate.put("button:button_do_not_press", button_do_not_press);

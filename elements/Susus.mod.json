@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "biome",
   "definition": {
     "name": "Susus",
@@ -86,10 +86,10 @@
       "value": "CUSTOM:SusBlock"
     },
     "treeVines": {
-      "value": "CUSTOM:SADs"
+      "value": ""
     },
     "treeFruits": {
-      "value": "Blocks.LIGHT"
+      "value": ""
     },
     "defaultFeatures": [
       "Caves",

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "particle",
   "definition": {
     "texture": "yippee_projectile_texture.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 10.0,
+    "scale": {
+      "fixedValue": 10.0
+    },
     "speedFactor": 1.0,
     "gravity": 0.0,
     "maxAge": 7,

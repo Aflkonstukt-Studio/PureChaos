@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "structure",
   "definition": {
     "structure": "stone_stair_structure",
@@ -232,9 +232,13 @@
         "value": "wooded_badlands_plateau"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "beard_thin",
     "generationStep": "TOP_LAYER_MODIFICATION",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
     "size": 1,
     "maxDistanceFromCenter": 64,
     "jigsawPools": []

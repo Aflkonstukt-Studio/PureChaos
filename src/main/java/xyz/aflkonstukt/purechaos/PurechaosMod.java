@@ -20,15 +20,16 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModBlockEntities;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.neoforged.neoforge.network.registration.IPayloadRegistrar;
-import net.neoforged.neoforge.network.handling.PlayPayloadContext;
-import net.neoforged.neoforge.network.handling.IPlayPayloadHandler;
-import net.neoforged.neoforge.network.event.RegisterPayloadHandlerEvent;
-import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
+import net.neoforged.neoforge.network.handling.IPayloadHandler;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
@@ -36,7 +37,10 @@ import net.minecraft.util.Tuple;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.ComponentSerialization;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.components.EditBox;
@@ -67,7 +71,7 @@ public class PurechaosMod {
 		PurechaosModSounds.REGISTRY.register(modEventBus);
 		PurechaosModBlocks.REGISTRY.register(modEventBus);
 		PurechaosModBlockEntities.REGISTRY.register(modEventBus);
-		PurechaosModItems.register(modEventBus);
+		PurechaosModItems.REGISTRY.register(modEventBus);
 		PurechaosModEntities.REGISTRY.register(modEventBus);
 		PurechaosModTabs.REGISTRY.register(modEventBus);
 		PurechaosModVariables.ATTACHMENT_TYPES.register(modEventBus);
@@ -88,35 +92,63 @@ public class PurechaosMod {
 
 	// Start of user code block mod methods
 	// End of user code block mod methods
-	public static class TextboxSetMessage implements CustomPacketPayload {
-		public static final ResourceLocation ID = new ResourceLocation(PurechaosMod.MODID, "textbox_set_value");
-		private final String textboxid;
-		private final String data;
+	private static boolean networkingRegistered = false;
+	private static final Map<CustomPacketPayload.Type<?>, NetworkMessage<?>> MESSAGES = new HashMap<>();
 
-		public TextboxSetMessage(FriendlyByteBuf buffer) {
-			this.textboxid = buffer.readUtf();
-			this.data = buffer.readUtf();
-		}
+	private record NetworkMessage<T extends CustomPacketPayload>(StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+	}
 
-		public TextboxSetMessage(String textboxid, String data) {
-			this.textboxid = textboxid;
-			this.data = data;
-		}
+	public static <T extends CustomPacketPayload> void addNetworkMessage(CustomPacketPayload.Type<T> id, StreamCodec<? extends FriendlyByteBuf, T> reader, IPayloadHandler<T> handler) {
+		if (networkingRegistered)
+			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
+		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
+	}
+
+	@SuppressWarnings({"rawtypes", "unchecked"})
+	private void registerNetworking(final RegisterPayloadHandlersEvent event) {
+		final PayloadRegistrar registrar = event.registrar(MODID);
+		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler()));
+		networkingRegistered = true;
+	}
+
+	private static final Collection<Tuple<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
+
+	public static void queueServerWork(int tick, Runnable action) {
+		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
+			workQueue.add(new Tuple<>(action, tick));
+	}
+
+	@SubscribeEvent
+	public void tick(ServerTickEvent.Post event) {
+		List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
+		workQueue.forEach(work -> {
+			work.setB(work.getB() - 1);
+			if (work.getB() == 0)
+				actions.add(work);
+		});
+		actions.forEach(e -> e.getA().run());
+		workQueue.removeAll(actions);
+	}
+
+	public static record GuiSyncMessage(String editbox, String value) implements CustomPacketPayload {
+		public static final Type<GuiSyncMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "gui_sync"));
+		public static final StreamCodec<RegistryFriendlyByteBuf, GuiSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, GuiSyncMessage message) -> {
+			writeComponent(buffer, Component.literal(message.editbox));
+			writeComponent(buffer, Component.literal(message.value));
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			String editbox = readComponent(buffer).getString();
+			String value = readComponent(buffer).getString();
+			return new GuiSyncMessage(editbox, value);
+		});
 
 		@Override
-		public void write(final FriendlyByteBuf buffer) {
-			buffer.writeUtf(textboxid);
-			buffer.writeUtf(data);
+		public Type<GuiSyncMessage> type() {
+			return TYPE;
 		}
 
-		@Override
-		public ResourceLocation id() {
-			return ID;
-		}
-
-		public static void handleData(final TextboxSetMessage message, final PlayPayloadContext context) {
-			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.workHandler().submitAsync(() -> {
+		public static void handleData(final GuiSyncMessage message, final IPayloadContext context) {
+			if (context.flow() == PacketFlow.CLIENTBOUND) {
+				context.enqueueWork(() -> {
 					Screen currentScreen = Minecraft.getInstance().screen;
 					Map<String, EditBox> textFieldsMap = new HashMap<>();
 					if (currentScreen != null) {
@@ -139,62 +171,30 @@ public class PurechaosMod {
 							}
 						}
 					}
-					if (textFieldsMap.get(message.textboxid) != null) {
-						textFieldsMap.get(message.textboxid).setValue(message.data);
+					if (textFieldsMap.get(message.editbox) != null) {
+						textFieldsMap.get(message.editbox).setValue(message.value);
 					}
 				}).exceptionally(e -> {
-					context.packetHandler().disconnect(Component.literal(e.getMessage()));
+					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});
 			}
 		}
-	}
 
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class Inittextbox {
-		@SubscribeEvent
-		public static void init(FMLCommonSetupEvent event) {
-			PurechaosMod.addNetworkMessage(TextboxSetMessage.ID, TextboxSetMessage::new, TextboxSetMessage::handleData);
+		private static Component readComponent(RegistryFriendlyByteBuf buffer) {
+			return ComponentSerialization.TRUSTED_STREAM_CODEC.decode(buffer);
+		}
+
+		private static void writeComponent(RegistryFriendlyByteBuf buffer, Component component) {
+			ComponentSerialization.TRUSTED_STREAM_CODEC.encode(buffer, component);
 		}
 	}
 
-	private static boolean networkingRegistered = false;
-	private static final Map<ResourceLocation, NetworkMessage<?>> MESSAGES = new HashMap<>();
-
-	private record NetworkMessage<T extends CustomPacketPayload>(FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
-	}
-
-	public static <T extends CustomPacketPayload> void addNetworkMessage(ResourceLocation id, FriendlyByteBuf.Reader<T> reader, IPlayPayloadHandler<T> handler) {
-		if (networkingRegistered)
-			throw new IllegalStateException("Cannot register new network messages after networking has been registered");
-		MESSAGES.put(id, new NetworkMessage<>(reader, handler));
-	}
-
-	@SuppressWarnings({"rawtypes", "unchecked"})
-	private void registerNetworking(final RegisterPayloadHandlerEvent event) {
-		final IPayloadRegistrar registrar = event.registrar(MODID);
-		MESSAGES.forEach((id, networkMessage) -> registrar.play(id, ((NetworkMessage) networkMessage).reader(), networkMessage.handler()));
-		networkingRegistered = true;
-	}
-
-	private static final Collection<Tuple<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
-
-	public static void queueServerWork(int tick, Runnable action) {
-		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
-			workQueue.add(new Tuple<>(action, tick));
-	}
-
-	@SubscribeEvent
-	public void tick(TickEvent.ServerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
-			workQueue.forEach(work -> {
-				work.setB(work.getB() - 1);
-				if (work.getB() == 0)
-					actions.add(work);
-			});
-			actions.forEach(e -> e.getA().run());
-			workQueue.removeAll(actions);
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+	public static class GuiSyncInit {
+		@SubscribeEvent
+		public static void init(FMLCommonSetupEvent event) {
+			PurechaosMod.addNetworkMessage(GuiSyncMessage.TYPE, GuiSyncMessage.STREAM_CODEC, GuiSyncMessage::handleData);
 		}
 	}
 }

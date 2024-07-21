@@ -1,7 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import net.neoforged.neoforge.event.ServerChatEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -19,7 +19,7 @@ import net.minecraft.core.BlockPos;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DeathWishProcedure {
 	@SubscribeEvent
 	public static void onChat(ServerChatEvent event) {

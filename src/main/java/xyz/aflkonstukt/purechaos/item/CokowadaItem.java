@@ -10,6 +10,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class CokowadaItem extends BucketItem {
 	public CokowadaItem() {
-		super(PurechaosModFluids.COKOWADA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
+		super(PurechaosModFluids.COKOWADA.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
 	}
 }

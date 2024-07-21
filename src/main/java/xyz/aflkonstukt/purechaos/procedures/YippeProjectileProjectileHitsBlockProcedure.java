@@ -7,6 +7,6 @@ public class YippeProjectileProjectileHitsBlockProcedure {
 	public static void execute(Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
-		immediatesourceentity.setDeltaMovement(new Vec3((immediatesourceentity.getDeltaMovement().x()), (immediatesourceentity.getDeltaMovement().y() + 2), (immediatesourceentity.getDeltaMovement().z())));
+		immediatesourceentity.setDeltaMovement(new Vec3((immediatesourceentity.getDeltaMovement().x()), ((-1) * immediatesourceentity.getDeltaMovement().y()), (immediatesourceentity.getDeltaMovement().z())));
 	}
 }

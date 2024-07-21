@@ -39,10 +39,6 @@
       "offset": 0,
       "height": 3
     },
-    "decorators": [
-      {
-        "type": "purechaos:buffalo_lake_tree_fruit_decorator"
-      }
-    ]
+    "decorators": []
   }
 }

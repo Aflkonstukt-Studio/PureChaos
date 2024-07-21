@@ -19,7 +19,7 @@ public class MercuryPlayerFinishesUsingItemProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("why tf would you eat mercury"), false);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT.get(), 8000, 1));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT, 8000, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 8000, 5));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -9,7 +9,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class BrakeFluidItem extends Item {
 	public BrakeFluidItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override

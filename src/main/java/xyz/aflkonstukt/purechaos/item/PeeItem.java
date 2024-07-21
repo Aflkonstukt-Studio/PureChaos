@@ -10,6 +10,6 @@ import net.minecraft.world.item.BucketItem;
 
 public class PeeItem extends BucketItem {
 	public PeeItem() {
-		super(PurechaosModFluids.PEE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
+		super(PurechaosModFluids.PEE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON));
 	}
 }

@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "Sasi Amangas",
     "rarity": "RARE",
     "texture": "untitled",
     "description": "HE is sus",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "specialInformation": {
       "fixedValue": [
         "Josip is making an amogus"

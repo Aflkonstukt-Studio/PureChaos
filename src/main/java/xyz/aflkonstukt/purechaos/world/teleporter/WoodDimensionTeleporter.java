@@ -5,7 +5,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
 import net.neoforged.neoforge.common.util.ITeleporter;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.phys.Vec3;
@@ -42,7 +42,7 @@ import java.util.Comparator;
 
 import com.google.common.collect.ImmutableSet;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class WoodDimensionTeleporter implements ITeleporter {
 	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("wood_dimension_portal", Vec3i::compareTo, 300);
 	public static Holder<PoiType> poi = null;
@@ -93,12 +93,12 @@ public class WoodDimensionTeleporter implements ITeleporter {
 			int k = 1;
 			if (worldborder.isWithinBounds(blockpos$mutableblockpos1) && worldborder.isWithinBounds(blockpos$mutableblockpos1.move(direction, 1))) {
 				blockpos$mutableblockpos1.move(direction.getOpposite(), 1);
-				for (int l = j; l >= this.level.getMinBuildHeight(); --l) {
+				for (int l = j; l >= this.level.getMinBuildHeight(); l--) {
 					blockpos$mutableblockpos1.setY(l);
 					if (this.canPortalReplaceBlock(blockpos$mutableblockpos1)) {
 						int i1 = l;
 						while (l > this.level.getMinBuildHeight() && this.canPortalReplaceBlock(blockpos$mutableblockpos1.move(Direction.DOWN))) {
-							--l;
+							l--;
 						}
 						if (l + 4 <= i) {
 							int j1 = i1 - l;
@@ -136,9 +136,9 @@ public class WoodDimensionTeleporter implements ITeleporter {
 			if (!worldborder.isWithinBounds(blockpos)) {
 				return Optional.empty();
 			}
-			for (int i3 = -1; i3 < 2; ++i3) {
-				for (int j3 = 0; j3 < 2; ++j3) {
-					for (int k3 = -1; k3 < 3; ++k3) {
+			for (int i3 = -1; i3 < 2; i3++) {
+				for (int j3 = 0; j3 < 2; j3++) {
+					for (int k3 = -1; k3 < 3; k3++) {
 						BlockState blockstate1 = k3 < 0 ? Blocks.OAK_PLANKS.defaultBlockState() : Blocks.AIR.defaultBlockState();
 						blockpos$mutableblockpos.setWithOffset(blockpos, j3 * direction.getStepX() + i3 * direction1.getStepX(), k3, j3 * direction.getStepZ() + i3 * direction1.getStepZ());
 						this.level.setBlockAndUpdate(blockpos$mutableblockpos, blockstate1);
@@ -146,8 +146,8 @@ public class WoodDimensionTeleporter implements ITeleporter {
 				}
 			}
 		}
-		for (int l1 = -1; l1 < 3; ++l1) {
-			for (int j2 = -1; j2 < 4; ++j2) {
+		for (int l1 = -1; l1 < 3; l1++) {
+			for (int j2 = -1; j2 < 4; j2++) {
 				if (l1 == -1 || l1 == 2 || j2 == -1 || j2 == 3) {
 					blockpos$mutableblockpos.setWithOffset(blockpos, l1 * direction.getStepX(), j2, l1 * direction.getStepZ());
 					this.level.setBlock(blockpos$mutableblockpos, Blocks.OAK_PLANKS.defaultBlockState(), 3);
@@ -155,8 +155,8 @@ public class WoodDimensionTeleporter implements ITeleporter {
 			}
 		}
 		BlockState blockstate = PurechaosModBlocks.WOOD_DIMENSION_PORTAL.get().defaultBlockState().setValue(NetherPortalBlock.AXIS, p_77668_);
-		for (int k2 = 0; k2 < 2; ++k2) {
-			for (int l2 = 0; l2 < 3; ++l2) {
+		for (int k2 = 0; k2 < 2; k2++) {
+			for (int l2 = 0; l2 < 3; l2++) {
 				blockpos$mutableblockpos.setWithOffset(blockpos, k2 * direction.getStepX(), l2, k2 * direction.getStepZ());
 				this.level.setBlock(blockpos$mutableblockpos, blockstate, 18);
 				this.level.getPoiManager().add(blockpos$mutableblockpos, poi);
@@ -167,8 +167,8 @@ public class WoodDimensionTeleporter implements ITeleporter {
 
 	private boolean canHostFrame(BlockPos p_77662_, BlockPos.MutableBlockPos p_77663_, Direction p_77664_, int p_77665_) {
 		Direction direction = p_77664_.getClockWise();
-		for (int i = -1; i < 3; ++i) {
-			for (int j = -1; j < 4; ++j) {
+		for (int i = -1; i < 3; i++) {
+			for (int j = -1; j < 4; j++) {
 				p_77663_.setWithOffset(p_77662_, p_77664_.getStepX() * i + direction.getStepX() * p_77665_, j, p_77664_.getStepZ() * i + direction.getStepZ() * p_77665_);
 				if (j < 0 && !this.level.getBlockState(p_77663_).isSolid()) {
 					return false;

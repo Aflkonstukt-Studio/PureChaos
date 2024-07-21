@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "particle",
   "definition": {
     "texture": "mega_drip.png",
@@ -7,7 +7,9 @@
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
-    "scale": 3.0,
+    "scale": {
+      "fixedValue": 3.0
+    },
     "speedFactor": 5.0,
     "gravity": -4.2069,
     "maxAge": 17,

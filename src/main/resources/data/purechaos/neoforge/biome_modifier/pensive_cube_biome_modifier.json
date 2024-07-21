@@ -6,21 +6,21 @@
     "purechaos:cyber_biome",
     "purechaos:desert",
     "purechaos:dream_biome",
-    "purechaos:ekesmasterbait",
+    "purechaos:easter",
     "purechaos:fortnite_biome",
     "purechaos:fun_land",
     "purechaos:heaven_or_hell",
-    "purechaos:hell_but_overworld",
     "purechaos:more_extreme_hills",
     "purechaos:ohio",
     "purechaos:plains",
     "purechaos:poland_biome",
+    "purechaos:puffs_biome",
     "purechaos:susus"
   ],
   "spawners": {
     "type": "purechaos:pensive_cube",
-    "weight": 40,
-    "minCount": 4,
+    "weight": 20,
+    "minCount": 2,
     "maxCount": 8
   }
 }

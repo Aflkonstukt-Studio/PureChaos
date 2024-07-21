@@ -16,8 +16,7 @@ import net.minecraft.core.BlockPos;
 
 public class OilBlock extends LiquidBlock {
 	public OilBlock() {
-		super(() -> PurechaosModFluids.OIL.get(),
-				BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).lightLevel(s -> 15).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.OIL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).lightLevel(s -> 15).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

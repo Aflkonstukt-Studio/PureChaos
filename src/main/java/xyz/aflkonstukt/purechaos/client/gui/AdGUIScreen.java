@@ -14,6 +14,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -41,6 +42,14 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 	@Override
 	public boolean isPauseScreen() {
 		return true;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof AdGUIScreen sc) {
+
+		}
+		return textstate;
 	}
 
 	@Override
@@ -79,16 +88,16 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 		super.init();
 		button_x = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_x"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new AdGUIButtonMessage(0, x, y, z));
-				AdGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				PacketDistributor.sendToServer(new AdGUIButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+				AdGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 252, this.topPos + 26, 30, 20).build();
 		guistate.put("button:button_x", button_x);
 		this.addRenderableWidget(button_x);
 		button_gimme_it = Button.builder(Component.translatable("gui.purechaos.ad_gui.button_gimme_it"), e -> {
 			if (true) {
-				PacketDistributor.SERVER.noArg().send(new AdGUIButtonMessage(1, x, y, z));
-				AdGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				PacketDistributor.sendToServer(new AdGUIButtonMessage(1, x, y, z, getEditBoxAndCheckBoxValues()));
+				AdGUIButtonMessage.handleButtonAction(entity, 1, x, y, z, getEditBoxAndCheckBoxValues());
 			}
 		}).bounds(this.leftPos + 121, this.topPos + 123, 66, 20).build();
 		guistate.put("button:button_gimme_it", button_gimme_it);

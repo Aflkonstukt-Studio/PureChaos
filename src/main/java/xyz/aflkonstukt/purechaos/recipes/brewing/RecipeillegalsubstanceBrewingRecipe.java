@@ -4,22 +4,21 @@ package xyz.aflkonstukt.purechaos.recipes.brewing;
 import xyz.aflkonstukt.purechaos.init.PurechaosModPotions;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.common.brewing.IBrewingRecipe;
-import net.neoforged.neoforge.common.brewing.BrewingRecipeRegistry;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class RecipeillegalsubstanceBrewingRecipe implements IBrewingRecipe {
 	@SubscribeEvent
-	public static void init(FMLCommonSetupEvent event) {
-		event.enqueueWork(() -> BrewingRecipeRegistry.addRecipe(new RecipeillegalsubstanceBrewingRecipe()));
+	public static void init(RegisterBrewingRecipesEvent event) {
+		event.getBuilder().addRecipe(new RecipeillegalsubstanceBrewingRecipe());
 	}
 
 	@Override
@@ -35,7 +34,7 @@ public class RecipeillegalsubstanceBrewingRecipe implements IBrewingRecipe {
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(Items.POTION), PurechaosModPotions.ILLEGALSUBSTANCE.get());
+			return PotionContents.createItemStack(Items.POTION, PurechaosModPotions.ILLEGALSUBSTANCE);
 		}
 		return ItemStack.EMPTY;
 	}

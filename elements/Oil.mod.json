@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "fluid",
   "definition": {
     "name": "Crude Oil",
@@ -23,9 +23,11 @@
     "type": "LAVA",
     "generateBucket": true,
     "textureBucket": "oil",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "emptySound": {
       "value": ""
     },

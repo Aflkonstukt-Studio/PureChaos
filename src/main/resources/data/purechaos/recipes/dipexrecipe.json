@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:diamond_pickaxe"
   },
-  "result": "purechaos:dipex"
+  "result": {
+    "id": "purechaos:dipex"
+  }
 }

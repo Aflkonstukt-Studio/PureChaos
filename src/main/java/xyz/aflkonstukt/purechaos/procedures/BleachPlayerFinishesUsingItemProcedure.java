@@ -12,7 +12,7 @@ public class BleachPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.BLEACHED.get(), 800, 1, false, true));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.BLEACHED, 800, 1, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 2000, 1, false, true));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

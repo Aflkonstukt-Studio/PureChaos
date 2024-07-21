@@ -11,6 +11,6 @@ public class DepressionBlockEntityWalksOnTheBlockProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED.get(), 300, 1, false, true));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED, 300, 1, false, true));
 	}
 }

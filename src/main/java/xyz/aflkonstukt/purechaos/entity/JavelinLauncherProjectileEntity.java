@@ -43,6 +43,11 @@ public class JavelinLauncherProjectileEntity extends AbstractArrow implements It
 	}
 
 	@Override
+	protected ItemStack getDefaultPickupItem() {
+		return new ItemStack(PurechaosModItems.COCA_COLA.get());
+	}
+
+	@Override
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
@@ -63,6 +68,10 @@ public class JavelinLauncherProjectileEntity extends AbstractArrow implements It
 
 	public static JavelinLauncherProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 1f, 5, 5);
+	}
+
+	public static JavelinLauncherProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
 	}
 
 	public static JavelinLauncherProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {

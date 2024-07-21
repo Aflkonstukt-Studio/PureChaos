@@ -34,11 +34,11 @@ import xyz.aflkonstukt.purechaos.client.model.Modelamiogyhus;
 import xyz.aflkonstukt.purechaos.client.model.ModelCustomModel;
 
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PurechaosModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

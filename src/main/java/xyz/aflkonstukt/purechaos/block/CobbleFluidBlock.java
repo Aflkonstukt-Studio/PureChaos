@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class CobbleFluidBlock extends LiquidBlock {
 	public CobbleFluidBlock() {
-		super(() -> PurechaosModFluids.COBBLE_FLUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(PurechaosModFluids.COBBLE_FLUID.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 
 	@Override

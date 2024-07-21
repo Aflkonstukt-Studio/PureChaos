@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "purechaos:block/puffsblock",
+    "up": "purechaos:block/puffsblock",
+    "north": "purechaos:block/puffsblock",
+    "east": "purechaos:block/puffsblock",
+    "south": "purechaos:block/puffsblock",
+    "west": "purechaos:block/puffsblock",
+    "particle": "purechaos:block/puffsblock"
+  },
+  "render_type": "solid"
+}

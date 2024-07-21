@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,11 @@
     "textureLeggings": "beef_armor_leggings",
     "enableBoots": true,
     "textureBoots": "beef_armor_boots",
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "armorTextureFile": "beef_armor",
     "helmetName": "Beef Armor Helmet",
     "bodyName": "Beef Armor Body",

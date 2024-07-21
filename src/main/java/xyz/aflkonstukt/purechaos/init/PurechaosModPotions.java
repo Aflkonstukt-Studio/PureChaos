@@ -33,15 +33,14 @@ public class PurechaosModPotions {
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 3600, 0, false, false), new MobEffectInstance(MobEffects.CONDUIT_POWER, 3600, 0, false, false), new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 3600, 0, false, false),
 					new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, false), new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 3600, 0, false, false)));
 	public static final DeferredHolder<Potion, Potion> ILLEGALSUBSTANCE = REGISTRY.register("illegalsubstance",
-			() -> new Potion(new MobEffectInstance(MobEffects.DARKNESS, 3600, 100, false, true), new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT.get(), 3600, 100, false, true),
-					new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING.get(), 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.FAT.get(), 3600, 0, false, true),
-					new MobEffectInstance(PurechaosModMobEffects.BLEACHED.get(), 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, true),
-					new MobEffectInstance(PurechaosModMobEffects.SICK.get(), 3600, 100, false, true), new MobEffectInstance(PurechaosModMobEffects.DEMENTIA.get(), 3600, 100, false, true),
-					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.HUNGER, 3600, 0, false, true), new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, true),
-					new MobEffectInstance(MobEffects.POISON, 3600, 0, false, true), new MobEffectInstance(MobEffects.ABSORPTION, 3600, 0, false, true), new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 0, false, true),
-					new MobEffectInstance(MobEffects.HEAL, 3600, 0, false, true), new MobEffectInstance(MobEffects.WITHER, 3600, 0, false, true), new MobEffectInstance(MobEffects.UNLUCK, 3600, 100, false, true),
-					new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0, false, true)));
-	public static final DeferredHolder<Potion, Potion> MODIFIED_ETHANOL = REGISTRY.register("modified_ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.BLIND.get(), 3600, 0, false, false),
+			() -> new Potion(new MobEffectInstance(MobEffects.DARKNESS, 3600, 100, false, true), new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT, 3600, 100, false, true),
+					new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING, 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.FAT, 3600, 0, false, true),
+					new MobEffectInstance(PurechaosModMobEffects.BLEACHED, 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.BLIND, 3600, 0, false, true), new MobEffectInstance(PurechaosModMobEffects.SICK, 3600, 100, false, true),
+					new MobEffectInstance(PurechaosModMobEffects.DEMENTIA, 3600, 100, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.HUNGER, 3600, 0, false, true),
+					new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, true), new MobEffectInstance(MobEffects.POISON, 3600, 0, false, true), new MobEffectInstance(MobEffects.ABSORPTION, 3600, 0, false, true),
+					new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 0, false, true), new MobEffectInstance(MobEffects.HEAL, 3600, 0, false, true), new MobEffectInstance(MobEffects.WITHER, 3600, 0, false, true),
+					new MobEffectInstance(MobEffects.UNLUCK, 3600, 100, false, true), new MobEffectInstance(MobEffects.BAD_OMEN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3600, 0, false, true)));
+	public static final DeferredHolder<Potion, Potion> MODIFIED_ETHANOL = REGISTRY.register("modified_ethanol", () -> new Potion(new MobEffectInstance(PurechaosModMobEffects.BLIND, 3600, 0, false, false),
 			new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3600, 0, false, true), new MobEffectInstance(MobEffects.CONFUSION, 3600, 0, false, true)));
 	public static final DeferredHolder<Potion, Potion> ETHANOL = REGISTRY.register("ethanol", () -> new Potion(new MobEffectInstance(MobEffects.WITHER, 3600, 2, false, true)));
 }

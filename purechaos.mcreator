@@ -3,7 +3,6 @@
     {
       "name": "DirtswordLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirtsword_living_entity_is_hit_with_tool",
@@ -23,7 +22,6 @@
     {
       "name": "Dirtsword",
       "type": "tool",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirtsword",
@@ -38,7 +36,6 @@
     {
       "name": "Boom",
       "type": "command",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boom",
@@ -52,7 +49,6 @@
     {
       "name": "BoomCommandExecuted",
       "type": "procedure",
-      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boom_command_executed",
@@ -88,7 +84,6 @@
     {
       "name": "Pee",
       "type": "fluid",
-      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pee",
@@ -109,7 +104,6 @@
     {
       "name": "PlayerTick",
       "type": "procedure",
-      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_tick",
@@ -145,7 +139,6 @@
     {
       "name": "Peemension",
       "type": "dimension",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peemension",
@@ -170,7 +163,6 @@
     {
       "name": "Chaostab",
       "type": "tab",
-      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chaostab",
@@ -181,7 +173,6 @@
     {
       "name": "PeeBlock",
       "type": "block",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pee_block",
@@ -203,7 +194,6 @@
     {
       "name": "Pickax",
       "type": "tool",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pickax",
@@ -218,7 +208,6 @@
     {
       "name": "Fooditem",
       "type": "item",
-      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fooditem",
@@ -233,7 +222,6 @@
     {
       "name": "Aentity",
       "type": "livingentity",
-      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aentity",
@@ -250,7 +238,6 @@
     {
       "name": "FoodItem2",
       "type": "item",
-      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "food_item_2",
@@ -265,7 +252,6 @@
     {
       "name": "PotatoSpuds",
       "type": "item",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "potato_spuds",
@@ -280,18 +266,14 @@
     {
       "name": "HellButOverworld",
       "type": "biome",
-      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hell_but_overworld",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldTrunkDecorator.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/hell_but_overworld_tree.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/hell_but_overworld_tree.json",
-          "src/main/resources/data/purechaos/worldgen/biome/hell_but_overworld.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldFruitDecorator.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/HellButOverworldLeaveDecorator.java"
+          "src/main/resources/data/purechaos/worldgen/biome/hell_but_overworld.json"
         ]
       },
       "path": "~/Biomes"
@@ -299,7 +281,6 @@
     {
       "name": "Potatus",
       "type": "plant",
-      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "potatus",
@@ -320,7 +301,6 @@
     {
       "name": "WoodDimension",
       "type": "dimension",
-      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_dimension",
@@ -345,7 +325,6 @@
     {
       "name": "SpearRecipe",
       "type": "recipe",
-      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spear_recipe",
@@ -359,7 +338,6 @@
     {
       "name": "FoodItem3",
       "type": "item",
-      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "food_item_3",
@@ -374,7 +352,6 @@
     {
       "name": "Dipex",
       "type": "tool",
-      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dipex",
@@ -389,7 +366,6 @@
     {
       "name": "Trident",
       "type": "livingentity",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trident",
@@ -406,7 +382,6 @@
     {
       "name": "Death",
       "type": "block",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "death",
@@ -427,7 +402,6 @@
     {
       "name": "SADs",
       "type": "block",
-      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sa_ds",
@@ -449,7 +423,6 @@
     {
       "name": "NetheritPickax",
       "type": "tool",
-      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "netherit_pickax",
@@ -464,7 +437,6 @@
     {
       "name": "Emepee",
       "type": "block",
-      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emepee",
@@ -485,7 +457,6 @@
     {
       "name": "ComicallyLargeSpoon",
       "type": "tool",
-      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "comically_large_spoon",
@@ -500,7 +471,6 @@
     {
       "name": "Spear",
       "type": "tool",
-      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spear",
@@ -515,7 +485,6 @@
     {
       "name": "SusBlock",
       "type": "block",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sus_block",
@@ -533,7 +502,6 @@
     {
       "name": "CumDrip",
       "type": "particle",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cum_drip",
@@ -547,7 +515,6 @@
     {
       "name": "Cum",
       "type": "fluid",
-      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cum",
@@ -568,7 +535,6 @@
     {
       "name": "AmongUs",
       "type": "livingentity",
-      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_us",
@@ -585,7 +551,6 @@
     {
       "name": "Sus",
       "type": "dimension",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sus",
@@ -610,18 +575,14 @@
     {
       "name": "Susus",
       "type": "biome",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "susus",
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/worldgen/placed_feature/susus_tree.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususLeaveDecorator.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususTrunkDecorator.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/susus_tree.json",
-          "src/main/resources/data/purechaos/worldgen/biome/susus.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/SususFruitDecorator.java"
+          "src/main/resources/data/purechaos/worldgen/biome/susus.json"
         ]
       },
       "path": "~/Biomes"
@@ -629,7 +590,6 @@
     {
       "name": "Amogus2",
       "type": "livingentity",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_2",
@@ -646,7 +606,6 @@
     {
       "name": "Amogus3",
       "type": "livingentity",
-      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_3",
@@ -663,7 +622,6 @@
     {
       "name": "Staravoda",
       "type": "fluid",
-      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "staravoda",
@@ -684,7 +642,6 @@
     {
       "name": "Amongsus",
       "type": "potion",
-      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amongsus",
@@ -696,7 +653,6 @@
     {
       "name": "TLGHD",
       "type": "block",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tlghd",
@@ -714,7 +670,6 @@
     {
       "name": "Amugus",
       "type": "armor",
-      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amugus",
@@ -736,7 +691,6 @@
     {
       "name": "SusSword",
       "type": "tool",
-      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sus_sword",
@@ -751,7 +705,6 @@
     {
       "name": "Susord",
       "type": "recipe",
-      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "susord",
@@ -765,7 +718,6 @@
     {
       "name": "Suschest",
       "type": "recipe",
-      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suschest",
@@ -779,7 +731,6 @@
     {
       "name": "Sushead",
       "type": "recipe",
-      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sushead",
@@ -793,7 +744,6 @@
     {
       "name": "Suslegs",
       "type": "recipe",
-      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suslegs",
@@ -807,7 +757,6 @@
     {
       "name": "Susboot",
       "type": "recipe",
-      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "susboot",
@@ -821,7 +770,6 @@
     {
       "name": "OrangeFluid",
       "type": "fluid",
-      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_fluid",
@@ -842,7 +790,6 @@
     {
       "name": "Oil",
       "type": "fluid",
-      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oil",
@@ -863,7 +810,6 @@
     {
       "name": "Gatorade",
       "type": "fluid",
-      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gatorade",
@@ -884,7 +830,6 @@
     {
       "name": "GreenPlantPlantRightClicked",
       "type": "procedure",
-      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plant_plant_right_clicked",
@@ -904,7 +849,6 @@
     {
       "name": "GreenPlant",
       "type": "plant",
-      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_plant",
@@ -925,7 +869,6 @@
     {
       "name": "Splank",
       "type": "livingentity",
-      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "splank",
@@ -942,7 +885,6 @@
     {
       "name": "IkeaDesk",
       "type": "livingentity",
-      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ikea_desk",
@@ -959,7 +901,6 @@
     {
       "name": "Fallgays",
       "type": "musicdisc",
-      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fallgays",
@@ -974,7 +915,6 @@
     {
       "name": "Ekesmasterbait",
       "type": "biome",
-      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ekesmasterbait",
@@ -990,7 +930,6 @@
     {
       "name": "SasiAmangas",
       "type": "musicdisc",
-      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sasi_amangas",
@@ -1005,7 +944,6 @@
     {
       "name": "JOSIP",
       "type": "livingentity",
-      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip",
@@ -1022,7 +960,6 @@
     {
       "name": "Brown",
       "type": "item",
-      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown",
@@ -1037,7 +974,6 @@
     {
       "name": "BrownItemInInventoryTick",
       "type": "procedure",
-      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_item_in_inventory_tick",
@@ -1057,7 +993,6 @@
     {
       "name": "FuckYou",
       "type": "potion",
-      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fuck_you",
@@ -1069,7 +1004,6 @@
     {
       "name": "CarbonMonoxide",
       "type": "fluid",
-      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carbon_monoxide",
@@ -1090,7 +1024,6 @@
     {
       "name": "CODeath",
       "type": "procedure",
-      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "co_death",
@@ -1114,7 +1047,6 @@
     {
       "name": "Rssure6t",
       "type": "recipe",
-      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rssure_6t",
@@ -1128,7 +1060,6 @@
     {
       "name": "Rec8pe",
       "type": "recipe",
-      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rec_8pe",
@@ -1142,7 +1073,6 @@
     {
       "name": "StructureLoot",
       "type": "loottable",
-      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "structure_loot",
@@ -1150,12 +1080,12 @@
         "files": [
           "src/main/resources/data/purechaos/loot_tables/chests/structure_loot.json"
         ]
-      }
+      },
+      "path": "~/Structures"
     },
     {
       "name": "KillJosipoLoot",
       "type": "loottable",
-      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kill_josipo_loot",
@@ -1163,12 +1093,12 @@
         "files": [
           "src/main/resources/data/purechaos/loot_tables/chests/kill_josipo_loot.json"
         ]
-      }
+      },
+      "path": "~/Entities"
     },
     {
       "name": "Corruptstaff",
       "type": "tool",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruptstaff",
@@ -1183,7 +1113,6 @@
     {
       "name": "Josipdvatockanula",
       "type": "livingentity",
-      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josipdvatockanula",
@@ -1200,7 +1129,6 @@
     {
       "name": "CorruptstaffLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruptstaff_living_entity_is_hit_with_tool",
@@ -1220,7 +1148,6 @@
     {
       "name": "TurtleArmor",
       "type": "armor",
-      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "turtle_armor",
@@ -1241,7 +1168,6 @@
     {
       "name": "BeefArmor",
       "type": "armor",
-      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_armor",
@@ -1263,7 +1189,6 @@
     {
       "name": "Stuck",
       "type": "painting",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stuck",
@@ -1275,7 +1200,6 @@
     {
       "name": "DirtSwordRecipe",
       "type": "recipe",
-      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_sword_recipe",
@@ -1289,7 +1213,6 @@
     {
       "name": "JosipPet",
       "type": "livingentity",
-      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_pet",
@@ -1306,7 +1229,6 @@
     {
       "name": "JosipPett",
       "type": "livingentity",
-      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_pett",
@@ -1323,7 +1245,6 @@
     {
       "name": "MothOfAggrevation",
       "type": "livingentity",
-      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moth_of_aggrevation",
@@ -1340,7 +1261,6 @@
     {
       "name": "TombstonePlaceProcd",
       "type": "procedure",
-      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tombstone_place_procd",
@@ -1376,7 +1296,6 @@
     {
       "name": "CorruptstaffRightclicked",
       "type": "procedure",
-      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "corruptstaff_rightclicked",
@@ -1400,7 +1319,6 @@
     {
       "name": "Bullet",
       "type": "item",
-      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bullet",
@@ -1415,7 +1333,6 @@
     {
       "name": "Shep",
       "type": "livingentity",
-      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shep",
@@ -1432,7 +1349,6 @@
     {
       "name": "VikkiVukGui",
       "type": "gui",
-      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vikki_vuk_gui",
@@ -1448,7 +1364,6 @@
     {
       "name": "Vikkivuk",
       "type": "livingentity",
-      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vikkivuk",
@@ -1465,7 +1380,6 @@
     {
       "name": "Blaz",
       "type": "livingentity",
-      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blaz",
@@ -1482,7 +1396,6 @@
     {
       "name": "CursedDog",
       "type": "livingentity",
-      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cursed_dog",
@@ -1499,7 +1412,6 @@
     {
       "name": "Trashitems",
       "type": "procedure",
-      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trashitems",
@@ -1519,7 +1431,6 @@
     {
       "name": "KOnKeyPressed",
       "type": "procedure",
-      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "k_on_key_pressed",
@@ -1543,7 +1454,6 @@
     {
       "name": "One",
       "type": "keybind",
-      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one",
@@ -1557,7 +1467,6 @@
     {
       "name": "Meth",
       "type": "item",
-      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meth",
@@ -1572,7 +1481,6 @@
     {
       "name": "EmergencyRecipe",
       "type": "recipe",
-      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "emergency_recipe",
@@ -1586,7 +1494,6 @@
     {
       "name": "K",
       "type": "keybind",
-      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "k",
@@ -1600,7 +1507,6 @@
     {
       "name": "BeefPants",
       "type": "recipe",
-      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_pants",
@@ -1614,7 +1520,6 @@
     {
       "name": "DeathWish",
       "type": "procedure",
-      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "death_wish",
@@ -1654,7 +1559,6 @@
     {
       "name": "WalterWight",
       "type": "livingentity",
-      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "walter_wight",
@@ -1670,7 +1574,6 @@
     {
       "name": "AdolfHitler",
       "type": "livingentity",
-      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adolf_hitler",
@@ -1687,7 +1590,6 @@
     {
       "name": "Dream",
       "type": "livingentity",
-      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dream",
@@ -1704,7 +1606,6 @@
     {
       "name": "Scratest",
       "type": "musicdisc",
-      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scratest",
@@ -1719,7 +1620,6 @@
     {
       "name": "OneOnKeyPressed",
       "type": "procedure",
-      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "one_on_key_pressed",
@@ -1741,6 +1641,9 @@
             "name": "world",
             "type": "world"
           }
+        ],
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/OneOnKeyPressedProcedure.java"
         ]
       },
       "path": "~/Keybinds"
@@ -1748,7 +1651,6 @@
     {
       "name": "Youtube",
       "type": "plant",
-      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "youtube",
@@ -1769,7 +1671,6 @@
     {
       "name": "Plante",
       "type": "plant",
-      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plante",
@@ -1790,7 +1691,6 @@
     {
       "name": "TesticleOnStickRightclickedOnBlock",
       "type": "procedure",
-      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "testicle_on_stick_rightclicked_on_block",
@@ -1834,7 +1734,6 @@
     {
       "name": "JosipdvatockanulaNaturalEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josipdvatockanula_natural_entity_spawning_condition",
@@ -1867,7 +1766,6 @@
     {
       "name": "WaterCupRecipe",
       "type": "recipe",
-      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_cup_recipe",
@@ -1881,7 +1779,6 @@
     {
       "name": "High",
       "type": "procedure",
-      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high",
@@ -1901,7 +1798,6 @@
     {
       "name": "TesticleOnStick",
       "type": "item",
-      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "testicle_on_stick",
@@ -1916,7 +1812,6 @@
     {
       "name": "BeefChest",
       "type": "recipe",
-      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_chest",
@@ -1930,7 +1825,6 @@
     {
       "name": "RickrollBlock",
       "type": "block",
-      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rickroll_block",
@@ -1948,7 +1842,6 @@
     {
       "name": "BeefBoots",
       "type": "recipe",
-      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_boots",
@@ -1962,7 +1855,6 @@
     {
       "name": "Seven",
       "type": "keybind",
-      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "seven",
@@ -1976,7 +1868,6 @@
     {
       "name": "Dipexrecipe",
       "type": "recipe",
-      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dipexrecipe",
@@ -1990,7 +1881,6 @@
     {
       "name": "DeathR",
       "type": "recipe",
-      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "death_r",
@@ -2004,7 +1894,6 @@
     {
       "name": "BeefHead",
       "type": "recipe",
-      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef_head",
@@ -2018,7 +1907,6 @@
     {
       "name": "Grave",
       "type": "block",
-      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grave",
@@ -2036,7 +1924,6 @@
     {
       "name": "Milk2",
       "type": "fluid",
-      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "milk_2",
@@ -2057,7 +1944,6 @@
     {
       "name": "UseInEmergenciesRightclicked",
       "type": "procedure",
-      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "use_in_emergencies_rightclicked",
@@ -2093,7 +1979,6 @@
     {
       "name": "UseInEmergencies",
       "type": "item",
-      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "use_in_emergencies",
@@ -2108,7 +1993,6 @@
     {
       "name": "MethPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meth_player_finishes_using_item",
@@ -2132,7 +2016,6 @@
     {
       "name": "HighEffect",
       "type": "potioneffect",
-      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_effect",
@@ -2146,7 +2029,6 @@
     {
       "name": "CodButBetter",
       "type": "livingentity",
-      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cod_but_better",
@@ -2163,7 +2045,6 @@
     {
       "name": "HighEffectEffectExpires",
       "type": "procedure",
-      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "high_effect_effect_expires",
@@ -2187,7 +2068,6 @@
     {
       "name": "DoGraveCreation",
       "type": "gamerule",
-      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doGraveCreation",
@@ -2200,7 +2080,6 @@
     {
       "name": "BackroomsLvl1light",
       "type": "block",
-      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1light",
@@ -2218,7 +2097,6 @@
     {
       "name": "SSSR",
       "type": "musicdisc",
-      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sssr",
@@ -2233,7 +2111,6 @@
     {
       "name": "Stalin",
       "type": "livingentity",
-      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stalin",
@@ -2250,7 +2127,6 @@
     {
       "name": "BleachOverlay",
       "type": "overlay",
-      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleach_overlay",
@@ -2264,7 +2140,6 @@
     {
       "name": "RickAstley",
       "type": "livingentity",
-      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rick_astley",
@@ -2281,7 +2156,6 @@
     {
       "name": "BleachedOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleached_on_effect_active_tick",
@@ -2305,7 +2179,6 @@
     {
       "name": "BackroomsLvl1Wall",
       "type": "block",
-      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1_wall",
@@ -2323,7 +2196,6 @@
     {
       "name": "BleachOverlayDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleach_overlay_display_overlay_ingame",
@@ -2344,7 +2216,6 @@
     {
       "name": "RadiationLiquidMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_liquid_mobplayer_collides_block",
@@ -2368,7 +2239,6 @@
     {
       "name": "RadiationLiquid",
       "type": "fluid",
-      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_liquid",
@@ -2389,7 +2259,6 @@
     {
       "name": "Bleached",
       "type": "potioneffect",
-      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleached",
@@ -2403,7 +2272,6 @@
     {
       "name": "Bleach",
       "type": "item",
-      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleach",
@@ -2418,7 +2286,6 @@
     {
       "name": "BrazilPlayerEntersDimension",
       "type": "procedure",
-      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brazil_player_enters_dimension",
@@ -2450,7 +2317,6 @@
     {
       "name": "PlayerJump",
       "type": "procedure",
-      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_jump",
@@ -2486,7 +2352,6 @@
     {
       "name": "BrazilBlock",
       "type": "block",
-      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brazil_block",
@@ -2504,7 +2369,6 @@
     {
       "name": "NokiaBlock",
       "type": "block",
-      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nokia_block",
@@ -2522,7 +2386,6 @@
     {
       "name": "Brazil",
       "type": "dimension",
-      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brazil",
@@ -2547,7 +2410,6 @@
     {
       "name": "BleachPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleach_player_finishes_using_item",
@@ -2567,7 +2429,6 @@
     {
       "name": "BackroomsLvl1Floor",
       "type": "block",
-      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_lvl_1_floor",
@@ -2585,7 +2446,6 @@
     {
       "name": "South",
       "type": "block",
-      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "south",
@@ -2603,7 +2463,6 @@
     {
       "name": "BlockPlaced",
       "type": "procedure",
-      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_placed",
@@ -2635,7 +2494,6 @@
     {
       "name": "Legs",
       "type": "livingentity",
-      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "legs",
@@ -2652,7 +2510,6 @@
     {
       "name": "LongLegChicken",
       "type": "livingentity",
-      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "long_leg_chicken",
@@ -2669,7 +2526,6 @@
     {
       "name": "Firefly",
       "type": "livingentity",
-      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firefly",
@@ -2686,7 +2542,6 @@
     {
       "name": "SamsungNote7Rightclicked",
       "type": "procedure",
-      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "samsung_note_7_rightclicked",
@@ -2722,7 +2577,6 @@
     {
       "name": "TotemOfAmogus",
       "type": "item",
-      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "totem_of_amogus",
@@ -2737,7 +2591,6 @@
     {
       "name": "DepressionBlock",
       "type": "block",
-      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depression_block",
@@ -2755,7 +2608,6 @@
     {
       "name": "TPoseEntity",
       "type": "livingentity",
-      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "t_pose_entity",
@@ -2772,7 +2624,6 @@
     {
       "name": "ImpostorKnife",
       "type": "tool",
-      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "impostor_knife",
@@ -2787,7 +2638,6 @@
     {
       "name": "SamsungNote7",
       "type": "item",
-      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "samsung_note_7",
@@ -2802,7 +2652,6 @@
     {
       "name": "AlmondWater",
       "type": "item",
-      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "almond_water",
@@ -2817,7 +2666,6 @@
     {
       "name": "Zenith",
       "type": "tool",
-      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zenith",
@@ -2832,7 +2680,6 @@
     {
       "name": "ComunisamBlock",
       "type": "block",
-      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "comunisam_block",
@@ -2850,7 +2697,6 @@
     {
       "name": "Cccp",
       "type": "procedure",
-      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cccp",
@@ -2890,7 +2736,6 @@
     {
       "name": "PolandBlock",
       "type": "block",
-      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poland_block",
@@ -2908,7 +2753,6 @@
     {
       "name": "CyberBlock",
       "type": "block",
-      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyber_block",
@@ -2926,7 +2770,6 @@
     {
       "name": "TotemOfDream",
       "type": "item",
-      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "totem_of_dream",
@@ -2941,7 +2784,6 @@
     {
       "name": "Cyberspace",
       "type": "dimension",
-      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyberspace",
@@ -2958,7 +2800,6 @@
     {
       "name": "Computer",
       "type": "block",
-      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "computer",
@@ -2979,7 +2820,6 @@
     {
       "name": "ComputerGui",
       "type": "gui",
-      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "computer_gui",
@@ -2995,7 +2835,6 @@
     {
       "name": "FASTTOPASSRightclicked",
       "type": "procedure",
-      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fasttopass_rightclicked",
@@ -3015,7 +2854,6 @@
     {
       "name": "TO",
       "type": "musicdisc",
-      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "to",
@@ -3030,7 +2868,6 @@
     {
       "name": "HmmmmDRIP",
       "type": "painting",
-      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hmmmm_drip",
@@ -3042,7 +2879,6 @@
     {
       "name": "Greengiscreenda",
       "type": "block",
-      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "greengiscreenda",
@@ -3060,7 +2896,6 @@
     {
       "name": "FASTTOPASS",
       "type": "musicdisc",
-      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fasttopass",
@@ -3075,7 +2910,6 @@
     {
       "name": "EnterCyberspaceButtonPressed",
       "type": "procedure",
-      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_cyberspace_button_pressed",
@@ -3099,7 +2933,6 @@
     {
       "name": "CyberBiome",
       "type": "biome",
-      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyber_biome",
@@ -3115,7 +2948,6 @@
     {
       "name": "Stroater",
       "type": "livingentity",
-      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stroater",
@@ -3132,7 +2964,6 @@
     {
       "name": "HalfGoldenApple",
       "type": "item",
-      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "half_golden_apple",
@@ -3147,7 +2978,6 @@
     {
       "name": "HalfGoldenAppleRecipe",
       "type": "recipe",
-      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "half_golden_apple_recipe",
@@ -3161,7 +2991,6 @@
     {
       "name": "Beef",
       "type": "item",
-      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beef",
@@ -3176,7 +3005,6 @@
     {
       "name": "Baguette",
       "type": "item",
-      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baguette",
@@ -3191,7 +3019,6 @@
     {
       "name": "Obamium",
       "type": "item",
-      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "obamium",
@@ -3206,7 +3033,6 @@
     {
       "name": "DoBossSpawning",
       "type": "gamerule",
-      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doBossSpawning",
@@ -3219,7 +3045,6 @@
     {
       "name": "LavaBottle",
       "type": "item",
-      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_bottle",
@@ -3234,7 +3059,6 @@
     {
       "name": "SpongebobBoss",
       "type": "livingentity",
-      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spongebob_boss",
@@ -3251,7 +3075,6 @@
     {
       "name": "CobbleFluid",
       "type": "fluid",
-      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cobble_fluid",
@@ -3272,7 +3095,6 @@
     {
       "name": "Beengot",
       "type": "item",
-      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beengot",
@@ -3287,7 +3109,6 @@
     {
       "name": "CobblestoneFluidRecipe",
       "type": "recipe",
-      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cobblestone_fluid_recipe",
@@ -3301,7 +3122,6 @@
     {
       "name": "LavaBottlePlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_bottle_player_finishes_using_item",
@@ -3325,7 +3145,6 @@
     {
       "name": "AdidasArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor_helmet_recipe",
@@ -3339,7 +3158,6 @@
     {
       "name": "AdidasAxeRecipe",
       "type": "recipe",
-      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_axe_recipe",
@@ -3353,7 +3171,6 @@
     {
       "name": "AdidasArmor",
       "type": "armor",
-      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor",
@@ -3375,7 +3192,6 @@
     {
       "name": "AdidasSword",
       "type": "tool",
-      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_sword",
@@ -3390,7 +3206,6 @@
     {
       "name": "AdidasShovel",
       "type": "tool",
-      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_shovel",
@@ -3405,7 +3220,6 @@
     {
       "name": "AdidasBlock",
       "type": "block",
-      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_block",
@@ -3426,7 +3240,6 @@
     {
       "name": "AdidasAxe",
       "type": "tool",
-      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_axe",
@@ -3441,7 +3254,6 @@
     {
       "name": "AdidasArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor_boots_recipe",
@@ -3455,7 +3267,6 @@
     {
       "name": "AMOGUS3BLU",
       "type": "livingentity",
-      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_3_blu",
@@ -3472,7 +3283,6 @@
     {
       "name": "AdidasPickaxeRecipe",
       "type": "recipe",
-      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_pickaxe_recipe",
@@ -3486,7 +3296,6 @@
     {
       "name": "AdidasHoe",
       "type": "tool",
-      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_hoe",
@@ -3501,7 +3310,6 @@
     {
       "name": "AdidasShovelRecipe",
       "type": "recipe",
-      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_shovel_recipe",
@@ -3515,7 +3323,6 @@
     {
       "name": "AdidasArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor_leggings_recipe",
@@ -3529,7 +3336,6 @@
     {
       "name": "AdidasPickaxe",
       "type": "tool",
-      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_pickaxe",
@@ -3544,7 +3350,6 @@
     {
       "name": "AdidasSwordRecipe",
       "type": "recipe",
-      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_sword_recipe",
@@ -3558,7 +3363,6 @@
     {
       "name": "AdidasHoeRecipe",
       "type": "recipe",
-      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_hoe_recipe",
@@ -3572,7 +3376,6 @@
     {
       "name": "AMOGUS3GRIN",
       "type": "livingentity",
-      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_3_grin",
@@ -3589,7 +3392,6 @@
     {
       "name": "AdidasArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adidas_armor_body_recipe",
@@ -3603,7 +3405,6 @@
     {
       "name": "CheatGUI",
       "type": "gui",
-      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheat_gui",
@@ -3619,7 +3420,6 @@
     {
       "name": "MissingTexture",
       "type": "block",
-      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "missing_texture",
@@ -3637,7 +3437,6 @@
     {
       "name": "PlayerSleep",
       "type": "procedure",
-      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_sleep",
@@ -3657,7 +3456,6 @@
     {
       "name": "SanityOverlay",
       "type": "overlay",
-      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_overlay",
@@ -3671,7 +3469,6 @@
     {
       "name": "TheRock",
       "type": "livingentity",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_rock",
@@ -3688,7 +3485,6 @@
     {
       "name": "EatableCommandBlock",
       "type": "item",
-      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eatable_command_block",
@@ -3703,7 +3499,6 @@
     {
       "name": "XSORD",
       "type": "tool",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xsord",
@@ -3718,7 +3513,6 @@
     {
       "name": "Xite",
       "type": "item",
-      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xite",
@@ -3733,7 +3527,6 @@
     {
       "name": "RadiationPoisioning",
       "type": "potioneffect",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_poisioning",
@@ -3747,7 +3540,6 @@
     {
       "name": "RadiationPoisioningActiveTickCondition",
       "type": "procedure",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_poisioning_active_tick_condition",
@@ -3771,7 +3563,6 @@
     {
       "name": "Katana",
       "type": "recipe",
-      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "katana",
@@ -3785,7 +3576,6 @@
     {
       "name": "XSORDLivingEntityIsHitWithTool",
       "type": "procedure",
-      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "xsord_living_entity_is_hit_with_tool",
@@ -3805,7 +3595,6 @@
     {
       "name": "BottleOfPiss",
       "type": "item",
-      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_of_piss",
@@ -3820,7 +3609,6 @@
     {
       "name": "EatableCommandBlockPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eatable_command_block_player_finishes_using_item",
@@ -3856,7 +3644,6 @@
     {
       "name": "BottleOfPissPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_of_piss_player_finishes_using_item",
@@ -3876,7 +3663,6 @@
     {
       "name": "TintedGlassBottle",
       "type": "item",
-      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinted_glass_bottle",
@@ -3891,7 +3677,6 @@
     {
       "name": "IronEgg",
       "type": "item",
-      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_egg",
@@ -3906,7 +3691,6 @@
     {
       "name": "DoritoCoolRanch",
       "type": "item",
-      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dorito_cool_ranch",
@@ -3921,7 +3705,6 @@
     {
       "name": "Fat",
       "type": "potioneffect",
-      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fat",
@@ -3935,7 +3718,6 @@
     {
       "name": "DoNotPressPressed",
       "type": "procedure",
-      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "do_not_press_pressed",
@@ -3971,7 +3753,6 @@
     {
       "name": "DoritoNacho",
       "type": "item",
-      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dorito_nacho",
@@ -3986,7 +3767,6 @@
     {
       "name": "TintedGlassBottleRecipe",
       "type": "recipe",
-      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tinted_glass_bottle_recipe",
@@ -4000,7 +3780,6 @@
     {
       "name": "KFCC",
       "type": "recipe",
-      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kfcc",
@@ -4014,7 +3793,6 @@
     {
       "name": "KentuckyFriedChickenFries",
       "type": "item",
-      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kentucky_fried_chicken_fries",
@@ -4029,7 +3807,6 @@
     {
       "name": "KentuckyFriedChicken",
       "type": "item",
-      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kentucky_fried_chicken",
@@ -4044,7 +3821,6 @@
     {
       "name": "PotaatoBaketRecepti",
       "type": "recipe",
-      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "potaato_baket_recepti",
@@ -4058,7 +3834,6 @@
     {
       "name": "KFCF",
       "type": "recipe",
-      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kfcf",
@@ -4072,7 +3847,6 @@
     {
       "name": "KFCE",
       "type": "item",
-      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kfce",
@@ -4087,7 +3861,6 @@
     {
       "name": "Big",
       "type": "livingentity",
-      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big",
@@ -4104,7 +3877,6 @@
     {
       "name": "Aether",
       "type": "dimension",
-      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aether",
@@ -4129,7 +3901,6 @@
     {
       "name": "SpitBall",
       "type": "item",
-      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spit_ball",
@@ -4144,7 +3915,6 @@
     {
       "name": "Two",
       "type": "keybind",
-      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "two",
@@ -4158,7 +3928,6 @@
     {
       "name": "TwoOnKeyPressed",
       "type": "procedure",
-      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "two_on_key_pressed",
@@ -4190,7 +3959,6 @@
     {
       "name": "Ironeggg",
       "type": "recipe",
-      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ironeggg",
@@ -4204,7 +3972,6 @@
     {
       "name": "Blind",
       "type": "potioneffect",
-      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blind",
@@ -4218,7 +3985,6 @@
     {
       "name": "GlowRightclicked",
       "type": "procedure",
-      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_rightclicked",
@@ -4242,7 +4008,6 @@
     {
       "name": "Glow",
       "type": "item",
-      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow",
@@ -4257,7 +4022,6 @@
     {
       "name": "GlowRecipe",
       "type": "recipe",
-      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glow_recipe",
@@ -4271,7 +4035,6 @@
     {
       "name": "MercuryPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mercury_player_finishes_using_item",
@@ -4295,7 +4058,6 @@
     {
       "name": "Mercury",
       "type": "item",
-      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mercury",
@@ -4310,7 +4072,6 @@
     {
       "name": "JebBlock",
       "type": "block",
-      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jeb_block",
@@ -4331,7 +4092,6 @@
     {
       "name": "FryingPanLivingEntityIsHitWithItem",
       "type": "procedure",
-      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frying_pan_living_entity_is_hit_with_item",
@@ -4363,7 +4123,6 @@
     {
       "name": "FryingPan",
       "type": "item",
-      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frying_pan",
@@ -4378,7 +4137,6 @@
     {
       "name": "AppleIngot",
       "type": "item",
-      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_ingot",
@@ -4393,7 +4151,6 @@
     {
       "name": "AppleIngotRecipe",
       "type": "recipe",
-      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "apple_ingot_recipe",
@@ -4407,7 +4164,6 @@
     {
       "name": "Technoblade",
       "type": "livingentity",
-      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "technoblade",
@@ -4424,7 +4180,6 @@
     {
       "name": "DioriteFuel",
       "type": "itemextension",
-      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "diorite_fuel",
@@ -4436,7 +4191,6 @@
     {
       "name": "Cupcakke",
       "type": "livingentity",
-      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cupcakke",
@@ -4453,7 +4207,6 @@
     {
       "name": "BirchForest",
       "type": "biome",
-      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "birch_forest",
@@ -4467,7 +4220,6 @@
     {
       "name": "Desert",
       "type": "biome",
-      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "desert",
@@ -4481,7 +4233,6 @@
     {
       "name": "Ohio",
       "type": "biome",
-      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ohio",
@@ -4495,7 +4246,6 @@
     {
       "name": "MoreExtremeHills",
       "type": "biome",
-      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "more_extreme_hills",
@@ -4511,7 +4261,6 @@
     {
       "name": "Plains",
       "type": "biome",
-      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plains",
@@ -4525,7 +4274,6 @@
     {
       "name": "PeeFeature",
       "type": "feature",
-      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pee_feature",
@@ -4541,7 +4289,6 @@
     {
       "name": "CumFeature",
       "type": "feature",
-      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cum_feature",
@@ -4557,7 +4304,6 @@
     {
       "name": "StaravodaFeature",
       "type": "feature",
-      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "staravoda_feature",
@@ -4573,7 +4319,6 @@
     {
       "name": "OrangeFluidFeature",
       "type": "feature",
-      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_fluid_feature",
@@ -4589,7 +4334,6 @@
     {
       "name": "OilFeature",
       "type": "feature",
-      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oil_feature",
@@ -4605,7 +4349,6 @@
     {
       "name": "GatoradeFeature",
       "type": "feature",
-      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gatorade_feature",
@@ -4621,7 +4364,6 @@
     {
       "name": "CarbonMonoxideFeature",
       "type": "feature",
-      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carbon_monoxide_feature",
@@ -4637,7 +4379,6 @@
     {
       "name": "Milk2Feature",
       "type": "feature",
-      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "milk_2_feature",
@@ -4653,7 +4394,6 @@
     {
       "name": "RadiationLiquidFeature",
       "type": "feature",
-      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_liquid_feature",
@@ -4669,7 +4409,6 @@
     {
       "name": "CobbleFluidFeature",
       "type": "feature",
-      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cobble_fluid_feature",
@@ -4685,7 +4424,6 @@
     {
       "name": "SickEffectStartedapplied",
       "type": "procedure",
-      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sick_effect_startedapplied",
@@ -4705,7 +4443,6 @@
     {
       "name": "Sick",
       "type": "potioneffect",
-      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sick",
@@ -4719,7 +4456,6 @@
     {
       "name": "DingotPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dingot_player_finishes_using_item",
@@ -4739,7 +4475,6 @@
     {
       "name": "Dingot",
       "type": "item",
-      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dingot",
@@ -4754,7 +4489,6 @@
     {
       "name": "SanityOverlayValue",
       "type": "procedure",
-      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_overlay_value",
@@ -4775,7 +4509,6 @@
     {
       "name": "AlmondWaterPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "almond_water_player_finishes_using_item",
@@ -4799,7 +4532,6 @@
     {
       "name": "Veganism",
       "type": "gamerule",
-      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "veganism",
@@ -4812,7 +4544,6 @@
     {
       "name": "PlayerEat",
       "type": "procedure",
-      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "player_eat",
@@ -4852,7 +4583,6 @@
     {
       "name": "PoopPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poop_player_finishes_using_item",
@@ -4872,7 +4602,6 @@
     {
       "name": "Poop",
       "type": "item",
-      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poop",
@@ -4887,7 +4616,6 @@
     {
       "name": "ShitOnKeyPressed",
       "type": "procedure",
-      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shit_on_key_pressed",
@@ -4923,7 +4651,6 @@
     {
       "name": "Shit",
       "type": "keybind",
-      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shit",
@@ -4937,7 +4664,6 @@
     {
       "name": "BaldiMinus",
       "type": "livingentity",
-      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baldi_minus",
@@ -4954,7 +4680,6 @@
     {
       "name": "DementiaEffectExpires",
       "type": "procedure",
-      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dementia_effect_expires",
@@ -4974,7 +4699,6 @@
     {
       "name": "Dementia",
       "type": "potioneffect",
-      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dementia",
@@ -4988,7 +4712,6 @@
     {
       "name": "Herobrine",
       "type": "livingentity",
-      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "herobrine",
@@ -5005,7 +4728,6 @@
     {
       "name": "TotemOfDreamItemInHandTick",
       "type": "procedure",
-      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "totem_of_dream_item_in_hand_tick",
@@ -5025,7 +4747,6 @@
     {
       "name": "CommunismOrbRightclicked",
       "type": "procedure",
-      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "communism_orb_rightclicked",
@@ -5057,7 +4778,6 @@
     {
       "name": "CommunismOrb",
       "type": "item",
-      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "communism_orb",
@@ -5072,7 +4792,6 @@
     {
       "name": "CocaColaPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "coca_cola_player_finishes_using_item",
@@ -5104,7 +4823,6 @@
     {
       "name": "CocaCola",
       "type": "item",
-      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "coca_cola",
@@ -5119,7 +4837,6 @@
     {
       "name": "Nerd",
       "type": "livingentity",
-      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nerd",
@@ -5136,7 +4853,6 @@
     {
       "name": "Bedrock",
       "type": "recipe",
-      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bedrock",
@@ -5150,7 +4866,6 @@
     {
       "name": "SussySusStew",
       "type": "item",
-      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sussy_sus_stew",
@@ -5165,7 +4880,6 @@
     {
       "name": "IRS",
       "type": "livingentity",
-      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "irs",
@@ -5182,7 +4896,6 @@
     {
       "name": "FBI",
       "type": "livingentity",
-      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fbi",
@@ -5199,7 +4912,6 @@
     {
       "name": "AmericanSoldat",
       "type": "livingentity",
-      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "american_soldat",
@@ -5216,7 +4928,6 @@
     {
       "name": "Murica",
       "type": "livingentity",
-      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "murica",
@@ -5233,7 +4944,6 @@
     {
       "name": "GrimaceShakePlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grimace_shake_player_finishes_using_item",
@@ -5265,7 +4975,6 @@
     {
       "name": "GrimaceShake",
       "type": "item",
-      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grimace_shake",
@@ -5280,7 +4989,6 @@
     {
       "name": "DeekProjectile",
       "type": "projectile",
-      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deek_projectile",
@@ -5294,7 +5002,6 @@
     {
       "name": "AmongUSppFeature",
       "type": "feature",
-      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_u_spp_feature",
@@ -5311,7 +5018,6 @@
     {
       "name": "AmongUSpORTALFeature",
       "type": "feature",
-      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_u_sp_ortal_feature",
@@ -5328,7 +5034,6 @@
     {
       "name": "KondomnepitajzastoovoradimalispoileralertonimarupuProjectile",
       "type": "projectile",
-      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu_projectile",
@@ -5342,7 +5047,6 @@
     {
       "name": "Kondomnepitajzastoovoradimalispoileralertonimarupu",
       "type": "item",
-      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kondomnepitajzastoovoradimalispoileralertonimarupu",
@@ -5357,7 +5061,6 @@
     {
       "name": "PeePoolFeature",
       "type": "feature",
-      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pee_pool_feature",
@@ -5374,7 +5077,6 @@
     {
       "name": "WoodRuinedPortalFeature",
       "type": "feature",
-      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_ruined_portal_feature",
@@ -5391,7 +5093,6 @@
     {
       "name": "JukeBoxCaveFeature",
       "type": "feature",
-      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "juke_box_cave_feature",
@@ -5408,7 +5109,6 @@
     {
       "name": "AmongUsDungeonFeature",
       "type": "feature",
-      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "among_us_dungeon_feature",
@@ -5425,7 +5125,6 @@
     {
       "name": "WaterCupProjectile",
       "type": "projectile",
-      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_cup_projectile",
@@ -5439,7 +5138,6 @@
     {
       "name": "WaterCup",
       "type": "item",
-      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_cup",
@@ -5454,7 +5152,6 @@
     {
       "name": "JosipovDrpanjeFeature",
       "type": "feature",
-      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josipov_drpanje_feature",
@@ -5471,7 +5168,6 @@
     {
       "name": "WhiteCellFeature",
       "type": "feature",
-      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "white_cell_feature",
@@ -5488,7 +5184,6 @@
     {
       "name": "OilMountainFeature",
       "type": "feature",
-      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oil_mountain_feature",
@@ -5505,7 +5200,6 @@
     {
       "name": "SecretTntFeature",
       "type": "feature",
-      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "secret_tnt_feature",
@@ -5522,7 +5216,6 @@
     {
       "name": "HerobrineShrineFeature",
       "type": "feature",
-      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "herobrine_shrine_feature",
@@ -5539,7 +5232,6 @@
     {
       "name": "OakHouseFeature",
       "type": "feature",
-      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_house_feature",
@@ -5556,7 +5248,6 @@
     {
       "name": "JosipRangeProjectile",
       "type": "projectile",
-      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_range_projectile",
@@ -5570,7 +5261,6 @@
     {
       "name": "JosipRange",
       "type": "item",
-      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josip_range",
@@ -5585,7 +5275,6 @@
     {
       "name": "AK47Projectile",
       "type": "projectile",
-      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ak_47_projectile",
@@ -5599,7 +5288,6 @@
     {
       "name": "AK47",
       "type": "item",
-      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ak_47",
@@ -5614,7 +5302,6 @@
     {
       "name": "AmogusGunProjectile",
       "type": "projectile",
-      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_gun_projectile",
@@ -5628,7 +5315,6 @@
     {
       "name": "AmogusGun",
       "type": "item",
-      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus_gun",
@@ -5643,7 +5329,6 @@
     {
       "name": "HECFeature",
       "type": "feature",
-      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hec_feature",
@@ -5661,7 +5346,6 @@
     {
       "name": "PolskaFeature",
       "type": "feature",
-      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "polska_feature",
@@ -5678,7 +5362,6 @@
     {
       "name": "RockProjectile",
       "type": "projectile",
-      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock_projectile",
@@ -5692,7 +5375,6 @@
     {
       "name": "Rock",
       "type": "item",
-      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock",
@@ -5707,7 +5389,6 @@
     {
       "name": "JavelinLauncherProjectile",
       "type": "projectile",
-      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "javelin_launcher_projectile",
@@ -5721,7 +5402,6 @@
     {
       "name": "JavelinLauncher",
       "type": "item",
-      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "javelin_launcher",
@@ -5736,7 +5416,6 @@
     {
       "name": "PondOfCobblestoneFeature",
       "type": "feature",
-      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pond_of_cobblestone_feature",
@@ -5753,7 +5432,6 @@
     {
       "name": "RickrollStairsFeature",
       "type": "feature",
-      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rickroll_stairs_feature",
@@ -5770,7 +5448,6 @@
     {
       "name": "BirchTreeFeature",
       "type": "feature",
-      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "birch_tree_feature",
@@ -5787,7 +5464,6 @@
     {
       "name": "BirchTreeBigFeature",
       "type": "feature",
-      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "birch_tree_big_feature",
@@ -5804,7 +5480,6 @@
     {
       "name": "CactusFeature",
       "type": "feature",
-      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cactus_feature",
@@ -5821,7 +5496,6 @@
     {
       "name": "DrugVanFeature",
       "type": "feature",
-      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drug_van_feature",
@@ -5838,7 +5512,6 @@
     {
       "name": "CaptchaGUI",
       "type": "gui",
-      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "captcha_gui",
@@ -5852,27 +5525,8 @@
       "path": "~/Captcha"
     },
     {
-      "name": "PensiveCube",
-      "type": "animatedentity",
-      "sortid": 323,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pensive_cube",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/purechaos/models/item/pensive_cube_spawn_egg.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/PensiveCubeEntity.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/PensiveCubeRenderer.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/model/PensiveCubeModel.java",
-          "src/main/resources/data/purechaos/neoforge/biome_modifier/pensive_cube_biome_modifier.json"
-        ]
-      },
-      "path": "~/Entities"
-    },
-    {
       "name": "Captcha",
       "type": "command",
-      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "captcha",
@@ -5886,7 +5540,6 @@
     {
       "name": "Golp",
       "type": "procedure",
-      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "golp",
@@ -5922,7 +5575,6 @@
     {
       "name": "PufferBalloonItemInHandTick",
       "type": "procedure",
-      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "puffer_balloon_item_in_hand_tick",
@@ -5946,7 +5598,6 @@
     {
       "name": "PufferBalloon",
       "type": "item",
-      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "puffer_balloon",
@@ -5961,7 +5612,6 @@
     {
       "name": "InfiniteFuel",
       "type": "item",
-      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infinite_fuel",
@@ -5976,7 +5626,6 @@
     {
       "name": "InfiniteFuelExt",
       "type": "itemextension",
-      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "infinite_fuel_ext",
@@ -5988,7 +5637,6 @@
     {
       "name": "BooletsShow1",
       "type": "procedure",
-      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_1",
@@ -6009,7 +5657,6 @@
     {
       "name": "BooletsShow2",
       "type": "procedure",
-      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_2",
@@ -6030,7 +5677,6 @@
     {
       "name": "BooletsShow3",
       "type": "procedure",
-      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_3",
@@ -6051,7 +5697,6 @@
     {
       "name": "BooletsShow4",
       "type": "procedure",
-      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_4",
@@ -6072,7 +5717,6 @@
     {
       "name": "BooletsShow5",
       "type": "procedure",
-      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_5",
@@ -6093,7 +5737,6 @@
     {
       "name": "BooletsShow6",
       "type": "procedure",
-      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_6",
@@ -6114,7 +5757,6 @@
     {
       "name": "BooletsShow7",
       "type": "procedure",
-      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_7",
@@ -6135,7 +5777,6 @@
     {
       "name": "BooletsShow8",
       "type": "procedure",
-      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_8",
@@ -6156,7 +5797,6 @@
     {
       "name": "BooletsShow9",
       "type": "procedure",
-      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_9",
@@ -6177,7 +5817,6 @@
     {
       "name": "BooletsShow10",
       "type": "procedure",
-      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_10",
@@ -6198,7 +5837,6 @@
     {
       "name": "BooletsShow11",
       "type": "procedure",
-      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_11",
@@ -6219,7 +5857,6 @@
     {
       "name": "BooletsShow12",
       "type": "procedure",
-      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boolets_show_12",
@@ -6240,7 +5877,6 @@
     {
       "name": "MoreBoolets1DisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "registry_name": "more_boolets_1_display_overlay_ingame",
@@ -6264,7 +5900,6 @@
     {
       "name": "MoreBoolets1",
       "type": "overlay",
-      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "registry_name": "more_boolets_1",
@@ -6278,7 +5913,6 @@
     {
       "name": "MoreBoolets1DisplayOverlayIngame2",
       "type": "procedure",
-      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "registry_name": "more_boolets_1_display_overlay_ingame_2",
@@ -6299,7 +5933,6 @@
     {
       "name": "INeedBooletsTrigger",
       "type": "procedure",
-      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "registry_name": "i_need_boolets_trigger",
@@ -6339,7 +5972,6 @@
     {
       "name": "InfFuelRecipe",
       "type": "recipe",
-      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "registry_name": "inf_fuel_recipe",
@@ -6353,7 +5985,6 @@
     {
       "name": "PufferBalloonRecipe",
       "type": "recipe",
-      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "registry_name": "puffer_balloon_recipe",
@@ -6367,7 +5998,6 @@
     {
       "name": "Groggo",
       "type": "livingentity",
-      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "registry_name": "groggo",
@@ -6384,7 +6014,6 @@
     {
       "name": "NikocadoAvocadoJumpscareDisplayOverlayIngame",
       "type": "procedure",
-      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nikocado_avocado_jumpscare_display_overlay_ingame",
@@ -6405,7 +6034,6 @@
     {
       "name": "NikocadoAvocadoJumpscare",
       "type": "overlay",
-      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nikocado_avocado_jumpscare",
@@ -6419,7 +6047,6 @@
     {
       "name": "Overdose",
       "type": "damagetype",
-      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "registry_name": "overdose",
@@ -6433,7 +6060,6 @@
     {
       "name": "PureChaos",
       "type": "achievement",
-      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pure_chaos",
@@ -6447,7 +6073,6 @@
     {
       "name": "UpsideDownHouse",
       "type": "feature",
-      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "registry_name": "upside_down_house",
@@ -6464,7 +6089,6 @@
     {
       "name": "IOfferYouBrainrot",
       "type": "painting",
-      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "registry_name": "i_offer_you_brainrot",
@@ -6476,7 +6100,6 @@
     {
       "name": "YouLikeKissingBoys",
       "type": "painting",
-      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "registry_name": "you_like_kissing_boys",
@@ -6488,7 +6111,6 @@
     {
       "name": "APainting",
       "type": "painting",
-      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "registry_name": "a_painting",
@@ -6500,7 +6122,6 @@
     {
       "name": "NoMeme",
       "type": "painting",
-      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "registry_name": "no_meme",
@@ -6512,7 +6133,6 @@
     {
       "name": "Bombkisser",
       "type": "painting",
-      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bombkisser",
@@ -6524,7 +6144,6 @@
     {
       "name": "BigTails",
       "type": "painting",
-      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big_tails",
@@ -6536,7 +6155,6 @@
     {
       "name": "ISeeYouMasturbating",
       "type": "painting",
-      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "registry_name": "i_see_you_masturbating",
@@ -6548,7 +6166,6 @@
     {
       "name": "YouThinkYoureAlone",
       "type": "painting",
-      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "registry_name": "you_think_youre_alone",
@@ -6560,7 +6177,6 @@
     {
       "name": "BuckshotTime",
       "type": "painting",
-      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "registry_name": "buckshot_time",
@@ -6572,7 +6188,6 @@
     {
       "name": "YouLikeSeeingMe",
       "type": "painting",
-      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "registry_name": "you_like_seeing_me",
@@ -6584,7 +6199,6 @@
     {
       "name": "NuhUh",
       "type": "painting",
-      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nuh_uh",
@@ -6596,7 +6210,6 @@
     {
       "name": "McKisser",
       "type": "painting",
-      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mc_kisser",
@@ -6608,7 +6221,6 @@
     {
       "name": "StaringAtGay",
       "type": "painting",
-      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "registry_name": "staring_at_gay",
@@ -6620,7 +6232,6 @@
     {
       "name": "ItsImpossible",
       "type": "painting",
-      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "registry_name": "its_impossible",
@@ -6632,7 +6243,6 @@
     {
       "name": "ThisIsHowYouLook",
       "type": "painting",
-      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "registry_name": "this_is_how_you_look",
@@ -6644,7 +6254,6 @@
     {
       "name": "ShurUp",
       "type": "painting",
-      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shur_up",
@@ -6656,7 +6265,6 @@
     {
       "name": "BrakeFluid",
       "type": "item",
-      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brake_fluid",
@@ -6671,7 +6279,6 @@
     {
       "name": "NightmareDimension",
       "type": "dimension",
-      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmare_dimension",
@@ -6687,7 +6294,6 @@
     {
       "name": "NightmareDimensionPlayerEntersDimension",
       "type": "procedure",
-      "sortid": 380,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmare_dimension_player_enters_dimension",
@@ -6723,7 +6329,6 @@
     {
       "name": "WhenPlayerSleep",
       "type": "procedure",
-      "sortid": 381,
       "compiles": true,
       "locked_code": false,
       "registry_name": "when_player_sleep",
@@ -6743,7 +6348,6 @@
     {
       "name": "NightmareBiome",
       "type": "biome",
-      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "registry_name": "nightmare_biome",
@@ -6757,7 +6361,6 @@
     {
       "name": "ScatterSculk",
       "type": "feature",
-      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "registry_name": "scatter_sculk",
@@ -6774,7 +6377,6 @@
     {
       "name": "GassedDeath",
       "type": "damagetype",
-      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gassed_death",
@@ -6788,7 +6390,6 @@
     {
       "name": "CCCPDeath",
       "type": "damagetype",
-      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cccp_death",
@@ -6802,7 +6403,6 @@
     {
       "name": "BleachDeath",
       "type": "damagetype",
-      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bleach_death",
@@ -6816,7 +6416,6 @@
     {
       "name": "DrankLavaDeath",
       "type": "damagetype",
-      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drank_lava_death",
@@ -6830,7 +6429,6 @@
     {
       "name": "RadiationDeath",
       "type": "damagetype",
-      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation_death",
@@ -6844,7 +6442,6 @@
     {
       "name": "TakenHomeDeath",
       "type": "damagetype",
-      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "taken_home_death",
@@ -6858,7 +6455,6 @@
     {
       "name": "VeganDeath",
       "type": "damagetype",
-      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vegan_death",
@@ -6872,7 +6468,6 @@
     {
       "name": "CustomTitle",
       "type": "mixin",
-      "sortid": 391,
       "compiles": true,
       "locked_code": true,
       "registry_name": "custom_title",
@@ -6886,7 +6481,6 @@
     {
       "name": "CustomIcon",
       "type": "mixin",
-      "sortid": 392,
       "compiles": true,
       "locked_code": true,
       "registry_name": "custom_icon",
@@ -6900,7 +6494,6 @@
     {
       "name": "Illegalsubstance",
       "type": "potion",
-      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "registry_name": "illegalsubstance",
@@ -6912,7 +6505,6 @@
     {
       "name": "Recipeillegalsubstance",
       "type": "recipe",
-      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "registry_name": "recipeillegalsubstance",
@@ -6926,7 +6518,6 @@
     {
       "name": "OILRAAAH",
       "type": "recipe",
-      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oilraaah",
@@ -6940,7 +6531,6 @@
     {
       "name": "DisableCaptcha",
       "type": "gamerule",
-      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "disable_captcha",
@@ -6953,7 +6543,6 @@
     {
       "name": "BackroomWallBottom",
       "type": "block",
-      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backroom_wall_bottom",
@@ -6971,7 +6560,6 @@
     {
       "name": "BackroomsCeiling",
       "type": "block",
-      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_ceiling",
@@ -6989,7 +6577,6 @@
     {
       "name": "Backrooms",
       "type": "structure",
-      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms",
@@ -7006,7 +6593,6 @@
     {
       "name": "BackroomsBiome",
       "type": "biome",
-      "sortid": 400,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_biome",
@@ -7020,7 +6606,6 @@
     {
       "name": "BackroomsDimension",
       "type": "dimension",
-      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_dimension",
@@ -7036,7 +6621,6 @@
     {
       "name": "SendToBackrooms",
       "type": "procedure",
-      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "registry_name": "send_to_backrooms",
@@ -7064,7 +6648,6 @@
     {
       "name": "BackroomsCommand",
       "type": "command",
-      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "registry_name": "backrooms_command",
@@ -7078,7 +6661,6 @@
     {
       "name": "DoritoFinishedEating",
       "type": "procedure",
-      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dorito_finished_eating",
@@ -7114,7 +6696,6 @@
     {
       "name": "CheatGUISwitchDimension",
       "type": "procedure",
-      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheat_gui_switch_dimension",
@@ -7134,7 +6715,6 @@
     {
       "name": "CheatGUISwitchGamemode",
       "type": "procedure",
-      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheat_gui_switch_gamemode",
@@ -7154,7 +6734,6 @@
     {
       "name": "FatEffectExpires",
       "type": "procedure",
-      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fat_effect_expires",
@@ -7174,7 +6753,6 @@
     {
       "name": "GasChamber",
       "type": "structure",
-      "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gas_chamber",
@@ -7190,7 +6768,6 @@
     {
       "name": "BottleMixin",
       "type": "mixin",
-      "sortid": 411,
       "compiles": true,
       "locked_code": true,
       "registry_name": "bottle_mixin",
@@ -7204,7 +6781,6 @@
     {
       "name": "KeyboardInput",
       "type": "mixin",
-      "sortid": 412,
       "compiles": true,
       "locked_code": true,
       "registry_name": "keyboard_input",
@@ -7218,7 +6794,6 @@
     {
       "name": "Drunk",
       "type": "potioneffect",
-      "sortid": 413,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drunk",
@@ -7232,7 +6807,6 @@
     {
       "name": "DrunkEffectStartedapplied",
       "type": "procedure",
-      "sortid": 414,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drunk_effect_startedapplied",
@@ -7256,7 +6830,6 @@
     {
       "name": "DrunkEffectExpires",
       "type": "procedure",
-      "sortid": 415,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drunk_effect_expires",
@@ -7276,7 +6849,6 @@
     {
       "name": "DementiaActiveTickCondition",
       "type": "procedure",
-      "sortid": 420,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dementia_active_tick_condition",
@@ -7296,7 +6868,6 @@
     {
       "name": "HECFeatureAdditionalGenerationCondition",
       "type": "procedure",
-      "sortid": 421,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hec_feature_additional_generation_condition",
@@ -7317,7 +6888,6 @@
     {
       "name": "MelatoninPill",
       "type": "item",
-      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melatonin_pill",
@@ -7332,9 +6902,8 @@
     {
       "name": "ItemTooltips",
       "type": "procedure",
-      "sortid": 426,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "item_tooltips",
       "metadata": {
         "files": [
@@ -7360,7 +6929,6 @@
     {
       "name": "MelatoninPillPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "registry_name": "melatonin_pill_player_finishes_using_item",
@@ -7384,7 +6952,6 @@
     {
       "name": "HeartAttackDeath",
       "type": "damagetype",
-      "sortid": 428,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heart_attack_death",
@@ -7398,7 +6965,6 @@
     {
       "name": "MakePlayerSleep",
       "type": "procedure",
-      "sortid": 429,
       "compiles": true,
       "locked_code": true,
       "registry_name": "make_player_sleep",
@@ -7418,7 +6984,6 @@
     {
       "name": "JavelinLauncherProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 430,
       "compiles": true,
       "locked_code": false,
       "registry_name": "javelin_launcher_projectile_projectile_hits_block",
@@ -7450,7 +7015,6 @@
     {
       "name": "KPressDeath",
       "type": "damagetype",
-      "sortid": 431,
       "compiles": true,
       "locked_code": false,
       "registry_name": "k_press_death",
@@ -7464,7 +7028,6 @@
     {
       "name": "IconStorage",
       "type": "code",
-      "sortid": 432,
       "compiles": true,
       "locked_code": true,
       "registry_name": "icon_storage",
@@ -7478,7 +7041,6 @@
     {
       "name": "ModifiedEthanol",
       "type": "potion",
-      "sortid": 436,
       "compiles": true,
       "locked_code": false,
       "registry_name": "modified_ethanol",
@@ -7490,7 +7052,6 @@
     {
       "name": "Ethanol",
       "type": "potion",
-      "sortid": 437,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ethanol",
@@ -7502,7 +7063,6 @@
     {
       "name": "AMERecipe",
       "type": "recipe",
-      "sortid": 438,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ame_recipe",
@@ -7516,7 +7076,6 @@
     {
       "name": "EthanolRecipe",
       "type": "recipe",
-      "sortid": 439,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ethanol_recipe",
@@ -7530,7 +7089,6 @@
     {
       "name": "Rainbowrack",
       "type": "block",
-      "sortid": 440,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbowrack",
@@ -7548,7 +7106,6 @@
     {
       "name": "RainbowGrass",
       "type": "block",
-      "sortid": 441,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_grass",
@@ -7566,7 +7123,6 @@
     {
       "name": "PolandBiome",
       "type": "biome",
-      "sortid": 442,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poland_biome",
@@ -7582,7 +7138,6 @@
     {
       "name": "Poland",
       "type": "dimension",
-      "sortid": 443,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poland",
@@ -7598,7 +7153,6 @@
     {
       "name": "EnterPoland",
       "type": "procedure",
-      "sortid": 444,
       "compiles": true,
       "locked_code": false,
       "registry_name": "enter_poland",
@@ -7612,6 +7166,9 @@
             "name": "world",
             "type": "world"
           }
+        ],
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EnterPolandProcedure.java"
         ]
       },
       "path": "~/Items/Item Procedures"
@@ -7619,7 +7176,6 @@
     {
       "name": "PolandItem",
       "type": "item",
-      "sortid": 445,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poland_item",
@@ -7634,7 +7190,6 @@
     {
       "name": "PolandBlockRecipe",
       "type": "recipe",
-      "sortid": 446,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poland_block_recipe",
@@ -7648,7 +7203,6 @@
     {
       "name": "Yugoslavia",
       "type": "livingentity",
-      "sortid": 447,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yugoslavia",
@@ -7665,7 +7219,6 @@
     {
       "name": "AdGUI",
       "type": "gui",
-      "sortid": 448,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ad_gui",
@@ -7681,7 +7234,6 @@
     {
       "name": "Adblocker",
       "type": "gamerule",
-      "sortid": 449,
       "compiles": true,
       "locked_code": false,
       "registry_name": "adblocker",
@@ -7694,7 +7246,6 @@
     {
       "name": "FishProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 450,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fish_projectile_projectile_hits_block",
@@ -7722,7 +7273,6 @@
     {
       "name": "FishProjectile",
       "type": "projectile",
-      "sortid": 451,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fish_projectile",
@@ -7737,7 +7287,6 @@
     {
       "name": "FishLauncher",
       "type": "item",
-      "sortid": 452,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fish_launcher",
@@ -7752,7 +7301,6 @@
     {
       "name": "StoneStair",
       "type": "structure",
-      "sortid": 453,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_stair",
@@ -7768,7 +7316,6 @@
     {
       "name": "FatOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 454,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fat_on_effect_active_tick",
@@ -7788,7 +7335,6 @@
     {
       "name": "PackPriority",
       "type": "code",
-      "sortid": 455,
       "compiles": true,
       "locked_code": true,
       "registry_name": "pack_priority",
@@ -7802,7 +7348,6 @@
     {
       "name": "EatWaterBucket",
       "type": "mixin",
-      "sortid": 456,
       "compiles": true,
       "locked_code": true,
       "registry_name": "eat_water_bucket",
@@ -7816,7 +7361,6 @@
     {
       "name": "EdibleWaterBucket",
       "type": "item",
-      "sortid": 457,
       "compiles": true,
       "locked_code": false,
       "registry_name": "edible_water_bucket",
@@ -7831,7 +7375,6 @@
     {
       "name": "Suffocation",
       "type": "mixin",
-      "sortid": 458,
       "compiles": true,
       "locked_code": true,
       "registry_name": "suffocation",
@@ -7845,7 +7388,6 @@
     {
       "name": "CurseOfFatherless",
       "type": "potioneffect",
-      "sortid": 459,
       "compiles": true,
       "locked_code": false,
       "registry_name": "curse_of_fatherless",
@@ -7859,7 +7401,6 @@
     {
       "name": "Depressed",
       "type": "potioneffect",
-      "sortid": 460,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depressed",
@@ -7873,7 +7414,6 @@
     {
       "name": "DepressedActiveTickCondition",
       "type": "procedure",
-      "sortid": 461,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depressed_active_tick_condition",
@@ -7893,7 +7433,6 @@
     {
       "name": "CurseOfFatherlessEffectStartedapplied",
       "type": "procedure",
-      "sortid": 462,
       "compiles": true,
       "locked_code": false,
       "registry_name": "curse_of_fatherless_effect_startedapplied",
@@ -7929,7 +7468,6 @@
     {
       "name": "CurseOfFatherlessEffectExpires",
       "type": "procedure",
-      "sortid": 463,
       "compiles": true,
       "locked_code": false,
       "registry_name": "curse_of_fatherless_effect_expires",
@@ -7965,7 +7503,6 @@
     {
       "name": "CurseOfFatherlessOnEffectActiveTick",
       "type": "procedure",
-      "sortid": 464,
       "compiles": true,
       "locked_code": false,
       "registry_name": "curse_of_fatherless_on_effect_active_tick",
@@ -8001,7 +7538,6 @@
     {
       "name": "DepressedEffectExpires",
       "type": "procedure",
-      "sortid": 465,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depressed_effect_expires",
@@ -8021,7 +7557,6 @@
     {
       "name": "FuseEntities",
       "type": "procedure",
-      "sortid": 466,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fuse_entities",
@@ -8039,12 +7574,12 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Player Procedures"
     },
     {
       "name": "Francium",
       "type": "item",
-      "sortid": 467,
       "compiles": true,
       "locked_code": false,
       "registry_name": "francium",
@@ -8059,7 +7594,6 @@
     {
       "name": "FranciumItemInHandTick",
       "type": "procedure",
-      "sortid": 468,
       "compiles": true,
       "locked_code": false,
       "registry_name": "francium_item_in_hand_tick",
@@ -8079,7 +7613,6 @@
     {
       "name": "BeerPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 469,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beer_player_finishes_using_item",
@@ -8099,7 +7632,6 @@
     {
       "name": "Beer",
       "type": "item",
-      "sortid": 470,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beer",
@@ -8114,7 +7646,6 @@
     {
       "name": "GimmeADItem",
       "type": "procedure",
-      "sortid": 471,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gimme_ad_item",
@@ -8134,7 +7665,6 @@
     {
       "name": "ShowMelatoninADImage",
       "type": "procedure",
-      "sortid": 472,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_melatonin_ad_image",
@@ -8155,7 +7685,6 @@
     {
       "name": "ChunkGenerator",
       "type": "mixin",
-      "sortid": 473,
       "compiles": true,
       "locked_code": true,
       "registry_name": "chunk_generator",
@@ -8169,7 +7698,6 @@
     {
       "name": "AddictionDeath",
       "type": "damagetype",
-      "sortid": 474,
       "compiles": true,
       "locked_code": false,
       "registry_name": "addiction_death",
@@ -8183,7 +7711,6 @@
     {
       "name": "AddictionManager",
       "type": "procedure",
-      "sortid": 475,
       "compiles": true,
       "locked_code": false,
       "registry_name": "addiction_manager",
@@ -8219,7 +7746,6 @@
     {
       "name": "AlcoholDeath",
       "type": "damagetype",
-      "sortid": 476,
       "compiles": true,
       "locked_code": false,
       "registry_name": "alcohol_death",
@@ -8233,7 +7759,6 @@
     {
       "name": "BeerRecipe",
       "type": "recipe",
-      "sortid": 477,
       "compiles": true,
       "locked_code": false,
       "registry_name": "beer_recipe",
@@ -8247,7 +7772,6 @@
     {
       "name": "HowAlcohol",
       "type": "jeiinformation",
-      "sortid": 478,
       "compiles": true,
       "locked_code": false,
       "registry_name": "how_alcohol",
@@ -8259,7 +7783,6 @@
     {
       "name": "HowOil",
       "type": "jeiinformation",
-      "sortid": 479,
       "compiles": true,
       "locked_code": false,
       "registry_name": "how_oil",
@@ -8271,7 +7794,6 @@
     {
       "name": "HowAlmondWater",
       "type": "jeiinformation",
-      "sortid": 480,
       "compiles": true,
       "locked_code": false,
       "registry_name": "how_almond_water",
@@ -8283,7 +7805,6 @@
     {
       "name": "FoundInLoot",
       "type": "jeiinformation",
-      "sortid": 481,
       "compiles": true,
       "locked_code": false,
       "registry_name": "found_in_loot",
@@ -8295,7 +7816,6 @@
     {
       "name": "HalfGoldenApplePlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 482,
       "compiles": true,
       "locked_code": false,
       "registry_name": "half_golden_apple_player_finishes_using_item",
@@ -8315,7 +7835,6 @@
     {
       "name": "CloseAD",
       "type": "procedure",
-      "sortid": 483,
       "compiles": true,
       "locked_code": false,
       "registry_name": "close_ad",
@@ -8335,7 +7854,6 @@
     {
       "name": "MobCap",
       "type": "mixin",
-      "sortid": 484,
       "compiles": true,
       "locked_code": true,
       "registry_name": "mob_cap",
@@ -8349,7 +7867,6 @@
     {
       "name": "MobCapMultiplier",
       "type": "gamerule",
-      "sortid": 485,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_cap_multiplier",
@@ -8362,7 +7879,6 @@
     {
       "name": "SyncWorldRules",
       "type": "procedure",
-      "sortid": 486,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sync_world_rules",
@@ -8382,7 +7898,6 @@
     {
       "name": "SurfaceEntitySpawningCondition",
       "type": "procedure",
-      "sortid": 487,
       "compiles": true,
       "locked_code": false,
       "registry_name": "surface_entity_spawning_condition",
@@ -8415,7 +7930,6 @@
     {
       "name": "JosipdvatockanulaEntityDies",
       "type": "procedure",
-      "sortid": 488,
       "compiles": true,
       "locked_code": false,
       "registry_name": "josipdvatockanula_entity_dies",
@@ -8447,7 +7961,6 @@
     {
       "name": "FoundInJosipBoss",
       "type": "jeiinformation",
-      "sortid": 489,
       "compiles": true,
       "locked_code": false,
       "registry_name": "found_in_josip_boss",
@@ -8459,7 +7972,6 @@
     {
       "name": "EdibleWaterBucketPlayerFinishesUsingItem",
       "type": "procedure",
-      "sortid": 490,
       "compiles": true,
       "locked_code": false,
       "registry_name": "edible_water_bucket_player_finishes_using_item",
@@ -8479,7 +7991,6 @@
     {
       "name": "MentalHealth",
       "type": "gamerule",
-      "sortid": 491,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mental_health",
@@ -8492,7 +8003,6 @@
     {
       "name": "SetupCaptchaMathChallenges",
       "type": "procedure",
-      "sortid": 492,
       "compiles": true,
       "locked_code": false,
       "registry_name": "setup_captcha_math_challenges",
@@ -8507,7 +8017,6 @@
     {
       "name": "SetupCaptchaWordChallenges",
       "type": "procedure",
-      "sortid": 493,
       "compiles": true,
       "locked_code": false,
       "registry_name": "setup_captcha_word_challenges",
@@ -8522,7 +8031,6 @@
     {
       "name": "GenerateCaptcha",
       "type": "procedure",
-      "sortid": 494,
       "compiles": true,
       "locked_code": false,
       "registry_name": "generate_captcha",
@@ -8542,7 +8050,6 @@
     {
       "name": "CaptchaDeath",
       "type": "damagetype",
-      "sortid": 495,
       "compiles": true,
       "locked_code": false,
       "registry_name": "captcha_death",
@@ -8556,7 +8063,6 @@
     {
       "name": "ConfirmCaptcha",
       "type": "procedure",
-      "sortid": 496,
       "compiles": true,
       "locked_code": false,
       "registry_name": "confirm_captcha",
@@ -8584,7 +8090,6 @@
     {
       "name": "GetCaptchaGUIText",
       "type": "procedure",
-      "sortid": 498,
       "compiles": true,
       "locked_code": false,
       "registry_name": "get_captcha_gui_text",
@@ -8605,7 +8110,6 @@
     {
       "name": "CaptchaGUIClosed",
       "type": "procedure",
-      "sortid": 499,
       "compiles": true,
       "locked_code": false,
       "registry_name": "captcha_gui_closed",
@@ -8629,7 +8133,6 @@
     {
       "name": "DepressionBlockEntityWalksOnTheBlock",
       "type": "procedure",
-      "sortid": 500,
       "compiles": true,
       "locked_code": false,
       "registry_name": "depression_block_entity_walks_on_the_block",
@@ -8649,7 +8152,6 @@
     {
       "name": "CaptchaGUIWhileThisGUIIsOpenTick",
       "type": "procedure",
-      "sortid": 502,
       "compiles": true,
       "locked_code": false,
       "registry_name": "captcha_gui_while_this_gui_is_open_tick",
@@ -8673,7 +8175,6 @@
     {
       "name": "SanityCommandAdd",
       "type": "procedure",
-      "sortid": 504,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_command_add",
@@ -8697,7 +8198,6 @@
     {
       "name": "SanityCommandRemove",
       "type": "procedure",
-      "sortid": 505,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_command_remove",
@@ -8721,7 +8221,6 @@
     {
       "name": "SanityCommandSet",
       "type": "procedure",
-      "sortid": 506,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_command_set",
@@ -8745,7 +8244,6 @@
     {
       "name": "SanityCommandGet",
       "type": "procedure",
-      "sortid": 507,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_command_get",
@@ -8769,7 +8267,6 @@
     {
       "name": "SanityCommandEnable",
       "type": "procedure",
-      "sortid": 508,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity_command_enable",
@@ -8793,7 +8290,6 @@
     {
       "name": "Sanity",
       "type": "command",
-      "sortid": 509,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sanity",
@@ -8807,7 +8303,6 @@
     {
       "name": "ShowSanityDisabled",
       "type": "procedure",
-      "sortid": 510,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_sanity_disabled",
@@ -8823,12 +8318,11 @@
           }
         ]
       },
-      "path": "~/GUIs"
+      "path": "~/GUIs/Overlays"
     },
     {
       "name": "HandleNewCaptcha",
       "type": "procedure",
-      "sortid": 512,
       "compiles": true,
       "locked_code": false,
       "registry_name": "handle_new_captcha",
@@ -8864,9 +8358,8 @@
     {
       "name": "CaptchaCommandProcedure",
       "type": "procedure",
-      "sortid": 514,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "captcha_command_procedure",
       "metadata": {
         "files": [
@@ -8876,10 +8369,6 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
           },
           {
             "name": "x",
@@ -8904,7 +8393,6 @@
     {
       "name": "ConfigureShaders",
       "type": "procedure",
-      "sortid": 515,
       "compiles": true,
       "locked_code": false,
       "registry_name": "configure_shaders",
@@ -8928,13 +8416,11 @@
     {
       "name": "BuffaloLake",
       "type": "biome",
-      "sortid": 516,
       "compiles": true,
       "locked_code": false,
       "registry_name": "buffalo_lake",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/world/features/treedecorators/BuffaloLakeFruitDecorator.java",
           "src/main/resources/data/purechaos/worldgen/placed_feature/buffalo_lake_tree.json",
           "src/main/resources/data/purechaos/worldgen/biome/buffalo_lake.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/buffalo_lake_tree.json"
@@ -8945,7 +8431,6 @@
     {
       "name": "InternetExplorer",
       "type": "block",
-      "sortid": 517,
       "compiles": true,
       "locked_code": false,
       "registry_name": "internet_explorer",
@@ -8963,7 +8448,6 @@
     {
       "name": "DreamBiome",
       "type": "biome",
-      "sortid": 518,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dream_biome",
@@ -8979,7 +8463,6 @@
     {
       "name": "FortniteBiome",
       "type": "biome",
-      "sortid": 519,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fortnite_biome",
@@ -8995,7 +8478,6 @@
     {
       "name": "Discord",
       "type": "plant",
-      "sortid": 520,
       "compiles": true,
       "locked_code": false,
       "registry_name": "discord",
@@ -9016,7 +8498,6 @@
     {
       "name": "Ping",
       "type": "item",
-      "sortid": 521,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ping",
@@ -9031,7 +8512,6 @@
     {
       "name": "FunLand",
       "type": "biome",
-      "sortid": 522,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fun_land",
@@ -9047,7 +8527,6 @@
     {
       "name": "White",
       "type": "block",
-      "sortid": 523,
       "compiles": true,
       "locked_code": false,
       "registry_name": "white",
@@ -9065,7 +8544,6 @@
     {
       "name": "HeavenOrHell",
       "type": "biome",
-      "sortid": 524,
       "compiles": true,
       "locked_code": false,
       "registry_name": "heaven_or_hell",
@@ -9081,7 +8559,6 @@
     {
       "name": "NoJumpVineBoom",
       "type": "gamerule",
-      "sortid": 525,
       "compiles": true,
       "locked_code": false,
       "registry_name": "no_jump_vine_boom",
@@ -9094,7 +8571,6 @@
     {
       "name": "WorldRendererSetup",
       "type": "procedure",
-      "sortid": 526,
       "compiles": true,
       "locked_code": false,
       "registry_name": "world_renderer_setup",
@@ -9109,7 +8585,6 @@
     {
       "name": "LavaLakesInBuffalo",
       "type": "feature",
-      "sortid": 527,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lava_lakes_in_buffalo",
@@ -9125,7 +8600,6 @@
     {
       "name": "MobCatcherPropertyValueProvider",
       "type": "procedure",
-      "sortid": 528,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_catcher_property_value_provider",
@@ -9146,7 +8620,6 @@
     {
       "name": "MobCatcherRightclicked",
       "type": "procedure",
-      "sortid": 529,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_catcher_rightclicked",
@@ -9186,7 +8659,6 @@
     {
       "name": "MobCatcher",
       "type": "item",
-      "sortid": 530,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mob_catcher",
@@ -9203,7 +8675,6 @@
     {
       "name": "EntityRightclicked",
       "type": "procedure",
-      "sortid": 531,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entity_rightclicked",
@@ -9231,7 +8702,6 @@
     {
       "name": "EntityTick",
       "type": "procedure",
-      "sortid": 532,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entity_tick",
@@ -9263,7 +8733,6 @@
     {
       "name": "EntityAttacked",
       "type": "procedure",
-      "sortid": 533,
       "compiles": true,
       "locked_code": false,
       "registry_name": "entity_attacked",
@@ -9291,7 +8760,6 @@
     {
       "name": "EventHandler",
       "type": "procedure",
-      "sortid": 534,
       "compiles": true,
       "locked_code": false,
       "registry_name": "event_handler",
@@ -9306,7 +8774,6 @@
     {
       "name": "StartCommunismEvent",
       "type": "procedure",
-      "sortid": 535,
       "compiles": true,
       "locked_code": false,
       "registry_name": "start_communism_event",
@@ -9340,58 +8807,8 @@
       "path": "~/Player Procedures/Events"
     },
     {
-      "name": "NewMeteor",
-      "type": "procedure",
-      "sortid": 536,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "new_meteor",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/NewMeteorProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Player Procedures/Events"
-    },
-    {
-      "name": "EventWorldTick",
-      "type": "procedure",
-      "sortid": 537,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "event_world_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventWorldTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Player Procedures/Events"
-    },
-    {
       "name": "StartConstipation",
       "type": "procedure",
-      "sortid": 538,
       "compiles": true,
       "locked_code": false,
       "registry_name": "start_constipation",
@@ -9411,7 +8828,6 @@
     {
       "name": "EventPlayerTick",
       "type": "procedure",
-      "sortid": 539,
       "compiles": true,
       "locked_code": false,
       "registry_name": "event_player_tick",
@@ -9447,9 +8863,8 @@
     {
       "name": "CallConstipation",
       "type": "procedure",
-      "sortid": 540,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "call_constipation",
       "metadata": {
         "files": [
@@ -9459,10 +8874,6 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },
@@ -9471,9 +8882,8 @@
     {
       "name": "CallCommunism",
       "type": "procedure",
-      "sortid": 541,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "call_communism",
       "metadata": {
         "files": [
@@ -9483,10 +8893,6 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
           },
           {
             "name": "x",
@@ -9511,7 +8917,6 @@
     {
       "name": "EventCommand",
       "type": "command",
-      "sortid": 542,
       "compiles": true,
       "locked_code": false,
       "registry_name": "event_command",
@@ -9523,45 +8928,8 @@
       "path": "~/Commands/EventCommand"
     },
     {
-      "name": "CallMeteor",
-      "type": "procedure",
-      "sortid": 543,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "call_meteor",
-      "metadata": {
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallMeteorProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Commands/EventCommand"
-    },
-    {
       "name": "CancelMeteor",
       "type": "procedure",
-      "sortid": 544,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cancel_meteor",
@@ -9585,7 +8953,6 @@
     {
       "name": "DoYouSufferFromALackOfAFatherFigure",
       "type": "procedure",
-      "sortid": 528,
       "compiles": true,
       "locked_code": false,
       "registry_name": "do_you_suffer_from_a_lack_of_a_father_figure",
@@ -9621,7 +8988,6 @@
     {
       "name": "YippeProjectileProjectileHitsBlock",
       "type": "procedure",
-      "sortid": 545,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippe_projectile_projectile_hits_block",
@@ -9641,7 +9007,6 @@
     {
       "name": "YippeProjectile",
       "type": "projectile",
-      "sortid": 546,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippe_projectile",
@@ -9656,7 +9021,6 @@
     {
       "name": "YippeeRangedItemShootsProjectile",
       "type": "procedure",
-      "sortid": 547,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippee_ranged_item_shoots_projectile",
@@ -9665,6 +9029,10 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/YippeeRangedItemShootsProjectileProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -9688,7 +9056,6 @@
     {
       "name": "Yippee",
       "type": "item",
-      "sortid": 548,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippee",
@@ -9703,7 +9070,6 @@
     {
       "name": "YippeParticle",
       "type": "particle",
-      "sortid": 549,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippe_particle",
@@ -9718,7 +9084,6 @@
     {
       "name": "YippeProjectileWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 550,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippe_projectile_while_projectile_flying_tick",
@@ -9727,10 +9092,6 @@
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/YippeProjectileWhileProjectileFlyingTickProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -9754,7 +9115,6 @@
     {
       "name": "YippeeParticle",
       "type": "particlemodel",
-      "sortid": 551,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yippee_particle",
@@ -9764,43 +9124,21 @@
       "path": "~/Items/Projectiles"
     },
     {
-      "name": "YippeeParticleValue",
-      "type": "procedure",
-      "sortid": 552,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yippee_particle_value",
-      "metadata": {
-        "return_type": "number",
-        "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/procedures/YippeeParticleValueProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/Projectiles"
-    },
-    {
       "name": "Moyai",
       "type": "block",
-      "sortid": 553,
       "compiles": true,
       "locked_code": false,
       "registry_name": "moyai",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/models/block/moyai.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/moyai.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/MoyaiBlock.java",
-          "src/main/resources/data/purechaos/neoforge/biome_modifier/moyai_biome_modifier.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/moyai.json",
           "src/main/resources/assets/purechaos/models/item/moyai.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/moyai.json",
+          "src/main/resources/assets/purechaos/models/block/moyai.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/moyai.json",
           "src/main/resources/assets/purechaos/blockstates/moyai.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/moyai.json"
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/moyai_biome_modifier.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/MoyaiBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -9808,7 +9146,6 @@
     {
       "name": "Easter",
       "type": "biome",
-      "sortid": 554,
       "compiles": true,
       "locked_code": false,
       "registry_name": "easter",
@@ -9824,19 +9161,18 @@
     {
       "name": "Cokowada",
       "type": "fluid",
-      "sortid": 555,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cokowada",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CokowadaFluidType.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/CokowadaBlock.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/CokowadaItem.java",
           "src/main/resources/assets/purechaos/models/item/cokowada_bucket.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/CokowadaBlock.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/types/CokowadaFluidType.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/item/CokowadaItem.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/fluid/CokowadaFluid.java",
           "src/main/resources/assets/purechaos/blockstates/cokowada.json",
-          "src/main/resources/assets/purechaos/models/block/cokowada.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/fluid/CokowadaFluid.java"
+          "src/main/resources/assets/purechaos/models/block/cokowada.json"
         ]
       },
       "path": "~/Fluids"
@@ -9844,7 +9180,6 @@
     {
       "name": "RizzBarOverlay",
       "type": "overlay",
-      "sortid": 556,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_bar_overlay",
@@ -9858,7 +9193,6 @@
     {
       "name": "RizzFull1Display",
       "type": "procedure",
-      "sortid": 557,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_1_display",
@@ -9879,7 +9213,6 @@
     {
       "name": "RizzFull2Display",
       "type": "procedure",
-      "sortid": 558,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_2_display",
@@ -9900,7 +9233,6 @@
     {
       "name": "RizzFull3Display",
       "type": "procedure",
-      "sortid": 559,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_3_display",
@@ -9921,7 +9253,6 @@
     {
       "name": "RizzFull4Display",
       "type": "procedure",
-      "sortid": 560,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_4_display",
@@ -9942,7 +9273,6 @@
     {
       "name": "RizzFull5Display",
       "type": "procedure",
-      "sortid": 561,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_5_display",
@@ -9963,7 +9293,6 @@
     {
       "name": "RizzFull6Display",
       "type": "procedure",
-      "sortid": 562,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_full_6_display",
@@ -9984,7 +9313,6 @@
     {
       "name": "RizzHalf1Display",
       "type": "procedure",
-      "sortid": 563,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_1_display",
@@ -10005,7 +9333,6 @@
     {
       "name": "RizzHalf2Display",
       "type": "procedure",
-      "sortid": 564,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_2_display",
@@ -10026,7 +9353,6 @@
     {
       "name": "RizzHalf3Display",
       "type": "procedure",
-      "sortid": 565,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_3_display",
@@ -10047,7 +9373,6 @@
     {
       "name": "RizzHalf4Display",
       "type": "procedure",
-      "sortid": 566,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_4_display",
@@ -10068,7 +9393,6 @@
     {
       "name": "RizzHalf5Display",
       "type": "procedure",
-      "sortid": 567,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_5_display",
@@ -10089,7 +9413,6 @@
     {
       "name": "RizzHalf6Display",
       "type": "procedure",
-      "sortid": 568,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizz_half_6_display",
@@ -10110,7 +9433,6 @@
     {
       "name": "ArthritisOverlay",
       "type": "overlay",
-      "sortid": 569,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arthritis_overlay",
@@ -10124,7 +9446,6 @@
     {
       "name": "ShowHandHealthy",
       "type": "procedure",
-      "sortid": 570,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_hand_healthy",
@@ -10145,7 +9466,6 @@
     {
       "name": "ShowHandPain",
       "type": "procedure",
-      "sortid": 571,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_hand_pain",
@@ -10166,7 +9486,6 @@
     {
       "name": "BlockBroken",
       "type": "procedure",
-      "sortid": 572,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_broken",
@@ -10190,7 +9509,6 @@
     {
       "name": "ThirstBarOverlay",
       "type": "overlay",
-      "sortid": 573,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thirst_bar_overlay",
@@ -10204,7 +9522,6 @@
     {
       "name": "ShowThirst1Full",
       "type": "procedure",
-      "sortid": 574,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_1_full",
@@ -10225,7 +9542,6 @@
     {
       "name": "ShowThirst2Full",
       "type": "procedure",
-      "sortid": 575,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_2_full",
@@ -10246,7 +9562,6 @@
     {
       "name": "ShowThirst3Full",
       "type": "procedure",
-      "sortid": 576,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_3_full",
@@ -10267,7 +9582,6 @@
     {
       "name": "ShowThirst4Full",
       "type": "procedure",
-      "sortid": 577,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_4_full",
@@ -10288,7 +9602,6 @@
     {
       "name": "ShowThirst5Full",
       "type": "procedure",
-      "sortid": 578,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_5_full",
@@ -10309,7 +9622,6 @@
     {
       "name": "ShowThirst6Full",
       "type": "procedure",
-      "sortid": 579,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_6_full",
@@ -10330,7 +9642,6 @@
     {
       "name": "ShowThirst7Full",
       "type": "procedure",
-      "sortid": 580,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_7_full",
@@ -10351,7 +9662,6 @@
     {
       "name": "ShowThirst8Full",
       "type": "procedure",
-      "sortid": 581,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_8_full",
@@ -10372,7 +9682,6 @@
     {
       "name": "ShowThirst9Full",
       "type": "procedure",
-      "sortid": 582,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_9_full",
@@ -10393,7 +9702,6 @@
     {
       "name": "ShowThirst10Full",
       "type": "procedure",
-      "sortid": 583,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_10_full",
@@ -10414,7 +9722,6 @@
     {
       "name": "ShowThirst1Half",
       "type": "procedure",
-      "sortid": 584,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_1_half",
@@ -10435,7 +9742,6 @@
     {
       "name": "ShowThirst2Half",
       "type": "procedure",
-      "sortid": 585,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_2_half",
@@ -10456,7 +9762,6 @@
     {
       "name": "ShowThirst3Half",
       "type": "procedure",
-      "sortid": 586,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_3_half",
@@ -10477,7 +9782,6 @@
     {
       "name": "ShowThirst4Half",
       "type": "procedure",
-      "sortid": 587,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_4_half",
@@ -10498,7 +9802,6 @@
     {
       "name": "ShowThirst5Half",
       "type": "procedure",
-      "sortid": 588,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_5_half",
@@ -10519,7 +9822,6 @@
     {
       "name": "ShowThirst6Half",
       "type": "procedure",
-      "sortid": 589,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_6_half",
@@ -10540,7 +9842,6 @@
     {
       "name": "ShowThirst7Half",
       "type": "procedure",
-      "sortid": 590,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_7_half",
@@ -10561,7 +9862,6 @@
     {
       "name": "ShowThirst8Half",
       "type": "procedure",
-      "sortid": 591,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_8_half",
@@ -10582,7 +9882,6 @@
     {
       "name": "ShowThirst9Half",
       "type": "procedure",
-      "sortid": 592,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_9_half",
@@ -10603,7 +9902,6 @@
     {
       "name": "ShowThirst10Half",
       "type": "procedure",
-      "sortid": 593,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_10_half",
@@ -10624,7 +9922,6 @@
     {
       "name": "ShowThirstBar",
       "type": "procedure",
-      "sortid": 594,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_thirst_bar",
@@ -10645,7 +9942,6 @@
     {
       "name": "ShowRizzBar",
       "type": "procedure",
-      "sortid": 595,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_rizz_bar",
@@ -10666,7 +9962,6 @@
     {
       "name": "ShowSanityOverlay",
       "type": "procedure",
-      "sortid": 596,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_sanity_overlay",
@@ -10687,7 +9982,6 @@
     {
       "name": "ThirstDeath",
       "type": "damagetype",
-      "sortid": 597,
       "compiles": true,
       "locked_code": false,
       "registry_name": "thirst_death",
@@ -10701,7 +9995,6 @@
     {
       "name": "RizzedUp",
       "type": "damagetype",
-      "sortid": 598,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rizzed_up",
@@ -10715,7 +10008,6 @@
     {
       "name": "ArthritisDeath",
       "type": "damagetype",
-      "sortid": 599,
       "compiles": true,
       "locked_code": false,
       "registry_name": "arthritis_death",
@@ -10729,7 +10021,6 @@
     {
       "name": "SpeedometerOverlay",
       "type": "overlay",
-      "sortid": 600,
       "compiles": true,
       "locked_code": false,
       "registry_name": "speedometer_overlay",
@@ -10743,7 +10034,6 @@
     {
       "name": "ShowSpeedometer1",
       "type": "procedure",
-      "sortid": 601,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_1",
@@ -10764,7 +10054,6 @@
     {
       "name": "ShowSpeedometer2",
       "type": "procedure",
-      "sortid": 602,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_2",
@@ -10785,7 +10074,6 @@
     {
       "name": "ShowSpeedometer3",
       "type": "procedure",
-      "sortid": 603,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_3",
@@ -10806,7 +10094,6 @@
     {
       "name": "ShowSpeedometer4",
       "type": "procedure",
-      "sortid": 604,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_4",
@@ -10827,7 +10114,6 @@
     {
       "name": "ShowSpeedometer5",
       "type": "procedure",
-      "sortid": 605,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_5",
@@ -10848,7 +10134,6 @@
     {
       "name": "ShowSpeedometer6",
       "type": "procedure",
-      "sortid": 606,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_6",
@@ -10869,7 +10154,6 @@
     {
       "name": "ShowSpeedometer7",
       "type": "procedure",
-      "sortid": 607,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_7",
@@ -10890,7 +10174,6 @@
     {
       "name": "ShowSpeedometer8",
       "type": "procedure",
-      "sortid": 608,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_8",
@@ -10911,7 +10194,6 @@
     {
       "name": "ShowSpeedometer9",
       "type": "procedure",
-      "sortid": 609,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_9",
@@ -10932,7 +10214,6 @@
     {
       "name": "ShowSpeedometer10",
       "type": "procedure",
-      "sortid": 610,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_10",
@@ -10953,7 +10234,6 @@
     {
       "name": "ShowSpeedometer11",
       "type": "procedure",
-      "sortid": 611,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_11",
@@ -10974,7 +10254,6 @@
     {
       "name": "ShowSpeedometer12",
       "type": "procedure",
-      "sortid": 612,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_speedometer_12",
@@ -10995,7 +10274,6 @@
     {
       "name": "HealthinessOverlay",
       "type": "overlay",
-      "sortid": 613,
       "compiles": true,
       "locked_code": false,
       "registry_name": "healthiness_overlay",
@@ -11009,7 +10287,6 @@
     {
       "name": "ShowHealthiness1Full",
       "type": "procedure",
-      "sortid": 614,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_1_full",
@@ -11030,7 +10307,6 @@
     {
       "name": "ShowHealthiness2Full",
       "type": "procedure",
-      "sortid": 615,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_2_full",
@@ -11051,7 +10327,6 @@
     {
       "name": "ShowHealthiness3Full",
       "type": "procedure",
-      "sortid": 616,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_3_full",
@@ -11072,7 +10347,6 @@
     {
       "name": "ShowHealthiness4Full",
       "type": "procedure",
-      "sortid": 617,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_4_full",
@@ -11093,7 +10367,6 @@
     {
       "name": "ShowHealthiness5Full",
       "type": "procedure",
-      "sortid": 618,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_5_full",
@@ -11114,7 +10387,6 @@
     {
       "name": "ShowHealthiness6Full",
       "type": "procedure",
-      "sortid": 619,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_6_full",
@@ -11135,7 +10407,6 @@
     {
       "name": "ShowHealthiness7Full",
       "type": "procedure",
-      "sortid": 620,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_7_full",
@@ -11156,7 +10427,6 @@
     {
       "name": "ShowHealthiness8Full",
       "type": "procedure",
-      "sortid": 621,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_8_full",
@@ -11177,7 +10447,6 @@
     {
       "name": "ShowHealthiness9Full",
       "type": "procedure",
-      "sortid": 622,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_9_full",
@@ -11198,7 +10467,6 @@
     {
       "name": "ShowHealthiness10Full",
       "type": "procedure",
-      "sortid": 623,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_10_full",
@@ -11219,7 +10487,6 @@
     {
       "name": "ShowHealthiness1Half",
       "type": "procedure",
-      "sortid": 624,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_1_half",
@@ -11240,7 +10507,6 @@
     {
       "name": "ShowHealthiness2Half",
       "type": "procedure",
-      "sortid": 625,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_2_half",
@@ -11261,7 +10527,6 @@
     {
       "name": "ShowHealthiness3Half",
       "type": "procedure",
-      "sortid": 626,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_3_half",
@@ -11282,7 +10547,6 @@
     {
       "name": "ShowHealthiness4Half",
       "type": "procedure",
-      "sortid": 627,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_4_half",
@@ -11303,7 +10567,6 @@
     {
       "name": "ShowHealthiness5Half",
       "type": "procedure",
-      "sortid": 628,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_5_half",
@@ -11324,7 +10587,6 @@
     {
       "name": "ShowHealthiness6Half",
       "type": "procedure",
-      "sortid": 629,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_6_half",
@@ -11345,7 +10607,6 @@
     {
       "name": "ShowHealthiness7Half",
       "type": "procedure",
-      "sortid": 630,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_7_half",
@@ -11366,7 +10627,6 @@
     {
       "name": "ShowHealthiness8Half",
       "type": "procedure",
-      "sortid": 631,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_8_half",
@@ -11387,7 +10647,6 @@
     {
       "name": "ShowHealthiness9Half",
       "type": "procedure",
-      "sortid": 632,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_9_half",
@@ -11408,7 +10667,6 @@
     {
       "name": "ShowHealthiness10Half",
       "type": "procedure",
-      "sortid": 633,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_10_half",
@@ -11429,7 +10687,6 @@
     {
       "name": "ShowHealthinessBar",
       "type": "procedure",
-      "sortid": 634,
       "compiles": true,
       "locked_code": false,
       "registry_name": "show_healthiness_bar",
@@ -11446,6 +10703,240 @@
         ]
       },
       "path": "~/GUIs/Bars/Healthiness"
+    },
+    {
+      "name": "PuffsBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puffs_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/purechaos/models/item/puffs_block.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/block/PuffsBlockBlock.java",
+          "src/main/resources/assets/purechaos/blockstates/puffs_block.json",
+          "src/main/resources/data/purechaos/loot_tables/blocks/puffs_block.json",
+          "src/main/resources/assets/purechaos/models/block/puffs_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PuffsBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "puffs_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/worldgen/configured_feature/puffs_biome_tree.json",
+          "src/main/resources/data/purechaos/worldgen/biome/puffs_biome.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/puffs_biome_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "YippeParticleXRot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yippe_particle_x_rot",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/YippeParticleXRotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Projectiles"
+    },
+    {
+      "name": "YippeParticleZRot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yippe_particle_z_rot",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/YippeParticleZRotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Projectiles"
+    },
+    {
+      "name": "PensiveCubes",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pensive_cube",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/PensiveCubesRenderer.java",
+          "src/main/resources/assets/purechaos/models/item/pensive_cube_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/PensiveCubesEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/model/PensiveCubesModel.java",
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/pensive_cube_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "SummonMeteor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SummonMeteorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "radius",
+            "type": "number"
+          },
+          {
+            "name": "time",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "CallMeteor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_meteor",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallMeteorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "SickEffectSlayed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sick_effect_slayed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/SickEffectSlayedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "RadioactiveCookiePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_cookie_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/RadioactiveCookiePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RadioactiveCookie",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_cookie",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/RadioactiveCookieItem.java",
+          "src/main/resources/assets/purechaos/models/item/radioactive_cookie.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "EventTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "event_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events"
     }
   ],
   "variable_elements": [
@@ -11672,12 +11163,6 @@
       "value": "-1.0"
     },
     {
-      "name": "yippe_particle_yrot",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
       "name": "rizz",
       "type": "number",
       "scope": "player_lifetime",
@@ -11730,6 +11215,18 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "100.0"
+    },
+    {
+      "name": "ypx",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ypz",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -12047,12 +11544,6 @@
     }
   ],
   "tag_elements": {
-    "BIOMES:minecraft:has_structure/stronghold": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Cokowada",
       "~CUSTOM:CobbleFluid",
@@ -12068,34 +11559,26 @@
       "~CUSTOM:PeeBlock",
       "~CUSTOM:Pee"
     ],
-    "ITEMS:mod:dry_foods": [
-      "CUSTOM:Meth",
-      "CUSTOM:HalfGoldenApple",
-      "CUSTOM:Beef",
-      "CUSTOM:Baguette",
-      "CUSTOM:DoritoCoolRanch",
-      "CUSTOM:DoritoNacho",
-      "CUSTOM:KentuckyFriedChicken",
-      "Items.POTATO",
-      "Items.BAKED_POTATO",
-      "Items.POISONOUS_POTATO",
-      "Items.BREAD",
-      "Items.COOKED_PORKCHOP",
-      "Items.COOKED_BEEF",
-      "Items.COOKED_RABBIT",
-      "Items.COOKED_MUTTON",
-      "Items.CAKE",
-      "Items.COOKIE",
-      "Items.COOKED_CHICKEN",
-      "Items.ROTTEN_FLESH"
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:AdidasArmor.body",
+      "~CUSTOM:BeefArmor.body",
+      "~CUSTOM:TurtleArmor.body",
+      "~CUSTOM:Amugus.body"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:PufferBalloon",
+      "~CUSTOM:JavelinLauncher",
+      "~CUSTOM:AmogusGun",
+      "~CUSTOM:AK47",
+      "~CUSTOM:JosipRange",
+      "~CUSTOM:WaterCup",
+      "~CUSTOM:Kondomnepitajzastoovoradimalispoileralertonimarupu",
+      "~CUSTOM:AppleIngot",
+      "~CUSTOM:FryingPan",
+      "~CUSTOM:Glow",
+      "~CUSTOM:TesticleOnStick"
     ],
     "BIOMES:minecraft:has_structure/igloo": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
-    "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:Easter",
       "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
@@ -12134,7 +11617,6 @@
       "Items.DIAMOND_SHOVEL",
       "Items.NETHERITE_SHOVEL"
     ],
-    "BLOCKS:minecraft:logs": [],
     "BIOMES:minecraft:has_structure/mineshaft_mesa": [
       "~CUSTOM:Easter",
       "~CUSTOM:FunLand",
@@ -12183,9 +11665,14 @@
       "~CUSTOM:Ekesmasterbait",
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/village_snowy": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand"
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:AdidasAxe",
+      "~CUSTOM:ComicallyLargeSpoon"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:AdidasArmor.helmet",
+      "~CUSTOM:BeefArmor.helmet",
+      "~CUSTOM:Amugus.helmet"
     ],
     "BIOMES:minecraft:has_structure/swamp_hut": [
       "~CUSTOM:Easter",
@@ -12196,40 +11683,20 @@
     "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/nether_fortress": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus",
-      "~CUSTOM:HellButOverworld"
-    ],
-    "BIOMES:minecraft:has_structure/ocean_monument": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Susus"
-    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:Emepee"
     ],
-    "BIOMES:minecraft:has_structure/pillager_outpost": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
-    "BIOMES:minecraft:has_structure/jungle_temple": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:Nerd",
+      "~CUSTOM:Herobrine",
+      "~CUSTOM:BaldiMinus",
+      "~CUSTOM:Technoblade",
+      "~CUSTOM:AdolfHitler",
+      "~CUSTOM:JOSIP",
+      "~CUSTOM:Amogus2",
+      "~CUSTOM:AmongUs"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
-    "BIOMES:minecraft:has_structure/desert_pyramid": [
       "~CUSTOM:Easter",
       "~CUSTOM:FunLand",
       "~CUSTOM:Ekesmasterbait",
@@ -12275,21 +11742,6 @@
       "~Blocks.PLANKS#0",
       "~CUSTOM:PeeBlock"
     ],
-    "ITEMS:minecraft:music_discs": [
-      "~CUSTOM:FASTTOPASS",
-      "~CUSTOM:TO",
-      "~CUSTOM:SSSR",
-      "~CUSTOM:Scratest",
-      "~CUSTOM:SasiAmangas",
-      "~CUSTOM:Fallgays"
-    ],
-    "BIOMES:minecraft:is_overworld": [],
-    "BIOMES:minecraft:has_structure/end_city": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
     "ITEMS:mod:healthy_foods": [
       "CUSTOM:AlmondWater",
       "CUSTOM:HalfGoldenApple",
@@ -12305,17 +11757,6 @@
       "Items.PUMPKIN_PIE",
       "Items.BREAD"
     ],
-    "BIOMES:minecraft:has_structure/shipwreck_beached": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand",
-      "~CUSTOM:PolandBiome",
-      "~CUSTOM:Ekesmasterbait",
-      "~CUSTOM:Susus"
-    ],
-    "BIOMES:minecraft:has_structure/village_taiga": [
-      "~CUSTOM:PolandBiome",
-      "~CUSTOM:Ekesmasterbait"
-    ],
     "BLOCKS:minecraft:dirt": [
       "Blocks.NETHERRACK",
       "CUSTOM:CyberBlock",
@@ -12327,28 +11768,28 @@
       "CUSTOM:RainbowGrass",
       "Blocks.BEDROCK"
     ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:PolandBiome",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/village_taiga": [
+      "~CUSTOM:PolandBiome",
+      "~CUSTOM:Ekesmasterbait"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/village_savanna": [
       "~CUSTOM:Susus"
     ],
-    "BIOMES:minecraft:has_structure/ocean_ruin_cold": [
-      "~CUSTOM:Easter",
-      "~CUSTOM:FunLand"
-    ],
-    "BLOCKS:minecraft:animals_spawnable_on": [
-      "Blocks.NETHERRACK",
-      "CUSTOM:CyberBlock",
-      "Blocks.STONE#6",
-      "Blocks.CONCRETE#4",
-      "Blocks.DIRT#2",
-      "Blocks.STONE#0",
-      "CUSTOM:Rainbowrack",
-      "CUSTOM:RainbowGrass",
-      "Blocks.BEDROCK",
-      "Blocks.SNOW_LAYER",
-      "Blocks.SNOW"
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:AdidasArmor.boots",
+      "~CUSTOM:BeefArmor.boots",
+      "~CUSTOM:TurtleArmor.boots",
+      "~CUSTOM:Amugus.boots"
     ],
     "ITEMS:mod:unhealthy_foods": [
       "CUSTOM:Meth",
@@ -12376,6 +11817,140 @@
       "Items.COOKED_MUTTON",
       "Items.ROTTEN_FLESH"
     ],
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "ITEMS:mod:dry_foods": [
+      "CUSTOM:Meth",
+      "CUSTOM:HalfGoldenApple",
+      "CUSTOM:Beef",
+      "CUSTOM:Baguette",
+      "CUSTOM:DoritoCoolRanch",
+      "CUSTOM:DoritoNacho",
+      "CUSTOM:KentuckyFriedChicken",
+      "Items.POTATO",
+      "Items.BAKED_POTATO",
+      "Items.POISONOUS_POTATO",
+      "Items.BREAD",
+      "Items.COOKED_PORKCHOP",
+      "Items.COOKED_BEEF",
+      "Items.COOKED_RABBIT",
+      "Items.COOKED_MUTTON",
+      "Items.CAKE",
+      "Items.COOKIE",
+      "Items.COOKED_CHICKEN",
+      "Items.ROTTEN_FLESH"
+    ],
+    "BIOMES:minecraft:has_structure/buried_treasure": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:AdidasHoe"
+    ],
+    "BIOMES:minecraft:has_structure/village_snowy": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:XSORD",
+      "~CUSTOM:AdidasSword",
+      "~CUSTOM:Zenith",
+      "~CUSTOM:ImpostorKnife",
+      "~CUSTOM:Corruptstaff",
+      "~CUSTOM:SusSword",
+      "~CUSTOM:Spear",
+      "~CUSTOM:ComicallyLargeSpoon",
+      "~CUSTOM:Dirtsword"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fortress": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus",
+      "~CUSTOM:HellButOverworld"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_monument": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/jungle_temple": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:AdidasPickaxe",
+      "~CUSTOM:ComicallyLargeSpoon",
+      "~CUSTOM:NetheritPickax",
+      "~CUSTOM:Dipex",
+      "~CUSTOM:Pickax"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:PolandItem",
+      "~CUSTOM:Dingot",
+      "~CUSTOM:KentuckyFriedChicken",
+      "~CUSTOM:Brown",
+      "~CUSTOM:FoodItem3"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:FASTTOPASS",
+      "~CUSTOM:TO",
+      "~CUSTOM:SSSR",
+      "~CUSTOM:Scratest",
+      "~CUSTOM:SasiAmangas",
+      "~CUSTOM:Fallgays"
+    ],
+    "BIOMES:minecraft:has_structure/end_city": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand",
+      "~CUSTOM:Ekesmasterbait",
+      "~CUSTOM:Susus"
+    ],
+    "BIOMES:minecraft:has_structure/ocean_ruin_cold": [
+      "~CUSTOM:Easter",
+      "~CUSTOM:FunLand"
+    ],
+    "BLOCKS:minecraft:animals_spawnable_on": [
+      "Blocks.NETHERRACK",
+      "CUSTOM:CyberBlock",
+      "Blocks.STONE#6",
+      "Blocks.CONCRETE#4",
+      "Blocks.DIRT#2",
+      "Blocks.STONE#0",
+      "CUSTOM:Rainbowrack",
+      "CUSTOM:RainbowGrass",
+      "Blocks.BEDROCK",
+      "Blocks.SNOW_LAYER",
+      "Blocks.SNOW"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AdidasShovel"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:AMOGUS3GRIN",
+      "~CUSTOM:AMOGUS3BLU",
+      "~CUSTOM:Amogus3"
+    ],
     "ITEMS:mod:pickaxes_above_wood": [
       "CUSTOM:AdidasPickaxe",
       "Items.STONE_PICKAXE",
@@ -12383,12 +11958,19 @@
       "Items.GOLDEN_PICKAXE",
       "Items.DIAMOND_PICKAXE",
       "Items.NETHERITE_PICKAXE"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:AdidasArmor.legs",
+      "~CUSTOM:BeefArmor.legs",
+      "~CUSTOM:TurtleArmor.legs",
+      "~CUSTOM:Amugus.legs"
     ]
   },
+  "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "painting.purechaos.staring_at_gay.title": "Staring At Gay",
       "item.purechaos.netherit_pickax": "Netherit Pickax",
+      "painting.purechaos.staring_at_gay.title": "Staring At Gay",
       "selectWorld.backupWarning.experimental": "Minecraft wants us to really make sure you want to do this, so just give us your consent and we can continue, or you can burn in the fiery pits of he.. i mean nothing...",
       "item.chaosmod.fasttopass.desc": "GOTTA GO!",
       "item.chaosmod.cod_but_better_spawn_egg": "Cod But Better Spawn Egg",
@@ -12399,8 +11981,8 @@
       "entity.chaosmod.aentity": "Aentity",
       "item.purechaos.scratest": "GalaxyHunterGT - Scratest",
       "entity.chaosmod.herobrine": "Herobrine",
-      "item.purechaos.scratest.desc": "idk man stop asking me",
       "item.chaosmod.herobrine_spawn_egg": "Herobrine Spawn Egg",
+      "item.purechaos.scratest.desc": "idk man stop asking me",
       "effect.chaosmod.fat": "Fat",
       "item.minecraft.wooden_pickaxe": "Wooden Diggy Diggy Blocky",
       "subtitles.ping": "",
@@ -12411,28 +11993,28 @@
       "item.minecraft.lingering_potion.effect.modified_ethanol": "Lingering Potion of Alchemically Modified Ethanol",
       "item.purechaos.beef_armor_boots": "Beef Armor Boots",
       "block.chaosmod.youtube": "Youtube",
-      "block.chaosmod.pee": "Pee",
       "item.minecraft.potion.effect.ethanol": "Ethanol",
+      "block.chaosmod.pee": "Pee",
       "gui.chaosmod.vikki_vuk_gui.button_trash": "Trash",
       "item.minecraft.tipped_arrow.effect.illegalsubstance": "Laced Arrow",
       "item.chaosmod.adidas_hoe": "Adidas Hoe",
       "item.purechaos.amogus_3_blu_spawn_egg": "Amogus 3 (Impostor, Blue) Spawn Egg",
-      "death.attack.overdose.item": "%1$s overdosed on meth",
-      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
       "item.minecraft.potion.effect.fuck_you": "Potion of Fuck You",
+      "item.chaosmod.fallgays": "Fall Guys\u0027 Anthem",
+      "death.attack.overdose.item": "%1$s overdosed on meth",
       "item.chaosmod.legs_spawn_egg": "Legs Spawn Egg",
       "item.purechaos.rock": "Rock",
       "entity.purechaos.josip": "JOSIP",
       "subtitles.smack_my_ass": "",
       "subtitles.redacted": "Bzzt Bzzt Bzzt [BEEEEEEEEEEEEEEEEEEEEEEEEEEP]",
-      "key.chaosmod.summonsus": "Summonsus",
-      "entity.chaosmod.big": "Big",
       "block.purechaos.plante": "Plante",
+      "entity.chaosmod.big": "Big",
+      "key.chaosmod.summonsus": "Summonsus",
       "gui.purechaos.cheat_gui.button_do_not_press": "DO_NOT_PRESS",
       "entity.purechaos.murica": "\u0027Murica",
       "block.purechaos.pee_block": "Pee Block",
-      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "gamerule.adblocker.description": "Enable this to disable ADs",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
@@ -12442,8 +12024,8 @@
       "item.chaosmod.amogus_3_grin_spawn_egg": "Amogus 3 (Impostor, Green) Spawn Egg",
       "item.chaosmod.meth": "Meth",
       "entity.chaosmod.stroater": "Stroater",
-      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.turtle_armor_chestplate": "Turtle Chestplate",
+      "item.purechaos.water_cup": "Water Cup",
       "item.purechaos.gatorade_bucket": "Gatorade Bucket",
       "block.purechaos.tlghd": "TLG Block",
       "item.purechaos.amogus_gun": "Amogus Gun",
@@ -12451,26 +12033,27 @@
       "fluid.purechaos.gatorade": "Gatorade",
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
       "entity.chaosmod.trident": "Tridet",
-      "key.purechaos.shit": "Shit",
       "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
+      "key.purechaos.shit": "Shit",
       "enchantment.chaosmod.sexy_enchanetement": "Sexy",
-      "item.purechaos.pee_bucket": "Pee Bucket",
       "death.attack.fall": "%1$s kissed the floor",
+      "item.purechaos.pee_bucket": "Pee Bucket",
       "gui.purechaos.sanity_overlay.label_disabled": "(disabled)",
       "block.chaosmod.brazil_block": "Brazil Block",
       "death.attack.addiction_death": "%1$s suffered from withdrawal",
       "item.purechaos.potato_spuds": "Potato Spuds",
       "gamerule.disableCaptcha.description": "This gamerule just disables the annoying captcha",
       "item.purechaos.puffer_balloon": "Puffer on a String",
-      "item.purechaos.yippee": "Yippee",
       "painting.purechaos.mc_kisser.author": "boykisser",
+      "item.purechaos.yippee": "Yippee",
       "block.chaosmod.backrooms_lvl_1_floor": "Backrooms (1) Floor",
-      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "subtitles.nerd": "nerd",
+      "block.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "item.chaosmod.xsord": "Xite Containment Blade",
+      "item.purechaos.radioactive_cookie": "Radioactive Cookie",
       "fluid.chaosmod.staravoda": "Staravoda",
-      "item.purechaos.spear": "Spear",
       "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
+      "item.purechaos.spear": "Spear",
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
@@ -12500,9 +12083,9 @@
       "block.chaosmod.tlghd": "TLG Block",
       "block.chaosmod.orange_fluid": "Orange Gatorade",
       "painting.purechaos.you_think_youre_alone.title": "You Think You\u0027re Alone",
-      "item.purechaos.use_in_emergencies": "Use In Emergencies",
-      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
       "death.attack.addiction_death.player": "%1$s suffered from withdrawal while trying to escape %2$s",
+      "selectWorld.warning.experimental.question": "Minecraft asks us to make you confirm you actually want to do this, so please just give us your consent and we can start the amogus",
+      "item.purechaos.use_in_emergencies": "Use In Emergencies",
       "subtitles.fallguyswooh": "woo, wuu woh, wowowowowoh, wuoh hoh hoh hoouuuuu",
       "biome.chaosmod.ekesmasterbait": "Reality Biome",
       "item.purechaos.spit_ball": "Spit Ball",
@@ -12521,14 +12104,14 @@
       "effect.purechaos.depressed": "Depressed",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",
-      "item.purechaos.infinite_fuel": "Infinite Fuel",
-      "subtitles.gulp_gulp": "",
       "item.chaosmod.amogus_3_crew_blu_spawn_egg": "Amogus 3 (Crewmate, Blue) Spawn Egg",
+      "subtitles.gulp_gulp": "",
+      "item.purechaos.infinite_fuel": "Infinite Fuel",
       "subtitles.burning_memory": "its just a burning memory - The Caretaker",
       "block.purechaos.sus_block": "Sus Block",
       "biome.chaosmod.hell_but_overworld": "Neover",
-      "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
       "selectWorld.backupQuestion.experimental": "We need your permission to make the world chaotic!",
+      "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
       "biome.chaosmod.desert": "Desert",
       "entity.chaosmod.the_rock": "The Rock",
       "item.purechaos.turtle_armor_leggings": "Turtle Leggings",
@@ -12555,21 +12138,21 @@
       "subtitles.fu-k": "",
       "block.purechaos.pee": "Pee",
       "block.chaosmod.cum": "Cum",
-      "item.purechaos.edible_water_bucket": "Water Bucket",
       "death.attack.rizzed_up.item": "%1$s was rizzed up by %2$s using %3$s",
+      "item.purechaos.edible_water_bucket": "Water Bucket",
       "item.chaosmod.water_cup": "Water Cup",
-      "biome.chaosmod.ohio": "Ohio",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
+      "biome.chaosmod.ohio": "Ohio",
       "entity.purechaos.amogus_3": "Amogus 3",
-      "item.chaosmod.xite": "Xite",
       "entity.purechaos.amogus_2": "Amogus 2",
+      "item.chaosmod.xite": "Xite",
       "item.purechaos.oil_bucket": "Crude Oil Bucket",
       "block.chaosmod.emepee": "Emepee",
       "item.purechaos.fish_launcher": "Fish Launcher",
       "item.purechaos.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.to.desc": "E NE NOSI SLUSALICE IMA DA TI SE RASTAVE U PARAMPARCAD I USI CE DA TI ISKRVARE IST SAMO TO UZIVAJ!",
-      "key.purechaos.seven": "Seven",
       "death.attack.rizzed_up.player": "%1$s was rizzed up whilst trying to escape %2$s",
+      "key.purechaos.seven": "Seven",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
       "advancements.pure_chaos.descr": "It\u0027s not too late to go back!",
       "painting.purechaos.hmmmm_drip.author": "Unknown",
@@ -12592,8 +12175,8 @@
       "gui.chaosmod.cheat_gui.button_switch_gamemode": "Switch Gamemode",
       "subtitles.kill": "huvh",
       "item.minecraft.tipped_arrow.effect.ethanol": "Arrow of Ethanol",
-      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.cursed_dog": "Dgo",
+      "block.chaosmod.missing_texture": "Missing Texture",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
@@ -12641,8 +12224,8 @@
       "block.purechaos.emepee": "Emepee",
       "item.purechaos.adidas_armor_leggings": "Adidas Leggings",
       "entity.chaosmod.among_us": "Among Us",
-      "item.purechaos.brown": "Brown",
       "menu.options": "Settings for grown ups",
+      "item.purechaos.brown": "Brown",
       "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",
@@ -12652,16 +12235,16 @@
       "painting.purechaos.i_see_you_masturbating.title": "I See You Masturbating",
       "item.chaosmod.poop": "Poop",
       "entity.purechaos.firefly": "Firefly",
-      "block.purechaos.sa_ds": "Block ?",
       "block.chaosmod.south": "South",
+      "block.purechaos.sa_ds": "Block ?",
       "block.purechaos.death": "Death",
       "item.purechaos.totem_of_amogus": "Totem Of Lying",
       "selectWorld.data_read": "Reliving your past mistakes...",
       "block.purechaos.youtube": "Youtube",
       "gameMode.changed": "Sussy things done, you are now %s",
       "biome.purechaos.backrooms_biome": "Backrooms",
-      "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
+      "entity.chaosmod.murica": "\u0027Murica",
       "item.minecraft.golden_pickaxe": "Golden Diggy Diggy Blocky",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
@@ -12677,8 +12260,8 @@
       "item.purechaos.food_item_3": "Food Item 3",
       "entity.chaosmod.stalin": "Stalin",
       "item.purechaos.food_item_2": "Food Item 2",
-      "item.purechaos.meth": "Meth",
       "item.purechaos.baguette": "Baguette",
+      "item.purechaos.meth": "Meth",
       "block.purechaos.missing_texture": "Missing Texture",
       "painting.purechaos.a_painting.author": "some reddit user",
       "item.chaosmod.adidas_armor_helmet": "Adidas Helmet",
@@ -12697,8 +12280,8 @@
       "death.attack.alcohol_death": "%1$s drank himself to death",
       "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
       "item.chaosmod.obamium": "Obamium",
-      "subtitles.crnidani": "crnidanijebani",
       "item.minecraft.iron_pickaxe": "Iron Diggy Diggy Blocky",
+      "subtitles.crnidani": "crnidanijebani",
       "selectWorld.gameMode.creative": "Minimal Suffering",
       "item.purechaos.amugus_helmet": "Amugus Helmet",
       "item.chaosmod.long_leg_chicken_spawn_egg": "Long Leg Chicken Spawn Egg",
@@ -12810,6 +12393,7 @@
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
       "death.attack.thirst_death.player": "%1$s forgot to drink water whilst trying to escape %2$s",
+      "biome.purechaos.puffs_biome": "Puffs Biome",
       "block.chaosmod.death": "Death",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
       "item.purechaos.big_spawn_egg": "Big Spawn Egg",
@@ -12864,6 +12448,7 @@
       "death.attack.captcha_death": "%1$s failed the captcha",
       "entity.chaosmod.amogus_2": "Amogus 2",
       "key.chaosmod.seven": "Seven",
+      "gui.purechaos.captcha_gui.button_empty": "Submit",
       "gameMode.hardcore": "No.",
       "item.chaosmod.kentucky_fried_chicken_fries": "Kentucky Fried Chicken Fries",
       "block.chaosmod.grave": "Grave",
@@ -13030,8 +12615,8 @@
       "item.minecraft.netherite_axe": "Netherite Chop Chop Stick",
       "biome.purechaos.poland_biome": "Poland",
       "death.attack.cccp_death.player": "%1$s used the wrong keyboard whilst trying to escape %2$s",
-      "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.minecraft.splash_potion.effect.illegalsubstance": "Splash Bottle of Illegal substance",
+      "item.purechaos.pensive_cube_spawn_egg": "Pensive Cube Spawn Egg",
       "item.purechaos.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "item.purechaos.ping": "Ping",
       "item.chaosmod.stalin_spawn_egg": "Stalin Spawn Egg",
@@ -13159,6 +12744,7 @@
       "item.purechaos.brake_fluid": "Brake Fluid",
       "item.purechaos.pickax": "Pickax",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
+      "block.purechaos.puffs_block": "Puffs Block",
       "selectWorld.gameMode.hardcore.info": "Literally why would you ever want to do this, if you ever click this you are actually a psychopath and you need mental help go ky-",
       "item.purechaos.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
@@ -13394,7 +12980,7 @@
   "workspaceSettings": {
     "modid": "purechaos",
     "modName": "Pure Chaos",
-    "version": "1.20.4-1.0.1",
+    "version": "1.20.6-1.1.0",
     "description": "Add a little bit of, spice.",
     "author": "VikkiVuk, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",
@@ -13409,9 +12995,9 @@
       "geckolib",
       "jei"
     ],
-    "currentGenerator": "neoforge-1.20.4",
+    "currentGenerator": "neoforge-1.20.6",
     "credits": "We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!",
     "modElementsPackage": "xyz.aflkonstukt.purechaos"
   },
-  "mcreatorVersion": 202400118518
+  "mcreatorVersion": 202400228714
 }

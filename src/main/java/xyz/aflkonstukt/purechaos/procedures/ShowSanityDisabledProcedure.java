@@ -8,6 +8,9 @@ public class ShowSanityDisabledProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_enabled;
+		if (ShowSanityOverlayProcedure.execute(entity)) {
+			return !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_enabled;
+		}
+		return false;
 	}
 }

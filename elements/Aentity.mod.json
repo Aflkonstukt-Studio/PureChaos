@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Aentity",
@@ -25,6 +25,7 @@
       {
         "model": "Default",
         "texture": "rick_kurac.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
@@ -41,9 +42,11 @@
       "value": -10040065,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:Chaostab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "WHITE",
     "bossBarType": "NOTCHED_6",
@@ -181,6 +184,15 @@
         "value": "CUSTOM:Susus"
       }
     ],
-    "spawnInDungeons": true
+    "spawnInDungeons": true,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

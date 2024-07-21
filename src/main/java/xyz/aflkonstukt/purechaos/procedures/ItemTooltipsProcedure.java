@@ -1,5 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.PurechaosMod;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
@@ -10,16 +11,18 @@ import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.client.gui.screens.Screen;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber(value = {Dist.CLIENT})
+@Mod(value = PurechaosMod.MODID, dist = Dist.CLIENT)
 public class ItemTooltipsProcedure {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
@@ -43,7 +46,7 @@ public class ItemTooltipsProcedure {
 				tooltip.add(Component.literal("\u00A77Hold \u00A76SHIFT \u00A77for side effects"));
 			}
 		} else if (itemstack.getItem() == PurechaosModItems.MOB_CATCHER.get()) {
-			if (itemstack.getOrCreateTag().getBoolean("filled")) {
+			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("filled")) {
 				tooltip.add(Component.literal("\u00A77Right click to place entity."));
 			} else {
 				tooltip.add(Component.literal("\u00A77Right click to kidnap entity."));

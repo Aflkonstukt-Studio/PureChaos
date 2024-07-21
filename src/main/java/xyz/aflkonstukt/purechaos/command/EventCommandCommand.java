@@ -10,7 +10,7 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
@@ -22,7 +22,7 @@ import net.minecraft.commands.Commands;
 
 import com.mojang.brigadier.arguments.DoubleArgumentType;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class EventCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
@@ -66,7 +66,7 @@ public class EventCommandCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			CallConstipationProcedure.execute(arguments, entity);
+			CallConstipationProcedure.execute(arguments);
 			return 0;
 		}))).then(Commands.literal("communism").then(Commands.argument("name", EntityArgument.players()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
@@ -80,7 +80,7 @@ public class EventCommandCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			CallCommunismProcedure.execute(world, x, y, z, arguments, entity);
+			CallCommunismProcedure.execute(world, x, y, z, arguments);
 			return 0;
 		}))));
 	}

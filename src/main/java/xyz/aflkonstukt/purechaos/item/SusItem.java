@@ -9,6 +9,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
@@ -32,7 +33,7 @@ public class SusItem extends Item {
 			boolean success = false;
 			if (world.isEmptyBlock(pos) && true) {
 				SusPortalBlock.portalSpawn(world, pos);
-				itemstack.hurtAndBreak(1, entity, c -> c.broadcastBreakEvent(context.getHand()));
+				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(context.getHand()));
 				success = true;
 			}
 			return success ? InteractionResult.SUCCESS : InteractionResult.FAIL;

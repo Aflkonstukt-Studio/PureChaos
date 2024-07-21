@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "biome",
   "definition": {
     "name": "Buffalo Lake",
@@ -89,7 +89,7 @@
       "value": ""
     },
     "treeFruits": {
-      "value": "CUSTOM:Emepee"
+      "value": ""
     },
     "defaultFeatures": [
       "Caves",

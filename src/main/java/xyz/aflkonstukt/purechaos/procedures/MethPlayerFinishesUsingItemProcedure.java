@@ -52,7 +52,7 @@ public class MethPlayerFinishesUsingItemProcedure {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:overdose")))), 9999);
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT.get(), 1200, 1, false, true));
+				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT, 1200, 1, false, true));
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.mua_peu = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).mua_peu + 1;

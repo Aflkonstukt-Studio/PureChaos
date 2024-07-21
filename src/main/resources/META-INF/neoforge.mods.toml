@@ -1,0 +1,57 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="All rights reserved"
+
+[[mods]]
+modId="purechaos"
+version="1.20.61.1.0"
+displayName="Pure Chaos"
+displayURL="https://modrinth.com/mod/chaos"
+logoFile="logo.png"
+credits="We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!"
+authors="VikkiVuk, JosipTLG, X Master Woo"
+description="Add a little bit of, spice."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.purechaos]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.purechaos]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.purechaos]]
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.purechaos]]
+    modId="geckolib"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.purechaos]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[mixins]]
+    config="mixins.purechaos.json"
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

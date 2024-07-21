@@ -7,7 +7,7 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
@@ -17,7 +17,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CaptchaCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
@@ -33,7 +33,7 @@ public class CaptchaCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			CaptchaCommandProcedureProcedure.execute(world, x, y, z, arguments, entity);
+			CaptchaCommandProcedureProcedure.execute(world, x, y, z, arguments);
 			return 0;
 		})));
 	}

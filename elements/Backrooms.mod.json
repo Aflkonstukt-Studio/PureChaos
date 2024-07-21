@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "structure",
   "definition": {
     "structure": "b1_blank_space",
@@ -12,9 +12,13 @@
         "value": "CUSTOM:BackroomsBiome"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "none",
     "generationStep": "RAW_GENERATION",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
     "size": 4,
     "maxDistanceFromCenter": 116,
     "jigsawPools": [

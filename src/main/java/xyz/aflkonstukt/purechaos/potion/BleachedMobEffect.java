@@ -18,7 +18,8 @@ public class BleachedMobEffect extends InstantenousMobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
 		BleachedOnEffectActiveTickProcedure.execute(entity.level(), entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

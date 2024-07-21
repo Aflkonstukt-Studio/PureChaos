@@ -8,8 +8,8 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModGameRules;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 
-import net.neoforged.neoforge.event.TickEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
@@ -53,13 +53,11 @@ import javax.annotation.Nullable;
 
 import io.netty.buffer.Unpooled;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class PlayerTickProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player.level(), event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -86,7 +84,7 @@ public class PlayerTickProcedure {
 		if (!world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.MENTAL_HEALTH)) {
 			if (Mth.nextInt(RandomSource.create(), 1, (int) (40000 - entity.getData(PurechaosModVariables.PLAYER_VARIABLES).breakdown_chance / 20)) <= 3) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED.get(), Mth.nextInt(RandomSource.create(), 100, 400), 1, false, false));
+					_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEPRESSED, Mth.nextInt(RandomSource.create(), 100, 400), 1, false, false));
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 					_vars.breakdown_chance = 0;
@@ -115,7 +113,7 @@ public class PlayerTickProcedure {
 			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 50) {
 				if (Mth.nextInt(RandomSource.create(), (int) entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance, 2000) >= 1991 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).dementia_chance > 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEMENTIA.get(), 600, 1, false, true));
+						_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.DEMENTIA, 600, 1, false, true));
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 600, 1, false, false));
 					if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -134,6 +132,11 @@ public class PlayerTickProcedure {
 								@Override
 								public Component getDisplayName() {
 									return Component.literal("AdGUI");
+								}
+
+								@Override
+								public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+									return false;
 								}
 
 								@Override
@@ -193,7 +196,7 @@ public class PlayerTickProcedure {
 					_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 					_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 					for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
+						_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance, false));
 					_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
 				}
 			}
@@ -201,24 +204,24 @@ public class PlayerTickProcedure {
 				Entity _ent = entity;
 				_ent.teleportTo(
 						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
 								: 0),
 						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
 								: 0),
 						((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+								? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
 								: 0));
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport(
 							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getXSpawn())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getX() : _player.level().getLevelData().getSpawnPos().getX())
 									: 0),
 							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getYSpawn())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getY() : _player.level().getLevelData().getSpawnPos().getY())
 									: 0),
 							((entity instanceof ServerPlayer _player && !_player.level().isClientSide())
-									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getZSpawn())
+									? ((_player.getRespawnDimension().equals(_player.level().dimension()) && _player.getRespawnPosition() != null) ? _player.getRespawnPosition().getZ() : _player.level().getLevelData().getSpawnPos().getZ())
 									: 0),
 							_ent.getYRot(), _ent.getXRot());
 			}
@@ -357,13 +360,13 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(PurechaosModMobEffects.DRUNK.get()))) {
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(PurechaosModMobEffects.DRUNK))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = false;
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt66 && _livEnt66.hasEffect(PurechaosModMobEffects.DRUNK.get())) {
+		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt66 && _livEnt66.hasEffect(PurechaosModMobEffects.DRUNK)) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.invert_controls = true;
