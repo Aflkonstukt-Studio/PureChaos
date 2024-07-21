@@ -2,7 +2,7 @@ package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 
-import net.neoforged.neoforge.event.level.BlockDropsEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -26,8 +26,8 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class BlockBrokenProcedure {
 	@SubscribeEvent
-	public static void onBlockBreak(BlockDropsEvent event) {
-		execute(event, event.getLevel(), event.getBreaker());
+	public static void onBlockBreak(BlockEvent.BreakEvent event) {
+		execute(event, event.getLevel(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {

@@ -1,11 +1,11 @@
 {
   "parent": "block/grass_block",
   "textures": {
-    "bottom": "purechaos:block/dirt",
+    "bottom": "minecraft:block/dirt",
     "top": "purechaos:block/rainbowgrass_top",
     "side": "purechaos:block/rainbowgrass_side",
     "overlay": "purechaos:block/rainbowgrass_side",
-    "particle": "purechaos:block/dirt"
+    "particle": "minecraft:block/dirt"
   },
   "render_type": "cutout_mipped"
 }

@@ -2,7 +2,7 @@
   "_fv": 66,
   "_type": "block",
   "definition": {
-    "texture": "dirt",
+    "texture": "minecraft:dirt",
     "textureTop": "rainbowgrass_top",
     "textureLeft": "rainbowgrass_side",
     "textureFront": "rainbowgrass_side",

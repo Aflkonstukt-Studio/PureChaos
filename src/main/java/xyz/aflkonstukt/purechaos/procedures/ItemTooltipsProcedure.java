@@ -1,5 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import net.neoforged.fml.common.EventBusSubscriber;
 import xyz.aflkonstukt.purechaos.PurechaosMod;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
@@ -22,9 +23,8 @@ import javax.annotation.Nullable;
 
 import java.util.List;
 
-@Mod(value = PurechaosMod.MODID, dist = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.GAME, modid = PurechaosMod.MODID, value = Dist.CLIENT)
 public class ItemTooltipsProcedure {
-	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
 		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());

@@ -11,6 +11,6 @@ public class RadioactiveCookiePlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING, 60, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.RADIATION_POISIONING, 200, 1, false, false));
 	}
 }
