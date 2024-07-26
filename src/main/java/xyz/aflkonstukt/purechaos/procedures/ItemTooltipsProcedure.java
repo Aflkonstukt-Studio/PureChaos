@@ -1,12 +1,10 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
-import net.neoforged.fml.common.EventBusSubscriber;
-import xyz.aflkonstukt.purechaos.PurechaosMod;
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.OnlyIn;
@@ -23,8 +21,9 @@ import javax.annotation.Nullable;
 
 import java.util.List;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.GAME, modid = PurechaosMod.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(value = {Dist.CLIENT})
 public class ItemTooltipsProcedure {
+	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onItemTooltip(ItemTooltipEvent event) {
 		execute(event, event.getEntity(), event.getItemStack(), event.getToolTip());

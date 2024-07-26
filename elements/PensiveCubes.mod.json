@@ -157,7 +157,7 @@
       "name": "SurfaceEntitySpawningCondition"
     },
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 8,
     "restrictionBiomes": [

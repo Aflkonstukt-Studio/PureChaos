@@ -250,7 +250,7 @@ public class PurechaosModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<YippeProjectileEntity>> YIPPE_PROJECTILE = register("yippe_projectile",
 			EntityType.Builder.<YippeProjectileEntity>of(YippeProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<PensiveCubesEntity>> PENSIVE_CUBE = register("pensive_cube",
-			EntityType.Builder.<PensiveCubesEntity>of(PensiveCubesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<PensiveCubesEntity>of(PensiveCubesEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 
