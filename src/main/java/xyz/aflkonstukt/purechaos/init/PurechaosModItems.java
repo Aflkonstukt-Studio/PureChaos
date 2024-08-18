@@ -58,6 +58,7 @@ import xyz.aflkonstukt.purechaos.item.JavelinLauncherItem;
 import xyz.aflkonstukt.purechaos.item.IronEggItem;
 import xyz.aflkonstukt.purechaos.item.InfiniteFuelItem;
 import xyz.aflkonstukt.purechaos.item.ImpostorKnifeItem;
+import xyz.aflkonstukt.purechaos.item.IcepickItem;
 import xyz.aflkonstukt.purechaos.item.HalfGoldenAppleItem;
 import xyz.aflkonstukt.purechaos.item.GrimaceShakeItem;
 import xyz.aflkonstukt.purechaos.item.GlowItem;
@@ -322,6 +323,7 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> PUFFS_BLOCK = block(PurechaosModBlocks.PUFFS_BLOCK);
 	public static final DeferredHolder<Item, Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.PENSIVE_CUBE, -10066330, -256, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> RADIOACTIVE_COOKIE = REGISTRY.register("radioactive_cookie", RadioactiveCookieItem::new);
+	public static final DeferredHolder<Item, Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

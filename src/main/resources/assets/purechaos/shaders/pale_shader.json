@@ -1,0 +1,17 @@
+{
+  "targets": [
+    "pale_output"  
+  ],
+  "passes": [
+    {
+      "name": "purechaos:custom/pale",  
+      "intarget": "minecraft:main",
+      "outtarget": "pale_output"
+    },
+    {
+      "name": "blit",
+      "intarget": "pale_output",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

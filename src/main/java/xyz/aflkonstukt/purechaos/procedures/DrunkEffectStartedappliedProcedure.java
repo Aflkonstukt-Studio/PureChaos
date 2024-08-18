@@ -17,6 +17,11 @@ public class DrunkEffectStartedappliedProcedure {
 			return;
 		{
 			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+			_vars.invert_controls = true;
+			_vars.syncPlayerVariables(entity);
+		}
+		{
+			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 			_vars.amount_of_alcohol_drank = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).amount_of_alcohol_drank + 1;
 			_vars.syncPlayerVariables(entity);
 		}

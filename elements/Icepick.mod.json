@@ -1,0 +1,64 @@
+{
+  "_fv": 66,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "icepick",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Icepick",
+    "rarity": "EPIC",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 16,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "Use it to lobotomize yourself or others."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "IcepickLivingEntityIsHitWithItem"
+    },
+    "onFinishUsingItem": {
+      "name": "IcepickPlayerFinishesUsingItem"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "spear"
+  }
+}

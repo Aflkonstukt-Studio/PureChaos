@@ -205,5 +205,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.PUFFS_BLOCK.get().asItem());
 				tabData.accept(PurechaosModItems.PENSIVE_CUBE_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.RADIOACTIVE_COOKIE.get());
+				tabData.accept(PurechaosModItems.ICEPICK.get());
 			}).withSearchBar().build());
 }

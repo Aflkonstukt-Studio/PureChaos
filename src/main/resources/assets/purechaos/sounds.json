@@ -333,5 +333,13 @@
         "stream": false
       }
     ]
+  },
+  "lobotomy": {
+    "sounds": [
+      {
+        "name": "purechaos:lobotomy",
+        "stream": false
+      }
+    ]
   }
 }

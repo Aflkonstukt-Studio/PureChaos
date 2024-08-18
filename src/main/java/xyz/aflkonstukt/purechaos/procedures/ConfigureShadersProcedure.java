@@ -39,25 +39,29 @@ public class ConfigureShadersProcedure {
 			if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
 				if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("purechaos:shaders/meth.json") && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PurechaosModMobEffects.HIGH_EFFECT))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
-				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("minecraft:shaders/post/desaturate.json") && !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
+				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("purechaos:shaders/minecraft/desaturate.json") && !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeAllEffects();
-				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("minecraft:shaders/post/ntsc.json")
+				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("purechaos:shaders/minecraft/ntsc.json")
 						&& !((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
-				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("minecraft:shaders/post/art.json") && !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(PurechaosModMobEffects.DRUNK))) {
+				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("purechaos:shaders/minecraft/art.json") && !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(PurechaosModMobEffects.DRUNK))) {
+					Minecraft.getInstance().gameRenderer.shutdownEffect();
+				} else if ((Minecraft.getInstance().gameRenderer.currentEffect().getName()).equals("purechaos:shaders/pale_shader.json") && !entity.getData(PurechaosModVariables.PLAYER_VARIABLES).lobotomized) {
 					Minecraft.getInstance().gameRenderer.shutdownEffect();
 				}
 			} else {
 				if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
-					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/ntsc.json"));
-				} else if (entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(PurechaosModMobEffects.HIGH_EFFECT)) {
+					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/minecraft/ntsc.json"));
+				} else if (entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(PurechaosModMobEffects.HIGH_EFFECT)) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/meth.json"));
 				} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"))) {
-					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/desaturate.json"));
-				} else if (entity instanceof LivingEntity _livEnt27 && _livEnt27.hasEffect(PurechaosModMobEffects.DRUNK)) {
-					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/art.json"));
+					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/minecraft/desaturate.json"));
+				} else if (entity instanceof LivingEntity _livEnt29 && _livEnt29.hasEffect(PurechaosModMobEffects.DRUNK)) {
+					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/minecraft/art.json"));
+				} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).lobotomized) {
+					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("purechaos:shaders/pale_shader.json"));
 				}
 			}
 		}

@@ -1,0 +1,31 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "lobotomy_icepick.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": -1,
+          "y": -53
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "LobotomyOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

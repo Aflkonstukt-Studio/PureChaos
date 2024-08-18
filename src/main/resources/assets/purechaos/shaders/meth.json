@@ -8,22 +8,22 @@
   ],
   "passes": [
     {
-      "name": "wobble",
+      "name": "purechaos:minecraft/wobble",
       "intarget": "minecraft:main",
       "outtarget": "wobble"
     },
     {
-      "name": "blobs",
+      "name": "purechaos:minecraft/blobs",
       "intarget": "wobble",
       "outtarget": "blobs"
     },
     {
-      "name": "deconverge",
+      "name": "purechaos:minecraft/deconverge",
       "intarget": "blobs",
       "outtarget": "deconverge"
     },
     {
-      "name": "bumpy",
+      "name": "purechaos:minecraft/bumpy",
       "intarget": "deconverge",
       "outtarget": "bumpy" 
     },

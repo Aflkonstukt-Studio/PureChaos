@@ -360,18 +360,5 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
-		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && !(entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(PurechaosModMobEffects.DRUNK))) {
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.invert_controls = false;
-				_vars.syncPlayerVariables(entity);
-			}
-		} else if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).invert_controls && entity instanceof LivingEntity _livEnt66 && _livEnt66.hasEffect(PurechaosModMobEffects.DRUNK)) {
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.invert_controls = true;
-				_vars.syncPlayerVariables(entity);
-			}
-		}
 	}
 }
