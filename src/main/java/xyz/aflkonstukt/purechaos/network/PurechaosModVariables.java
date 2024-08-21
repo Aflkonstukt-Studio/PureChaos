@@ -119,6 +119,7 @@ public class PurechaosModVariables {
 				clone.healthiness = original.healthiness;
 				clone.lobotomized = original.lobotomized;
 				clone.show_lobotomy_overlay = original.show_lobotomy_overlay;
+				clone.schizophrenic = original.schizophrenic;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -328,6 +329,7 @@ public class PurechaosModVariables {
 		public double healthiness = 100.0;
 		public boolean lobotomized = false;
 		public boolean show_lobotomy_overlay = false;
+		public boolean schizophrenic = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -372,6 +374,7 @@ public class PurechaosModVariables {
 			nbt.putDouble("healthiness", healthiness);
 			nbt.putBoolean("lobotomized", lobotomized);
 			nbt.putBoolean("show_lobotomy_overlay", show_lobotomy_overlay);
+			nbt.putBoolean("schizophrenic", schizophrenic);
 			return nbt;
 		}
 
@@ -417,6 +420,7 @@ public class PurechaosModVariables {
 			healthiness = nbt.getDouble("healthiness");
 			lobotomized = nbt.getBoolean("lobotomized");
 			show_lobotomy_overlay = nbt.getBoolean("show_lobotomy_overlay");
+			schizophrenic = nbt.getBoolean("schizophrenic");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

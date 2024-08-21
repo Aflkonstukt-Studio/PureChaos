@@ -167,6 +167,15 @@ public class PlayerTickProcedure {
 					}
 				}
 			}
+			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 20) {
+				if (Mth.nextDouble(RandomSource.create(), 1, 10000) >= 9995) {
+					{
+						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+						_vars.schizophrenic = true;
+						_vars.syncPlayerVariables(entity);
+					}
+				}
+			}
 		}
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).nightmare_duration > 1 && entity.getData(PurechaosModVariables.PLAYER_VARIABLES).having_nightmare) {
 			if (world instanceof ServerLevel _level)
