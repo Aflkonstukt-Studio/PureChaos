@@ -1,7 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.command;
 
-import xyz.aflkonstukt.purechaos.procedures.SchizophreniaCommandExecutedProcedure;
+import xyz.aflkonstukt.purechaos.procedures.DevCommandProcedureProcedure;
 
 import org.checkerframework.checker.units.qual.s;
 
@@ -14,16 +14,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
-import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.Commands;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
 
 @EventBusSubscriber
-public class SchizophreniaCommandCommand {
+public class DevCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("schizophrenia").requires(s -> s.hasPermission(2)).then(Commands.argument("name", EntityArgument.players()).then(Commands.argument("value", BoolArgumentType.bool()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("dev").requires(s -> s.hasPermission(2)).then(Commands.argument("value", BoolArgumentType.bool()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -35,8 +34,8 @@ public class SchizophreniaCommandCommand {
 			if (entity != null)
 				direction = entity.getDirection();
 
-			SchizophreniaCommandExecutedProcedure.execute(arguments, entity);
+			DevCommandProcedureProcedure.execute(world, x, y, z, arguments, entity);
 			return 0;
-		}))));
+		})));
 	}
 }

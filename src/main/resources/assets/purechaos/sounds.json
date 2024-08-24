@@ -359,5 +359,14 @@
         "stream": false
       }
     ]
+  },
+  "america_fuck_yeah": {
+    "subtitle": "subtitles.america_fuck_yeah",
+    "sounds": [
+      {
+        "name": "purechaos:america_fuck_yeah",
+        "stream": false
+      }
+    ]
   }
 }

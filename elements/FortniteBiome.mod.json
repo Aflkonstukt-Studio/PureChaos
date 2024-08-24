@@ -75,8 +75,8 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 1,
-    "vanillaTreeType": "Mega spruce trees",
+    "treesPerChunk": 2,
+    "vanillaTreeType": "Big trees",
     "treeType": 0,
     "minHeight": 7,
     "treeStem": {

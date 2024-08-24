@@ -57,4 +57,5 @@ public class PurechaosModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> LOBOTOMY = REGISTRY.register("lobotomy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "lobotomy")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> AKSOUNDGOBRR = REGISTRY.register("aksoundgobrr", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "aksoundgobrr")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> METALBALLSPIPE = REGISTRY.register("metalballspipe", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "metalballspipe")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMERICA_FUCK_YEAH = REGISTRY.register("america_fuck_yeah", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "america_fuck_yeah")));
 }

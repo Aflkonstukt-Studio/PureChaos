@@ -11045,7 +11045,7 @@
           }
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "LobotomyHandler",
@@ -11134,7 +11134,7 @@
           }
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Item Procedures"
     },
     {
       "name": "OnSchizophrenicTick",
@@ -11185,6 +11185,10 @@
           {
             "name": "arguments",
             "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       },
@@ -11237,6 +11241,77 @@
         ]
       },
       "path": "~/Items/Item Procedures"
+    },
+    {
+      "name": "DevCommandProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_command_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DevCommandProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "DevCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dev_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/DevCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "DevCommandProcedureCustom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dev_command_procedure_custom",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DevCommandProcedureCustomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "run",
+            "type": "logic"
+          }
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -11544,6 +11619,12 @@
       "name": "schizophrenic",
       "type": "logic",
       "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "dev",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -11883,6 +11964,14 @@
       ],
       "category": "neutral",
       "subtitle": "Skariest Humpskare"
+    },
+    {
+      "name": "america_fuck_yeah",
+      "files": [
+        "america_fuck_yeah"
+      ],
+      "category": "hostile",
+      "subtitle": "AMERICA FUCK YEAAAH"
     }
   ],
   "tag_elements": {
@@ -12444,6 +12533,7 @@
       "item.purechaos.dream_spawn_egg": "Dream Spawn Egg",
       "death.fell.accident.generic": "%1$s didnt have slow falling",
       "item.chaosmod.fbi_spawn_egg": "FBI Spawn Egg",
+      "subtitles.america_fuck_yeah": "AMERICA FUCK YEAAAH",
       "effect.purechaos.depressed": "Depressed",
       "entity.chaosmod.american_soldat": "American Soldier",
       "item.chaosmod.turtle_armor_boots": "Turtle Boots",

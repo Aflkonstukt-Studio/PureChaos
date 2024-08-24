@@ -212,6 +212,7 @@ public class PurechaosModVariables {
 		public static final String DATA_NAME = "purechaos_mapvars";
 		public double ypx = 0;
 		public double ypz = 0;
+		public boolean dev = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -222,12 +223,14 @@ public class PurechaosModVariables {
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			ypx = nbt.getDouble("ypx");
 			ypz = nbt.getDouble("ypz");
+			dev = nbt.getBoolean("dev");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("ypx", ypx);
 			nbt.putDouble("ypz", ypz);
+			nbt.putBoolean("dev", dev);
 			return nbt;
 		}
 
