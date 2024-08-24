@@ -1,6 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
@@ -36,20 +37,31 @@ public class OnSchizophrenicTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double itemstack_slot = 0;
+		boolean remove_item = false;
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).schizophrenic) {
-			if (Mth.nextInt(RandomSource.create(), 1, 10000) >= 9069) {
+			if (Mth.nextInt(RandomSource.create(), 1, 10000) >= 9990) {
 				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
 					for (int _idx = 0; _idx < _modHandler.getSlots(); _idx++) {
 						ItemStack itemstackiterator = _modHandler.getStackInSlot(_idx).copy();
+						itemstack_slot = itemstack_slot + 1;
 						if (Mth.nextInt(RandomSource.create(), 1, 100) >= 80) {
-							itemstackiterator.shrink(100);
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.item.pickup")), SoundSource.NEUTRAL, 2, 2);
-								} else {
-									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.item.pickup")), SoundSource.NEUTRAL, 2, 2, false);
-								}
-							}
+							remove_item = true;
+							break;
+						}
+					}
+				}
+				if (remove_item) {
+					if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+						ItemStack _setstack = new ItemStack(PurechaosModItems.PING.get()).copy();
+						_setstack.setCount(1);
+						_modHandler.setStackInSlot((int) itemstack_slot, _setstack);
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				}
