@@ -39,7 +39,10 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
+    "onRightClickedInAir": {
+      "name": "AK47Shot"
+    },
+    "enableRanged": false,
     "shootConstantly": true,
     "rangedItemChargesPower": false,
     "projectile": {
@@ -53,6 +56,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "bow"
+    "animation": "none"
   }
 }

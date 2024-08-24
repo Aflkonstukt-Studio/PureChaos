@@ -341,5 +341,23 @@
         "stream": false
       }
     ]
+  },
+  "aksoundgobrr": {
+    "subtitle": "subtitles.aksoundgobrr",
+    "sounds": [
+      {
+        "name": "purechaos:kabum_bum_the_ak_goes_brr",
+        "stream": false
+      }
+    ]
+  },
+  "metalballspipe": {
+    "subtitle": "subtitles.metalballspipe",
+    "sounds": [
+      {
+        "name": "purechaos:metal_pipe_falling_sound_effect_but_its_more_violent",
+        "stream": false
+      }
+    ]
   }
 }

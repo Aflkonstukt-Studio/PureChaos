@@ -11202,6 +11202,41 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "AK47Shot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/AK47ShotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Item Procedures"
     }
   ],
   "variable_elements": [
@@ -11832,6 +11867,22 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "aksoundgobrr",
+      "files": [
+        "kabum_bum_the_ak_goes_brr"
+      ],
+      "category": "player",
+      "subtitle": "AK 47 gunshot"
+    },
+    {
+      "name": "metalballspipe",
+      "files": [
+        "metal_pipe_falling_sound_effect_but_its_more_violent"
+      ],
+      "category": "neutral",
+      "subtitle": "Skariest Humpskare"
     }
   ],
   "tag_elements": {
@@ -11974,9 +12025,6 @@
     "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
       "~CUSTOM:Susus"
     ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:Emepee"
-    ],
     "ENTITIES:minecraft:undead": [
       "~CUSTOM:Nerd",
       "~CUSTOM:Herobrine",
@@ -11986,6 +12034,9 @@
       "~CUSTOM:JOSIP",
       "~CUSTOM:Amogus2",
       "~CUSTOM:AmongUs"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:Easter",
@@ -12323,6 +12374,7 @@
       "fluid.chaosmod.carbon_monoxide": "Carbon Monoxide",
       "fluid.purechaos.gatorade": "Gatorade",
       "block.chaosmod.radiation_liquid": "Radiation Liquid",
+      "entity.purechaos.ak_47_projectile": "7.62 x 39mm round",
       "entity.chaosmod.trident": "Tridet",
       "key.purechaos.shit": "Shit",
       "multiplayer.downloadingTerrain": "Reliving your past mistakes...",
@@ -12755,6 +12807,7 @@
       "entity.purechaos.blaz": "Blaz",
       "block.purechaos.backroom_wall_bottom": "Backroom Wall Bottom",
       "subtitles.rock_death": "",
+      "subtitles.aksoundgobrr": "AK 47 gunshot",
       "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
       "biome.purechaos.birch_forest": "Birch Forest",
       "death.attack.captcha_death.item": "%1$s failed the captcha",
@@ -12830,6 +12883,7 @@
       "block.purechaos.oil": "Crude Oil",
       "item.chaosmod.dream_spawn_egg": "Dream Spawn Egg",
       "effect.purechaos.curse_of_fatherless": "Fatherless",
+      "subtitles.metalballspipe": "Skariest Humpskare",
       "item.chaosmod.sus": "Sus Portal Birther",
       "gui.purechaos.vikki_vuk_gui.button_trash": "Trash",
       "entity.purechaos.dream": "Dream",
