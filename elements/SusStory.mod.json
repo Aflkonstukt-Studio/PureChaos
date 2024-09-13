@@ -1,0 +1,26 @@
+{
+  "_fv": 66,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Susic",
+    "rarity": "EPIC",
+    "texture": "susdisc",
+    "description": "Put in jukebox for a fun time",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Chaostab"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:she-beats-my-meat"
+    },
+    "lengthInTicks": 900,
+    "analogOutput": 15
+  }
+}

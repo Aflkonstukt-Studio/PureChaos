@@ -408,5 +408,37 @@
         "stream": false
       }
     ]
+  },
+  "hes-dead": {
+    "sounds": [
+      {
+        "name": "purechaos:holy-shit-hes-dead-wtf_-made-with-voicemod",
+        "stream": false
+      }
+    ]
+  },
+  "she-beats-my-meat": {
+    "sounds": [
+      {
+        "name": "purechaos:she-beats-my-juicy-meat-made-with-voicemod",
+        "stream": true
+      }
+    ]
+  },
+  "rizz": {
+    "sounds": [
+      {
+        "name": "purechaos:rizz-sounds",
+        "stream": false
+      }
+    ]
+  },
+  "diarrhea": {
+    "sounds": [
+      {
+        "name": "purechaos:fartmeme",
+        "stream": false
+      }
+    ]
   }
 }

@@ -289,6 +289,13 @@ public class PlayerTickProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, false, false));
 				if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).announced_rizzed) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1, false);
+						}
+					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(
 								Component.literal(

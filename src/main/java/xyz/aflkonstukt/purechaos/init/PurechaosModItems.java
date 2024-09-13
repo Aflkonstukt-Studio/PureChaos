@@ -20,6 +20,7 @@ import xyz.aflkonstukt.purechaos.item.TesticleOnStickItem;
 import xyz.aflkonstukt.purechaos.item.TOItem;
 import xyz.aflkonstukt.purechaos.item.SussySusStewItem;
 import xyz.aflkonstukt.purechaos.item.SusSwordItem;
+import xyz.aflkonstukt.purechaos.item.SusStoryItem;
 import xyz.aflkonstukt.purechaos.item.SusItem;
 import xyz.aflkonstukt.purechaos.item.StaravodaItem;
 import xyz.aflkonstukt.purechaos.item.SpitBallItem;
@@ -324,6 +325,7 @@ public class PurechaosModItems {
 	public static final DeferredHolder<Item, Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.PENSIVE_CUBE, -10066330, -256, new Item.Properties()));
 	public static final DeferredHolder<Item, Item> RADIOACTIVE_COOKIE = REGISTRY.register("radioactive_cookie", RadioactiveCookieItem::new);
 	public static final DeferredHolder<Item, Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
+	public static final DeferredHolder<Item, Item> SUS_STORY = REGISTRY.register("sus_story", SusStoryItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
