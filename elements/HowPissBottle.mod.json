@@ -1,0 +1,17 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:BottleOfPiss"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      }
+    ],
+    "information": [
+      "To get a piss bottle, you can either get it from structure loot, or get it by holding shift and right clicking a glass bottle."
+    ]
+  }
+}

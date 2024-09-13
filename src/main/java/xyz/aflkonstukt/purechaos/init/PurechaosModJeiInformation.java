@@ -1,6 +1,7 @@
 
 package xyz.aflkonstukt.purechaos.init;
 
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -45,5 +46,7 @@ public class PurechaosModJeiInformation implements IModPlugin {
 				new ItemStack(PurechaosModItems.PUFFER_BALLOON.get()), new ItemStack(PurechaosModItems.BRAKE_FLUID.get()), new ItemStack(PurechaosModItems.FISH_LAUNCHER.get()), new ItemStack(PurechaosModItems.FRANCIUM.get()),
 				new ItemStack(PurechaosModItems.BEER.get()), new ItemStack(PurechaosModItems.FRYING_PAN.get()), new ItemStack(PurechaosModItems.COMMUNISM_ORB.get())), VanillaTypes.ITEM_STACK,
 				Component.translatable("jei.purechaos.found_in_josip_boss"));
+		registration.addIngredientInfo(List.of(new ItemStack(PurechaosModItems.LAVA_BOTTLE.get()), new ItemStack(Items.GLASS_BOTTLE)), VanillaTypes.ITEM_STACK, Component.translatable("jei.purechaos.how_lava_bottle"));
+		registration.addIngredientInfo(List.of(new ItemStack(PurechaosModItems.BOTTLE_OF_PISS.get()), new ItemStack(Items.GLASS_BOTTLE)), VanillaTypes.ITEM_STACK, Component.translatable("jei.purechaos.how_piss_bottle"));
 	}
 }

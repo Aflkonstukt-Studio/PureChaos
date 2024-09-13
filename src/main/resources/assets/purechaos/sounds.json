@@ -368,5 +368,45 @@
         "stream": false
       }
     ]
+  },
+  "cough": {
+    "sounds": [
+      {
+        "name": "purechaos:cough-104521",
+        "stream": false
+      }
+    ]
+  },
+  "hardstyle": {
+    "sounds": [
+      {
+        "name": "purechaos:hardstyle-1-83437",
+        "stream": false
+      }
+    ]
+  },
+  "overload": {
+    "sounds": [
+      {
+        "name": "purechaos:computer-virus-overload-sound-26393",
+        "stream": false
+      }
+    ]
+  },
+  "error": {
+    "sounds": [
+      {
+        "name": "purechaos:sound-effect-system-error-sound-117733",
+        "stream": false
+      }
+    ]
+  },
+  "sneeze": {
+    "sounds": [
+      {
+        "name": "purechaos:sneeze-81009",
+        "stream": false
+      }
+    ]
   }
 }

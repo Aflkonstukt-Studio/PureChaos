@@ -51,9 +51,15 @@ public class BottleMixinMixin {
                     cir.cancel();
                 }
             }
+        } else {
+            if (p_40657_.isShiftKeyDown()) {
+                ItemStack pissBottle = new ItemStack(PurechaosModItems.BOTTLE_OF_PISS.get());
+                cir.setReturnValue(InteractionResultHolder.sidedSuccess(pureChaos$createFilledResult(itemstack, p_40657_, pissBottle, false), p_40656_.isClientSide()));
+                cir.cancel();
+            }
         }
 
-        // If the block is not lava, the original method will be called
+        // If the block is not lava or not holding shift, the original method will be called
     }
 
     @Unique

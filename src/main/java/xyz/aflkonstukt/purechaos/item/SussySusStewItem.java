@@ -1,6 +1,8 @@
 
 package xyz.aflkonstukt.purechaos.item;
 
+import xyz.aflkonstukt.purechaos.procedures.SussySusStewPlayerFinishesUsingItemProcedure;
+
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
@@ -33,6 +35,10 @@ public class SussySusStewItem extends Item {
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.BOWL);
 		super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		SussySusStewPlayerFinishesUsingItemProcedure.execute(entity);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

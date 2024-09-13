@@ -120,6 +120,10 @@ public class PurechaosModVariables {
 				clone.lobotomized = original.lobotomized;
 				clone.show_lobotomy_overlay = original.show_lobotomy_overlay;
 				clone.schizophrenic = original.schizophrenic;
+				clone.infected_for = original.infected_for;
+				clone.infected_stage = original.infected_stage;
+				clone.sanity_drop_multiplier = original.sanity_drop_multiplier;
+				clone.immune_to_infection = original.immune_to_infection;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -333,6 +337,10 @@ public class PurechaosModVariables {
 		public boolean lobotomized = false;
 		public boolean show_lobotomy_overlay = false;
 		public boolean schizophrenic = false;
+		public double infected_for = 0;
+		public double infected_stage = 0;
+		public double sanity_drop_multiplier = 1.0;
+		public boolean immune_to_infection = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -378,6 +386,10 @@ public class PurechaosModVariables {
 			nbt.putBoolean("lobotomized", lobotomized);
 			nbt.putBoolean("show_lobotomy_overlay", show_lobotomy_overlay);
 			nbt.putBoolean("schizophrenic", schizophrenic);
+			nbt.putDouble("infected_for", infected_for);
+			nbt.putDouble("infected_stage", infected_stage);
+			nbt.putDouble("sanity_drop_multiplier", sanity_drop_multiplier);
+			nbt.putBoolean("immune_to_infection", immune_to_infection);
 			return nbt;
 		}
 
@@ -424,6 +436,10 @@ public class PurechaosModVariables {
 			lobotomized = nbt.getBoolean("lobotomized");
 			show_lobotomy_overlay = nbt.getBoolean("show_lobotomy_overlay");
 			schizophrenic = nbt.getBoolean("schizophrenic");
+			infected_for = nbt.getDouble("infected_for");
+			infected_stage = nbt.getDouble("infected_stage");
+			sanity_drop_multiplier = nbt.getDouble("sanity_drop_multiplier");
+			immune_to_infection = nbt.getBoolean("immune_to_infection");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

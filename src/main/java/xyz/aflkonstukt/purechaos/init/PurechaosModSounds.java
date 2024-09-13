@@ -58,4 +58,9 @@ public class PurechaosModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> AKSOUNDGOBRR = REGISTRY.register("aksoundgobrr", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "aksoundgobrr")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> METALBALLSPIPE = REGISTRY.register("metalballspipe", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "metalballspipe")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMERICA_FUCK_YEAH = REGISTRY.register("america_fuck_yeah", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "america_fuck_yeah")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> COUGH = REGISTRY.register("cough", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "cough")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> HARDSTYLE = REGISTRY.register("hardstyle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "hardstyle")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> OVERLOAD = REGISTRY.register("overload", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "overload")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ERROR = REGISTRY.register("error", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "error")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SNEEZE = REGISTRY.register("sneeze", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("purechaos", "sneeze")));
 }

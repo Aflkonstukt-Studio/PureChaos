@@ -1,0 +1,17 @@
+{
+  "_fv": 66,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:LavaBottle"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      }
+    ],
+    "information": [
+      "To get the lava bottle, you just need to right click a lava source block with a glass bottle."
+    ]
+  }
+}

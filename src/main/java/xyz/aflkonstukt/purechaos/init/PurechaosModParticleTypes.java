@@ -17,4 +17,5 @@ public class PurechaosModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, PurechaosMod.MODID);
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CUM_DRIP = REGISTRY.register("cum_drip", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> YIPPE_PARTICLE = REGISTRY.register("yippe_particle", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> COUGH_PARTICLE = REGISTRY.register("cough_particle", () -> new SimpleParticleType(false));
 }
