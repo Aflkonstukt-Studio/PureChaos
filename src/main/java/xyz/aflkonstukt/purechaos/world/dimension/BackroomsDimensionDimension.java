@@ -26,7 +26,7 @@ public class BackroomsDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:backrooms_dimension"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:backrooms_dimension"), customEffect);
 		}
 	}
 }

@@ -26,7 +26,7 @@ public class CyberspaceDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:cyberspace"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:cyberspace"), customEffect);
 		}
 	}
 }

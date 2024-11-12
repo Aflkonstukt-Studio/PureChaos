@@ -15,6 +15,6 @@ public class FireflyRenderer extends MobRenderer<FireflyEntity, Modelfireflies<F
 
 	@Override
 	public ResourceLocation getTextureLocation(FireflyEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/fireflies.png");
+		return ResourceLocation.parse("purechaos:textures/entities/fireflies.png");
 	}
 }

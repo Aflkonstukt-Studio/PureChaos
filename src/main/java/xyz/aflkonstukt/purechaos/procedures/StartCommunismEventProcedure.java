@@ -22,9 +22,9 @@ public class StartCommunismEventProcedure {
 			_player.displayClientMessage(Component.literal("\u00A74It's time for repossesion!"), false);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:sssr")), SoundSource.NEUTRAL, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:sssr")), SoundSource.NEUTRAL, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:sssr")), SoundSource.NEUTRAL, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:sssr")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 		if (world instanceof ServerLevel _level) {

@@ -44,7 +44,7 @@ public class InfectedOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (InfectedOverlayDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/infected_overlay.png"), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/infected_overlay.png"), 0, 0, 0, 0, w, h, w, h);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

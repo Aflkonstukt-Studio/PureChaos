@@ -18,6 +18,6 @@ public class AmongUsRenderer extends HumanoidMobRenderer<AmongUsEntity, Humanoid
 
 	@Override
 	public ResourceLocation getTextureLocation(AmongUsEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/among_us_biped.png");
+		return ResourceLocation.parse("purechaos:textures/entities/among_us_biped.png");
 	}
 }

@@ -4,7 +4,7 @@ package xyz.aflkonstukt.purechaos.entity;
 import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -125,12 +125,12 @@ public class BlazEntity extends Blaze implements RangedAttackMob {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	@Override
@@ -140,7 +140,7 @@ public class BlazEntity extends Blaze implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		Arrow entityarrow = new Arrow(this.level(), this, new ItemStack(Items.ARROW));
+		Arrow entityarrow = new Arrow(this.level(), this, new ItemStack(Items.ARROW), null);
 		double d0 = target.getY() + target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - this.getX();
 		double d3 = target.getZ() - this.getZ();
@@ -162,13 +162,13 @@ public class BlazEntity extends Blaze implements RangedAttackMob {
 		this.setNoGravity(true);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.BLAZ.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

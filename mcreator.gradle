@@ -5,7 +5,7 @@ repositories {
 }
     
 dependencies {
-	implementation 'com.github.Virtuoel:Pehkui:3.8.3-1.20.6-neoforge'
+	implementation 'com.github.Virtuoel:Pehkui:3.8.3-1.21-neoforge'
 }
 
 
@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'software.bernie.geckolib:geckolib-neoforge-1.20.6:4.5.4'
+  implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.6.6'
 }
 
 
@@ -36,9 +36,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("mezz.jei:jei-1.20.6-common-api:18.0.0.65")
-    compileOnly("mezz.jei:jei-1.20.6-neoforge-api:18.0.0.65")
-    runtimeOnly("mezz.jei:jei-1.20.6-neoforge:18.0.0.65")
+    compileOnly("mezz.jei:jei-1.21.1-common-api:19.21.0.247")
+    compileOnly("mezz.jei:jei-1.21.1-neoforge-api:19.21.0.247")
+    runtimeOnly("mezz.jei:jei-1.21.1-neoforge:19.21.0.247")
 }
 
 

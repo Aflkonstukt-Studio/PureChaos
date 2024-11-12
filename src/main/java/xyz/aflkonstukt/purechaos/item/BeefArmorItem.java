@@ -34,9 +34,9 @@ public abstract class BeefArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 20);
 				map.put(ArmorItem.Type.HELMET, 10);
 				map.put(ArmorItem.Type.BODY, 20);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("purechaos:fallguyswooh")), () -> Ingredient.of(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("purechaos:beef_armor"))), 6f, 0.2f);
-			registerHelper.register(new ResourceLocation("purechaos:beef_armor"), armorMaterial);
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("purechaos:fallguyswooh")), () -> Ingredient.of(new ItemStack(Items.BEEF), new ItemStack(Items.COOKED_BEEF)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:beef_armor"))), 6f, 0.2f);
+			registerHelper.register(ResourceLocation.parse("purechaos:beef_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

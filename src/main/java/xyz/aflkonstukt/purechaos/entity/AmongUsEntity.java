@@ -6,7 +6,7 @@ import xyz.aflkonstukt.purechaos.procedures.DirtswordLivingEntityIsHitWithToolPr
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -34,6 +34,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -116,29 +117,29 @@ public class AmongUsEntity extends Monster {
 		return super.getPassengerRidingPosition(entity).add(0, -0.35F, 0);
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(PurechaosModBlocks.CUM.get()));
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amongus_ambient"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:amongus_ambient"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:footstep_metal_amogus")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:footstep_metal_amogus")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:kill"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:kill"));
 	}
 
 	@Override
@@ -194,13 +195,13 @@ public class AmongUsEntity extends Monster {
 		super.travel(dir);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.AMONG_US.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

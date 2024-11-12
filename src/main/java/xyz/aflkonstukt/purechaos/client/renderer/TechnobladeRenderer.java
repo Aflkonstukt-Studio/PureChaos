@@ -18,6 +18,6 @@ public class TechnobladeRenderer extends HumanoidMobRenderer<TechnobladeEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(TechnobladeEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/technoblade.png");
+		return ResourceLocation.parse("purechaos:textures/entities/technoblade.png");
 	}
 }

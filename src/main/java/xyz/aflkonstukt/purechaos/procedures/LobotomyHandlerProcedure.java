@@ -67,9 +67,9 @@ public class LobotomyHandlerProcedure {
 				} else if (random_pass == 3) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.creeper.primed")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				} else if (random_pass == 4) {
@@ -111,17 +111,17 @@ public class LobotomyHandlerProcedure {
 				} else if (random_pass == 7) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.ghast.scream")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.ghast.scream")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.ghast.scream")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.ghast.scream")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				} else if (random_pass == 8) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.stare")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.stare")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.stare")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.enderman.stare")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				} else if (random_pass == 9) {

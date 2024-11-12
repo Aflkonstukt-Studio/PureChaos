@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -44,6 +44,7 @@
     "projectile": {
       "value": "CUSTOM:KondomnepitajzastoovoradimalispoileralertonimarupuProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,

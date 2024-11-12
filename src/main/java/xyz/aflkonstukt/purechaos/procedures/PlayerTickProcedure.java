@@ -151,7 +151,7 @@ public class PlayerTickProcedure {
 			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 0) {
 				SendToBackroomsProcedure.execute(x, z, entity);
 			}
-			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension")))) {
+			if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:backrooms_dimension")))) {
 				if (Mth.nextDouble(RandomSource.create(), 1, 6000 / entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_drop_multiplier) >= 6000 / entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_drop_multiplier
 						- 5 * 2 * entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity_drop_multiplier) {
 					if (Mth.nextDouble(RandomSource.create(), 1, 10) <= 2) {
@@ -285,15 +285,15 @@ public class PlayerTickProcedure {
 				}
 			}
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).rizz >= 96) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:rizzed_up")))), 1);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:rizzed_up")))), 1);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, false, false));
 				if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).announced_rizzed) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:rizz")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -326,7 +326,7 @@ public class PlayerTickProcedure {
 				}
 			}
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst < 5) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:thirst_death")))), 1);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:thirst_death")))), 1);
 			}
 		}
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PurechaosModItems.OIL_BUCKET.get())) : false) {
@@ -336,9 +336,9 @@ public class PlayerTickProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:kilometer")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:kilometer")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:kilometer")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:kilometer")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
@@ -385,9 +385,9 @@ public class PlayerTickProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:america_fuck_yeah")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:america_fuck_yeah")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:america_fuck_yeah")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:america_fuck_yeah")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level) {

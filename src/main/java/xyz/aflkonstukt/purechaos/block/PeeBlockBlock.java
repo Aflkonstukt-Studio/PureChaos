@@ -3,7 +3,7 @@ package xyz.aflkonstukt.purechaos.block;
 
 import xyz.aflkonstukt.purechaos.block.entity.PeeBlockBlockEntity;
 
-import net.neoforged.neoforge.common.IPlantable;
+import net.neoforged.neoforge.common.util.TriState;
 
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
@@ -23,6 +23,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.FastColor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -33,8 +34,8 @@ public class PeeBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public float[] getBeaconColorMultiplier(BlockState state, LevelReader world, BlockPos pos, BlockPos beaconPos) {
-		return new float[]{1f, 1f, 0.4f};
+	public Integer getBeaconColorMultiplier(BlockState state, LevelReader world, BlockPos pos, BlockPos beaconPos) {
+		return FastColor.ARGB32.opaque(-154);
 	}
 
 	@Override
@@ -68,8 +69,8 @@ public class PeeBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
-		return true;
+	public TriState canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, BlockState plant) {
+		return TriState.TRUE;
 	}
 
 	@Override

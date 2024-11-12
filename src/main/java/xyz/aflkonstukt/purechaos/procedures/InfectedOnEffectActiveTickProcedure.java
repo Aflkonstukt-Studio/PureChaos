@@ -53,9 +53,9 @@ public class InfectedOnEffectActiveTickProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 2000) <= 30) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:sneeze")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:sneeze")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:sneeze")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:sneeze")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
@@ -79,9 +79,9 @@ public class InfectedOnEffectActiveTickProcedure {
 							_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.INFECTED, 5000, 1, false, true));
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(found_entity.getX(), found_entity.getY(), found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
+								_level.playSound(null, BlockPos.containing(found_entity.getX(), found_entity.getY(), found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
 							} else {
-								_level.playLocalSound((found_entity.getX()), (found_entity.getY()), (found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
+								_level.playLocalSound((found_entity.getX()), (found_entity.getY()), (found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
 						if (world instanceof ServerLevel _level)
@@ -96,9 +96,9 @@ public class InfectedOnEffectActiveTickProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, 3000) <= 30) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
@@ -132,7 +132,8 @@ public class InfectedOnEffectActiveTickProcedure {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 50) {
 				if (world.isClientSide()) {
 					if (Minecraft.getInstance().gameRenderer.currentEffect() == null) {
-						Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/creeper.json"));
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("placeholder event. pretend you are seeing a creeper shader"), false);
 					}
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -142,7 +143,8 @@ public class InfectedOnEffectActiveTickProcedure {
 					if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
 						Minecraft.getInstance().gameRenderer.shutdownEffect();
 					}
-					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("minecraft:shaders/post/invert.json"));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("placeholder event. pretend you are seeing an enderman shader"), false);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A74\u00A7kThis isnt over yet..."), true);
@@ -172,9 +174,9 @@ public class InfectedOnEffectActiveTickProcedure {
 					_player.displayClientMessage(Component.literal("\u00A74\u00A7l\u00A7oThe infection is spreading..."), true);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:overload")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:overload")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:overload")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:overload")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				{
@@ -186,9 +188,9 @@ public class InfectedOnEffectActiveTickProcedure {
 			if (Mth.nextInt(RandomSource.create(), 1, (int) (1000 / (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PurechaosModMobEffects.INFECTED) ? _livEnt.getEffect(PurechaosModMobEffects.INFECTED).getAmplifier() : 0))) <= 10) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:cough")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:cough")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:cough")), SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:cough")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
@@ -214,9 +216,9 @@ public class InfectedOnEffectActiveTickProcedure {
 							_level.sendParticles((SimpleParticleType) (PurechaosModParticleTypes.COUGH_PARTICLE.get()), (found_entity.getX()), (found_entity.getY()), (found_entity.getZ()), 1000, 5, 2, 5, 0.2);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(found_entity.getX(), found_entity.getY(), found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
+								_level.playSound(null, BlockPos.containing(found_entity.getX(), found_entity.getY(), found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
 							} else {
-								_level.playLocalSound((found_entity.getX()), (found_entity.getY()), (found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
+								_level.playLocalSound((found_entity.getX()), (found_entity.getY()), (found_entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
 						if (entity instanceof Player || entity instanceof ServerPlayer) {

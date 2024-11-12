@@ -20,7 +20,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record ShitMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<ShitMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "key_shit"));
+	public static final Type<ShitMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "key_shit"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, ShitMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ShitMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

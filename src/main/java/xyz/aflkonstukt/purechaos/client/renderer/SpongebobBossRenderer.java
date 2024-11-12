@@ -15,6 +15,6 @@ public class SpongebobBossRenderer extends MobRenderer<SpongebobBossEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(SpongebobBossEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/spongebob_boss.png");
+		return ResourceLocation.parse("purechaos:textures/entities/spongebob_boss.png");
 	}
 }

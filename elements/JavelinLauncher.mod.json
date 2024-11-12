@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "item",
   "definition": {
     "renderType": 1,
@@ -42,6 +42,7 @@
     "projectile": {
       "value": "CUSTOM:JavelinLauncherProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,

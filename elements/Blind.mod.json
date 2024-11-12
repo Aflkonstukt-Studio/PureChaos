@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Blind",
@@ -11,6 +11,9 @@
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false
   }
 }

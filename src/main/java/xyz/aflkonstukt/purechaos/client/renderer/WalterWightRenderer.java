@@ -18,6 +18,6 @@ public class WalterWightRenderer extends HumanoidMobRenderer<WalterWightEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(WalterWightEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/walt.png");
+		return ResourceLocation.parse("purechaos:textures/entities/walt.png");
 	}
 }

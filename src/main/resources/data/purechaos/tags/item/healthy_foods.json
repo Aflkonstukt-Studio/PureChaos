@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:almond_water",
+    "purechaos:half_golden_apple",
+    "purechaos:baguette",
+    "purechaos:beengot",
+    "purechaos:apple_ingot",
+    "purechaos:sussy_sus_stew",
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:carrot",
+    "minecraft:baked_potato",
+    "minecraft:pumpkin_pie",
+    "minecraft:bread"
+  ]
+}

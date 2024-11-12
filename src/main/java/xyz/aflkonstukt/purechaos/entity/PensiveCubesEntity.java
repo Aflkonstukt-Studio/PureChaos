@@ -14,7 +14,7 @@ import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.GeoEntity;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -39,6 +39,7 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -103,19 +104,19 @@ public class PensiveCubesEntity extends PathfinderMob implements GeoEntity {
 		this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(PurechaosModBlocks.PEE_BLOCK.get()));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	@Override
@@ -163,13 +164,13 @@ public class PensiveCubesEntity extends PathfinderMob implements GeoEntity {
 		this.setNoGravity(true);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.PENSIVE_CUBE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -215,7 +216,7 @@ public class PensiveCubesEntity extends PathfinderMob implements GeoEntity {
 		++this.deathTime;
 		if (this.deathTime == 20) {
 			this.remove(PensiveCubesEntity.RemovalReason.KILLED);
-			this.dropExperience();
+			this.dropExperience(this);
 		}
 	}
 

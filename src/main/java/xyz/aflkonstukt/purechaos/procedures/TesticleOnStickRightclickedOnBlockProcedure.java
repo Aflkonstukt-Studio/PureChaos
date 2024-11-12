@@ -11,7 +11,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
@@ -54,11 +54,8 @@ public class TesticleOnStickRightclickedOnBlockProcedure {
 					}
 				}
 			}
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 				});
 			}
 			{

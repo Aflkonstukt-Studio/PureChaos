@@ -4,7 +4,7 @@ package xyz.aflkonstukt.purechaos.entity;
 import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -56,26 +56,26 @@ public class RickAstleyEntity extends Monster {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:never_gonna_give_you_up"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:never_gonna_give_you_up"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.RICK_ASTLEY.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

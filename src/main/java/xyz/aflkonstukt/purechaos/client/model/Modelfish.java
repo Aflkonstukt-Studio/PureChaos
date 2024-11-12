@@ -22,7 +22,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelfish<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("purechaos", "modelfish"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("purechaos", "modelfish"), "main");
 	public final ModelPart body_front;
 
 	public Modelfish(ModelPart root) {
@@ -50,7 +50,7 @@ public class Modelfish<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		body_front.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
+		body_front.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 	}
 }

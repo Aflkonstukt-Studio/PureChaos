@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.purechaos.sssr.desc"
+  },
+  "length_in_seconds": 240,
+  "sound_event": "purechaos:sssr"
+}

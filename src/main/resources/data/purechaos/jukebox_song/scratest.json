@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.purechaos.scratest.desc"
+  },
+  "length_in_seconds": 99,
+  "sound_event": "purechaos:scratest"
+}

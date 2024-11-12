@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:bleach",
+    "purechaos:almond_water",
+    "purechaos:apple_ingot",
+    "purechaos:dingot",
+    "purechaos:sussy_sus_stew",
+    "minecraft:apple",
+    "minecraft:mushroom_stew",
+    "minecraft:suspicious_stew",
+    "minecraft:carrot",
+    "minecraft:pumpkin_pie",
+    "minecraft:melon_slice",
+    "minecraft:tropical_fish",
+    "minecraft:porkchop",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:mutton",
+    "purechaos:edible_water_bucket"
+  ]
+}

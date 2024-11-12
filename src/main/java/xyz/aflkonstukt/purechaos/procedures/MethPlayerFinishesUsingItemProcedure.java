@@ -49,7 +49,7 @@ public class MethPlayerFinishesUsingItemProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 		} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).mua_peu >= 3) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:overdose")))), 9999);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:overdose")))), 9999);
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.HIGH_EFFECT, 1200, 1, false, true));

@@ -15,7 +15,7 @@ public class PufferBalloonItem extends Item {
 	}
 
 	@Override
-	public boolean hasCraftingRemainingItem() {
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
 		return true;
 	}
 
@@ -38,6 +38,6 @@ public class PufferBalloonItem extends Item {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			PufferBalloonItemInHandTickProcedure.execute(entity, itemstack);
+			PufferBalloonItemInHandTickProcedure.execute(world, entity, itemstack);
 	}
 }

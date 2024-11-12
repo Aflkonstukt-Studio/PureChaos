@@ -28,7 +28,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record CaptchaGUIButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
 
-	public static final Type<CaptchaGUIButtonMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "captcha_gui_buttons"));
+	public static final Type<CaptchaGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "captcha_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, CaptchaGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CaptchaGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

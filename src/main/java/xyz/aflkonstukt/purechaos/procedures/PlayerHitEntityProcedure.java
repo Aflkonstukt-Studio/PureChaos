@@ -4,7 +4,7 @@ import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.init.PurechaosModParticleTypes;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
 
-import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -29,7 +29,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class PlayerHitEntityProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -47,9 +47,9 @@ public class PlayerHitEntityProcedure {
 				_entity.addEffect(new MobEffectInstance(PurechaosModMobEffects.INFECTED, 5000, 1, false, true));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hardstyle")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level)

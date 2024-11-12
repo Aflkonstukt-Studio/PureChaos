@@ -5,7 +5,7 @@ import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProced
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -28,6 +28,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -106,33 +107,33 @@ public class CupcakkeEntity extends Monster {
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(PurechaosModItems.OBAMIUM.get()));
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:gulp_gulp"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:gulp_gulp"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:smack_my_ass"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:smack_my_ass"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ugh_cupcakke"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:ugh_cupcakke"));
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.CUPCAKKE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

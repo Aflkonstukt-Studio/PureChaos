@@ -26,8 +26,7 @@ public class CumDripParticle extends TextureSheetParticle {
 		}
 
 		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
-			CumDripParticle particle = new CumDripParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
-			return particle;
+			return new CumDripParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
 

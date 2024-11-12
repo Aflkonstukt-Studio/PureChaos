@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "block",
   "definition": {
     "texture": "image_2024-06-18_214508755",
@@ -69,6 +69,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Moyai",
     "specialInformation": {
       "fixedValue": []

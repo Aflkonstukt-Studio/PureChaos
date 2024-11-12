@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "animatedentity",
   "definition": {
     "mobName": "Pensive Cube",
@@ -30,6 +30,7 @@
     "creativeTab": {
       "value": "CUSTOM:Chaostab"
     },
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -142,6 +143,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
+    "attackRate": 7,
     "raidSpawnsCount": [
       4,
       3,

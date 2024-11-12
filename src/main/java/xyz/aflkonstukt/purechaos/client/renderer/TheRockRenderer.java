@@ -15,6 +15,6 @@ public class TheRockRenderer extends MobRenderer<TheRockEntity, Modelnextbot<The
 
 	@Override
 	public ResourceLocation getTextureLocation(TheRockEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/the_rock.png");
+		return ResourceLocation.parse("purechaos:textures/entities/the_rock.png");
 	}
 }

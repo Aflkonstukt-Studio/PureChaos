@@ -56,42 +56,42 @@ public class MoreBoolets1Overlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (MoreBoolets1DisplayOverlayIngame2Procedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/shadow.png"), 0, 0, 0, 0, w, h, w, h);
+			event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/shadow.png"), 0, 0, 0, 0, w, h, w, h);
 			if (BooletsShow1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-0.png"), w / 2 + -56, h / 2 + -99, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-0.png"), w / 2 + -56, h / 2 + -99, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow2Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-1.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-1.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-10.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-10.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow4Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-11.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-11.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow5Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-2.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-2.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow6Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-3.png"), w / 2 + -55, h / 2 + -99, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-3.png"), w / 2 + -55, h / 2 + -99, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow7Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-4.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-4.png"), w / 2 + -55, h / 2 + -100, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow8Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-5.png"), w / 2 + -56, h / 2 + -101, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-5.png"), w / 2 + -56, h / 2 + -101, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow9Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png"), w / 2 + -56, h / 2 + -101, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png"), w / 2 + -56, h / 2 + -101, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow10Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-7.png"), w / 2 + -56, h / 2 + -102, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-7.png"), w / 2 + -56, h / 2 + -102, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow11Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png"), w / 2 + -56, h / 2 + -102, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png"), w / 2 + -56, h / 2 + -102, 0, 0, 110, 199, 110, 199);
 			}
 			if (BooletsShow12Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-9.png"), w / 2 + -55, h / 2 + -102, 0, 0, 110, 199, 110, 199);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-9.png"), w / 2 + -55, h / 2 + -102, 0, 0, 110, 199, 110, 199);
 			}
 		}
 		RenderSystem.depthMask(true);

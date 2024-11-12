@@ -16,6 +16,6 @@ public class BigRenderer extends MobRenderer<BigEntity, PigModel<BigEntity>> {
 
 	@Override
 	public ResourceLocation getTextureLocation(BigEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/big_texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/big_texture.png");
 	}
 }

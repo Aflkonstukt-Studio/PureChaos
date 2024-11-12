@@ -15,6 +15,6 @@ public class NerdRenderer extends MobRenderer<NerdEntity, Modelnextbot<NerdEntit
 
 	@Override
 	public ResourceLocation getTextureLocation(NerdEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/nerd.png");
+		return ResourceLocation.parse("purechaos:textures/entities/nerd.png");
 	}
 }

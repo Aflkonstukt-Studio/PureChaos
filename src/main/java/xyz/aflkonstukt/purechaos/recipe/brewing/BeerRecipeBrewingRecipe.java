@@ -1,5 +1,5 @@
 
-package xyz.aflkonstukt.purechaos.recipes.brewing;
+package xyz.aflkonstukt.purechaos.recipe.brewing;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModPotions;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
@@ -31,7 +31,7 @@ public class BeerRecipeBrewingRecipe implements IBrewingRecipe {
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		Optional<Holder<Potion>> optionalPotion = input.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).potion();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && !optionalPotion.isEmpty() && optionalPotion.get().is(PurechaosModPotions.ETHANOL);
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && optionalPotion.isPresent() && optionalPotion.get().is(PurechaosModPotions.ETHANOL);
 	}
 
 	@Override

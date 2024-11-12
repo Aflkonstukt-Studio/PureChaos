@@ -4,7 +4,7 @@ import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
 import xyz.aflkonstukt.purechaos.entity.StalinEntity;
 
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class EntityAttackedProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -42,9 +42,9 @@ public class EntityAttackedProcedure {
 			return;
 		if (entity instanceof Player || entity instanceof ServerPlayer) {
 			if (sourceentity instanceof StalinEntity) {
-				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-					for (int _idx = 0; _idx < _modHandler.getSlots(); _idx++) {
-						ItemStack itemstackiterator = _modHandler.getStackInSlot(_idx).copy();
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+					for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = itemstackiterator;
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -72,7 +72,7 @@ public class EntityAttackedProcedure {
 		}
 		if (sourceentity instanceof Player || sourceentity instanceof ServerPlayer) {
 			if (sourceentity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis) {
-				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:arthritis_death")))), 1);
+				sourceentity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:arthritis_death")))), 1);
 			}
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).accumulated_rizz >= 96) {
 				{

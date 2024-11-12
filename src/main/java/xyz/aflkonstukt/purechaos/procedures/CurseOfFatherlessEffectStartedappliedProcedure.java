@@ -37,31 +37,31 @@ public class CurseOfFatherlessEffectStartedappliedProcedure {
 			_player.displayClientMessage(Component.literal(
 					"Woah, it looks like you no longer have a father figure?! You are now unloved which means that you will have to drink alcohol or do meth every 5 minutes to avoid being depressed, and sometimes will get random panic attacks out of nowhere! You also have social anxiety which makes you get a panic attack whenever you look at a player or a villager. You need to do somehow make your father come back or you will be stuck like this forever. All of your tools also got downgraded to wooden, and your armor to chainmail, because well fuck you!"),
 					false);
-		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-			for (int _idx = 0; _idx < _modHandler.getSlots(); _idx++) {
-				ItemStack itemstackiterator = _modHandler.getStackInSlot(_idx).copy();
-				if (itemstackiterator.is(ItemTags.create(new ResourceLocation("purechaos:axes_above_wood")))) {
+		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+			for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+				ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("purechaos:axes_above_wood")))) {
 					itemstackiterator.shrink(1);
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.WOODEN_AXE).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-				} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("purechaos:pickaxes_above_wood")))) {
+				} else if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("purechaos:pickaxes_above_wood")))) {
 					itemstackiterator.shrink(1);
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.WOODEN_PICKAXE).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-				} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("purechaos:shovels_above_wood")))) {
+				} else if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("purechaos:shovels_above_wood")))) {
 					itemstackiterator.shrink(1);
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.WOODEN_SHOVEL).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-				} else if (itemstackiterator.is(ItemTags.create(new ResourceLocation("purechaos:hoes_above_wood")))) {
+				} else if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("purechaos:hoes_above_wood")))) {
 					itemstackiterator.shrink(1);
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = new ItemStack(Items.WOODEN_HOE).copy();

@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -40,6 +40,7 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": -2,
     "saturation": -20.0,

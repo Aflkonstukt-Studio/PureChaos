@@ -35,9 +35,9 @@ public class MoyaiBlock extends FallingBlock {
 
 	public MoyaiBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM)
-				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:vine_boom"))))
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:vine_boom")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:vine_boom")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:vine_boom")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:vine_boom")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:vine_boom"))))
 				.strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
@@ -69,14 +69,15 @@ public class MoyaiBlock extends FallingBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(FACING);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH);
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+			return super.getStateForPlacement(context).setValue(FACING, Direction.NORTH);
+		return super.getStateForPlacement(context).setValue(FACING, context.getClickedFace());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

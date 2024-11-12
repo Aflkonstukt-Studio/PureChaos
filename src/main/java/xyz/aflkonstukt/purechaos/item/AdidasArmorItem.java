@@ -35,10 +35,10 @@ public abstract class AdidasArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 5);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 5);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("purechaos:amogus")),
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("purechaos:amogus")),
 					() -> Ingredient.of(new ItemStack(PurechaosModBlocks.ADIDAS_BLOCK.get()), new ItemStack(PurechaosModBlocks.SOUTH.get()), new ItemStack(PurechaosModBlocks.COMUNISAM_BLOCK.get())),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("purechaos:adidas"))), 9f, 0f);
-			registerHelper.register(new ResourceLocation("purechaos:adidas_armor"), armorMaterial);
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:adidas"))), 9f, 0f);
+			registerHelper.register(ResourceLocation.parse("purechaos:adidas_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

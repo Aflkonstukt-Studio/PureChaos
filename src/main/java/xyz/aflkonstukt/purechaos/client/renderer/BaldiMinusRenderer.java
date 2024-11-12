@@ -15,6 +15,6 @@ public class BaldiMinusRenderer extends MobRenderer<BaldiMinusEntity, Modelbaldi
 
 	@Override
 	public ResourceLocation getTextureLocation(BaldiMinusEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/texture.png");
 	}
 }

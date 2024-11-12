@@ -18,6 +18,6 @@ public class AdolfHitlerRenderer extends HumanoidMobRenderer<AdolfHitlerEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(AdolfHitlerEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/adolf.png");
+		return ResourceLocation.parse("purechaos:textures/entities/adolf.png");
 	}
 }

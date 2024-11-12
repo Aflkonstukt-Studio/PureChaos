@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "block",
   "definition": {
     "texture": "puffsblock",
@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Puffs Block",
     "specialInformation": {
       "fixedValue": []

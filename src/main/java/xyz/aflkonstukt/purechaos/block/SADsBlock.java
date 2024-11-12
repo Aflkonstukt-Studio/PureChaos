@@ -4,7 +4,7 @@ package xyz.aflkonstukt.purechaos.block;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.block.entity.SADsBlockEntity;
 
-import net.neoforged.neoforge.common.IPlantable;
+import net.neoforged.neoforge.common.util.TriState;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -45,8 +45,8 @@ public class SADsBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, IPlantable plantable) {
-		return true;
+	public TriState canSustainPlant(BlockState state, BlockGetter world, BlockPos pos, Direction direction, BlockState plant) {
+		return TriState.TRUE;
 	}
 
 	@Override

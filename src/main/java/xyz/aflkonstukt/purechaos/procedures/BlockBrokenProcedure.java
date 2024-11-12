@@ -48,7 +48,7 @@ public class BlockBrokenProcedure {
 			}
 		}.checkGamemode(entity)) {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).arthritis) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:arthritis_death")))), 1);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:arthritis_death")))), 1);
 			} else {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) <= 3) {
 					{

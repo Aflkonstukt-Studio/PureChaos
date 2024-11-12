@@ -39,7 +39,7 @@ public class GlowItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		GlowRightclickedProcedure.execute(entity, ar.getObject());
+		GlowRightclickedProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 }

@@ -2,13 +2,13 @@
 package xyz.aflkonstukt.purechaos.item;
 
 import xyz.aflkonstukt.purechaos.procedures.FASTTOPASSRightclickedProcedure;
+import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -16,14 +16,15 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 
 import java.util.List;
 
-public class FASTTOPASSItem extends RecordItem {
+public class FASTTOPASSItem extends Item {
 	public FASTTOPASSItem() {
-		super(0, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ahdude")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2360);
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "fasttopass"))));
 	}
 
 	@Override

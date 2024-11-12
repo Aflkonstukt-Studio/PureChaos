@@ -29,7 +29,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record CheatGUIButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
 
-	public static final Type<CheatGUIButtonMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "cheat_gui_buttons"));
+	public static final Type<CheatGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "cheat_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, CheatGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CheatGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

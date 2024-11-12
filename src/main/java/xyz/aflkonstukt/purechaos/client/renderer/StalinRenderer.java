@@ -18,6 +18,6 @@ public class StalinRenderer extends HumanoidMobRenderer<StalinEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(StalinEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/40f8760138e98a7502de38e2ff51f5e80e3806dc.png");
+		return ResourceLocation.parse("purechaos:textures/entities/40f8760138e98a7502de38e2ff51f5e80e3806dc.png");
 	}
 }

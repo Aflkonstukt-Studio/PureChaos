@@ -4,7 +4,7 @@ package xyz.aflkonstukt.purechaos.entity;
 import xyz.aflkonstukt.purechaos.procedures.SurfaceEntitySpawningConditionProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.EventHooks;
 
 import net.minecraft.world.phys.Vec3;
@@ -51,7 +51,7 @@ public class CursedDogEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(3, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(4, new OwnerHurtTargetGoal(this));
@@ -61,12 +61,12 @@ public class CursedDogEntity extends TamableAnimal {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	@Override
@@ -156,13 +156,13 @@ public class CursedDogEntity extends TamableAnimal {
 		super.travel(dir);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.CURSED_DOG.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

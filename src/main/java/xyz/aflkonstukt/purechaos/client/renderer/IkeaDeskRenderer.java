@@ -15,6 +15,6 @@ public class IkeaDeskRenderer extends MobRenderer<IkeaDeskEntity, Modelikea_desk
 
 	@Override
 	public ResourceLocation getTextureLocation(IkeaDeskEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/ikea_desk_texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/ikea_desk_texture.png");
 	}
 }

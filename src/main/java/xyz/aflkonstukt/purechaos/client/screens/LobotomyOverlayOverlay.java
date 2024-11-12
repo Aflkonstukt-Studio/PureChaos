@@ -44,7 +44,7 @@ public class LobotomyOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (LobotomyOverlayDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/lobotomy_icepick.png"), w / 2 + -214, h / 2 + -173, 0, 0, 430, 346, 430, 346);
+			event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/lobotomy_icepick.png"), w / 2 + -214, h / 2 + -173, 0, 0, 430, 346, 430, 346);
 
 		}
 		RenderSystem.depthMask(true);

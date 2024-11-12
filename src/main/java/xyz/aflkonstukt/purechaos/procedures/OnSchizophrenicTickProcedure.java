@@ -50,9 +50,9 @@ public class OnSchizophrenicTickProcedure {
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"execute as @e[type=!minecraft:player ] at @s run tp @s ~ ~ ~ facing entity @p[distance=..30]");
 			if (Mth.nextInt(RandomSource.create(), 1, 10000) >= 9990) {
-				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-					for (int _idx = 0; _idx < _modHandler.getSlots(); _idx++) {
-						ItemStack itemstackiterator = _modHandler.getStackInSlot(_idx).copy();
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+					for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
 						itemstack_slot = itemstack_slot + 1;
 						if (Mth.nextInt(RandomSource.create(), 1, 100) >= 80) {
 							remove_item = true;
@@ -68,9 +68,9 @@ public class OnSchizophrenicTickProcedure {
 					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:ping")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:ping")), SoundSource.NEUTRAL, 1, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:ping")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 				}

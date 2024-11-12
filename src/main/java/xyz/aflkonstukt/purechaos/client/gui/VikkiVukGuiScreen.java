@@ -45,7 +45,7 @@ public class VikkiVukGuiScreen extends AbstractContainerScreen<VikkiVukGuiMenu> 
 		return textstate;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/vikki_vuk_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("purechaos:textures/screens/vikki_vuk_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

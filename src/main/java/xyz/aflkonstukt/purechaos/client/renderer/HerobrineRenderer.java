@@ -18,6 +18,6 @@ public class HerobrineRenderer extends HumanoidMobRenderer<HerobrineEntity, Huma
 
 	@Override
 	public ResourceLocation getTextureLocation(HerobrineEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/herobrine.png");
+		return ResourceLocation.parse("purechaos:textures/entities/herobrine.png");
 	}
 }

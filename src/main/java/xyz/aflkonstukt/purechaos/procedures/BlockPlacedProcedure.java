@@ -1,8 +1,6 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.neoforged.neoforge.common.PlantType;
-import net.neoforged.neoforge.common.IPlantable;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -28,7 +26,7 @@ public class BlockPlacedProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if (world.getBlockState(BlockPos.containing(x, y, z)).getBlock() instanceof IPlantable _plant0 && _plant0.getPlantType(world, BlockPos.containing(x, y, z)) == PlantType.PLAINS) {
+		if (false) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.BEE.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {

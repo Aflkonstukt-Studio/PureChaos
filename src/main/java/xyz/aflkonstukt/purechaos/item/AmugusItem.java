@@ -34,9 +34,9 @@ public abstract class AmugusItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("purechaos:amogus")), () -> Ingredient.of(new ItemStack(Blocks.DIRT)), List.of(new ArmorMaterial.Layer(new ResourceLocation("purechaos:dgfdgfdgfdgfdgdgfamoguws"))),
-					0f, 0f);
-			registerHelper.register(new ResourceLocation("purechaos:amugus"), armorMaterial);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("purechaos:amogus")), () -> Ingredient.of(new ItemStack(Blocks.DIRT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:dgfdgfdgfdgfdgdgfamoguws"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("purechaos:amugus"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

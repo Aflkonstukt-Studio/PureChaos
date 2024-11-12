@@ -65,94 +65,94 @@ public class HealthinessOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthinessBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_empty.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness10FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness9FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness8FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness7FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness6FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness5FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness4FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness3FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness2FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness1FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_full.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_full.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness10HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 10, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness9HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 18, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness8HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 26, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness7HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 34, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness6HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 42, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness5HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 50, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness4HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 58, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness3HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 66, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness2HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 74, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 			if (ShowHealthiness1HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/healthiness_half.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/healthiness_half.png"), w / 2 + 82, h - 58, 0, 0, 7, 8, 7, 8);
 			}
 		}
 		RenderSystem.depthMask(true);

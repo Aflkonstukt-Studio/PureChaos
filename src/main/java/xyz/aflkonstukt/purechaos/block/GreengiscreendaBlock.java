@@ -15,9 +15,9 @@ import net.minecraft.core.BlockPos;
 public class GreengiscreendaBlock extends Block {
 	public GreengiscreendaBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM)
-				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:fu-k")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:dudeshutt")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:dudeshutt")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:dudeshutt")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:dudeshutt"))))
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:fu-k")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:dudeshutt")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:dudeshutt")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:dudeshutt")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:dudeshutt"))))
 				.strength(1f, 10f));
 	}
 

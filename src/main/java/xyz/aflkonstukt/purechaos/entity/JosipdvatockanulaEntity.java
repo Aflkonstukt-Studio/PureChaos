@@ -7,7 +7,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 
 import net.neoforged.neoforge.fluids.FluidType;
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.phys.Vec3;
@@ -38,6 +38,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -92,29 +93,29 @@ public class JosipdvatockanulaEntity extends Monster {
 		return super.getPassengerRidingPosition(entity).add(0, -0.35F, 0);
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(PurechaosModItems.CORRUPTSTAFF.get()));
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:redacted"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:redacted"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.cow.step")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.cow.step")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.magma_cube.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.magma_cube.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:jumpscare"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:jumpscare"));
 	}
 
 	@Override
@@ -166,11 +167,6 @@ public class JosipdvatockanulaEntity extends Monster {
 	}
 
 	@Override
-	public boolean canChangeDimensions() {
-		return false;
-	}
-
-	@Override
 	public void startSeenByPlayer(ServerPlayer player) {
 		super.startSeenByPlayer(player);
 		this.bossInfo.addPlayer(player);
@@ -202,13 +198,13 @@ public class JosipdvatockanulaEntity extends Monster {
 		this.setNoGravity(true);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.JOSIPDVATOCKANULA.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return JosipdvatockanulaNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -14,8 +14,6 @@ import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
-import java.util.HashMap;
-
 @EventBusSubscriber
 public class EventTickProcedure {
 	@SubscribeEvent
@@ -28,155 +26,40 @@ public class EventTickProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		if (((new Object() {
-			public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-				Vec3 vec3 = hashMap.get(key);
-				return vec3 == null ? Vec3.ZERO : vec3;
-			}
-		}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() > 20 && ((new Object() {
-			public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-				Vec3 vec3 = hashMap.get(key);
-				return vec3 == null ? Vec3.ZERO : vec3;
-			}
-		}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() <= 200) {
-			if (PurechaosModVariables.WorldVariables.get(world).meteor_announce >= 20) {
+		if (!PurechaosModVariables.WorldVariables.get(world).meteor.isEmpty()) {
+			if ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() > 20 && (PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() <= 200) {
+				if (PurechaosModVariables.WorldVariables.get(world).meteor_announce >= 20) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList()
+								.broadcastSystemMessage(Component.literal(("\u00A74Meteor inbound at \u00A72" + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).x()) + ", "
+										+ Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).y()) + ", " + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).z())
+										+ " \u00A74with the blast radius of " + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y()) + " blocks. It will go kaboom in "
+										+ ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() / 20 >= 60
+												? Math.floor(((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() / 20) / 60)
+												: Math.floor((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() / 20))
+										+ ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() / 20 >= 60 ? " minutes." : " seconds."))), false);
+					PurechaosModVariables.WorldVariables.get(world).meteor_announce = 0;
+					PurechaosModVariables.WorldVariables.get(world).syncData(world);
+				} else {
+					PurechaosModVariables.WorldVariables.get(world).meteor_announce = PurechaosModVariables.WorldVariables.get(world).meteor_announce + 1;
+					PurechaosModVariables.WorldVariables.get(world).syncData(world);
+				}
+				PurechaosModVariables.WorldVariables.get(world).meteor.put("details",
+						(new Vec3(((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() - 1), ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y()), 0)));
+			} else if ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() <= 20 && (PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() > 0) {
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, ((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).x()), ((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).y()),
+							((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).z()), (float) (PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y(), Level.ExplosionInteraction.BLOCK);
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74Meteor inbound at \u00A72" + Math.round(((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).x()) + ", " + Math.round(((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).y()) + ", " + Math.round(((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).z()) + " \u00A74with the blast radius of " + Math.round(((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y()) + " blocks. It will go kaboom in " + (((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() / 20 >= 60 ? Math.floor((((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() / 20) / 60) : Math.floor(((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() / 20)) + (((new Object() {
-						public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-							Vec3 vec3 = hashMap.get(key);
-							return vec3 == null ? Vec3.ZERO : vec3;
-						}
-					}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() / 20 >= 60 ? " minutes." : " seconds."))), false);
-				PurechaosModVariables.WorldVariables.get(world).meteor_announce = 0;
-				PurechaosModVariables.WorldVariables.get(world).syncData(world);
-			} else {
-				PurechaosModVariables.WorldVariables.get(world).meteor_announce = PurechaosModVariables.WorldVariables.get(world).meteor_announce + 1;
-				PurechaosModVariables.WorldVariables.get(world).syncData(world);
+					world.getServer().getPlayerList()
+							.broadcastSystemMessage(Component.literal(("\u00A74Meteor exploded at \u00A72" + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).x()) + ", "
+									+ Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).y()) + ", " + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("epos")).z())
+									+ " \u00A74with the blast radius of " + Math.round((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y()))), false);
+				PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3(0, ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y()), 0)));
+			} else if ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() > 200) {
+				PurechaosModVariables.WorldVariables.get(world).meteor.put("details",
+						(new Vec3(((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() - 1), ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).y()), 0)));
 			}
-			PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3((((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() - 1), (((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y()), 0)));
-		} else if (((new Object() {
-			public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-				Vec3 vec3 = hashMap.get(key);
-				return vec3 == null ? Vec3.ZERO : vec3;
-			}
-		}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() <= 20 && ((new Object() {
-			public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-				Vec3 vec3 = hashMap.get(key);
-				return vec3 == null ? Vec3.ZERO : vec3;
-			}
-		}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() > 0) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, (((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).x()), (((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).y()), (((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).z()), (float) ((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y(), Level.ExplosionInteraction.BLOCK);
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74Meteor exploded at \u00A72" + Math.round(((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).x()) + ", " + Math.round(((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).y()) + ", " + Math.round(((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "epos")).z()) + " \u00A74with the blast radius of " + Math.round(((new Object() {
-					public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-						Vec3 vec3 = hashMap.get(key);
-						return vec3 == null ? Vec3.ZERO : vec3;
-					}
-				}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y()))), false);
-			PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3(0, (((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y()), 0)));
-		} else if (((new Object() {
-			public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-				Vec3 vec3 = hashMap.get(key);
-				return vec3 == null ? Vec3.ZERO : vec3;
-			}
-		}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() > 200) {
-			PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3((((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() - 1), (((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).y()), 0)));
 		}
 	}
 }

@@ -28,7 +28,7 @@ public class AlmondWaterPlayerFinishesUsingItemProcedure {
 			_vars.sanity = 100;
 			_vars.syncPlayerVariables(entity);
 		}
-		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"))) {
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:backrooms_dimension"))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.disable_backrooms = true;

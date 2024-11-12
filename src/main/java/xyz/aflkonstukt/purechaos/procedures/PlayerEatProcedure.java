@@ -45,10 +45,10 @@ public class PlayerEatProcedure {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(PurechaosModGameRules.VEGANISM)) {
-			if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:meat")))) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("purechaos:meat")))) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("YOU'RE SUPPOSED TO BE VEGAN!"), false);
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:vegan_death")))), 10000);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:vegan_death")))), 10000);
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
@@ -96,26 +96,26 @@ public class PlayerEatProcedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:dry_foods")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("purechaos:dry_foods")))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst - Mth.nextInt(RandomSource.create(), 5, 15);
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:juicy_foods")))) {
+		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("purechaos:juicy_foods")))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.thirst = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).thirst + Mth.nextInt(RandomSource.create(), 5, 15);
 				_vars.syncPlayerVariables(entity);
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:unhealthy_foods")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("purechaos:unhealthy_foods")))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.healthiness = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).healthiness - Mth.nextInt(RandomSource.create(), 5, 15);
 				_vars.syncPlayerVariables(entity);
 			}
-		} else if (itemstack.is(ItemTags.create(new ResourceLocation("purechaos:healthy_foods")))) {
+		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("purechaos:healthy_foods")))) {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 				_vars.healthiness = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).healthiness + 10;

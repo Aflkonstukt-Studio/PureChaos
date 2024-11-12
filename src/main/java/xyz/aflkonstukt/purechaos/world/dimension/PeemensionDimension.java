@@ -26,7 +26,7 @@ public class PeemensionDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:peemension"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:peemension"), customEffect);
 		}
 	}
 }

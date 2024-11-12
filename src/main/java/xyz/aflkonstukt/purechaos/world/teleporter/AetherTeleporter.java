@@ -4,27 +4,19 @@ package xyz.aflkonstukt.purechaos.world.teleporter;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
-import net.neoforged.neoforge.common.util.ITeleporter;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.portal.PortalInfo;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.border.WorldBorder;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.NetherPortalBlock;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.world.entity.ai.village.poi.PoiRecord;
 import net.minecraft.world.entity.ai.village.poi.PoiManager;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.util.Mth;
-import net.minecraft.server.level.TicketType;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
@@ -33,50 +25,38 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.BlockUtil;
 
-import java.util.function.Function;
 import java.util.Optional;
 import java.util.Comparator;
 
 import com.google.common.collect.ImmutableSet;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public class AetherTeleporter implements ITeleporter {
-	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("aether_portal", Vec3i::compareTo, 300);
+public class AetherTeleporter {
 	public static Holder<PoiType> poi = null;
 
 	@SubscribeEvent
 	public static void registerPointOfInterest(RegisterEvent event) {
 		event.register(Registries.POINT_OF_INTEREST_TYPE, registerHelper -> {
 			PoiType poiType = new PoiType(ImmutableSet.copyOf(PurechaosModBlocks.AETHER_PORTAL.get().getStateDefinition().getPossibleStates()), 0, 1);
-			registerHelper.register(new ResourceLocation("purechaos:aether_portal"), poiType);
+			registerHelper.register(ResourceLocation.parse("purechaos:aether_portal"), poiType);
 			poi = BuiltInRegistries.POINT_OF_INTEREST_TYPE.wrapAsHolder(poiType);
 		});
 	}
 
 	private final ServerLevel level;
-	private final BlockPos entityEnterPos;
 
-	public AetherTeleporter(ServerLevel worldServer, BlockPos entityEnterPos) {
-		this.level = worldServer;
-		this.entityEnterPos = entityEnterPos;
+	public AetherTeleporter(ServerLevel level) {
+		this.level = level;
 	}
 
-	public Optional<BlockUtil.FoundRectangle> findPortalAround(BlockPos p_192986_, boolean p_192987_, WorldBorder p_192988_) {
+	public Optional<BlockPos> findClosestPortalPosition(BlockPos p_352378_, boolean p_352309_, WorldBorder p_352374_) {
 		PoiManager poimanager = this.level.getPoiManager();
-		int i = p_192987_ ? 16 : 128;
-		poimanager.ensureLoadedAndValid(this.level, p_192986_, i);
-		Optional<PoiRecord> optional = poimanager.getInSquare(p_230634_ -> p_230634_.is(poi.unwrapKey().get()), p_192986_, i, PoiManager.Occupancy.ANY).filter(p_192981_ -> p_192988_.isWithinBounds(p_192981_.getPos()))
-				.sorted(Comparator.<PoiRecord>comparingDouble(p_192984_ -> p_192984_.getPos().distSqr(p_192986_)).thenComparingInt(p_192992_ -> p_192992_.getPos().getY()))
-				.filter(p_192990_ -> this.level.getBlockState(p_192990_.getPos()).hasProperty(BlockStateProperties.HORIZONTAL_AXIS)).findFirst();
-		return optional.map(p_192975_ -> {
-			BlockPos blockpos = p_192975_.getPos();
-			this.level.getChunkSource().addRegionTicket(CUSTOM_PORTAL, new ChunkPos(blockpos), 3, blockpos);
-			BlockState blockstate = this.level.getBlockState(blockpos);
-			return BlockUtil.getLargestRectangleAround(blockpos, blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS), 21, Direction.Axis.Y, 21, p_192978_ -> this.level.getBlockState(p_192978_) == blockstate);
-		});
+		int i = p_352309_ ? 16 : 128;
+		poimanager.ensureLoadedAndValid(this.level, p_352378_, i);
+		return poimanager.getInSquare(p_230634_ -> p_230634_.is(poi.unwrapKey().get()), p_352378_, i, PoiManager.Occupancy.ANY).map(PoiRecord::getPos).filter(p_352374_::isWithinBounds)
+				.filter(p_352047_ -> this.level.getBlockState(p_352047_).hasProperty(BlockStateProperties.HORIZONTAL_AXIS)).min(Comparator.<BlockPos>comparingDouble(p_352046_ -> p_352046_.distSqr(p_352378_)).thenComparingInt(Vec3i::getY));
 	}
 
 	public Optional<BlockUtil.FoundRectangle> createPortal(BlockPos p_77667_, Direction.Axis p_77668_) {
@@ -87,13 +67,13 @@ public class AetherTeleporter implements ITeleporter {
 		BlockPos blockpos1 = null;
 		WorldBorder worldborder = this.level.getWorldBorder();
 		int i = Math.min(this.level.getMaxBuildHeight(), this.level.getMinBuildHeight() + this.level.getLogicalHeight()) - 1;
+		int j = 1;
 		BlockPos.MutableBlockPos blockpos$mutableblockpos = p_77667_.mutable();
 		for (BlockPos.MutableBlockPos blockpos$mutableblockpos1 : BlockPos.spiralAround(p_77667_, 16, Direction.EAST, Direction.SOUTH)) {
-			int j = Math.min(i, this.level.getHeight(Heightmap.Types.MOTION_BLOCKING, blockpos$mutableblockpos1.getX(), blockpos$mutableblockpos1.getZ()));
-			int k = 1;
+			int k = Math.min(i, this.level.getHeight(Heightmap.Types.MOTION_BLOCKING, blockpos$mutableblockpos1.getX(), blockpos$mutableblockpos1.getZ()));
 			if (worldborder.isWithinBounds(blockpos$mutableblockpos1) && worldborder.isWithinBounds(blockpos$mutableblockpos1.move(direction, 1))) {
 				blockpos$mutableblockpos1.move(direction.getOpposite(), 1);
-				for (int l = j; l >= this.level.getMinBuildHeight(); l--) {
+				for (int l = k; l >= this.level.getMinBuildHeight(); l--) {
 					blockpos$mutableblockpos1.setY(l);
 					if (this.canPortalReplaceBlock(blockpos$mutableblockpos1)) {
 						int i1 = l;
@@ -131,11 +111,9 @@ public class AetherTeleporter implements ITeleporter {
 			if (i2 < k1) {
 				return Optional.empty();
 			}
-			blockpos = new BlockPos(p_77667_.getX(), Mth.clamp(p_77667_.getY(), k1, i2), p_77667_.getZ()).immutable();
+			blockpos = new BlockPos(p_77667_.getX() - direction.getStepX() * 1, Mth.clamp(p_77667_.getY(), k1, i2), p_77667_.getZ() - direction.getStepZ() * 1).immutable();
+			blockpos = worldborder.clampToBounds(blockpos);
 			Direction direction1 = direction.getClockWise();
-			if (!worldborder.isWithinBounds(blockpos)) {
-				return Optional.empty();
-			}
 			for (int i3 = -1; i3 < 2; i3++) {
 				for (int j3 = 0; j3 < 2; j3++) {
 					for (int k3 = -1; k3 < 3; k3++) {
@@ -179,62 +157,6 @@ public class AetherTeleporter implements ITeleporter {
 			}
 		}
 		return true;
-	}
-
-	@Override
-	public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel server, float yaw, Function<Boolean, Entity> repositionEntity) {
-		PortalInfo portalinfo = getPortalInfo(entity, server);
-		if (entity instanceof ServerPlayer player) {
-			player.setServerLevel(server);
-			server.addDuringPortalTeleport(player);
-			player.connection.teleport(portalinfo.pos.x, portalinfo.pos.y, portalinfo.pos.z, portalinfo.yRot, portalinfo.xRot);
-			player.connection.resetPosition();
-			CriteriaTriggers.CHANGED_DIMENSION.trigger(player, currentWorld.dimension(), server.dimension());
-			return entity;
-		} else {
-			Entity entityNew = entity.getType().create(server);
-			if (entityNew != null) {
-				entityNew.restoreFrom(entity);
-				entityNew.moveTo(portalinfo.pos.x, portalinfo.pos.y, portalinfo.pos.z, portalinfo.yRot, entityNew.getXRot());
-				entityNew.setDeltaMovement(portalinfo.speed);
-				server.addDuringTeleport(entityNew);
-			}
-			return entityNew;
-		}
-	}
-
-	private PortalInfo getPortalInfo(Entity entity, ServerLevel server) {
-		WorldBorder worldborder = server.getWorldBorder();
-		double d0 = DimensionType.getTeleportationScale(entity.level().dimensionType(), server.dimensionType());
-		BlockPos blockpos1 = worldborder.clampToBounds(entity.getX() * d0, entity.getY(), entity.getZ() * d0);
-		return this.getExitPortal(entity, blockpos1, worldborder).map(repositioner -> {
-			BlockState blockstate = entity.level().getBlockState(this.entityEnterPos);
-			Direction.Axis direction$axis;
-			Vec3 vector3d;
-			if (blockstate.hasProperty(BlockStateProperties.HORIZONTAL_AXIS)) {
-				direction$axis = blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS);
-				BlockUtil.FoundRectangle teleportationrepositioner$result = BlockUtil.getLargestRectangleAround(this.entityEnterPos, direction$axis, 21, Direction.Axis.Y, 21, pos -> entity.level().getBlockState(pos) == blockstate);
-				vector3d = AetherPortalShape.getRelativePosition(teleportationrepositioner$result, direction$axis, entity.position(), entity.getDimensions(entity.getPose()));
-			} else {
-				direction$axis = Direction.Axis.X;
-				vector3d = new Vec3(0.5, 0, 0);
-			}
-			return AetherPortalShape.createPortalInfo(server, repositioner, direction$axis, vector3d, entity, entity.getDeltaMovement(), entity.getYRot(), entity.getXRot());
-		}).orElse(new PortalInfo(entity.position(), Vec3.ZERO, entity.getYRot(), entity.getXRot()));
-	}
-
-	protected Optional<BlockUtil.FoundRectangle> getExitPortal(Entity entity, BlockPos pos, WorldBorder worldBorder) {
-		Optional<BlockUtil.FoundRectangle> optional = this.findPortalAround(pos, false, worldBorder);
-		if (entity instanceof ServerPlayer) {
-			if (optional.isPresent()) {
-				return optional;
-			} else {
-				Direction.Axis direction$axis = entity.level().getBlockState(this.entityEnterPos).getOptionalValue(NetherPortalBlock.AXIS).orElse(Direction.Axis.X);
-				return this.createPortal(pos, direction$axis);
-			}
-		} else {
-			return optional;
-		}
 	}
 
 	private boolean canPortalReplaceBlock(BlockPos.MutableBlockPos pos) {

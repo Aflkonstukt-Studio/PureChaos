@@ -66,7 +66,7 @@ public class ConfirmCaptchaProcedure {
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entity.getDisplayName().getString() + " failed the captcha")), false);
 					} else {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:captcha_death")))), 999);
+						entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:captcha_death")))), 999);
 					}
 				} else {
 					{

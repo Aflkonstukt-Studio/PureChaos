@@ -44,7 +44,7 @@ public class BleachOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (BleachOverlayDisplayOverlayIngameProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/white_screen.png"), w / 2 + -765, h / 2 + -443, 0, 0, 1920, 1080, 1920, 1080);
+			event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/white_screen.png"), w / 2 + -765, h / 2 + -443, 0, 0, 1920, 1080, 1920, 1080);
 
 		}
 		RenderSystem.depthMask(true);

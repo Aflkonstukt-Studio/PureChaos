@@ -57,58 +57,58 @@ public class RizzBarOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowRizzBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_empty.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_empty.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull1DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull2DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull3DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull4DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull5DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzFull6DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_full.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_full.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf1DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 93, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf2DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 103, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf3DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 113, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf4DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 123, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf5DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 133, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 			if (RizzHalf6DisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/rizz_half.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/rizz_half.png"), w / 2 + 143, h - 33, 0, 0, 9, 9, 9, 9);
 			}
 		}
 		RenderSystem.depthMask(true);

@@ -26,7 +26,7 @@ public class PolandDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:poland"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:poland"), customEffect);
 		}
 	}
 }

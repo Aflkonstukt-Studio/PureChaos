@@ -14,7 +14,7 @@ public class RadiationPoisioningActiveTickConditionProcedure {
 		if (entity == null)
 			return;
 		PurechaosMod.queueServerWork(20, () -> {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:radiation_death")))), (float) 0.5);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:radiation_death")))), (float) 0.5);
 		});
 	}
 }

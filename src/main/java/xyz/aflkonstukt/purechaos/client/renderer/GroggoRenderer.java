@@ -15,6 +15,6 @@ public class GroggoRenderer extends MobRenderer<GroggoEntity, Modelgroggo<Groggo
 
 	@Override
 	public ResourceLocation getTextureLocation(GroggoEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/groggo.png");
+		return ResourceLocation.parse("purechaos:textures/entities/groggo.png");
 	}
 }

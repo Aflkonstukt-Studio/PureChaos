@@ -27,7 +27,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record VikkiVukGuiButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
 
-	public static final Type<VikkiVukGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "vikki_vuk_gui_buttons"));
+	public static final Type<VikkiVukGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "vikki_vuk_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, VikkiVukGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, VikkiVukGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

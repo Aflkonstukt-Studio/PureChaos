@@ -26,7 +26,7 @@ public class WoodDimensionDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:wood_dimension"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:wood_dimension"), customEffect);
 		}
 	}
 }

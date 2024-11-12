@@ -1,9 +1,14 @@
 
 package xyz.aflkonstukt.purechaos.fluid.types;
 
+import xyz.aflkonstukt.purechaos.init.PurechaosModFluidTypes;
+
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.common.SoundActions;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.BlockAndTintGetter;
@@ -13,18 +18,17 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
-import java.util.function.Consumer;
-
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class StaravodaFluidType extends FluidType {
 	public StaravodaFluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).canConvertToSource(true).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
-				.sound(SoundActions.BUCKET_EMPTY, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:amogus"))).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
+				.sound(SoundActions.BUCKET_EMPTY, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:amogus"))).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
-	@Override
-	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
-		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("purechaos:block/minecraft-water"), FLOWING_TEXTURE = new ResourceLocation("purechaos:block/minecraft-water");
+	@SubscribeEvent
+	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
+		event.registerFluidType(new IClientFluidTypeExtensions() {
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water");
 
 			@Override
 			public ResourceLocation getStillTexture() {
@@ -45,6 +49,6 @@ public class StaravodaFluidType extends FluidType {
 			public int getTintColor(FluidState state, BlockAndTintGetter world, BlockPos pos) {
 				return BiomeColors.getAverageWaterColor(world, pos) | 0xFF000000;
 			}
-		});
+		}, PurechaosModFluidTypes.STARAVODA_TYPE.get());
 	}
 }

@@ -15,6 +15,6 @@ public class SplankRenderer extends MobRenderer<SplankEntity, Modelsplank<Splank
 
 	@Override
 	public ResourceLocation getTextureLocation(SplankEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/splank_texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/splank_texture.png");
 	}
 }

@@ -86,7 +86,7 @@ public class AddictionManagerProcedure {
 			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).meth_addiction / 20 >= 1200) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Oh no, you didnt use your meth, you will now die :( (unless you're in creative)"), false);
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:addiction_death")))), 999);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:addiction_death")))), 999);
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 					_vars.meth_addiction = 0;
@@ -120,7 +120,7 @@ public class AddictionManagerProcedure {
 			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).alcohol_addiction / 20 >= 1200) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Oh no, you didnt drink alcohol, you will now die :( (unless you're in creative)"), false);
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:addiction_death")))), 999);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:addiction_death")))), 999);
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 					_vars.alcohol_addiction = 0;

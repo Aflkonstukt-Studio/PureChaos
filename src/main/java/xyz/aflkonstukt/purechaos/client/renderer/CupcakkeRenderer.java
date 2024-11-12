@@ -15,6 +15,6 @@ public class CupcakkeRenderer extends MobRenderer<CupcakkeEntity, Modelnextbot<C
 
 	@Override
 	public ResourceLocation getTextureLocation(CupcakkeEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/cupcakke.png");
+		return ResourceLocation.parse("purechaos:textures/entities/cupcakke.png");
 	}
 }

@@ -15,6 +15,6 @@ public class TPoseEntityRenderer extends MobRenderer<TPoseEntityEntity, Modeltpo
 
 	@Override
 	public ResourceLocation getTextureLocation(TPoseEntityEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/tpose_smth.png");
+		return ResourceLocation.parse("purechaos:textures/entities/tpose_smth.png");
 	}
 }

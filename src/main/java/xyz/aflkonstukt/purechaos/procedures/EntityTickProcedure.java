@@ -50,9 +50,9 @@ public class EntityTickProcedure {
 					_player.getAbilities().invulnerable = true;
 					_player.onUpdateAbilities();
 				}
-				if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:poland")))) {
+				if (!((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:poland")))) {
 					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-						ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:poland"));
+						ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:poland"));
 						if (_player.level().dimension() == destinationType)
 							return;
 						ServerLevel nextLevel = _player.server.getLevel(destinationType);

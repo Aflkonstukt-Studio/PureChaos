@@ -26,7 +26,7 @@ public class SusDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:sus"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:sus"), customEffect);
 		}
 	}
 }

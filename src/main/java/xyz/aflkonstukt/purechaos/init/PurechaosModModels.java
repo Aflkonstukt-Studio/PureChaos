@@ -52,8 +52,8 @@ public class PurechaosModModels {
 		event.registerLayerDefinition(Modeltpose_smth.LAYER_LOCATION, Modeltpose_smth::createBodyLayer);
 		event.registerLayerDefinition(Modeldog.LAYER_LOCATION, Modeldog::createBodyLayer);
 		event.registerLayerDefinition(Modelfireflies.LAYER_LOCATION, Modelfireflies::createBodyLayer);
-		event.registerLayerDefinition(Modelfish.LAYER_LOCATION, Modelfish::createBodyLayer);
 		event.registerLayerDefinition(Modeltrident.LAYER_LOCATION, Modeltrident::createBodyLayer);
+		event.registerLayerDefinition(Modelfish.LAYER_LOCATION, Modelfish::createBodyLayer);
 		event.registerLayerDefinition(Modelbaldi.LAYER_LOCATION, Modelbaldi::createBodyLayer);
 		event.registerLayerDefinition(Modelstroater.LAYER_LOCATION, Modelstroater::createBodyLayer);
 		event.registerLayerDefinition(Modelmoth.LAYER_LOCATION, Modelmoth::createBodyLayer);

@@ -26,7 +26,7 @@ public class AetherDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:aether"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:aether"), customEffect);
 		}
 	}
 }

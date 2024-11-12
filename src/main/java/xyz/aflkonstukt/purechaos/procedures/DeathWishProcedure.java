@@ -134,7 +134,7 @@ public class DeathWishProcedure {
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 				_level.addFreshEntity(entityToSpawn);
 			}
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:taken_home_death")))), 99999);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:taken_home_death")))), 99999);
 		}
 	}
 }

@@ -20,6 +20,6 @@ public class PackPriority {
 
     @SubscribeEvent
     public static void addPackFinders(AddPackFindersEvent event) {
-        event.addPackFinders(new ResourceLocation(PurechaosMod.MODID, "pmo"), PackType.CLIENT_RESOURCES, Component.literal("PMOs"), PackSource.BUILT_IN, true, Pack.Position.TOP);
+        event.addPackFinders(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "pmo"), PackType.CLIENT_RESOURCES, Component.literal("PMOs"), PackSource.BUILT_IN, true, Pack.Position.TOP);
     }
 }

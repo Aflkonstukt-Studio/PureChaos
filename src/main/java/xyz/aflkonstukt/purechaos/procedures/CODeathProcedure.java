@@ -18,6 +18,6 @@ public class CODeathProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 2400, 2, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2400, 1, false, false));
-		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:gassed_death")))), 3);
+		entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:gassed_death")))), 3);
 	}
 }

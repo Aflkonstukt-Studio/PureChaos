@@ -20,8 +20,8 @@ import java.util.List;
 public class FoodItem3Item extends Item {
 	public FoodItem3Item() {
 		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(-2).saturationModifier(-20f).alwaysEdible().build())
-				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
+				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}
 
 	@Override

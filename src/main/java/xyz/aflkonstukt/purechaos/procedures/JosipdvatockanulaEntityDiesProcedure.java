@@ -17,7 +17,7 @@ public class JosipdvatockanulaEntityDiesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide() && world.getServer() != null) {
 			BlockPos _bpLootTblWorld = BlockPos.containing(x, y, z);
-			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("purechaos:chests/kill_josipo_loot")))
+			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("purechaos:chests/kill_josipo_loot")))
 					.getRandomItems(new LootParams.Builder((ServerLevel) world).withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(_bpLootTblWorld)).withParameter(LootContextParams.BLOCK_STATE, world.getBlockState(_bpLootTblWorld))
 							.withOptionalParameter(LootContextParams.BLOCK_ENTITY, world.getBlockEntity(_bpLootTblWorld)).create(LootContextParamSets.EMPTY))) {
 				if (world instanceof ServerLevel _level) {

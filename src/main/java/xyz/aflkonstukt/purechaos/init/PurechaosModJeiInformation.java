@@ -17,7 +17,7 @@ import java.util.List;
 public class PurechaosModJeiInformation implements IModPlugin {
 	@Override
 	public ResourceLocation getPluginUid() {
-		return new ResourceLocation("purechaos:information");
+		return ResourceLocation.parse("purechaos:information");
 	}
 
 	@Override

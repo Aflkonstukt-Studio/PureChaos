@@ -65,94 +65,94 @@ public class ThirstBarOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirstBarProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_empty.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_empty.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst10FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst9FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst8FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst7FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst6FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst5FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst4FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst3FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst2FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst1FullProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_full.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_full.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst10HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 9, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst9HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 17, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst8HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 25, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst7HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 33, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst6HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 41, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst5HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 49, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst4HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 57, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst3HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 65, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst2HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 73, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 			if (ShowThirst1HalfProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/thirst_half.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/thirst_half.png"), w / 2 + 81, h - 49, 0, 0, 9, 9, 9, 9);
 			}
 		}
 		RenderSystem.depthMask(true);

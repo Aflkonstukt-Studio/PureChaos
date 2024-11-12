@@ -18,6 +18,6 @@ public class FBIRenderer extends HumanoidMobRenderer<FBIEntity, HumanoidModel<FB
 
 	@Override
 	public ResourceLocation getTextureLocation(FBIEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/fbi.png");
+		return ResourceLocation.parse("purechaos:textures/entities/fbi.png");
 	}
 }

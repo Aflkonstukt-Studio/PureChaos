@@ -15,6 +15,6 @@ public class YugoslaviaRenderer extends MobRenderer<YugoslaviaEntity, Modelnextb
 
 	@Override
 	public ResourceLocation getTextureLocation(YugoslaviaEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/squareoslavia.png");
+		return ResourceLocation.parse("purechaos:textures/entities/squareoslavia.png");
 	}
 }

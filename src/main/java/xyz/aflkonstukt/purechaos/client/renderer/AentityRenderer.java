@@ -22,18 +22,18 @@ public class AentityRenderer extends HumanoidMobRenderer<AentityEntity, Humanoid
 		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 		this.addLayer(new RenderLayer<AentityEntity, HumanoidModel<AentityEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("purechaos:textures/entities/rick_kurac.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/rick_kurac.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, AentityEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(AentityEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/char.png");
+		return ResourceLocation.parse("purechaos:textures/entities/char.png");
 	}
 }

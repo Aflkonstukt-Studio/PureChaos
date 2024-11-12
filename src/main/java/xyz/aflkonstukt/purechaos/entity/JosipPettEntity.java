@@ -6,7 +6,7 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
 import xyz.aflkonstukt.purechaos.init.PurechaosModEntities;
 import xyz.aflkonstukt.purechaos.init.PurechaosModBlocks;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
@@ -80,7 +80,7 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 2, (float) 10, false));
+		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 2, (float) 10));
 		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
 		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
@@ -106,12 +106,12 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	@Override
@@ -264,13 +264,13 @@ public class JosipPettEntity extends TamableAnimal implements RangedAttackMob {
 		this.setNoGravity(true);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.JOSIP_PETT.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

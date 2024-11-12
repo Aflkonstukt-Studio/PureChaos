@@ -18,6 +18,6 @@ public class RickAstleyRenderer extends HumanoidMobRenderer<RickAstleyEntity, Hu
 
 	@Override
 	public ResourceLocation getTextureLocation(RickAstleyEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/rickroll_skin.png");
+		return ResourceLocation.parse("purechaos:textures/entities/rickroll_skin.png");
 	}
 }

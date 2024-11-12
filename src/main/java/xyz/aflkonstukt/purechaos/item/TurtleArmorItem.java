@@ -32,8 +32,8 @@ public abstract class TurtleArmorItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(new ResourceLocation("purechaos:resturtle_"))), 0f, 0f);
-			registerHelper.register(new ResourceLocation("purechaos:turtle_armor"), armorMaterial);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:resturtle_"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("purechaos:turtle_armor"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

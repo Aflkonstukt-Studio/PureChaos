@@ -21,7 +21,7 @@ public class SendToBackroomsProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"));
+			ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:backrooms_dimension"));
 			if (_player.level().dimension() == destinationType)
 				return;
 			ServerLevel nextLevel = _player.server.getLevel(destinationType);

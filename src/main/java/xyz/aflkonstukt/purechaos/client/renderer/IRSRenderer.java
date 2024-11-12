@@ -18,6 +18,6 @@ public class IRSRenderer extends HumanoidMobRenderer<IRSEntity, HumanoidModel<IR
 
 	@Override
 	public ResourceLocation getTextureLocation(IRSEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/irs.png");
+		return ResourceLocation.parse("purechaos:textures/entities/irs.png");
 	}
 }

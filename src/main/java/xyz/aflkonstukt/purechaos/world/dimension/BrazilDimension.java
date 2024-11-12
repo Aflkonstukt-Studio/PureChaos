@@ -34,7 +34,7 @@ public class BrazilDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:brazil"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:brazil"), customEffect);
 		}
 	}
 
@@ -45,7 +45,7 @@ public class BrazilDimension {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:brazil"))) {
+		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:brazil"))) {
 			BrazilPlayerEntersDimensionProcedure.execute(world, x, y, z);
 		}
 	}

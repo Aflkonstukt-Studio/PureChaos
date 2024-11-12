@@ -48,7 +48,7 @@ public class WhenPlayerSleepProcedure {
 				_vars.syncPlayerVariables(entity);
 			}
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:nightmare_dimension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);

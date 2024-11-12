@@ -19,18 +19,18 @@ public class JosipPetRenderer extends MobRenderer<JosipPetEntity, Modeljosipmmar
 	public JosipPetRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modeljosipmmarket(context.bakeLayer(Modeljosipmmarket.LAYER_LOCATION)), 0.6f);
 		this.addLayer(new RenderLayer<JosipPetEntity, Modeljosipmmarket<JosipPetEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("purechaos:textures/entities/josip_pet_updated_do_not_remove.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/josip_pet_updated_do_not_remove.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, JosipPetEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(JosipPetEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/josip_pet_updated_do_not_remove.png");
+		return ResourceLocation.parse("purechaos:textures/entities/josip_pet_updated_do_not_remove.png");
 	}
 }

@@ -56,40 +56,40 @@ public class SpeedometerOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowSpeedometer1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_0.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_0.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer2Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_1.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_1.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_2.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_2.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer4Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_3.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_3.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer5Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_4.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_4.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer6Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_5.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_5.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer7Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_6.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_6.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer8Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_7.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_7.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer9Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_8.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_8.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer10Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_9.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_9.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer11Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_10.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_10.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 			if (ShowSpeedometer12Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/speedometer_11.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/speedometer_11.png"), w / 2 + -110, h - 19, 0, 0, 15, 15, 15, 15);
 			}
 		}
 		RenderSystem.depthMask(true);

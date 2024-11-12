@@ -70,7 +70,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 3) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:aether"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:aether"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -85,7 +85,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 4) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:wood_dimension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:wood_dimension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -100,7 +100,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 5) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:sus"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:sus"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -115,7 +115,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 6) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:peemension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:peemension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -130,7 +130,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 7) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:cyberspace"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:cyberspace"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -145,7 +145,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 8) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:brazil"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:brazil"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -160,7 +160,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 9) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:nightmare_dimension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);
@@ -175,7 +175,7 @@ public class CheatGUISwitchDimensionProcedure {
 			}
 		} else if (random_dimension == 10) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:backrooms_dimension"));
+				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:backrooms_dimension"));
 				if (_player.level().dimension() == destinationType)
 					return;
 				ServerLevel nextLevel = _player.server.getLevel(destinationType);

@@ -18,6 +18,6 @@ public class DreamRenderer extends HumanoidMobRenderer<DreamEntity, HumanoidMode
 
 	@Override
 	public ResourceLocation getTextureLocation(DreamEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/dream.png");
+		return ResourceLocation.parse("purechaos:textures/entities/dream.png");
 	}
 }

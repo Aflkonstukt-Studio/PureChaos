@@ -13,6 +13,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
@@ -25,7 +26,7 @@ public class AK47Item extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 72000;
 	}
 
@@ -44,6 +45,7 @@ public class AK47Item extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
 		AK47ShotProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}

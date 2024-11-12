@@ -30,10 +30,10 @@ public class MelatoninPillPlayerFinishesUsingItemProcedure {
 		if (Mth.nextInt(RandomSource.create(), (int) entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance, 100) >= 95) {
 			random_num = Mth.nextInt(RandomSource.create(), 1, 3);
 			if (random_num == 1) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("purechaos:heart_attack_death")))), 999);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("purechaos:heart_attack_death")))), 999);
 			} else if (random_num == 2) {
 				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"));
+					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:nightmare_dimension"));
 					if (_player.level().dimension() == destinationType)
 						return;
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);

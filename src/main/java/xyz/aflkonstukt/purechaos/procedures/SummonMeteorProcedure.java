@@ -11,8 +11,6 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.network.chat.Component;
 
-import java.util.HashMap;
-
 public class SummonMeteorProcedure {
 	public static void execute(LevelAccessor world, double x, double z, Entity entity, double radius, double time) {
 		if (entity == null)
@@ -22,12 +20,7 @@ public class SummonMeteorProcedure {
 		expx = Mth.nextInt(RandomSource.create(), (int) x, (int) (x + 100));
 		expz = Mth.nextInt(RandomSource.create(), (int) z, (int) (z + 100));
 		if (PurechaosModVariables.WorldVariables.get(world).meteor.size() != 0) {
-			if (((new Object() {
-				public Vec3 get(HashMap<String, Vec3> hashMap, String key) {
-					Vec3 vec3 = hashMap.get(key);
-					return vec3 == null ? Vec3.ZERO : vec3;
-				}
-			}).get(PurechaosModVariables.WorldVariables.get(world).meteor, "details")).x() == 0) {
+			if ((PurechaosModVariables.WorldVariables.get(world).meteor.get("details")).x() == 0) {
 				PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3(time, radius, 0)));
 				PurechaosModVariables.WorldVariables.get(world).meteor.put("epos", (new Vec3(expx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)), expz)));
 				if (!world.isClientSide() && world.getServer() != null)

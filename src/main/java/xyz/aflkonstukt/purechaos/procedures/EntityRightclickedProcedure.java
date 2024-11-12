@@ -72,7 +72,7 @@ public class EntityRightclickedProcedure {
 					}
 					if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("player")) {
 						if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-							ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:poland"));
+							ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:poland"));
 							if (_player.level().dimension() == destinationType)
 								return;
 							ServerLevel nextLevel = _player.server.getLevel(destinationType);

@@ -15,6 +15,6 @@ public class TridentRenderer extends MobRenderer<TridentEntity, Modeltrident<Tri
 
 	@Override
 	public ResourceLocation getTextureLocation(TridentEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/trident_texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/trident_texture.png");
 	}
 }

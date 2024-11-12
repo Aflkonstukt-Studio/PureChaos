@@ -65,7 +65,7 @@ public class AdGUIScreen extends AbstractContainerScreen<AdGUIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		if (ShowMelatoninADImageProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("purechaos:textures/screens/melatonin.png"), this.leftPos + 26, this.topPos + 27, 0, 0, 256, 128, 256, 128);
+			guiGraphics.blit(ResourceLocation.parse("purechaos:textures/screens/melatonin.png"), this.leftPos + 26, this.topPos + 27, 0, 0, 256, 128, 256, 128);
 		}
 		RenderSystem.disableBlend();
 	}

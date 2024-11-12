@@ -15,6 +15,6 @@ public class BlazRenderer extends MobRenderer<BlazEntity, Modelblaze<BlazEntity>
 
 	@Override
 	public ResourceLocation getTextureLocation(BlazEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/blaze_texture.png");
+		return ResourceLocation.parse("purechaos:textures/entities/blaze_texture.png");
 	}
 }

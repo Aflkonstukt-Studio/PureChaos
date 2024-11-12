@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "purechaos:rainbowrack",
+    "purechaos:rainbow_grass",
+    "minecraft:air",
+    "purechaos:backrooms_lvl_1_floor",
+    "minecraft:sculk",
+    "minecraft:stone",
+    "purechaos:cyber_block",
+    "purechaos:brazil_block",
+    "purechaos:sus_block",
+    "minecraft:netherrack",
+    "minecraft:grass_block",
+    "minecraft:oak_planks",
+    "purechaos:pee_block"
+  ]
+}

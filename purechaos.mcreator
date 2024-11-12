@@ -180,13 +180,13 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/PeeBlockBlock.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/pee_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/pee_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/pee_block.json",
           "src/main/resources/assets/purechaos/models/block/pee_block.json",
           "src/main/resources/assets/purechaos/blockstates/pee_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/entity/PeeBlockBlockEntity.java",
           "src/main/resources/assets/purechaos/models/item/pee_block.json",
-          "src/main/resources/data/purechaos/neoforge/biome_modifier/pee_block_biome_modifier.json"
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/pee_block_biome_modifier.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/pee_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -289,11 +289,11 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/PotatusBlock.java",
           "src/main/resources/data/purechaos/worldgen/configured_feature/potatus.json",
           "src/main/resources/assets/purechaos/models/item/potatus.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/potatus.json",
           "src/main/resources/assets/purechaos/blockstates/potatus.json",
           "src/main/resources/assets/purechaos/models/block/potatus.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/potatus_biome_modifier.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/potatus.json"
+          "src/main/resources/data/purechaos/worldgen/placed_feature/potatus.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/potatus.json"
         ]
       },
       "path": "~/Blocks/Plants"
@@ -330,7 +330,7 @@
       "registry_name": "spear_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/spear_recipe.json"
+          "src/main/resources/data/purechaos/recipe/spear_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -387,11 +387,11 @@
       "registry_name": "death",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/death.json",
           "src/main/resources/assets/purechaos/blockstates/death.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/death.json",
           "src/main/resources/assets/purechaos/models/block/death.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/death.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/death.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/DeathBlock.java",
           "src/main/resources/assets/purechaos/models/item/death.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/death_biome_modifier.json"
@@ -411,11 +411,11 @@
           "src/main/resources/assets/purechaos/models/block/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/sa_ds.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SADsBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/sa_ds.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/sa_ds.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/entity/SADsBlockEntity.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/sa_ds_biome_modifier.json",
-          "src/main/resources/assets/purechaos/blockstates/sa_ds.json"
+          "src/main/resources/assets/purechaos/blockstates/sa_ds.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/sa_ds.json"
         ]
       },
       "path": "~/Blocks"
@@ -444,11 +444,11 @@
         "files": [
           "src/main/resources/assets/purechaos/blockstates/emepee.json",
           "src/main/resources/assets/purechaos/models/item/emepee.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/emepee.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/emepee.json",
           "src/main/resources/assets/purechaos/models/block/emepee.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/emepee.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/EmepeeBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/emepee.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/emepee_biome_modifier.json"
         ]
       },
@@ -494,7 +494,7 @@
           "src/main/java/xyz/aflkonstukt/purechaos/block/SusBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/sus_block.json",
           "src/main/resources/assets/purechaos/models/item/sus_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/sus_block.json"
+          "src/main/resources/data/purechaos/loot_table/blocks/sus_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -660,9 +660,9 @@
         "files": [
           "src/main/resources/assets/purechaos/models/item/tlghd.json",
           "src/main/resources/assets/purechaos/models/block/tlghd.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/tlghd.json",
           "src/main/resources/assets/purechaos/blockstates/tlghd.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/tlghd.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/TLGHDBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -710,7 +710,7 @@
       "registry_name": "susord",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/susord.json"
+          "src/main/resources/data/purechaos/recipe/susord.json"
         ]
       },
       "path": "~/Recipes"
@@ -723,7 +723,7 @@
       "registry_name": "suschest",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/suschest.json"
+          "src/main/resources/data/purechaos/recipe/suschest.json"
         ]
       },
       "path": "~/Recipes"
@@ -736,7 +736,7 @@
       "registry_name": "sushead",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/sushead.json"
+          "src/main/resources/data/purechaos/recipe/sushead.json"
         ]
       },
       "path": "~/Recipes"
@@ -749,7 +749,7 @@
       "registry_name": "suslegs",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/suslegs.json"
+          "src/main/resources/data/purechaos/recipe/suslegs.json"
         ]
       },
       "path": "~/Recipes"
@@ -762,7 +762,7 @@
       "registry_name": "susboot",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/susboot.json"
+          "src/main/resources/data/purechaos/recipe/susboot.json"
         ]
       },
       "path": "~/Recipes"
@@ -854,11 +854,11 @@
       "registry_name": "green_plant",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/green_plant.json",
           "src/main/resources/assets/purechaos/models/block/green_plant.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/green_plant.json",
           "src/main/resources/assets/purechaos/blockstates/green_plant.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/green_plant.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/green_plant.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/green_plant_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/green_plant.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreenPlantBlock.java"
@@ -907,7 +907,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/item/fallgays.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/FallgaysItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/FallgaysItem.java",
+          "src/main/resources/data/purechaos/jukebox_song/fallgays.json"
         ]
       },
       "path": "~/Items/Discs"
@@ -936,7 +937,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/item/sasi_amangas.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/item/SasiAmangasItem.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/item/SasiAmangasItem.java",
+          "src/main/resources/data/purechaos/jukebox_song/sasi_amangas.json"
         ]
       },
       "path": "~/Items/Discs"
@@ -1052,7 +1054,7 @@
       "registry_name": "rssure_6t",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/rssure_6t.json"
+          "src/main/resources/data/purechaos/recipe/rssure_6t.json"
         ]
       },
       "path": "~/Recipes"
@@ -1065,7 +1067,7 @@
       "registry_name": "rec_8pe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/rec_8pe.json"
+          "src/main/resources/data/purechaos/recipe/rec_8pe.json"
         ]
       },
       "path": "~/Recipes"
@@ -1078,7 +1080,7 @@
       "registry_name": "structure_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/chests/structure_loot.json"
+          "src/main/resources/data/purechaos/loot_table/chests/structure_loot.json"
         ]
       },
       "path": "~/Structures"
@@ -1091,7 +1093,7 @@
       "registry_name": "kill_josipo_loot",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/chests/kill_josipo_loot.json"
+          "src/main/resources/data/purechaos/loot_table/chests/kill_josipo_loot.json"
         ]
       },
       "path": "~/Entities"
@@ -1193,7 +1195,9 @@
       "locked_code": false,
       "registry_name": "stuck",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/stuck.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -1205,7 +1209,7 @@
       "registry_name": "dirt_sword_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/dirt_sword_recipe.json"
+          "src/main/resources/data/purechaos/recipe/dirt_sword_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -1311,6 +1315,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1486,7 +1494,7 @@
       "registry_name": "emergency_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/emergency_recipe.json"
+          "src/main/resources/data/purechaos/recipe/emergency_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -1512,7 +1520,7 @@
       "registry_name": "beef_pants",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/beef_pants.json"
+          "src/main/resources/data/purechaos/recipe/beef_pants.json"
         ]
       },
       "path": "~/Recipes"
@@ -1612,6 +1620,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/item/scratest.json",
+          "src/main/resources/data/purechaos/jukebox_song/scratest.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/ScratestItem.java"
         ]
       },
@@ -1661,8 +1670,8 @@
           "src/main/resources/assets/purechaos/blockstates/youtube.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/youtube.json",
           "src/main/resources/assets/purechaos/models/block/youtube.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/youtube.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/youtube_biome_modifier.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/youtube.json",
           "src/main/resources/assets/purechaos/models/item/youtube.json"
         ]
       },
@@ -1681,9 +1690,9 @@
           "src/main/resources/assets/purechaos/models/block/plante.json",
           "src/main/resources/assets/purechaos/models/item/plante.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/plante_biome_modifier.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/plante.json",
           "src/main/resources/assets/purechaos/blockstates/plante.json",
-          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/plante.json"
+          "src/main/resources/data/purechaos/worldgen/configured_feature/plante.json"
         ]
       },
       "path": "~/Blocks/Plants"
@@ -1771,7 +1780,7 @@
       "registry_name": "water_cup_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/water_cup_recipe.json"
+          "src/main/resources/data/purechaos/recipe/water_cup_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -1817,7 +1826,7 @@
       "registry_name": "beef_chest",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/beef_chest.json"
+          "src/main/resources/data/purechaos/recipe/beef_chest.json"
         ]
       },
       "path": "~/Recipes"
@@ -1830,9 +1839,9 @@
       "registry_name": "rickroll_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/rickroll_block.json",
           "src/main/resources/assets/purechaos/blockstates/rickroll_block.json",
           "src/main/resources/assets/purechaos/models/block/rickroll_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/rickroll_block.json",
           "src/main/resources/assets/purechaos/models/item/rickroll_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RickrollBlockBlock.java"
         ]
@@ -1847,7 +1856,7 @@
       "registry_name": "beef_boots",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/beef_boots.json"
+          "src/main/resources/data/purechaos/recipe/beef_boots.json"
         ]
       },
       "path": "~/Recipes"
@@ -1873,7 +1882,7 @@
       "registry_name": "dipexrecipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/dipexrecipe.json"
+          "src/main/resources/data/purechaos/recipe/dipexrecipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -1886,7 +1895,7 @@
       "registry_name": "death_r",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/death_r.json"
+          "src/main/resources/data/purechaos/recipe/death_r.json"
         ]
       },
       "path": "~/Recipes"
@@ -1899,7 +1908,7 @@
       "registry_name": "beef_head",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/beef_head.json"
+          "src/main/resources/data/purechaos/recipe/beef_head.json"
         ]
       },
       "path": "~/Recipes"
@@ -1914,9 +1923,9 @@
         "files": [
           "src/main/resources/assets/purechaos/models/block/grave.json",
           "src/main/resources/assets/purechaos/models/item/grave.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/grave.json",
           "src/main/resources/assets/purechaos/blockstates/grave.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/grave.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/block/GraveBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -2086,7 +2095,7 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1lightBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1light.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1light.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1light.json"
@@ -2103,6 +2112,7 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/item/SSSRItem.java",
+          "src/main/resources/data/purechaos/jukebox_song/sssr.json",
           "src/main/resources/assets/purechaos/models/item/sssr.json"
         ]
       },
@@ -2184,10 +2194,10 @@
       "registry_name": "backrooms_lvl_1_wall",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/backrooms_lvl_1_wall.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1WallBlock.java",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_wall.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_wall.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_wall.json"
         ]
       },
@@ -2357,10 +2367,10 @@
       "registry_name": "brazil_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/brazil_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BrazilBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/brazil_block.json",
           "src/main/resources/assets/purechaos/models/item/brazil_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/brazil_block.json",
           "src/main/resources/assets/purechaos/models/block/brazil_block.json"
         ]
       },
@@ -2374,9 +2384,9 @@
       "registry_name": "nokia_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/nokia_block.json",
           "src/main/resources/assets/purechaos/models/block/nokia_block.json",
           "src/main/resources/assets/purechaos/blockstates/nokia_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/nokia_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/NokiaBlockBlock.java",
           "src/main/resources/assets/purechaos/models/item/nokia_block.json"
         ]
@@ -2437,7 +2447,7 @@
           "src/main/resources/assets/purechaos/models/item/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/blockstates/backrooms_lvl_1_floor.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsLvl1FloorBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_lvl_1_floor.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/backrooms_lvl_1_floor.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_lvl_1_floor.json"
         ]
       },
@@ -2451,8 +2461,8 @@
       "registry_name": "south",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/south.json",
           "src/main/resources/assets/purechaos/models/item/south.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/south.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/SouthBlock.java",
           "src/main/resources/assets/purechaos/models/block/south.json",
           "src/main/resources/assets/purechaos/blockstates/south.json"
@@ -2596,10 +2606,10 @@
       "registry_name": "depression_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/depression_block.json",
           "src/main/resources/assets/purechaos/blockstates/depression_block.json",
           "src/main/resources/assets/purechaos/models/block/depression_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/DepressionBlockBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/depression_block.json",
           "src/main/resources/assets/purechaos/models/item/depression_block.json"
         ]
       },
@@ -2685,8 +2695,8 @@
       "registry_name": "comunisam_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/comunisam_block.json",
           "src/main/resources/assets/purechaos/models/item/comunisam_block.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/comunisam_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/ComunisamBlockBlock.java",
           "src/main/resources/assets/purechaos/blockstates/comunisam_block.json",
           "src/main/resources/assets/purechaos/models/block/comunisam_block.json"
@@ -2742,8 +2752,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/PolandBlockBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/poland_block.json",
           "src/main/resources/assets/purechaos/blockstates/poland_block.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/poland_block.json",
           "src/main/resources/assets/purechaos/models/block/poland_block.json",
           "src/main/resources/assets/purechaos/models/item/poland_block.json"
         ]
@@ -2761,8 +2771,8 @@
           "src/main/resources/assets/purechaos/blockstates/cyber_block.json",
           "src/main/resources/assets/purechaos/models/item/cyber_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/CyberBlockBlock.java",
-          "src/main/resources/assets/purechaos/models/block/cyber_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/cyber_block.json"
+          "src/main/resources/data/purechaos/loot_table/blocks/cyber_block.json",
+          "src/main/resources/assets/purechaos/models/block/cyber_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -2811,8 +2821,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/computer_biome_modifier.json",
           "src/main/resources/assets/purechaos/models/item/computer.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/computer.json",
-          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/computer.json"
+          "src/main/resources/data/purechaos/loot_table/blocks/computer.json",
+          "src/main/resources/data/purechaos/worldgen/placed_feature/computer.json"
         ]
       },
       "path": "~/Blocks"
@@ -2860,6 +2870,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/models/item/to.json",
+          "src/main/resources/data/purechaos/jukebox_song/to.json",
           "src/main/java/xyz/aflkonstukt/purechaos/item/TOItem.java"
         ]
       },
@@ -2872,7 +2883,9 @@
       "locked_code": false,
       "registry_name": "hmmmm_drip",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/hmmmm_drip.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -2886,8 +2899,8 @@
         "files": [
           "src/main/resources/assets/purechaos/models/block/greengiscreenda.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/GreengiscreendaBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/greengiscreenda.json",
           "src/main/resources/assets/purechaos/blockstates/greengiscreenda.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/greengiscreenda.json",
           "src/main/resources/assets/purechaos/models/item/greengiscreenda.json"
         ]
       },
@@ -2902,7 +2915,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/item/FASTTOPASSItem.java",
-          "src/main/resources/assets/purechaos/models/item/fasttopass.json"
+          "src/main/resources/assets/purechaos/models/item/fasttopass.json",
+          "src/main/resources/data/purechaos/jukebox_song/fasttopass.json"
         ]
       },
       "path": "~/Items/Discs"
@@ -2983,7 +2997,7 @@
       "registry_name": "half_golden_apple_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/half_golden_apple_recipe.json"
+          "src/main/resources/data/purechaos/recipe/half_golden_apple_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3114,7 +3128,7 @@
       "registry_name": "cobblestone_fluid_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/cobblestone_fluid_recipe.json"
+          "src/main/resources/data/purechaos/recipe/cobblestone_fluid_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3150,7 +3164,7 @@
       "registry_name": "adidas_armor_helmet_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_armor_helmet_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_armor_helmet_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3163,7 +3177,7 @@
       "registry_name": "adidas_axe_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_axe_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_axe_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3226,13 +3240,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/purechaos/neoforge/biome_modifier/adidas_block_biome_modifier.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/adidas_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/adidas_block.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/adidas_block.json",
           "src/main/resources/assets/purechaos/models/item/adidas_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/AdidasBlockBlock.java",
           "src/main/resources/assets/purechaos/models/block/adidas_block.json",
-          "src/main/resources/assets/purechaos/blockstates/adidas_block.json"
+          "src/main/resources/assets/purechaos/blockstates/adidas_block.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/adidas_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -3259,7 +3273,7 @@
       "registry_name": "adidas_armor_boots_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_armor_boots_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_armor_boots_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3288,7 +3302,7 @@
       "registry_name": "adidas_pickaxe_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_pickaxe_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_pickaxe_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3315,7 +3329,7 @@
       "registry_name": "adidas_shovel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_shovel_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_shovel_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3328,7 +3342,7 @@
       "registry_name": "adidas_armor_leggings_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_armor_leggings_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_armor_leggings_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3355,7 +3369,7 @@
       "registry_name": "adidas_sword_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_sword_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_sword_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3368,7 +3382,7 @@
       "registry_name": "adidas_hoe_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_hoe_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_hoe_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3397,7 +3411,7 @@
       "registry_name": "adidas_armor_body_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/adidas_armor_body_recipe.json"
+          "src/main/resources/data/purechaos/recipe/adidas_armor_body_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3427,7 +3441,7 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/MissingTextureBlock.java",
           "src/main/resources/assets/purechaos/models/block/missing_texture.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/missing_texture.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/missing_texture.json",
           "src/main/resources/assets/purechaos/models/item/missing_texture.json",
           "src/main/resources/assets/purechaos/blockstates/missing_texture.json"
         ]
@@ -3568,7 +3582,7 @@
       "registry_name": "katana",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/katana.json"
+          "src/main/resources/data/purechaos/recipe/katana.json"
         ]
       },
       "path": "~/Recipes"
@@ -3772,7 +3786,7 @@
       "registry_name": "tinted_glass_bottle_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/tinted_glass_bottle_recipe.json"
+          "src/main/resources/data/purechaos/recipe/tinted_glass_bottle_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -3785,7 +3799,7 @@
       "registry_name": "kfcc",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/kfcc.json"
+          "src/main/resources/data/purechaos/recipe/kfcc.json"
         ]
       },
       "path": "~/Recipes"
@@ -3826,7 +3840,7 @@
       "registry_name": "potaato_baket_recepti",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/potaato_baket_recepti.json"
+          "src/main/resources/data/purechaos/recipe/potaato_baket_recepti.json"
         ]
       },
       "path": "~/Recipes"
@@ -3839,7 +3853,7 @@
       "registry_name": "kfcf",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/kfcf.json"
+          "src/main/resources/data/purechaos/recipe/kfcf.json"
         ]
       },
       "path": "~/Recipes"
@@ -3964,7 +3978,7 @@
       "registry_name": "ironeggg",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/ironeggg.json"
+          "src/main/resources/data/purechaos/recipe/ironeggg.json"
         ]
       },
       "path": "~/Recipes"
@@ -4000,6 +4014,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -4027,7 +4045,7 @@
       "registry_name": "glow_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/glow_recipe.json"
+          "src/main/resources/data/purechaos/recipe/glow_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -4077,8 +4095,8 @@
       "registry_name": "jeb_block",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/jeb_block.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/jeb_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/jeb_block.json",
           "src/main/resources/assets/purechaos/models/block/jeb_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/JebBlockBlock.java",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/jeb_block_biome_modifier.json",
@@ -4156,7 +4174,7 @@
       "registry_name": "apple_ingot_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/apple_ingot_recipe.json"
+          "src/main/resources/data/purechaos/recipe/apple_ingot_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -4858,7 +4876,7 @@
       "registry_name": "bedrock",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/bedrock.json"
+          "src/main/resources/data/purechaos/recipe/bedrock.json"
         ]
       },
       "path": "~/Recipes"
@@ -5590,6 +5608,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -5977,7 +5999,7 @@
       "registry_name": "inf_fuel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/inf_fuel_recipe.json"
+          "src/main/resources/data/purechaos/recipe/inf_fuel_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -5990,7 +6012,7 @@
       "registry_name": "puffer_balloon_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/puffer_balloon_recipe.json"
+          "src/main/resources/data/purechaos/recipe/puffer_balloon_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -6065,7 +6087,7 @@
       "registry_name": "pure_chaos",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/advancements/pure_chaos.json"
+          "src/main/resources/data/purechaos/advancement/pure_chaos.json"
         ]
       },
       "path": "~/Achievements"
@@ -6093,7 +6115,9 @@
       "locked_code": false,
       "registry_name": "i_offer_you_brainrot",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/i_offer_you_brainrot.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6104,7 +6128,9 @@
       "locked_code": false,
       "registry_name": "you_like_kissing_boys",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/you_like_kissing_boys.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6115,7 +6141,9 @@
       "locked_code": false,
       "registry_name": "a_painting",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/a_painting.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6126,7 +6154,9 @@
       "locked_code": false,
       "registry_name": "no_meme",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/no_meme.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6137,7 +6167,9 @@
       "locked_code": false,
       "registry_name": "bombkisser",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/bombkisser.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6148,7 +6180,9 @@
       "locked_code": false,
       "registry_name": "big_tails",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/big_tails.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6159,7 +6193,9 @@
       "locked_code": false,
       "registry_name": "i_see_you_masturbating",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/i_see_you_masturbating.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6170,7 +6206,9 @@
       "locked_code": false,
       "registry_name": "you_think_youre_alone",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/you_think_youre_alone.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6181,7 +6219,9 @@
       "locked_code": false,
       "registry_name": "buckshot_time",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/buckshot_time.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6192,7 +6232,9 @@
       "locked_code": false,
       "registry_name": "you_like_seeing_me",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/you_like_seeing_me.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6203,7 +6245,9 @@
       "locked_code": false,
       "registry_name": "nuh_uh",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/nuh_uh.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6214,7 +6258,9 @@
       "locked_code": false,
       "registry_name": "mc_kisser",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/mc_kisser.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6225,7 +6271,9 @@
       "locked_code": false,
       "registry_name": "staring_at_gay",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/staring_at_gay.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6236,7 +6284,9 @@
       "locked_code": false,
       "registry_name": "its_impossible",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/its_impossible.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6247,7 +6297,9 @@
       "locked_code": false,
       "registry_name": "this_is_how_you_look",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/this_is_how_you_look.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6258,7 +6310,9 @@
       "locked_code": false,
       "registry_name": "shur_up",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/purechaos/painting_variant/shur_up.json"
+        ]
       },
       "path": "~/Paintings"
     },
@@ -6510,7 +6564,7 @@
       "registry_name": "recipeillegalsubstance",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/RecipeillegalsubstanceBrewingRecipe.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/recipe/brewing/RecipeillegalsubstanceBrewingRecipe.java"
         ]
       },
       "path": "~/Recipes"
@@ -6523,7 +6577,7 @@
       "registry_name": "oilraaah",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/OILRAAAHBrewingRecipe.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/recipe/brewing/OILRAAAHBrewingRecipe.java"
         ]
       },
       "path": "~/Recipes"
@@ -6548,9 +6602,9 @@
       "registry_name": "backroom_wall_bottom",
       "metadata": {
         "files": [
+          "src/main/resources/data/purechaos/loot_table/blocks/backroom_wall_bottom.json",
           "src/main/resources/assets/purechaos/models/block/backroom_wall_bottom.json",
           "src/main/resources/assets/purechaos/models/item/backroom_wall_bottom.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backroom_wall_bottom.json",
           "src/main/resources/assets/purechaos/blockstates/backroom_wall_bottom.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomWallBottomBlock.java"
         ]
@@ -6566,10 +6620,10 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/BackroomsCeilingBlock.java",
+          "src/main/resources/data/purechaos/loot_table/blocks/backrooms_ceiling.json",
           "src/main/resources/assets/purechaos/models/block/backrooms_ceiling.json",
           "src/main/resources/assets/purechaos/models/item/backrooms_ceiling.json",
-          "src/main/resources/assets/purechaos/blockstates/backrooms_ceiling.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/backrooms_ceiling.json"
+          "src/main/resources/assets/purechaos/blockstates/backrooms_ceiling.json"
         ]
       },
       "path": "~/Blocks"
@@ -7068,7 +7122,7 @@
       "registry_name": "ame_recipe",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/AMERecipeBrewingRecipe.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/recipe/brewing/AMERecipeBrewingRecipe.java"
         ]
       },
       "path": "~/Recipes"
@@ -7081,7 +7135,7 @@
       "registry_name": "ethanol_recipe",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/EthanolRecipeBrewingRecipe.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/recipe/brewing/EthanolRecipeBrewingRecipe.java"
         ]
       },
       "path": "~/Recipes"
@@ -7095,8 +7149,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/purechaos/blockstates/rainbowrack.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/rainbowrack.json",
           "src/main/resources/assets/purechaos/models/item/rainbowrack.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/rainbowrack.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RainbowrackBlock.java",
           "src/main/resources/assets/purechaos/models/block/rainbowrack.json"
         ]
@@ -7111,7 +7165,7 @@
       "registry_name": "rainbow_grass",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/rainbow_grass.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/rainbow_grass.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/RainbowGrassBlock.java",
           "src/main/resources/assets/purechaos/blockstates/rainbow_grass.json",
           "src/main/resources/assets/purechaos/models/item/rainbow_grass.json",
@@ -7195,7 +7249,7 @@
       "registry_name": "poland_block_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/recipes/poland_block_recipe.json"
+          "src/main/resources/data/purechaos/recipe/poland_block_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -7764,7 +7818,7 @@
       "registry_name": "beer_recipe",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/recipes/brewing/BeerRecipeBrewingRecipe.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/recipe/brewing/BeerRecipeBrewingRecipe.java"
         ]
       },
       "path": "~/Recipes"
@@ -8438,8 +8492,8 @@
         "files": [
           "src/main/resources/assets/purechaos/blockstates/internet_explorer.json",
           "src/main/resources/assets/purechaos/models/item/internet_explorer.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/internet_explorer.json",
           "src/main/resources/assets/purechaos/models/block/internet_explorer.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/internet_explorer.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/InternetExplorerBlock.java"
         ]
       },
@@ -8488,8 +8542,8 @@
           "src/main/resources/data/purechaos/neoforge/biome_modifier/discord_biome_modifier.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/discord.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/discord.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/discord.json",
           "src/main/resources/assets/purechaos/models/item/discord.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/discord.json",
           "src/main/resources/assets/purechaos/blockstates/discord.json"
         ]
       },
@@ -8533,7 +8587,7 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/block/WhiteBlock.java",
-          "src/main/resources/data/purechaos/loot_tables/blocks/white.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/white.json",
           "src/main/resources/assets/purechaos/models/item/white.json",
           "src/main/resources/assets/purechaos/blockstates/white.json",
           "src/main/resources/assets/purechaos/models/block/white.json"
@@ -9014,10 +9068,10 @@
       "registry_name": "moyai",
       "metadata": {
         "files": [
-          "src/main/resources/data/purechaos/loot_tables/blocks/moyai.json",
           "src/main/resources/assets/purechaos/models/item/moyai.json",
           "src/main/resources/data/purechaos/worldgen/configured_feature/moyai.json",
           "src/main/resources/assets/purechaos/models/block/moyai.json",
+          "src/main/resources/data/purechaos/loot_table/blocks/moyai.json",
           "src/main/resources/data/purechaos/worldgen/placed_feature/moyai.json",
           "src/main/resources/assets/purechaos/blockstates/moyai.json",
           "src/main/resources/data/purechaos/neoforge/biome_modifier/moyai_biome_modifier.json",
@@ -10597,8 +10651,8 @@
         "files": [
           "src/main/resources/assets/purechaos/models/item/puffs_block.json",
           "src/main/java/xyz/aflkonstukt/purechaos/block/PuffsBlockBlock.java",
+          "src/main/resources/data/purechaos/loot_table/blocks/puffs_block.json",
           "src/main/resources/assets/purechaos/blockstates/puffs_block.json",
-          "src/main/resources/data/purechaos/loot_tables/blocks/puffs_block.json",
           "src/main/resources/assets/purechaos/models/block/puffs_block.json"
         ]
       },
@@ -11286,8 +11340,8 @@
       "registry_name": "cough_particle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/purechaos/particles/cough_particle.json",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/particle/CoughParticleParticle.java"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/particle/CoughParticleParticle.java",
+          "src/main/resources/assets/purechaos/particles/cough_particle.json"
         ]
       },
       "path": "~/Specialized/Virus"
@@ -11413,7 +11467,8 @@
       "metadata": {
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/item/SusStoryItem.java",
-          "src/main/resources/assets/purechaos/models/item/sus_story.json"
+          "src/main/resources/assets/purechaos/models/item/sus_story.json",
+          "src/main/resources/data/purechaos/jukebox_song/sus_story.json"
         ]
       },
       "path": "~/Items/Discs"
@@ -12354,9 +12409,6 @@
     "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
       "~CUSTOM:Susus"
     ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:Emepee"
-    ],
     "ENTITIES:minecraft:undead": [
       "~CUSTOM:Nerd",
       "~CUSTOM:Herobrine",
@@ -12366,6 +12418,9 @@
       "~CUSTOM:JOSIP",
       "~CUSTOM:Amogus2",
       "~CUSTOM:AmongUs"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:Easter",
@@ -13695,9 +13750,9 @@
       "geckolib",
       "jei"
     ],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "credits": "We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!",
     "modElementsPackage": "xyz.aflkonstukt.purechaos"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400342716
 }

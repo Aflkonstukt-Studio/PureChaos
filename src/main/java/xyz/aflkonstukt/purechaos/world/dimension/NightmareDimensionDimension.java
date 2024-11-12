@@ -34,7 +34,7 @@ public class NightmareDimensionDimension {
 					return false;
 				}
 			};
-			event.register(new ResourceLocation("purechaos:nightmare_dimension"), customEffect);
+			event.register(ResourceLocation.parse("purechaos:nightmare_dimension"), customEffect);
 		}
 	}
 
@@ -45,7 +45,7 @@ public class NightmareDimensionDimension {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("purechaos:nightmare_dimension"))) {
+		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("purechaos:nightmare_dimension"))) {
 			NightmareDimensionPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
 		}
 	}

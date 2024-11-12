@@ -1,0 +1,8 @@
+{
+  "comparator_output": 0,
+  "description": {
+    "translate": "item.purechaos.fasttopass.desc"
+  },
+  "length_in_seconds": 118,
+  "sound_event": "purechaos:ahdude"
+}

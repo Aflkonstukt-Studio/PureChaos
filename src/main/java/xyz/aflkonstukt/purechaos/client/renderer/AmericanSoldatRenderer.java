@@ -18,6 +18,6 @@ public class AmericanSoldatRenderer extends HumanoidMobRenderer<AmericanSoldatEn
 
 	@Override
 	public ResourceLocation getTextureLocation(AmericanSoldatEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/american_yord.png");
+		return ResourceLocation.parse("purechaos:textures/entities/american_yord.png");
 	}
 }

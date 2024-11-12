@@ -27,7 +27,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record ComputerGuiButtonMessage(int buttonID, int x, int y, int z, HashMap<String, String> textstate) implements CustomPacketPayload {
 
-	public static final Type<ComputerGuiButtonMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "computer_gui_buttons"));
+	public static final Type<ComputerGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "computer_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, ComputerGuiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, ComputerGuiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

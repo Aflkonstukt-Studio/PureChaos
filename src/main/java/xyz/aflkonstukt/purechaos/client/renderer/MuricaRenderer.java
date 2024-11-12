@@ -18,6 +18,6 @@ public class MuricaRenderer extends HumanoidMobRenderer<MuricaEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(MuricaEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/america.png");
+		return ResourceLocation.parse("purechaos:textures/entities/america.png");
 	}
 }

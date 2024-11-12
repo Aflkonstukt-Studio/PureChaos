@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -50,6 +50,7 @@
     "projectile": {
       "value": "CUSTOM:DeekProjectile"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": -20,
     "saturation": -20.0,

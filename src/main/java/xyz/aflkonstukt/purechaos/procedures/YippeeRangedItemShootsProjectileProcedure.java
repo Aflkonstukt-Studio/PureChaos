@@ -16,9 +16,9 @@ public class YippeeRangedItemShootsProjectileProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:yippee")), SoundSource.NEUTRAL, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:yippee")), SoundSource.NEUTRAL, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("purechaos:yippee")), SoundSource.NEUTRAL, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:yippee")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 		PurechaosModVariables.MapVariables.get(world).ypx = entity.getLookAngle().x;

@@ -61,7 +61,7 @@ import xyz.aflkonstukt.purechaos.PurechaosMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -251,6 +251,8 @@ public class PurechaosModEntities {
 
 					.sized(0.6f, 1.8f));
 
+	// Start of user code block custom entities
+	// End of user code block custom entities
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}
@@ -261,7 +263,7 @@ public class PurechaosModEntities {
 	}
 
 	@SubscribeEvent
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		AentityEntity.init(event);
 		TridentEntity.init(event);
 		AmongUsEntity.init(event);

@@ -46,10 +46,10 @@ public class ArthritisOverlayOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
 			if (ShowHandHealthyProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/hand_healthy.png"), w / 2 + -109, h - 39, 0, 0, 14, 13, 14, 13);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/hand_healthy.png"), w / 2 + -109, h - 39, 0, 0, 14, 13, 14, 13);
 			}
 			if (ShowHandPainProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("purechaos:textures/screens/hand_pain.png"), w / 2 + -109, h - 39, 0, 0, 14, 13, 14, 13);
+				event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/hand_pain.png"), w / 2 + -109, h - 39, 0, 0, 14, 13, 14, 13);
 			}
 		}
 		RenderSystem.depthMask(true);

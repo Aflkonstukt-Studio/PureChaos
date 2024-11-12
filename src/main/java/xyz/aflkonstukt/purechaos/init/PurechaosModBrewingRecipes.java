@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class PurechaosModBrewingRecipes implements IModPlugin {
 	@Override
 	public ResourceLocation getPluginUid() {
-		return new ResourceLocation("purechaos:brewing_recipes");
+		return ResourceLocation.parse("purechaos:brewing_recipes");
 	}
 
 	@Override

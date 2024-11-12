@@ -6,7 +6,6 @@ import xyz.aflkonstukt.purechaos.init.PurechaosModTabs;
 import xyz.aflkonstukt.purechaos.init.PurechaosModSounds;
 import xyz.aflkonstukt.purechaos.init.PurechaosModPotions;
 import xyz.aflkonstukt.purechaos.init.PurechaosModParticleTypes;
-import xyz.aflkonstukt.purechaos.init.PurechaosModPaintings;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMobEffects;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMenus;
 import xyz.aflkonstukt.purechaos.init.PurechaosModItems;
@@ -77,15 +76,14 @@ public class PurechaosMod {
 		PurechaosModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		PurechaosModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
-		PurechaosModPaintings.REGISTRY.register(modEventBus);
 		PurechaosModPotions.REGISTRY.register(modEventBus);
 		PurechaosModMobEffects.REGISTRY.register(modEventBus);
-
 		PurechaosModMenus.REGISTRY.register(modEventBus);
 		PurechaosModParticleTypes.REGISTRY.register(modEventBus);
 
 		PurechaosModFluids.REGISTRY.register(modEventBus);
 		PurechaosModFluidTypes.REGISTRY.register(modEventBus);
+
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
@@ -131,7 +129,7 @@ public class PurechaosMod {
 	}
 
 	public static record GuiSyncMessage(String editbox, String value) implements CustomPacketPayload {
-		public static final Type<GuiSyncMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "gui_sync"));
+		public static final Type<GuiSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "gui_sync"));
 		public static final StreamCodec<RegistryFriendlyByteBuf, GuiSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, GuiSyncMessage message) -> {
 			writeComponent(buffer, Component.literal(message.editbox));
 			writeComponent(buffer, Component.literal(message.value));

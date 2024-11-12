@@ -72,7 +72,7 @@ public class CorruptstaffItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CorruptstaffRightclickedProcedure.execute(entity, ar.getObject());
+		CorruptstaffRightclickedProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 

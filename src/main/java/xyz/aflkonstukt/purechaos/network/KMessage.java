@@ -20,7 +20,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record KMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<KMessage> TYPE = new Type<>(new ResourceLocation(PurechaosMod.MODID, "key_k"));
+	public static final Type<KMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "key_k"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, KMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, KMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);

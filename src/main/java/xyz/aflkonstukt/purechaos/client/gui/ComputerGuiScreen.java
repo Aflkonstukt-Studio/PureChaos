@@ -45,7 +45,7 @@ public class ComputerGuiScreen extends AbstractContainerScreen<ComputerGuiMenu> 
 		return textstate;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("purechaos:textures/screens/computer_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("purechaos:textures/screens/computer_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

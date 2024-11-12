@@ -22,7 +22,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modellong_leg_chicken<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("purechaos", "modellong_leg_chicken"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("purechaos", "modellong_leg_chicken"), "main");
 	public final ModelPart body;
 	public final ModelPart bb_main;
 
@@ -52,8 +52,8 @@ public class Modellong_leg_chicken<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, int rgb) {
+		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
+		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, rgb);
 	}
 }

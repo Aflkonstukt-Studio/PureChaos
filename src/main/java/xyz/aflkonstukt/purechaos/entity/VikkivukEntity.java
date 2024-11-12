@@ -11,12 +11,13 @@ import net.neoforged.neoforge.items.wrapper.EntityHandsInvWrapper;
 import net.neoforged.neoforge.items.wrapper.EntityArmorInvWrapper;
 import net.neoforged.neoforge.items.wrapper.CombinedInvWrapper;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.EventHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.EnchantmentEffectComponents;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
@@ -66,7 +67,7 @@ public class VikkivukEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+		this.goalSelector.addGoal(1, new FollowOwnerGoal(this, 1, (float) 10, (float) 2));
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(3, new OwnerHurtByTargetGoal(this));
 		this.targetSelector.addGoal(4, new OwnerHurtTargetGoal(this));
@@ -76,12 +77,12 @@ public class VikkivukEntity extends TamableAnimal {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
 	}
 
 	private final ItemStackHandler inventory = new ItemStackHandler(9) {
@@ -101,7 +102,7 @@ public class VikkivukEntity extends TamableAnimal {
 		super.dropEquipment();
 		for (int i = 0; i < inventory.getSlots(); ++i) {
 			ItemStack itemstack = inventory.getStackInSlot(i);
-			if (!itemstack.isEmpty() && !EnchantmentHelper.hasVanishingCurse(itemstack)) {
+			if (!itemstack.isEmpty() && !EnchantmentHelper.has(itemstack, EnchantmentEffectComponents.PREVENT_EQUIPMENT_DROP)) {
 				this.spawnAtLocation(itemstack);
 			}
 		}
@@ -198,13 +199,13 @@ public class VikkivukEntity extends TamableAnimal {
 		return Ingredient.of(new ItemStack(PurechaosModItems.POTATO_SPUDS.get()), new ItemStack(PurechaosModBlocks.GREEN_PLANT.get())).test(stack);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(PurechaosModEntities.VIKKIVUK.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
 			return SurfaceEntitySpawningConditionProcedure.execute(world, x, y, z);
-		}, SpawnPlacementRegisterEvent.Operation.REPLACE);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

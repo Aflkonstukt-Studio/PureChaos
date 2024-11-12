@@ -19,18 +19,18 @@ public class JosipPettRenderer extends MobRenderer<JosipPettEntity, Modeljosipmm
 	public JosipPettRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modeljosipmmarket(context.bakeLayer(Modeljosipmmarket.LAYER_LOCATION)), 0.6f);
 		this.addLayer(new RenderLayer<JosipPettEntity, Modeljosipmmarket<JosipPettEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("purechaos:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, JosipPettEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(JosipPettEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png");
+		return ResourceLocation.parse("purechaos:textures/entities/mamavoilibebunajvisenasvjetttuunajvisenakurcumamaubijabebu.png");
 	}
 }

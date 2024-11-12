@@ -21,8 +21,8 @@ import java.util.List;
 public class AppleIngotItem extends Item {
 	public AppleIngotItem() {
 		super(new Item.Properties().durability(100).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(20f).alwaysEdible().build())
-				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 11, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
+				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 11, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}
 
 	@Override

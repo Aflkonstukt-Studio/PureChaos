@@ -15,6 +15,6 @@ public class StroaterRenderer extends MobRenderer<StroaterEntity, Modelstroater<
 
 	@Override
 	public ResourceLocation getTextureLocation(StroaterEntity entity) {
-		return new ResourceLocation("purechaos:textures/entities/stroater.png");
+		return ResourceLocation.parse("purechaos:textures/entities/stroater.png");
 	}
 }
