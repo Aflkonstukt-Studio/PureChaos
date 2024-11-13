@@ -20,6 +20,7 @@ public class PurechaosModGameRules {
 	public static GameRules.Key<GameRules.IntegerValue> MOB_CAP_MULTIPLIER;
 	public static GameRules.Key<GameRules.BooleanValue> MENTAL_HEALTH;
 	public static GameRules.Key<GameRules.BooleanValue> NO_JUMP_VINE_BOOM;
+	public static GameRules.Key<GameRules.BooleanValue> TICK_REPELLANT;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -31,5 +32,6 @@ public class PurechaosModGameRules {
 		MOB_CAP_MULTIPLIER = GameRules.register("mobCapMultiplier", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(10));
 		MENTAL_HEALTH = GameRules.register("mentalHealth", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		NO_JUMP_VINE_BOOM = GameRules.register("noJumpVineBoom", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+		TICK_REPELLANT = GameRules.register("tickRepellant", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 	}
 }

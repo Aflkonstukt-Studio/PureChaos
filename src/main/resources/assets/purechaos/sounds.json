@@ -440,5 +440,30 @@
         "stream": false
       }
     ]
+  },
+  "bite": {
+    "sounds": [
+      {
+        "name": "purechaos:bite-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "sunshine": {
+    "subtitle": "subtitles.sunshine",
+    "sounds": [
+      {
+        "name": "purechaos:lebron-james-you-are-my-sunshine-original-version",
+        "stream": false
+      }
+    ]
+  },
+  "lights_out": {
+    "sounds": [
+      {
+        "name": "purechaos:power-outage-in-a-horror-game",
+        "stream": false
+      }
+    ]
   }
 }

@@ -25,6 +25,7 @@ import xyz.aflkonstukt.purechaos.entity.MuricaEntity;
 import xyz.aflkonstukt.purechaos.entity.MothOfAggrevationEntity;
 import xyz.aflkonstukt.purechaos.entity.LongLegChickenEntity;
 import xyz.aflkonstukt.purechaos.entity.LegsEntity;
+import xyz.aflkonstukt.purechaos.entity.LebronJamesEntity;
 import xyz.aflkonstukt.purechaos.entity.KondomnepitajzastoovoradimalispoileralertonimarupuProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.JosipdvatockanulaEntity;
 import xyz.aflkonstukt.purechaos.entity.JosipRangeProjectileEntity;
@@ -250,6 +251,10 @@ public class PurechaosModEntities {
 			EntityType.Builder.<PensiveCubesEntity>of(PensiveCubesEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<LebronJamesEntity>> LEBRON_JAMES = register("lebron_james",
+			EntityType.Builder.<LebronJamesEntity>of(LebronJamesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -260,6 +265,7 @@ public class PurechaosModEntities {
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerEntity(Capabilities.ItemHandler.ENTITY, VIKKIVUK.get(), (living, context) -> living.getCombinedInventory());
+		event.registerEntity(Capabilities.ItemHandler.ENTITY, IRS.get(), (living, context) -> living.getCombinedInventory());
 	}
 
 	@SubscribeEvent
@@ -308,6 +314,7 @@ public class PurechaosModEntities {
 		GroggoEntity.init(event);
 		YugoslaviaEntity.init(event);
 		PensiveCubesEntity.init(event);
+		LebronJamesEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -356,5 +363,6 @@ public class PurechaosModEntities {
 		event.put(GROGGO.get(), GroggoEntity.createAttributes().build());
 		event.put(YUGOSLAVIA.get(), YugoslaviaEntity.createAttributes().build());
 		event.put(PENSIVE_CUBE.get(), PensiveCubesEntity.createAttributes().build());
+		event.put(LEBRON_JAMES.get(), LebronJamesEntity.createAttributes().build());
 	}
 }

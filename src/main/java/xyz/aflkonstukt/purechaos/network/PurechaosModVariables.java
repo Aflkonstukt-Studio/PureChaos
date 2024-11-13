@@ -83,6 +83,8 @@ public class PurechaosModVariables {
 			clone.sanity_enabled = original.sanity_enabled;
 			clone.kidnapped = original.kidnapped;
 			clone.accumulated_rizz = original.accumulated_rizz;
+			clone.karma = original.karma;
+			clone.played_bkw = original.played_bkw;
 			if (!event.isWasDeath()) {
 				clone.wrong_answers = original.wrong_answers;
 				clone.sanity = original.sanity;
@@ -341,6 +343,8 @@ public class PurechaosModVariables {
 		public double infected_stage = 0;
 		public double sanity_drop_multiplier = 1.0;
 		public boolean immune_to_infection = false;
+		public double karma = 0;
+		public boolean played_bkw = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -390,6 +394,8 @@ public class PurechaosModVariables {
 			nbt.putDouble("infected_stage", infected_stage);
 			nbt.putDouble("sanity_drop_multiplier", sanity_drop_multiplier);
 			nbt.putBoolean("immune_to_infection", immune_to_infection);
+			nbt.putDouble("karma", karma);
+			nbt.putBoolean("played_bkw", played_bkw);
 			return nbt;
 		}
 
@@ -440,6 +446,8 @@ public class PurechaosModVariables {
 			infected_stage = nbt.getDouble("infected_stage");
 			sanity_drop_multiplier = nbt.getDouble("sanity_drop_multiplier");
 			immune_to_infection = nbt.getBoolean("immune_to_infection");
+			karma = nbt.getDouble("karma");
+			played_bkw = nbt.getBoolean("played_bkw");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

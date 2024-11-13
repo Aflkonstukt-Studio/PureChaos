@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 1.0,
+    "scaling": "always",
+    "effects": "burning",
+    "normalDeathMessage": "%1$s got bitten by a tick",
+    "itemDeathMessage": "%1$s got bitten by a tick",
+    "playerDeathMessage": "%1$s got bitten by a tick while trying to escape %2$s"
+  }
+}

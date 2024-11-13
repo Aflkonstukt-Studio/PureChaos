@@ -5,6 +5,7 @@
 package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.client.gui.VikkiVukGuiScreen;
+import xyz.aflkonstukt.purechaos.client.gui.IRSDonationScreen;
 import xyz.aflkonstukt.purechaos.client.gui.ComputerGuiScreen;
 import xyz.aflkonstukt.purechaos.client.gui.CheatGUIScreen;
 import xyz.aflkonstukt.purechaos.client.gui.CaptchaGUIScreen;
@@ -24,5 +25,6 @@ public class PurechaosModScreens {
 		event.register(PurechaosModMenus.CHEAT_GUI.get(), CheatGUIScreen::new);
 		event.register(PurechaosModMenus.CAPTCHA_GUI.get(), CaptchaGUIScreen::new);
 		event.register(PurechaosModMenus.AD_GUI.get(), AdGUIScreen::new);
+		event.register(PurechaosModMenus.IRS_DONATION.get(), IRSDonationScreen::new);
 	}
 }

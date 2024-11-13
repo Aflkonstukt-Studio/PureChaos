@@ -8759,6 +8759,10 @@
             "type": "number"
           },
           {
+            "name": "y",
+            "type": "number"
+          },
+          {
             "name": "z",
             "type": "number"
           },
@@ -11511,6 +11515,199 @@
         ]
       },
       "path": "~/Player Procedures"
+    },
+    {
+      "name": "Tick",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/item/TickItem.java",
+          "src/main/resources/assets/purechaos/models/item/tick_chestplate.json"
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "TickRepellant",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick_repellant",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Gamerules"
+    },
+    {
+      "name": "LymeDiseaseDeath",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lyme_disease_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/damage_type/lyme_disease_death.json"
+        ]
+      },
+      "path": "~/Player Procedures/Deaths"
+    },
+    {
+      "name": "LymeDiseaseOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lyme_disease_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/LymeDiseaseOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "LymeDisease",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lyme_disease",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/potion/LymeDiseaseMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "TickChestplateTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tick_chestplate_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/TickChestplateTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Armor"
+    },
+    {
+      "name": "LebronJames",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lebron_james",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/LebronJamesEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/LebronJamesRenderer.java",
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/lebron_james_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/lebron_james_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "BadKarmaDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_karma_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/BadKarmaDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUIs/Overlays/JAOs"
+    },
+    {
+      "name": "BadKarma",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_karma",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/screens/BadKarmaOverlay.java"
+        ]
+      },
+      "path": "~/GUIs/Overlays/JAOs"
+    },
+    {
+      "name": "DonateIRSPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "donate_irs_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/DonateIRSPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "IRSDonation",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "irs_donation",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/IRSDonationScreen.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/network/IRSDonationButtonMessage.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/IRSDonationMenu.java"
+        ]
+      },
+      "path": "~/GUIs"
     }
   ],
   "variable_elements": [
@@ -11848,6 +12045,18 @@
       "name": "immune_to_infection",
       "type": "logic",
       "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "karma",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "played_bkw",
+      "type": "logic",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -12267,6 +12476,30 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "bite",
+      "files": [
+        "bite-sound-effect"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "sunshine",
+      "files": [
+        "lebron-james-you-are-my-sunshine-original-version"
+      ],
+      "category": "hostile",
+      "subtitle": "You are my sunshine"
+    },
+    {
+      "name": "lights_out",
+      "files": [
+        "power-outage-in-a-horror-game"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -12286,6 +12519,7 @@
       "~CUSTOM:Pee"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Tick.body",
       "~CUSTOM:AdidasArmor.body",
       "~CUSTOM:BeefArmor.body",
       "~CUSTOM:TurtleArmor.body",
@@ -12785,6 +13019,7 @@
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
       "selectWorld.gameMode.adventure.info": "literally the hell on earth, why would you ever do this",
+      "death.attack.lyme_disease_death.player": "%1$s got bitten by a tick while trying to escape %2$s",
       "entity.purechaos.nerd": "Nerd",
       "item.chaosmod.iron_egg": "Iron Egg",
       "item.chaosmod.spongebob_boss_spawn_egg": "Spongebob Boss Spawn Egg",
@@ -12830,6 +13065,7 @@
       "item.chaosmod.beef_armor_chestplate": "Beef Armor Body",
       "item.purechaos.dream_spawn_egg": "Dream Spawn Egg",
       "death.fell.accident.generic": "%1$s didnt have slow falling",
+      "death.attack.lyme_disease_death": "%1$s got bitten by a tick",
       "item.chaosmod.fbi_spawn_egg": "FBI Spawn Egg",
       "subtitles.america_fuck_yeah": "AMERICA FUCK YEAAAH",
       "effect.purechaos.depressed": "Depressed",
@@ -12882,6 +13118,7 @@
       "item.purechaos.fish_launcher": "Fish Launcher",
       "item.purechaos.among_us_spawn_egg": "Among Us Spawn Egg",
       "item.chaosmod.to.desc": "E NE NOSI SLUSALICE IMA DA TI SE RASTAVE U PARAMPARCAD I USI CE DA TI ISKRVARE IST SAMO TO UZIVAJ!",
+      "item.purechaos.lebron_james_spawn_egg": "Lebron James Spawn Egg",
       "death.attack.rizzed_up.player": "%1$s was rizzed up whilst trying to escape %2$s",
       "key.purechaos.seven": "Seven",
       "item.chaosmod.orange_fluid_bucket": "Orange Fluid Bucket",
@@ -12912,9 +13149,11 @@
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
       "selectWorld.gameMode.hardcore": "No.",
+      "gui.purechaos.irs_donation.label_welcome_to_the_irs_idis": "Welcome to the IRS IDIS",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
       "item.purechaos.amugus_chestplate": "Amugus Body",
       "item.purechaos.xite": "Xite",
+      "gamerule.tickRepellant": "Tick Repellant",
       "entity.chaosmod.adolf_hitler": "Adolf Hitler",
       "item.purechaos.impostor_knife": "Impostor Knife",
       "death.attack.bleach_death.item": "%1$s didnt feel like seeing anymore",
@@ -12978,6 +13217,7 @@
       "selectWorld.data_read": "Reliving your past mistakes...",
       "block.purechaos.youtube": "Youtube",
       "gameMode.changed": "Sussy things done, you are now %s",
+      "gamerule.tickRepellant.description": "Disables players from getting ticks",
       "biome.purechaos.backrooms_biome": "Backrooms",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
       "entity.chaosmod.murica": "\u0027Murica",
@@ -13086,6 +13326,7 @@
       "gamerule.mentalHealth": "Mental Health",
       "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "entity.purechaos.rick_astley": "Rick Astley",
+      "subtitles.bite": "",
       "entity.chaosmod.dream": "Dream",
       "item.minecraft.wooden_axe": "Wooden Chop Chop Stick",
       "subtitles.footstep_metal_amogus": "idk",
@@ -13131,6 +13372,7 @@
       "item.chaosmod.bottle_of_piss": "Bottle Of Piss",
       "entity.purechaos.american_soldat": "American Soldier",
       "death.attack.thirst_death.player": "%1$s forgot to drink water whilst trying to escape %2$s",
+      "subtitles.sunshine": "You are my sunshine",
       "biome.purechaos.puffs_biome": "Puffs Biome",
       "block.chaosmod.death": "Death",
       "item.chaosmod.testicle_on_stick": "Testicle On Stick",
@@ -13174,6 +13416,7 @@
       "item.purechaos.vikkivuk_spawn_egg": "Vikkivuk Spawn Egg",
       "item.chaosmod.brazil": "Brazil Portal Igniter",
       "death.attack.badRespawnPoint.message": "%1$s was boo boo\u0027d by %2$s",
+      "gui.purechaos.irs_donation.button_empty": "Donate",
       "item.chaosmod.sus_sword": "Sus Sword",
       "effect.purechaos.infected": "Infected",
       "entity.purechaos.the_rock": "The Rock",
@@ -13328,7 +13571,9 @@
       "item.purechaos.fooditem": "Food Item 1",
       "entity.purechaos.irs": "IRS",
       "entity.chaosmod.baldi_minus": "Baldi Minus",
+      "subtitles.lights_out": "",
       "item.purechaos.adidas_axe": "Adidas Axe",
+      "item.purechaos.tick_chestplate": "Tick",
       "entity.purechaos.ikea_desk": "Ikea Desk",
       "menu.multiplayer": "Playdate Time!",
       "entity.chaosmod.long_leg_chicken": "Long Leg Chicken",
@@ -13394,6 +13639,7 @@
       "painting.purechaos.staring_at_gay.author": "boykisser",
       "item.purechaos.staravoda_bucket": "Staravoda Bucket",
       "death.attack.k_press_death.player": "%1$s pressed K while trying to escape %2$s",
+      "entity.purechaos.lebron_james": "Lebron James",
       "death.attack.drown.player": "%1$s forgor to breathe while trying to run away from %2$s",
       "biome.purechaos.desert": "Desert",
       "fluid.chaosmod.cum": "Cum",
@@ -13494,6 +13740,7 @@
       "item.purechaos.comically_large_spoon": "Comically Large Spoon",
       "item.chaosmod.milk_2_bucket": "Milk 2.0 Bucket",
       "item.chaosmod.mumbo_token": "Mumbo Token",
+      "effect.purechaos.lyme_disease": "Lyme Disease",
       "item.chaosmod.igla": "Igla",
       "gamerule.doGraveCreation": "Do Grave Creation",
       "fluid.chaosmod.pee": "Pee",
@@ -13528,6 +13775,7 @@
       "gui.purechaos.captcha_gui.button_submit": "Submit",
       "gamerule.disableCaptcha": "Disable Captcha?",
       "block.purechaos.cyber_block": "Cyber Block",
+      "death.attack.lyme_disease_death.item": "%1$s got bitten by a tick",
       "item.chaosmod.fasttopass": "FASTTOPASS",
       "fluid.purechaos.staravoda": "Staravoda",
       "item.purechaos.carbon_monoxide_bucket": "Carbon Monoxide Bucket",
@@ -13657,6 +13905,10 @@
             "children": [
               {
                 "name": "Boolets",
+                "children": []
+              },
+              {
+                "name": "JAOs",
                 "children": []
               }
             ]

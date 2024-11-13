@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "purechaos:tick_chestplate",
     "purechaos:adidas_armor_chestplate",
     "purechaos:beef_armor_chestplate",
     "purechaos:turtle_armor_chestplate",

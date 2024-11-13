@@ -23,6 +23,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.MuricaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MothOfAggrevationRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.LongLegChickenRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.LegsRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.LebronJamesRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.JosipdvatockanulaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.JosipPettRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.JosipPetRenderer;
@@ -114,5 +115,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.YUGOSLAVIA.get(), YugoslaviaRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.FISH_PROJECTILE.get(), FishProjectileRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubesRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.LEBRON_JAMES.get(), LebronJamesRenderer::new);
 	}
 }

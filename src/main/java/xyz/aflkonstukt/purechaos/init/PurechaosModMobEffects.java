@@ -13,6 +13,7 @@ import xyz.aflkonstukt.purechaos.procedures.DementiaEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.CurseOfFatherlessEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.potion.SickMobEffect;
 import xyz.aflkonstukt.purechaos.potion.RadiationPoisioningMobEffect;
+import xyz.aflkonstukt.purechaos.potion.LymeDiseaseMobEffect;
 import xyz.aflkonstukt.purechaos.potion.InfectedMobEffect;
 import xyz.aflkonstukt.purechaos.potion.HighEffectMobEffect;
 import xyz.aflkonstukt.purechaos.potion.FatMobEffect;
@@ -49,6 +50,7 @@ public class PurechaosModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> CURSE_OF_FATHERLESS = REGISTRY.register("curse_of_fatherless", () -> new CurseOfFatherlessMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DEPRESSED = REGISTRY.register("depressed", () -> new DepressedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> INFECTED = REGISTRY.register("infected", () -> new InfectedMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LYME_DISEASE = REGISTRY.register("lyme_disease", () -> new LymeDiseaseMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

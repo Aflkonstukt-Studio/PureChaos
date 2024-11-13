@@ -9,6 +9,7 @@ import xyz.aflkonstukt.purechaos.client.model.Modelyippe_particle;
 import xyz.aflkonstukt.purechaos.client.model.Modelvikkivuk_plushie;
 import xyz.aflkonstukt.purechaos.client.model.Modeltrident;
 import xyz.aflkonstukt.purechaos.client.model.Modeltpose_smth;
+import xyz.aflkonstukt.purechaos.client.model.Modeltick;
 import xyz.aflkonstukt.purechaos.client.model.Modelthe_rock;
 import xyz.aflkonstukt.purechaos.client.model.Modelstroater;
 import xyz.aflkonstukt.purechaos.client.model.Modelspongebob_boss;
@@ -42,6 +43,7 @@ import net.neoforged.api.distmarker.Dist;
 public class PurechaosModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modeltick.LAYER_LOCATION, Modeltick::createBodyLayer);
 		event.registerLayerDefinition(Modelamiogyhus.LAYER_LOCATION, Modelamiogyhus::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modelblaze.LAYER_LOCATION, Modelblaze::createBodyLayer);

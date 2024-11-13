@@ -34,6 +34,7 @@ public class DevCommandProcedureProcedure {
 			world.getLevelData().getGameRules().getRule(GameRules.RULE_COMMANDBLOCKOUTPUT).set(false, world.getServer());
 			world.getLevelData().getGameRules().getRule(GameRules.RULE_LOGADMINCOMMANDS).set(false, world.getServer());
 			world.getLevelData().getGameRules().getRule(GameRules.RULE_WEATHER_CYCLE).set(false, world.getServer());
+			world.getLevelData().getGameRules().getRule(PurechaosModGameRules.TICK_REPELLANT).set(true, world.getServer());
 			PurechaosModVariables.MapVariables.get(world).dev = true;
 			PurechaosModVariables.MapVariables.get(world).syncData(world);
 			{
@@ -57,6 +58,7 @@ public class DevCommandProcedureProcedure {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A7aThis world is now a development world!"), false);
 		} else {
+			world.getLevelData().getGameRules().getRule(PurechaosModGameRules.TICK_REPELLANT).set(false, world.getServer());
 			world.getLevelData().getGameRules().getRule(PurechaosModGameRules.DOGRAVECREATION).set(true, world.getServer());
 			world.getLevelData().getGameRules().getRule(PurechaosModGameRules.VEGANISM).set(true, world.getServer());
 			world.getLevelData().getGameRules().getRule(PurechaosModGameRules.DISABLE_CAPTCHA).set(false, world.getServer());

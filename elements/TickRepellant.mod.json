@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Tick Repellant",
+    "description": "Disables players from getting ticks",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

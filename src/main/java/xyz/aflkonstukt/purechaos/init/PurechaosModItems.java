@@ -15,6 +15,7 @@ import xyz.aflkonstukt.purechaos.item.TurtleArmorItem;
 import xyz.aflkonstukt.purechaos.item.TotemOfDreamItem;
 import xyz.aflkonstukt.purechaos.item.TotemOfAmogusItem;
 import xyz.aflkonstukt.purechaos.item.TintedGlassBottleItem;
+import xyz.aflkonstukt.purechaos.item.TickItem;
 import xyz.aflkonstukt.purechaos.item.TesticleOnStickItem;
 import xyz.aflkonstukt.purechaos.item.TOItem;
 import xyz.aflkonstukt.purechaos.item.SussySusStewItem;
@@ -324,6 +325,8 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> RADIOACTIVE_COOKIE = REGISTRY.register("radioactive_cookie", RadioactiveCookieItem::new);
 	public static final DeferredItem<Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
 	public static final DeferredItem<Item> SUS_STORY = REGISTRY.register("sus_story", SusStoryItem::new);
+	public static final DeferredItem<Item> TICK_CHESTPLATE = REGISTRY.register("tick_chestplate", TickItem.Chestplate::new);
+	public static final DeferredItem<Item> LEBRON_JAMES_SPAWN_EGG = REGISTRY.register("lebron_james_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.LEBRON_JAMES, -256, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
