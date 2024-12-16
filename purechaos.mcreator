@@ -11708,6 +11708,184 @@
         ]
       },
       "path": "~/GUIs"
+    },
+    {
+      "name": "KarmaCommandAdd",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_command_add",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/KarmaCommandAddProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Karma"
+    },
+    {
+      "name": "KarmaCommandRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_command_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/KarmaCommandRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Karma"
+    },
+    {
+      "name": "KarmaCommandSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_command_set",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/KarmaCommandSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Karma"
+    },
+    {
+      "name": "KarmaCommandGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_command_get",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/KarmaCommandGetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Karma"
+    },
+    {
+      "name": "KarmaCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "karma_command",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/command/KarmaCommandCommand.java"
+        ]
+      },
+      "path": "~/Commands/Karma"
+    },
+    {
+      "name": "UpdateScreen",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "update_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/UpdateScreen.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "SeekDangerGoal",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "seek_danger_goal",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/SeekDangerGoal.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "CryIfTrappedGoal",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cry_if_trapped_goal",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/CryIfTrappedGoal.java"
+        ]
+      },
+      "path": "~/Custom Code"
+    },
+    {
+      "name": "Buddy",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buddy",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/BuddyEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BuddyRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/model/BuddyModel.java",
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/buddy_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/buddy_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "Balloon",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balloon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/purechaos/neoforge/biome_modifier/balloon_biome_modifier.json",
+          "src/main/resources/assets/purechaos/models/item/balloon_spawn_egg.json",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/BalloonEntity.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BalloonRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/model/BalloonModel.java"
+        ]
+      },
+      "path": "~/Entities"
     }
   ],
   "variable_elements": [
@@ -12051,12 +12229,18 @@
       "name": "karma",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "100.0"
     },
     {
       "name": "played_bkw",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "outdated",
+      "type": "logic",
+      "scope": "global",
       "value": "false"
     }
   ],
@@ -12500,6 +12684,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "girl_screaming",
+      "files": [
+        "frantic-screaming-213549"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -12644,6 +12836,7 @@
       "~CUSTOM:Susus"
     ],
     "ENTITIES:minecraft:undead": [
+      "~CUSTOM:Balloon",
       "~CUSTOM:Nerd",
       "~CUSTOM:Herobrine",
       "~CUSTOM:BaldiMinus",
@@ -13099,6 +13292,7 @@
       "entity.purechaos.among_us": "Among Us",
       "item.purechaos.baldi_minus_spawn_egg": "Baldi Minus Spawn Egg",
       "item.purechaos.josip_spawn_egg": "JOSIP Spawn Egg",
+      "subtitles.girl_screaming": "",
       "item.chaosmod.food_item_3": "Food Item 3",
       "item.chaosmod.food_item_2": "Food Item 2",
       "block.purechaos.rainbowrack": "Rainbowrack",
@@ -13201,6 +13395,7 @@
       "entity.chaosmod.among_us": "Among Us",
       "menu.options": "Settings for grown ups",
       "item.purechaos.brown": "Brown",
+      "entity.purechaos.balloon": "Balloon",
       "painting.purechaos.shur_up.author": "boykisser",
       "item.purechaos.josip_pet_spawn_egg": "Josip Pet Spawn Egg",
       "death.attack.cccp_death": "%1$s used the wrong keyboard",
@@ -13324,6 +13519,7 @@
       "item.purechaos.stalin_spawn_egg": "Stalin Spawn Egg",
       "item.chaosmod.dingot": "Dingot",
       "gamerule.mentalHealth": "Mental Health",
+      "entity.purechaos.buddy": "Buddy",
       "item.chaosmod.totem_of_amogus": "Totem Of Lying",
       "entity.purechaos.rick_astley": "Rick Astley",
       "subtitles.bite": "",
@@ -13420,6 +13616,7 @@
       "item.chaosmod.sus_sword": "Sus Sword",
       "effect.purechaos.infected": "Infected",
       "entity.purechaos.the_rock": "The Rock",
+      "item.purechaos.buddy_spawn_egg": "Buddy Spawn Egg",
       "menu.singleplayer": "I dont have friends",
       "createWorld.preparing": "Thinking about how to torture you...",
       "death.attack.overdose": "%1$s overdosed on meth",
@@ -13592,6 +13789,7 @@
       "entity.chaosmod.fbi": "FBI",
       "painting.purechaos.bombkisser.author": "internr dood",
       "subtitles.yippee": "",
+      "item.purechaos.balloon_spawn_egg": "Balloon Spawn Egg",
       "item.chaosmod.coca_cola": "Coca Cola",
       "block.purechaos.gatorade": "Gatorade",
       "death.attack.taken_home_death.player": "%1$s was taken home while trying to escape %2$s",
@@ -13859,6 +14057,10 @@
           {
             "name": "EventCommand",
             "children": []
+          },
+          {
+            "name": "Karma",
+            "children": []
           }
         ]
       },
@@ -13987,9 +14189,9 @@
   "workspaceSettings": {
     "modid": "purechaos",
     "modName": "Pure Chaos",
-    "version": "1.21.1-1.0.0",
+    "version": "2024",
     "description": "Add a little bit of, spice.",
-    "author": "VikkiVuk, JosipTLG, X Master Woo",
+    "author": "NichtVikki, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",
     "license": "All rights reserved",
     "serverSideOnly": false,

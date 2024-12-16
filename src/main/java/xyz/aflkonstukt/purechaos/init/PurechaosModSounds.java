@@ -71,4 +71,5 @@ public class PurechaosModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> BITE = REGISTRY.register("bite", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("purechaos", "bite")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SUNSHINE = REGISTRY.register("sunshine", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("purechaos", "sunshine")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> LIGHTS_OUT = REGISTRY.register("lights_out", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("purechaos", "lights_out")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GIRL_SCREAMING = REGISTRY.register("girl_screaming", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("purechaos", "girl_screaming")));
 }

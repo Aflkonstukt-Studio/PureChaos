@@ -1,5 +1,7 @@
 package xyz.aflkonstukt.purechaos.procedures;
 
+import xyz.aflkonstukt.purechaos.network.PurechaosModVariables;
+
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -12,6 +14,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -40,6 +43,10 @@ public class PlayerDieProcedure {
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:hes-dead")), SoundSource.NEUTRAL, 1, 1, false);
 				}
+			}
+			if (PurechaosModVariables.outdated) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("maybe if you updated the game you wouldn't be so bad.."), false);
 			}
 		}
 	}

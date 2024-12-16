@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.walk": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"vector": [84.59842, 62.39543, 1525.21026]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [7.5, 0, 0]
+						},
+						"0.9583": {
+							"vector": [-2.5, 0, 0]
+						},
+						"1.5": {
+							"vector": [10, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -47,6 +47,7 @@ public class PurechaosModVariables {
 	public static List<Object> math_challenges = new ArrayList<>();
 	public static List<Object> word_answers = new ArrayList<>();
 	public static List<Object> math_answers = new ArrayList<>();
+	public static boolean outdated = false;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -343,7 +344,7 @@ public class PurechaosModVariables {
 		public double infected_stage = 0;
 		public double sanity_drop_multiplier = 1.0;
 		public boolean immune_to_infection = false;
-		public double karma = 0;
+		public double karma = 100.0;
 		public boolean played_bkw = false;
 
 		@Override

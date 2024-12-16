@@ -1,18 +1,21 @@
 {
   "type": "neoforge:add_spawns",
   "biomes": [
+    "purechaos:backrooms_biome",
+    "purechaos:birch_forest",
     "purechaos:dream_biome",
+    "purechaos:easter",
+    "purechaos:ekesmasterbait",
     "purechaos:fortnite_biome",
     "purechaos:fun_land",
     "purechaos:heaven_or_hell",
-    "purechaos:hell_but_overworld",
     "purechaos:ohio",
-    "purechaos:puffs_biome",
+    "purechaos:poland_biome",
     "purechaos:susus"
   ],
   "spawners": {
-    "type": "purechaos:lebron_james",
-    "weight": 20,
+    "type": "purechaos:balloon",
+    "weight": 10,
     "minCount": 1,
     "maxCount": 4
   }

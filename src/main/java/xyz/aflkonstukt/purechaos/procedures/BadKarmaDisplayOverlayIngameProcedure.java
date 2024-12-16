@@ -32,15 +32,8 @@ public class BadKarmaDisplayOverlayIngameProcedure {
 				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A74YOUR KARMA IS TOO LOW, YOU RISK NOT PASSING JUDGMENT DAY"), true);
+				_player.displayClientMessage(Component.literal("\u00A74YOU RISK NOT PASSING JUDGMENT DAY"), true);
 			return true;
-		} else {
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.played_bkw = false;
-				_vars.syncPlayerVariables(entity);
-			}
-			return false;
 		}
 		return false;
 	}

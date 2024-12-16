@@ -465,5 +465,13 @@
         "stream": false
       }
     ]
+  },
+  "girl_screaming": {
+    "sounds": [
+      {
+        "name": "purechaos:frantic-screaming-213549",
+        "stream": false
+      }
+    ]
   }
 }

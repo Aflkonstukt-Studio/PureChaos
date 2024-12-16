@@ -1,6 +1,6 @@
 {
   "name": "purechaos:backrooms_backrooms",
-  "fallback": "minecraft:empty",
+  "fallback": "purechaos:backrooms_backrooms",
   "elements": [
     {
       "weight": 1,

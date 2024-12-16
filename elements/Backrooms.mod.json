@@ -15,16 +15,16 @@
     "terrainAdaptation": "none",
     "generationStep": "RAW_GENERATION",
     "surfaceDetectionType": "WORLD_SURFACE_WG",
-    "useStartHeight": false,
-    "startHeightProviderType": "UNIFORM",
-    "startHeightMin": 0,
-    "startHeightMax": 128,
+    "useStartHeight": true,
+    "startHeightProviderType": "BIASED_TO_BOTTOM",
+    "startHeightMin": 1,
+    "startHeightMax": 2,
     "size": 4,
     "maxDistanceFromCenter": 116,
     "jigsawPools": [
       {
         "poolName": "backrooms",
-        "fallbackPool": "",
+        "fallbackPool": "purechaos:backrooms_backrooms",
         "poolParts": [
           {
             "weight": 1,

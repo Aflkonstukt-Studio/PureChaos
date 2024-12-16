@@ -68,10 +68,12 @@ public class PlayerTickProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-			_vars.speed = Math.sqrt(entity.getDeltaMovement().x() * entity.getDeltaMovement().x() + entity.getDeltaMovement().y() * entity.getDeltaMovement().y() + entity.getDeltaMovement().z() * entity.getDeltaMovement().z());
-			_vars.syncPlayerVariables(entity);
+		if (world.isClientSide()) {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.speed = Math.sqrt(entity.getDeltaMovement().x() * entity.getDeltaMovement().x() + entity.getDeltaMovement().y() * entity.getDeltaMovement().y() + entity.getDeltaMovement().z() * entity.getDeltaMovement().z());
+				_vars.syncPlayerVariables(entity);
+			}
 		}
 		if (Mth.nextDouble(RandomSource.create(), 1, 6000) <= 3) {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).heart_attack_chance >= 2.5) {

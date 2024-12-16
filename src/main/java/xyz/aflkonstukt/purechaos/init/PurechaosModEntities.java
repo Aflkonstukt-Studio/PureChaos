@@ -45,8 +45,10 @@ import xyz.aflkonstukt.purechaos.entity.DeekProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.CursedDogEntity;
 import xyz.aflkonstukt.purechaos.entity.CupcakkeEntity;
 import xyz.aflkonstukt.purechaos.entity.CodButBetterEntity;
+import xyz.aflkonstukt.purechaos.entity.BuddyEntity;
 import xyz.aflkonstukt.purechaos.entity.BlazEntity;
 import xyz.aflkonstukt.purechaos.entity.BigEntity;
+import xyz.aflkonstukt.purechaos.entity.BalloonEntity;
 import xyz.aflkonstukt.purechaos.entity.BaldiMinusEntity;
 import xyz.aflkonstukt.purechaos.entity.AmongUsEntity;
 import xyz.aflkonstukt.purechaos.entity.AmogusGunProjectileEntity;
@@ -255,6 +257,14 @@ public class PurechaosModEntities {
 			EntityType.Builder.<LebronJamesEntity>of(LebronJamesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BuddyEntity>> BUDDY = register("buddy",
+			EntityType.Builder.<BuddyEntity>of(BuddyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BalloonEntity>> BALLOON = register("balloon",
+			EntityType.Builder.<BalloonEntity>of(BalloonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -315,6 +325,8 @@ public class PurechaosModEntities {
 		YugoslaviaEntity.init(event);
 		PensiveCubesEntity.init(event);
 		LebronJamesEntity.init(event);
+		BuddyEntity.init(event);
+		BalloonEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -364,5 +376,7 @@ public class PurechaosModEntities {
 		event.put(YUGOSLAVIA.get(), YugoslaviaEntity.createAttributes().build());
 		event.put(PENSIVE_CUBE.get(), PensiveCubesEntity.createAttributes().build());
 		event.put(LEBRON_JAMES.get(), LebronJamesEntity.createAttributes().build());
+		event.put(BUDDY.get(), BuddyEntity.createAttributes().build());
+		event.put(BALLOON.get(), BalloonEntity.createAttributes().build());
 	}
 }

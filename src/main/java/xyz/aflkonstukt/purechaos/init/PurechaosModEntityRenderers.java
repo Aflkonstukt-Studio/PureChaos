@@ -39,8 +39,10 @@ import xyz.aflkonstukt.purechaos.client.renderer.DreamRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CursedDogRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CupcakkeRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CodButBetterRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.BuddyRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BlazRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BigRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.BalloonRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BaldiMinusRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.AmongUsRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.Amogus3Renderer;
@@ -116,5 +118,7 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.FISH_PROJECTILE.get(), FishProjectileRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubesRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.LEBRON_JAMES.get(), LebronJamesRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.BUDDY.get(), BuddyRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.BALLOON.get(), BalloonRenderer::new);
 	}
 }

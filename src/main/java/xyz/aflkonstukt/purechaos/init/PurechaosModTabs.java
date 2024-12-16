@@ -208,5 +208,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.SUS_STORY.get());
 				tabData.accept(PurechaosModItems.TICK_CHESTPLATE.get());
 				tabData.accept(PurechaosModItems.LEBRON_JAMES_SPAWN_EGG.get());
+				tabData.accept(PurechaosModItems.BUDDY_SPAWN_EGG.get());
+				tabData.accept(PurechaosModItems.BALLOON_SPAWN_EGG.get());
 			}).withSearchBar().build());
 }

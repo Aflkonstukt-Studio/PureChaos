@@ -4,12 +4,12 @@ license="All rights reserved"
 
 [[mods]]
 modId="purechaos"
-version="1.21.11.0.0"
+version="2024"
 displayName="Pure Chaos"
 displayURL="https://modrinth.com/mod/chaos"
 logoFile="logo.png"
 credits="We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!"
-authors="VikkiVuk, JosipTLG, X Master Woo"
+authors="NichtVikki, JosipTLG, X Master Woo"
 description="Add a little bit of, spice."
 
 # Start of user code block mod configuration
