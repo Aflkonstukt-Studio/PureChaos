@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class TheRockRenderer extends MobRenderer<TheRockEntity, Modelnextbot<TheRockEntity>> {
 	public TheRockRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnextbot(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnextbot<TheRockEntity>(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

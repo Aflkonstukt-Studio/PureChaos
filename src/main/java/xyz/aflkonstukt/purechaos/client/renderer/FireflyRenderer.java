@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class FireflyRenderer extends MobRenderer<FireflyEntity, Modelfireflies<FireflyEntity>> {
 	public FireflyRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelfireflies(context.bakeLayer(Modelfireflies.LAYER_LOCATION)), 0.1f);
+		super(context, new Modelfireflies<FireflyEntity>(context.bakeLayer(Modelfireflies.LAYER_LOCATION)), 0.1f);
 	}
 
 	@Override

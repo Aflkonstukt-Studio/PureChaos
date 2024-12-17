@@ -22,6 +22,6 @@ public class BaguetteItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("oui oui"));
+		list.add(Component.translatable("item.purechaos.baguette.description_0"));
 	}
 }

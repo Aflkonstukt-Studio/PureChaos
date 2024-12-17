@@ -25,7 +25,8 @@ public class OilFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/oil_still"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/oil_flowing");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/oil_still");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/oil_flowing");
 
 			@Override
 			public ResourceLocation getStillTexture() {

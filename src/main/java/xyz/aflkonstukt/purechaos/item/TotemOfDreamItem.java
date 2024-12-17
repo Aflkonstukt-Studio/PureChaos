@@ -31,7 +31,7 @@ public class TotemOfDreamItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("i dont know what the heck this is"));
+		list.add(Component.translatable("item.purechaos.totem_of_dream.description_0"));
 	}
 
 	@Override

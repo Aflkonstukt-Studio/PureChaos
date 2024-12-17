@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -36,7 +36,6 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
@@ -57,6 +56,9 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "block"
+    "animation": "block",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
   }
 }

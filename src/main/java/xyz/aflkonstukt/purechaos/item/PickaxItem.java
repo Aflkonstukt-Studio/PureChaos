@@ -59,6 +59,6 @@ public class PickaxItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("You are confused about what this is supposed to be..."));
+		list.add(Component.translatable("item.purechaos.pickax.description_0"));
 	}
 }

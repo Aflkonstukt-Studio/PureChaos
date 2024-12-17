@@ -60,6 +60,6 @@ public class SusSwordItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("sasi sord"));
+		list.add(Component.translatable("item.purechaos.sus_sword.description_0"));
 	}
 }

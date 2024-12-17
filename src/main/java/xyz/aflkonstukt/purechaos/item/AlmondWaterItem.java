@@ -32,9 +32,9 @@ public class AlmondWaterItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("A sweet almond/vanilla flavored water"));
-		list.add(Component.literal("that is a critical source of hydration"));
-		list.add(Component.literal("and slight nutritional value"));
+		list.add(Component.translatable("item.purechaos.almond_water.description_0"));
+		list.add(Component.translatable("item.purechaos.almond_water.description_1"));
+		list.add(Component.translatable("item.purechaos.almond_water.description_2"));
 	}
 
 	@Override

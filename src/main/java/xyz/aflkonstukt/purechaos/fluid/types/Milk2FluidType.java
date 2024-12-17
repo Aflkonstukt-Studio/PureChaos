@@ -23,7 +23,8 @@ public class Milk2FluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/milk2_still"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/milk2_flowing");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/milk2_still");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/milk2_flowing");
 
 			@Override
 			public ResourceLocation getStillTexture() {

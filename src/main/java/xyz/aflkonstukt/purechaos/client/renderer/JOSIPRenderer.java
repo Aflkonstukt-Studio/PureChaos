@@ -19,7 +19,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class JOSIPRenderer extends HumanoidMobRenderer<JOSIPEntity, HumanoidModel<JOSIPEntity>> {
 	public JOSIPRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<JOSIPEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 		this.addLayer(new RenderLayer<JOSIPEntity, HumanoidModel<JOSIPEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/422888e8f9292a0c.png");

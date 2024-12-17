@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class TPoseEntityRenderer extends MobRenderer<TPoseEntityEntity, Modeltpose_smth<TPoseEntityEntity>> {
 	public TPoseEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeltpose_smth(context.bakeLayer(Modeltpose_smth.LAYER_LOCATION)), 0.5f);
+		super(context, new Modeltpose_smth<TPoseEntityEntity>(context.bakeLayer(Modeltpose_smth.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

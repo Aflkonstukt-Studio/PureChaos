@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Pee",
     "bucketName": "Pee Bucket",
     "textureStill": "pee",
     "textureFlowing": "pee_flowing",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": true,
     "flowRate": 10,

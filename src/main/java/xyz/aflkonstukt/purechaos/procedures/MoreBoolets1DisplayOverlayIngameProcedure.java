@@ -28,119 +28,24 @@ public class MoreBoolets1DisplayOverlayIngameProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100) {
-			{
-				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-				_vars.boolets = 1;
-				_vars.syncPlayerVariables(entity);
-			}
-			PurechaosMod.queueServerWork(10, () -> {
-				if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-					{
-						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-						_vars.boolets = 2;
-						_vars.syncPlayerVariables(entity);
-					}
-					PurechaosMod.queueServerWork(10, () -> {
-						if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-							{
-								PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-								_vars.boolets = 3;
-								_vars.syncPlayerVariables(entity);
-							}
-							PurechaosMod.queueServerWork(10, () -> {
-								if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-									{
-										PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-										_vars.boolets = 4;
-										_vars.syncPlayerVariables(entity);
-									}
-									PurechaosMod.queueServerWork(10, () -> {
-										if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-											{
-												PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-												_vars.boolets = 5;
-												_vars.syncPlayerVariables(entity);
-											}
-											PurechaosMod.queueServerWork(10, () -> {
-												if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-													{
-														PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-														_vars.boolets = 6;
-														_vars.syncPlayerVariables(entity);
-													}
-													PurechaosMod.queueServerWork(10, () -> {
-														if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-															{
-																PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																_vars.boolets = 7;
-																_vars.syncPlayerVariables(entity);
-															}
-															PurechaosMod.queueServerWork(10, () -> {
-																if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																	{
-																		PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																		_vars.boolets = 8;
-																		_vars.syncPlayerVariables(entity);
-																	}
-																	PurechaosMod.queueServerWork(10, () -> {
-																		if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																			{
-																				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																				_vars.boolets = 9;
-																				_vars.syncPlayerVariables(entity);
-																			}
-																			PurechaosMod.queueServerWork(10, () -> {
-																				if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																					{
-																						PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																						_vars.boolets = 10;
-																						_vars.syncPlayerVariables(entity);
-																					}
-																					PurechaosMod.queueServerWork(10, () -> {
-																						if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																							{
-																								PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																								_vars.boolets = 11;
-																								_vars.syncPlayerVariables(entity);
-																							}
-																							PurechaosMod.queueServerWork(10, () -> {
-																								if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																									{
-																										PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																										_vars.boolets = 12;
-																										_vars.syncPlayerVariables(entity);
-																									}
-																									PurechaosMod.queueServerWork(10, () -> {
-																										if (!(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 100)) {
-																											{
-																												PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-																												_vars.boolets = 0;
-																												_vars.syncPlayerVariables(entity);
-																											}
-																										}
-																									});
-																								}
-																							});
-																						}
-																					});
-																				}
-																			});
-																		}
-																	});
-																}
-															});
-														}
-													});
-												}
-											});
-										}
-									});
-								}
-							});
+			for (int i = (int) 0; i <= (int) 40; i++) {
+				final int currentI = i;
+				PurechaosMod.queueServerWork((int) (2 * currentI), () -> {
+					if (currentI == 40) {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.boolets = 0;
+							_vars.syncPlayerVariables(entity);
 						}
-					});
-				}
-			});
+					} else {
+						{
+							PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+							_vars.boolets = currentI;
+							_vars.syncPlayerVariables(entity);
+						}
+					}
+				});
+			}
 		}
 	}
 }

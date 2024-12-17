@@ -97,6 +97,6 @@ public class ComicallyLargeSpoonItem extends TieredItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("A really really really large spoon"));
+		list.add(Component.translatable("item.purechaos.comically_large_spoon.description_0"));
 	}
 }

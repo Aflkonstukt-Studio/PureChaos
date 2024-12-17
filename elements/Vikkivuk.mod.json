@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
     "mobName": "Vikkivuk",
@@ -22,6 +22,7 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 0.6,
     "modelShadowSize": 0.5,

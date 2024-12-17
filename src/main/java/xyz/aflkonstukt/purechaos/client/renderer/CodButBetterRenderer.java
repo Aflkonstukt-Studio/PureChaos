@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class CodButBetterRenderer extends MobRenderer<CodButBetterEntity, Modelcod_but_better<CodButBetterEntity>> {
 	public CodButBetterRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcod_but_better(context.bakeLayer(Modelcod_but_better.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcod_but_better<CodButBetterEntity>(context.bakeLayer(Modelcod_but_better.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

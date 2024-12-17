@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potion",
   "definition": {
     "potionName": "Bottle of Illegal substance",
@@ -12,6 +12,7 @@
           "value": "DARKNESS"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 100,
         "ambient": false,
         "showParticles": true
@@ -21,6 +22,7 @@
           "value": "CUSTOM:HighEffect"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 100,
         "ambient": false,
         "showParticles": true
@@ -30,6 +32,7 @@
           "value": "CUSTOM:RadiationPoisioning"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -39,6 +42,7 @@
           "value": "CUSTOM:Fat"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -48,6 +52,7 @@
           "value": "CUSTOM:Bleached"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -57,6 +62,7 @@
           "value": "CUSTOM:Blind"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -66,6 +72,7 @@
           "value": "CUSTOM:Sick"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 100,
         "ambient": false,
         "showParticles": true
@@ -75,6 +82,7 @@
           "value": "CUSTOM:Dementia"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 100,
         "ambient": false,
         "showParticles": true
@@ -84,6 +92,7 @@
           "value": "SLOWNESS"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -93,6 +102,7 @@
           "value": "HUNGER"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -102,6 +112,7 @@
           "value": "NAUSEA"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -111,6 +122,7 @@
           "value": "POISON"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -120,6 +132,7 @@
           "value": "ABSORPTION"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -129,6 +142,7 @@
           "value": "HEALTH_BOOST"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -138,6 +152,7 @@
           "value": "INSTANT_HEALTH"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -147,6 +162,7 @@
           "value": "WITHER"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -156,6 +172,7 @@
           "value": "UNLUCK"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 100,
         "ambient": false,
         "showParticles": true
@@ -165,6 +182,7 @@
           "value": "BAD_OMEN"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -174,6 +192,7 @@
           "value": "SPEED"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true

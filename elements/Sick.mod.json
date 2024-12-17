@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Sick",
@@ -15,6 +15,36 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -3.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "BLOCK_BREAK_SPEED"
+        },
+        "amount": -3.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -3.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": -3.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "onStarted": {
       "name": "SickEffectSlayed"
     },

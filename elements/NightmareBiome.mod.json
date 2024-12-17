@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Nightmare",
@@ -13,6 +13,10 @@
       "value": "Blocks.SCULK"
     },
     "airColor": {
+      "value": -13421773,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -13421773,
       "falpha": 0.0
     },

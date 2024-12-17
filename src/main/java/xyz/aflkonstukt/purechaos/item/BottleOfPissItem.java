@@ -32,7 +32,7 @@ public class BottleOfPissItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("DISGUSTANG"));
+		list.add(Component.translatable("item.purechaos.bottle_of_piss.description_0"));
 	}
 
 	@Override

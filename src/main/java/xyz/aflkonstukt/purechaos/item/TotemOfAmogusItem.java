@@ -27,6 +27,6 @@ public class TotemOfAmogusItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("it does nothing. literally. nothing."));
+		list.add(Component.translatable("item.purechaos.totem_of_amogus.description_0"));
 	}
 }

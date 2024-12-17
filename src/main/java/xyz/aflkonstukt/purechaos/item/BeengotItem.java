@@ -27,6 +27,6 @@ public class BeengotItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("bzzz bzzz bzzzzz"));
+		list.add(Component.translatable("item.purechaos.beengot.description_0"));
 	}
 }

@@ -19,7 +19,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class AentityRenderer extends HumanoidMobRenderer<AentityEntity, HumanoidModel<AentityEntity>> {
 	public AentityRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<AentityEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 		this.addLayer(new RenderLayer<AentityEntity, HumanoidModel<AentityEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/rick_kurac.png");

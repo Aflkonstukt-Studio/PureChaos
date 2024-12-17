@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Susus",
@@ -13,6 +13,10 @@
       "value": "Blocks.PLANKS#0"
     },
     "airColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -65536,
       "falpha": 0.0
     },

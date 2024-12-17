@@ -36,7 +36,7 @@ public class INeedBooletsTriggerProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, String text) {
 		if (entity == null || text == null)
 			return;
-		if ((text).equals("i need more boolets")) {
+		if ((text).equals("i need more boolets") || (text).equals("i need bullets") || (text).equals("i need more bullets")) {
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).boolets == 0) {
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);

@@ -25,7 +25,8 @@ public class OrangeFluidFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/gatorade_still"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/gatorade_flow");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/gatorade_still");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/gatorade_flow");
 
 			@Override
 			public ResourceLocation getStillTexture() {

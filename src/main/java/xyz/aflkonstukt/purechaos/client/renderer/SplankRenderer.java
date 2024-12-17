@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class SplankRenderer extends MobRenderer<SplankEntity, Modelsplank<SplankEntity>> {
 	public SplankRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelsplank(context.bakeLayer(Modelsplank.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelsplank<SplankEntity>(context.bakeLayer(Modelsplank.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class LongLegChickenRenderer extends MobRenderer<LongLegChickenEntity, Modellong_leg_chicken<LongLegChickenEntity>> {
 	public LongLegChickenRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modellong_leg_chicken(context.bakeLayer(Modellong_leg_chicken.LAYER_LOCATION)), 0.5f);
+		super(context, new Modellong_leg_chicken<LongLegChickenEntity>(context.bakeLayer(Modellong_leg_chicken.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

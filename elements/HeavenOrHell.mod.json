@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Heaven Or Hell",
@@ -13,6 +13,10 @@
       "value": ""
     },
     "airColor": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -16711681,
       "falpha": 0.0
     },

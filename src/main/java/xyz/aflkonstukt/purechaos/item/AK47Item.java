@@ -39,7 +39,7 @@ public class AK47Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("HEHEHEHE"));
+		list.add(Component.translatable("item.purechaos.ak_47.description_0"));
 	}
 
 	@Override

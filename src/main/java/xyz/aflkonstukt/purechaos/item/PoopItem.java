@@ -26,9 +26,9 @@ public class PoopItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("as it smiles at you"));
-		list.add(Component.literal("you get a weird feeling \"this came out of me?\""));
-		list.add(Component.literal("you are curios about what it tastes like."));
+		list.add(Component.translatable("item.purechaos.poop.description_0"));
+		list.add(Component.translatable("item.purechaos.poop.description_1"));
+		list.add(Component.translatable("item.purechaos.poop.description_2"));
 	}
 
 	@Override

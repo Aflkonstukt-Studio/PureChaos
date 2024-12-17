@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potion",
   "definition": {
     "potionName": "Potion of Alchemically Modified Ethanol",
@@ -12,6 +12,7 @@
           "value": "CUSTOM:Blind"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": false
@@ -21,6 +22,7 @@
           "value": "MINING_FATIGUE"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -30,6 +32,7 @@
           "value": "SLOWNESS"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -39,6 +42,7 @@
           "value": "NAUSEA"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true

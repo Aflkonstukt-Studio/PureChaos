@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Staravoda",
     "bucketName": "Staravoda Bucket",
     "textureStill": "minecraft-water",
     "textureFlowing": "minecraft-water",
+    "hasFog": false,
     "tintType": "Water",
     "canMultiply": true,
     "flowRate": 5,

@@ -25,6 +25,6 @@ public class StaravodaItem extends BucketItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Old water from clasic versions of the game"));
+		list.add(Component.translatable("item.purechaos.staravoda_bucket.description_0"));
 	}
 }

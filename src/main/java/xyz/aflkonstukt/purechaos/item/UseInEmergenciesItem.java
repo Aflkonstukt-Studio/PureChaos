@@ -39,7 +39,7 @@ public class UseInEmergenciesItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Right click in case of emergencies (dont use this while in range 100 blocks of your base)"));
+		list.add(Component.translatable("item.purechaos.use_in_emergencies.description_0"));
 	}
 
 	@Override

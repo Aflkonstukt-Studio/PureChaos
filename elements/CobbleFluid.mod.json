@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Cobblestone Fluid",
     "bucketName": "Bucket of Cobblestone",
     "textureStill": "cobblestone",
     "textureFlowing": "cobblestone",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,

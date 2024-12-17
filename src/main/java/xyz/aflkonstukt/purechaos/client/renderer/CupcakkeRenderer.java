@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class CupcakkeRenderer extends MobRenderer<CupcakkeEntity, Modelnextbot<CupcakkeEntity>> {
 	public CupcakkeRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnextbot(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnextbot<CupcakkeEntity>(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

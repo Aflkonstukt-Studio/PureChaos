@@ -58,7 +58,7 @@ public class TesticleOnStickItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("dont ask who it is from"));
+		list.add(Component.translatable("item.purechaos.testicle_on_stick.description_0"));
 	}
 
 	@Override

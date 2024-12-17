@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class SpongebobBossRenderer extends MobRenderer<SpongebobBossEntity, Modelspongebob_boss<SpongebobBossEntity>> {
 	public SpongebobBossRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelspongebob_boss(context.bakeLayer(Modelspongebob_boss.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelspongebob_boss<SpongebobBossEntity>(context.bakeLayer(Modelspongebob_boss.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

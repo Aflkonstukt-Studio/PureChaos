@@ -55,7 +55,7 @@ public class JosipRangeItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("you shold not have this unless u use creative or comands"));
+		list.add(Component.translatable("item.purechaos.josip_range.description_0"));
 	}
 
 	@Override

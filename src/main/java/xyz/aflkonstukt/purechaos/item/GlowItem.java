@@ -33,7 +33,7 @@ public class GlowItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("* g l o w * (right click to go blind)"));
+		list.add(Component.translatable("item.purechaos.glow.description_0"));
 	}
 
 	@Override

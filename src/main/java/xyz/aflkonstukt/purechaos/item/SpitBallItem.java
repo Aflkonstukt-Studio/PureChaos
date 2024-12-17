@@ -22,6 +22,6 @@ public class SpitBallItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("why"));
+		list.add(Component.translatable("item.purechaos.spit_ball.description_0"));
 	}
 }

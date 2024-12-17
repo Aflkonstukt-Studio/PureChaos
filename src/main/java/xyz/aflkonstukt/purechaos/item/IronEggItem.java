@@ -21,6 +21,6 @@ public class IronEggItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("(wont open)"));
+		list.add(Component.translatable("item.purechaos.iron_egg.description_0"));
 	}
 }

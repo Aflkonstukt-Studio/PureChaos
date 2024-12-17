@@ -22,6 +22,6 @@ public class KentuckyFriedChickenFriesItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("MMMMMMMMMMMMM som frays"));
+		list.add(Component.translatable("item.purechaos.kentucky_fried_chicken_fries.description_0"));
 	}
 }

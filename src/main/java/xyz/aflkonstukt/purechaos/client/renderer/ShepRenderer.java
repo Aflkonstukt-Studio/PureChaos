@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class ShepRenderer extends MobRenderer<ShepEntity, Modelshep<ShepEntity>> {
 	public ShepRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelshep(context.bakeLayer(Modelshep.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelshep<ShepEntity>(context.bakeLayer(Modelshep.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

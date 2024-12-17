@@ -17,7 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class JosipPetRenderer extends MobRenderer<JosipPetEntity, Modeljosipmmarket<JosipPetEntity>> {
 	public JosipPetRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeljosipmmarket(context.bakeLayer(Modeljosipmmarket.LAYER_LOCATION)), 0.6f);
+		super(context, new Modeljosipmmarket<JosipPetEntity>(context.bakeLayer(Modeljosipmmarket.LAYER_LOCATION)), 0.6f);
 		this.addLayer(new RenderLayer<JosipPetEntity, Modeljosipmmarket<JosipPetEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("purechaos:textures/entities/josip_pet_updated_do_not_remove.png");
 

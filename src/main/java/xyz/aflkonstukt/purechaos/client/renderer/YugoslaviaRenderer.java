@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class YugoslaviaRenderer extends MobRenderer<YugoslaviaEntity, Modelnextbot<YugoslaviaEntity>> {
 	public YugoslaviaRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnextbot(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnextbot<YugoslaviaEntity>(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

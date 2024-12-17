@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "ARS",
@@ -15,6 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onActiveTick": {
       "name": "RadiationPoisioningActiveTickCondition"
     }

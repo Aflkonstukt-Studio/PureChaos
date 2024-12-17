@@ -27,7 +27,7 @@ public class SamsungNote7Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Don't try to use it (might explode)"));
+		list.add(Component.translatable("item.purechaos.samsung_note_7.description_0"));
 	}
 
 	@Override

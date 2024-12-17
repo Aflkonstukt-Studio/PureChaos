@@ -43,7 +43,7 @@ public class FoodItem2Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("You are confused about what this is... Try eating it?"));
+		list.add(Component.translatable("item.purechaos.food_item_2.description_0"));
 	}
 
 	@Override

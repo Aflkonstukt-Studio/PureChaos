@@ -28,7 +28,7 @@ public class SussySusStewItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("very sus indeed"));
+		list.add(Component.translatable("item.purechaos.sussy_sus_stew.description_0"));
 	}
 
 	@Override

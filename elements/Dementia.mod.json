@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Dementia",
@@ -15,6 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onExpired": {
       "name": "DementiaEffectExpires"
     }

@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class BlazRenderer extends MobRenderer<BlazEntity, Modelblaze<BlazEntity>> {
 	public BlazRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelblaze(context.bakeLayer(Modelblaze.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelblaze<BlazEntity>(context.bakeLayer(Modelblaze.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Radiation Liquid",
     "bucketName": "Radiation Liquid Bucket",
     "textureStill": "radiation_liquid",
     "textureFlowing": "radiation_liquid",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,

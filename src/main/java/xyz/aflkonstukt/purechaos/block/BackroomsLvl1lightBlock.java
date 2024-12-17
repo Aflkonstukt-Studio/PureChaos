@@ -29,7 +29,7 @@ public class BackroomsLvl1lightBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("STOOOOOOOOOOOOOOOOOOOOOOOOOP"));
+		list.add(Component.translatable("block.purechaos.backrooms_lvl_1light.description_0"));
 	}
 
 	@Override

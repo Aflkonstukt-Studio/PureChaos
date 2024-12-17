@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class NerdRenderer extends MobRenderer<NerdEntity, Modelnextbot<NerdEntity>> {
 	public NerdRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnextbot(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnextbot<NerdEntity>(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

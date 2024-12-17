@@ -69,7 +69,7 @@ public class XSORDItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Its a blade that contains the radioactive material Xite"));
-		list.add(Component.literal("just dont get cut by it"));
+		list.add(Component.translatable("item.purechaos.xsord.description_0"));
+		list.add(Component.translatable("item.purechaos.xsord.description_1"));
 	}
 }

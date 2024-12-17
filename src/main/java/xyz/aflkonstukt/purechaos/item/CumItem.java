@@ -25,6 +25,6 @@ public class CumItem extends BucketItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("JU HEV ENTERD D CUM ZONE"));
+		list.add(Component.translatable("item.purechaos.cum_bucket.description_0"));
 	}
 }

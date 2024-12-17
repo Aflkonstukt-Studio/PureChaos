@@ -28,7 +28,8 @@ public class StaravodaFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/minecraft-water");
 
 			@Override
 			public ResourceLocation getStillTexture() {

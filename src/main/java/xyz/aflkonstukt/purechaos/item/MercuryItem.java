@@ -32,7 +32,7 @@ public class MercuryItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("love me some mercury on the side"));
+		list.add(Component.translatable("item.purechaos.mercury.description_0"));
 	}
 
 	@Override

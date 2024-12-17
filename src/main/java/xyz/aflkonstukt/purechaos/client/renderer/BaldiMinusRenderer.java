@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class BaldiMinusRenderer extends MobRenderer<BaldiMinusEntity, Modelbaldi<BaldiMinusEntity>> {
 	public BaldiMinusRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelbaldi(context.bakeLayer(Modelbaldi.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelbaldi<BaldiMinusEntity>(context.bakeLayer(Modelbaldi.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class Amogus2Renderer extends MobRenderer<Amogus2Entity, Modelamiogyhus<Amogus2Entity>> {
 	public Amogus2Renderer(EntityRendererProvider.Context context) {
-		super(context, new Modelamiogyhus(context.bakeLayer(Modelamiogyhus.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelamiogyhus<Amogus2Entity>(context.bakeLayer(Modelamiogyhus.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

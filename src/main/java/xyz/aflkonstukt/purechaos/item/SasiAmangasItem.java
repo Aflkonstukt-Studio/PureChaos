@@ -26,6 +26,6 @@ public class SasiAmangasItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Josip is making an amogus"));
+		list.add(Component.translatable("item.purechaos.sasi_amangas.description_0"));
 	}
 }

@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class CursedDogRenderer extends MobRenderer<CursedDogEntity, Modeldog<CursedDogEntity>> {
 	public CursedDogRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeldog(context.bakeLayer(Modeldog.LAYER_LOCATION)), 0.5f);
+		super(context, new Modeldog<CursedDogEntity>(context.bakeLayer(Modeldog.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

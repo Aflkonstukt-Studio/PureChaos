@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Cum",
     "bucketName": "Cum Bucket",
     "textureStill": "cum",
     "textureFlowing": "cum",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 6,

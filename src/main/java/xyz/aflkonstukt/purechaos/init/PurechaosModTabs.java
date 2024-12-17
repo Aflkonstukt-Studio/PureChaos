@@ -56,8 +56,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.GREEN_PLANT.get().asItem());
 				tabData.accept(PurechaosModItems.SPLANK_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.IKEA_DESK_SPAWN_EGG.get());
-				tabData.accept(PurechaosModItems.FALLGAYS.get());
-				tabData.accept(PurechaosModItems.SASI_AMANGAS.get());
 				tabData.accept(PurechaosModItems.JOSIP_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BROWN.get());
 				tabData.accept(PurechaosModItems.CARBON_MONOXIDE_BUCKET.get());
@@ -82,7 +80,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.WALTER_WIGHT_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.ADOLF_HITLER_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.DREAM_SPAWN_EGG.get());
-				tabData.accept(PurechaosModItems.SCRATEST.get());
 				tabData.accept(PurechaosModBlocks.YOUTUBE.get().asItem());
 				tabData.accept(PurechaosModBlocks.PLANTE.get().asItem());
 				tabData.accept(PurechaosModItems.TESTICLE_ON_STICK.get());
@@ -91,7 +88,6 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.MILK_2_BUCKET.get());
 				tabData.accept(PurechaosModItems.USE_IN_EMERGENCIES.get());
 				tabData.accept(PurechaosModItems.COD_BUT_BETTER_SPAWN_EGG.get());
-				tabData.accept(PurechaosModItems.SSSR.get());
 				tabData.accept(PurechaosModItems.STALIN_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.RICK_ASTLEY_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.RADIATION_LIQUID_BUCKET.get());
@@ -115,9 +111,7 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModBlocks.CYBER_BLOCK.get().asItem());
 				tabData.accept(PurechaosModItems.TOTEM_OF_DREAM.get());
 				tabData.accept(PurechaosModBlocks.COMPUTER.get().asItem());
-				tabData.accept(PurechaosModItems.TO.get());
 				tabData.accept(PurechaosModBlocks.GREENGISCREENDA.get().asItem());
-				tabData.accept(PurechaosModItems.FASTTOPASS.get());
 				tabData.accept(PurechaosModItems.STROATER_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.HALF_GOLDEN_APPLE.get());
 				tabData.accept(PurechaosModItems.BEEF.get());
@@ -205,10 +199,16 @@ public class PurechaosModTabs {
 				tabData.accept(PurechaosModItems.PENSIVE_CUBE_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.RADIOACTIVE_COOKIE.get());
 				tabData.accept(PurechaosModItems.ICEPICK.get());
-				tabData.accept(PurechaosModItems.SUS_STORY.get());
 				tabData.accept(PurechaosModItems.TICK_CHESTPLATE.get());
 				tabData.accept(PurechaosModItems.LEBRON_JAMES_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BUDDY_SPAWN_EGG.get());
 				tabData.accept(PurechaosModItems.BALLOON_SPAWN_EGG.get());
+				tabData.accept(PurechaosModItems.FALLGAYS.get());
+				tabData.accept(PurechaosModItems.SASI_AMANGAS.get());
+				tabData.accept(PurechaosModItems.SCRATEST.get());
+				tabData.accept(PurechaosModItems.SSSR.get());
+				tabData.accept(PurechaosModItems.TO.get());
+				tabData.accept(PurechaosModItems.FASTTOPASS.get());
+				tabData.accept(PurechaosModItems.SUS_STORY.get());
 			}).withSearchBar().build());
 }

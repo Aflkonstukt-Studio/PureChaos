@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potion",
   "definition": {
     "potionName": "Ethanol",
@@ -12,6 +12,7 @@
           "value": "WITHER"
         },
         "duration": 3600,
+        "infinite": false,
         "amplifier": 2,
         "ambient": false,
         "showParticles": true

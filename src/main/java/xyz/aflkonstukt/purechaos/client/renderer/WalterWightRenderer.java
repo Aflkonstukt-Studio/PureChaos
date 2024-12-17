@@ -12,7 +12,7 @@ import net.minecraft.client.model.HumanoidModel;
 
 public class WalterWightRenderer extends HumanoidMobRenderer<WalterWightEntity, HumanoidModel<WalterWightEntity>> {
 	public WalterWightRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<WalterWightEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

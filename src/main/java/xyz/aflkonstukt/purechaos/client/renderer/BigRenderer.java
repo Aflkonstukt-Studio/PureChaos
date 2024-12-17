@@ -11,7 +11,7 @@ import net.minecraft.client.model.PigModel;
 
 public class BigRenderer extends MobRenderer<BigEntity, PigModel<BigEntity>> {
 	public BigRenderer(EntityRendererProvider.Context context) {
-		super(context, new PigModel(context.bakeLayer(ModelLayers.PIG)), 0.5f);
+		super(context, new PigModel<BigEntity>(context.bakeLayer(ModelLayers.PIG)), 0.5f);
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class LebronJamesRenderer extends MobRenderer<LebronJamesEntity, Modelnextbot<LebronJamesEntity>> {
 	public LebronJamesRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnextbot(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnextbot<LebronJamesEntity>(context.bakeLayer(Modelnextbot.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

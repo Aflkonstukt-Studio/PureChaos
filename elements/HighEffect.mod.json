@@ -1,9 +1,9 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "High",
-    "icon": "high.png",
+    "icon": "high",
     "color": {
       "value": -16737793,
       "falpha": 0.0
@@ -15,6 +15,36 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "BLOCK_BREAK_SPEED"
+        },
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": 10.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "onStarted": {
       "name": "High"
     },

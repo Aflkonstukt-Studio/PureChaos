@@ -23,7 +23,8 @@ public class RadiationLiquidFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/radiation_liquid"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/radiation_liquid");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/radiation_liquid");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/radiation_liquid");
 
 			@Override
 			public ResourceLocation getStillTexture() {

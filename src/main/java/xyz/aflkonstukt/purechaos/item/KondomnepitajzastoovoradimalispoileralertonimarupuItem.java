@@ -43,7 +43,7 @@ public class KondomnepitajzastoovoradimalispoileralertonimarupuItem extends Item
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Pee at 3003003030303 speed"));
+		list.add(Component.translatable("item.purechaos.kondomnepitajzastoovoradimalispoileralertonimarupu.description_0"));
 	}
 
 	@Override

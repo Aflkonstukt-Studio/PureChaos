@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class LegsRenderer extends MobRenderer<LegsEntity, Modellegs<LegsEntity>> {
 	public LegsRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modellegs(context.bakeLayer(Modellegs.LAYER_LOCATION)), 0.5f);
+		super(context, new Modellegs<LegsEntity>(context.bakeLayer(Modellegs.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

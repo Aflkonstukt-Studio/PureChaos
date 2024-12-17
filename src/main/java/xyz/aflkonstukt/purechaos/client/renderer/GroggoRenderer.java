@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class GroggoRenderer extends MobRenderer<GroggoEntity, Modelgroggo<GroggoEntity>> {
 	public GroggoRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelgroggo(context.bakeLayer(Modelgroggo.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelgroggo<GroggoEntity>(context.bakeLayer(Modelgroggo.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

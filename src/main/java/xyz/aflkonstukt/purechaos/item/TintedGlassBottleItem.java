@@ -28,6 +28,6 @@ public class TintedGlassBottleItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("you wont know whats inside until you drink it"));
+		list.add(Component.translatable("item.purechaos.tinted_glass_bottle.description_0"));
 	}
 }

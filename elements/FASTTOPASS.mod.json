@@ -1,16 +1,30 @@
 {
-  "_fv": 69,
-  "_type": "musicdisc",
+  "_fv": 73,
+  "_type": "item",
   "definition": {
+    "renderType": 0,
+    "texture": "fffa69",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "FASTTOPASS",
     "rarity": "RARE",
-    "texture": "fffa69",
-    "description": "GOTTA GO!",
     "creativeTabs": [
       {
         "value": "CUSTOM:Chaostab"
       }
     ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
         "HEHE"
@@ -19,13 +33,27 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "music": {
-      "value": "CUSTOM:ahdude"
-    },
-    "lengthInTicks": 2360,
-    "analogOutput": 0,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "FASTTOPASSRightclicked"
-    }
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": true,
+    "musicDiscMusic": {
+      "value": "CUSTOM:ahdude"
+    },
+    "musicDiscDescription": "GOTTA GO!",
+    "musicDiscLengthInTicks": 2360,
+    "musicDiscAnalogOutput": 0
   }
 }

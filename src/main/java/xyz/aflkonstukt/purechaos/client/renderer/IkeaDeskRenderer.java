@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class IkeaDeskRenderer extends MobRenderer<IkeaDeskEntity, Modelikea_desk<IkeaDeskEntity>> {
 	public IkeaDeskRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelikea_desk(context.bakeLayer(Modelikea_desk.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelikea_desk<IkeaDeskEntity>(context.bakeLayer(Modelikea_desk.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

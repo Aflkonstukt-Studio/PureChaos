@@ -12,7 +12,7 @@ import net.minecraft.client.model.HumanoidModel;
 
 public class JosipdvatockanulaRenderer extends HumanoidMobRenderer<JosipdvatockanulaEntity, HumanoidModel<JosipdvatockanulaEntity>> {
 	public JosipdvatockanulaRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		super(context, new HumanoidModel<JosipdvatockanulaEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

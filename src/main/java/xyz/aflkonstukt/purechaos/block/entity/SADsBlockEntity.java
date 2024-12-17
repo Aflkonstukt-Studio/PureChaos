@@ -160,9 +160,7 @@ public class SADsBlockEntity extends RandomizableContainerBlockEntity implements
 		return energyStorage;
 	}
 
-	private final FluidTank fluidTank = new FluidTank(8000
-
-	) {
+	private final FluidTank fluidTank = new FluidTank(8000) {
 		@Override
 		protected void onContentsChanged() {
 			super.onContentsChanged();

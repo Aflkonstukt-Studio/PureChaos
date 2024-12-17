@@ -169,8 +169,6 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> GREEN_PLANT = block(PurechaosModBlocks.GREEN_PLANT);
 	public static final DeferredItem<Item> SPLANK_SPAWN_EGG = REGISTRY.register("splank_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.SPLANK, -3355648, -154, new Item.Properties()));
 	public static final DeferredItem<Item> IKEA_DESK_SPAWN_EGG = REGISTRY.register("ikea_desk_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.IKEA_DESK, -13421773, -1, new Item.Properties()));
-	public static final DeferredItem<Item> FALLGAYS = REGISTRY.register("fallgays", FallgaysItem::new);
-	public static final DeferredItem<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", SasiAmangasItem::new);
 	public static final DeferredItem<Item> JOSIP_SPAWN_EGG = REGISTRY.register("josip_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.JOSIP, -3407617, -16777216, new Item.Properties()));
 	public static final DeferredItem<Item> BROWN = REGISTRY.register("brown", BrownItem::new);
 	public static final DeferredItem<Item> CARBON_MONOXIDE_BUCKET = REGISTRY.register("carbon_monoxide_bucket", CarbonMonoxideItem::new);
@@ -195,7 +193,6 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> WALTER_WIGHT_SPAWN_EGG = REGISTRY.register("walter_wight_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.WALTER_WIGHT, -16777012, -16777114, new Item.Properties()));
 	public static final DeferredItem<Item> ADOLF_HITLER_SPAWN_EGG = REGISTRY.register("adolf_hitler_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.ADOLF_HITLER, -52429, -3407872, new Item.Properties()));
 	public static final DeferredItem<Item> DREAM_SPAWN_EGG = REGISTRY.register("dream_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.DREAM, -13369549, -1, new Item.Properties()));
-	public static final DeferredItem<Item> SCRATEST = REGISTRY.register("scratest", ScratestItem::new);
 	public static final DeferredItem<Item> YOUTUBE = block(PurechaosModBlocks.YOUTUBE);
 	public static final DeferredItem<Item> PLANTE = block(PurechaosModBlocks.PLANTE);
 	public static final DeferredItem<Item> TESTICLE_ON_STICK = REGISTRY.register("testicle_on_stick", TesticleOnStickItem::new);
@@ -205,7 +202,6 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> USE_IN_EMERGENCIES = REGISTRY.register("use_in_emergencies", UseInEmergenciesItem::new);
 	public static final DeferredItem<Item> COD_BUT_BETTER_SPAWN_EGG = REGISTRY.register("cod_but_better_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.COD_BUT_BETTER, -13312, -13108, new Item.Properties()));
 	public static final DeferredItem<Item> BACKROOMS_LVL_1LIGHT = block(PurechaosModBlocks.BACKROOMS_LVL_1LIGHT);
-	public static final DeferredItem<Item> SSSR = REGISTRY.register("sssr", SSSRItem::new);
 	public static final DeferredItem<Item> STALIN_SPAWN_EGG = REGISTRY.register("stalin_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.STALIN, -65536, -11776, new Item.Properties()));
 	public static final DeferredItem<Item> RICK_ASTLEY_SPAWN_EGG = REGISTRY.register("rick_astley_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.RICK_ASTLEY, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> BACKROOMS_LVL_1_WALL = block(PurechaosModBlocks.BACKROOMS_LVL_1_WALL);
@@ -231,9 +227,7 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> CYBER_BLOCK = block(PurechaosModBlocks.CYBER_BLOCK);
 	public static final DeferredItem<Item> TOTEM_OF_DREAM = REGISTRY.register("totem_of_dream", TotemOfDreamItem::new);
 	public static final DeferredItem<Item> COMPUTER = block(PurechaosModBlocks.COMPUTER);
-	public static final DeferredItem<Item> TO = REGISTRY.register("to", TOItem::new);
 	public static final DeferredItem<Item> GREENGISCREENDA = block(PurechaosModBlocks.GREENGISCREENDA);
-	public static final DeferredItem<Item> FASTTOPASS = REGISTRY.register("fasttopass", FASTTOPASSItem::new);
 	public static final DeferredItem<Item> STROATER_SPAWN_EGG = REGISTRY.register("stroater_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.STROATER, -6724096, -16777216, new Item.Properties()));
 	public static final DeferredItem<Item> HALF_GOLDEN_APPLE = REGISTRY.register("half_golden_apple", HalfGoldenAppleItem::new);
 	public static final DeferredItem<Item> BEEF = REGISTRY.register("beef", BeefItem::new);
@@ -324,11 +318,17 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.PENSIVE_CUBE, -10066330, -256, new Item.Properties()));
 	public static final DeferredItem<Item> RADIOACTIVE_COOKIE = REGISTRY.register("radioactive_cookie", RadioactiveCookieItem::new);
 	public static final DeferredItem<Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
-	public static final DeferredItem<Item> SUS_STORY = REGISTRY.register("sus_story", SusStoryItem::new);
 	public static final DeferredItem<Item> TICK_CHESTPLATE = REGISTRY.register("tick_chestplate", TickItem.Chestplate::new);
 	public static final DeferredItem<Item> LEBRON_JAMES_SPAWN_EGG = REGISTRY.register("lebron_james_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.LEBRON_JAMES, -256, -1, new Item.Properties()));
 	public static final DeferredItem<Item> BUDDY_SPAWN_EGG = REGISTRY.register("buddy_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.BUDDY, -16737895, -16711681, new Item.Properties()));
 	public static final DeferredItem<Item> BALLOON_SPAWN_EGG = REGISTRY.register("balloon_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.BALLOON, -1, -16777216, new Item.Properties()));
+	public static final DeferredItem<Item> FALLGAYS = REGISTRY.register("fallgays", FallgaysItem::new);
+	public static final DeferredItem<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", SasiAmangasItem::new);
+	public static final DeferredItem<Item> SCRATEST = REGISTRY.register("scratest", ScratestItem::new);
+	public static final DeferredItem<Item> SSSR = REGISTRY.register("sssr", SSSRItem::new);
+	public static final DeferredItem<Item> TO = REGISTRY.register("to", TOItem::new);
+	public static final DeferredItem<Item> FASTTOPASS = REGISTRY.register("fasttopass", FASTTOPASSItem::new);
+	public static final DeferredItem<Item> SUS_STORY = REGISTRY.register("sus_story", SusStoryItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

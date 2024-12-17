@@ -23,7 +23,8 @@ public class CokowadaFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/cumlet"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/cumlet");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/cumlet");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/cumlet");
 
 			@Override
 			public ResourceLocation getStillTexture() {

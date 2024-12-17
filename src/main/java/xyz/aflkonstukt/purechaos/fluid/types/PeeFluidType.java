@@ -23,7 +23,8 @@ public class PeeFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/pee"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/pee_flowing");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/pee");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/pee_flowing");
 
 			@Override
 			public ResourceLocation getStillTexture() {

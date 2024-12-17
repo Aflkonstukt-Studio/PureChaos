@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Milk 2",
     "bucketName": "Milk 2.0 Bucket",
     "textureStill": "milk2_still",
     "textureFlowing": "milk2_flowing",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 6,

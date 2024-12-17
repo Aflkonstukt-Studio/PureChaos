@@ -25,7 +25,7 @@ public class FranciumItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("it may be a bit radioactive tho"));
+		list.add(Component.translatable("item.purechaos.francium.description_0"));
 	}
 
 	@Override

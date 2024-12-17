@@ -31,7 +31,7 @@ public class MelatoninPillItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Can't sleep? This pill will make you fall asleep instantly!"));
+		list.add(Component.translatable("item.purechaos.melatonin_pill.description_0"));
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class HalfGoldenAppleItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("half golden half normal"));
+		list.add(Component.translatable("item.purechaos.half_golden_apple.description_0"));
 	}
 
 	@Override

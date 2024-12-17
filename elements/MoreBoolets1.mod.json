@@ -1,170 +1,29 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
     "components": [
       {
-        "type": "image",
+        "type": "sprite",
         "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-0.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow1"
+          "sprite": "boolets_sprite.png",
+          "spritesCount": 39,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "BooletsSpriteIndex"
           },
           "anchorPoint": "CENTER",
-          "x": 157,
-          "y": 21
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-1.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow2"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 20
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-10.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow3"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 20
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-11.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow4"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 20
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-2.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow5"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 20
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-3.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow6"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 21
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-4.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow7"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 20
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-5.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow8"
-          },
-          "anchorPoint": "CENTER",
-          "x": 157,
-          "y": 19
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow9"
-          },
-          "anchorPoint": "CENTER",
-          "x": 157,
-          "y": 19
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-7.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow10"
-          },
-          "anchorPoint": "CENTER",
-          "x": 157,
-          "y": 18
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-8.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow11"
-          },
-          "anchorPoint": "CENTER",
-          "x": 157,
-          "y": 18
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ac3db2de601a410eec253f65bf069dc6obpifm8uxmg9rjte-9.png",
-          "use1Xscale": true,
-          "displayCondition": {
-            "name": "BooletsShow12"
-          },
-          "anchorPoint": "CENTER",
-          "x": 158,
-          "y": 18
+          "x": 145,
+          "y": 7,
+          "locked": false
         }
       }
     ],
     "baseTexture": "shadow.png",
     "overlayTarget": "Ingame",
     "displayCondition": {
-      "name": "MoreBoolets1DisplayOverlayIngame2"
+      "name": "BooletsDisplayOverlay"
     },
     "gridSettings": {
       "sx": 18,

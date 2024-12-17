@@ -1,11 +1,12 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "fluid",
   "definition": {
     "name": "Gatorade",
     "bucketName": "Gatorade Bucket",
     "textureStill": "gatorade_normal_still",
     "textureFlowing": "gatorade_normal_flowing",
+    "hasFog": false,
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,

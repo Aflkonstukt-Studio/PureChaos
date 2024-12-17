@@ -26,8 +26,8 @@ public class BeerItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("beer."));
-		list.add(Component.literal("\u00A78(might be a bit addictive)"));
+		list.add(Component.translatable("item.purechaos.beer.description_0"));
+		list.add(Component.translatable("item.purechaos.beer.description_1"));
 	}
 
 	@Override

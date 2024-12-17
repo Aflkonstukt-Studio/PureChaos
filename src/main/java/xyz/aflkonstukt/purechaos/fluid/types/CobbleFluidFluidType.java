@@ -23,7 +23,8 @@ public class CobbleFluidFluidType extends FluidType {
 	@SubscribeEvent
 	public static void registerFluidTypeExtensions(RegisterClientExtensionsEvent event) {
 		event.registerFluidType(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/cobblestone"), FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/cobblestone");
+			private static final ResourceLocation STILL_TEXTURE = ResourceLocation.parse("purechaos:block/cobblestone");
+			private static final ResourceLocation FLOWING_TEXTURE = ResourceLocation.parse("purechaos:block/cobblestone");
 
 			@Override
 			public ResourceLocation getStillTexture() {

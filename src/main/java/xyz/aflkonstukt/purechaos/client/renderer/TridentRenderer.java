@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class TridentRenderer extends MobRenderer<TridentEntity, Modeltrident<TridentEntity>> {
 	public TridentRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeltrident(context.bakeLayer(Modeltrident.LAYER_LOCATION)), 0.5f);
+		super(context, new Modeltrident<TridentEntity>(context.bakeLayer(Modeltrident.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
