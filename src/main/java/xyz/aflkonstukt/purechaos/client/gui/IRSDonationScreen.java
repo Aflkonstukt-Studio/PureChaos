@@ -85,7 +85,7 @@ public class IRSDonationScreen extends AbstractContainerScreen<IRSDonationMenu> 
 				PacketDistributor.sendToServer(new IRSDonationButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
 				IRSDonationButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 			}
-		}).bounds(this.leftPos + 6, this.topPos + 52, 161, 20).build();
+		}).bounds(this.leftPos + 6, this.topPos + 56, 161, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 	}

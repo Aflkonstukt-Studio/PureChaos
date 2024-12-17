@@ -1,12 +1,22 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": {
-    "type": "neoforge:any"
-  },
+  "biomes": [
+    "purechaos:birch_forest",
+    "purechaos:buffalo_lake",
+    "purechaos:cyber_biome",
+    "purechaos:dream_biome",
+    "purechaos:easter",
+    "purechaos:fun_land",
+    "purechaos:heaven_or_hell",
+    "purechaos:hell_but_overworld",
+    "purechaos:more_extreme_hills",
+    "purechaos:puffs_biome",
+    "purechaos:susus"
+  ],
   "spawners": {
     "type": "purechaos:buddy",
     "weight": 20,
-    "minCount": 4,
+    "minCount": 1,
     "maxCount": 4
   }
 }

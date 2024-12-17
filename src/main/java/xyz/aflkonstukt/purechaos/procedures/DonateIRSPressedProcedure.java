@@ -108,10 +108,10 @@ public class DonateIRSPressedProcedure {
 		}.getAmount(8);
 		{
 			PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
-			_vars.karma = add_karma / 50;
+			_vars.karma = entity.getData(PurechaosModVariables.PLAYER_VARIABLES).karma + add_karma / 30;
 			_vars.syncPlayerVariables(entity);
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("You got: " + add_karma / 50 + " karma!")), true);
+			_player.displayClientMessage(Component.literal(("You got: " + add_karma / 30 + " karma!")), true);
 	}
 }

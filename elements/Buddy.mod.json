@@ -157,10 +157,44 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BirchForest"
+      },
+      {
+        "value": "CUSTOM:BuffaloLake"
+      },
+      {
+        "value": "CUSTOM:CyberBiome"
+      },
+      {
+        "value": "CUSTOM:DreamBiome"
+      },
+      {
+        "value": "CUSTOM:Easter"
+      },
+      {
+        "value": "CUSTOM:FunLand"
+      },
+      {
+        "value": "CUSTOM:HeavenOrHell"
+      },
+      {
+        "value": "CUSTOM:HellButOverworld"
+      },
+      {
+        "value": "CUSTOM:MoreExtremeHills"
+      },
+      {
+        "value": "CUSTOM:PuffsBiome"
+      },
+      {
+        "value": "CUSTOM:Susus"
+      }
+    ],
     "spawnInDungeons": false
   }
 }
