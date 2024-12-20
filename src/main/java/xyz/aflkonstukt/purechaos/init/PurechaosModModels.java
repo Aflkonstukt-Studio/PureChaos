@@ -18,6 +18,7 @@ import xyz.aflkonstukt.purechaos.client.model.Modelshep;
 import xyz.aflkonstukt.purechaos.client.model.Modelpensive_cube;
 import xyz.aflkonstukt.purechaos.client.model.Modelnextbot;
 import xyz.aflkonstukt.purechaos.client.model.Modelmoth;
+import xyz.aflkonstukt.purechaos.client.model.Modelmeteor;
 import xyz.aflkonstukt.purechaos.client.model.Modellong_leg_chicken;
 import xyz.aflkonstukt.purechaos.client.model.Modellegs;
 import xyz.aflkonstukt.purechaos.client.model.Modeljosipmmarket;
@@ -44,6 +45,7 @@ public class PurechaosModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modeltick.LAYER_LOCATION, Modeltick::createBodyLayer);
+		event.registerLayerDefinition(Modelmeteor.LAYER_LOCATION, Modelmeteor::createBodyLayer);
 		event.registerLayerDefinition(Modelamiogyhus.LAYER_LOCATION, Modelamiogyhus::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modelblaze.LAYER_LOCATION, Modelblaze::createBodyLayer);

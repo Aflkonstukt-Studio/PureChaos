@@ -81,7 +81,7 @@ public class UpdateScreen extends Screen {
 			JsonReader reader = new JsonReader(new StringReader(responseString));
 			JsonObject data = gson.fromJson(reader, JsonObject.class);
 			System.out.println(data);
-			if (!data.get("latest").getAsString().equals("PC2024")) {
+			if (!data.get("latest").getAsString().equals("PC2025")) {
 				String latestMCVersion = data.get("mcv").getAsString();
 				String latestPCVersion = data.get("latest").getAsString();
 				PurechaosModVariables.outdated = true;

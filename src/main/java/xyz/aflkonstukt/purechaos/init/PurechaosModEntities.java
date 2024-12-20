@@ -23,6 +23,7 @@ import xyz.aflkonstukt.purechaos.entity.PensiveCubesEntity;
 import xyz.aflkonstukt.purechaos.entity.NerdEntity;
 import xyz.aflkonstukt.purechaos.entity.MuricaEntity;
 import xyz.aflkonstukt.purechaos.entity.MothOfAggrevationEntity;
+import xyz.aflkonstukt.purechaos.entity.MeteorEntity;
 import xyz.aflkonstukt.purechaos.entity.LongLegChickenEntity;
 import xyz.aflkonstukt.purechaos.entity.LegsEntity;
 import xyz.aflkonstukt.purechaos.entity.LebronJamesEntity;
@@ -265,6 +266,10 @@ public class PurechaosModEntities {
 			EntityType.Builder.<BalloonEntity>of(BalloonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<MeteorEntity>> METEOR = register("meteor",
+			EntityType.Builder.<MeteorEntity>of(MeteorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -327,6 +332,7 @@ public class PurechaosModEntities {
 		LebronJamesEntity.init(event);
 		BuddyEntity.init(event);
 		BalloonEntity.init(event);
+		MeteorEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -378,5 +384,6 @@ public class PurechaosModEntities {
 		event.put(LEBRON_JAMES.get(), LebronJamesEntity.createAttributes().build());
 		event.put(BUDDY.get(), BuddyEntity.createAttributes().build());
 		event.put(BALLOON.get(), BalloonEntity.createAttributes().build());
+		event.put(METEOR.get(), MeteorEntity.createAttributes().build());
 	}
 }

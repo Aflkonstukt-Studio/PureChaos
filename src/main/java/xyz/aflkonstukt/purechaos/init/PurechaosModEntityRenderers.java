@@ -21,6 +21,7 @@ import xyz.aflkonstukt.purechaos.client.renderer.PensiveCubesRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.NerdRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MuricaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MothOfAggrevationRenderer;
+import xyz.aflkonstukt.purechaos.client.renderer.MeteorRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.LongLegChickenRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.LegsRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.LebronJamesRenderer;
@@ -120,5 +121,6 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.LEBRON_JAMES.get(), LebronJamesRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.BUDDY.get(), BuddyRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.BALLOON.get(), BalloonRenderer::new);
+		event.registerEntityRenderer(PurechaosModEntities.METEOR.get(), MeteorRenderer::new);
 	}
 }

@@ -13,7 +13,7 @@ public class SeekDangerGoal extends Goal {
 	private final PathfinderMob mob;
 	private Vec3 wantedPos;
 	private final double speedModifier;
-	private boolean committingSuicide = false;
+	private boolean stoppingMovement = false;
 
 	public SeekDangerGoal(PathfinderMob mob) {
 		this.mob = mob;
@@ -23,7 +23,7 @@ public class SeekDangerGoal extends Goal {
 
 	@Override
 	public boolean canUse() {
-		if (committingSuicide) return false; // Don't move
+		if (stoppingMovement) return false; // Don't move
 		// First, try to find a dangerous spot
 		Vec3 dangerPos = getDangerousPosition();
 		if (dangerPos != null) {
@@ -43,7 +43,7 @@ public class SeekDangerGoal extends Goal {
 
 	@Override
 	public boolean canContinueToUse() {
-		if (committingSuicide) {
+		if (stoppingMovement) {
 			return true; // Keep Buddy still
 		}
 		return !this.mob.getNavigation().isDone();
@@ -55,7 +55,7 @@ public class SeekDangerGoal extends Goal {
 
 		// Only stop moving if Buddy is fully in a dangerous block
 		if (isDangerous(currentPos) && !isCliff(currentPos.above())) {
-			committingSuicide = true;
+			stoppingMovement = true;
 			this.mob.getNavigation().stop();
 			this.mob.setDeltaMovement(Vec3.ZERO); // Stop moving completely
 		}
@@ -64,8 +64,8 @@ public class SeekDangerGoal extends Goal {
 	@Override
 	public void start() {
 		if (wantedPos != null) {
-			System.out.println("Buddy moving to dangerous spot: " + wantedPos);
 			this.mob.getNavigation().moveTo(wantedPos.x + 0.5, wantedPos.y, wantedPos.z + 0.5, this.speedModifier);
+			this.mob.getNavigation().setCanFloat(true); // Allow the mob to fall
 		}
 	}
 
@@ -91,21 +91,17 @@ public class SeekDangerGoal extends Goal {
 	}
 
 	private boolean isDangerous(BlockPos pos) {
-		return mob.level().getBlockState(pos).is(Blocks.LAVA) // Lava
-				|| mob.level().getBlockState(pos).is(Blocks.WATER) // Water
-				|| isCliff(pos); // Cliff check
+		return isCliff(pos)
+				|| mob.level().getBlockState(pos).is(Blocks.LAVA) // Lava
+				|| mob.level().getBlockState(pos).is(Blocks.WATER);
 	}
 
 	private boolean isCliff(BlockPos pos) {
-		// Check if the block Buddy stands on is solid
-		if (!mob.level().getBlockState(pos.below()).isAir()) {
-			BlockPos below1 = pos.below(1);
-			BlockPos below2 = pos.below(2);
+		// Check if the block below is air, indicating a cliff
+		BlockPos below1 = pos.below(1);
+		BlockPos below2 = pos.below(2);
 
-			// Ensure there’s a clear drop of at least 2 blocks
-			return mob.level().getBlockState(below1).isAir() && mob.level().getBlockState(below2).isAir();
-		}
-		return false; // Not a cliff
+		// Ensure there’s a clear drop of at least 2 blocks
+		return mob.level().getBlockState(below1).isAir();
 	}
-
 }
