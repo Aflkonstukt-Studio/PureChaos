@@ -4,6 +4,7 @@
  */
 package xyz.aflkonstukt.purechaos.init;
 
+import xyz.aflkonstukt.purechaos.procedures.SaneEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.InfectedEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.HighEffectEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.FatEffectExpiresProcedure;
@@ -12,6 +13,7 @@ import xyz.aflkonstukt.purechaos.procedures.DepressedEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DementiaEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.CurseOfFatherlessEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.potion.SickMobEffect;
+import xyz.aflkonstukt.purechaos.potion.SaneMobEffect;
 import xyz.aflkonstukt.purechaos.potion.RadiationPoisioningMobEffect;
 import xyz.aflkonstukt.purechaos.potion.LymeDiseaseMobEffect;
 import xyz.aflkonstukt.purechaos.potion.InfectedMobEffect;
@@ -51,6 +53,7 @@ public class PurechaosModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> DEPRESSED = REGISTRY.register("depressed", () -> new DepressedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> INFECTED = REGISTRY.register("infected", () -> new InfectedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> LYME_DISEASE = REGISTRY.register("lyme_disease", () -> new LymeDiseaseMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SANE = REGISTRY.register("sane", () -> new SaneMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -83,6 +86,8 @@ public class PurechaosModMobEffects {
 			DepressedEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(INFECTED)) {
 			InfectedEffectExpiresProcedure.execute(entity);
+		} else if (effectInstance.getEffect().is(SANE)) {
+			SaneEffectExpiresProcedure.execute(entity);
 		}
 	}
 }

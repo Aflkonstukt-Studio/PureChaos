@@ -111,7 +111,6 @@ public class PurechaosModVariables {
 				clone.captcha_answer = original.captcha_answer;
 				clone.captcha_type = original.captcha_type;
 				clone.captcha_player_antwort = original.captcha_player_antwort;
-				clone.text_captcha = original.text_captcha;
 				clone.constipated = original.constipated;
 				clone.rizz = original.rizz;
 				clone.announced_rizzed = original.announced_rizzed;
@@ -157,7 +156,6 @@ public class PurechaosModVariables {
 		public static final String DATA_NAME = "purechaos_worldvars";
 		public double last_event = 0;
 		public HashMap<String, Vec3> meteor = new HashMap<String, Vec3>();
-		public double meteor_announce = 20.0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -175,7 +173,6 @@ public class PurechaosModVariables {
 					this.meteor.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
 				}
 			}
-			meteor_announce = nbt.getDouble("meteor_announce");
 		}
 
 		@Override
@@ -194,7 +191,6 @@ public class PurechaosModVariables {
 				}
 				nbt.put("meteor", compoundTag);
 			}
-			nbt.putDouble("meteor_announce", meteor_announce);
 			return nbt;
 		}
 
@@ -217,8 +213,6 @@ public class PurechaosModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "purechaos_mapvars";
-		public double ypx = 0;
-		public double ypz = 0;
 		public boolean dev = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
@@ -228,15 +222,11 @@ public class PurechaosModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			ypx = nbt.getDouble("ypx");
-			ypz = nbt.getDouble("ypz");
 			dev = nbt.getBoolean("dev");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putDouble("ypx", ypx);
-			nbt.putDouble("ypz", ypz);
 			nbt.putBoolean("dev", dev);
 			return nbt;
 		}
@@ -326,7 +316,6 @@ public class PurechaosModVariables {
 		public String captcha_type = "\"\"";
 		public String captcha_player_antwort = "\"\"";
 		public boolean sanity_enabled = true;
-		public double text_captcha = 0;
 		public double constipated = -1.0;
 		public double rizz = 0;
 		public boolean kidnapped = false;
@@ -377,7 +366,6 @@ public class PurechaosModVariables {
 			nbt.putString("captcha_type", captcha_type);
 			nbt.putString("captcha_player_antwort", captcha_player_antwort);
 			nbt.putBoolean("sanity_enabled", sanity_enabled);
-			nbt.putDouble("text_captcha", text_captcha);
 			nbt.putDouble("constipated", constipated);
 			nbt.putDouble("rizz", rizz);
 			nbt.putBoolean("kidnapped", kidnapped);
@@ -429,7 +417,6 @@ public class PurechaosModVariables {
 			captcha_type = nbt.getString("captcha_type");
 			captcha_player_antwort = nbt.getString("captcha_player_antwort");
 			sanity_enabled = nbt.getBoolean("sanity_enabled");
-			text_captcha = nbt.getDouble("text_captcha");
 			constipated = nbt.getDouble("constipated");
 			rizz = nbt.getDouble("rizz");
 			kidnapped = nbt.getBoolean("kidnapped");

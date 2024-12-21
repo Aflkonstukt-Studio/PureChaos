@@ -30,14 +30,23 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "it does nothing. literally. nothing."
+        "it makes ur sanity not drop"
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "TotemOfAmogusItemInHandTick"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:DeekProjectile"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -49,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

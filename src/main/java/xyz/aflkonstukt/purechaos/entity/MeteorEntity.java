@@ -9,6 +9,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -47,7 +48,7 @@ public class MeteorEntity extends PathfinderMob {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-		MeteorEntityFallsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		MeteorEntityFallsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		return super.causeFallDamage(l, d, source);
 	}
 
@@ -55,6 +56,12 @@ public class MeteorEntity extends PathfinderMob {
 	public void baseTick() {
 		super.baseTick();
 		MeteorOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		MeteorEntityFallsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {

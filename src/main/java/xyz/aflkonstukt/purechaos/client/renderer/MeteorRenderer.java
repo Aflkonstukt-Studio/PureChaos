@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class MeteorRenderer extends MobRenderer<MeteorEntity, Modelmeteor<MeteorEntity>> {
 	public MeteorRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmeteor<MeteorEntity>(context.bakeLayer(Modelmeteor.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelmeteor<MeteorEntity>(context.bakeLayer(Modelmeteor.LAYER_LOCATION)), 16f);
 	}
 
 	@Override

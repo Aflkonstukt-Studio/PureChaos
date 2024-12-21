@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Sane",
+    "icon": "sane",
+    "color": {
+      "value": -10027213,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "SaneEffectStartedapplied"
+    },
+    "onExpired": {
+      "name": "SaneEffectExpires"
+    }
+  }
+}

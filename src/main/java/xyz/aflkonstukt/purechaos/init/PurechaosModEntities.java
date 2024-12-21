@@ -269,7 +269,7 @@ public class PurechaosModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<MeteorEntity>> METEOR = register("meteor",
 			EntityType.Builder.<MeteorEntity>of(MeteorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(10f, 16f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

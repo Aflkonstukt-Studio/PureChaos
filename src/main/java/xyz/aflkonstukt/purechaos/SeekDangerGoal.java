@@ -1,8 +1,8 @@
 package xyz.aflkonstukt.purechaos;
 
-import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.entity.ai.util.DefaultRandomPos;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
@@ -11,30 +11,28 @@ import java.util.EnumSet;
 
 public class SeekDangerGoal extends Goal {
 	private final PathfinderMob mob;
-	private Vec3 wantedPos;
+	private Vec3 targetPos;
 	private final double speedModifier;
-	private boolean stoppingMovement = false;
 
 	public SeekDangerGoal(PathfinderMob mob) {
 		this.mob = mob;
-		this.speedModifier = 1.0D;
+		this.speedModifier = 1.0F;
 		this.setFlags(EnumSet.of(Goal.Flag.MOVE));
 	}
 
 	@Override
 	public boolean canUse() {
-		if (stoppingMovement) return false; // Don't move
 		// First, try to find a dangerous spot
-		Vec3 dangerPos = getDangerousPosition();
+		Vec3 dangerPos = findDangerousPosition();
 		if (dangerPos != null) {
-			this.wantedPos = dangerPos;
+			this.targetPos = dangerPos;
 			return true; // Move to dangerous spot
 		}
 
 		// If no dangerous spot, pick a random position to wander
 		Vec3 randomPos = DefaultRandomPos.getPos(this.mob, 10, 7);
 		if (randomPos != null) {
-			this.wantedPos = randomPos;
+			this.targetPos = randomPos;
 			return true; // Move randomly
 		}
 
@@ -43,45 +41,65 @@ public class SeekDangerGoal extends Goal {
 
 	@Override
 	public boolean canContinueToUse() {
-		if (stoppingMovement) {
-			return true; // Keep Buddy still
-		}
-		return !this.mob.getNavigation().isDone();
-	}
-
-	@Override
-	public void tick() {
-		BlockPos currentPos = this.mob.blockPosition();
-
-		// Only stop moving if Buddy is fully in a dangerous block
-		if (isDangerous(currentPos) && !isCliff(currentPos.above())) {
-			stoppingMovement = true;
-			this.mob.getNavigation().stop();
-			this.mob.setDeltaMovement(Vec3.ZERO); // Stop moving completely
-		}
+		return this.targetPos != null && this.mob.distanceToSqr(this.targetPos) > 1.0D;
 	}
 
 	@Override
 	public void start() {
-		if (wantedPos != null) {
-			this.mob.getNavigation().moveTo(wantedPos.x + 0.5, wantedPos.y, wantedPos.z + 0.5, this.speedModifier);
-			this.mob.getNavigation().setCanFloat(true); // Allow the mob to fall
+		if (this.targetPos != null) {
+			// Try to move to the target using navigation
+			this.mob.getNavigation().moveTo(this.targetPos.x, this.targetPos.y, this.targetPos.z, this.speedModifier);
 		}
 	}
 
+	@Override
+	public void tick() {
+		if (this.targetPos != null) {
+			Vec3 currentPos = mob.position();
 
-	private Vec3 getDangerousPosition() {
+			// Check if Buddy is stuck near a cliff or not moving toward danger
+			if (isCliff(BlockPos.containing(currentPos)) || mob.getNavigation().isStuck()) {
+				// Override navigation and use manual movement
+				Vec3 direction = targetPos.subtract(currentPos).normalize().scale(speedModifier);
+
+				// Apply manual movement toward the target
+				this.mob.setDeltaMovement(direction.x, this.mob.getDeltaMovement().y, direction.z);
+
+				// Rotate Buddy to face the target
+				float yaw = (float) (Math.atan2(direction.z, direction.x) * (180 / Math.PI)) - 90;
+				this.mob.setYRot(yaw);
+				this.mob.yBodyRot = yaw; // Update body rotation for smooth turning
+				this.mob.yHeadRot = yaw; // Update head rotation to match
+
+				// Apply gravity if not on the ground
+				if (!this.mob.onGround()) {
+					this.mob.setDeltaMovement(this.mob.getDeltaMovement().add(0, -0.08, 0));
+				}
+			}
+
+			// Stop if Buddy is close to the target
+			if (currentPos.distanceTo(targetPos) <= 1.0D) {
+				this.targetPos = null; // Clear target once reached
+			}
+		}
+	}
+
+	@Override
+	public void stop() {
+		this.targetPos = null; // Clear the target position
+		this.mob.getNavigation().stop(); // Stop the navigation
+	}
+
+	private Vec3 findDangerousPosition() {
 		BlockPos mobPos = this.mob.blockPosition();
 
-		// Search nearby blocks for danger zones (cliffs or lava)
-		for (int x = -20; x <= 20; x++) {
-			for (int z = -20; z <= 20; z++) {
-				for (int y = -5; y <= 5; y++) {
+		// Search nearby blocks for cliffs or lava
+		for (int x = -10; x <= 10; x++) {
+			for (int y = -5; y <= 5; y++) {
+				for (int z = -10; z <= 10; z++) {
 					BlockPos pos = mobPos.offset(x, y, z);
-
-					// Check for cliffs (air below) or lava
 					if (isDangerous(pos)) {
-						return Vec3.atBottomCenterOf(pos);
+						return Vec3.atCenterOf(pos);
 					}
 				}
 			}
@@ -91,17 +109,17 @@ public class SeekDangerGoal extends Goal {
 	}
 
 	private boolean isDangerous(BlockPos pos) {
-		return isCliff(pos)
-				|| mob.level().getBlockState(pos).is(Blocks.LAVA) // Lava
-				|| mob.level().getBlockState(pos).is(Blocks.WATER);
+		// Check for cliffs, lava, or other dangerous blocks
+		return isCliff(pos) || mob.level().getBlockState(pos).is(Blocks.LAVA);
 	}
 
 	private boolean isCliff(BlockPos pos) {
-		// Check if the block below is air, indicating a cliff
-		BlockPos below1 = pos.below(1);
-		BlockPos below2 = pos.below(2);
-
-		// Ensure there’s a clear drop of at least 2 blocks
-		return mob.level().getBlockState(below1).isAir();
+		// Check for air below the block for at least 5 blocks
+		for (int i = 1; i <= 5; i++) {
+			if (!mob.level().getBlockState(pos.below(i)).isAir()) {
+				return false; // Not a cliff
+			}
+		}
+		return true; // It’s a cliff
 	}
 }
