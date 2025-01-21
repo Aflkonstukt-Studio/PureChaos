@@ -156,6 +156,7 @@ public class PurechaosModVariables {
 		public static final String DATA_NAME = "purechaos_worldvars";
 		public double last_event = 0;
 		public HashMap<String, Vec3> meteor = new HashMap<String, Vec3>();
+		public double judgment_day = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -173,6 +174,7 @@ public class PurechaosModVariables {
 					this.meteor.put(name, new Vec3(listTag.getDouble(0), listTag.getDouble(1), listTag.getDouble(2)));
 				}
 			}
+			judgment_day = nbt.getDouble("judgment_day");
 		}
 
 		@Override
@@ -191,6 +193,7 @@ public class PurechaosModVariables {
 				}
 				nbt.put("meteor", compoundTag);
 			}
+			nbt.putDouble("judgment_day", judgment_day);
 			return nbt;
 		}
 

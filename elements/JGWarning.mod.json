@@ -1,0 +1,198 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 403,
+    "height": 189,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_is_your_last_warning",
+          "text": {
+            "fixedValue": "⚠ This is Your LAST WARNING! ⚠"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_judgment_day_will_very_likely",
+          "text": {
+            "fixedValue": "Judgment day will very likely"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 101,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_melt_your_pc",
+          "text": {
+            "fixedValue": "MELT YOUR PC"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 251,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_once_its_over",
+          "text": {
+            "fixedValue": "Once it's over,"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 115,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_world_will_be_unplayable",
+          "text": {
+            "fixedValue": "THIS WORLD WILL BE UNPLAYABLE."
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 192,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_important_epilepsy_warning",
+          "text": {
+            "fixedValue": "IMPORTANT: Epilepsy Warning"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_event_contains_intense_flas",
+          "text": {
+            "fixedValue": "This event contains intense flashing lights, rapid"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 128,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_screen_effects_and_extreme_chao",
+          "text": {
+            "fixedValue": "screen effects, and extreme chaos."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 139,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_if_you_are_sensitive_to_these_w",
+          "text": {
+            "fixedValue": "If you are sensitive to these, we strongly recommend NOT proceeding."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 43,
+          "y": 158,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "Exit to Safety",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ExitJudgmentDay"
+          },
+          "width": 161,
+          "height": 20,
+          "x": 43,
+          "y": 186,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "Proceed to Doom",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "StartJudgmentDay"
+          },
+          "width": 161,
+          "height": 20,
+          "x": 236,
+          "y": 186,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

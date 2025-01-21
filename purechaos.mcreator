@@ -10325,6 +10325,10 @@
             "type": "entity"
           },
           {
+            "name": "force",
+            "type": "logic"
+          },
+          {
             "name": "radius",
             "type": "number"
           },
@@ -11801,6 +11805,141 @@
         ]
       },
       "path": "~/Player Procedures/Events"
+    },
+    {
+      "name": "CallJudgmentDay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_judgment_day",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/CallJudgmentDayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/EventCommand"
+    },
+    {
+      "name": "JGWarning",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jg_warning",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/world/inventory/JGWarningMenu.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/network/JGWarningButtonMessage.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/client/gui/JGWarningScreen.java"
+        ]
+      },
+      "path": "~/Player Procedures/Events/Judgment Day"
+    },
+    {
+      "name": "ExitJudgmentDay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "exit_judgment_day",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/ExitJudgmentDayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events/Judgment Day"
+    },
+    {
+      "name": "StartJudgmentDay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "start_judgment_day",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/StartJudgmentDayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events/Judgment Day"
+    },
+    {
+      "name": "JudgmentDayHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judgment_day_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/xyz/aflkonstukt/purechaos/procedures/JudgmentDayHandlerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Player Procedures/Events/Judgment Day"
     }
   ],
   "variable_elements": [
@@ -12133,6 +12272,12 @@
       "type": "logic",
       "scope": "global",
       "value": "false"
+    },
+    {
+      "name": "judgment_day",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -12726,6 +12871,9 @@
     "BIOMES:minecraft:has_structure/ocean_ruin_warm": [
       "~CUSTOM:Susus"
     ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Emepee"
+    ],
     "ENTITIES:minecraft:undead": [
       "~CUSTOM:Balloon",
       "~CUSTOM:Nerd",
@@ -12736,9 +12884,6 @@
       "~CUSTOM:JOSIP",
       "~CUSTOM:Amogus2",
       "~CUSTOM:AmongUs"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:Emepee"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~CUSTOM:Easter",
@@ -13062,8 +13207,8 @@
       "entity.purechaos.murica": "\u0027Murica",
       "item.purechaos.food_item_2.description_0": "You are confused about what this is... Try eating it?",
       "block.purechaos.pee_block": "Pee Block",
-      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "fluid.chaosmod.cobble_fluid": "Cobblestone Fluid",
+      "block.chaosmod.backrooms_lvl_1light": "Backrooms (1) Light",
       "gamerule.adblocker.description": "Enable this to disable ADs",
       "item.purechaos.blaz_spawn_egg": "Blaz Spawn Egg",
       "subtitles.pan_hit": "",
@@ -13104,6 +13249,7 @@
       "fluid.chaosmod.staravoda": "Staravoda",
       "item.purechaos.spear": "Spear",
       "item.purechaos.beef_armor_leggings": "Beef Armor Leggings",
+      "gui.purechaos.jg_warning.label_this_is_your_last_warning": "⚠ This is Your LAST WARNING! ⚠",
       "item.purechaos.communism_orb.description_0": "You are wondering what kind of power it possesses",
       "key.purechaos.two": "Spit",
       "entity.purechaos.technoblade": "Technoblade",
@@ -13168,6 +13314,7 @@
       "biome.chaosmod.hell_but_overworld": "Neover",
       "item.chaosmod.amogus_3_crew_spawn_egg": "Amogus 3 (Crewmate, Red) Spawn Egg",
       "item.purechaos.icepick.description_0": "Use it to lobotomize yourself or others.",
+      "gui.purechaos.jg_warning.label_screen_effects_and_extreme_chao": "screen effects, and extreme chaos.",
       "biome.chaosmod.desert": "Desert",
       "entity.chaosmod.the_rock": "The Rock",
       "item.purechaos.turtle_armor_leggings": "Turtle Leggings",
@@ -13204,6 +13351,7 @@
       "item.chaosmod.water_cup": "Water Cup",
       "biome.chaosmod.ohio": "Ohio",
       "item.minecraft.splash_potion.effect.amongsus": "Splash Potion of Amongsus",
+      "gui.purechaos.jg_warning.label_judgment_day_will_very_likely": "Judgment day will very likely",
       "entity.purechaos.amogus_3": "Amogus 3",
       "item.chaosmod.xite": "Xite",
       "entity.purechaos.amogus_2": "Amogus 2",
@@ -13242,6 +13390,7 @@
       "entity.chaosmod.cursed_dog": "Dgo",
       "entity.chaosmod.amogus_3_blu": "Amogus 3 (Impostor, Blue)",
       "item.purechaos.testicle_on_stick": "Testicle On Stick",
+      "gui.purechaos.jg_warning.label_if_you_are_sensitive_to_these_w": "If you are sensitive to these, we strongly recommend NOT proceeding.",
       "painting.purechaos.you_like_kissing_boys.author": "boykisser",
       "gui.purechaos.irs_donation.label_welcome_to_the_irs_idis": "Welcome to the IRS IDIS",
       "block.chaosmod.cobble_fluid": "Cobblestone Fluid",
@@ -13268,6 +13417,7 @@
       "item.purechaos.kentucky_fried_chicken.description_0": "12 herbs ands spices go brrrrrrrrrrrrrrrrrr",
       "item.minecraft.lingering_potion.effect.fuck_you": "Lingering Potion of Fuck You",
       "item.purechaos.aentity_spawn_egg": "Aentity Spawn Egg",
+      "gui.purechaos.jg_warning.label_this_world_will_be_unplayable": "THIS WORLD WILL BE UNPLAYABLE.",
       "painting.purechaos.you_like_seeing_me.author": "boykisser",
       "subtitles.amogus": "sus",
       "item.purechaos.bullet": "Bullet",
@@ -13319,8 +13469,8 @@
       "item.purechaos.orange_fluid_bucket.description_0": "Sus Liquid",
       "gamerule.tickRepellant.description": "Disables players from getting ticks",
       "biome.purechaos.backrooms_biome": "Backrooms",
-      "entity.chaosmod.murica": "\u0027Murica",
       "item.purechaos.walter_wight_spawn_egg": "Walter White Spawn Egg",
+      "entity.chaosmod.murica": "\u0027Murica",
       "item.chaosmod.wood_dimension": "Wood Dimension Portal Igniter",
       "item.chaosmod.fallgays.desc": "WOOO WooooO wwOoOoOooOoOo",
       "entity.chaosmod.vikkivuk": "Vikkivuk",
@@ -13357,6 +13507,7 @@
       "item.chaosmod.staravoda_bucket": "Staravoda Bucket",
       "death.attack.alcohol_death": "%1$s drank himself to death",
       "block.purechaos.backrooms_ceiling": "Backrooms Ceiling",
+      "gui.purechaos.jg_warning.label_once_its_over": "Once it\u0027s over,",
       "item.chaosmod.obamium": "Obamium",
       "subtitles.crnidani": "crnidanijebani",
       "item.purechaos.dorito_nacho.description_0": "mmmmm",
@@ -13379,6 +13530,7 @@
       "item.chaosmod.t_pose_entity_spawn_egg": "T Pose Entity Spawn Egg",
       "block.purechaos.computer": "Computer",
       "effect.purechaos.blind": "Blind",
+      "gui.purechaos.jg_warning.label_melt_your_pc": "MELT YOUR PC",
       "item.chaosmod.samsung_note_7": "Samsung Note 7",
       "item.purechaos.corruptstaff.description_0": "§k#[]CORRUPTED[]#",
       "subtitles.vine_boom": "",
@@ -13418,6 +13570,7 @@
       "block.chaosmod.staravoda": "Staravoda",
       "painting.purechaos.nuh_uh.author": "boykisser",
       "item.chaosmod.scratest": "GalaxyHunterGT - Scratest",
+      "gui.purechaos.jg_warning.button_empty": "Exit to Safety",
       "item.chaosmod.adidas_armor_leggings": "Adidas Leggings",
       "item.purechaos.stalin_spawn_egg": "Stalin Spawn Egg",
       "item.chaosmod.dingot": "Dingot",
@@ -13554,6 +13707,7 @@
       "item.purechaos.mercury": "Mercury",
       "entity.purechaos.blaz": "Blaz",
       "block.purechaos.backroom_wall_bottom": "Backroom Wall Bottom",
+      "gui.purechaos.jg_warning.label_important_epilepsy_warning": "IMPORTANT: Epilepsy Warning",
       "subtitles.rock_death": "",
       "subtitles.aksoundgobrr": "AK 47 gunshot",
       "gamerule.doBossSpawning": "Should Chaos Bosses Spawn?",
@@ -13592,6 +13746,7 @@
       "subtitles.wet_cupcakke": "",
       "subtitles.sneeze": "",
       "item.purechaos.beef_armor_chestplate": "Beef Armor Body",
+      "gui.purechaos.jg_warning.button_proceed_to_doom": "Proceed to Doom",
       "block.chaosmod.potatus": "Potatus",
       "item.chaosmod.cyberspace": "Cyberspace Portal Igniter",
       "item.purechaos.spit_ball.description_0": "why",
@@ -13630,6 +13785,7 @@
       "entity.purechaos.trident": "Tridet",
       "item.purechaos.sus_sword.description_0": "sasi sord",
       "item.purechaos.poop.description_2": "you are curios about what it tastes like.",
+      "gui.purechaos.jg_warning.button_exit_to_safety": "Exit to Safety",
       "item.purechaos.poop.description_1": "you get a weird feeling \"this came out of me?\"",
       "item.chaosmod.zenith": "Zenith",
       "item.purechaos.poop.description_0": "as it smiles at you",
@@ -13693,6 +13849,7 @@
       "entity.purechaos.irs": "IRS",
       "entity.chaosmod.baldi_minus": "Baldi Minus",
       "subtitles.lights_out": "",
+      "gui.purechaos.jg_warning.button_empty1": "Proceed to Doom",
       "item.purechaos.adidas_axe": "Adidas Axe",
       "item.purechaos.tick_chestplate": "Tick",
       "entity.purechaos.ikea_desk": "Ikea Desk",
@@ -13852,6 +14009,7 @@
       "item.chaosmod.sssr.desc": "Союз нерушимый республик свободных Сплотила навеки Великая Русь Да здравствует созданный волей народов Единый, могучий Советский Союз! Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! Сквозь грозы сияло нам солнце свободы И Ленин великий нам путь озарил На правое дело он поднял народы На труд и на подвиги нас вдохновил Славься, Отечество наше свободное ‎Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт! В победе бессмертных идей коммунизма Мы видим грядущее нашей страны И Красному знамени славной Отчизны Мы будем всегда беззаветно верны! Славься, Отечество наше свободное Дружбы народов надёжный оплот! ‎Партия Ленина — сила народная ‎Нас к торжеству коммунизма ведёт!",
       "fluid.purechaos.oil": "Crude Oil",
       "item.purechaos.brake_fluid": "Brake Fluid",
+      "gui.purechaos.jg_warning.label_this_event_contains_intense_flas": "This event contains intense flashing lights, rapid",
       "item.purechaos.pickax": "Pickax",
       "item.chaosmod.gatorade_bucket": "Gatorade Bucket",
       "block.purechaos.puffs_block": "Puffs Block",
@@ -13913,6 +14071,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Achievements",
+        "children": []
+      },
       {
         "name": "Biomes",
         "children": []
@@ -14083,13 +14245,14 @@
           },
           {
             "name": "Events",
-            "children": []
+            "children": [
+              {
+                "name": "Judgment Day",
+                "children": []
+              }
+            ]
           }
         ]
-      },
-      {
-        "name": "Achievements",
-        "children": []
       },
       {
         "name": "Specialized",
@@ -14128,5 +14291,5 @@
     "credits": "We got ideas from various sources such as PhoenixSC, r/PhoenixSC, itsJim, r/Minecraft and other!",
     "modElementsPackage": "xyz.aflkonstukt.purechaos"
   },
-  "mcreatorVersion": 202400451119
+  "mcreatorVersion": 202400452410
 }

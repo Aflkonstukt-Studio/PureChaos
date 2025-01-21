@@ -24,8 +24,8 @@ public class ShitOnKeyPressedProcedure {
 		if (entity == null)
 			return;
 		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).constipated >= 0) {
-			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() + 1), (entity.getDeltaMovement().z())));
-			Vec3 motion = entity.getDeltaMovement().scale(2);
+			entity.setDeltaMovement(new Vec3((Math.sin(entity.getYRot()) * (-1) * Math.cos(entity.getXRot())), (Math.sin(entity.getXRot()) * (-1) + 1), (Math.cos(entity.getYRot()) * Math.cos(entity.getXRot()))));
+			Vec3 motion = entity.getDeltaMovement().scale(1.5);
 			entity.setDeltaMovement(motion);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.WHITE_SMOKE, x, y, z, 400, 1, 1, 1, 0);

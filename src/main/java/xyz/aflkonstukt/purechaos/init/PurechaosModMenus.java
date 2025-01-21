@@ -5,6 +5,7 @@
 package xyz.aflkonstukt.purechaos.init;
 
 import xyz.aflkonstukt.purechaos.world.inventory.VikkiVukGuiMenu;
+import xyz.aflkonstukt.purechaos.world.inventory.JGWarningMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.IRSDonationMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.ComputerGuiMenu;
 import xyz.aflkonstukt.purechaos.world.inventory.CheatGUIMenu;
@@ -27,4 +28,5 @@ public class PurechaosModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CaptchaGUIMenu>> CAPTCHA_GUI = REGISTRY.register("captcha_gui", () -> IMenuTypeExtension.create(CaptchaGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AdGUIMenu>> AD_GUI = REGISTRY.register("ad_gui", () -> IMenuTypeExtension.create(AdGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<IRSDonationMenu>> IRS_DONATION = REGISTRY.register("irs_donation", () -> IMenuTypeExtension.create(IRSDonationMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<JGWarningMenu>> JG_WARNING = REGISTRY.register("jg_warning", () -> IMenuTypeExtension.create(JGWarningMenu::new));
 }
