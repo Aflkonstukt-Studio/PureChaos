@@ -14,7 +14,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 public class SummonMeteorProcedure {
-	public static void execute(LevelAccessor world, double x, double z, Entity entity, boolean force, double radius, double time) {
+	public static void execute(LevelAccessor world, double x, double z, Entity entity, boolean force, boolean silenterror, double radius, double time) {
 		if (entity == null)
 			return;
 		double expx = 0;
@@ -37,8 +37,10 @@ public class SummonMeteorProcedure {
 										+ Math.round(expz) + " \u00A74with the blast radius of " + Math.round(radius) + " blocks. It will enter the atmosphere in about " + (time / 20 >= 60 ? Math.floor((time / 20) / 60) : Math.floor(time / 20))
 										+ (time / 20 >= 60 ? " minutes." : " seconds."))), false);
 				} else {
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("Meteor already inbound! Call \u00A72/event meteor cancel \u00A7fif you would like to cancel it."), false);
+					if (!silenterror) {
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Meteor already inbound! Call \u00A72/event meteor cancel \u00A7fif you would like to cancel it."), false);
+					}
 				}
 			} else {
 				PurechaosModVariables.WorldVariables.get(world).meteor.put("details", (new Vec3(time, radius, 0)));

@@ -11,6 +11,6 @@ public class CallMeteorProcedure {
 	public static void execute(LevelAccessor world, double x, double z, CommandContext<CommandSourceStack> arguments, Entity entity) {
 		if (entity == null)
 			return;
-		SummonMeteorProcedure.execute(world, x, z, entity, false, DoubleArgumentType.getDouble(arguments, "radius"), DoubleArgumentType.getDouble(arguments, "time") * 20);
+		SummonMeteorProcedure.execute(world, x, z, entity, false, false, DoubleArgumentType.getDouble(arguments, "radius"), DoubleArgumentType.getDouble(arguments, "time") * 20);
 	}
 }

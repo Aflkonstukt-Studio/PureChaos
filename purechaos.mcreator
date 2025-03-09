@@ -8461,7 +8461,12 @@
         "files": [
           "src/main/java/xyz/aflkonstukt/purechaos/procedures/EventHandlerProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Player Procedures/Events"
     },
@@ -10329,6 +10334,10 @@
             "type": "logic"
           },
           {
+            "name": "silenterror",
+            "type": "logic"
+          },
+          {
             "name": "radius",
             "type": "number"
           },
@@ -11465,11 +11474,9 @@
       "registry_name": "buddy",
       "metadata": {
         "files": [
-          "src/main/java/xyz/aflkonstukt/purechaos/entity/BuddyEntity.java",
-          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BuddyRenderer.java",
           "src/main/java/xyz/aflkonstukt/purechaos/entity/model/BuddyModel.java",
-          "src/main/resources/data/purechaos/neoforge/biome_modifier/buddy_biome_modifier.json",
-          "src/main/resources/assets/purechaos/models/item/buddy_spawn_egg.json"
+          "src/main/java/xyz/aflkonstukt/purechaos/client/renderer/BuddyRenderer.java",
+          "src/main/java/xyz/aflkonstukt/purechaos/entity/BuddyEntity.java"
         ]
       },
       "path": "~/Entities"
@@ -14272,7 +14279,7 @@
   "workspaceSettings": {
     "modid": "purechaos",
     "modName": "Pure Chaos",
-    "version": "2024",
+    "version": "2025",
     "description": "Add a little bit of, spice.",
     "author": "NichtVikki, JosipTLG, X Master Woo",
     "websiteURL": "https://modrinth.com/mod/chaos",

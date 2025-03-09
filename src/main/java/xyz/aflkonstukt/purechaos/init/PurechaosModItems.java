@@ -320,7 +320,6 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
 	public static final DeferredItem<Item> TICK_CHESTPLATE = REGISTRY.register("tick_chestplate", TickItem.Chestplate::new);
 	public static final DeferredItem<Item> LEBRON_JAMES_SPAWN_EGG = REGISTRY.register("lebron_james_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.LEBRON_JAMES, -256, -1, new Item.Properties()));
-	public static final DeferredItem<Item> BUDDY_SPAWN_EGG = REGISTRY.register("buddy_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.BUDDY, -16737895, -16711681, new Item.Properties()));
 	public static final DeferredItem<Item> BALLOON_SPAWN_EGG = REGISTRY.register("balloon_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.BALLOON, -1, -16777216, new Item.Properties()));
 	public static final DeferredItem<Item> FALLGAYS = REGISTRY.register("fallgays", FallgaysItem::new);
 	public static final DeferredItem<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", SasiAmangasItem::new);

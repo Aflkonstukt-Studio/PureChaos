@@ -40,7 +40,8 @@ public class JudgmentDayHandlerProcedure {
 				for (Entity entityiterator : new ArrayList<>(world.players())) {
 					if (Mth.nextInt(RandomSource.create(), 1, world.isClientSide() ? Minecraft.getInstance().getConnection().getOnlinePlayers().size() : ServerLifecycleHooks.getCurrentServer().getPlayerCount()) == Mth.nextInt(RandomSource.create(),
 							1, world.isClientSide() ? Minecraft.getInstance().getConnection().getOnlinePlayers().size() : ServerLifecycleHooks.getCurrentServer().getPlayerCount())) {
-						SummonMeteorProcedure.execute(world, entityiterator.getX(), entityiterator.getZ(), entityiterator, true, Mth.nextInt(RandomSource.create(), (int) (PurechaosModVariables.WorldVariables.get(world).judgment_day / 200), 60), 30);
+						SummonMeteorProcedure.execute(world, entityiterator.getX(), entityiterator.getZ(), entityiterator, true, true, Mth.nextInt(RandomSource.create(), (int) (PurechaosModVariables.WorldVariables.get(world).judgment_day / 200), 60),
+								30);
 					}
 				}
 			}
