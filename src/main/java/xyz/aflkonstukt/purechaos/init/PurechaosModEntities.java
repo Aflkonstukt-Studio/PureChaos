@@ -19,7 +19,6 @@ import xyz.aflkonstukt.purechaos.entity.SplankEntity;
 import xyz.aflkonstukt.purechaos.entity.ShepEntity;
 import xyz.aflkonstukt.purechaos.entity.RockProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.RickAstleyEntity;
-import xyz.aflkonstukt.purechaos.entity.PensiveCubesEntity;
 import xyz.aflkonstukt.purechaos.entity.NerdEntity;
 import xyz.aflkonstukt.purechaos.entity.MuricaEntity;
 import xyz.aflkonstukt.purechaos.entity.MothOfAggrevationEntity;
@@ -46,10 +45,8 @@ import xyz.aflkonstukt.purechaos.entity.DeekProjectileEntity;
 import xyz.aflkonstukt.purechaos.entity.CursedDogEntity;
 import xyz.aflkonstukt.purechaos.entity.CupcakkeEntity;
 import xyz.aflkonstukt.purechaos.entity.CodButBetterEntity;
-import xyz.aflkonstukt.purechaos.entity.BuddyEntity;
 import xyz.aflkonstukt.purechaos.entity.BlazEntity;
 import xyz.aflkonstukt.purechaos.entity.BigEntity;
-import xyz.aflkonstukt.purechaos.entity.BalloonEntity;
 import xyz.aflkonstukt.purechaos.entity.BaldiMinusEntity;
 import xyz.aflkonstukt.purechaos.entity.AmongUsEntity;
 import xyz.aflkonstukt.purechaos.entity.AmogusGunProjectileEntity;
@@ -250,20 +247,8 @@ public class PurechaosModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<FishProjectileEntity>> FISH_PROJECTILE = register("fish_projectile",
 			EntityType.Builder.<FishProjectileEntity>of(FishProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<PensiveCubesEntity>> PENSIVE_CUBE = register("pensive_cube",
-			EntityType.Builder.<PensiveCubesEntity>of(PensiveCubesEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LebronJamesEntity>> LEBRON_JAMES = register("lebron_james",
 			EntityType.Builder.<LebronJamesEntity>of(LebronJamesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BuddyEntity>> BUDDY = register("buddy",
-			EntityType.Builder.<BuddyEntity>of(BuddyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BalloonEntity>> BALLOON = register("balloon",
-			EntityType.Builder.<BalloonEntity>of(BalloonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MeteorEntity>> METEOR = register("meteor",
@@ -328,10 +313,7 @@ public class PurechaosModEntities {
 		MuricaEntity.init(event);
 		GroggoEntity.init(event);
 		YugoslaviaEntity.init(event);
-		PensiveCubesEntity.init(event);
 		LebronJamesEntity.init(event);
-		BuddyEntity.init(event);
-		BalloonEntity.init(event);
 		MeteorEntity.init(event);
 	}
 
@@ -380,10 +362,7 @@ public class PurechaosModEntities {
 		event.put(MURICA.get(), MuricaEntity.createAttributes().build());
 		event.put(GROGGO.get(), GroggoEntity.createAttributes().build());
 		event.put(YUGOSLAVIA.get(), YugoslaviaEntity.createAttributes().build());
-		event.put(PENSIVE_CUBE.get(), PensiveCubesEntity.createAttributes().build());
 		event.put(LEBRON_JAMES.get(), LebronJamesEntity.createAttributes().build());
-		event.put(BUDDY.get(), BuddyEntity.createAttributes().build());
-		event.put(BALLOON.get(), BalloonEntity.createAttributes().build());
 		event.put(METEOR.get(), MeteorEntity.createAttributes().build());
 	}
 }

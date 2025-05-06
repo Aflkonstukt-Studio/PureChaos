@@ -3,20 +3,9 @@ repositories {
     	url = "https://jitpack.io"
     }
 }
-    
+
 dependencies {
 	implementation 'com.github.Virtuoel:Pehkui:3.8.3-1.21-neoforge'
-}
-
-
-repositories {
-  maven {
-      url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-  }
-}
-
-dependencies {
-  implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.7'
 }
 
 

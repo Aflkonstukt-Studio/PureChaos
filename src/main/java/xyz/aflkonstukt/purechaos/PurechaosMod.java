@@ -21,29 +21,18 @@ import org.apache.logging.log4j.LogManager;
 
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.neoforged.neoforge.network.handling.IPayloadHandler;
-import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
 import net.minecraft.util.Tuple;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.network.chat.ComponentSerialization;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.client.Minecraft;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -51,11 +40,6 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
-
-import java.lang.reflect.Field;
-
-import java.io.StringWriter;
-import java.io.PrintWriter;
 
 @Mod("purechaos")
 public class PurechaosMod {
@@ -126,73 +110,5 @@ public class PurechaosMod {
 		});
 		actions.forEach(e -> e.getA().run());
 		workQueue.removeAll(actions);
-	}
-
-	public static record GuiSyncMessage(String editbox, String value) implements CustomPacketPayload {
-		public static final Type<GuiSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "gui_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, GuiSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, GuiSyncMessage message) -> {
-			writeComponent(buffer, Component.literal(message.editbox));
-			writeComponent(buffer, Component.literal(message.value));
-		}, (RegistryFriendlyByteBuf buffer) -> {
-			String editbox = readComponent(buffer).getString();
-			String value = readComponent(buffer).getString();
-			return new GuiSyncMessage(editbox, value);
-		});
-
-		@Override
-		public Type<GuiSyncMessage> type() {
-			return TYPE;
-		}
-
-		public static void handleData(final GuiSyncMessage message, final IPayloadContext context) {
-			if (context.flow() == PacketFlow.CLIENTBOUND) {
-				context.enqueueWork(() -> {
-					Screen currentScreen = Minecraft.getInstance().screen;
-					Map<String, EditBox> textFieldsMap = new HashMap<>();
-					if (currentScreen != null) {
-						Field[] fields = currentScreen.getClass().getDeclaredFields();
-						for (Field field : fields) {
-							if (EditBox.class.isAssignableFrom(field.getType())) {
-								try {
-									field.setAccessible(true);
-									EditBox textField = (EditBox) field.get(currentScreen);
-									if (textField != null) {
-										textFieldsMap.put(field.getName(), textField);
-									}
-								} catch (IllegalAccessException ex) {
-									StringWriter sw = new StringWriter();
-									PrintWriter pw = new PrintWriter(sw);
-									ex.printStackTrace(pw);
-									String exceptionAsString = sw.toString();
-									PurechaosMod.LOGGER.error(exceptionAsString);
-								}
-							}
-						}
-					}
-					if (textFieldsMap.get(message.editbox) != null) {
-						textFieldsMap.get(message.editbox).setValue(message.value);
-					}
-				}).exceptionally(e -> {
-					context.connection().disconnect(Component.literal(e.getMessage()));
-					return null;
-				});
-			}
-		}
-
-		private static Component readComponent(RegistryFriendlyByteBuf buffer) {
-			return ComponentSerialization.TRUSTED_STREAM_CODEC.decode(buffer);
-		}
-
-		private static void writeComponent(RegistryFriendlyByteBuf buffer, Component component) {
-			ComponentSerialization.TRUSTED_STREAM_CODEC.encode(buffer, component);
-		}
-	}
-
-	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-	public static class GuiSyncInit {
-		@SubscribeEvent
-		public static void init(FMLCommonSetupEvent event) {
-			PurechaosMod.addNetworkMessage(GuiSyncMessage.TYPE, GuiSyncMessage.STREAM_CODEC, GuiSyncMessage::handleData);
-		}
 	}
 }

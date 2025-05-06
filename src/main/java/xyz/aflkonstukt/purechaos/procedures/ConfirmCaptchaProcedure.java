@@ -14,6 +14,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.client.multiplayer.PlayerInfo;
+import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
@@ -23,7 +25,7 @@ public class ConfirmCaptchaProcedure {
 		if (entity == null || guistate == null)
 			return;
 		PurechaosMod.queueServerWork(1, () -> {
-			if ((guistate.containsKey("textin:answer") ? (String) guistate.get("textin:answer") : "").equals(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).captcha_answer)) {
+			if ((guistate.containsKey("text:answer") ? ((EditBox) guistate.get("text:answer")).getValue() : "").equals(entity.getData(PurechaosModVariables.PLAYER_VARIABLES).captcha_answer)) {
 				{
 					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
 					_vars.captcha = false;
@@ -40,27 +42,7 @@ public class ConfirmCaptchaProcedure {
 				});
 			} else {
 				if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).wrong_answers >= 3) {
-					if (new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-							}
-							return false;
-						}
-					}.checkGamemode(entity) || new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
-							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
-							}
-							return false;
-						}
-					}.checkGamemode(entity)) {
+					if (getEntityGameType(entity) == GameType.CREATIVE || getEntityGameType(entity) == GameType.SPECTATOR) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.setHealth(0);
 						if (!world.isClientSide() && world.getServer() != null)
@@ -80,5 +62,16 @@ public class ConfirmCaptchaProcedure {
 				}
 			}
 		});
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

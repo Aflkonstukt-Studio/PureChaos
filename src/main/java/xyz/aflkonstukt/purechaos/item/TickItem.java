@@ -53,7 +53,7 @@ public abstract class TickItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 3);
 				map.put(ArmorItem.Type.HELMET, 0);
 				map.put(ArmorItem.Type.BODY, 3);
-			}), 0, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("purechaos:bite")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:beef_armor"))), 0f, 0f);
+			}), 1, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("purechaos:bite")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("purechaos:beef_armor"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("purechaos:tick"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

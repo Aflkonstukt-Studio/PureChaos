@@ -3,7 +3,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="PureChaos"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" &quot;@C:\\Users\\Viktor Blazaric\\Documents\\Projects\\Minecraft\\Mods\\PureChaos\\build\\moddev\\serverRunProgramArgs.txt&quot;"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" &quot;@C:\\Users\\Viktor Blazaric\\Documents\\Projects\\Minecraft\\Mods\\PureChaos\\build\\moddev\\serverRunVmArgs.txt&quot; &quot;-Dfml.modFolders=testproject%%C:\\Users\\Viktor Blazaric\\Documents\\Projects\\Minecraft\\Mods\\PureChaos\\bin\\main&quot;"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" &quot;@C:\\Users\\Viktor Blazaric\\Documents\\Projects\\Minecraft\\Mods\\PureChaos\\build\\moddev\\serverRunVmArgs.txt&quot; &quot;-Dfml.modFolders=mcreator%%C:\\Users\\Viktor Blazaric\\Documents\\Projects\\Minecraft\\Mods\\PureChaos\\bin\\main&quot;"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\Viktor Blazaric\Documents\Projects\Minecraft\Mods\PureChaos\run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>

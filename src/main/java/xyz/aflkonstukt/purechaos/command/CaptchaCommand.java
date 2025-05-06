@@ -37,4 +37,5 @@ public class CaptchaCommand {
 			return 0;
 		})));
 	}
+
 }

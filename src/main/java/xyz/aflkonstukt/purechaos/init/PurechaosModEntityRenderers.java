@@ -17,7 +17,6 @@ import xyz.aflkonstukt.purechaos.client.renderer.SpongebobBossRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.SplankRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.ShepRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.RickAstleyRenderer;
-import xyz.aflkonstukt.purechaos.client.renderer.PensiveCubesRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.NerdRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MuricaRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.MothOfAggrevationRenderer;
@@ -40,10 +39,8 @@ import xyz.aflkonstukt.purechaos.client.renderer.DreamRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CursedDogRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CupcakkeRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.CodButBetterRenderer;
-import xyz.aflkonstukt.purechaos.client.renderer.BuddyRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BlazRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BigRenderer;
-import xyz.aflkonstukt.purechaos.client.renderer.BalloonRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.BaldiMinusRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.AmongUsRenderer;
 import xyz.aflkonstukt.purechaos.client.renderer.Amogus3Renderer;
@@ -117,10 +114,7 @@ public class PurechaosModEntityRenderers {
 		event.registerEntityRenderer(PurechaosModEntities.GROGGO.get(), GroggoRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.YUGOSLAVIA.get(), YugoslaviaRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.FISH_PROJECTILE.get(), FishProjectileRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.PENSIVE_CUBE.get(), PensiveCubesRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.LEBRON_JAMES.get(), LebronJamesRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.BUDDY.get(), BuddyRenderer::new);
-		event.registerEntityRenderer(PurechaosModEntities.BALLOON.get(), BalloonRenderer::new);
 		event.registerEntityRenderer(PurechaosModEntities.METEOR.get(), MeteorRenderer::new);
 	}
 }

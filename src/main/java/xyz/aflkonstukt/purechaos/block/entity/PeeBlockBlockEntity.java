@@ -1,3 +1,4 @@
+
 package xyz.aflkonstukt.purechaos.block.entity;
 
 import xyz.aflkonstukt.purechaos.init.PurechaosModFluids;
@@ -117,12 +118,12 @@ public class PeeBlockBlockEntity extends RandomizableContainerBlockEntity implem
 	}
 
 	@Override
-	public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, stack);
+	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
+		return this.canPlaceItem(index, itemstack);
 	}
 
 	@Override
-	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
 	}
 

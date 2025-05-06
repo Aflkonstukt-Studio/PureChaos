@@ -315,12 +315,10 @@ public class PurechaosModItems {
 	public static final DeferredItem<Item> MOYAI = block(PurechaosModBlocks.MOYAI);
 	public static final DeferredItem<Item> COKOWADA_BUCKET = REGISTRY.register("cokowada_bucket", CokowadaItem::new);
 	public static final DeferredItem<Item> PUFFS_BLOCK = block(PurechaosModBlocks.PUFFS_BLOCK);
-	public static final DeferredItem<Item> PENSIVE_CUBE_SPAWN_EGG = REGISTRY.register("pensive_cube_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.PENSIVE_CUBE, -10066330, -256, new Item.Properties()));
 	public static final DeferredItem<Item> RADIOACTIVE_COOKIE = REGISTRY.register("radioactive_cookie", RadioactiveCookieItem::new);
 	public static final DeferredItem<Item> ICEPICK = REGISTRY.register("icepick", IcepickItem::new);
 	public static final DeferredItem<Item> TICK_CHESTPLATE = REGISTRY.register("tick_chestplate", TickItem.Chestplate::new);
 	public static final DeferredItem<Item> LEBRON_JAMES_SPAWN_EGG = REGISTRY.register("lebron_james_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.LEBRON_JAMES, -256, -1, new Item.Properties()));
-	public static final DeferredItem<Item> BALLOON_SPAWN_EGG = REGISTRY.register("balloon_spawn_egg", () -> new DeferredSpawnEggItem(PurechaosModEntities.BALLOON, -1, -16777216, new Item.Properties()));
 	public static final DeferredItem<Item> FALLGAYS = REGISTRY.register("fallgays", FallgaysItem::new);
 	public static final DeferredItem<Item> SASI_AMANGAS = REGISTRY.register("sasi_amangas", SasiAmangasItem::new);
 	public static final DeferredItem<Item> SCRATEST = REGISTRY.register("scratest", ScratestItem::new);

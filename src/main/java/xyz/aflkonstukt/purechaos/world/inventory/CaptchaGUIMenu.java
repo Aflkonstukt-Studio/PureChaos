@@ -1,11 +1,9 @@
 
 package xyz.aflkonstukt.purechaos.world.inventory;
 
-import xyz.aflkonstukt.purechaos.network.CaptchaGUIButtonMessage;
+import xyz.aflkonstukt.purechaos.procedures.CaptchaGUIClosedProcedure;
 import xyz.aflkonstukt.purechaos.init.PurechaosModMenus;
-import xyz.aflkonstukt.purechaos.client.gui.CaptchaGUIScreen;
 
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandler;
 
@@ -74,14 +72,7 @@ public class CaptchaGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		removeAction();
-	}
-
-	private void removeAction() {
-		if (this.world != null && this.world.isClientSide()) {
-			PacketDistributor.sendToServer(new CaptchaGUIButtonMessage(-2, x, y, z, CaptchaGUIScreen.getEditBoxAndCheckBoxValues()));
-			CaptchaGUIButtonMessage.handleButtonAction(entity, -2, x, y, z, CaptchaGUIScreen.getEditBoxAndCheckBoxValues());
-		}
+		CaptchaGUIClosedProcedure.execute(world, entity);
 	}
 
 	public Map<Integer, Slot> get() {

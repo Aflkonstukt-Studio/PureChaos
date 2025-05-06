@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
@@ -9,6 +9,6 @@
         "value": "#is_overworld"
       }
     ],
-    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:Pee</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">256</field></block></value><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">32</field><field name=\"direction\">DOWN</field><value name=\"condition\"><block type=\"block_predicate_not\"><value name=\"condition\"><block type=\"block_predicate_is_air\"></block></value></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:Pee</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_above_bottom\"><field name=\"value\">0</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">256</field></block></value><next><block type=\"placement_environment_scan\"><field name=\"maxSteps\">32</field><field name=\"direction\">DOWN</field><value name=\"condition\"><block type=\"block_predicate_not\"><value name=\"condition\"><block type=\"block_predicate_is_air\"/></value></block></value><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

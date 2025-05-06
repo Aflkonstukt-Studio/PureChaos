@@ -13,7 +13,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -37,19 +36,10 @@ public class IRSDonationScreen extends AbstractContainerScreen<IRSDonationMenu> 
 		this.imageHeight = 166;
 	}
 
-	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
-		HashMap<String, String> textstate = new HashMap<>();
-		if (Minecraft.getInstance().screen instanceof IRSDonationScreen sc) {
-
-		}
-		return textstate;
-	}
-
 	private static final ResourceLocation texture = ResourceLocation.parse("purechaos:textures/screens/irs_donation.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -82,8 +72,8 @@ public class IRSDonationScreen extends AbstractContainerScreen<IRSDonationMenu> 
 		super.init();
 		button_empty = Button.builder(Component.translatable("gui.purechaos.irs_donation.button_empty"), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new IRSDonationButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
-				IRSDonationButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
+				PacketDistributor.sendToServer(new IRSDonationButtonMessage(0, x, y, z));
+				IRSDonationButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 6, this.topPos + 56, 161, 20).build();
 		guistate.put("button:button_empty", button_empty);

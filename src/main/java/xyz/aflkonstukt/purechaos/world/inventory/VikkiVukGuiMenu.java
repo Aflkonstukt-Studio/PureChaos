@@ -83,40 +83,94 @@ public class VikkiVukGuiMenu extends AbstractContainerMenu implements Supplier<M
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 28) {
+			private final int slot = 0;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 28) {
+			private final int slot = 1;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 28) {
+			private final int slot = 2;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 28) {
+			private final int slot = 3;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 28) {
+			private final int slot = 4;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 98, 28) {
+			private final int slot = 5;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 28) {
+			private final int slot = 6;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 134, 28) {
+			private final int slot = 7;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 152, 28) {
+			private final int slot = 8;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 8, 10) {
+			private final int slot = 10;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 26, 10) {
+			private final int slot = 11;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 44, 10) {
+			private final int slot = 12;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 62, 10) {
+			private final int slot = 13;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 80, 10) {
+			private final int slot = 14;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 98, 10) {
+			private final int slot = 15;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 116, 10) {
+			private final int slot = 16;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 134, 10) {
+			private final int slot = 17;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 152, 10) {
+			private final int slot = 18;
+			private int x = VikkiVukGuiMenu.this.x;
+			private int y = VikkiVukGuiMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

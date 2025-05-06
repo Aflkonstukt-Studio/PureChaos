@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">player_wakes_up</field><next><block type=\"variables_set_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" has_entity=\"true\" is_player_var=\"true\"/><field name=\"VAR\">global:sanity</field><value name=\"VAL\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"entity_send_chat\"><value name=\"text\"><block type=\"text\"><field name=\"TEXT\">Rise and shine! Its a new day and your sanity has been restored to a 100.</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"actbar\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></next></block></next></block></xml>"

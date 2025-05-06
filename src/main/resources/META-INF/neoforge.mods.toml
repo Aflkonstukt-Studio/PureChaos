@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="purechaos"
-version="2025"
+version="2025.1"
 displayName="Pure Chaos"
 displayURL="https://modrinth.com/mod/chaos"
 logoFile="logo.png"
@@ -32,12 +32,6 @@ side="BOTH"
 
 [[dependencies.purechaos]]
 modId="pehkui"
-type="optional"
-versionRange="[0,)"
-ordering="NONE"
-side="BOTH"
-[[dependencies.purechaos]]
-modId="geckolib"
 type="optional"
 versionRange="[0,)"
 ordering="NONE"

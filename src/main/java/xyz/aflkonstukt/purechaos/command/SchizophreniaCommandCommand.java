@@ -39,4 +39,5 @@ public class SchizophreniaCommandCommand {
 			return 0;
 		}))));
 	}
+
 }

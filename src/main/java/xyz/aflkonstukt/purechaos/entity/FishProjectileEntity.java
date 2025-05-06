@@ -12,6 +12,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -22,6 +24,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import javax.annotation.Nullable;
@@ -37,10 +40,14 @@ public class FishProjectileEntity extends AbstractArrow implements ItemSupplier 
 
 	public FishProjectileEntity(EntityType<? extends FishProjectileEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, x, y, z, world, PROJECTILE_ITEM, firedFromWeapon);
+		if (firedFromWeapon != null)
+			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
 	}
 
 	public FishProjectileEntity(EntityType<? extends FishProjectileEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, entity, world, PROJECTILE_ITEM, firedFromWeapon);
+		if (firedFromWeapon != null)
+			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
 	}
 
 	@Override
@@ -72,6 +79,8 @@ public class FishProjectileEntity extends AbstractArrow implements ItemSupplier 
 			if (vec3.lengthSqr() > 0.0) {
 				livingEntity.push(vec3.x, 0.1, vec3.z);
 			}
+		} else { // knockback might be set by firedFromWeapon passed into constructor
+			super.doKnockback(livingEntity, damageSource);
 		}
 	}
 

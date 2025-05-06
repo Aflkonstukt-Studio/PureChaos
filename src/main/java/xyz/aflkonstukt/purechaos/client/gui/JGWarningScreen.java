@@ -12,7 +12,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
 
@@ -42,17 +41,8 @@ public class JGWarningScreen extends AbstractContainerScreen<JGWarningMenu> {
 		return true;
 	}
 
-	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
-		HashMap<String, String> textstate = new HashMap<>();
-		if (Minecraft.getInstance().screen instanceof JGWarningScreen sc) {
-
-		}
-		return textstate;
-	}
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -92,16 +82,16 @@ public class JGWarningScreen extends AbstractContainerScreen<JGWarningMenu> {
 		super.init();
 		button_empty = Button.builder(Component.translatable("gui.purechaos.jg_warning.button_empty"), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new JGWarningButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
-				JGWarningButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
+				PacketDistributor.sendToServer(new JGWarningButtonMessage(0, x, y, z));
+				JGWarningButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 31, this.topPos + 160, 161, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 		button_empty1 = Button.builder(Component.translatable("gui.purechaos.jg_warning.button_empty1"), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new JGWarningButtonMessage(1, x, y, z, getEditBoxAndCheckBoxValues()));
-				JGWarningButtonMessage.handleButtonAction(entity, 1, x, y, z, getEditBoxAndCheckBoxValues());
+				PacketDistributor.sendToServer(new JGWarningButtonMessage(1, x, y, z));
+				JGWarningButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 224, this.topPos + 160, 161, 20).build();
 		guistate.put("button:button_empty1", button_empty1);

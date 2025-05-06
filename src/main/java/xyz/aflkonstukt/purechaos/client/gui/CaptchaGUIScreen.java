@@ -40,20 +40,10 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		this.imageHeight = 80;
 	}
 
-	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
-		HashMap<String, String> textstate = new HashMap<>();
-		if (Minecraft.getInstance().screen instanceof CaptchaGUIScreen sc) {
-			textstate.put("textin:answer", sc.answer.getValue());
-
-		}
-		return textstate;
-	}
-
 	private static final ResourceLocation texture = ResourceLocation.parse("purechaos:textures/screens/captcha_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		answer.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
@@ -121,8 +111,8 @@ public class CaptchaGUIScreen extends AbstractContainerScreen<CaptchaGUIMenu> {
 		this.addWidget(this.answer);
 		button_empty = Button.builder(Component.translatable("gui.purechaos.captcha_gui.button_empty"), e -> {
 			if (true) {
-				PacketDistributor.sendToServer(new CaptchaGUIButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
-				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
+				PacketDistributor.sendToServer(new CaptchaGUIButtonMessage(0, x, y, z));
+				CaptchaGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 11, this.topPos + 49, 119, 20).build();
 		guistate.put("button:button_empty", button_empty);
