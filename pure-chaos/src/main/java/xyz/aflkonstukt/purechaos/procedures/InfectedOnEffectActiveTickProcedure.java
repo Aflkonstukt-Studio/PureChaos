@@ -11,11 +11,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.EnderMan;
-import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -32,7 +29,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-import net.minecraft.client.Minecraft;
 
 import java.util.Comparator;
 
@@ -116,18 +112,15 @@ public class InfectedOnEffectActiveTickProcedure {
 			}
 			if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 50) {
 				if (world.isClientSide()) {
-					if (!(Minecraft.getInstance().gameRenderer.currentEffect() != null)) {
-						Minecraft.getInstance().gameRenderer.checkEntityPostEffect(new Creeper(EntityType.CREEPER, (Level) world));
-					}
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("oops, the creeper shader is unavailable."), true);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A74You are slowly getting taken over..."), true);
 			} else if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).sanity <= 25) {
 				if (world.isClientSide()) {
-					if (Minecraft.getInstance().gameRenderer.currentEffect() != null) {
-						Minecraft.getInstance().gameRenderer.shutdownEffect();
-					}
-					Minecraft.getInstance().gameRenderer.checkEntityPostEffect(new EnderMan(EntityType.ENDERMAN, (Level) world));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("oops, the enderman shader is unavailable."), true);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A74\u00A7kThis isnt over yet..."), true);
