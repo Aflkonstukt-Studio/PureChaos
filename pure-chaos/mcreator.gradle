@@ -1,15 +1,4 @@
 repositories {
-    maven {
-    	url = "https://jitpack.io"
-    }
-}
-
-dependencies {
-	implementation 'com.github.Virtuoel:Pehkui:3.8.3-1.21-neoforge'
-}
-
-
-repositories {
   maven {
     name = "Progwml6's maven"
     url = "https://dvs1.progwml6.com/files/maven/"
@@ -29,5 +18,3 @@ dependencies {
     compileOnly("mezz.jei:jei-1.21.1-neoforge-api:19.21.0.247")
     runtimeOnly("mezz.jei:jei-1.21.1-neoforge:19.21.0.247")
 }
-
-

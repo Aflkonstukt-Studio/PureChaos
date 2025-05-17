@@ -13,8 +13,10 @@ public class HighEffectEffectExpiresProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 280, 1, false, true));
+		PurechaosMod.queueServerWork(10, () -> {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 280, 1, false, true));
+		});
 		PurechaosMod.queueServerWork(280, () -> {
 			{
 				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);

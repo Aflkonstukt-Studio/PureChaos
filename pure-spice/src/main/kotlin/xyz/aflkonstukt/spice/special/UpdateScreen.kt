@@ -3,6 +3,11 @@ package xyz.aflkonstukt.spice.special
 import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.google.gson.stream.JsonReader
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import net.minecraft.ChatFormatting
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.GuiGraphics
@@ -22,109 +27,137 @@ import xyz.aflkonstukt.purechaos.network.PurechaosModVariables
 import java.io.IOException
 import java.io.StringReader
 
-@OnlyIn(Dist.CLIENT)
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.GAME)
-class UpdateScreen(private val pcVersion: String?, private val mcVersion: String?) :
-    Screen(Component.literal("Pure Chaos is outdated!")) {
-    private val backAction = Button.OnPress { button: Button? ->
-        checkNotNull(this.minecraft)
-        this.minecraft!!.setScreen(TitleScreen())
+class UpdateScreen(
+    private val pcVersion: String?,
+    private val mcVersion: String?
+) : Screen(Component.literal("Pure Chaos is outdated!"))
+{
+
+    private val backAction = Button.OnPress {
+        minecraft?.setScreen(TitleScreen())
     }
 
     override fun init() {
         super.init()
-        this.addRenderableWidget<Button?>(
-            Button.Builder(Component.literal("I'll take my chances"), this.backAction).pos(this.width / 2 - 100, 200)
-                .width(200).build()
+        addRenderableWidget(
+            Button.Builder(
+                Component.literal("I'll take my chances"),
+                backAction
+            ).pos(width / 2 - 100, 200)
+                .width(200)
+                .build()
         )
     }
 
-    override fun render(guiGraphics: GuiGraphics, mouseX: Int, mouseY: Int, partialTick: Float) {
-        this.renderBackground(guiGraphics, mouseX, mouseY, partialTick)
-        this.renderPanorama(guiGraphics, partialTick)
+    override fun render(
+        guiGraphics: GuiGraphics,
+        mouseX: Int,
+        mouseY: Int,
+        partialTick: Float
+    ) {
+        renderBackground(guiGraphics, mouseX, mouseY, partialTick)
+        renderPanorama(guiGraphics, partialTick)
         val poseStack = guiGraphics.pose()
         poseStack.pushPose()
-        poseStack.scale(1.2f, 1.2f, 1.2f) // Adjust the scale as needed
+        poseStack.scale(1.2f, 1.2f, 1.2f)
         guiGraphics.drawCenteredString(
-            this.font,
-            Component.literal(ChatFormatting.YELLOW.toString() + "⚠ Pure Chaos is outdated! ⚠"),
-            (this.width.toDouble() / 2 / 1.2).toInt(),
+            font,
+            Component.literal("${ChatFormatting.YELLOW}⚠ Pure Chaos is outdated! ⚠"),
+            (width.toDouble() / 2 / 1.2).toInt(),
             (70 / 1.2).toInt(),
-            16777215
+            0xFFFFFF
         )
         guiGraphics.drawCenteredString(
-            this.font,
-            Component.literal("Stay outdated, and Buddy " + ChatFormatting.ITALIC + "will" + ChatFormatting.RESET + " jump off a cliff"),
-            (this.width.toDouble() / 2 / 1.2).toInt(),
+            font,
+            Component.literal(
+                "Stay outdated, and Buddy ${ChatFormatting.ITALIC}will${ChatFormatting.RESET} jump off a cliff"
+            ),
+            (width.toDouble() / 2 / 1.2).toInt(),
             (85 / 1.2).toInt(),
-            16777215
+            0xFFFFFF
         )
         guiGraphics.drawCenteredString(
-            this.font,
-            Component.literal("while Stalin " + ChatFormatting.ITALIC + "might" + ChatFormatting.RESET + " pay you a visit."),
-            (this.width.toDouble() / 2 / 1.2).toInt(),
+            font,
+            Component.literal(
+                "while Stalin ${ChatFormatting.ITALIC}might${ChatFormatting.RESET} pay you a visit."
+            ),
+            (width.toDouble() / 2 / 1.2).toInt(),
             (95 / 1.2).toInt(),
-            16777215
+            0xFFFFFF
         )
         guiGraphics.drawCenteredString(
-            this.font,
-            Component.literal("The latest version is " + ChatFormatting.AQUA + pcVersion + " on MC" + mcVersion),
-            (this.width.toDouble() / 2 / 1.2).toInt(),
+            font,
+            Component.literal(
+                "The latest version is ${ChatFormatting.AQUA}$pcVersion on MC$mcVersion"
+            ),
+            (width.toDouble() / 2 / 1.2).toInt(),
             (120 / 1.2).toInt(),
-            16777215
+            0xFFFFFF
         )
         guiGraphics.drawCenteredString(
-            this.font,
+            font,
             Component.literal("Don't say we didn't warn you."),
-            (this.width.toDouble() / 2 / 1.2).toInt(),
+            (width.toDouble() / 2 / 1.2).toInt(),
             (132 / 1.2).toInt(),
-            16777215
+            0xFFFFFF
         )
-
         poseStack.popPose()
         super.render(guiGraphics, mouseX, mouseY, partialTick)
     }
 
-    override fun shouldCloseOnEsc(): Boolean {
-        return false
-    }
+    override fun shouldCloseOnEsc(): Boolean = false
 
-    override fun renderBackground(guiGraphics: GuiGraphics, p_295208_: Int, p_294981_: Int, p_294740_: Float) {}
+    override fun renderBackground(
+        guiGraphics: GuiGraphics,
+        p_295208_: Int,
+        p_294981_: Int,
+        p_294740_: Float
+    ) {
+        // Optionally implement custom background rendering here
+    }
 
     override fun renderPanorama(guiGraphics: GuiGraphics, p_331140_: Float) {
-        PANORAMA.render(guiGraphics, this.width, this.height, 1.0f, p_331140_)
+        PANORAMA.render(guiGraphics, width, height, 1.0f, p_331140_)
     }
+}
 
-    companion object {
-        var shownScreen: Boolean = false
+@OnlyIn(Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.GAME)
+object UpdateScreenEventHandler {
+    private var shownScreen: Boolean = false
 
-        @SubscribeEvent
-        fun screenEvent(event: ScreenEvent.Init.Post) {
-            if (event.getScreen() !is TitleScreen) return
-            if (shownScreen) return
-            shownScreen = true
+    @SubscribeEvent
+    fun onScreenInit(event: ScreenEvent.Init.Post) {
+        if (event.screen !is TitleScreen) return
+        if (shownScreen) return
+        shownScreen = true
+
+        Thread {
             try {
-                // Send the request
                 val httpclient = HttpClients.createDefault()
                 val httpget = HttpGet("https://pastebin.com/raw/rTQuWtMg")
-
-                // Get the response
-                val responseString = EntityUtils.toString(httpclient.execute(httpget).getEntity())
-
+                val response = httpclient.execute(httpget)
+                val responseString = EntityUtils.toString(response.entity)
+                response.close()
                 val gson = Gson()
                 val reader = JsonReader(StringReader(responseString))
-                val data = gson.fromJson<JsonObject?>(reader, JsonObject::class.java)
-                println(data)
-                if (data.get("latest").getAsString() != "PC2025") {
-                    val latestMCVersion = data.get("mcv").getAsString()
-                    val latestPCVersion = data.get("latest").getAsString()
-                    PurechaosModVariables.outdated = true
-
-                    Minecraft.getInstance().setScreen(UpdateScreen(latestPCVersion, latestMCVersion))
+                val data: JsonObject? = gson.fromJson(reader, JsonObject::class.java)
+                if (data != null) {
+                    val latestPCVersion = data.get("latest")?.asString
+                    val latestMCVersion = data.get("mcv")?.asString
+                    if (latestPCVersion != null && latestPCVersion != "PC2025.1") {
+                        PurechaosModVariables.outdated = true
+                        // Schedule on main thread
+                        Minecraft.getInstance().execute {
+                            Minecraft.getInstance().setScreen(
+                                UpdateScreen(latestPCVersion, latestMCVersion)
+                            )
+                        }
+                    }
                 }
-            } catch (e: IOException) {
+            } catch (e: Exception) {
                 e.printStackTrace()
             }
-        }
+        }.start()
     }
 }

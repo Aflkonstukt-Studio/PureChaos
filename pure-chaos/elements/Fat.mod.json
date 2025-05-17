@@ -3,10 +3,13 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Fat",
-    "icon": "fat.png",
+    "icon": "fat",
     "color": {
       "value": -3355648,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
@@ -16,9 +19,6 @@
     "modifiers": [],
     "onActiveTick": {
       "name": "FatOnEffectActiveTick"
-    },
-    "onExpired": {
-      "name": "FatEffectExpires"
     }
   }
 }

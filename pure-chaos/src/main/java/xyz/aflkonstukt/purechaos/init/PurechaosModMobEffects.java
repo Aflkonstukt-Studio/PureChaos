@@ -7,7 +7,6 @@ package xyz.aflkonstukt.purechaos.init;
 import xyz.aflkonstukt.purechaos.procedures.SaneEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.InfectedEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.HighEffectEffectExpiresProcedure;
-import xyz.aflkonstukt.purechaos.procedures.FatEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DrunkEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DepressedEffectExpiresProcedure;
 import xyz.aflkonstukt.purechaos.procedures.DementiaEffectExpiresProcedure;
@@ -74,8 +73,6 @@ public class PurechaosModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(HIGH_EFFECT)) {
 			HighEffectEffectExpiresProcedure.execute(entity.level(), entity);
-		} else if (effectInstance.getEffect().is(FAT)) {
-			FatEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(DEMENTIA)) {
 			DementiaEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(DRUNK)) {

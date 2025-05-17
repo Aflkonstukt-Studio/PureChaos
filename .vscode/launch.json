@@ -4,21 +4,21 @@
     {
       "type": "java",
       "request": "launch",
-      "name": "Client",
+      "name": "pure-chaos - Client",
       "presentation": {
         "group": "Mod Development - pure-chaos",
         "order": 0
       },
-      "projectName": "pure-chaos",
+      "projectName": "pure-chaos-pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/build/moddev/clientRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/build/moddev/clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
       ],
-      "cwd": "${workspaceFolder}/run",
+      "cwd": "${workspaceFolder}/pure-chaos/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
@@ -26,21 +26,109 @@
     {
       "type": "java",
       "request": "launch",
-      "name": "Server",
+      "name": "pure-chaos - Server",
       "presentation": {
         "group": "Mod Development - pure-chaos",
         "order": 1
       },
-      "projectName": "pure-chaos",
+      "projectName": "pure-chaos-pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/build/moddev/serverRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/build/moddev/serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
       ],
-      "cwd": "${workspaceFolder}/run",
+      "cwd": "${workspaceFolder}/pure-chaos/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "pure-spice - Client",
+      "presentation": {
+        "group": "Mod Development - pure-spice",
+        "order": 0
+      },
+      "projectName": "pure-spice",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/pure-spice/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "pure-spice - Data",
+      "presentation": {
+        "group": "Mod Development - pure-spice",
+        "order": 1
+      },
+      "projectName": "pure-spice",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/pure-spice/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "pure-spice - GameTestServer",
+      "presentation": {
+        "group": "Mod Development - pure-spice",
+        "order": 2
+      },
+      "projectName": "pure-spice",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/pure-spice/run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "pure-spice - Server",
+      "presentation": {
+        "group": "Mod Development - pure-spice",
+        "order": 3
+      },
+      "projectName": "pure-spice",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/pure-spice/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
