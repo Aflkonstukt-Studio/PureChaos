@@ -1,9 +1,0 @@
-{
-  "_fv": 77,
-  "_type": "mixin",
-  "definition": {
-    "mixins": [
-      "KeyboardInputMixin"
-    ]
-  }
-}

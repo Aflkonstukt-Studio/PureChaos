@@ -2,16 +2,7 @@
   "required": true,
   "package": "xyz.aflkonstukt.purechaos.mixins",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "CustomTitleMixin",
-    "CustomIconMixin",
-    "BottleMixinMixin",
-    "KeyboardInputMixin",
-    "EatWaterBucketMixin",
-    "SuffocationMixin",
-    "ChunkGeneratorMixin",
-    "MobCapMixin"
-  ],
+  "mixins": [],
   "client": [],
   "minVersion": "0.8"
 }

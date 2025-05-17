@@ -1,0 +1,43 @@
+modLoader = "kotlinforforge" #mandatory
+loaderVersion = "${loader_version_range}" #mandatory
+license = "${mod_license}"
+issueTrackerURL="https://github.com/Aflkonstukt-Studio/PureChaos/issues" #optional
+[[mods]] #mandatory
+modId = "${mod_id}" #mandatory
+version = "${mod_version}" #mandatory
+displayName = "${mod_name}" #mandatory
+displayURL = "https://modrinth.com/mod/chaos" #optional
+authors = "${mod_authors}" #optional
+
+description = '''${mod_description}'''
+
+[[mixins]]
+config = "${mod_id}.mixins.json"
+
+# The [[accessTransformers]] block allows you to declare where your AT file is.
+# If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+[[dependencies."${mod_id}"]] #optional
+modId = "neoforge" #mandatory
+type = "required" #mandatory
+reason="..."
+versionRange = "${neo_version_range}" #mandatory
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "purechaos"
+type = "required"
+reason = "Pure Spice is a library mod for Pure Chaos"
+versionRange = "[2025,)"
+ordering = "AFTER"
+side = "BOTH"
