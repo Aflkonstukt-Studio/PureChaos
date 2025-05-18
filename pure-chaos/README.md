@@ -9,7 +9,7 @@ pure-chaos is the MCreator-based component of the PureChaos mod. It contains var
 ### Requirements
 
 - Current MCreator Version: 2025.1
-- Required plugins are located in the [.plugins folder](https://github.com/Aflkonstukt-Studio/PureChaos/tree/master/.plugins)
+- Required plugins are located in the [.plugins folder](https://github.com/Aflkonstukt-Studio/PureChaos/tree/master/pure-chaos/.plugins)
   - To use them, copy them into your MCreator plugins folder
 
 ### Getting Started
