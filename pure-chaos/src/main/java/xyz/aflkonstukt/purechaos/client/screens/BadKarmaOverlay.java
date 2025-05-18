@@ -43,7 +43,7 @@ public class BadKarmaOverlay {
 		RenderSystem.setShader(GameRenderer::getPositionTexShader);
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
-		if (BadKarmaDisplayOverlayIngameProcedure.execute(world, x, y, z, entity)) {
+		if (BadKarmaDisplayOverlayIngameProcedure.execute(entity)) {
 			event.getGuiGraphics().blit(ResourceLocation.parse("purechaos:textures/screens/bad_karma_warning.png"), 0, 0, 0, 0, w, h, w, h);
 		}
 		RenderSystem.depthMask(true);

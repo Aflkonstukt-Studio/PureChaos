@@ -1,6 +1,5 @@
 {
   "type": "minecraft:multi_noise",
-  "preset": "minecraft:overworld",
   "biomes": [
     {
       "biome": "purechaos:hell_but_overworld",
@@ -60,6 +59,10 @@
     },
     {
       "biome": "purechaos:puffs_biome",
+      "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
+    },
+    {
+      "biome": "minecraft:mangrove_swamp",
       "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
     }
   ]

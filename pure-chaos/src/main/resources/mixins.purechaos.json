@@ -1,8 +1,0 @@
-{
-  "required": true,
-  "package": "xyz.aflkonstukt.purechaos.mixins",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [],
-  "client": [],
-  "minVersion": "0.8"
-}

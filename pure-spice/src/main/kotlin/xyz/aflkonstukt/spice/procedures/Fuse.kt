@@ -10,11 +10,14 @@ import net.minecraft.world.entity.player.Player
 import net.neoforged.bus.api.SubscribeEvent
 import net.neoforged.fml.common.EventBusSubscriber
 import net.neoforged.neoforge.event.tick.ServerTickEvent
+import java.util.UUID
 
 @EventBusSubscriber
 object Fuse {
     private const val RANGE = 3.0
-    private val MODIFIER_ID = ResourceLocation.fromNamespaceAndPath("minecraft", "generic.scale")
+    private const val MAX_SCALE = 10.0
+    private val SCALE_MODIFIER_ID = ResourceLocation.fromNamespaceAndPath("minecraft", "generic.scale")
+    private val HEALTH_MODIFIER_ID = ResourceLocation.fromNamespaceAndPath("minecraft", "generic.max_health")
 
     @SubscribeEvent
     fun onServerTick(event: ServerTickEvent.Post) {
@@ -31,11 +34,20 @@ object Fuse {
 
             for (entity in entities) {
                 if (entity in alreadyFused) continue
+                
+                // Skip if entity is already at max scale
+                val currentScale = getEntityScale(entity)
+                if (currentScale >= MAX_SCALE) continue
 
                 val box = entity.boundingBox.inflate(RANGE)
                 val nearby = level.getEntitiesOfClass(
                     LivingEntity::class.java, box
-                ) { it != entity && it !is Player && it !in alreadyFused }
+                ) { 
+                    it != entity && 
+                    it !is Player && 
+                    it !in alreadyFused &&
+                    it.type == entity.type // Only fuse entities of the same type
+                }
 
                 val closestEntity = nearby.minByOrNull { entity.distanceTo(it) }
                 val closestDistance = closestEntity?.let { entity.distanceTo(it) } ?: Double.MAX_VALUE
@@ -52,10 +64,14 @@ object Fuse {
                     val entityScale = getEntityScale(entity)
                     val otherScale = getEntityScale(closestEntity)
 
-                    // New scale is the sum, capped at 10
-                    val newScale = (entityScale + otherScale).coerceAtMost(10.0)
+                    // New scale is the sum, capped at MAX_SCALE
+                    val newScale = (entityScale + otherScale).coerceAtMost(MAX_SCALE)
 
+                    // Apply scale
                     applyEntityScale(entity, newScale)
+                    
+                    // Scale health based on size
+                    applyHealthScale(entity, newScale)
 
                     if (level is ServerLevel) {
                         addParticles(level, entity, closestEntity)
@@ -72,16 +88,42 @@ object Fuse {
 
     fun applyEntityScale(entity: LivingEntity, scale: Double) {
         val attr = entity.getAttribute(Attributes.SCALE) ?: return
-        val modifier = attr.modifiers.find { it.id == MODIFIER_ID }
+        val modifier = attr.modifiers.find { it.id == SCALE_MODIFIER_ID }
         if (modifier != null) {
             attr.removeModifier(modifier)
         }
         val newModifier = AttributeModifier(
-            MODIFIER_ID,
+            SCALE_MODIFIER_ID,
             scale - 1.0, // Additive to base scale of 1.0
             AttributeModifier.Operation.ADD_VALUE
         )
         attr.addTransientModifier(newModifier)
+    }
+    
+    private fun applyHealthScale(entity: LivingEntity, scale: Double) {
+        val healthAttr = entity.getAttribute(Attributes.MAX_HEALTH) ?: return
+        
+        // Remove existing modifier if present
+        healthAttr.modifiers.find { it.id == HEALTH_MODIFIER_ID }?.let {
+            healthAttr.removeModifier(it)
+        }
+        
+        // Calculate health bonus based on scale
+        // We'll double health for each doubling of scale (scale=2 -> 2x health, scale=4 -> 4x health)
+        val baseHealth = healthAttr.baseValue
+        val healthMultiplier = scale - 1.0 // Scale 1 is normal size, so no bonus
+        
+        // Add new modifier for health
+        val healthModifier = AttributeModifier(
+            HEALTH_MODIFIER_ID,
+            baseHealth * healthMultiplier, // Add bonus health based on scale
+            AttributeModifier.Operation.ADD_VALUE
+        )
+        healthAttr.addTransientModifier(healthModifier)
+        
+        // Heal entity to match new max health
+        val healthPercent = entity.health / entity.maxHealth
+        entity.health = entity.maxHealth * healthPercent // Preserve health percentage
     }
 
     private fun addParticles(level: ServerLevel, entity: LivingEntity, nearbyEntity: LivingEntity) {

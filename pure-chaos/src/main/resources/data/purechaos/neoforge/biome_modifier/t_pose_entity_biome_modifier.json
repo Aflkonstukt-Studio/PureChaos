@@ -14,7 +14,8 @@
     "purechaos:ohio",
     "purechaos:plains",
     "purechaos:poland_biome",
-    "purechaos:susus"
+    "purechaos:susus",
+    "minecraft:mangrove_swamp"
   ],
   "spawners": {
     "type": "purechaos:t_pose_entity",

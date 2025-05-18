@@ -18,3 +18,5 @@ dependencies {
     compileOnly("mezz.jei:jei-1.21.1-neoforge-api:19.21.0.247")
     runtimeOnly("mezz.jei:jei-1.21.1-neoforge:19.21.0.247")
 }
+
+

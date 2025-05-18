@@ -16,7 +16,7 @@ object PackPriority {
     @SubscribeEvent
     fun addPackFinders(event: AddPackFindersEvent) {
         event.addPackFinders(
-            ResourceLocation.fromNamespaceAndPath(PurechaosMod.MODID, "pmo"),
+            ResourceLocation.fromNamespaceAndPath(Spice.ID, "pmo"),
             PackType.CLIENT_RESOURCES,
             Component.literal("PMOs"),
             PackSource.BUILT_IN,

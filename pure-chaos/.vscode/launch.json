@@ -12,11 +12,11 @@
       "projectName": "pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/PureChaos/pure-chaos/bin/main"
       ],
       "cwd": "${workspaceFolder}/run",
       "env": {},
@@ -34,11 +34,11 @@
       "projectName": "pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/PureChaos/pure-chaos/bin/main"
       ],
       "cwd": "${workspaceFolder}/run",
       "env": {},

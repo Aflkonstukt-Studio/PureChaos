@@ -9,14 +9,14 @@
         "group": "Mod Development - pure-chaos",
         "order": 0
       },
-      "projectName": "pure-chaos-pure-chaos",
+      "projectName": "pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/PureChaos/pure-chaos/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-chaos/run",
       "env": {},
@@ -31,14 +31,14 @@
         "group": "Mod Development - pure-chaos",
         "order": 1
       },
-      "projectName": "pure-chaos-pure-chaos",
+      "projectName": "pure-chaos",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-chaos/build/moddev/serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/pure-chaos/pure-chaos/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-chaos/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/nichtvikki/Projects/PureChaos/pure-chaos/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-chaos/run",
       "env": {},
@@ -56,11 +56,11 @@
       "projectName": "pure-spice",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/clientRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/PureChaos/pure-spice/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-spice/run",
       "env": {},
@@ -78,11 +78,11 @@
       "projectName": "pure-spice",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/dataRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/dataRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/dataRunVmArgs.txt",
-        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/PureChaos/pure-spice/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-spice/run",
       "env": {},
@@ -100,11 +100,11 @@
       "projectName": "pure-spice",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/gameTestServerRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/gameTestServerRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/gameTestServerRunVmArgs.txt",
-        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/PureChaos/pure-spice/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-spice/run",
       "env": {},
@@ -122,11 +122,11 @@
       "projectName": "pure-spice",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/serverRunProgramArgs.txt"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@/home/nichtvikki/Projects/pure-chaos/pure-spice/build/moddev/serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/pure-chaos/pure-spice/bin/main"
+        "@/home/nichtvikki/Projects/PureChaos/pure-spice/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspice%%/home/nichtvikki/Projects/PureChaos/pure-spice/bin/main"
       ],
       "cwd": "${workspaceFolder}/pure-spice/run",
       "env": {},

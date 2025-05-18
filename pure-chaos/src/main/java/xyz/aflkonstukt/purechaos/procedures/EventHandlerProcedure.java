@@ -27,13 +27,13 @@ public class EventHandlerProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
 		if (5 <= Mth.nextInt(RandomSource.create(), 1, 2000)) {
-			if (5 <= Mth.nextInt(RandomSource.create(), 1, 2000)) {
+			if (5 <= Mth.nextInt(RandomSource.create(), 1, 20000)) {
 				for (Entity entityiterator : new ArrayList<>(world.players())) {
 					if (4 * world.players().size() == Mth.nextInt(RandomSource.create(), 1, (int) (world.players().size() * 10))) {
 						SummonMeteorProcedure.execute(world, entityiterator.getX(), entityiterator.getZ(), entityiterator, false, true, Mth.nextInt(RandomSource.create(), 10, 70), 3600);
 					}
 				}
-			} else if (5 <= Mth.nextInt(RandomSource.create(), 1, 2000)) {
+			} else if (5 <= Mth.nextInt(RandomSource.create(), 1, 40000)) {
 				if (5 <= Mth.nextInt(RandomSource.create(), 1, 50)) {
 					if (5 <= Mth.nextInt(RandomSource.create(), 1, 50)) {
 						for (Entity entityiterator : new ArrayList<>(world.players())) {
@@ -41,7 +41,7 @@ public class EventHandlerProcedure {
 						}
 					}
 				}
-			} else if (5 <= Mth.nextInt(RandomSource.create(), 1, 2000)) {
+			} else if (5 <= Mth.nextInt(RandomSource.create(), 1, 10000)) {
 				if (5 <= Mth.nextInt(RandomSource.create(), 1, 50)) {
 					if (15 <= Mth.nextInt(RandomSource.create(), 1, 50)) {
 						for (Entity entityiterator : new ArrayList<>(world.players())) {

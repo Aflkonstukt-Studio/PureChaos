@@ -421,6 +421,30 @@ public class PlayerTickProcedure {
 				}
 			}
 		}
+		if (entity.getData(PurechaosModVariables.PLAYER_VARIABLES).karma < 50) {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("\u00A74YOU'VE BEEN A BAD BOY.."), true);
+			if (!entity.getData(PurechaosModVariables.PLAYER_VARIABLES).played_bkw) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:lights_out")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("purechaos:lights_out")), SoundSource.NEUTRAL, 1, 1, false);
+					}
+				}
+				{
+					PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+					_vars.played_bkw = true;
+					_vars.syncPlayerVariables(entity);
+				}
+			}
+		} else {
+			{
+				PurechaosModVariables.PlayerVariables _vars = entity.getData(PurechaosModVariables.PLAYER_VARIABLES);
+				_vars.played_bkw = false;
+				_vars.syncPlayerVariables(entity);
+			}
+		}
 	}
 
 	private static GameType getEntityGameType(Entity entity) {
