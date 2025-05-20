@@ -7,10 +7,8 @@
     "purechaos:fun_land",
     "purechaos:hell_but_overworld",
     "purechaos:more_extreme_hills",
-    "purechaos:ohio",
     "purechaos:plains",
-    "purechaos:poland_biome",
-    "purechaos:susus"
+    "purechaos:poland_biome"
   ],
   "spawners": {
     "type": "purechaos:trident",

@@ -152,9 +152,6 @@
       },
       {
         "value": "CUSTOM:HeavenOrHell"
-      },
-      {
-        "value": "CUSTOM:Ohio"
       }
     ],
     "spawnInDungeons": false,

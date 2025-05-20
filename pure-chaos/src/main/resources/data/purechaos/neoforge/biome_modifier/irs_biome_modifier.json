@@ -3,8 +3,7 @@
   "biomes": [
     "purechaos:buffalo_lake",
     "purechaos:fun_land",
-    "purechaos:heaven_or_hell",
-    "purechaos:ohio"
+    "purechaos:heaven_or_hell"
   ],
   "spawners": {
     "type": "purechaos:irs",

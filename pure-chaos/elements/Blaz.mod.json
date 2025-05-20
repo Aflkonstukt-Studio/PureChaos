@@ -116,6 +116,9 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Blaze",
@@ -157,9 +160,6 @@
       },
       {
         "value": "CUSTOM:FunLand"
-      },
-      {
-        "value": "CUSTOM:Ohio"
       },
       {
         "value": "basalt_deltas"

@@ -9,9 +9,7 @@
     "purechaos:fun_land",
     "purechaos:heaven_or_hell",
     "purechaos:hell_but_overworld",
-    "purechaos:ohio",
-    "purechaos:poland_biome",
-    "purechaos:susus"
+    "purechaos:poland_biome"
   ],
   "spawners": {
     "type": "purechaos:stalin",

@@ -116,6 +116,9 @@
     "stepSound": {
       "value": "entity.wolf.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Wolf",
@@ -154,9 +157,6 @@
       },
       {
         "value": "CUSTOM:HeavenOrHell"
-      },
-      {
-        "value": "CUSTOM:Ohio"
       },
       {
         "value": "CUSTOM:Plains"

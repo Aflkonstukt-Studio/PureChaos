@@ -5,9 +5,6 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:HellButOverworld"
-      },
-      {
-        "value": "CUSTOM:Susus"
       }
     ],
     "worldGenType": "Nether like gen",

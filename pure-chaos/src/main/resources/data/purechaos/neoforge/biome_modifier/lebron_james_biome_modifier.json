@@ -6,9 +6,7 @@
     "purechaos:fun_land",
     "purechaos:heaven_or_hell",
     "purechaos:hell_but_overworld",
-    "purechaos:ohio",
-    "purechaos:puffs_biome",
-    "purechaos:susus"
+    "purechaos:puffs_biome"
   ],
   "spawners": {
     "type": "purechaos:lebron_james",

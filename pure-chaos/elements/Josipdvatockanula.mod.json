@@ -116,6 +116,9 @@
     "stepSound": {
       "value": "entity.cow.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "whenMobDies": {
       "name": "JosipdvatockanulaEntityDies"
@@ -157,9 +160,6 @@
       },
       {
         "value": "CUSTOM:MoreExtremeHills"
-      },
-      {
-        "value": "CUSTOM:Ohio"
       },
       {
         "value": "CUSTOM:PolandBiome"

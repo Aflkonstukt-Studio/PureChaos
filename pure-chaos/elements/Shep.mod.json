@@ -116,6 +116,9 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Cow",
@@ -165,16 +168,10 @@
         "value": "CUSTOM:HellButOverworld"
       },
       {
-        "value": "CUSTOM:Ohio"
-      },
-      {
         "value": "CUSTOM:Plains"
       },
       {
         "value": "CUSTOM:PolandBiome"
-      },
-      {
-        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": false,

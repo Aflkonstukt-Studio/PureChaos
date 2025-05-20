@@ -5,9 +5,7 @@
     "purechaos:dream_biome",
     "purechaos:ekesmasterbait",
     "purechaos:fun_land",
-    "purechaos:ohio",
-    "purechaos:poland_biome",
-    "purechaos:susus"
+    "purechaos:poland_biome"
   ],
   "spawners": {
     "type": "purechaos:dream",

@@ -145,7 +145,7 @@ object UpdateScreenEventHandler {
                 if (data != null) {
                     val latestPCVersion = data.get("latest")?.asString
                     val latestMCVersion = data.get("mcv")?.asString
-                    if (latestPCVersion != null && latestPCVersion != "PC2025.1") {
+                    if (latestPCVersion != null && latestPCVersion != "PC2025.2") {
                         PurechaosModVariables.outdated = true
                         // Schedule on main thread
                         Minecraft.getInstance().execute {

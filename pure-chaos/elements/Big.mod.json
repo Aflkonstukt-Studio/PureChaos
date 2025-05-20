@@ -116,6 +116,9 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -166,9 +169,6 @@
       },
       {
         "value": "CUSTOM:HeavenOrHell"
-      },
-      {
-        "value": "CUSTOM:Ohio"
       },
       {
         "value": "CUSTOM:Plains"

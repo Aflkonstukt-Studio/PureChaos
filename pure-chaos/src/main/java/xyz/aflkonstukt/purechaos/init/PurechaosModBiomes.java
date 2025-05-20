@@ -55,10 +55,6 @@ public class PurechaosModBiomes {
 							Climate.Parameter.span(-1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(0.0f),
-							Climate.Parameter.span(0f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(1.0f),
-							Climate.Parameter.span(0f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.3f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-2f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ekesmasterbait")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.3f),
@@ -71,10 +67,6 @@ public class PurechaosModBiomes {
 							Climate.Parameter.span(0f, 0.7f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "desert")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 2f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(0f, 0.7f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "desert")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-0.2f, 1.8f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-2f, 0.0001f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-0.2f, 1.8f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-2f, 0.0001f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")))));
 					addParameterPoint(parameters,
 							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(0f, 1.11f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(0.0f),
 									Climate.Parameter.span(-0.2f, 1.1324942016f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "more_extreme_hills")))));
@@ -133,16 +125,12 @@ public class PurechaosModBiomes {
 								Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(),
 								Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")), Blocks.GRASS_BLOCK.defaultBlockState(),
-								PurechaosModBlocks.SUS_BLOCK.get().defaultBlockState(), Blocks.OAK_PLANKS.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(),
 								Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "birch_forest")), Blocks.POLISHED_ANDESITE.defaultBlockState(),
 								Blocks.POLISHED_ANDESITE.defaultBlockState(), Blocks.POLISHED_ANDESITE.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "desert")), Blocks.YELLOW_CONCRETE.defaultBlockState(),
 								Blocks.YELLOW_CONCRETE.defaultBlockState(), Blocks.YELLOW_CONCRETE.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")), Blocks.PODZOL.defaultBlockState(),
-								Blocks.COARSE_DIRT.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "more_extreme_hills")), Blocks.GRASS_BLOCK.defaultBlockState(),
 								Blocks.STONE.defaultBlockState(), Blocks.STONE.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "plains")), Blocks.SHORT_GRASS.defaultBlockState(),
@@ -177,18 +165,10 @@ public class PurechaosModBiomes {
 							Climate.Parameter.span(-1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(0.2f, 1.4f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-1f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(0.0f),
-							Climate.Parameter.span(0f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 1f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(1.0f),
-							Climate.Parameter.span(0f, 2f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.3f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(-2f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ekesmasterbait")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 1f), Climate.Parameter.span(-0.5f, 1.3f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-2f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ekesmasterbait")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-0.2f, 1.8f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-2f, 0.0001f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-2f, 0f), Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-0.2f, 1.8f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-2f, 0.0001f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
 							Climate.Parameter.point(0.0f), Climate.Parameter.span(0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "buffalo_lake")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0f, 2f), Climate.Parameter.span(-2f, 0.5f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
@@ -209,12 +189,8 @@ public class PurechaosModBiomes {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "hell_but_overworld")), Blocks.NETHERRACK.defaultBlockState(),
 								Blocks.NETHERRACK.defaultBlockState(), Blocks.NETHERRACK.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "susus")), Blocks.GRASS_BLOCK.defaultBlockState(),
-								PurechaosModBlocks.SUS_BLOCK.get().defaultBlockState(), Blocks.OAK_PLANKS.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ekesmasterbait")), Blocks.GRASS_BLOCK.defaultBlockState(),
 								Blocks.COBBLESTONE.defaultBlockState(), Blocks.SAND.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "ohio")), Blocks.PODZOL.defaultBlockState(), Blocks.COARSE_DIRT.defaultBlockState(),
-								Blocks.COARSE_DIRT.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "buffalo_lake")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(),
 								Blocks.SAND.defaultBlockState()));
 						addSurfaceRule(surfaceRules, 2, anySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("purechaos", "easter")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(),

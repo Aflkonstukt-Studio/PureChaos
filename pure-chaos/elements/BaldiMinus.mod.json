@@ -116,6 +116,9 @@
     "stepSound": {
       "value": "CUSTOM:ruler_slap"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -168,13 +171,7 @@
         "value": "CUSTOM:MoreExtremeHills"
       },
       {
-        "value": "CUSTOM:Ohio"
-      },
-      {
         "value": "CUSTOM:Plains"
-      },
-      {
-        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": false,

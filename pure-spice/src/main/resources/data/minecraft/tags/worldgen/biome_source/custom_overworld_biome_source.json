@@ -6,10 +6,6 @@
       "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
     },
     {
-      "biome": "purechaos:susus",
-      "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
-    },
-    {
       "biome": "purechaos:ekesmasterbait",
       "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
     },
@@ -19,10 +15,6 @@
     },
     {
       "biome": "purechaos:desert",
-      "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
-    },
-    {
-      "biome": "purechaos:ohio",
       "parameters": { "temperature": 0.5, "humidity": 0.5, "continentalness": 0.5, "erosion": 0.5, "depth": 0.5, "weirdness": 0.5, "offset": 0.0 }
     },
     {

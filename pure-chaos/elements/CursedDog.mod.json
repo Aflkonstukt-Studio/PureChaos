@@ -116,6 +116,9 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Wolf",
@@ -178,16 +181,10 @@
         "value": "CUSTOM:MoreExtremeHills"
       },
       {
-        "value": "CUSTOM:Ohio"
-      },
-      {
         "value": "CUSTOM:Plains"
       },
       {
         "value": "CUSTOM:PolandBiome"
-      },
-      {
-        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": false,

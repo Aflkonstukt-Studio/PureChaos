@@ -24,13 +24,7 @@
         "value": "CUSTOM:MoreExtremeHills"
       },
       {
-        "value": "CUSTOM:Ohio"
-      },
-      {
         "value": "CUSTOM:Plains"
-      },
-      {
-        "value": "CUSTOM:Susus"
       },
       {
         "value": "badlands"
@@ -225,6 +219,6 @@
         "value": "wooded_badlands_plateau"
       }
     ],
-    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">josipspp</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"/><field name=\"block0\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">200</field><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">10</field><field name=\"max\">11</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">josipspp</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">200</field><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">10</field><field name=\"max\">11</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

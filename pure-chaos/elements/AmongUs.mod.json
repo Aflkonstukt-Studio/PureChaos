@@ -116,6 +116,9 @@
     "stepSound": {
       "value": "CUSTOM:footstep_metal_amogus"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "whenMobDies": {
       "name": "DirtswordLivingEntityIsHitWithTool"
@@ -168,16 +171,10 @@
         "value": "CUSTOM:MoreExtremeHills"
       },
       {
-        "value": "CUSTOM:Ohio"
-      },
-      {
         "value": "CUSTOM:Plains"
       },
       {
         "value": "CUSTOM:PolandBiome"
-      },
-      {
-        "value": "CUSTOM:Susus"
       }
     ],
     "spawnInDungeons": true,
