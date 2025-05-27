@@ -12544,6 +12544,9 @@
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:Emepee"
     ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Emepee"
+    ],
     "ENTITIES:minecraft:undead": [
       "~CUSTOM:Nerd",
       "~CUSTOM:Herobrine",
